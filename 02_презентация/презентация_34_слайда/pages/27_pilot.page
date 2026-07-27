@@ -1,0 +1,112 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ДОРОЖНАЯ КАРТА"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Пилот на 90 дней: одно отделение, одна позиция"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: tl
+    elementType: shape
+    bounds: [60, 220, 840, 3]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: p1
+    elementType: shape
+    bounds: [80, 210, 22, 22]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: p1t
+    elementType: text
+    bounds: [60, 250, 190, 130]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.35
+      text: |
+        <p><strong>Неделя 1</strong></p>
+        <p>Экспресс-аудит, замер ночного интервала, ведомость остатков, сверка трёх списков</p>
+  - elementId: p2
+    elementType: shape
+    bounds: [300, 210, 22, 22]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: p2t
+    elementType: text
+    bounds: [280, 250, 190, 130]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.35
+      text: |
+        <p><strong>Недели 2–4</strong></p>
+        <p>Приказ о пилоте, пара эквивалентов в таблице замен, журнал заказа — ступень 1 на одном отделении</p>
+  - elementId: p3
+    elementType: shape
+    bounds: [520, 210, 22, 22]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+  - elementId: p3t
+    elementType: text
+    bounds: [500, 250, 190, 130]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.35
+      text: |
+        <p><strong>Месяц 2</strong></p>
+        <p>Совет по питанию из жителей, первая панель чисел, журнал срывов, разбор отказов</p>
+  - elementId: p4
+    elementType: shape
+    bounds: [740, 210, 22, 22]
+    shapeName: ellipse
+    fill: {type: solid, color: "$accent"}
+  - elementId: p4t
+    elementType: text
+    bounds: [720, 250, 190, 130]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.35
+      text: |
+        <p><strong>Месяц 3</strong></p>
+        <p>Повторный аудит, разбор чисел, решение: закрепить / расширить / скорректировать / закрыть</p>
+  - elementId: above
+    elementType: text
+    bounds: [60, 140, 840, 50]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.45
+      text: "Пилот — не «внедрение вариативности», а <strong>эксперимент с точками замера</strong>: входные числа до старта, те же числа через 90 дней."
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 400, 840, 70]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.5
+      text: |
+        <p>У пилота четыре честных исхода, включая «закрыть»: если числа не подтвердили пользу — это тоже результат,</p>
+        <p>и доклад объясняет, как его оформить, чтобы не потерять доверие учредителя к следующей попытке.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: раздел 35 доклада; проект приказа о пилоте и все формы — приложения к докладу"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "27"

@@ -1,0 +1,82 @@
+version: v2
+title: Не просто накормить — презентация семинара
+size: [960, 540]
+theme:
+  colors:
+    primary: "#2F5D50"
+    accent: "#B57517"
+    text: "#20242A"
+    muted: "#6B7280"
+    bg: "#FAF8F4"
+    soft: "#E7E1D6"
+    softgreen: "#DCE6E0"
+    line: "#C9C2B4"
+  textStyles:
+    kicker:
+      fontSize: 11
+      color: "$primary"
+      fontFamily: MiSans
+      letterSpacing: 2
+      bold: true
+    h1:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: MiSans
+      lineHeight: 1.15
+    body:
+      fontSize: 14.5
+      color: "$text"
+      fontFamily: MiSans
+      lineHeight: 1.45
+    small:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: MiSans
+      lineHeight: 1.3
+    big:
+      fontSize: 46
+      bold: true
+      color: "$primary"
+      fontFamily: MiSans
+    q:
+      fontSize: 30
+      bold: true
+      color: "$primary"
+      fontFamily: MiSans
+      lineHeight: 1.25
+pages:
+  - pages/01_cover.page
+  - pages/02_vopros.page
+  - pages/03_otvety.page
+  - pages/04_obed.page
+  - pages/05_izmereniya.page
+  - pages/06_cifry.page
+  - pages/07_noch.page
+  - pages/08_terminy.page
+  - pages/09_lestnica.page
+  - pages/10_stupeni01.page
+  - pages/11_stupeni25.page
+  - pages/12_kriterii.page
+  - pages/13_praktiki.page
+  - pages/14_bolotninsky.page
+  - pages/15_uspensky.page
+  - pages/16_vnedrivshie.page
+  - pages/17_zhurnal.page
+  - pages/18_pary.page
+  - pages/19_dengi.page
+  - pages/20_proverka.page
+  - pages/21_pravo.page
+  - pages/22_disfagiya.page
+  - pages/23_ves.page
+  - pages/24_vrach.page
+  - pages/25_otkazy.page
+  - pages/26_audit.page
+  - pages/27_pilot.page
+  - pages/28_panel.page
+  - pages/29_regress.page
+  - pages/30_trudnye.page
+  - pages/31_ponedelnik.page
+  - pages/32_stupen.page
+  - pages/33_paket.page
+  - pages/34_final.page

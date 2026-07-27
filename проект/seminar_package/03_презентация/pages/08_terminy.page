@@ -1,0 +1,86 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ТЕРМИНЫ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Четыре вещи, которые путают, — и почему это дорого"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: t1
+    elementType: text
+    bounds: [60, 130, 410, 120]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>Цикличное меню</strong></p>
+        <p>Повторяющийся цикл блюд (14 дней по нашим раскладкам). Про разнообразие во времени — <strong>не про выбор</strong>.</p>
+  - elementId: t2
+    elementType: text
+    bounds: [490, 130, 410, 120]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>Замена по таблице</strong></p>
+        <p>Эквивалентная замена продуктов в раскладке. Делает вариативность законной — но сама выбором жителя <strong>не является</strong>.</p>
+  - elementId: hl
+    elementType: shape
+    bounds: [60, 258, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: t3
+    elementType: text
+    bounds: [60, 276, 410, 130]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>Персонализация</strong></p>
+        <p>Индивидуальные назначения вне общего выбора: текстуры, ограничения, усиленное питание. Назначает <strong>врач</strong>.</p>
+  - elementId: t4
+    elementType: text
+    bounds: [490, 276, 410, 130]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      color: "$primary"
+      text: |
+        <p><strong>Вариативное меню</strong></p>
+        <p>Житель в момент приёма пищи имеет <strong>реальную возможность получить не менее двух вариантов</strong> и влияет на то, какой получит.</p>
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 420, 840, 56]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.45
+      text: |
+        <p>Типовая ошибка: «у нас 14 дней без повторов — вот и вариативность» или «мы заменяем гречку на рис — вот и выбор».</p>
+        <p><strong>Обе конструкции не содержат выбора жителя.</strong> Дальше слово «вариативность» используется строго.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: раздел 8.1 доклада; международные стандарты циклов — Онтарио 21 день, DGE 4 недели (реестр INTERNATIONAL_PRACTICES)"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "8"

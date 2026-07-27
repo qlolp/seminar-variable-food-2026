@@ -1,0 +1,61 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ЭТО УЖЕ РАБОТАЕТ В РОССИИ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Подтверждено: пять действующих российских практик"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: list
+    elementType: text
+    bounds: [60, 130, 840, 280]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.55
+      text: |
+        <p><strong>Болотнинский ПНИ</strong> (Новосибирская обл.) — выбор из двух вариантов на завтрак и обед несколько раз в неделю; перечень определяет диетсестра. <span style="color:$muted">Ступень 1.</span></p>
+        <p style="margin-top:9px"><strong>Успенский ПНИ</strong> (Новосибирская обл.) — выбор по всем основным позициям, ежедневно, все отделения. <span style="color:$muted">Ступень 2.</span></p>
+        <p style="margin-top:9px"><strong>Иркутская область</strong> — масштабирование на регион: два варианта первых и вторых блюд, гарниры — ежедневно. <span style="color:$muted">Ступень 2 как стандарт сети.</span></p>
+        <p style="margin-top:9px"><strong>Усть-Илимский ДСО</strong> (Иркутская обл.) — вариативное меню в доме социального обслуживания; участник семинара.</p>
+        <p style="margin-top:9px"><strong>ДДСОЛ</strong> — 14-дневное вариативное меню плюс совет по питанию из жителей.</p>
+  - elementId: rule
+    elementType: shape
+    bounds: [60, 424, 200, 2]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 440, 840, 40]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$primary"
+      lineHeight: 1.4
+      text: "Все пять практик работают в действующих лимитах финансирования и действующем закупочном праве."
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: официальные сайты учреждений и региональные публикации, проверено 23.07.2026 (SOURCE_REGISTRY доклада, S015–S019); Болотнинский, Успенский и Усть-Илимский — участники семинара"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "13"

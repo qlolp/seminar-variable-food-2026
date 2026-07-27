@@ -1,0 +1,66 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ИНСТРУМЕНТ УПРАВЛЕНИЯ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Квартальная панель: один лист против регресса"
+  - elementId: table
+    elementType: table
+    bounds: [60, 120, 840, 270]
+    columnWidths: [0.36, 0.32, 0.32]
+    rowHeights: [0.16, 0.168, 0.168, 0.168, 0.168, 0.168]
+    style:
+      cellStyle: {fontSize: 13, lineHeight: 1.3, align: [left, middle], border: [null, null, {style: solid, width: 1, color: "$line"}, null]}
+      firstRowStyle: {bold: true, color: "$primary", fontSize: 13.5}
+    rows:
+      - - text: "Показатель"
+        - text: "Откуда берётся"
+        - text: "Что означает падение"
+      - - text: "Доля выбравших вариант Б"
+        - text: "журнал заказа"
+        - text: "выбор стал декоративным"
+      - - text: "Доля замен по отказам"
+        - text: "журнал отказов"
+        - text: "отказ снова = пустая тарелка"
+      - - text: "Записи в журнале срывов"
+        - text: "журнал срывов"
+        - text: "пустой журнал = перестали записывать, а не срывать"
+      - - text: "Остатки по блюдам"
+        - text: "ведомость остатков"
+        - text: "выросли — выбор не соответствует вкусам"
+      - - text: "Ночной интервал, часы"
+        - text: "замер дежурного"
+        - text: "распорядок «поплыл» обратно"
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 412, 840, 60]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.5
+      text: |
+        <p>Панель заполняется раз в квартал за один час и ложится на стол директору и в записку учредителю.</p>
+        <p><strong>Это единственный аргумент, который работает и с проверкой, и с финансированием: собственные числа.</strong></p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: раздел 31 доклада; форма панели — приложение 35 к докладу"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "28"

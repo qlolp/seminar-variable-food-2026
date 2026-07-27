@@ -1,0 +1,62 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ТРУДНЫЕ ВОПРОСЫ · КАРКАС ОТВЕТОВ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Три вопроса, которые вы услышите у себя в регионе"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: q1
+    elementType: text
+    bounds: [60, 130, 840, 110]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      text: |
+        <p><strong>«У нас 400 жителей и поваров нет. Это для маленьких домов».</strong></p>
+        <p>Масштаб решается парными эквивалентами и журналом заказа — Успенский ПНИ крупный. Кадровый голод реален: ступень 1 на одном отделении требует минимального приращения работы. Если и это не по силам — делаем хорошо ступень 0.</p>
+  - elementId: q2
+    elementType: text
+    bounds: [60, 250, 840, 110]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      text: |
+        <p><strong>«Жители с тяжёлыми расстройствами не могут выбирать».</strong></p>
+        <p>Выбор предлагается тем, кто может, — форматом каждому доступным: показ двух тарелок вместо слов, выбор жестом. Кому выбор противопоказан — решает врач, и это пишется в список. «Не выбирают» чаще значит «давно не спрашивали»: навык восстанавливается практикой.</p>
+  - elementId: q3
+    elementType: text
+    bounds: [60, 370, 840, 100]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      text: |
+        <p><strong>«Если все выберут вариант Б — кто отвечает за срыв?».</strong></p>
+        <p>Выбор делается накануне через журнал заказа, а не на линии: готовится по заказу плюс резерв, статистика за две недели пересчитывает пропорции. Срывы бывают у всех внедривших — вопрос не «будут ли», а «записываются ли».</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 500, 780, 30]
+    content:
+      style: "$small"
+      text: "Источник: семинарский пакет, элементы 13–14 (десять трудных вопросов и двенадцать возражений с аргументированными ответами)"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "30"

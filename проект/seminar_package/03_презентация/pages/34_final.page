@@ -1,0 +1,57 @@
+pageType: final
+background:
+  type: solid
+  color: "$primary"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 60, 600, 18]
+    content:
+      fontSize: 11
+      color: "#B9C9C1"
+      letterSpacing: 3
+      bold: true
+      text: "ВОЗВРАЩАЕМСЯ К ПЕРВОМУ ВОПРОСУ"
+  - elementId: q
+    elementType: text
+    bounds: [60, 120, 840, 140]
+    content:
+      fontSize: 34
+      bold: true
+      color: "#FFFFFF"
+      lineHeight: 1.25
+      text: "Кто будет выбирать, что есть житель вашего дома, — завтра?"
+  - elementId: body
+    elementType: text
+    bounds: [60, 280, 840, 110]
+    content:
+      fontSize: 17
+      color: "#DCE6E0"
+      lineHeight: 1.6
+      text: |
+        <p>Сейчас подтверждённых публичных практик вариативного питания в наших учреждениях — три.</p>
+        <p>Через год их должно быть десять. У каждой в этом зале есть всё, чтобы стать следующей:</p>
+        <p><strong>ступень, журнал, таблица замен и девяносто дней.</strong></p>
+  - elementId: rule
+    elementType: shape
+    bounds: [60, 420, 200, 2]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: contact
+    elementType: text
+    bounds: [60, 440, 840, 50]
+    content:
+      fontSize: 13
+      color: "#B9C9C1"
+      lineHeight: 1.5
+      text: |
+        <p>Доклад, семинарский пакет и все формы — в материалах семинара. Вопросы после сессии: [контакт докладчика].</p>
+        <p>Благодарю за вчерашние журналы, которые вы заведёте в понедельник.</p>
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#9DB4AB"
+      align: [right, top]
+      text: "34"

@@ -1,0 +1,53 @@
+pageType: cover
+background:
+  type: solid
+  color: "$primary"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [70, 60, 700, 20]
+    content:
+      fontSize: 12
+      color: "#DCE6E0"
+      letterSpacing: 3
+      bold: true
+      text: "СЕМИНАР «ПРОСТРАНСТВО НОВЫХ ИДЕЙ 2.0» · МИНТРУД РОССИИ"
+  - elementId: line1
+    elementType: shape
+    bounds: [70, 92, 120, 3]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: title
+    elementType: text
+    bounds: [70, 130, 820, 110]
+    content:
+      fontSize: 52
+      bold: true
+      color: "#FFFFFF"
+      lineHeight: 1.1
+      text: "НЕ ПРОСТО НАКОРМИТЬ"
+  - elementId: subtitle
+    elementType: text
+    bounds: [70, 250, 760, 80]
+    content:
+      fontSize: 18
+      color: "#DCE6E0"
+      lineHeight: 1.4
+      text: "Как организовать безопасное, достойное и вариативное питание людей с психическими нарушениями в домах социального обслуживания"
+  - elementId: meta
+    elementType: text
+    bounds: [70, 380, 760, 60]
+    content:
+      fontSize: 13
+      color: "#B9C9C1"
+      lineHeight: 1.5
+      text: |
+        <p>Санкт-Петербург, 25–27 августа 2026 года · директора и специалисты учреждений из 51 региона</p>
+        <p>Докладчик: [ФИО, должность] · по материалам одноимённого доклада (241 страница, 85 источников)</p>
+  - elementId: foot
+    elementType: text
+    bounds: [70, 490, 820, 24]
+    content:
+      fontSize: 10.5
+      color: "#9DB4AB"
+      text: "Презентация не дублирует доклад — она задаёт вопросы, к которым доклад даёт инструменты"

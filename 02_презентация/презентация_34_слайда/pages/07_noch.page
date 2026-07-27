@@ -1,0 +1,108 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ДИАГРАММА · НОЧНОЙ ИНТЕРВАЛ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Сколько часов житель не ест: от ужина до завтрака"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: lab1
+    elementType: text
+    bounds: [60, 150, 200, 30]
+    content:
+      style: "$body"
+      text: "Швеция — норма"
+  - elementId: bar1
+    elementType: shape
+    bounds: [270, 150, 308, 30]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: val1
+    elementType: text
+    bounds: [588, 150, 120, 30]
+    content:
+      style: "$body"
+      bold: true
+      text: "11 ч"
+  - elementId: lab2
+    elementType: text
+    bounds: [60, 200, 200, 30]
+    content:
+      style: "$body"
+      text: "США — норма CMS"
+  - elementId: bar2
+    elementType: shape
+    bounds: [270, 200, 392, 30]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: val2
+    elementType: text
+    bounds: [672, 200, 120, 30]
+    content:
+      style: "$body"
+      bold: true
+      text: "14 ч"
+  - elementId: lab3
+    elementType: text
+    bounds: [60, 250, 200, 30]
+    content:
+      style: "$body"
+      text: "Типовой замер, РФ"
+  - elementId: bar3
+    elementType: shape
+    bounds: [270, 250, 420, 30]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: val3
+    elementType: text
+    bounds: [700, 250, 120, 30]
+    content:
+      style: "$body"
+      bold: true
+      text: "~15 ч"
+  - elementId: caption
+    elementType: text
+    bounds: [60, 310, 840, 60]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.5
+      text: |
+        <p>Значение для РФ — <strong>оценка по типовым графикам учреждений</strong>, а не статистика: репрезентативных данных нет.</p>
+        <p>Ваша цифра измеряется за три дня — и почти всегда отличается от графика на бумаге.</p>
+  - elementId: fix
+    elementType: text
+    bounds: [60, 396, 840, 70]
+    content:
+      fontSize: 15
+      lineHeight: 1.5
+      color: "$primary"
+      text: |
+        <p><strong>Что с этим делать без денег:</strong> поздний перекус для групп, которым он показан (список — с врачом),</p>
+        <p>сдвиг ужина внутри существующего распорядка, контроль фактического времени подачи, а не расписания.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 500, 780, 30]
+    content:
+      style: "$small"
+      text: "Источники: шведские и американские протоколы питания учреждений (реестр INTERNATIONAL_PRACTICES, 2026); значение РФ — оценка доклада, раздел 6. Метод: сравнение норм и типовых графиков"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "7"

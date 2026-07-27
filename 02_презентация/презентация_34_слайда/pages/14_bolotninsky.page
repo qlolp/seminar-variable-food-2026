@@ -1,0 +1,72 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "КОРОТКИЙ КЕЙС · СТУПЕНЬ 1"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Болотнинский ПНИ: выбор начинается накануне"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: left
+    elementType: text
+    bounds: [60, 132, 500, 250]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.55
+      text: |
+        <p><strong>Как устроено</strong></p>
+        <p style="margin-top:8px">· Диетсестра определяет пару вариантов из таблицы замен — эквиваленты по питательной ценности;</p>
+        <p>· за день до приёма пищи смена обходит отделения и записывает заказ каждого жителя;</p>
+        <p>· кухня готовит по журналу заказа, а не «поровну наугад»;</p>
+        <p>· несколько раз в неделю, завтрак и обед — не «всё и сразу».</p>
+  - elementId: vl
+    elementType: shape
+    bounds: [590, 132, 1, 250]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: right
+    elementType: text
+    bounds: [620, 132, 280, 250]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.55
+      color: "$primary"
+      text: |
+        <p><strong>Что забрать себе</strong></p>
+        <p style="margin-top:8px">Заказ накануне снимает главный страх директоров — срыв раздачи: бороться на линии не за что, каждому приготовлено его.</p>
+        <p style="margin-top:8px">Старт с одной позиции, а не с полного меню.</p>
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 404, 840, 60]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.45
+      text: |
+        <p><strong>Обсуждение в малых группах:</strong> какая позиция в вашем меню — кандидат на первую пару?</p>
+        <p>Кто у вас будет вести журнал заказа, и кто его подменяет?</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: официальный сайт Болотнинского ПНИ, проверено 23.07.2026 (SOURCE_REGISTRY, S015); учреждение — участник семинара"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "14"

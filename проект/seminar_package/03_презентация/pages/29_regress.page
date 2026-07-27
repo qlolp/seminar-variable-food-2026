@@ -1,0 +1,91 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ВОЗРАЖЕНИЕ № 2 · «ЧЕРЕЗ ГОД ВСЁ ВЕРНЁТСЯ»"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Механика регресса — и противоядие"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: st1
+    elementType: text
+    bounds: [60, 140, 260, 150]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>Шаг 1</strong></p>
+        <p>Уходит инициатор — заведующая или диетсестра, на которой всё держалось</p>
+  - elementId: ar1
+    elementType: line
+    bounds: [325, 195, 40, 20]
+    viewBox: [40, 20]
+    points: "0,10 40,10"
+    arrow: [null, arrow]
+    border: {style: solid, width: 2, color: "$muted"}
+  - elementId: st2
+    elementType: text
+    bounds: [370, 140, 260, 150]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>Шаг 2</strong></p>
+        <p>Процедура показа меню «временно» упрощается — на неделю, потом навсегда</p>
+  - elementId: ar2
+    elementType: line
+    bounds: [635, 195, 40, 20]
+    viewBox: [40, 20]
+    points: "0,10 40,10"
+    arrow: [null, arrow]
+    border: {style: solid, width: 2, color: "$muted"}
+  - elementId: st3
+    elementType: text
+    bounds: [680, 140, 220, 150]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>Шаг 3</strong></p>
+        <p>Через квартал журнал ведётся «для проверки», выбор снова делает кухня</p>
+  - elementId: hl
+    elementType: shape
+    bounds: [60, 300, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: antidote
+    elementType: text
+    bounds: [60, 320, 840, 130]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.55
+      text: |
+        <p><strong>Противоядие — не энтузиазм, а закрепление:</strong> приказ вместо договорённости; ответственный и подменяющий; ротация; квартальная панель; взаимные аудиты с соседним учреждением.</p>
+        <p style="margin-top:8px">Внешне учреждение при регрессе остаётся «внедрившим» — положение-то действует. Регресс читается в панели чисел раньше, чем в жалобах: падает доля выбирающих, пустеет журнал срывов.</p>
+        <p style="margin-top:8px"><strong>Практика считается устоявшейся, когда пережила смену двух заведующих.</strong> До этого рубежа она — проект конкретного энтузиаста, и это нужно признавать.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: разделы 8.5 и 31 доклада; форма самоопределения ступени с проверкой на регресс — семинарский пакет, элемент 12"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "29"

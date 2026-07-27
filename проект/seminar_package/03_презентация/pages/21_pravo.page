@@ -1,0 +1,81 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ПРАВОВАЯ РАМКА"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Четыре опоры, на которых стоит вариативность"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: l1
+    elementType: text
+    bounds: [60, 130, 410, 130]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>442-ФЗ, ст. 31–32</strong></p>
+        <p>Базовые права получателя соцуслуг; плата за услуги ограничена 75% среднедушевого дохода — вариативность реализуется <strong>без доплат</strong>.</p>
+  - elementId: l2
+    elementType: text
+    bounds: [490, 130, 410, 130]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>Приказ Минтруда № 520н</strong></p>
+        <p>Действующие рекомендуемые нормы питания (заменил 552н). Норма — раскладка, внутри которой действует таблица замен.</p>
+  - elementId: l3
+    elementType: text
+    bounds: [60, 270, 410, 130]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      text: |
+        <p><strong>СанПиН 3590-20, п. 7.1.11–7.1.14</strong></p>
+        <p>Прямая норма для учреждений соцобслуживания: не менее трёх приёмов пищи в день, диетическое питание по показаниям.</p>
+  - elementId: l4
+    elementType: text
+    bounds: [490, 270, 410, 130]
+    content:
+      fontSize: 14
+      lineHeight: 1.45
+      color: "$primary"
+      text: |
+        <p><strong>Таблица замен к меню-раскладке</strong></p>
+        <p>Механизм эквивалентной замены продуктов — легальный канал вариативности, существующий десятилетиями.</p>
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 420, 840, 56]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.45
+      text: |
+        <p>Вывод юридического раздела доклада: <strong>вариативность не требует изменения закона</strong> —</p>
+        <p>она требует грамотного использования действующих механизмов и документального контура.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: разделы 26–27 доклада; редакции норм проверены 22–23.07.2026 по publication.pravo.gov.ru и сайтам ведомств"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "21"

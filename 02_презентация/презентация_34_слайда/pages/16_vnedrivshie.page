@@ -1,0 +1,55 @@
+pageType: content
+background:
+  type: solid
+  color: "$primary"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      fontSize: 11
+      color: "#B9C9C1"
+      letterSpacing: 2
+      bold: true
+      text: "ВОПРОС ЗАЛУ № 2"
+  - elementId: q
+    elementType: text
+    bounds: [60, 120, 840, 120]
+    content:
+      fontSize: 32
+      bold: true
+      color: "#FFFFFF"
+      lineHeight: 1.25
+      text: "У кого в учреждении житель вчера выбирал, что есть?"
+  - elementId: sub
+    elementType: text
+    bounds: [60, 260, 840, 100]
+    content:
+      fontSize: 17
+      color: "#DCE6E0"
+      lineHeight: 1.6
+      text: |
+        <p>В этом зале сидят директора учреждений, где вариативность уже работает, —</p>
+        <p>Болотнинский, Успенский, Усть-Илимский. Расскажите залу одну минуту:</p>
+        <p><strong>что именно выбрал ваш житель вчера?</strong></p>
+  - elementId: rule
+    elementType: shape
+    bounds: [60, 400, 200, 2]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: note
+    elementType: text
+    bounds: [60, 418, 840, 50]
+    content:
+      fontSize: 13.5
+      color: "#B9C9C1"
+      lineHeight: 1.4
+      text: "Лучшие ответы на трудные вопросы этого семинара дают не слайды, а сидящие рядом коллеги."
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#9DB4AB"
+      align: [right, top]
+      text: "16"

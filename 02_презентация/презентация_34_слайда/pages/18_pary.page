@@ -1,0 +1,105 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ЭКОНОМИКА ОДНОГО БЛЮДА"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Парные эквиваленты: два блюда из одного сырьевого набора"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: base
+    elementType: text
+    bounds: [60, 150, 220, 200]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.5
+      text: |
+        <p><strong>Один сырьевой набор</strong></p>
+        <p style="margin-top:8px">говядина по раскладке, та же закупка, та же мясорубка, та же смена</p>
+  - elementId: arr1
+    elementType: line
+    bounds: [290, 190, 60, 30]
+    viewBox: [60, 30]
+    points: "0,15 60,15"
+    arrow: [null, arrow]
+    border: {style: solid, width: 2, color: "$primary"}
+  - elementId: arr2
+    elementType: line
+    bounds: [290, 290, 60, 30]
+    viewBox: [60, 30]
+    points: "0,15 60,15"
+    arrow: [null, arrow]
+    border: {style: solid, width: 2, color: "$primary"}
+  - elementId: var1
+    elementType: shape
+    bounds: [360, 160, 240, 70]
+    shapeName: rect
+    fill: {type: solid, color: "$softgreen"}
+  - elementId: var1t
+    elementType: text
+    bounds: [372, 168, 216, 54]
+    content:
+      fontSize: 14
+      lineHeight: 1.35
+      text: |
+        <p><strong>Вариант А</strong></p>
+        <p>гуляш с гречкой</p>
+  - elementId: var2
+    elementType: shape
+    bounds: [360, 260, 240, 70]
+    shapeName: rect
+    fill: {type: solid, color: "$softgreen"}
+  - elementId: var2t
+    elementType: text
+    bounds: [372, 268, 216, 54]
+    content:
+      fontSize: 14
+      lineHeight: 1.35
+      text: |
+        <p><strong>Вариант Б</strong></p>
+        <p>гуляш с рисом</p>
+  - elementId: note
+    elementType: text
+    bounds: [630, 160, 270, 200]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      color: "$primary"
+      text: |
+        <p><strong>Оба варианта заранее вписаны в таблицу замен</strong> как эквиваленты — юридически житель получает блюдо по раскладке.</p>
+        <p style="margin-top:8px">Приращение: одна гастроёмкость, одна страница журнала. Приращения сырья — нет.</p>
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 380, 840, 80]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.5
+      text: |
+        <p>Отходы при этом чаще <strong>снижаются</strong>, а не растут: житель ест выбранное, а не обязательное.</p>
+        <p>Это утверждение проверяется в каждом доме собственной ведомостью остатков — а не принимается на веру.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: раздел 29 доклада; пример пары — иллюстративный, конкретные пары определяет диетсестра по таблице замен вашей раскладки"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "18"

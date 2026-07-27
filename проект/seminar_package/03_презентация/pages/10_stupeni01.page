@@ -1,0 +1,87 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ЛЕСТНИЦА · ПОДРОБНО"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Ступени 0 и 1: старт без новых денег"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: l1
+    elementType: text
+    bounds: [60, 132, 410, 60]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      text: "Ступень 0. Мономеню с учётом отказов"
+  - elementId: l1t
+    elementType: text
+    bounds: [60, 190, 410, 220]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      text: |
+        <p>Выбора ещё нет, но:</p>
+        <p>· отказ от блюда влечёт <strong>замену по таблице</strong>, а не пустую тарелку;</p>
+        <p>· остатки разбираются и <strong>влияют на цикл меню</strong>;</p>
+        <p>· журнал отказов фиксирует три отказа подряд — сигнал врачу.</p>
+        <p style="margin-top:10px">Это фундамент: американская федеральная норма требует альтернативу при отказе как базовый минимум.</p>
+  - elementId: vl
+    elementType: shape
+    bounds: [490, 132, 1, 280]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: l2
+    elementType: text
+    bounds: [520, 132, 380, 60]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      text: "Ступень 1. Два варианта одной позиции"
+  - elementId: l2t
+    elementType: text
+    bounds: [520, 190, 380, 220]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      text: |
+        <p>Каша А / каша Б на завтрак, несколько раз в неделю — <strong>подтверждённая конфигурация старта</strong> (Болотнинский ПНИ).</p>
+        <p style="margin-top:8px">Перечень определяет диетсестра, заказ — накануне через журнал.</p>
+        <p style="margin-top:8px"><strong>Цена:</strong> одна вторая гастроёмкость + одна страница журнала в день.</p>
+        <p><strong>Новых денег</strong> при парных эквивалентах практически нет; <strong>новый труд</strong> — есть, и он называется честно.</p>
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 424, 840, 50]
+    content:
+      fontSize: 15
+      bold: true
+      lineHeight: 1.4
+      text: "Вопрос не «вводить ли вариативность», а «какая ступень нам по силам в этом году»."
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источники: раздел 8.2 доклада; 42 CFR §483.60 (альтернатива при отказе); сайт Болотнинского ПНИ, 2026"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "10"

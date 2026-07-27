@@ -1,0 +1,72 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "КОРОТКИЙ КЕЙС · СТУПЕНЬ 2"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Успенский ПНИ: выбор по всем позициям ежедневно"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: left
+    elementType: text
+    bounds: [60, 132, 500, 250]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.55
+      text: |
+        <p><strong>Как устроено</strong></p>
+        <p style="margin-top:8px">· Два варианта первых, вторых, гарниров и напитков — ежедневно, на всех отделениях;</p>
+        <p>· заказ — через журнал, как на ступени 1, но по полной линейке;</p>
+        <p>· объёмы готовки пересчитываются по накопленной статистике выбора;</p>
+        <p>· работает в действующих лимитах финансирования.</p>
+  - elementId: vl
+    elementType: shape
+    bounds: [590, 132, 1, 250]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: right
+    elementType: text
+    bounds: [620, 132, 280, 250]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.55
+      color: "$primary"
+      text: |
+        <p><strong>Что забрать себе</strong></p>
+        <p style="margin-top:8px">Статистика выбора — главный актив ступени 2: через две недели журнал сам говорит, в какой пропорции готовить.</p>
+        <p style="margin-top:8px">Масштаб учреждения — не препятствие: это вопрос логистики журнала.</p>
+  - elementId: bottom
+    elementType: text
+    bounds: [60, 404, 840, 60]
+    content:
+      fontSize: 14.5
+      lineHeight: 1.45
+      text: |
+        <p><strong>Для разговора с учредителем:</strong> Иркутская область показала, что ступень 2 масштабируется</p>
+        <p>до регионального стандарта — два варианта первых и вторых, гарниры ежедневно, на сеть учреждений.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источники: сайт Успенского ПНИ и публикации о региональной модели Иркутской области, проверено 23.07.2026 (SOURCE_REGISTRY, S016, S018)"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "15"

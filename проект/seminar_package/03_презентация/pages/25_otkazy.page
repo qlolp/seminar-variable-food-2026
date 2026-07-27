@@ -1,0 +1,116 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 600, 16]
+    content:
+      style: "$kicker"
+      text: "ДЕРЕВО РЕШЕНИЙ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Житель отказался от еды: что происходит дальше"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: root
+    elementType: shape
+    bounds: [60, 150, 180, 60]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: roott
+    elementType: text
+    bounds: [66, 158, 168, 44]
+    content:
+      fontSize: 13.5
+      bold: true
+      color: "#FFFFFF"
+      lineHeight: 1.3
+      text: "Отказ зафиксирован в журнале"
+  - elementId: a1
+    elementType: line
+    bounds: [250, 160, 60, 20]
+    viewBox: [60, 20]
+    points: "0,10 60,10"
+    arrow: [null, arrow]
+    border: {style: solid, width: 2, color: "$muted"}
+  - elementId: n1
+    elementType: shape
+    bounds: [320, 130, 240, 70]
+    shapeName: rect
+    fill: {type: solid, color: "$softgreen"}
+  - elementId: n1t
+    elementType: text
+    bounds: [330, 138, 220, 54]
+    content:
+      fontSize: 13
+      lineHeight: 1.35
+      text: "<p><strong>Разовый отказ</strong></p><p>замена по таблице — житель не остаётся голодным</p>"
+  - elementId: a2
+    elementType: line
+    bounds: [250, 210, 60, 60]
+    viewBox: [60, 60]
+    points: "0,0 60,60"
+    arrow: [null, arrow]
+    border: {style: solid, width: 2, color: "$muted"}
+  - elementId: n2
+    elementType: shape
+    bounds: [320, 250, 240, 70]
+    shapeName: rect
+    fill: {type: solid, color: "$softgreen"}
+  - elementId: n2t
+    elementType: text
+    bounds: [330, 258, 220, 54]
+    content:
+      fontSize: 13
+      lineHeight: 1.35
+      text: "<p><strong>Три отказа подряд</strong></p><p>сообщение врачу в тот же день — это симптом, а не каприз</p>"
+  - elementId: a3
+    elementType: line
+    bounds: [250, 300, 60, 100]
+    viewBox: [60, 100]
+    points: "0,0 60,100"
+    arrow: [null, arrow]
+    border: {style: solid, width: 2, color: "$muted"}
+  - elementId: n3
+    elementType: shape
+    bounds: [320, 370, 240, 70]
+    shapeName: rect
+    fill: {type: solid, color: "$softgreen"}
+  - elementId: n3t
+    elementType: text
+    bounds: [330, 378, 220, 54]
+    content:
+      fontSize: 13
+      lineHeight: 1.35
+      text: "<p><strong>Массовый отказ от блюда</strong></p><p>разбор на совете → замена в цикле меню</p>"
+  - elementId: side
+    elementType: text
+    bounds: [610, 150, 290, 280]
+    content:
+      fontSize: 14
+      lineHeight: 1.5
+      color: "$primary"
+      text: |
+        <p><strong>Если тарелка уходит в отходы без записи —</strong> учреждение не видит ни голодающего жителя, ни масштаба проблемы.</p>
+        <p style="margin-top:10px">Журнал отказов — бесплатный инструмент ступени 0 и клинический сигнал одновременно.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 505, 760, 24]
+    content:
+      style: "$small"
+      text: "Источник: раздел 12 доклада; порог эскалации устанавливает врач; форма журнала отказов — приложение к докладу"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      text: "25"
