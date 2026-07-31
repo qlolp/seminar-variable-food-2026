@@ -1,14 +1,14 @@
 pageType: content
 background:
   type: solid
-  color: "$primary"
+  color: "$bg"
 elements:
   - elementId: kicker
     elementType: text
     bounds: [60, 34, 600, 16]
     content:
       fontSize: 11
-      color: "#B9C9C1"
+      color: "$muted"
       letterSpacing: 2
       bold: true
       text: "ВОПРОС ЗАЛУ № 2"
@@ -18,7 +18,8 @@ elements:
     content:
       fontSize: 32
       bold: true
-      color: "#FFFFFF"
+      color: "$text"
+      fontFamily: PT Serif
       lineHeight: 1.25
       text: "У кого в учреждении житель вчера выбирал, что есть?"
   - elementId: sub
@@ -26,7 +27,7 @@ elements:
     bounds: [60, 260, 840, 100]
     content:
       fontSize: 17
-      color: "#DCE6E0"
+      color: "#4A463C"
       lineHeight: 1.6
       text: |
         <p>В этом зале сидят директора учреждений, где вариативность уже работает, —</p>
@@ -42,7 +43,7 @@ elements:
     bounds: [60, 418, 840, 50]
     content:
       fontSize: 13.5
-      color: "#B9C9C1"
+      color: "$muted"
       lineHeight: 1.4
       text: "Лучшие ответы на трудные вопросы этого семинара дают не слайды, а сидящие рядом коллеги."
   - elementId: pg
@@ -50,6 +51,6 @@ elements:
     bounds: [900, 508, 40, 20]
     content:
       fontSize: 10.5
-      color: "#9DB4AB"
+      color: "#A8A294"
       align: [right, top]
       text: "16"

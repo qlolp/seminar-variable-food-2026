@@ -18,8 +18,8 @@ figure.fg{margin:18pt 0 14pt;page-break-inside:avoid;}
 .fg-arr{align-self:center;font-size:13pt;}
 .fg-bar-row{display:flex;align-items:center;margin:2.5pt 0;font-size:10pt;}
 .fg-bar-lab{width:34%;text-align:right;padding-right:6pt;line-height:1.15;}
-.fg-bar{height:12pt;background:#4a6b74;}
-.fg-bar2{background:#9a5b4f;}
+.fg-bar{height:12pt;background:#D97757;}
+.fg-bar2{background:#B85C3D;}
 .fg-bar3{background:#8a8a8a;}
 .fg-val{padding-left:5pt;font-size:10pt;}
 table.fg-t{border-collapse:collapse;width:100%;font-size:10pt;margin-top:4pt;}

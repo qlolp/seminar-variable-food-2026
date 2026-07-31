@@ -1,14 +1,14 @@
 pageType: final
 background:
   type: solid
-  color: "$primary"
+  color: "$bg"
 elements:
   - elementId: kicker
     elementType: text
     bounds: [60, 60, 600, 18]
     content:
       fontSize: 11
-      color: "#B9C9C1"
+      color: "$muted"
       letterSpacing: 3
       bold: true
       text: "ВОЗВРАЩАЕМСЯ К ПЕРВОМУ ВОПРОСУ"
@@ -18,7 +18,8 @@ elements:
     content:
       fontSize: 34
       bold: true
-      color: "#FFFFFF"
+      color: "$text"
+      fontFamily: PT Serif
       lineHeight: 1.25
       text: "Кто будет выбирать, что есть житель вашего дома, — завтра?"
   - elementId: body
@@ -26,7 +27,7 @@ elements:
     bounds: [60, 280, 840, 110]
     content:
       fontSize: 17
-      color: "#DCE6E0"
+      color: "#4A463C"
       lineHeight: 1.6
       text: |
         <p>Сейчас подтверждённых публичных практик вариативного питания в наших учреждениях — три.</p>
@@ -42,7 +43,7 @@ elements:
     bounds: [60, 440, 840, 50]
     content:
       fontSize: 13
-      color: "#B9C9C1"
+      color: "$muted"
       lineHeight: 1.5
       text: |
         <p>Доклад, семинарский пакет и все формы — в материалах семинара. Вопросы после сессии: [контакт докладчика].</p>
@@ -52,6 +53,6 @@ elements:
     bounds: [900, 508, 40, 20]
     content:
       fontSize: 10.5
-      color: "#9DB4AB"
+      color: "#A8A294"
       align: [right, top]
       text: "34"
