@@ -1,0 +1,69 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 700, 16]
+    content:
+      style: "$kicker"
+      text: 'ДОРОЖНАЯ КАРТА · 90 ДНЕЙ'
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Пилот по неделям: когда замер, когда решение"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: chart
+    elementType: chart
+    bounds: [60, 126, 840, 330]
+    fontFamily: "Noto Sans"
+    data:
+      cols: ["Этап", "Недели"]
+      rows:
+      - ["Замер «до» по журналам", 2]
+      - ["Журнал заказа: первая позиция выбора", 4]
+      - ["Обучение смены и таблица замен", 2]
+      - ["Стабильная работа и статистика", 3]
+      - ["Разбор и решение совета", 2]
+    series:
+      - type: bar
+        encode: {x: "Недели", y: "Этап"}
+        name: "Недель"
+        fill: "$accent"
+        dataLabels: {show: true, color: "#FFFFFF"}
+    legend: false
+    yAxis: {type: "category", reverse: true, label: {color: "#4A463C"}, axisLine: {color: "#D6D1C4"}, gridLine: false}
+    xAxis: {min: 0, max: 6, title: "недель", label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+    barWidth: 0.55
+
+  - elementId: note
+    elementType: text
+    bounds: [60, 462, 840, 40]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.45
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "Тринадцать недель ≈ 90 дней. Каждый этап заканчивается точкой честной остановки — и это тоже результат пилота."
+
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 760, 24]
+    content:
+      style: "$small"
+      text: "Раздел 35 доклада; проект приказа о пилоте — приложение"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#A8A294"
+      align: [right, top]
+      text: "33"

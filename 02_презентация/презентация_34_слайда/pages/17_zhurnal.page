@@ -118,4 +118,4 @@ elements:
     content:
       style: "$small"
       align: [right, top]
-      text: "17"
+      text: "20"

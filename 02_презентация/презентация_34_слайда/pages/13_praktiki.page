@@ -58,4 +58,4 @@ elements:
     content:
       style: "$small"
       align: [right, top]
-      text: "13"
+      text: "15"

@@ -1,0 +1,67 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 700, 16]
+    content:
+      style: "$kicker"
+      text: 'ТЕРАПИЯ И ВЕС · ВТОРОЙ ЗАМЕР'
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "У скольких пациентов вес вырастет клинически значимо"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: chart
+    elementType: chart
+    bounds: [60, 126, 840, 330]
+    fontFamily: "Noto Sans"
+    data:
+      cols: ["Препарат", "Доля"]
+      rows:
+      - ["Клозапин", 76.3]
+      - ["Оланзапин", 36.9]
+      - ["Рисперидон", 23.0]
+    series:
+      - type: bar
+        encode: {x: "Препарат", y: "Доля"}
+        name: "Пациенты со значимой прибавкой, %"
+        fill: "$accent"
+        dataLabels: {show: true, numberFormat: "0.0", color: "#FFFFFF"}
+    legend: false
+    yAxis: {min: 0, max: 100, title: "% пациентов (прибавка ≥ 7 % массы)", label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+    xAxis: {label: {color: "#4A463C"}, axisLine: {color: "#D6D1C4"}, gridLine: false}
+    barWidth: 0.45
+
+  - elementId: note
+    elementType: text
+    bounds: [60, 462, 840, 40]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.45
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "Это не «редкая реакция», а плановый риск: мониторинг веса и таблица замен меню прописываются заранее, до первой прибавки."
+
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 760, 24]
+    content:
+      style: "$small"
+      text: "Консенсус CRWG, реестр MEDICATION доклада"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#A8A294"
+      align: [right, top]
+      text: "28"

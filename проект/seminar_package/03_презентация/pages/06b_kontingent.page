@@ -1,0 +1,66 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 700, 16]
+    content:
+      style: "$kicker"
+      text: 'КТО ЗА СТОЛОМ'
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Две цифры о контингенте, которые решают дизайн стола"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: chart
+    elementType: chart
+    bounds: [60, 140, 840, 300]
+    fontFamily: "Noto Sans"
+    data:
+      cols: ["Группа", "Доля"]
+      rows:
+      - ["признаны недееспособными — решения о еде принимает опека", 74]
+      - ["старше 45 лет — растут диета по состоянию и саркопения", 65]
+    series:
+      - type: bar
+        encode: {x: "Доля", y: "Группа"}
+        name: "Доля жителей, %"
+        fill: "$accent"
+        dataLabels: {show: true, color: "#FFFFFF"}
+    legend: false
+    yAxis: {type: "category", label: {color: "#4A463C"}, axisLine: {color: "#D6D1C4"}, gridLine: false}
+    xAxis: {min: 0, max: 100, title: "% жителей", label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+    barWidth: 0.45
+
+  - elementId: note
+    elementType: text
+    bounds: [60, 462, 840, 40]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.45
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "Три четверти решений о еде принимает не сам житель — поэтому выбор оформляется через опекуна и врача, а не «вопросом за столом»."
+
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 760, 24]
+    content:
+      style: "$small"
+      text: "Вторичная аналитика ПНИ, реестр S004 доклада"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#A8A294"
+      align: [right, top]
+      text: "7"

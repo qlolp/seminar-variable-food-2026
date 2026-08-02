@@ -116,4 +116,4 @@ elements:
     content:
       style: "$small"
       align: [right, top]
-      text: "20"
+      text: "24"

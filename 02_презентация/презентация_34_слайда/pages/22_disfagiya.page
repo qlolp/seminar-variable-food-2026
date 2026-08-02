@@ -70,4 +70,4 @@ elements:
     content:
       style: "$small"
       align: [right, top]
-      text: "22"
+      text: "26"

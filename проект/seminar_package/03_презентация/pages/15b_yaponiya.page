@@ -1,0 +1,84 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 700, 16]
+    content:
+      style: "$kicker"
+      text: 'МЕЖДУНАРОДНЫЙ ОПЫТ'
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Япония: от доплаты до обязательного стандарта"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: chart
+    elementType: chart
+    bounds: [60, 150, 430, 290]
+    fontFamily: "Noto Sans"
+    data:
+      cols: ["Состав", "Госпитализации"]
+      rows:
+      - ["1 диетолог", 30.6]
+      - ["2 диетолога", 20.3]
+    series:
+      - type: bar
+        encode: {x: "Состав", y: "Госпитализации"}
+        name: "Госпитализации, %"
+        fill: "$accent"
+        dataLabels: {show: true, color: "#FFFFFF"}
+    legend: false
+    yAxis: {min: 0, max: 40, title: "% за период наблюдения", label: {color: "#8A8578"}, gridLine: {color: "#E5E2D8"}}
+    xAxis: {label: {color: "#4A463C"}, axisLine: {color: "#D6D1C4"}, gridLine: false}
+    barWidth: 0.4
+
+  - elementId: tlh
+    elementType: text
+    bounds: [530, 130, 370, 20]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      fontFamily: "Noto Sans"
+      text: "16 лет регуляторного пути"
+  - elementId: tl1
+    elementType: text
+    bounds: [530, 158, 370, 84]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.5
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "<p><strong>2005</strong> — доплата за нутритивный менеджмент</p><p><strong>2020</strong> — охват 87–94 % учреждений</p><p><strong>2021</strong> — обязательный стандарт с вычетом за неисполнение и сдачей данных в базу LIFE</p>"
+  - elementId: tl2
+    elementType: text
+    bounds: [530, 250, 370, 200]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.5
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "<p>Связка «доплата → охват → стандарт» дала измеримый эффект: меньший риск ухудшения уровня ухода (HR 0,90).</p><p>Слева — разница в госпитализациях между одним и двумя управляющими диетологами. Оговорка доклада: не РКИ, используется как порядок величин.</p>"
+
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 760, 24]
+    content:
+      style: "$small"
+      text: "Раздел 4 доклада; источники I-jp2005, I-jpcov, I-jp2021, I-jpdiet"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#A8A294"
+      align: [right, top]
+      text: "18"

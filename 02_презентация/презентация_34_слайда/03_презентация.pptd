@@ -52,27 +52,33 @@ pages:
   - pages/04_obed.page
   - pages/05_izmereniya.page
   - pages/06_cifry.page
+  - pages/06b_kontingent.page
   - pages/07_noch.page
   - pages/08_terminy.page
   - pages/09_lestnica.page
   - pages/10_stupeni01.page
   - pages/11_stupeni25.page
   - pages/12_kriterii.page
+  - pages/12b_iddsi.page
   - pages/13_praktiki.page
   - pages/14_bolotninsky.page
   - pages/15_uspensky.page
+  - pages/15b_yaponiya.page
   - pages/16_vnedrivshie.page
   - pages/17_zhurnal.page
+  - pages/17b_proporsii.page
   - pages/18_pary.page
   - pages/19_dengi.page
   - pages/20_proverka.page
   - pages/21_pravo.page
   - pages/22_disfagiya.page
   - pages/23_ves.page
+  - pages/23b_metabolika.page
   - pages/24_vrach.page
   - pages/25_otkazy.page
   - pages/26_audit.page
   - pages/27_pilot.page
+  - pages/27b_gantt.page
   - pages/28_panel.page
   - pages/29_regress.page
   - pages/30_trudnye.page
