@@ -1,0 +1,81 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 700, 16]
+    content:
+      style: "$kicker"
+      text: 'НАУКА 2024–2026 · ПОСЛЕДНИЕ ПРОВЕРКИ'
+  - elementId: title
+    elementType: text
+    bounds: [60, 56, 840, 40]
+    content:
+      style: "$h1"
+      text: "Что подтвердилось в рецензируемой литературе"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 108, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: i1
+    elementType: text
+    bounds: [60, 128, 405, 118]
+    content:
+      fontSize: 13
+      lineHeight: 1.5
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "<p><strong>Япония: по базе LIFE уже вышли исследования.</strong> Первый анализ штатных диетологов по национальной базе LIFE (Hori et al., 2025) — система «доплата → охват → стандарт → данные» работает как источник доказательств.</p>"
+  - elementId: i2
+    elementType: text
+    bounds: [495, 128, 405, 118]
+    content:
+      fontSize: 13
+      lineHeight: 1.5
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "<p><strong>IDDSI: персоналу нужна поддержка.</strong> Griffin et al. (2024): сотрудники домов ухода применяют шкалу с ошибками без обучения — прямое подтверждение нашего вывода «изменение достигнуто обучением, а не оборудованием».</p>"
+  - elementId: i3
+    elementType: text
+    bounds: [60, 256, 405, 118]
+    content:
+      fontSize: 13
+      lineHeight: 1.5
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "<p><strong>Трапеза — про достоинство, а не только про еду.</strong> Модель Maggie Beer (BMC Geriatrics, 2026) в residential aged care и обзор трапезы глазами жителей (Harstäde et al., 2025): организация стола влияет не меньше меню.</p>"
+  - elementId: i4
+    elementType: text
+    bounds: [495, 256, 405, 118]
+    content:
+      fontSize: 13
+      lineHeight: 1.5
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "<p><strong>Вес и саркопения — плановая работа.</strong> Обзор прибавки веса на антипсихотиках (Seiter et al., 2025) и метаанализ белковых вмешательств при саркопении (Yoshimura et al., 2025): мониторинг веса и белок — доказанная практика.</p>"
+  - elementId: note
+    elementType: text
+    bounds: [60, 392, 840, 60]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.45
+      color: "$text"
+      fontFamily: "Noto Sans"
+      text: "Выводы литературы совпадают с тезисом доклада: еда — это выбор и процедура, а не только калорийность нормы."
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 760, 24]
+    content:
+      style: "$small"
+      text: "Hori 2025; Griffin 2024; Cartwright 2026; Harstäde 2025; Seiter 2025; Yoshimura 2025 — список в докладе"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#A8A294"
+      align: [right, top]
+      text: "41"
