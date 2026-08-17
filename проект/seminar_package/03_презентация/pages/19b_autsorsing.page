@@ -1,0 +1,76 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [70, 50, 820, 20]
+    content:
+      fontSize: 12
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "АУТСОРСИНГ ПИТАНИЯ · ГЛАВА 44"
+  - elementId: title
+    elementType: text
+    bounds: [70, 80, 820, 60]
+    content:
+      fontSize: 30
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      text: "Контракт как место вариативности: 8 строк"
+  - elementId: lead
+    elementType: text
+    bounds: [70, 150, 820, 40]
+    content:
+      fontSize: 14
+      lineHeight: 1.4
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "Кухня на аутсорсинге — не конец выбора, а его новое место. Если этих строк нет в спецификации, вариативность невозможна вне зависимости от желания директора."
+  - elementId: l1
+    elementType: text
+    bounds: [70, 210, 420, 210]
+    content:
+      fontSize: 13
+      lineHeight: 1.55
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "1. Группы взаимозаменяемых позиций вместо монопозиций<br>2. Пропорции по статистике выбора, корректировка раз в квартал<br>3. Не менее двух вариантов основных позиций; срыв выбора ≠ исполнение<br>4. Замены при недопоставке — эквивалент из той же группы, акт"
+  - elementId: l2
+    elementType: text
+    bounds: [500, 210, 400, 210]
+    content:
+      fontSize: 13
+      lineHeight: 1.55
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "5. Качество текстур в спецификации — дисфагия не заложник «дешёвого фарша»<br>6. Приёмка и суточные пробы — по п. 56 СанПиН (подп. 12, отбор — подп. 4)<br>7. Меню-цикл с раскладкой — приложение к контракту, сверка с 520н<br>8. Ежемесячная отчётность: доля выбора, остатки — в панель чисел"
+  - elementId: warn
+    elementType: shape
+    bounds: [60, 400, 840, 50]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$soft"
+  - elementId: warnt
+    elementType: text
+    bounds: [80, 408, 800, 40]
+    content:
+      fontSize: 12.5
+      lineHeight: 1.4
+      color: "$primary"
+      bold: true
+      fontFamily: Noto Sans
+      text: "Красная линия: исполнение контроля качества можно делегировать поставщику — ответственность перед жителями и проверяющими остаётся у учреждения."
+  - elementId: src
+    elementType: text
+    bounds: [70, 470, 820, 40]
+    content:
+      fontSize: 10
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Источники: СанПиН 2.3/2.4.4282-26 (п. 56 подп. 4/12/14; до 01.09.2026 — СанПиН 2.3/2.4.3590-20); 44-ФЗ; приказ Минтруда № 520н. Раздел 44, приложения 43–44 доклада."
