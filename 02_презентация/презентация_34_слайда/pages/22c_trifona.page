@@ -1,0 +1,107 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [70, 50, 820, 20]
+    content:
+      fontSize: 12
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ТРИ НЕЗАМЕЧЕННЫЕ ЗАЩИТЫ · КЛИНИЧЕСКИЙ БЛОК"
+  - elementId: title
+    elementType: text
+    bounds: [70, 80, 820, 60]
+    content:
+      fontSize: 30
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      text: "Полость рта · стакан воды · стул"
+  - elementId: card1
+    elementType: shape
+    bounds: [60, 170, 270, 270]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$soft"
+  - elementId: t1
+    elementType: text
+    bounds: [80, 190, 230, 230]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "РОТ"
+  - elementId: t1b
+    elementType: text
+    bounds: [80, 220, 230, 210]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "Ежедневный уход за полостью рта: пневмонии 11 % против 19 % в контроле (РКИ, 366 проживающих). Обзор 4 РКИ: ~1 из 10 смертей от аспирационной пневмонии предотвратим. Две минуты на жителя, без врача."
+  - elementId: card2
+    elementType: shape
+    bounds: [345, 170, 270, 270]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$soft"
+  - elementId: t2
+    elementType: text
+    bounds: [365, 190, 230, 230]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "СТАКАН"
+  - elementId: t2b
+    elementType: text
+    bounds: [365, 220, 230, 210]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "Загущённые напитки доказанно снижают потребление жидкости; данных о снижении осложнений — нет. Замер: «выпито за сутки» в панели чисел; чайная пауза как шестое событие; индикаторы дегидратации на посту."
+  - elementId: card3
+    elementType: shape
+    bounds: [630, 170, 270, 270]
+    shapeName: rect
+    fill:
+      type: solid
+      color: "$soft"
+  - elementId: t3
+    elementType: text
+    bounds: [650, 190, 230, 230]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "СТУЛ"
+  - elementId: t3b
+    elementType: text
+    bounds: [650, 220, 230, 210]
+    content:
+      fontSize: 13
+      lineHeight: 1.4
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "Запор у 30–60 % на клозапине (до 80 % по объективным тестам); тяжёлый — фатален (иблиус, перфорация). Да/нет за сутки в постовом журнале; 3 суток без стула — врач сегодня."
+  - elementId: bottom
+    elementType: text
+    bounds: [70, 470, 820, 40]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Источники: Yoneyama 2002 (JAGS, РКИ); Müller 2015 (Gerodontology); Steele 2021 (Breathe/ERS); Every-Palmer 2017; NHS SPS. Разделы 10.7–10.10, 13.10 доклада."
