@@ -2,7 +2,7 @@
 """Сборка доклада: MD (с {{Sxxx}}/{{M-key}}/{{I-key}} + [[FIG:key]]) → HTML (TNR 14/1.5) → PDF + DOCX."""
 import os, re, glob, json, subprocess, sys, openpyxl
 
-BASE = '/mnt/agents/output/seminar_variable_food_2026'
+BASE = 'C:/Users/Evgenii/AppData/Local/Temp/seminar-food/проект'
 OUT  = os.path.join(BASE, 'output')
 os.makedirs(OUT, exist_ok=True)
 sys.path.insert(0, os.path.join(BASE, 'scripts'))

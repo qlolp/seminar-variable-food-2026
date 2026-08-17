@@ -5,8 +5,8 @@ import json
 import re
 from pathlib import Path
 
-SRC = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/seminar_text.md")
-OUT = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/seminar_content.json")
+SRC = Path("data/seminar_text.md")
+OUT = Path("data/seminar_content.json")
 
 # Skip the first 8 pages (cover + 2 TOC pages + 4 intro pages + 1 extra intro)
 SKIP_PAGES = 8

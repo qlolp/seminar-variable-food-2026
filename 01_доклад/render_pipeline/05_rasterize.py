@@ -8,8 +8,8 @@ except ImportError:
     print("pypdfium2 not installed", file=sys.stderr)
     sys.exit(1)
 
-PDF = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/seminar_beautiful.pdf")
-OUT_DIR = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/preview")
+PDF = Path("./seminar_beautiful.pdf")
+OUT_DIR = Path("./preview")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 pdf = pdfium.PdfDocument(str(PDF))

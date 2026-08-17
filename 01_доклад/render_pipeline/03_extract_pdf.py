@@ -13,8 +13,8 @@ from pathlib import Path
 import pdfplumber
 
 SRC = Path("/mnt/c/Users/Evgenii/OneDrive/Desktop/seminar/seminar_variable_food_2026/output/Доклад_для_семинара.pdf")
-OUT_MD = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/seminar_text.md")
-OUT_META = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/seminar_meta.json")
+OUT_MD = Path("./seminar_text.md")
+OUT_META = Path("./seminar_meta.json")
 
 
 def main() -> int:

@@ -4,7 +4,7 @@ and check that tables are present.
 from pypdf import PdfReader
 from pathlib import Path
 
-PDF = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/seminar_beautiful.pdf")
+PDF = Path("./seminar_beautiful.pdf")
 r = PdfReader(str(PDF))
 print(f"Pages: {len(r.pages)}")
 print(f"Size: {PDF.stat().st_size/1024:.1f} KB")

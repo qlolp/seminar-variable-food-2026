@@ -17,9 +17,9 @@ import tempfile
 from pathlib import Path
 
 # Source files
-CONTENT_JSON = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/seminar_content.json")
-OUTPUT_PDF   = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/seminar_beautiful.pdf")
-TOKENS_JSON  = Path("/mnt/c/Users/Evgenii/.mavis/agents/mavis/workspace/tokens_cyrillic.json")
+CONTENT_JSON = Path("./seminar_content.json")
+OUTPUT_PDF   = Path("./seminar_beautiful.pdf")
+TOKENS_JSON  = Path("./tokens_cyrillic.json")
 
 # TTF fonts (Cyrillic-supporting, on the WSL mount of Windows fonts)
 WIN_FONTS = Path("/mnt/c/Windows/Fonts")
