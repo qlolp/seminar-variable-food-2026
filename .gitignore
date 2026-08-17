@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Сборка (генерируемые артефакты — только при необходимости)
+проект/output/_report.pdf
+проект/output/_report_color.pdf
+
+# Системные
+Thumbs.db
+.DS_Store
