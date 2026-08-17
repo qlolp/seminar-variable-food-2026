@@ -120,3 +120,7 @@ Thu Jul 23 03:51:21 CST 2026
 - приложения 37 (пищевой паспорт при поступлении) и 38 (памятка easy read; Accessible Information Standard / Mencap);
 - слайд 22c «Полость рта · стакан воды · стул»; easy-read PDF в раздатки.
 Реестры: +12 строк MEDICAL_EVIDENCE, +1 INTERNATIONAL_PRACTICES (итого 108 источников). Пересобраны MD/HTML/PDF (258/218 стр.)/DOCX/pipeline/презентация (42 слайда).
+
+## 2026-08-17 (ночь). Красивая версия: собственный пайплайн вёрстки
+
+`scripts/build_beautiful.py`: _report_full.md → HTML → PDF (headless Edge). Playfair Display (woff2, cyrillic) + PT Serif/PT Sans (Google Fonts, SIL OFL, лежат в output/fonts/). Тёмно-синяя обложка fullbleed (#152238) с teal-акцентами (#2A9D8F), полноформатные разделители частей с римскими цифрами, колонтитулы. 199 стр. Превью 6 страниц перегенерированы (pypdfium2).
