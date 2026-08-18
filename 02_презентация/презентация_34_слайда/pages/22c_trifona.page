@@ -46,7 +46,7 @@ elements:
       lineHeight: 1.4
       color: "$text"
       fontFamily: Noto Sans
-      text: "Ежедневный уход за полостью рта: пневмонии 11 % против 19 % в контроле (РКИ, 366 проживающих). Обзор 4 РКИ: ~1 из 10 смертей от аспирационной пневмонии предотвратим. Две минуты на жителя, без врача."
+      text: "РКИ домов ухода, n=366: щётка после еды, часто повидон-йод, стоматолог раз в неделю → пневмонии 11 % vs 19 %. ~1 из 10 смертей — Sjögren в обзоре Müller (J Dent Res). Группа зависимости, не «две минуты на всех»."
   - elementId: card2
     elementType: shape
     bounds: [345, 170, 270, 270]
@@ -96,7 +96,7 @@ elements:
       lineHeight: 1.4
       color: "$text"
       fontFamily: Noto Sans
-      text: "Запор у 30–60 % на клозапине (до 80 % по объективным тестам); тяжёлый — фатален (иблиус, перфорация). Да/нет за сутки в постовом журнале; 3 суток без стула — врач сегодня."
+      text: "Запор у 30–60 % на клозапине (до 80 % по объективным тестам); тяжёлый — фатален (илеус, перфорация). Да/нет за сутки в постовом журнале (152-ФЗ); 3 суток без стула — врач сегодня."
   - elementId: bottom
     elementType: text
     bounds: [70, 470, 820, 40]
@@ -104,4 +104,12 @@ elements:
       fontSize: 10.5
       color: "$muted"
       fontFamily: Noto Sans
-      text: "Источники: Yoneyama 2002 (JAGS, РКИ); Müller 2015 (Gerodontology); Steele 2021 (Breathe/ERS); Every-Palmer 2017; NHS SPS. Разделы 10.7–10.10, 13.10 доклада."
+      text: "Источники: Yoneyama 2002 (JAGS); Müller 2015 (J Dent Res; 1/10 — Sjögren 2008); Simon J. Steele 2021 (Breathe); Every-Palmer 2017; NHS SPS. Разделы 10.7–10.11, 13.10; прил. 37."
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#A8A294"
+      align: [right, top]
+      text: "26а"

@@ -22,7 +22,7 @@ elements:
     fill: {type: solid, color: "$line"}
   - elementId: doc
     elementType: text
-    bounds: [60, 132, 410, 250]
+    bounds: [60, 132, 410, 280]
     content:
       fontSize: 14
       lineHeight: 1.5
@@ -34,15 +34,20 @@ elements:
         <p>· усиленное питание и смеси;</p>
         <p>· лекарственно-пищевая таблица;</p>
         <p>· кому выбор доступен и в каком формате;</p>
-        <p>· оценка систематического отказа от еды.</p>
+        <p>· оценка систематического отказа от еды;</p>
+        <p>· слабительные и реакция на запор (клозапин);</p>
+        <p>· микронутриенты и сдвиг еды при инсулине;</p>
+        <p>· MUST / потеря веса — не путать с набором;</p>
+        <p>· комфортное кормление в конце жизни;</p>
+        <p>· витаминизация при ОРИ.</p>
   - elementId: vl
     elementType: shape
-    bounds: [490, 132, 1, 250]
+    bounds: [490, 132, 1, 280]
     shapeName: rect
     fill: {type: solid, color: "$line"}
   - elementId: dir
     elementType: text
-    bounds: [520, 132, 380, 250]
+    bounds: [520, 132, 380, 280]
     content:
       fontSize: 14
       lineHeight: 1.5
@@ -57,7 +62,7 @@ elements:
         <p>· обучение смен распознаванию признаков.</p>
   - elementId: bottom
     elementType: text
-    bounds: [60, 400, 840, 70]
+    bounds: [60, 420, 840, 70]
     content:
       fontSize: 14.5
       lineHeight: 1.5

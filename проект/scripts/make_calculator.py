@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Калькулятор стоимости вариативности (XLSX с формулами)."""
+from pathlib import Path
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment
 
@@ -74,5 +75,5 @@ for i, pct in enumerate([10, 20, 30]):
     ws3.cell(row=r, column=3).value = f"=ROUND('Отходы'!B7*B{r}/100,0)"
     ws3.cell(row=r, column=4).value = f"=ROUND('Отходы'!B8*B{r}/100,0)"
 
-wb.save(r'C:\Users\Evgenii\OneDrive\Документы\DSeek\repo-svf\проект\Калькулятор_стоимости_вариативности.xlsx')
+wb.save(str(Path(__file__).resolve().parents[1] / 'Калькулятор_стоимости_вариативности.xlsx'))
 print('calculator saved')
