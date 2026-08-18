@@ -89,6 +89,9 @@ def extract_toc(pdf_path, headings):
         t = (p.extract_text() or "").replace("\n", " ")
         t = re.sub(r"\s+", " ", t)
         pages.append(t)
+    # вариант без пробелов: WeasyPrint иногда извлекает заголовки с лишними
+    # пробелами (например, «Часть IV . Одностраничные…»), что ломало поиск
+    pages_n = [re.sub(r"\s+", "", t) for t in pages]
     # skip cover + TOC: pages that mention «Содержание» densely
     start = 0
     for i, t in enumerate(pages[:12]):
@@ -98,9 +101,10 @@ def extract_toc(pdf_path, headings):
     cursor = start
     for aid, title in headings:
         needle = title[:36]
+        needle_n = re.sub(r"\s+", "", needle)
         found = None
         for i in range(cursor, len(pages)):
-            if needle in pages[i] or title[:24] in pages[i]:
+            if needle in pages[i] or title[:24] in pages[i] or needle_n in pages_n[i]:
                 found = i + 1
                 cursor = i
                 break
