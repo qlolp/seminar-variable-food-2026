@@ -86,12 +86,11 @@ def render_text(el):
     c = el.get("content") or {}
     raw = c.get("text") or ""
     css = text_css(c, STYLES)
-    if "<p" in raw or "<strong" in raw or "<span" in raw:
-        inner = raw
-        # resolve $muted etc in inline styles
+    if any(tag in raw for tag in ("<p", "<strong", "<span", "<br", "<em", "<b>")):
+        inner = raw.replace("<br>", "<br/>")
         inner = re.sub(r"\$([a-z]+)", lambda m: THEME.get(m.group(1), m.group(0)), inner)
     else:
-        inner = esc(raw).replace("\n", "<br>")
+        inner = esc(raw).replace("\n", "<br/>")
     return (
         f'<div class="el" style="left:{b[0]}px;top:{b[1]}px;width:{b[2]}px;height:{b[3]}px;{css}">{inner}</div>'
     )

@@ -72,6 +72,7 @@ pages:
   - pages/19b_autsorsing.page
   - pages/20_proverka.page
   - pages/20b_sentyabr.page
+  - pages/20c_karantin.page
   - pages/21_pravo.page
   - pages/22_disfagiya.page
   - pages/22c_trifona.page
