@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Два варианта без второй кухни</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #264653; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#264653; font-family:'Times New Roman', serif; color:#ffffff;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#e9c46a; font-weight:600;">ТЕХНОЛОГИЯ ВАРИАТИВНОСТИ</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#ffffff;">Два&nbsp;варианта блюда:<br/>без&nbsp;второй кухни</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:174px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <!-- 5 шагов в timeline -->
+  <div style="position:absolute; left:60px; top:212px; width:840px;">
+
+    <div style="display:flex; align-items:flex-start; margin-bottom:14px;">
+      <svg width="36" height="36" viewBox="0 0 36 36" style="flex-shrink:0; margin-right:14px;" aria-hidden="true">
+        <rect width="36" height="36" rx="6" fill="#e9c46a"/>
+        <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#264653" font-family="Times New Roman">1</text>
+      </svg>
+      <div style="flex:1;">
+        <p style="margin:0; font-size:14px; font-weight:700; color:#ffffff; line-height:1.2;">Пара эквивалентов в&nbsp;раскладке</p>
+        <p style="margin:3px 0 0 0; font-size:12px; color:#c5d0d8; line-height:1.35;">Гречка ↔ рис, курица ↔ рыба, яблоко ↔ груша. Уже есть в&nbsp;ваших таблицах замен.</p>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; margin-bottom:14px;">
+      <svg width="36" height="36" viewBox="0 0 36 36" style="flex-shrink:0; margin-right:14px;" aria-hidden="true">
+        <rect width="36" height="36" rx="6" fill="#e9c46a"/>
+        <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#264653" font-family="Times New Roman">2</text>
+      </svg>
+      <div style="flex:1;">
+        <p style="margin:0; font-size:14px; font-weight:700; color:#ffffff; line-height:1.2;">Закупка&nbsp;— группами, а&nbsp;не&nbsp;монопозициями</p>
+        <p style="margin:3px 0 0 0; font-size:12px; color:#c5d0d8; line-height:1.35;">«Крупы гарнирные: гречка, рис, пшено». Пропорции&nbsp;— по&nbsp;статистике выбора, корректируются раз&nbsp;в&nbsp;квартал.</p>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; margin-bottom:14px;">
+      <svg width="36" height="36" viewBox="0 0 36 36" style="flex-shrink:0; margin-right:14px;" aria-hidden="true">
+        <rect width="36" height="36" rx="6" fill="#e9c46a"/>
+        <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#264653" font-family="Times New Roman">3</text>
+      </svg>
+      <div style="flex:1;">
+        <p style="margin:0; font-size:14px; font-weight:700; color:#ffffff; line-height:1.2;">Варка параллельно на&nbsp;одной плите</p>
+        <p style="margin:3px 0 0 0; font-size:12px; color:#c5d0d8; line-height:1.35;">Два&nbsp;гастроёмкости рядом, разные позиции. Без&nbsp;второго повара&nbsp;— в&nbsp;те&nbsp;же минуты.</p>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; margin-bottom:14px;">
+      <svg width="36" height="36" viewBox="0 0 36 36" style="flex-shrink:0; margin-right:14px;" aria-hidden="true">
+        <rect width="36" height="36" rx="6" fill="#2a9d8f"/>
+        <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#ffffff" font-family="Times New Roman">4</text>
+      </svg>
+      <div style="flex:1;">
+        <p style="margin:0; font-size:14px; font-weight:700; color:#ffffff; line-height:1.2;">Линия раздачи&nbsp;— два&nbsp;варианта визуально</p>
+        <p style="margin:3px 0 0 0; font-size:12px; color:#c5d0d8; line-height:1.35;">Карточки с&nbsp;названием, подпись «А / Б». Стандартный вариант&nbsp;— всегда, для&nbsp;тех, кто&nbsp;не&nbsp;выбрал.</p>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start;">
+      <svg width="36" height="36" viewBox="0 0 36 36" style="flex-shrink:0; margin-right:14px;" aria-hidden="true">
+        <rect width="36" height="36" rx="6" fill="#2a9d8f"/>
+        <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#ffffff" font-family="Times New Roman">5</text>
+      </svg>
+      <div style="flex:1;">
+        <p style="margin:0; font-size:14px; font-weight:700; color:#ffffff; line-height:1.2;">Журнал выбора + журнал замен</p>
+        <p style="margin:3px 0 0 0; font-size:12px; color:#c5d0d8; line-height:1.35;">Кто выбрал что, что выдано вместо отказа. Два&nbsp;журнала&nbsp;— доказательство перед&nbsp;проверкой.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:11px; color:#8a9aa6; font-style:italic;">Доклад, раздел&nbsp;19, приложение&nbsp;7. Реальный кейс: 4&nbsp;учреждения, 0&nbsp;случаев «вторая кухня».</p>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#e9c46a"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#264653" font-family="Times New Roman">15</text>
+  </svg>
+
+</div>
+</body>
+</html>

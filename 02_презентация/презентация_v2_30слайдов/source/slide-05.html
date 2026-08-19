@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Цифры, которые останавливают</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #264653; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#264653; font-family:'Times New Roman', serif; color:#ffffff;">
+
+  <!-- лейбл -->
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#e9c46a; font-weight:600;">ДОКАЗАТЕЛЬНАЯ БАЗА</p>
+
+  <!-- заголовок -->
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:38px; line-height:1.1; font-weight:700; color:#ffffff;">Числа, которые<br/>останавливают</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:188px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <!-- сетка 2×2 с цифрами -->
+  <div style="position:absolute; left:60px; top:220px; width:840px;">
+
+    <!-- верхний ряд -->
+    <div style="display:flex; gap:30px; margin-bottom:24px;">
+
+      <!-- карточка 1 -->
+      <div style="flex:1; background:#3a5560; border-radius:8px; padding:24px 28px; position:relative;">
+        <svg width="6" height="56" style="position:absolute; left:0; top:24px;" aria-hidden="true">
+          <rect width="6" height="56" fill="#e76f51"/>
+        </svg>
+        <p style="margin:0; font-size:64px; line-height:1; font-weight:700; color:#ffffff; font-family:Times New Roman;">15–20<span style="font-size:32px; color:#e9c46a;"> лет</span></p>
+        <p style="margin:8px 0 0 0; font-size:14px; line-height:1.3; color:#c5d0d8; font-weight:400;">умирают раньше люди с&nbsp;тяжёлыми психическими расстройствами</p>
+        <p style="margin:6px 0 0 0; font-size:11px; color:#8a9aa6; font-style:italic;">Correll 2022, World Psychiatry</p>
+      </div>
+
+      <!-- карточка 2 -->
+      <div style="flex:1; background:#3a5560; border-radius:8px; padding:24px 28px; position:relative;">
+        <svg width="6" height="56" style="position:absolute; left:0; top:24px;" aria-hidden="true">
+          <rect width="6" height="56" fill="#e76f51"/>
+        </svg>
+        <p style="margin:0; font-size:64px; line-height:1; font-weight:700; color:#ffffff; font-family:Times New Roman;">7<span style="font-size:32px; color:#e9c46a;">×</span></p>
+        <p style="margin:8px 0 0 0; font-size:14px; line-height:1.3; color:#c5d0d8; font-weight:400;">выше смертность от&nbsp;пневмонии vs. популяция</p>
+        <p style="margin:6px 0 0 0; font-size:11px; color:#8a9aa6; font-style:italic;">Correll 2022, мета-анализ 135&nbsp;исследований</p>
+      </div>
+
+    </div>
+
+    <!-- нижний ряд -->
+    <div style="display:flex; gap:30px;">
+
+      <!-- карточка 3 -->
+      <div style="flex:1; background:#3a5560; border-radius:8px; padding:24px 28px; position:relative;">
+        <svg width="6" height="56" style="position:absolute; left:0; top:24px;" aria-hidden="true">
+          <rect width="6" height="56" fill="#2a9d8f"/>
+        </svg>
+        <p style="margin:0; font-size:64px; line-height:1; font-weight:700; color:#ffffff; font-family:Times New Roman;">74<span style="font-size:32px; color:#e9c46a;"> %</span></p>
+        <p style="margin:8px 0 0 0; font-size:14px; line-height:1.3; color:#c5d0d8; font-weight:400;">жителей ПНИ признаны недееспособными</p>
+        <p style="margin:6px 0 0 0; font-size:11px; color:#8a9aa6; font-style:italic;">данные Минтруда, 2024</p>
+      </div>
+
+      <!-- карточка 4 -->
+      <div style="flex:1; background:#3a5560; border-radius:8px; padding:24px 28px; position:relative;">
+        <svg width="6" height="56" style="position:absolute; left:0; top:24px;" aria-hidden="true">
+          <rect width="6" height="56" fill="#2a9d8f"/>
+        </svg>
+        <p style="margin:0; font-size:64px; line-height:1; font-weight:700; color:#ffffff; font-family:Times New Roman;">22–70<span style="font-size:32px; color:#e9c46a;"> %</span></p>
+        <p style="margin:8px 0 0 0; font-size:14px; line-height:1.3; color:#c5d0d8; font-weight:400;">дисфагия у&nbsp;принимающих антипсихотики</p>
+        <p style="margin:6px 0 0 0; font-size:11px; color:#8a9aa6; font-style:italic;">Miarons&nbsp;Font 2017, систематический обзор</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- нижняя строка -->
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:12px; color:#9aa8b3; font-style:italic;">Каждая цифра имеет источник, каждый источник&nbsp;— дату проверки. Доклад, разделы&nbsp;4, 9, 10, 16.</p>
+
+  <!-- номер страницы -->
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#e9c46a"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#264653" font-family="Times New Roman">5</text>
+  </svg>
+
+</div>
+</body>
+</html>

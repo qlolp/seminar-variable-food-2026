@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Один обед — пять конфликтов</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #f7f3ec; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f7f3ec; font-family:'Times New Roman', serif; color:#264653;">
+
+  <!-- левая часть: изображение -->
+  <img src="imgs/dining_community.jpg" style="position:absolute; left:0; top:0; width:380px; height:540px; object-fit:cover;" alt=""/>
+
+  <!-- затемнение на изображении -->
+  <svg width="380" height="540" style="position:absolute; left:0; top:0; pointer-events:none;" aria-hidden="true">
+    <rect width="380" height="540" fill="#264653" fill-opacity="0.15"/>
+  </svg>
+
+  <!-- мини-логотип на изображении -->
+  <p style="position:absolute; left:30px; top:30px; margin:0; font-size:11px; letter-spacing:3px; color:#ffffff; font-weight:600;">СЦЕНА · 12:30 · ОБЕД</p>
+
+  <!-- правая часть: текст -->
+  <p style="position:absolute; left:420px; top:48px; margin:0; font-size:13px; letter-spacing:3px; color:#2a9d8f; font-weight:600;">СОБИРАТЕЛЬНАЯ СИТУАЦИЯ</p>
+
+  <h2 style="position:absolute; left:420px; top:74px; width:480px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#264653;">Пять конфликтов<br/>за&nbsp;одним столом</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:420px; top:188px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <p style="position:absolute; left:420px; top:206px; width:480px; margin:0; font-size:15px; line-height:1.5; color:#3a4a52; font-weight:400;">В&nbsp;типовом учреждении за&nbsp;один обед сталкиваются пять проблем. Каждая имеет решение. Но&nbsp;вместе они образуют систему.</p>
+
+  <!-- список 5 конфликтов -->
+  <div style="position:absolute; left:420px; top:294px; width:480px;">
+
+    <div style="display:flex; align-items:center; margin-bottom:10px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" style="flex-shrink:0; margin-right:10px;" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#e76f51"/>
+        <text x="12" y="12" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#ffffff" font-family="Times New Roman">1</text>
+      </svg>
+      <p style="margin:0; font-size:14px; color:#264653; line-height:1.3;">Жительница М. хочет тишины. Шум столовой — для неё пытка.</p>
+    </div>
+
+    <div style="display:flex; align-items:center; margin-bottom:10px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" style="flex-shrink:0; margin-right:10px;" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#e76f51"/>
+        <text x="12" y="12" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#ffffff" font-family="Times New Roman">2</text>
+      </svg>
+      <p style="margin:0; font-size:14px; color:#264653; line-height:1.3;">Житель К. на&nbsp;клозапине. Родственники принесли два&nbsp;термоса кофе.</p>
+    </div>
+
+    <div style="display:flex; align-items:center; margin-bottom:10px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" style="flex-shrink:0; margin-right:10px;" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#e76f51"/>
+        <text x="12" y="12" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#ffffff" font-family="Times New Roman">3</text>
+      </svg>
+      <p style="margin:0; font-size:14px; color:#264653; line-height:1.3;">Житель Н. давится. Сигналы видны, но&nbsp;кто-то должен их&nbsp;заметить.</p>
+    </div>
+
+    <div style="display:flex; align-items:center; margin-bottom:10px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" style="flex-shrink:0; margin-right:10px;" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#e76f51"/>
+        <text x="12" y="12" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#ffffff" font-family="Times New Roman">4</text>
+      </svg>
+      <p style="margin:0; font-size:14px; color:#264653; line-height:1.3;">Житель П. на&nbsp;оланзапине. Сиделка отказывает во&nbsp;второй котлете.</p>
+    </div>
+
+    <div style="display:flex; align-items:center; margin-bottom:10px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" style="flex-shrink:0; margin-right:10px;" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#e76f51"/>
+        <text x="12" y="12" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#ffffff" font-family="Times New Roman">5</text>
+      </svg>
+      <p style="margin:0; font-size:14px; color:#264653; line-height:1.3;">Неговорящий житель Л. Не&nbsp;ясно, что он&nbsp;любит. Карты нет.</p>
+    </div>
+
+  </div>
+
+  <!-- подвал -->
+  <p style="position:absolute; left:420px; top:498px; margin:0; font-size:11px; color:#8a9aa6; font-style:italic;">Доклад, раздел&nbsp;5. Собирательный, не&nbsp;реальный случай.</p>
+
+  <!-- номер страницы -->
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#e9c46a" font-family="Times New Roman">4</text>
+  </svg>
+
+</div>
+</body>
+</html>

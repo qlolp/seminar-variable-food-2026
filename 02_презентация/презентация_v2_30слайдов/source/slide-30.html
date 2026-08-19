@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Спасибо</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #264653; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#264653; font-family:'Times New Roman', serif; color:#ffffff;">
+
+  <!-- золотой акцент сверху -->
+  <svg width="220" height="6" style="position:absolute; left:60px; top:60px;" aria-hidden="true">
+    <rect width="220" height="6" fill="#e9c46a"/>
+  </svg>
+
+  <p style="position:absolute; left:60px; top:80px; margin:0; font-size:13px; letter-spacing:4px; color:#e9c46a; font-weight:600;">СЕМИНАР · 25–27 АВГУСТА 2026</p>
+
+  <h1 style="position:absolute; left:60px; top:120px; margin:0; font-size:96px; line-height:1; font-weight:700; color:#ffffff;">Спасибо.</h1>
+
+  <p style="position:absolute; left:60px; top:230px; width:600px; margin:0; font-size:20px; line-height:1.4; color:#c5d0d8; font-weight:400;">Через год&nbsp;— десять публичных кейсов, не&nbsp;четыре. Методика отработана. Система учится на&nbsp;своих числах.</p>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:330px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#2a9d8f"/>
+  </svg>
+
+  <!-- Контакты -->
+  <div style="position:absolute; left:60px; top:360px; width:600px;">
+    <p style="margin:0; font-size:18px; color:#ffffff; font-weight:600; line-height:1.3;">Чистяков Евгений Владимирович</p>
+    <p style="margin:4px 0 0 0; font-size:14px; color:#c5d0d8; line-height:1.3;">директор СПб ГАСУСОН «ДСО „Серафимовский"»</p>
+    <p style="margin:14px 0 0 0; font-size:13px; color:#e9c46a; line-height:1.3;">pni9.ru · github.com/qlolp/seminar-variable-food-2026</p>
+  </div>
+
+  <!-- правая часть: кольцо -->
+  <svg width="320" height="320" style="position:absolute; right:40px; top:120px;" aria-hidden="true">
+    <circle cx="160" cy="160" r="150" stroke="#2a9d8f" stroke-width="2" fill="none" opacity="0.4"/>
+    <circle cx="160" cy="160" r="120" stroke="#e9c46a" stroke-width="2" fill="none" opacity="0.6"/>
+    <circle cx="160" cy="160" r="90" stroke="#2a9d8f" stroke-width="1" fill="none" opacity="0.5"/>
+    <circle cx="160" cy="160" r="60" stroke="#e9c46a" stroke-width="1" fill="none" opacity="0.7"/>
+  </svg>
+
+  <!-- цитата в правом нижнем -->
+  <div style="position:absolute; left:60px; bottom:48px; width:840px;">
+    <p style="margin:0; font-size:13px; color:#8a9aa6; font-style:italic; line-height:1.4;">«Если в&nbsp;вашем доме что-то из&nbsp;написанного не&nbsp;сработает&nbsp;— это не&nbsp;отказ от&nbsp;темы, а&nbsp;данные. Напишите их&nbsp;в&nbsp;панель и&nbsp;измените метод».</p>
+  </div>
+
+  <!-- нижняя строка -->
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:11px; color:#9aa8b3; letter-spacing:2px;">САНКТ-ПЕТЕРБУРГ · 2026 · МИНТРУД РОССИИ</p>
+
+  <!-- страница -->
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#e9c46a"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#264653" font-family="Times New Roman">30</text>
+  </svg>
+
+</div>
+</body>
+</html>
