@@ -1,0 +1,216 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "МОДЕЛЬ · ЛЕСТНИЦА ВАРИАТИВНОСТИ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Между мономеню и полным выбором — не пропасть, а лестница"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: sub
+    elementType: text
+    bounds: [60, 124, 840, 30]
+    content:
+      fontSize: 13
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Каждая ступень — работающая модель с известной ценой. Вопрос не «вводить ли», а «какая ступень нам по силам в этом году»."
+  - elementId: s0
+    elementType: shape
+    bounds: [60, 176, 126, 190]
+    shapeName: rect
+    fill: {type: solid, color: "#E4EFE9", radius: 8}
+  - elementId: s0n
+    elementType: text
+    bounds: [76, 190, 100, 40]
+    content:
+      fontSize: 26
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "0"
+  - elementId: s0t
+    elementType: text
+    bounds: [72, 236, 106, 118]
+    content:
+      fontSize: 11
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "Мономеню + замена при отказе. Житель не остаётся голодным. Фундамент."
+  - elementId: s1
+    elementType: shape
+    bounds: [210, 176, 126, 190]
+    shapeName: rect
+    fill: {type: solid, color: "#E4EFE9", radius: 8}
+  - elementId: s1n
+    elementType: text
+    bounds: [226, 190, 100, 40]
+    content:
+      fontSize: 26
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "1"
+  - elementId: s1t
+    elementType: text
+    bounds: [222, 236, 106, 118]
+    content:
+      fontSize: 11
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "Два варианта в одной позиции (завтрак/обед, часть дней). Болотнино."
+  - elementId: s2
+    elementType: shape
+    bounds: [360, 176, 126, 190]
+    shapeName: rect
+    fill: {type: solid, color: "#E4EFE9", radius: 8}
+  - elementId: s2n
+    elementType: text
+    bounds: [376, 190, 100, 40]
+    content:
+      fontSize: 26
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "2"
+  - elementId: s2t
+    elementType: text
+    bounds: [372, 236, 106, 118]
+    content:
+      fontSize: 11
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "Выбор по всем позициям ежедневно. Успенский ПНИ, модель Иркутской области."
+  - elementId: s3
+    elementType: shape
+    bounds: [510, 176, 126, 190]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: s3n
+    elementType: text
+    bounds: [526, 190, 100, 40]
+    content:
+      fontSize: 26
+      bold: true
+      color: "$muted"
+      fontFamily: PT Serif
+      text: "3"
+  - elementId: s3t
+    elementType: text
+    bounds: [522, 236, 106, 118]
+    content:
+      fontSize: 11
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "Выбор на линии раздачи («шведский стол») — выборочно: салаты, напитки, десерты."
+  - elementId: s4
+    elementType: shape
+    bounds: [660, 176, 126, 190]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: s4n
+    elementType: text
+    bounds: [676, 190, 100, 40]
+    content:
+      fontSize: 26
+      bold: true
+      color: "$muted"
+      fontFamily: PT Serif
+      text: "4"
+  - elementId: s4t
+    elementType: text
+    bounds: [672, 236, 106, 118]
+    content:
+      fontSize: 11
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "Семейная подача за столом — точечно, где рассадка позволяет."
+  - elementId: s5
+    elementType: shape
+    bounds: [810, 176, 90, 190]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: s5n
+    elementType: text
+    bounds: [822, 190, 70, 40]
+    content:
+      fontSize: 26
+      bold: true
+      color: "$muted"
+      fontFamily: PT Serif
+      text: "5"
+  - elementId: s5t
+    elementType: text
+    bounds: [818, 236, 78, 118]
+    content:
+      fontSize: 10.5
+      color: "$text"
+      lineHeight: 1.3
+      fontFamily: Noto Sans
+      text: "«Своя кухня» — горизонт сопровождаемого проживания."
+  - elementId: zone
+    elementType: text
+    bounds: [60, 382, 840, 28]
+    content:
+      fontSize: 12.5
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Ступени 0–2 — подтверждённая российская практика · 3–5 — горизонт, а не массовая модель"
+  - elementId: check
+    elementType: text
+    bounds: [60, 424, 840, 66]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Ступень определяется вчерашним днём, а не положением:</strong> был ли второй вариант физически на линии вчера? Зафиксирован ли вчерашний выбор в журнале? Есть ли житель, получивший вчера не то, что ему принесли бы по умолчанию?</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, раздел 8 — лестница моделей и критерии реального выбора"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 273, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "12"

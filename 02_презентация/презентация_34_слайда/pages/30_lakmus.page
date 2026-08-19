@@ -1,0 +1,64 @@
+pageType: content
+background:
+  type: solid
+  color: "$dark"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$accent"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ПАУЗА · ОДИН ВОПРОС"
+  - elementId: q
+    elementType: text
+    bounds: [60, 170, 840, 120]
+    content:
+      fontSize: 40
+      bold: true
+      color: "$cream"
+      lineHeight: 1.2
+      fontFamily: PT Serif
+      text: "А сами бы вы так ели?"
+  - elementId: sub
+    elementType: text
+    bounds: [60, 306, 840, 80]
+    content:
+      fontSize: 17
+      color: "$sand"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "Тридцать дней одного и того же завтрака. Без выбора. Без права отказаться — «каприз». С холодной тарелкой, потому что вас кормят последним."
+  - elementId: ask
+    elementType: text
+    bounds: [60, 410, 840, 60]
+    content:
+      fontSize: 15
+      color: "$accent"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "<strong>Это не риторика — это критерий проверки любого решения.</strong> Если ответ «нет» — начинайте с замера. Если «да» — тогда замер всё равно покажет, где вы ошибаетесь."
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "#8FA79B"
+      fontFamily: Noto Sans
+      text: "Доклад, раздел 37.3 — возражение-лакмус"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 682, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#8FA79B"
+      align: [right, top]
+      text: "30"

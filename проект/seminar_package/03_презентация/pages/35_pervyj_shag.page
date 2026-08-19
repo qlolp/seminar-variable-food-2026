@@ -1,0 +1,170 @@
+pageType: content
+background:
+  type: solid
+  color: "$dark"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$accent"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ПЕРВЫЙ ШАГ · НЕДЕЛЯ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$cream"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Семь дней замера отделяют убеждение от знания"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "#2E4A40"}
+  - elementId: days
+    elementType: text
+    bounds: [60, 140, 840, 30]
+    content:
+      fontSize: 13
+      color: "$sand"
+      fontFamily: Noto Sans
+      text: "Понедельник, 8:30. Ничьих разрешений не нужно. Форма — приложение 25 доклада."
+  - elementId: d1
+    elementType: shape
+    bounds: [60, 186, 104, 104]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 8}
+  - elementId: d1t
+    elementType: text
+    bounds: [72, 200, 84, 80]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$cream"
+      text: "Пн"
+  - elementId: d2
+    elementType: shape
+    bounds: [182, 186, 104, 104]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 8}
+  - elementId: d2t
+    elementType: text
+    bounds: [194, 200, 84, 80]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$cream"
+      text: "Вт"
+  - elementId: d3
+    elementType: shape
+    bounds: [304, 186, 104, 104]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 8}
+  - elementId: d3t
+    elementType: text
+    bounds: [316, 200, 84, 80]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$cream"
+      text: "Ср"
+  - elementId: d4
+    elementType: shape
+    bounds: [426, 186, 104, 104]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 8}
+  - elementId: d4t
+    elementType: text
+    bounds: [438, 200, 84, 80]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$cream"
+      text: "Чт"
+  - elementId: d5
+    elementType: shape
+    bounds: [548, 186, 104, 104]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 8}
+  - elementId: d5t
+    elementType: text
+    bounds: [560, 200, 84, 80]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$cream"
+      text: "Пт"
+  - elementId: d6
+    elementType: shape
+    bounds: [670, 186, 104, 104]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 8}
+  - elementId: d6t
+    elementType: text
+    bounds: [682, 200, 84, 80]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$cream"
+      text: "Сб"
+  - elementId: d7
+    elementType: shape
+    bounds: [792, 186, 108, 104]
+    shapeName: rect
+    fill: {type: solid, color: "#0F1E19", radius: 8}
+  - elementId: d7t
+    elementType: text
+    bounds: [804, 200, 88, 80]
+    content:
+      fontSize: 15
+      bold: true
+      color: "$accent"
+      text: "Вс"
+  - elementId: measure
+    elementType: text
+    bounds: [60, 316, 840, 74]
+    content:
+      fontSize: 14.5
+      color: "$sand"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "Три веса в день: <strong>выдано</strong> · <strong>возвращено с тарелок</strong> · <strong>остатки кухни</strong>. Плюс отказы с эскалацией и фактическое время раздачи. Построчно, не одной суммой: «сколько жителей оставляют больше трети порции», а не «сколько в среднем оставляют»."
+  - elementId: result
+    elementType: text
+    bounds: [60, 406, 840, 76]
+    content:
+      fontSize: 16
+      color: "$cream"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Что бы замер ни показал — дальше у вас будет не мнение о питании в вашем доме, а знание о нём.</strong></p>
+        <p>Из этого знания растёт всё остальное: пилот, совет жителей, разговор с учредителем, а через год — возможно, ваш рассказ на таком же семинаре. Третий рассказ внедривших, которому зал поверит: за ним будут ваши числа.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "#8FA79B"
+      fontFamily: Noto Sans
+      text: "Доклад, разделы 22.3 и 43.4 — семидневный замер; форма — приложение 25"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 795, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#8FA79B"
+      align: [right, top]
+      text: "35"

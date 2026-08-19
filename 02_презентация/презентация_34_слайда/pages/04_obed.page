@@ -5,56 +5,171 @@ background:
 elements:
   - elementId: kicker
     elementType: text
-    bounds: [60, 34, 600, 16]
+    bounds: [60, 30, 700, 16]
     content:
-      style: "$kicker"
-      text: "КОРОТКИЙ КЕЙС"
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "СИТУАЦИЯ · ОДИН ОБЕД"
   - elementId: title
     elementType: text
-    bounds: [60, 56, 840, 40]
+    bounds: [60, 54, 840, 42]
     content:
-      style: "$h1"
-      text: "Один обед, который знает каждый"
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Один обед — пять конфликтов. И ни один из них — не про повара"
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 106, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
-  - elementId: scene
-    elementType: text
-    bounds: [60, 132, 840, 210]
-    content:
-      fontSize: 15.5
-      lineHeight: 1.6
-      text: |
-        <p><strong>12:30.</strong> Тележка выходит из кухни. Первое отделение получает еду горячей.</p>
-        <p><strong>12:55.</strong> Третье отделение. Суп тёплый. Котлета остыла.</p>
-        <p><strong>13:10.</strong> Последний стол. Житель, который не ест гречку с детства, смотрит на гречку. Ест два ложки. Тарелка уходит в отходы.</p>
-        <p><strong>18:00.</strong> Ужин. Следующий приём пищи — завтрак в 8:30.</p>
-  - elementId: rule
+  - elementId: c1
     elementType: shape
-    bounds: [60, 356, 200, 2]
+    bounds: [60, 134, 404, 128]
     shapeName: rect
-    fill: {type: solid, color: "$accent"}
-  - elementId: point
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: c1n
     elementType: text
-    bounds: [60, 374, 840, 90]
+    bounds: [76, 146, 60, 30]
     content:
-      fontSize: 16
-      lineHeight: 1.5
+      fontSize: 20
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "01"
+  - elementId: c1t
+    elementType: text
+    bounds: [76, 182, 372, 66]
+    content:
+      fontSize: 13.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
       text: |
-        <p>В этом обеде нет нарушений. Меню утверждено, нормы соблюдены, журналы заполнены.</p>
-        <p><strong>И при этом житель остался голодным, еда остыла, а ночной интервал составил четырнадцать с половиной часов.</strong></p>
+        <p><strong>Очередь против помощи.</strong></p>
+        <p>Кто ест сам — уже с холодным. Кому нужна помощь — ждёт: четыре сиделки на двенадцать кормимых.</p>
+  - elementId: c2
+    elementType: shape
+    bounds: [496, 134, 404, 128]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: c2n
+    elementType: text
+    bounds: [512, 146, 60, 30]
+    content:
+      fontSize: 20
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "02"
+  - elementId: c2t
+    elementType: text
+    bounds: [512, 182, 372, 66]
+    content:
+      fontSize: 13.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>«Он опять не ест кашу».</strong></p>
+        <p>Третий день подряд — и никто не связал это с началом дисфагии. Логопеда в штате нет.</p>
+  - elementId: c3
+    elementType: shape
+    bounds: [60, 276, 404, 128]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: c3n
+    elementType: text
+    bounds: [76, 288, 60, 30]
+    content:
+      fontSize: 20
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "03"
+  - elementId: c3t
+    elementType: text
+    bounds: [76, 324, 372, 66]
+    content:
+      fontSize: 13.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Кофе и клозапин.</strong></p>
+        <p>Две кружки крепкого кофе от родственников — и вечером «плохой день». Кухня об этом не знает.</p>
+  - elementId: c4
+    elementType: shape
+    bounds: [496, 276, 404, 128]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: c4n
+    elementType: text
+    bounds: [512, 288, 60, 30]
+    content:
+      fontSize: 20
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "04"
+  - elementId: c4t
+    elementType: text
+    bounds: [512, 324, 372, 66]
+    content:
+      fontSize: 13.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Вторая котлета.</strong></p>
+        <p>«Вам нельзя, вы полнеете» — хотя ограничение рациона никто не назначал. Сиделка решила за врача.</p>
+  - elementId: c5
+    elementType: shape
+    bounds: [60, 418, 840, 66]
+    shapeName: rect
+    fill: {type: solid, color: "#F4E7D8", radius: 8}
+  - elementId: c5n
+    elementType: text
+    bounds: [76, 430, 60, 30]
+    content:
+      fontSize: 20
+      bold: true
+      color: "$risk"
+      fontFamily: PT Serif
+      text: "05"
+  - elementId: c5t
+    elementType: text
+    bounds: [140, 428, 640, 48]
+    content:
+      fontSize: 13.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>«Приведите журналы в порядок».</strong> Накануне комиссии. Самое опасное из пяти — имитация контроля.</p>
   - elementId: src
     elementType: text
-    bounds: [60, 505, 760, 24]
+    bounds: [60, 508, 700, 20]
     content:
-      style: "$small"
-      text: "Сцена собрана из типовых замеров учреждений (разделы 4–5 доклада); цифры — иллюстративные, ваши измеряются за три дня"
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, раздел 5 — собирательная ситуация; все персонажи вымышлены"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 91, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
     content:
-      style: "$small"
+      fontSize: 10.5
+      color: "$muted"
       align: [right, top]
       text: "4"

@@ -1,0 +1,75 @@
+pageType: content
+background:
+  type: solid
+  color: "$dark"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$accent"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ФИНАЛ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 150, 840, 130]
+    content:
+      fontSize: 40
+      bold: true
+      color: "$cream"
+      lineHeight: 1.2
+      fontFamily: PT Serif
+      text: "Человек за столом ждёт не доклада. Он ждёт обеда, в котором есть место его выбору."
+  - elementId: sub
+    elementType: text
+    bounds: [60, 300, 840, 44]
+    content:
+      fontSize: 16
+      color: "$sand"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Теперь вы знаете, как такой обед организовать. Всё остальное — в докладе: 284 страницы, 121 источник, 22 кейса, 45 приложений."
+  - elementId: steps
+    elementType: text
+    bounds: [60, 370, 840, 70]
+    content:
+      fontSize: 15
+      color: "$accent"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Три шага на выходе из зала:</strong></p>
+        <p>замер — семь дней · пара — на линии или в подносе · строка — в положении о питании и в спецификации контракта</p>
+  - elementId: thanks
+    elementType: text
+    bounds: [60, 462, 840, 40]
+    content:
+      fontSize: 18
+      bold: true
+      color: "$cream"
+      fontFamily: PT Serif
+      text: "Спасибо. Продолжение — за вашей линией раздачи, в ближайший понедельник, 8:30."
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "#8FA79B"
+      fontFamily: Noto Sans
+      text: "Доклад, разделы 43.4 и 43.5 — первый шаг и письмо директору через год"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 840, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#8FA79B"
+      align: [right, top]
+      text: "37"

@@ -1,0 +1,128 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ПРАКТИКА · РОССИЙСКИЕ КЕЙСЫ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Четыре учреждения уже это сделали — без специальных бюджетов"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: k1
+    elementType: shape
+    bounds: [60, 134, 404, 158]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: k1t
+    elementType: text
+    bounds: [78, 148, 372, 130]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong style="font-size:14.5px">Болотнинский ПНИ</strong> · Новосибирская область, с 2024</p>
+        <p>Выбор из двух на завтраке и обеде, несколько раз в неделю. Перечень пар определяет диетсестра. Ступень 1.</p>
+  - elementId: k2
+    elementType: shape
+    bounds: [496, 134, 404, 158]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: k2t
+    elementType: text
+    bounds: [514, 148, 372, 130]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong style="font-size:14.5px">Успенский ПНИ</strong> · Новосибирская область, с 2024</p>
+        <p>Два вторых, два салата, два напитка — ежедневно, все отделения. «Страхи не подтвердились». Ступень 2.</p>
+  - elementId: k3
+    elementType: shape
+    bounds: [60, 306, 404, 158]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: k3t
+    elementType: text
+    bounds: [78, 320, 372, 130]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong style="font-size:14.5px">Усть-Илимский дом социального обслуживания</strong> · Иркутская область, с сентября 2024</p>
+        <p>Начали с опроса предпочтений жителей. Ступень 1–2.</p>
+  - elementId: k4
+    elementType: shape
+    bounds: [496, 306, 404, 158]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: k4t
+    elementType: text
+    bounds: [514, 320, 372, 130]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong style="font-size:14.5px">ДСО «Серафимовский»</strong> · Санкт-Петербург, 2025</p>
+        <p>Дом докладчика. Назвал и цену перехода: полное масштабирование требует оборудования и ставок — честно, без прикрас.</p>
+  - elementId: region
+    elementType: shape
+    bounds: [60, 478, 840, 34]
+    shapeName: rect
+    fill: {type: solid, color: "#E4EFE9", radius: 8}
+  - elementId: regiont
+    elementType: text
+    bounds: [84, 484, 800, 24]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "<strong>Иркутская область</strong> — единственный регион, масштабировавший модель решением области (S018)"
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, раздел 25 — четыре подтверждённых кейса; источники S015–S018, S030"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 295, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "13"

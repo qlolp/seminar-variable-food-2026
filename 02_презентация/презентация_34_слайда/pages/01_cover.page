@@ -1,79 +1,79 @@
 pageType: cover
 background:
   type: solid
-  color: "$bg"
+  color: "$dark"
 elements:
   - elementId: spark
     elementType: text
-    bounds: [70, 58, 34, 34]
+    bounds: [70, 56, 40, 34]
     content:
-      fontSize: 26
+      fontSize: 24
       color: "$accent"
       fontFamily: Noto Sans
       text: "✦"
   - elementId: brand
     elementType: text
-    bounds: [112, 64, 620, 26]
+    bounds: [112, 62, 640, 26]
     content:
-      fontSize: 16
-      color: "$text"
+      fontSize: 15
+      color: "$cream"
       fontFamily: PT Serif
       text: "Пространство новых идей 2.0"
   - elementId: kicker
     elementType: text
-    bounds: [70, 150, 760, 20]
+    bounds: [70, 146, 820, 20]
     content:
       fontSize: 12
-      color: "$primary"
+      color: "$accent"
       letterSpacing: 3
       bold: true
       fontFamily: Noto Sans
       text: "МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ · МИНТРУД РОССИИ"
   - elementId: title
     elementType: text
-    bounds: [70, 190, 820, 110]
+    bounds: [70, 186, 830, 110]
     content:
-      fontSize: 52
+      fontSize: 54
       bold: true
-      color: "$text"
-      lineHeight: 1.1
+      color: "$cream"
+      lineHeight: 1.05
       fontFamily: PT Serif
       text: "Не просто накормить"
   - elementId: line1
     elementType: shape
-    bounds: [70, 272, 90, 3]
+    bounds: [70, 268, 90, 3]
     shapeName: rect
     fill: {type: solid, color: "$accent"}
   - elementId: subtitle
     elementType: text
-    bounds: [70, 292, 760, 80]
+    bounds: [70, 290, 800, 84]
     content:
       fontSize: 18
-      color: "#4A463C"
+      color: "$sand"
       lineHeight: 1.4
       fontFamily: Noto Sans
       text: "Как организовать безопасное, достойное и вариативное питание людей с психическими нарушениями в домах социального обслуживания"
   - elementId: topline
     elementType: shape
-    bounds: [70, 420, 820, 1]
+    bounds: [70, 414, 820, 1]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "#2E4A40"}
   - elementId: meta
     elementType: text
-    bounds: [70, 436, 760, 60]
+    bounds: [70, 428, 820, 62]
     content:
-      fontSize: 13
-      color: "$muted"
+      fontSize: 12.5
+      color: "$sand"
       lineHeight: 1.5
       fontFamily: Noto Sans
       text: |
         <p>Санкт-Петербург, 25–27 августа 2026 года · директора и специалисты учреждений из 51 региона</p>
-        <p>Докладчик: Чистяков Е. В., директор СПб ГАСУСОН «ДСО „Серафимовский"» · доклад, 284 стр., 121 источник</p>
+        <p>Докладчик: Чистяков Е. В., директор СПб ГАСУСОН «ДСО „Серафимовский“» · доклад: 284 стр., 121 источник, 22 кейса, 45 приложений</p>
   - elementId: foot
     elementType: text
-    bounds: [70, 504, 820, 24]
+    bounds: [70, 502, 820, 24]
     content:
       fontSize: 10.5
-      color: "#A8A294"
+      color: "#8FA79B"
       fontFamily: Noto Sans
-      text: "Презентация не дублирует доклад — она задаёт вопросы, к которым доклад даёт инструменты"
+      text: "Презентация — маршрут по докладу: вопросы, цифры, инструменты. Каждый слайд указывает на раздел, где всё разобрано."

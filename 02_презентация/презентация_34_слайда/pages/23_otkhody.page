@@ -1,0 +1,112 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ДЕНЬГИ · ОТХОДЫ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Отходы — единственная честная «экономия» выбора"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: calc
+    elementType: shape
+    bounds: [60, 134, 404, 200]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: calc1
+    elementType: text
+    bounds: [78, 148, 372, 34]
+    content:
+      fontSize: 12.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Иллюстративный расчёт · дом на 150 жителей:"
+  - elementId: calc2
+    elementType: text
+    bounds: [78, 186, 372, 60]
+    content:
+      fontSize: 22
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      text: "80 г остатков × 3 приёма × 150 = 36 кг в день"
+  - elementId: calc3
+    elementType: text
+    bounds: [78, 252, 372, 60]
+    content:
+      fontSize: 22
+      bold: true
+      color: "$risk"
+      fontFamily: PT Serif
+      text: "≈ 9 000 ₽ в день"
+  - elementId: calc4
+    elementType: text
+    bounds: [78, 312, 372, 20]
+    content:
+      fontSize: 11.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "при условной цене 250 ₽/кг. Цифры условные — порядок действий настоящий."
+  - elementId: logic
+    elementType: text
+    bounds: [496, 134, 404, 200]
+    content:
+      fontSize: 13.5
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Логика проста:</strong> несъеденная порция — оплаченное сырьё в мусорном ведре. Выбор снижает долю несъеденного, потому что нелюбимые блюда перестают попадать на тарелку.</p>
+        <p><strong>Но доказательной базы эффекта в наших условиях нет.</strong> Поэтому формула доклада — замер до и после: семь дней до пилота и семь дней через 90.</p>
+  - elementId: steps
+    elementType: text
+    bounds: [60, 360, 840, 96]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Как замер превращается в рубли:</strong> три веса в день — выдано, возвращено с тарелок, остатки кухни · топ-3 блюд по остаткам сверяются с циклом · масса недельных отходов × закупочная цена килограмма = ваша строка «выброшенных денег».</p>
+        <p><strong>Два диагноза:</strong> тарелочные остатки — про вкус и порцию; кухонные — про планирование объёмов. Снижение после выбора — гипотеза, которую подтверждает только повторный замер.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, разделы 29.5 и 29.11 — отходы и перевод замера в рубли; форма — приложение 25"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 523, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "23"

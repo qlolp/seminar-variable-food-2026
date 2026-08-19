@@ -5,104 +5,161 @@ background:
 elements:
   - elementId: kicker
     elementType: text
-    bounds: [60, 34, 600, 16]
+    bounds: [60, 30, 700, 16]
     content:
-      style: "$kicker"
-      text: "ДИАГРАММА · НОЧНОЙ ИНТЕРВАЛ"
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ЗАМЕР №1 · НОЧНОЙ ИНТЕРВАЛ"
   - elementId: title
     elementType: text
-    bounds: [60, 56, 840, 40]
+    bounds: [60, 54, 840, 42]
     content:
-      style: "$h1"
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
       text: "Сколько часов житель не ест: от ужина до завтрака"
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 106, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
   - elementId: lab1
     elementType: text
-    bounds: [60, 150, 200, 30]
-    content:
-      style: "$body"
-      text: "Швеция — норма"
-  - elementId: bar1
-    elementType: shape
-    bounds: [270, 150, 308, 30]
-    shapeName: rect
-    fill: {type: solid, color: "$primary"}
-  - elementId: val1
-    elementType: text
-    bounds: [588, 150, 120, 30]
-    content:
-      style: "$body"
-      bold: true
-      text: "11 ч"
-  - elementId: lab2
-    elementType: text
-    bounds: [60, 200, 200, 30]
-    content:
-      style: "$body"
-      text: "США — норма CMS"
-  - elementId: bar2
-    elementType: shape
-    bounds: [270, 200, 392, 30]
-    shapeName: rect
-    fill: {type: solid, color: "$primary"}
-  - elementId: val2
-    elementType: text
-    bounds: [672, 200, 120, 30]
-    content:
-      style: "$body"
-      bold: true
-      text: "14 ч"
-  - elementId: lab3
-    elementType: text
-    bounds: [60, 250, 200, 30]
-    content:
-      style: "$body"
-      text: "Типовой замер, РФ"
-  - elementId: bar3
-    elementType: shape
-    bounds: [270, 250, 420, 30]
-    shapeName: rect
-    fill: {type: solid, color: "$accent"}
-  - elementId: val3
-    elementType: text
-    bounds: [700, 250, 120, 30]
-    content:
-      style: "$body"
-      bold: true
-      text: "~15 ч"
-  - elementId: caption
-    elementType: text
-    bounds: [60, 310, 840, 60]
+    bounds: [60, 150, 230, 30]
     content:
       fontSize: 14.5
-      lineHeight: 1.5
-      text: |
-        <p>Значение для РФ — <strong>оценка по типовым графикам учреждений</strong>, а не статистика: репрезентативных данных нет.</p>
-        <p>Ваша цифра измеряется за три дня — и почти всегда отличается от графика на бумаге.</p>
-  - elementId: fix
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "Швеция — норма"
+  - elementId: bar1bg
+    elementType: shape
+    bounds: [300, 156, 440, 18]
+    shapeName: rect
+    fill: {type: solid, color: "#EFE9DD"}
+  - elementId: bar1
+    elementType: shape
+    bounds: [300, 156, 302, 18]
+    shapeName: rect
+    fill: {type: solid, color: "$primary", radius: 3}
+  - elementId: val1
     elementType: text
-    bounds: [60, 396, 840, 70]
+    bounds: [750, 148, 120, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "11 часов"
+  - elementId: lab2
+    elementType: text
+    bounds: [60, 200, 230, 30]
+    content:
+      fontSize: 14.5
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "США — норма CMS"
+  - elementId: bar2bg
+    elementType: shape
+    bounds: [300, 206, 440, 18]
+    shapeName: rect
+    fill: {type: solid, color: "#EFE9DD"}
+  - elementId: bar2
+    elementType: shape
+    bounds: [300, 206, 385, 18]
+    shapeName: rect
+    fill: {type: solid, color: "$primary", radius: 3}
+  - elementId: val2
+    elementType: text
+    bounds: [750, 198, 120, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "14 часов"
+  - elementId: lab3
+    elementType: text
+    bounds: [60, 250, 230, 30]
+    content:
+      fontSize: 14.5
+      color: "$text"
+      fontFamily: Noto Sans
+      text: "Типовой распорядок, РФ"
+  - elementId: bar3bg
+    elementType: shape
+    bounds: [300, 256, 440, 18]
+    shapeName: rect
+    fill: {type: solid, color: "#EFE9DD"}
+  - elementId: bar3
+    elementType: shape
+    bounds: [300, 256, 413, 18]
+    shapeName: rect
+    fill: {type: solid, color: "$risk", radius: 3}
+  - elementId: val3
+    elementType: text
+    bounds: [750, 248, 150, 30]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$risk"
+      fontFamily: PT Serif
+      text: "≈15 часов"
+  - elementId: cal
+    elementType: shape
+    bounds: [60, 306, 840, 74]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: calt
+    elementType: text
+    bounds: [84, 318, 800, 52]
+    content:
+      fontSize: 14.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Ужин в 17:30, завтрак в 8:30 — пятнадцать часов без еды. <strong>Это не экзотика, а типовой график.</strong> Для жителей на антипсихотиках голодная ночь — путь к ночным набегам на кухню и к чужим тарелкам."
+  - elementId: ask
+    elementType: text
+    bounds: [60, 404, 840, 66]
     content:
       fontSize: 15
+      color: "$text"
       lineHeight: 1.5
-      color: "$primary"
+      fontFamily: Noto Sans
       text: |
-        <p><strong>Что с этим делать без денег:</strong> поздний перекус для групп, которым он показан (список — с врачом),</p>
-        <p>сдвиг ужина внутри существующего распорядка, контроль фактического времени подачи, а не расписания.</p>
+        <p><strong>Вопрос залу:</strong> какая цифра в вашем доме — от последней подачи ужина до первого завтрака?</p>
+        <p>Замер занимает три дня и не требует ни рубля. Обычно реальный интервал отличается от графика на бумаге.</p>
+  - elementId: fix
+    elementType: text
+    bounds: [60, 478, 840, 30]
+    content:
+      fontSize: 13
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Бесплатные меры: поздний перекус по списку с врачом · сдвиг ужина внутри существующего распорядка · контроль фактического времени подачи"
   - elementId: src
     elementType: text
-    bounds: [60, 500, 780, 30]
+    bounds: [60, 508, 700, 20]
     content:
-      style: "$small"
-      text: "Источники: шведские и американские протоколы питания учреждений (реестр INTERNATIONAL_PRACTICES, 2026); значение РФ — оценка доклада, раздел 6. Метод: сравнение норм и типовых графиков"
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, разделы 6 и 13.4 · нормы: шведские и американские протоколы (реестр практик); значение РФ — оценка по типовым графикам"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 159, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
     content:
-      style: "$small"
+      fontSize: 10.5
+      color: "$muted"
       align: [right, top]
-      text: "8"
+      text: "7"

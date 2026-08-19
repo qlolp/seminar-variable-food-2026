@@ -1,0 +1,74 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ВОЗВРАЩЕНИЕ · К ОБЕДУ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Вернёмся к обеду: у каждого конфликта теперь есть процедура"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: table
+    elementType: table
+    bounds: [60, 130, 840, 300]
+    columnWidths: [0.3, 0.42, 0.28]
+    rows:
+      - ["Конфликт из обеда", "Процедура", "Раздел доклада"]
+      - ["Очередь против помощи", "Норма помощи 1:2 (ориентир), подача под готовую помощь, порядок заходов", "20, 28"]
+      - ["«Он опять не ест кашу»", "Журнал отказов, правило «три отказа → врач в тот же день», шесть признаков дисфагии", "10, 12"]
+      - ["Кофе и клозапин", "Лекарственно-пищевая таблица на посту, предупреждение семьи о передачах", "11"]
+      - ["Вторая котлета", "Ограничение рациона — только врач; выбор из пары эквивалентов вместо «можно/нельзя»", "13, 17, 19"]
+      - ["Журналы «в порядок»", "Комплект документов, честная учётная запись, квартальная панель чисел", "31, 33"]
+    style:
+      firstRowStyle: {color: "#1F6E5C", fontSize: 13}
+      cellStyle: {color: "#1C1B18", fontSize: 12}
+  - elementId: takeaway
+    elementType: text
+    bounds: [60, 452, 840, 44]
+    content:
+      fontSize: 14.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "<strong>Доклад не обещает, что конфликты исчезнут. Он показывает, что они перестают быть безымянными.</strong> Теперь у каждого — имя, процедура и человек, который отвечает."
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, разделы 5 и 43.2 — пять конфликтов и три образа"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 750, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "33"

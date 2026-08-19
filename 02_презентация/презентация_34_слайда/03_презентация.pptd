@@ -3,14 +3,18 @@ title: Не просто накормить — презентация семи�
 size: [960, 540]
 theme:
   colors:
-    primary: "#B85C3D"
-    accent: "#D97757"
-    text: "#141413"
-    muted: "#8A8578"
-    bg: "#F7F5F0"
-    soft: "#EFEBE3"
-    softgreen: "#EFEBE3"
-    line: "#E5E2D8"
+    primary: "#1F6E5C"
+    accent: "#E8A33D"
+    text: "#1C1B18"
+    muted: "#7A7468"
+    bg: "#FBF8F3"
+    soft: "#EFE9DD"
+    line: "#DED6C6"
+    risk: "#C14B3A"
+    dark: "#14251F"
+    darkcard: "#1E352D"
+    cream: "#F5EFE3"
+    sand: "#E9E2D2"
   textStyles:
     kicker:
       fontSize: 11
@@ -47,48 +51,39 @@ theme:
       lineHeight: 1.25
 pages:
   - pages/01_cover.page
-  - pages/02_vopros.page
-  - pages/03_otvety.page
+  - pages/02_opros.page
+  - pages/03_sistema.page
   - pages/04_obed.page
-  - pages/05_izmereniya.page
-  - pages/06_cifry.page
-  - pages/06b_kontingent.page
+  - pages/05_za_stolom.page
+  - pages/06_tarelka.page
   - pages/07_noch.page
-  - pages/08_terminy.page
-  - pages/09_lestnica.page
-  - pages/09b_uchastie.page
-  - pages/32_stupen.page
-  - pages/10_stupeni01.page
-  - pages/12_kriterii.page
-  - pages/12b_iddsi.page
-  - pages/13_praktiki.page
-  - pages/14_bolotninsky.page
-  - pages/15_uspensky.page
-  - pages/15b_yaponiya.page
-  - pages/16_vnedrivshie.page
-  - pages/16b_serafimovsky.page
-  - pages/17_zhurnal.page
-  - pages/17b_proporsii.page
-  - pages/18_pary.page
-  - pages/19_dengi.page
-  - pages/19b_autsorsing.page
-  - pages/20_proverka.page
-  - pages/20b_sentyabr.page
-  - pages/20c_karantin.page
-  - pages/21_pravo.page
-  - pages/22_disfagiya.page
-  - pages/22c_trifona.page
-  - pages/23_ves.page
-  - pages/23b_metabolika.page
-  - pages/24_vrach.page
-  - pages/25_otkazy.page
-  - pages/26_audit.page
+  - pages/08_riski.page
+  - pages/09_pravo.page
+  - pages/10_sanpin.page
+  - pages/11_vybor.page
+  - pages/12_lestnica.page
+  - pages/13_keysy.page
+  - pages/14_mir.page
+  - pages/15_pary.page
+  - pages/16_zhurnal.page
+  - pages/17_lekarstva.page
+  - pages/18_disfagiya.page
+  - pages/19_ves.page
+  - pages/20_nochnaya_konstrukciya.page
+  - pages/21_liniya.page
+  - pages/22_dengi.page
+  - pages/23_otkhody.page
+  - pages/24_dokumenty.page
+  - pages/25_proverka.page
+  - pages/26_autsorsing.page
   - pages/27_pilot.page
-  - pages/27b_gantt.page
-  - pages/28_panel.page
-  - pages/29_regress.page
-  - pages/30_trudnye.page
-  - pages/31_ponedelnik.page
-  - pages/33_paket.page
-  - pages/33b_nauka.page
-  - pages/34_final.page
+  - pages/28_karta.page
+  - pages/29_vozrazheniya.page
+  - pages/30_lakmus.page
+  - pages/31_sentyabr.page
+  - pages/32_sovet.page
+  - pages/33_pereklichka.page
+  - pages/34_chetyre_cheloveka.page
+  - pages/35_pervyj_shag.page
+  - pages/36_scenarii.page
+  - pages/37_final.page

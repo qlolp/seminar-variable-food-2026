@@ -5,107 +5,155 @@ background:
 elements:
   - elementId: kicker
     elementType: text
-    bounds: [60, 34, 600, 16]
+    bounds: [60, 30, 700, 16]
     content:
-      style: "$kicker"
-      text: "ДОРОЖНАЯ КАРТА"
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ПУТЬ · ПИЛОТ 90 ДНЕЙ"
   - elementId: title
     elementType: text
-    bounds: [60, 56, 840, 40]
+    bounds: [60, 54, 840, 42]
     content:
-      style: "$h1"
-      text: "Пилот на 90 дней: одно отделение, одна позиция"
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Пилот за 90 дней: одно отделение, без новой сметы"
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 106, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
-  - elementId: tl
+  - elementId: sub
+    elementType: text
+    bounds: [60, 124, 840, 30]
+    content:
+      fontSize: 13
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "«Без новой сметы» не значит «без затрат» — это значит: сначала замер, документы и обучение, потом выбор на линии."
+  - elementId: track
     elementType: shape
-    bounds: [60, 220, 840, 3]
+    bounds: [60, 178, 840, 12]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
-  - elementId: p1
+    fill: {type: solid, color: "#EFE9DD", radius: 6}
+  - elementId: seg1
     elementType: shape
-    bounds: [80, 210, 22, 22]
-    shapeName: ellipse
-    fill: {type: solid, color: "$primary"}
-  - elementId: p1t
-    elementType: text
-    bounds: [60, 250, 190, 130]
-    content:
-      fontSize: 12.5
-      lineHeight: 1.35
-      text: |
-        <p><strong>Неделя 1</strong></p>
-        <p>Экспресс-аудит, замер ночного интервала, ведомость остатков, сверка трёх списков</p>
-  - elementId: p2
+    bounds: [60, 178, 218, 12]
+    shapeName: rect
+    fill: {type: solid, color: "$primary", radius: 6}
+  - elementId: seg2
     elementType: shape
-    bounds: [300, 210, 22, 22]
-    shapeName: ellipse
-    fill: {type: solid, color: "$primary"}
-  - elementId: p2t
-    elementType: text
-    bounds: [280, 250, 190, 130]
-    content:
-      fontSize: 12.5
-      lineHeight: 1.35
-      text: |
-        <p><strong>Недели 2–4</strong></p>
-        <p>Приказ о пилоте, пара эквивалентов в таблице замен, журнал заказа — ступень 1 на одном отделении</p>
-  - elementId: p3
-    elementType: shape
-    bounds: [520, 210, 22, 22]
-    shapeName: ellipse
-    fill: {type: solid, color: "$primary"}
-  - elementId: p3t
-    elementType: text
-    bounds: [500, 250, 190, 130]
-    content:
-      fontSize: 12.5
-      lineHeight: 1.35
-      text: |
-        <p><strong>Месяц 2</strong></p>
-        <p>Совет по питанию из жителей, первая панель чисел, журнал срывов, разбор отказов</p>
-  - elementId: p4
-    elementType: shape
-    bounds: [740, 210, 22, 22]
-    shapeName: ellipse
+    bounds: [290, 178, 400, 12]
+    shapeName: rect
     fill: {type: solid, color: "$accent"}
-  - elementId: p4t
+  - elementId: seg3
+    elementType: shape
+    bounds: [702, 178, 198, 12]
+    shapeName: rect
+    fill: {type: solid, color: "$risk", radius: 6}
+  - elementId: t1
+    elementType: shape
+    bounds: [60, 210, 218, 180]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: t1h
     elementType: text
-    bounds: [720, 250, 190, 130]
+    bounds: [76, 224, 190, 40]
     content:
-      fontSize: 12.5
-      lineHeight: 1.35
-      text: |
-        <p><strong>Месяц 3</strong></p>
-        <p>Повторный аудит, разбор чисел, решение: закрепить / расширить / скорректировать / закрыть</p>
-  - elementId: above
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Дни 1–14 · подготовка"
+  - elementId: t1t
     elementType: text
-    bounds: [60, 140, 840, 50]
+    bounds: [76, 268, 190, 112]
     content:
-      fontSize: 14.5
-      lineHeight: 1.45
-      text: "Пилот — не «внедрение вариативности», а <strong>эксперимент с точками замера</strong>: входные числа до старта, те же числа через 90 дней."
-  - elementId: bottom
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Семидневный замер отходов и отказов · пять чисел о контингенте · пары эквивалентов · положение и журналы · инструктаж смены. <strong>На линии — ничего не меняется.</strong>"
+  - elementId: t2
+    elementType: shape
+    bounds: [290, 210, 400, 180]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: t2h
     elementType: text
-    bounds: [60, 400, 840, 70]
+    bounds: [306, 224, 370, 40]
     content:
-      fontSize: 14.5
+      fontSize: 14
+      bold: true
+      color: "#A8751F"
+      fontFamily: Noto Sans
+      text: "Дни 15–75 · пилот на линии"
+  - elementId: t2t
+    elementType: text
+    bounds: [306, 268, 370, 112]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Одно типовое отделение. Выбор из двух на завтраке и обеде — старт 50/50 с резервом. Журнал заказа каждый день, срыв «вариант Б закончился» — записывается, а не прячется. Роли: диетсестра — пары, повар — поток, старшая смена — контроль «вариант Б существует»."
+  - elementId: t3
+    elementType: shape
+    bounds: [702, 210, 198, 180]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: t3h
+    elementType: text
+    bounds: [718, 224, 170, 40]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$risk"
+      fontFamily: Noto Sans
+      text: "Дни 76–90 · оценка"
+  - elementId: t3t
+    elementType: text
+    bounds: [718, 268, 170, 112]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Повторный семидневный замер. Сравнение до/после: отходы, отказы, время раздачи, доля выбравших. Решение: масштабировать, скорректировать или остановить — по числам."
+  - elementId: stop
+    elementType: text
+    bounds: [60, 414, 840, 62]
+    content:
+      fontSize: 13.5
+      color: "$text"
       lineHeight: 1.5
+      fontFamily: Noto Sans
       text: |
-        <p>Четыре честных исхода, включая «закрыть». Отрицательный результат тоже оформляют — иначе следующая попытка не получит доверия.</p>
+        <p><strong>Критерии остановки существуют заранее:</strong> рост отказов от еды, срывы подачи чаще заданного, жалобы семьи, негативная динамика веса в группе риска. Пилот, который «не пошёл», — это данные, а не поражение.</p>
+        <p>Масштаб первого пилота — меньше значит быстрее: одна позиция, один приём, одно отделение.</p>
   - elementId: src
     elementType: text
-    bounds: [60, 505, 760, 24]
+    bounds: [60, 508, 700, 20]
     content:
-      style: "$small"
-      text: "Источник: раздел 35 доклада; проект приказа о пилоте и все формы — приложения к докладу"
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, раздел 35 — пилот на 90 дней; форма замера — приложение 25"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 614, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
     content:
-      style: "$small"
+      fontSize: 10.5
+      color: "$muted"
       align: [right, top]
-      text: "38"
+      text: "27"

@@ -1,0 +1,145 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "РАЗГОВОР · ВОЗРАЖЕНИЯ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Четырнадцать возражений — и что с ними делать"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: sub
+    elementType: text
+    bounds: [60, 124, 840, 30]
+    content:
+      fontSize: 13
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Каждое разобрано в разделе 37 без издёвки — в большинстве есть рациональное ядро. Здесь — три главных ответа:"
+  - elementId: chiprow
+    elementType: text
+    bounds: [60, 162, 840, 44]
+    content:
+      fontSize: 12.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "«Не способны выбирать» · «Будут очереди» · «Это дорого» · «Санэпид не разрешит» · «Нет диетолога» · «Выберут нездоровое» · «Выбрал и отказался» · «Лечебное питание» · «Персонал против» · «Проверка спросит» · «У нас 400 мест» · «И так нормально» · «Кухня не своя» · «Через 4 дня новый СанПиН»"
+  - elementId: a1
+    elementType: shape
+    bounds: [60, 226, 266, 196]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: a1h
+    elementType: text
+    bounds: [76, 240, 234, 40]
+    content:
+      fontSize: 13.5
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Двенадцать из четырнадцати"
+  - elementId: a1t
+    elementType: text
+    bounds: [76, 284, 234, 128]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "снимаются <strong>документами, замерами или конструкцией линии</strong>: положение, журнал заказа, пары эквивалентов, инструктаж смены. «Зачем, если и так нормально?» — снимается только собственными числами замера."
+  - elementId: a2
+    elementType: shape
+    bounds: [347, 226, 266, 196]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: a2h
+    elementType: text
+    bounds: [363, 240, 234, 40]
+    content:
+      fontSize: 13.5
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Тринадцатое — «кухня не своя»"
+  - elementId: a2t
+    elementType: text
+    bounds: [363, 284, 234, 128]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "снимается <strong>спецификацией, а не энтузиазмом</strong>: восемь строк контракта, допсоглашение, приёмка. Если контракт впереди — осенний календарь закупки важнее любого слайда."
+  - elementId: a3
+    elementType: shape
+    bounds: [634, 226, 266, 196]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: a3h
+    elementType: text
+    bounds: [650, 240, 234, 40]
+    content:
+      fontSize: 13.5
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Четырнадцатое — «новый СанПиН»"
+  - elementId: a3t
+    elementType: text
+    bounds: [650, 284, 234, 128]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "снимается <strong>чек-листом 1 сентября, а не паузой</strong>: 4282-26 не запрещает число вариантов; журналы августа не переписываются; проверка в сентябре смотрит сентябрь по новым правилам."
+  - elementId: q
+    elementType: text
+    bounds: [60, 448, 840, 48]
+    content:
+      fontSize: 15
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "<strong>Вопрос залу:</strong> какое возражение — ваше? Поднимите руку — и после семинара возьмите готовый ответ из раздела 37."
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, раздел 37 — четырнадцать возражений и честные ответы"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 659, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "29"

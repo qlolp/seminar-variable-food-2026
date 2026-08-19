@@ -1,0 +1,110 @@
+pageType: content
+background:
+  type: solid
+  color: "$dark"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$accent"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "НАЧНЁМ С ЗАЛА"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$cream"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Два вопроса — и одна просьба на весь доклад"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "#2E4A40"}
+  - elementId: q1
+    elementType: shape
+    bounds: [60, 136, 840, 62]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 8}
+  - elementId: q1t
+    elementType: text
+    bounds: [84, 152, 800, 32]
+    content:
+      fontSize: 17
+      color: "$cream"
+      fontFamily: Noto Sans
+      lineHeight: 1.35
+      text: "<strong>Вопрос 1.</strong> Поднимите руку: в вашем учреждении жители выбирают блюдо из двух вариантов?"
+  - elementId: q2
+    elementType: shape
+    bounds: [60, 212, 840, 62]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 8}
+  - elementId: q2t
+    elementType: text
+    bounds: [84, 228, 800, 32]
+    content:
+      fontSize: 17
+      color: "$cream"
+      fontFamily: Noto Sans
+      lineHeight: 1.35
+      text: "<strong>Вопрос 2.</strong> Кто за последние полгода замерял отходы за семь дней подряд?"
+  - elementId: reveal
+    elementType: shape
+    bounds: [60, 296, 840, 96]
+    shapeName: rect
+    fill: {type: solid, color: "#0F1E19", radius: 8}
+  - elementId: reveal_line
+    elementType: shape
+    bounds: [60, 296, 4, 96]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: reveal_t
+    elementType: text
+    bounds: [88, 308, 790, 74]
+    content:
+      fontSize: 14.5
+      color: "$sand"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p>Теперь посмотрите на зал: <strong>здесь сидят минимум четыре организации, где выбор уже работает</strong> — Успенский и Болотнинский ПНИ, Усть-Илимск, «Серафимовский». И один регион, где модель масштабирована решением области, — Иркутская область.</p>
+        <p>Значит, дальше мы говорим не о гипотезе, а о практике, которая физически в этом зале.</p>
+  - elementId: ask
+    elementType: text
+    bounds: [60, 416, 840, 60]
+    content:
+      fontSize: 15
+      color: "$accent"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Просьба на весь доклад:</strong> каждый вопрос залу — это инструмент из доклада. Помечайте мысленно, какие из них уже есть у вас, а какие — заберёте с собой.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "#8FA79B"
+      fontFamily: Noto Sans
+      text: "Доклад, разделы 23 и 25 — практики в зале и подтверждённые кейсы"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 45, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#8FA79B"
+      align: [right, top]
+      text: "2"

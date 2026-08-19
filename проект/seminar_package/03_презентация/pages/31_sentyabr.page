@@ -1,0 +1,159 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ПЛАН · 1 СЕНТЯБРЯ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Через четыре дня — новый СанПиН. План на утро 1 сентября"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: c1
+    elementType: shape
+    bounds: [60, 134, 404, 108]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: c1h
+    elementType: text
+    bounds: [78, 148, 372, 26]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Новые формы бракеража"
+  - elementId: c1t
+    elementType: text
+    bounds: [78, 178, 372, 52]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Открываются с утра, привязанные к пунктам 4282-26 (п. 56 подп. 11–14). Журналы августа не переписываются — август смотрится по старым правилам."
+  - elementId: c2
+    elementType: shape
+    bounds: [496, 134, 404, 108]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: c2h
+    elementType: text
+    bounds: [514, 148, 372, 26]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Локальные акты — на новые пункты"
+  - elementId: c2t
+    elementType: text
+    bounds: [514, 178, 372, 52]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Положение о питании, чек-листы пищеблока, ППК — перепривязка к 4282-26. Модель выбора при этом не меняется: обе редакции её допускают."
+  - elementId: c3
+    elementType: shape
+    bounds: [60, 256, 404, 108]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: c3h
+    elementType: text
+    bounds: [78, 270, 372, 26]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Суточные пробы — с каждого блюда"
+  - elementId: c3t
+    elementType: text
+    bounds: [78, 300, 372, 52]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "При двух вариантах — обе гастроёмкости, обе строки журнала. Ошибка «проба только с основного» для проверяющего — отсутствие пробы второго блюда."
+  - elementId: c4
+    elementType: shape
+    bounds: [496, 256, 404, 108]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: c4h
+    elementType: text
+    bounds: [514, 270, 372, 26]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Проверка в сентябре"
+  - elementId: c4t
+    elementType: text
+    bounds: [514, 300, 372, 52]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Смотрит сентябрь по новым правилам и август по старым. Останавливать выбор «пока привыкнем» — лишняя работа: обе редакции выбор допускают."
+  - elementId: key
+    elementType: shape
+    bounds: [60, 388, 840, 96]
+    shapeName: rect
+    fill: {type: solid, color: "#E4EFE9", radius: 8}
+  - elementId: keyt
+    elementType: text
+    bounds: [84, 402, 800, 70]
+    content:
+      fontSize: 14.5
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Переходного периода нет — и он не нужен:</strong> СанПиН 4282-26 не запрещает число вариантов блюда, он меняет формы контроля.</p>
+        <p>Чек-лист «1 сентября» — в приложении 39 доклада: утром открываете новые формы, вечером закрываете первый день по новым правилам.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Доклад, разделы 18 и 18.10 — СанПиН 4282-26 и переходный месяц; приложение 39"
+  - elementId: progress
+    elementType: shape
+    bounds: [60, 530, 705, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "31"
