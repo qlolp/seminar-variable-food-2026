@@ -65,3 +65,11 @@ elements:
       color: "$muted"
       fontFamily: Noto Sans
       text: "Источник: Комитет по социальной политике Санкт-Петербурга, 22.07.2025 (gov.spb.ru). Разделы 25.5, 19 доклада."
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "#A8A294"
+      align: [right, top]
+      text: "20"
