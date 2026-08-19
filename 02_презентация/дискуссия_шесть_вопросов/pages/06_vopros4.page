@@ -78,7 +78,7 @@ elements:
       color: "$text"
       lineHeight: 1.4
       fontFamily: Noto Sans
-      text: "<strong>Совмещённые пары:</strong> основная пара + диетическая пара на одной линии — апробация Тесового берега (Нурбаев, 2025)"
+      text: "<strong>Совмещённые пары:</strong> основная + диетическая на одной линии. Рабочая модель раздела 8; как практика Тесового берега публично не подтверждена"
   - elementId: m3
     elementType: shape
     bounds: [476, 232, 196, 108]
@@ -125,7 +125,7 @@ elements:
       fontSize: 10.5
       color: "$muted"
       fontFamily: Noto Sans
-      text: "Раздел 17.12 доклада (вопрос 4) — четыре апробированные модели совмещения"
+      text: "Раздел 17.12 доклада (вопрос 4) — модели совмещения; кухня коллеги уточняется на площадке"
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
@@ -133,4 +133,4 @@ elements:
       fontSize: 10.5
       color: "$muted"
       align: [right, top]
-      text: "6"
+      text: "7"

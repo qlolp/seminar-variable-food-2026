@@ -80,7 +80,7 @@ elements:
       text: |
         <p>Санкт-Петербург, 25–27 августа 2026</p>
         <p>Чистяков Е. В. · ДСО «Серафимовский»</p>
-        <p>51 регион · директора и специалисты</p>
+        <p>26.08, 14.00–15.30: «Организация питания: опыт реализации проектов»</p>
   - elementId: s1n
     elementType: text
     bounds: [656, 70, 270, 54]
@@ -89,7 +89,7 @@ elements:
       bold: true
       color: "$accent"
       fontFamily: PT Serif
-      text: "315"
+      text: "320"
   - elementId: s1l
     elementType: text
     bounds: [656, 122, 270, 22]
@@ -106,7 +106,7 @@ elements:
       bold: true
       color: "$accent"
       fontFamily: PT Serif
-      text: "124"
+      text: "125"
   - elementId: s2l
     elementType: text
     bounds: [656, 222, 270, 22]

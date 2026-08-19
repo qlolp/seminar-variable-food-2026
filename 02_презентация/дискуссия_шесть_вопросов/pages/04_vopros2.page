@@ -50,7 +50,7 @@ elements:
       color: "$text"
       lineHeight: 1.4
       fontFamily: Noto Sans
-      text: "<strong>Норма — основание, а не потолок:</strong> нормы 520н и таблицы замен задают сырьевую структуру; меню утверждается приказом директора"
+      text: "<strong>Норма — основание:</strong> 520н на федеральном уровне рекомендательный; императив даёт регион (СПб — постановление 1284). Меню — приказ директора"
   - elementId: st2
     elementType: shape
     bounds: [268, 130, 196, 120]
@@ -160,4 +160,4 @@ elements:
       fontSize: 10.5
       color: "$muted"
       align: [right, top]
-      text: "4"
+      text: "5"

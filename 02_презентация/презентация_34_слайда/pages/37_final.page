@@ -42,7 +42,7 @@ elements:
       color: "$sand"
       lineHeight: 1.4
       fontFamily: Noto Sans
-      text: "Остальное — в докладе: 315 страниц, 124 источника, 22 кейса, 45 приложений."
+      text: "Остальное — в докладе: 320 страниц, 125 источников, 22 кейса, 45 приложений."
   - elementId: st1
     elementType: shape
     bounds: [48, 250, 270, 150]

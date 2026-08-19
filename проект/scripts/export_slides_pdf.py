@@ -9,9 +9,16 @@ from pathlib import Path
 import yaml
 
 ROOT = Path("/Users/evgenii/Documents/презентация вариативное меню")
-DECK = ROOT / "02_презентация" / "презентация_34_слайда"
-OUT_HTML = ROOT / "проект" / "output" / "_slides.html"
-OUT_PDF = ROOT / "02_презентация" / "Презентация_Не_просто_накормить.pdf"
+import sys as _sys
+_DECK_NAME = _sys.argv[1] if len(_sys.argv) > 1 else "презентация_34_слайда"
+_PPTD_NAME = _sys.argv[2] if len(_sys.argv) > 2 else "03_презентация.pptd"
+_PDF_NAME = _sys.argv[3] if len(_sys.argv) > 3 else "Презентация_Не_просто_накормить.pdf"
+DECK = ROOT / "02_презентация" / _DECK_NAME
+PPTD_NAME = _PPTD_NAME
+OUT_HTML = ROOT / "проект" / "output" / f"_slides_{_DECK_NAME}.html"
+OUT_PDF = ROOT / "02_презентация" / _PDF_NAME
+if _DECK_NAME != "презентация_34_слайда":
+    OUT_PDF = DECK / _PDF_NAME
 FONTS = ROOT / "проект" / "output" / "fonts"
 
 THEME = {}
@@ -288,7 +295,7 @@ def render_page(path: Path) -> str:
 
 
 def main():
-    deck = yaml.safe_load((DECK / "03_презентация.pptd").read_text(encoding="utf-8"))
+    deck = yaml.safe_load((DECK / PPTD_NAME).read_text(encoding="utf-8"))
     load_theme(deck)
     pages = deck["pages"]
     slides = []

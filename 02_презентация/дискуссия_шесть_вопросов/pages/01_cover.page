@@ -77,7 +77,7 @@ elements:
       color: "$cream"
       lineHeight: 1.4
       fontFamily: Noto Sans
-      text: "<strong>Чистяков Е. В.</strong> · ДСО «Серафимовский»"
+      text: "<strong>Чистяков Е. В.</strong> · ГАСУСОН ДСО «Серафимовский»"
   - elementId: ex2
     elementType: text
     bounds: [48, 436, 540, 30]
@@ -86,7 +86,7 @@ elements:
       color: "$cream"
       lineHeight: 1.4
       fontFamily: Noto Sans
-      text: "<strong>Нурбаев Т. А.</strong> · ДСО «Тесовый берег»"
+      text: "<strong>Нурбаев Т. А.</strong> · ГБСУСОН ДСО «Тесовый берег»"
   - elementId: s1n
     elementType: text
     bounds: [656, 96, 270, 54]
@@ -145,4 +145,4 @@ elements:
       fontSize: 11
       color: "$darkmuted"
       fontFamily: Noto Sans
-      text: "Площадка № 2 — ДСО «Тесовый берег» · материал — раздел 17.12 доклада «Не просто накормить»"
+      text: "Площадка № 2 — ДСО «Тесовый берег» · эксперты, не модераторы · раздел 17.12–17.13 доклада"

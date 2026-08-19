@@ -60,7 +60,7 @@ elements:
       lineHeight: 1.5
       fontFamily: Noto Sans
       text: |
-        <p><strong style="color:#E76F51">РИСК «СТОЛА НА ВСЕХ»</strong></p>
+        <p><strong style="color:#C41E3A">РИСК «СТОЛА НА ВСЕХ»</strong></p>
         <p>«Диабетический стол» без назначений — ограничение без показаний; «лечебное меню» без лицензии — введение в заблуждение (ст. 14.7 КоАП, при обстоятельствах — ст. 238 УК).</p>
   - elementId: check
     elementType: text
@@ -71,7 +71,7 @@ elements:
       lineHeight: 1.5
       fontFamily: Noto Sans
       text: |
-        <p><strong style="color:#1A7A70">МЕТОД ПРОВЕРКИ</strong></p>
+        <p><strong style="color:#1B365D">МЕТОД ПРОВЕРКИ</strong></p>
         <p>В учреждении есть поимённый список диетического питания с назначениями, датами и сроками пересмотра — или его нет. «Стол на всех» назначением не является.</p>
   - elementId: ask
     elementType: shape
@@ -104,4 +104,4 @@ elements:
       fontSize: 10.5
       color: "$muted"
       align: [right, top]
-      text: "5"
+      text: "6"

@@ -3,25 +3,25 @@ title: "Организация питания: опыт реализации п�
 size: [960, 540]
 theme:
   colors:
-    primary: "#1A7A70"
-    accent: "#E9C46A"
+    primary: "#1B365D"
+    accent: "#C41E3A"
     text: "#1A1915"
-    muted: "#6E685C"
-    bg: "#F3EEE4"
-    soft: "#E7DFD0"
-    line: "#D4CBB8"
-    risk: "#E76F51"
-    dark: "#1C3A43"
-    darkcard: "#254850"
-    cream: "#F7F1E6"
-    sand: "#D8CFBE"
-    mint: "#2A9D8F"
-    ink: "#12262C"
-    darkmuted: "#8AA3A8"
-    mintsoft: "#D7EBE6"
-    goldsoft: "#F3E6C4"
-    risksoft: "#F3DDD6"
-    goldink: "#8A6A1F"
+    muted: "#5C5A56"
+    bg: "#F7F4EE"
+    soft: "#E8E4DA"
+    line: "#D0CBBF"
+    risk: "#C41E3A"
+    dark: "#1B2A4E"
+    darkcard: "#243556"
+    cream: "#F7F4EE"
+    sand: "#D4CFC4"
+    mint: "#2C4A6E"
+    ink: "#0F1C33"
+    darkmuted: "#8A93A3"
+    mintsoft: "#E4EAF2"
+    goldsoft: "#F6E4E6"
+    risksoft: "#F6E4E6"
+    goldink: "#8B1E2D"
   textStyles:
     kicker:
       fontSize: 11
@@ -59,6 +59,7 @@ theme:
 pages:
   - pages/01_cover.page
   - pages/02_format.page
+  - pages/02b_smezhnye.page
   - pages/03_vopros1.page
   - pages/04_vopros2.page
   - pages/05_vopros3.page

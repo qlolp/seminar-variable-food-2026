@@ -1,0 +1,141 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "СМЕЖНЫЕ ПЛОЩАДКИ · ЧТО ВЕРНЁТСЯ В ЗАЛ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 24
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Вопросы соседних сессий, которые закрываются питанием"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 102, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: a1
+    elementType: shape
+    bounds: [60, 118, 270, 112]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: a1t
+    elementType: text
+    bounds: [74, 128, 242, 92]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "<strong>25.08 «Право быть человеком»</strong> Выбор vs безопасность, еда, которая «ухудшает». Ответ: эквивалент внутри нормы; отказ от еды 24+ ч — комиссия, не «сам виноват»."
+  - elementId: a2
+    elementType: shape
+    bounds: [345, 118, 270, 112]
+    shapeName: rect
+    fill: {type: solid, color: "$mintsoft", radius: 8}
+  - elementId: a2t
+    elementType: text
+    bounds: [359, 128, 242, 92]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "<strong>25.08 «Право на выбор»</strong> Чистяков — эксперт панели Георгиева. Внедрение, страх, «проигравшие»: смена и кухня, не житель."
+  - elementId: a3
+    elementType: shape
+    bounds: [630, 118, 270, 112]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: a3t
+    elementType: text
+    bounds: [644, 128, 242, 92]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "<strong>25.08 «Недееспособным»</strong> Выбор блюда — не сделка и не лечение. Опекун содействует. Диета — ст. 11 3185-1."
+  - elementId: b1
+    elementType: shape
+    bounds: [60, 244, 270, 112]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: b1t
+    elementType: text
+    bounds: [74, 254, 242, 92]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "<strong>25.08 «Наладить жизнь»</strong> Режим дня из потребностей. Пара на линии не лечит ночной интервал 14–15 часов."
+  - elementId: b2
+    elementType: shape
+    bounds: [345, 244, 270, 112]
+    shapeName: rect
+    fill: {type: solid, color: "$goldsoft", radius: 8}
+  - elementId: b2t
+    elementType: text
+    bounds: [359, 254, 242, 92]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "<strong>26.08 достоинство / уход</strong> «Не причинять добро»: навязанный «полезный» стол без назначения. Comfort feeding — разд. 12.11."
+  - elementId: b3
+    elementType: shape
+    bounds: [630, 244, 270, 112]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: b3t
+    elementType: text
+    bounds: [644, 254, 242, 92]
+    content:
+      fontSize: 12
+      color: "$text"
+      lineHeight: 1.35
+      fontFamily: Noto Sans
+      text: "<strong>26.08 частная жизнь</strong> Ежедневный выбор «что есть» — зона автономии недееспособного. Журнал выбора это фиксирует."
+  - elementId: note
+    elementType: text
+    bounds: [60, 372, 840, 96]
+    content:
+      fontSize: 13.5
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Правило на 90 минут:</strong> если зал цитирует вчерашнюю панель — отвечаем конструкцией 17.12, не новым принципом. Полная карта — раздел 17.13 доклада.</p>
+        <p>Правки к программе: мы <strong>эксперты</strong>, не модераторы (№ 14); «хозяин» → руководитель учреждения (№ 15); баланс <strong>между</strong> правом выбора и показаниями (№ 16).</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Раздел 17.13 доклада · программа 25–27.08.2026 · правки № 14–16"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "3"
