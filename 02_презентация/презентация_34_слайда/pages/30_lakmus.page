@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$dark"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.16
+    fill: {type: solid, color: "$mint"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -17,7 +28,7 @@ elements:
     elementType: text
     bounds: [60, 170, 840, 120]
     content:
-      fontSize: 40
+      fontSize: 54
       bold: true
       color: "$cream"
       lineHeight: 1.2
@@ -46,7 +57,7 @@ elements:
     bounds: [60, 508, 700, 20]
     content:
       fontSize: 10.5
-      color: "#8FA79B"
+      color: "$darkmuted"
       fontFamily: Noto Sans
       text: "Доклад, раздел 37.3 — возражение-лакмус"
   - elementId: progress
@@ -59,6 +70,6 @@ elements:
     bounds: [900, 508, 40, 20]
     content:
       fontSize: 10.5
-      color: "#8FA79B"
+      color: "$darkmuted"
       align: [right, top]
       text: "30"

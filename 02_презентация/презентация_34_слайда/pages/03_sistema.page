@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,28 +26,28 @@ elements:
       text: "МАСШТАБ · КОГО КАСАЕТСЯ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
       lineHeight: 1.15
-      text: "174 000 человек едят трижды в день по чужому решению"
+      text: "Более 174 000 человек едят трижды в день по чужому решению"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: n1
     elementType: text
     bounds: [60, 140, 400, 96]
     content:
-      fontSize: 52
+      fontSize: 64
       bold: true
       color: "$primary"
       fontFamily: PT Serif
-      text: "174 000"
+      text: "174 000+"
   - elementId: n1l
     elementType: text
     bounds: [60, 240, 400, 44]
@@ -50,7 +61,7 @@ elements:
     elementType: text
     bounds: [500, 140, 400, 96]
     content:
-      fontSize: 52
+      fontSize: 64
       bold: true
       color: "$primary"
       fontFamily: PT Serif
@@ -73,7 +84,7 @@ elements:
       lineHeight: 1.6
       fontFamily: Noto Sans
       text: |
-        <p><strong style="color:#1C1B18">51 регион</strong> — участники семинара · <strong style="color:#1C1B18">41 регион</strong> переименовал ПНИ в дома социального обслуживания · <strong style="color:#1C1B18">7 000</strong> человек уже перешли в сопровождаемое проживание — и им понадобился навык, который тренируется за столом</p>
+        <p><strong style="color:$text">51 регион</strong> — участники семинара · <strong style="color:$text">41 регион</strong> переименовал ПНИ в дома социального обслуживания · <strong style="color:$text">7 000</strong> человек уже перешли в сопровождаемое проживание — и им понадобился навык, который тренируется за столом</p>
   - elementId: takeaway
     elementType: text
     bounds: [60, 416, 840, 64]
@@ -92,7 +103,7 @@ elements:
       fontSize: 10.5
       color: "$muted"
       fontFamily: Noto Sans
-      text: "Доклад, раздел 23 — система ПНИ-2026 в числах"
+      text: "Доклад, раздел 23 — ориентиры по вторичной аналитике, не официальная отчётность Минтруда"
   - elementId: progress
     elementType: shape
     bounds: [60, 530, 68, 4]

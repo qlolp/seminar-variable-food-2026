@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "СМЫСЛ · ДЛЯ КОГО ЭТО"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,14 +36,14 @@ elements:
       text: "Что изменится для четырёх человек"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: p1
     elementType: shape
     bounds: [60, 134, 196, 300]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p1h
     elementType: text
     bounds: [76, 150, 170, 34]
@@ -55,7 +66,7 @@ elements:
     elementType: shape
     bounds: [268, 134, 196, 300]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p2h
     elementType: text
     bounds: [284, 150, 170, 34]
@@ -78,7 +89,7 @@ elements:
     elementType: shape
     bounds: [476, 134, 196, 300]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p3h
     elementType: text
     bounds: [492, 150, 170, 34]
@@ -101,7 +112,7 @@ elements:
     elementType: shape
     bounds: [684, 134, 216, 300]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p4h
     elementType: text
     bounds: [700, 150, 190, 34]

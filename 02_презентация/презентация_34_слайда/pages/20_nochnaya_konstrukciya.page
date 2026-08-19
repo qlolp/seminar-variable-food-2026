@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "КЛИНИКА · НОЧЬ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,9 +36,9 @@ elements:
       text: "Ночные набеги на кухню: не замок, а конструкция"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: sub
     elementType: text
     bounds: [60, 124, 840, 44]
@@ -41,7 +52,7 @@ elements:
     elementType: shape
     bounds: [60, 190, 196, 122]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: n1h
     elementType: text
     bounds: [76, 202, 170, 26]
@@ -64,7 +75,7 @@ elements:
     elementType: shape
     bounds: [268, 190, 196, 122]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: n2h
     elementType: text
     bounds: [284, 202, 170, 26]
@@ -87,7 +98,7 @@ elements:
     elementType: shape
     bounds: [476, 190, 196, 122]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: n3h
     elementType: text
     bounds: [492, 202, 170, 26]
@@ -110,7 +121,7 @@ elements:
     elementType: shape
     bounds: [684, 190, 216, 122]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: n4h
     elementType: text
     bounds: [700, 202, 190, 26]

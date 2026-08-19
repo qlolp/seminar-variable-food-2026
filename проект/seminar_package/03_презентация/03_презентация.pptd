@@ -3,18 +3,25 @@ title: Не просто накормить — презентация семи�
 size: [960, 540]
 theme:
   colors:
-    primary: "#1F6E5C"
-    accent: "#E8A33D"
-    text: "#1C1B18"
-    muted: "#7A7468"
-    bg: "#FBF8F3"
-    soft: "#EFE9DD"
-    line: "#DED6C6"
-    risk: "#C14B3A"
-    dark: "#14251F"
-    darkcard: "#1E352D"
-    cream: "#F5EFE3"
-    sand: "#E9E2D2"
+    primary: "#1A7A70"
+    accent: "#E9C46A"
+    text: "#1A1915"
+    muted: "#6E685C"
+    bg: "#F3EEE4"
+    soft: "#E7DFD0"
+    line: "#D4CBB8"
+    risk: "#E76F51"
+    dark: "#1C3A43"
+    darkcard: "#254850"
+    cream: "#F7F1E6"
+    sand: "#D8CFBE"
+    mint: "#2A9D8F"
+    ink: "#12262C"
+    darkmuted: "#8AA3A8"
+    mintsoft: "#D7EBE6"
+    goldsoft: "#F3E6C4"
+    risksoft: "#F3DDD6"
+    goldink: "#8A6A1F"
   textStyles:
     kicker:
       fontSize: 11
@@ -23,7 +30,7 @@ theme:
       letterSpacing: 2
       bold: true
     h1:
-      fontSize: 27
+      fontSize: 32
       bold: true
       color: "$text"
       fontFamily: PT Serif

@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "ПУТЬ · ПИЛОТ 90 ДНЕЙ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,9 +36,9 @@ elements:
       text: "Пилот за 90 дней: одно отделение, без новой сметы"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: sub
     elementType: text
     bounds: [60, 124, 840, 30]
@@ -40,7 +51,7 @@ elements:
     elementType: shape
     bounds: [60, 178, 840, 12]
     shapeName: rect
-    fill: {type: solid, color: "#EFE9DD", radius: 6}
+    fill: {type: solid, color: "$soft", radius: 6}
   - elementId: seg1
     elementType: shape
     bounds: [60, 178, 218, 12]
@@ -60,7 +71,7 @@ elements:
     elementType: shape
     bounds: [60, 210, 218, 180]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: t1h
     elementType: text
     bounds: [76, 224, 190, 40]
@@ -83,14 +94,14 @@ elements:
     elementType: shape
     bounds: [290, 210, 400, 180]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: t2h
     elementType: text
     bounds: [306, 224, 370, 40]
     content:
       fontSize: 14
       bold: true
-      color: "#A8751F"
+      color: "$goldink"
       fontFamily: Noto Sans
       text: "Дни 15–75 · пилот на линии"
   - elementId: t2t
@@ -106,7 +117,7 @@ elements:
     elementType: shape
     bounds: [702, 210, 198, 180]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: t3h
     elementType: text
     bounds: [718, 224, 170, 40]

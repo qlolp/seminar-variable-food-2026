@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$dark"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.16
+    fill: {type: solid, color: "$mint"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "ПОЧЕМУ ЭТО ВАЖНО · КЛИНИЧЕСКИЕ РИСКИ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$cream"
       fontFamily: PT Serif
@@ -25,9 +36,9 @@ elements:
       text: "Четыре числа, которые делают тему стола клинической"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "#2E4A40"}
+    fill: {type: solid, color: "$accent"}
   - elementId: r1
     elementType: text
     bounds: [60, 136, 400, 88]
@@ -114,7 +125,7 @@ elements:
     bounds: [60, 508, 700, 20]
     content:
       fontSize: 10.5
-      color: "#8FA79B"
+      color: "$darkmuted"
       fontFamily: Noto Sans
       text: "Доклад, разделы 9–14 · источники: реестры MEDICAL_EVIDENCE и INTERNATIONAL_PRACTICES"
   - elementId: progress
@@ -127,6 +138,6 @@ elements:
     bounds: [900, 508, 40, 20]
     content:
       fontSize: 10.5
-      color: "#8FA79B"
+      color: "$darkmuted"
       align: [right, top]
       text: "8"

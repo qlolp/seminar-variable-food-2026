@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "РАЗГОВОР · ВОЗРАЖЕНИЯ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,9 +36,9 @@ elements:
       text: "Четырнадцать возражений — и что с ними делать"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: sub
     elementType: text
     bounds: [60, 124, 840, 30]
@@ -43,12 +54,12 @@ elements:
       fontSize: 12.5
       color: "$muted"
       fontFamily: Noto Sans
-      text: "«Не способны выбирать» · «Будут очереди» · «Это дорого» · «Санэпид не разрешит» · «Нет диетолога» · «Выберут нездоровое» · «Выбрал и отказался» · «Лечебное питание» · «Персонал против» · «Проверка спросит» · «У нас 400 мест» · «И так нормально» · «Кухня не своя» · «Через 4 дня новый СанПиН»"
+      text: "«Не способны выбирать» · «Будут очереди» · «Это дорого» · «Санэпид не разрешит» · «Нет диетолога» · «Выберут нездоровое» · «Выбрал и отказался» · «Лечебное питание» · «Персонал против» · «Проверка спросит» · «У нас 400 мест» · «И так нормально» · «Кухня не своя» · «1 сентября — новый СанПиН»"
   - elementId: a1
     elementType: shape
     bounds: [60, 226, 266, 196]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: a1h
     elementType: text
     bounds: [76, 240, 234, 40]
@@ -71,7 +82,7 @@ elements:
     elementType: shape
     bounds: [347, 226, 266, 196]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: a2h
     elementType: text
     bounds: [363, 240, 234, 40]
@@ -94,7 +105,7 @@ elements:
     elementType: shape
     bounds: [634, 226, 266, 196]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: a3h
     elementType: text
     bounds: [650, 240, 234, 40]

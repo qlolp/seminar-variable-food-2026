@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "СИСТЕМА · ПРОВЕРКА"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,14 +36,14 @@ elements:
       text: "Проверяющий спросит — отвечайте документом"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: q1
     elementType: shape
     bounds: [60, 134, 266, 200]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: q1h
     elementType: text
     bounds: [76, 148, 234, 40]
@@ -55,7 +66,7 @@ elements:
     elementType: shape
     bounds: [347, 134, 266, 200]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: q2h
     elementType: text
     bounds: [363, 148, 234, 40]
@@ -78,7 +89,7 @@ elements:
     elementType: shape
     bounds: [634, 134, 266, 200]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: q3h
     elementType: text
     bounds: [650, 148, 234, 40]
@@ -101,7 +112,7 @@ elements:
     elementType: shape
     bounds: [60, 356, 840, 108]
     shapeName: rect
-    fill: {type: solid, color: "#E4EFE9", radius: 8}
+    fill: {type: solid, color: "$mintsoft", radius: 14}
   - elementId: keyt
     elementType: text
     bounds: [84, 370, 800, 82]

@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "ТЕХНОЛОГИЯ · БЕЗ ВТОРОЙ КУХНИ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,9 +36,9 @@ elements:
       text: "Два варианта — это вторая гастроёмкость и тетрадь, а не вторая кухня"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: sub
     elementType: text
     bounds: [60, 124, 840, 30]
@@ -40,7 +51,7 @@ elements:
     elementType: shape
     bounds: [60, 172, 404, 72]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p1t
     elementType: text
     bounds: [78, 186, 372, 46]
@@ -54,7 +65,7 @@ elements:
     elementType: shape
     bounds: [496, 172, 404, 72]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p2t
     elementType: text
     bounds: [514, 186, 372, 46]
@@ -68,7 +79,7 @@ elements:
     elementType: shape
     bounds: [60, 258, 404, 72]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p3t
     elementType: text
     bounds: [78, 272, 372, 46]
@@ -82,7 +93,7 @@ elements:
     elementType: shape
     bounds: [496, 258, 404, 72]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p4t
     elementType: text
     bounds: [514, 272, 372, 46]
@@ -96,7 +107,7 @@ elements:
     elementType: shape
     bounds: [60, 344, 404, 72]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: p5t
     elementType: text
     bounds: [78, 358, 372, 46]
@@ -110,7 +121,7 @@ elements:
     elementType: shape
     bounds: [496, 344, 404, 72]
     shapeName: rect
-    fill: {type: solid, color: "#F6E4DF", radius: 8}
+    fill: {type: solid, color: "$risksoft", radius: 14}
   - elementId: antit
     elementType: text
     bounds: [514, 358, 372, 46]

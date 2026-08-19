@@ -14,25 +14,47 @@ OUT_HTML = ROOT / "проект" / "output" / "_slides.html"
 OUT_PDF = ROOT / "02_презентация" / "Презентация_Не_просто_накормить.pdf"
 FONTS = ROOT / "проект" / "output" / "fonts"
 
-THEME = {
-    "primary": "#B85C3D",
-    "accent": "#D97757",
-    "text": "#141413",
-    "muted": "#8A8578",
-    "bg": "#F7F5F0",
-    "soft": "#EFEBE3",
-    "softgreen": "#EFEBE3",
-    "line": "#E5E2D8",
-    "ink": "#1C1B19",
-}
-STYLES = {
-    "kicker": "font-size:11px;color:#B85C3D;font-family:'Noto Sans',sans-serif;letter-spacing:2px;font-weight:700;",
-    "h1": "font-size:28px;font-weight:700;color:#141413;font-family:'PT Serif',serif;line-height:1.15;",
-    "body": "font-size:15px;color:#141413;font-family:'Noto Sans',sans-serif;line-height:1.4;",
-    "small": "font-size:11px;color:#8A8578;font-family:'Noto Sans',sans-serif;line-height:1.3;",
-    "big": "font-size:44px;font-weight:700;color:#B85C3D;font-family:'PT Serif',serif;",
-    "q": "font-size:30px;font-weight:700;color:#B85C3D;font-family:'PT Serif',serif;line-height:1.25;",
-}
+THEME = {}
+STYLES = {}
+
+
+def load_theme(deck: dict) -> None:
+    """Тема берётся из .pptd — иначе PDF расходится с редактором."""
+    colors = dict((deck.get("theme") or {}).get("colors") or {})
+    defaults = {
+        "primary": "#1A7A70",
+        "accent": "#E9C46A",
+        "text": "#1A1915",
+        "muted": "#6E685C",
+        "bg": "#F3EEE4",
+        "soft": "#E7DFD0",
+        "line": "#D4CBB8",
+        "risk": "#E76F51",
+        "dark": "#1C3A43",
+        "darkcard": "#254850",
+        "cream": "#F7F1E6",
+        "sand": "#D8CFBE",
+        "mint": "#2A9D8F",
+        "ink": "#12262C",
+        "darkmuted": "#8AA3A8",
+        "mintsoft": "#D7EBE6",
+        "goldsoft": "#F3E6C4",
+        "risksoft": "#F3DDD6",
+        "goldink": "#8A6A1F",
+    }
+    for k, v in defaults.items():
+        colors.setdefault(k, v)
+    THEME.clear()
+    THEME.update(colors)
+    STYLES.clear()
+    STYLES.update({
+        "kicker": f"font-size:11px;color:{THEME['primary']};font-family:'Noto Sans',sans-serif;letter-spacing:2.4px;font-weight:700;",
+        "h1": f"font-size:32px;font-weight:700;color:{THEME['text']};font-family:'PT Serif',serif;line-height:1.12;",
+        "body": f"font-size:15px;color:{THEME['text']};font-family:'Noto Sans',sans-serif;line-height:1.4;",
+        "small": f"font-size:11px;color:{THEME['muted']};font-family:'Noto Sans',sans-serif;line-height:1.3;",
+        "big": f"font-size:52px;font-weight:700;color:{THEME['primary']};font-family:'PT Serif',serif;",
+        "q": f"font-size:36px;font-weight:700;color:{THEME['accent']};font-family:'PT Serif',serif;line-height:1.2;",
+    })
 
 
 def col(v):
@@ -67,6 +89,8 @@ def text_css(content, theme_styles):
             parts.append(f"color:{col(content['color'])}")
         if content.get("bold"):
             parts.append("font-weight:700")
+        if content.get("italic"):
+            parts.append("font-style:italic")
         if content.get("letterSpacing"):
             parts.append(f"letter-spacing:{content['letterSpacing']}px")
         if content.get("lineHeight"):
@@ -108,12 +132,28 @@ def render_text(el):
     )
 
 
+def el_opacity(el):
+    op = el.get("opacity")
+    if op is None:
+        op = (el.get("fill") or {}).get("opacity")
+    if op is None:
+        return ""
+    try:
+        val = float(op)
+    except (TypeError, ValueError):
+        return ""
+    if val >= 1:
+        return ""
+    return f"opacity:{val}"
+
+
 def render_shape(el):
     b = el["bounds"]
-    fill = (el.get("fill") or {}).get("color")
+    fill_spec = el.get("fill") or {}
+    fill = fill_spec.get("color")
     border = el.get("border") or {}
     name = el.get("shapeName") or "rect"
-    radius = el.get("cornerRadius")
+    radius = el.get("cornerRadius") or fill_spec.get("radius")
     parts = [
         f"left:{b[0]}px",
         f"top:{b[1]}px",
@@ -131,12 +171,17 @@ def render_shape(el):
         parts.append(f"border-radius:{radius}px")
     if border:
         bw = border.get("width") or 1
-        bc = col(border.get("color") or THEME["muted"])
+        bc = col(border.get("color") or THEME.get("muted", "#6E685C"))
         style = str(border.get("style") or "solid")
         if style in ("dash", "dashed"):
             parts.append(f"border:{bw}px dashed {bc}")
         else:
             parts.append(f"border:{bw}px solid {bc}")
+    op = el_opacity(el)
+    if op:
+        parts.append(op)
+    overflow = "visible" if (b[0] < 0 or b[1] < 0 or b[0] + b[2] > 960 or b[1] + b[3] > 540) else "hidden"
+    parts.append(f"overflow:{overflow}")
     return f'<div class="el shape" style="{";".join(parts)};"></div>'
 
 
@@ -180,7 +225,8 @@ def render_table(el):
         html.append("<tr>")
         for cell in row:
             tag = "th" if i == 0 else "td"
-            html.append(f"<{tag}>{esc(cell.get('text', ''))}</{tag}>")
+            txt = cell.get("text", "") if isinstance(cell, dict) else str(cell)
+            html.append(f"<{tag}>{esc(txt)}</{tag}>")
         html.append("</tr>")
     html.append("</table></div>")
     return "".join(html)
@@ -243,6 +289,7 @@ def render_page(path: Path) -> str:
 
 def main():
     deck = yaml.safe_load((DECK / "03_презентация.pptd").read_text(encoding="utf-8"))
+    load_theme(deck)
     pages = deck["pages"]
     slides = []
     for rel in pages:
@@ -256,6 +303,7 @@ html, body {{ margin:0; padding:0; }}
 .slide {{ width:960px; height:540px; position:relative; overflow:hidden; page-break-after:always; }}
 .slide:last-child {{ page-break-after:auto; }}
 .el {{ position:absolute; overflow:hidden; box-sizing:border-box; }}
+.el.shape {{ overflow:visible; }}
 .el.line {{ overflow:visible; }}
 .el p {{ margin:0 0 0.3em; }}
 .el p:last-child {{ margin-bottom:0; }}

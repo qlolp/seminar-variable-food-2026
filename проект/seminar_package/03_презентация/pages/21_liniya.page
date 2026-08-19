@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "ТЕХНОЛОГИЯ · ЛИНИЯ РАЗДАЧИ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,14 +36,14 @@ elements:
       text: "Линия важнее меню: четыре принципа раздачи"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: l1
     elementType: shape
     bounds: [60, 134, 404, 158]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: l1h
     elementType: text
     bounds: [78, 148, 372, 30]
@@ -55,7 +66,7 @@ elements:
     elementType: shape
     bounds: [496, 134, 404, 158]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: l2h
     elementType: text
     bounds: [514, 148, 372, 30]
@@ -78,7 +89,7 @@ elements:
     elementType: shape
     bounds: [60, 306, 404, 158]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: l3h
     elementType: text
     bounds: [78, 320, 372, 30]
@@ -101,7 +112,7 @@ elements:
     elementType: shape
     bounds: [496, 306, 404, 158]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: l4h
     elementType: text
     bounds: [514, 320, 372, 30]

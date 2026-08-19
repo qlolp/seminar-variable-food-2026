@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$dark"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.16
+    fill: {type: solid, color: "$mint"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "НАЧНЁМ С ЗАЛА"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$cream"
       fontFamily: PT Serif
@@ -25,14 +36,14 @@ elements:
       text: "Два вопроса — и одна просьба на весь доклад"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "#2E4A40"}
+    fill: {type: solid, color: "$accent"}
   - elementId: q1
     elementType: shape
     bounds: [60, 136, 840, 62]
     shapeName: rect
-    fill: {type: solid, color: "$darkcard", radius: 8}
+    fill: {type: solid, color: "$darkcard", radius: 14}
   - elementId: q1t
     elementType: text
     bounds: [84, 152, 800, 32]
@@ -46,7 +57,7 @@ elements:
     elementType: shape
     bounds: [60, 212, 840, 62]
     shapeName: rect
-    fill: {type: solid, color: "$darkcard", radius: 8}
+    fill: {type: solid, color: "$darkcard", radius: 14}
   - elementId: q2t
     elementType: text
     bounds: [84, 228, 800, 32]
@@ -60,7 +71,7 @@ elements:
     elementType: shape
     bounds: [60, 296, 840, 96]
     shapeName: rect
-    fill: {type: solid, color: "#0F1E19", radius: 8}
+    fill: {type: solid, color: "$ink", radius: 14}
   - elementId: reveal_line
     elementType: shape
     bounds: [60, 296, 4, 96]
@@ -75,8 +86,8 @@ elements:
       lineHeight: 1.45
       fontFamily: Noto Sans
       text: |
-        <p>Теперь посмотрите на зал: <strong>здесь сидят минимум четыре организации, где выбор уже работает</strong> — Успенский и Болотнинский ПНИ, Усть-Илимск, «Серафимовский». И один регион, где модель масштабирована решением области, — Иркутская область.</p>
-        <p>Значит, дальше мы говорим не о гипотезе, а о практике, которая физически в этом зале.</p>
+        <p>В зале — носители опыта: <strong>Успенский ПНИ, Усть-Илимск, «Серафимовский»</strong>. Четвёртый публичный кейс — Болотнинский ПНИ (тот же регион, что и Тогучинский участник). Иркутская область — единственный заявленный случай масштаба области (источник вторичный, S018).</p>
+        <p>Дальше говорим не о гипотезе, а о практике, которая уже в этом зале.</p>
   - elementId: ask
     elementType: text
     bounds: [60, 416, 840, 60]
@@ -92,7 +103,7 @@ elements:
     bounds: [60, 508, 700, 20]
     content:
       fontSize: 10.5
-      color: "#8FA79B"
+      color: "$darkmuted"
       fontFamily: Noto Sans
       text: "Доклад, разделы 23 и 25 — практики в зале и подтверждённые кейсы"
   - elementId: progress
@@ -105,6 +116,6 @@ elements:
     bounds: [900, 508, 40, 20]
     content:
       fontSize: 10.5
-      color: "#8FA79B"
+      color: "$darkmuted"
       align: [right, top]
       text: "2"

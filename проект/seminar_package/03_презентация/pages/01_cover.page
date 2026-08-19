@@ -3,77 +3,157 @@ background:
   type: solid
   color: "$dark"
 elements:
-  - elementId: spark
-    elementType: text
-    bounds: [70, 56, 40, 34]
-    content:
-      fontSize: 24
-      color: "$accent"
-      fontFamily: Noto Sans
-      text: "✦"
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: panel
+    elementType: shape
+    bounds: [620, 0, 340, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$ink"}
+  - elementId: motif
+    elementType: shape
+    bounds: [700, -90, 320, 320]
+    shapeName: ellipse
+    opacity: 0.22
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif2
+    elementType: shape
+    bounds: [780, 360, 240, 240]
+    shapeName: ellipse
+    opacity: 0.14
+    fill: {type: solid, color: "$accent"}
+  - elementId: goldbar
+    elementType: shape
+    bounds: [48, 56, 88, 6]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
   - elementId: brand
     elementType: text
-    bounds: [112, 62, 640, 26]
+    bounds: [48, 76, 540, 22]
     content:
-      fontSize: 15
-      color: "$cream"
-      fontFamily: PT Serif
-      text: "Пространство новых идей 2.0"
-  - elementId: kicker
-    elementType: text
-    bounds: [70, 146, 820, 20]
-    content:
-      fontSize: 12
+      fontSize: 13
       color: "$accent"
       letterSpacing: 3
       bold: true
       fontFamily: Noto Sans
-      text: "МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ · МИНТРУД РОССИИ"
+      text: "ПРОСТРАНСТВО НОВЫХ ИДЕЙ 2.0"
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 128, 540, 18]
+    content:
+      fontSize: 11
+      color: "$darkmuted"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "МЕЖРЕГИОНАЛЬНЫЙ СЕМИНАР · МИНТРУД РОССИИ"
   - elementId: title
     elementType: text
-    bounds: [70, 186, 830, 110]
+    bounds: [48, 158, 540, 130]
     content:
-      fontSize: 54
+      fontSize: 52
       bold: true
       color: "$cream"
-      lineHeight: 1.05
+      lineHeight: 1.02
       fontFamily: PT Serif
       text: "Не просто накормить"
-  - elementId: line1
-    elementType: shape
-    bounds: [70, 268, 90, 3]
-    shapeName: rect
-    fill: {type: solid, color: "$accent"}
   - elementId: subtitle
     elementType: text
-    bounds: [70, 290, 800, 84]
+    bounds: [48, 300, 540, 88]
     content:
-      fontSize: 18
+      fontSize: 16
       color: "$sand"
       lineHeight: 1.4
       fontFamily: Noto Sans
       text: "Как организовать безопасное, достойное и вариативное питание людей с психическими нарушениями в домах социального обслуживания"
-  - elementId: topline
-    elementType: shape
-    bounds: [70, 414, 820, 1]
-    shapeName: rect
-    fill: {type: solid, color: "#2E4A40"}
   - elementId: meta
     elementType: text
-    bounds: [70, 428, 820, 62]
+    bounds: [48, 410, 540, 72]
     content:
-      fontSize: 12.5
-      color: "$sand"
-      lineHeight: 1.5
+      fontSize: 13
+      color: "$cream"
+      lineHeight: 1.45
       fontFamily: Noto Sans
       text: |
-        <p>Санкт-Петербург, 25–27 августа 2026 года · директора и специалисты учреждений из 51 региона</p>
-        <p>Докладчик: Чистяков Е. В., директор СПб ГАСУСОН «ДСО „Серафимовский“» · доклад: 284 стр., 121 источник, 22 кейса, 45 приложений</p>
+        <p>Санкт-Петербург, 25–27 августа 2026</p>
+        <p>Чистяков Е. В. · ДСО «Серафимовский»</p>
+        <p>51 регион · директора и специалисты</p>
+  - elementId: s1n
+    elementType: text
+    bounds: [656, 70, 270, 54]
+    content:
+      fontSize: 40
+      bold: true
+      color: "$accent"
+      fontFamily: PT Serif
+      text: "284"
+  - elementId: s1l
+    elementType: text
+    bounds: [656, 122, 270, 22]
+    content:
+      fontSize: 13
+      color: "$sand"
+      fontFamily: Noto Sans
+      text: "страницы доклада"
+  - elementId: s2n
+    elementType: text
+    bounds: [656, 170, 270, 54]
+    content:
+      fontSize: 40
+      bold: true
+      color: "$accent"
+      fontFamily: PT Serif
+      text: "121"
+  - elementId: s2l
+    elementType: text
+    bounds: [656, 222, 270, 22]
+    content:
+      fontSize: 13
+      color: "$sand"
+      fontFamily: Noto Sans
+      text: "источник в трёх реестрах"
+  - elementId: s3n
+    elementType: text
+    bounds: [656, 270, 270, 54]
+    content:
+      fontSize: 40
+      bold: true
+      color: "$accent"
+      fontFamily: PT Serif
+      text: "22"
+  - elementId: s3l
+    elementType: text
+    bounds: [656, 322, 270, 22]
+    content:
+      fontSize: 13
+      color: "$sand"
+      fontFamily: Noto Sans
+      text: "учебных кейса"
+  - elementId: s4n
+    elementType: text
+    bounds: [656, 370, 270, 54]
+    content:
+      fontSize: 40
+      bold: true
+      color: "$accent"
+      fontFamily: PT Serif
+      text: "45"
+  - elementId: s4l
+    elementType: text
+    bounds: [656, 422, 270, 22]
+    content:
+      fontSize: 13
+      color: "$sand"
+      fontFamily: Noto Sans
+      text: "приложений-шаблонов"
   - elementId: foot
     elementType: text
-    bounds: [70, 502, 820, 24]
+    bounds: [48, 500, 540, 24]
     content:
-      fontSize: 10.5
-      color: "#8FA79B"
+      fontSize: 11
+      color: "$darkmuted"
       fontFamily: Noto Sans
-      text: "Презентация — маршрут по докладу: вопросы, цифры, инструменты. Каждый слайд указывает на раздел, где всё разобрано."
+      text: "Презентация — маршрут. Каждый слайд указывает на раздел доклада."

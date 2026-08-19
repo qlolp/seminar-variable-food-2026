@@ -71,8 +71,12 @@ def render_shape(el):
            'homePlate': 'clip-path:polygon(0 0,72% 0,100% 50%,72% 100%,0 100%);'}.get(name, '')
     if f.get('radius'):
         rad += 'border-radius:%spx;' % f['radius']
+    if el.get('cornerRadius'):
+        rad += 'border-radius:%spx;' % el['cornerRadius']
+    op = el.get('opacity', f.get('opacity'))
+    opac = ('opacity:%s;' % op) if op not in (None, 1, 1.0) else ''
     return ('<div style="position:absolute;left:%s;top:%s;width:%s;height:%s;'
-            'background:%s;%s"></div>' % (px(x), px(y), px(w), px(h), bg, rad))
+            'background:%s;%s%s"></div>' % (px(x), px(y), px(w), px(h), bg, rad, opac))
 
 
 def render_line(el):
@@ -135,7 +139,7 @@ def render_chart(el):
         for si, i in enumerate(num_cols):
             val = float(r[i])
             pct = min(100, val / mx * 100)
-            fill = col(series[si].get('fill')) if si < len(series) else '#B85C3D'
+            fill = col(series[si].get('fill')) if si < len(series) else COLORS.get('primary', '#1A7A70')
             inner += "<div style='width:%s%%;height:%s%%;background:%s'></div>" % (pct, 100.0 / len(num_cols), fill)
         total = sum(float(r[i]) for i in num_cols)
         pctall = min(100, total / mx * 100)

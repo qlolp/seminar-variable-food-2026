@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "ОПЫТ · ДЕВЯТЬ СИСТЕМ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,9 +36,9 @@ elements:
       text: "В девяти системах выбор в питании — нормативный мейнстрим"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: sub
     elementType: text
     bounds: [60, 124, 840, 30]
@@ -40,7 +51,7 @@ elements:
     elementType: shape
     bounds: [60, 172, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g1t
     elementType: text
     bounds: [78, 186, 234, 40]
@@ -54,7 +65,7 @@ elements:
     elementType: shape
     bounds: [347, 172, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g2t
     elementType: text
     bounds: [365, 186, 234, 40]
@@ -68,7 +79,7 @@ elements:
     elementType: shape
     bounds: [634, 172, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g3t
     elementType: text
     bounds: [652, 186, 234, 40]
@@ -82,7 +93,7 @@ elements:
     elementType: shape
     bounds: [60, 250, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g4t
     elementType: text
     bounds: [78, 264, 234, 40]
@@ -96,7 +107,7 @@ elements:
     elementType: shape
     bounds: [347, 250, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g5t
     elementType: text
     bounds: [365, 264, 234, 40]
@@ -110,7 +121,7 @@ elements:
     elementType: shape
     bounds: [634, 250, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g6t
     elementType: text
     bounds: [652, 264, 234, 40]
@@ -124,7 +135,7 @@ elements:
     elementType: shape
     bounds: [60, 328, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g7t
     elementType: text
     bounds: [78, 342, 234, 40]
@@ -138,7 +149,7 @@ elements:
     elementType: shape
     bounds: [347, 328, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g8t
     elementType: text
     bounds: [365, 342, 234, 40]
@@ -152,7 +163,7 @@ elements:
     elementType: shape
     bounds: [634, 328, 266, 64]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: g9t
     elementType: text
     bounds: [652, 342, 234, 40]
@@ -171,8 +182,8 @@ elements:
       lineHeight: 1.5
       fontFamily: Noto Sans
       text: |
-        <p><strong>Урок Японии для нас:</strong> норма о питании выросла из логики дефицита — сначала деньги за специалиста (2005), через 16 лет обязательность (2021), параллельно национальная база данных. Структурированная поддержка питания: госпитализации 20,3 % против 30,6 %.</p>
-        <p>Изменение норм — марафон в полтора десятилетия. Начинается с денег за специалиста, а не с призывов к качеству.</p>
+        <p><strong>Урок Японии:</strong> сначала деньги за специалиста (2005), через 16 лет — обязательная норма (2021). Госпитализации 20,3 % против 30,6 %.</p>
+        <p>Изменение норм — марафон. Начинается с ставки специалиста, а не с призыва к качеству.</p>
   - elementId: src
     elementType: text
     bounds: [60, 508, 700, 20]

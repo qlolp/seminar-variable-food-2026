@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "ПРАВО · КАРТА ИЗ ТРЁХ ЗОН"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,14 +36,14 @@ elements:
       text: "Правовая рамка уже существует — её не нужно «пробивать»"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: z1
     elementType: shape
     bounds: [60, 134, 266, 330]
     shapeName: rect
-    fill: {type: solid, color: "#E4EFE9", radius: 8}
+    fill: {type: solid, color: "$mintsoft", radius: 14}
   - elementId: z1h
     elementType: text
     bounds: [78, 148, 234, 34]
@@ -51,7 +62,7 @@ elements:
       lineHeight: 1.5
       fontFamily: Noto Sans
       text: |
-        <p>· Питание ≥3 раз в день, диетическое по показаниям — СанПиН, п. 56 подп. 11–14</p>
+        <p>· Питание ≥3 раз в день, диетическое по показаниям — обе редакции СанПиН (4282-26, п. 56 подп. 11–14)</p>
         <p>· <strong>Число вариантов блюда ничем не ограничено</strong> — только безопасность и периодичность</p>
         <p>· Права получателя и учёт индивидуальных потребностей — ст. 9, 16 442-ФЗ</p>
         <p>· Гуманное отношение и достоинство — ст. 37/43 Закона № 3185-1</p>
@@ -60,14 +71,14 @@ elements:
     elementType: shape
     bounds: [347, 134, 266, 330]
     shapeName: rect
-    fill: {type: solid, color: "#F5EDDC", radius: 8}
+    fill: {type: solid, color: "$goldsoft", radius: 14}
   - elementId: z2h
     elementType: text
     bounds: [365, 148, 234, 34]
     content:
       fontSize: 15
       bold: true
-      color: "#A8751F"
+      color: "$goldink"
       fontFamily: Noto Sans
       text: "ЖЁЛТАЯ · через процедуру"
   - elementId: z2t
@@ -88,7 +99,7 @@ elements:
     elementType: shape
     bounds: [634, 134, 266, 330]
     shapeName: rect
-    fill: {type: solid, color: "#F6E4DF", radius: 8}
+    fill: {type: solid, color: "$risksoft", radius: 14}
   - elementId: z3h
     elementType: text
     bounds: [652, 148, 234, 34]

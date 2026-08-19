@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,24 +26,24 @@ elements:
       text: "КЛИНИКА · ЛЕКАРСТВА И ЕДА"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
       lineHeight: 1.15
-      text: "Четыре правила, которые обязана знать кухня"
+      text: "Пять правил, которые обязана знать кухня"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: l1
     elementType: shape
     bounds: [60, 134, 404, 86]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: l1t
     elementType: text
     bounds: [78, 148, 372, 60]
@@ -48,7 +59,7 @@ elements:
     elementType: shape
     bounds: [496, 134, 404, 86]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: l2t
     elementType: text
     bounds: [514, 148, 372, 60]
@@ -64,7 +75,7 @@ elements:
     elementType: shape
     bounds: [60, 234, 404, 86]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: l3t
     elementType: text
     bounds: [78, 248, 372, 60]
@@ -80,7 +91,7 @@ elements:
     elementType: shape
     bounds: [496, 234, 404, 86]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: l4t
     elementType: text
     bounds: [514, 248, 372, 60]
@@ -90,13 +101,13 @@ elements:
       lineHeight: 1.4
       fontFamily: Noto Sans
       text: |
-        <p><strong>Грейпфрут ↔ психотропные.</strong></p>
-        <p>Рост концентрации препаратов до ~40 %. Правило: исключить по списку.</p>
+        <p><strong>Грейпфрут ↔ карбамазепин.</strong></p>
+        <p>Рост AUC порядка 40 %. Правило: исключить грейпфрут из меню и передач.</p>
   - elementId: takeaway
     elementType: shape
     bounds: [60, 344, 840, 88]
     shapeName: rect
-    fill: {type: solid, color: "#E4EFE9", radius: 8}
+    fill: {type: solid, color: "$mintsoft", radius: 14}
   - elementId: takeawayt
     elementType: text
     bounds: [84, 358, 800, 62]
@@ -106,8 +117,8 @@ elements:
       lineHeight: 1.45
       fontFamily: Noto Sans
       text: |
-        <p><strong>Одна таблица на посту — бесплатная мера безопасности.</strong></p>
-        <p>Кухня не лечит — но она обязана знать, какие продукты конфликтуют с назначениями, и отмечать их в пищевой карте. Семью жителя на клозапине предупреждают: передачи тоже считаются.</p>
+        <p><strong>Одна таблица на посту — бесплатная мера безопасности.</strong> Пятое правило: алкоголь и энергетики — нулевая терпимость, передачи считаются.</p>
+        <p>Кухня не лечит. Она исполняет таблицу врача и отмечает конфликты в пищевой карте.</p>
   - elementId: src
     elementType: text
     bounds: [60, 508, 700, 20]
@@ -115,7 +126,7 @@ elements:
       fontSize: 10.5
       color: "$muted"
       fontFamily: Noto Sans
-      text: "Доклад, раздел 11 — пять лекарственно-пищевых правил (показаны четыре ключевых)"
+      text: "Доклад, раздел 11 — пять лекарственно-пищевых правил"
   - elementId: progress
     elementType: shape
     bounds: [60, 530, 386, 4]

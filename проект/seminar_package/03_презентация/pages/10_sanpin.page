@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "САНПИН · ЧТО МЕНЯЕТСЯ 1 СЕНТЯБРЯ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,14 +36,14 @@ elements:
       text: "СанПиН — про безопасность, а не про однообразие"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: old
     elementType: shape
     bounds: [60, 134, 404, 150]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: oldh
     elementType: text
     bounds: [78, 148, 370, 26]
@@ -63,7 +74,7 @@ elements:
     elementType: shape
     bounds: [496, 134, 404, 150]
     shapeName: rect
-    fill: {type: solid, color: "#E4EFE9", radius: 8}
+    fill: {type: solid, color: "$mintsoft", radius: 14}
   - elementId: newh
     elementType: text
     bounds: [514, 148, 370, 26]
@@ -86,7 +97,7 @@ elements:
     elementType: shape
     bounds: [60, 304, 840, 96]
     shapeName: rect
-    fill: {type: solid, color: "#F4E7D8", radius: 8}
+    fill: {type: solid, color: "$goldsoft", radius: 14}
   - elementId: keyt
     elementType: text
     bounds: [84, 318, 800, 70]

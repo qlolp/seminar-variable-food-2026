@@ -3,66 +3,135 @@ background:
   type: solid
   color: "$dark"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.16
+    fill: {type: solid, color: "$mint"}
   - elementId: kicker
     elementType: text
-    bounds: [60, 30, 700, 16]
+    bounds: [48, 36, 700, 16]
     content:
       fontSize: 11
       color: "$accent"
-      letterSpacing: 2
+      letterSpacing: 2.4
       bold: true
       fontFamily: Noto Sans
       text: "ФИНАЛ"
   - elementId: title
     elementType: text
-    bounds: [60, 150, 840, 130]
+    bounds: [48, 70, 860, 110]
     content:
-      fontSize: 40
+      fontSize: 36
       bold: true
       color: "$cream"
-      lineHeight: 1.2
+      lineHeight: 1.15
       fontFamily: PT Serif
       text: "Человек за столом ждёт не доклада. Он ждёт обеда, в котором есть место его выбору."
   - elementId: sub
     elementType: text
-    bounds: [60, 300, 840, 44]
+    bounds: [48, 190, 860, 36]
     content:
-      fontSize: 16
+      fontSize: 15
       color: "$sand"
       lineHeight: 1.4
       fontFamily: Noto Sans
-      text: "Теперь вы знаете, как такой обед организовать. Всё остальное — в докладе: 284 страницы, 121 источник, 22 кейса, 45 приложений."
-  - elementId: steps
+      text: "Остальное — в докладе: 284 страницы, 121 источник, 22 кейса, 45 приложений."
+  - elementId: st1
+    elementType: shape
+    bounds: [48, 250, 270, 150]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 16}
+  - elementId: st1n
     elementType: text
-    bounds: [60, 370, 840, 70]
+    bounds: [68, 268, 230, 36]
+    content:
+      fontSize: 28
+      bold: true
+      color: "$accent"
+      fontFamily: PT Serif
+      text: "1. Замер"
+  - elementId: st1t
+    elementType: text
+    bounds: [68, 312, 230, 70]
     content:
       fontSize: 15
-      color: "$accent"
-      lineHeight: 1.5
+      color: "$cream"
+      lineHeight: 1.4
       fontFamily: Noto Sans
-      text: |
-        <p><strong>Три шага на выходе из зала:</strong></p>
-        <p>замер — семь дней · пара — на линии или в подносе · строка — в положении о питании и в спецификации контракта</p>
+      text: "Семь дней. Приложение 25. Ничьих разрешений не нужно."
+  - elementId: st2
+    elementType: shape
+    bounds: [345, 250, 270, 150]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 16}
+  - elementId: st2n
+    elementType: text
+    bounds: [365, 268, 230, 36]
+    content:
+      fontSize: 28
+      bold: true
+      color: "$accent"
+      fontFamily: PT Serif
+      text: "2. Пара"
+  - elementId: st2t
+    elementType: text
+    bounds: [365, 312, 230, 70]
+    content:
+      fontSize: 15
+      color: "$cream"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "На линии или в подносе. Из той же заготовки."
+  - elementId: st3
+    elementType: shape
+    bounds: [642, 250, 270, 150]
+    shapeName: rect
+    fill: {type: solid, color: "$darkcard", radius: 16}
+  - elementId: st3n
+    elementType: text
+    bounds: [662, 268, 230, 36]
+    content:
+      fontSize: 28
+      bold: true
+      color: "$accent"
+      fontFamily: PT Serif
+      text: "3. Строка"
+  - elementId: st3t
+    elementType: text
+    bounds: [662, 312, 230, 70]
+    content:
+      fontSize: 15
+      color: "$cream"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "В положении о питании и в спецификации контракта."
   - elementId: thanks
     elementType: text
-    bounds: [60, 462, 840, 40]
+    bounds: [48, 430, 860, 50]
     content:
-      fontSize: 18
+      fontSize: 20
       bold: true
       color: "$cream"
       fontFamily: PT Serif
       text: "Спасибо. Продолжение — за вашей линией раздачи, в ближайший понедельник, 8:30."
   - elementId: src
     elementType: text
-    bounds: [60, 508, 700, 20]
+    bounds: [48, 508, 720, 20]
     content:
       fontSize: 10.5
-      color: "#8FA79B"
+      color: "$darkmuted"
       fontFamily: Noto Sans
       text: "Доклад, разделы 43.4 и 43.5 — первый шаг и письмо директору через год"
   - elementId: progress
     elementType: shape
-    bounds: [60, 530, 840, 4]
+    bounds: [48, 530, 864, 4]
     shapeName: rect
     fill: {type: solid, color: "$accent"}
   - elementId: pg
@@ -70,6 +139,6 @@ elements:
     bounds: [900, 508, 40, 20]
     content:
       fontSize: 10.5
-      color: "#8FA79B"
+      color: "$darkmuted"
       align: [right, top]
       text: "37"

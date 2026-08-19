@@ -3,6 +3,17 @@ background:
   type: solid
   color: "$bg"
 elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 8, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$mint"}
+  - elementId: motif
+    elementType: shape
+    bounds: [790, -120, 300, 300]
+    shapeName: ellipse
+    opacity: 0.20
+    fill: {type: solid, color: "$accent"}
   - elementId: kicker
     elementType: text
     bounds: [60, 30, 700, 16]
@@ -15,9 +26,9 @@ elements:
       text: "ВОЛЯ · ДЕЕСПОСОБНОСТЬ"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 42]
+    bounds: [60, 48, 840, 70]
     content:
-      fontSize: 27
+      fontSize: 26
       bold: true
       color: "$text"
       fontFamily: PT Serif
@@ -25,9 +36,9 @@ elements:
       text: "74 % недееспособны — но выбор блюда не сделка"
   - elementId: line
     elementType: shape
-    bounds: [60, 106, 840, 1]
+    bounds: [60, 124, 72, 4]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
+    fill: {type: solid, color: "$accent"}
   - elementId: big
     elementType: text
     bounds: [60, 136, 320, 130]
@@ -61,7 +72,7 @@ elements:
     elementType: shape
     bounds: [420, 136, 480, 76]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: ch1t
     elementType: text
     bounds: [440, 152, 444, 46]
@@ -75,7 +86,7 @@ elements:
     elementType: shape
     bounds: [420, 224, 480, 76]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: ch2t
     elementType: text
     bounds: [440, 240, 444, 46]
@@ -89,7 +100,7 @@ elements:
     elementType: shape
     bounds: [420, 312, 480, 76]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: ch3t
     elementType: text
     bounds: [440, 328, 444, 46]
@@ -103,7 +114,7 @@ elements:
     elementType: shape
     bounds: [420, 400, 480, 76]
     shapeName: rect
-    fill: {type: solid, color: "$soft", radius: 8}
+    fill: {type: solid, color: "$soft", radius: 14}
   - elementId: ch4t
     elementType: text
     bounds: [440, 416, 444, 46]
