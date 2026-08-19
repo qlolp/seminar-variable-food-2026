@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>СанПиН 4282-26</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #f7f3ec; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f7f3ec; font-family:'Times New Roman', serif; color:#264653;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#2a9d8f; font-weight:600;">НОРМАТИВНАЯ РАМКА</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#264653;">Новый СанПиН с&nbsp;1&nbsp;сентября<br/>2026&nbsp;года: что меняется</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:178px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <!-- Comparison: до и после -->
+  <div style="position:absolute; left:60px; top:204px; width:840px; display:flex; gap:20px;">
+
+    <!-- было -->
+    <div style="flex:1; background:#ffffff; border:2px solid #d6cfc1; border-radius:8px; padding:18px 22px;">
+      <p style="margin:0; font-size:11px; letter-spacing:3px; color:#8a9aa6; font-weight:600;">БЫЛО · до 01.09.2026</p>
+      <p style="margin:6px 0 14px 0; font-size:18px; font-weight:700; color:#264653;">СанПиН 2.3/2.4.3590-20</p>
+
+      <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+        <span style="color:#6b7a82; margin-right:8px; font-size:14px;">—</span>
+        <p style="margin:0; font-size:13px; color:#3a4a52; line-height:1.35;">ХАССП&nbsp;— рекомендация</p>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+        <span style="color:#6b7a82; margin-right:8px; font-size:14px;">—</span>
+        <p style="margin:0; font-size:13px; color:#3a4a52; line-height:1.35;">Срок на&nbsp;раздаче: 2&nbsp;часа</p>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+        <span style="color:#6b7a82; margin-right:8px; font-size:14px;">—</span>
+        <p style="margin:0; font-size:13px; color:#3a4a52; line-height:1.35;">Суточные пробы: 24&nbsp;часа</p>
+      </div>
+      <div style="display:flex; align-items:flex-start;">
+        <span style="color:#6b7a82; margin-right:8px; font-size:14px;">—</span>
+        <p style="margin:0; font-size:13px; color:#3a4a52; line-height:1.35;">Аллергены: не&nbsp;обязательно объявлять</p>
+      </div>
+    </div>
+
+    <!-- стрелка -->
+    <div style="display:flex; align-items:center; justify-content:center;">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" fill="#264653"/>
+        <path d="M12 20 L28 20 M22 14 L28 20 L22 26" stroke="#e9c46a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- стало -->
+    <div style="flex:1; background:#264653; border:2px solid #264653; border-radius:8px; padding:18px 22px;">
+      <p style="margin:0; font-size:11px; letter-spacing:3px; color:#e9c46a; font-weight:600;">СТАЛО · с 01.09.2026</p>
+      <p style="margin:6px 0 14px 0; font-size:18px; font-weight:700; color:#ffffff;">СанПиН 2.3/2.4.4282-26</p>
+
+      <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+        <span style="color:#e9c46a; margin-right:8px; font-size:14px;">+</span>
+        <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.35;">ХАССП&nbsp;— <strong style="color:#e9c46a;">обязателен</strong></p>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+        <span style="color:#e9c46a; margin-right:8px; font-size:14px;">+</span>
+        <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.35;">Срок на&nbsp;раздаче: 3&nbsp;часа</p>
+      </div>
+      <div style="display:flex; align-items:flex-start; margin-bottom:8px;">
+        <span style="color:#e9c46a; margin-right:8px; font-size:14px;">+</span>
+        <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.35;">Суточные пробы: <strong style="color:#e9c46a;">48&nbsp;часов</strong></p>
+      </div>
+      <div style="display:flex; align-items:flex-start;">
+        <span style="color:#e9c46a; margin-right:8px; font-size:14px;">+</span>
+        <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.35;">Аллергены: <strong style="color:#e9c46a;">обязательно объявлять</strong></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- главный вывод -->
+  <div style="position:absolute; left:60px; top:412px; width:840px; background:#e9c46a; border-radius:8px; padding:14px 22px;">
+    <p style="margin:0; font-size:14px; color:#264653; line-height:1.4;"><strong>Главное для&nbsp;нас:</strong> норма о&nbsp;трёхразовом питании и&nbsp;диетическом по&nbsp;показаниям сохраняется. Вариативность не&nbsp;запрещена. С&nbsp;1&nbsp;сентября&nbsp;— обновите положение, журналы, памятки.</p>
+  </div>
+
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:11px; color:#8a9aa6; font-style:italic;">Пост. ГГСВ РФ от&nbsp;02.06.2026 №&nbsp;18, рег. Минюст №&nbsp;86854. Доклад, раздел&nbsp;17–18, приложение&nbsp;39.</p>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#e9c46a" font-family="Times New Roman">10</text>
+  </svg>
+
+</div>
+</body>
+</html>

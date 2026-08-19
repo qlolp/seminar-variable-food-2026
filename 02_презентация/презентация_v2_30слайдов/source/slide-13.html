@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Лестница моделей</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #f7f3ec; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f7f3ec; font-family:'Times New Roman', serif; color:#264653;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#2a9d8f; font-weight:600;">СТУПЕНИ ВАРИАТИВНОСТИ</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#264653;">От&nbsp;мономеню к&nbsp;выбору:<br/>пять ступеней</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:178px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <p style="position:absolute; left:60px; top:194px; width:840px; margin:0; font-size:14px; line-height:1.5; color:#3a4a52; font-weight:400;">Большинство домов ближайший год&nbsp;— на&nbsp;ступенях 1–2. Ступень&nbsp;5 остаётся горизонтом.</p>
+
+  <!-- 5 ступеней в виде лестницы -->
+  <div style="position:absolute; left:60px; top:242px; width:840px;">
+
+    <!-- ступень 1 -->
+    <div style="margin-bottom:8px; display:flex; align-items:center;">
+      <div style="width:80px; flex-shrink:0;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#8a9aa6; font-weight:600;">СТУПЕНЬ 1</p>
+      </div>
+      <div style="flex:1; background:#e5dfd2; height:30px; border-radius:4px 0 0 4px; padding:0 14px; display:flex; align-items:center;">
+        <p style="margin:0; font-size:13px; color:#3a4a52; font-weight:500;">Цикличное меню по&nbsp;раскладке</p>
+      </div>
+      <div style="width:160px; flex-shrink:0; padding-left:14px;">
+        <p style="margin:0; font-size:11px; color:#8a9aa6;">минимум: 0&nbsp;усилий</p>
+      </div>
+    </div>
+
+    <!-- ступень 2 -->
+    <div style="margin-bottom:8px; display:flex; align-items:center;">
+      <div style="width:80px; flex-shrink:0;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#8a9aa6; font-weight:600;">СТУПЕНЬ 2</p>
+      </div>
+      <div style="flex:1; background:#d8cdb0; height:30px; border-radius:4px 0 0 4px; padding:0 14px; display:flex; align-items:center;">
+        <p style="margin:0; font-size:13px; color:#3a4a52; font-weight:500;">Опрос предпочтений жителей</p>
+      </div>
+      <div style="width:160px; flex-shrink:0; padding-left:14px;">
+        <p style="margin:0; font-size:11px; color:#8a9aa6;">минимум: 1&nbsp;неделя работы</p>
+      </div>
+    </div>
+
+    <!-- ступень 3 -->
+    <div style="margin-bottom:8px; display:flex; align-items:center;">
+      <div style="width:80px; flex-shrink:0;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#8a9aa6; font-weight:600;">СТУПЕНЬ 3</p>
+      </div>
+      <div style="flex:1; background:#c9b48a; height:30px; border-radius:4px 0 0 4px; padding:0 14px; display:flex; align-items:center;">
+        <p style="margin:0; font-size:13px; color:#264653; font-weight:500;">Выбор из&nbsp;2&nbsp;вариантов на&nbsp;завтрак и&nbsp;обед</p>
+      </div>
+      <div style="width:160px; flex-shrink:0; padding-left:14px;">
+        <p style="margin:0; font-size:11px; color:#8a9aa6;">пилот: 90&nbsp;дней</p>
+      </div>
+    </div>
+
+    <!-- ступень 4 -->
+    <div style="margin-bottom:8px; display:flex; align-items:center;">
+      <div style="width:80px; flex-shrink:0;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#8a9aa6; font-weight:600;">СТУПЕНЬ 4</p>
+      </div>
+      <div style="flex:1; background:#2a9d8f; height:30px; border-radius:4px 0 0 4px; padding:0 14px; display:flex; align-items:center;">
+        <p style="margin:0; font-size:13px; color:#ffffff; font-weight:600;">Совет жителей по&nbsp;питанию участвует в&nbsp;цикле меню</p>
+      </div>
+      <div style="width:160px; flex-shrink:0; padding-left:14px;">
+        <p style="margin:0; font-size:11px; color:#8a9aa6;">горизонт: 6&nbsp;месяцев</p>
+      </div>
+    </div>
+
+    <!-- ступень 5 -->
+    <div style="display:flex; align-items:center;">
+      <div style="width:80px; flex-shrink:0;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#8a9aa6; font-weight:600;">СТУПЕНЬ 5</p>
+      </div>
+      <div style="flex:1; background:#e9c46a; height:30px; border-radius:4px 0 0 4px; padding:0 14px; display:flex; align-items:center;">
+        <p style="margin:0; font-size:13px; color:#264653; font-weight:600;">Своя кухня отделения, тренировка бытового решения</p>
+      </div>
+      <div style="width:160px; flex-shrink:0; padding-left:14px;">
+        <p style="margin:0; font-size:11px; color:#8a9aa6;">горизонт: год+</p>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:11px; color:#8a9aa6; font-style:italic;">Доклад, раздел&nbsp;8. «Лестница моделей»&nbsp;— критерии реального выбора и&nbsp;движения вверх.</p>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#e9c46a" font-family="Times New Roman">13</text>
+  </svg>
+
+</div>
+</body>
+</html>

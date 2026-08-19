@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Дисфагия — IDDSI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #f7f3ec; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f7f3ec; font-family:'Times New Roman', serif; color:#264653;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#e76f51; font-weight:600;">СКРЫТАЯ ЭПИДЕМИЯ</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#264653;">Дисфагия: что делать<br/>без&nbsp;логопеда</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:178px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <p style="position:absolute; left:60px; top:196px; width:840px; margin:0; font-size:14px; line-height:1.5; color:#3a4a52; font-weight:400;">22–70% принимающих антипсихотики. Логопеда в&nbsp;учреждении нет. Что закрывает риск без&nbsp;него&nbsp;— пакет из&nbsp;четырёх элементов.</p>
+
+  <!-- 4 элемента пакета -->
+  <div style="position:absolute; left:60px; top:264px; width:840px;">
+
+    <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:14px;">
+
+      <div style="background:#ffffff; border-radius:8px; padding:16px 20px; border-left:4px solid #e76f51;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#e76f51; font-weight:700;">① РАСПОЗНАВАНИЕ</p>
+        <p style="margin:6px 0 0 0; font-size:14px; font-weight:700; color:#264653;">Шесть признаков, видимых без&nbsp;инструментов</p>
+        <p style="margin:4px 0 0 0; font-size:12px; color:#3a4a52; line-height:1.35;">кашель · «мокрый» голос · долгое жевание · еда за&nbsp;щекой · подтекание · повторные пневмонии</p>
+      </div>
+
+      <div style="background:#ffffff; border-radius:8px; padding:16px 20px; border-left:4px solid #e9c46a;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#b8972e; font-weight:700;">② ПОЗА И&nbsp;ТЕМП</p>
+        <p style="margin:6px 0 0 0; font-size:14px; font-weight:700; color:#264653;">90°&nbsp;— подбородок вниз&nbsp;— малые глотки</p>
+        <p style="margin:4px 0 0 0; font-size:12px; color:#3a4a52; line-height:1.35;">30&nbsp;мин после еды без&nbsp;укладывания. Бесплатно.</p>
+      </div>
+
+      <div style="background:#ffffff; border-radius:8px; padding:16px 20px; border-left:4px solid #2a9d8f;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#2a9d8f; font-weight:700;">③ ТЕКСТУРА ПО&nbsp;IDDSI</p>
+        <p style="margin:6px 0 0 0; font-size:14px; font-weight:700; color:#264653;">Шкала 8&nbsp;уровней + тесты вилкой/наклоном</p>
+        <p style="margin:4px 0 0 0; font-size:12px; color:#3a4a52; line-height:1.35;">исследование: соответствие выросло 44→90% после обучения</p>
+      </div>
+
+      <div style="background:#ffffff; border-radius:8px; padding:16px 20px; border-left:4px solid #264653;">
+        <p style="margin:0; font-size:11px; letter-spacing:2px; color:#264653; font-weight:700;">④ ГОТОВНОСТЬ К&nbsp;ИНЦИДЕНТУ</p>
+        <p style="margin:6px 0 0 0; font-size:14px; font-weight:700; color:#264653;">2&nbsp;обученных на&nbsp;посту в&nbsp;часы еды</p>
+        <p style="margin:4px 0 0 0; font-size:12px; color:#3a4a52; line-height:1.35;">алгоритм Геймлиха. Это часть пищевой безопасности, не&nbsp;«общая первая помощь».</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="position:absolute; left:60px; top:464px; width:840px; background:#e76f51; border-radius:8px; padding:12px 22px;">
+    <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.4;"><strong>Предел пакета называется прямо:</strong> он&nbsp;не&nbsp;лечит дисфагию, не&nbsp;заменяет инструментальную оценку, не&nbsp;отменяет врача. Делает другое: переводит организацию из&nbsp;состояния «не&nbsp;знаем, кто в&nbsp;риске» в&nbsp;состояние «знаем, наблюдаем, исполняем назначения».</p>
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#e9c46a" font-family="Times New Roman">17</text>
+  </svg>
+
+</div>
+</body>
+</html>

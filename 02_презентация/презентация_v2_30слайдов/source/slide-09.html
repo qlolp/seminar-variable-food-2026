@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Четыре российские практики</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #264653; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#264653; font-family:'Times New Roman', serif; color:#ffffff;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#e9c46a; font-weight:600;">ДОКАЗАТЕЛЬСТВО ПРАКТИКОЙ</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#ffffff;">Это уже делают<br/>в&nbsp;России</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:188px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <p style="position:absolute; left:60px; top:206px; width:840px; margin:0; font-size:15px; line-height:1.5; color:#c5d0d8; font-weight:400;">В&nbsp;2024–2025 годах четыре учреждения публично внедрили вариативное меню. Это снимает с&nbsp;темы статус эксперимента.</p>
+
+  <!-- timeline -->
+  <div style="position:absolute; left:60px; top:288px; width:840px;">
+
+    <!-- горизонтальная линия -->
+    <svg width="840" height="4" style="display:block; margin-bottom:30px;" aria-hidden="true">
+      <rect x="0" y="0" width="840" height="4" fill="#3a5560"/>
+      <rect x="0" y="0" width="420" height="4" fill="#2a9d8f"/>
+    </svg>
+
+    <!-- 4 точки -->
+    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; position:relative; top:-44px;">
+
+      <div style="text-align:center;">
+        <svg width="28" height="28" viewBox="0 0 28 28" style="display:block; margin:0 auto 14px;" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" fill="#e9c46a"/>
+          <text x="14" y="14" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#264653" font-family="Times New Roman">1</text>
+        </svg>
+        <p style="margin:0; font-size:14px; font-weight:700; color:#ffffff; line-height:1.2;">Болотнинский&nbsp;ПНИ</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#c5d0d8;">Новосибирская область</p>
+        <p style="margin:2px 0 0 0; font-size:11px; color:#8a9aa6;">2024</p>
+      </div>
+
+      <div style="text-align:center;">
+        <svg width="28" height="28" viewBox="0 0 28 28" style="display:block; margin:0 auto 14px;" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" fill="#e9c46a"/>
+          <text x="14" y="14" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#264653" font-family="Times New Roman">2</text>
+        </svg>
+        <p style="margin:0; font-size:14px; font-weight:700; color:#ffffff; line-height:1.2;">Успенский&nbsp;ПНИ</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#c5d0d8;">Новосибирская область</p>
+        <p style="margin:2px 0 0 0; font-size:11px; color:#8a9aa6;">2024</p>
+      </div>
+
+      <div style="text-align:center;">
+        <svg width="28" height="28" viewBox="0 0 28 28" style="display:block; margin:0 auto 14px;" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" fill="#e9c46a"/>
+          <text x="14" y="14" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#264653" font-family="Times New Roman">3</text>
+        </svg>
+        <p style="margin:0; font-size:14px; font-weight:700; color:#ffffff; line-height:1.2;">Усть-Илимский&nbsp;ДСО</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#c5d0d8;">Иркутская область</p>
+        <p style="margin:2px 0 0 0; font-size:11px; color:#8a9aa6;">2024</p>
+      </div>
+
+      <div style="text-align:center;">
+        <svg width="28" height="28" viewBox="0 0 28 28" style="display:block; margin:0 auto 14px;" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" fill="#2a9d8f"/>
+          <text x="14" y="14" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#ffffff" font-family="Times New Roman">4</text>
+        </svg>
+        <p style="margin:0; font-size:14px; font-weight:700; color:#e9c46a; line-height:1.2;">ДСО «Серафимовский»</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#c5d0d8;">Санкт-Петербург</p>
+        <p style="margin:2px 0 0 0; font-size:11px; color:#8a9aa6;">2025</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- цитата из Успенского ПНИ -->
+  <div style="position:absolute; left:60px; top:430px; width:840px; background:#3a5560; border-left:4px solid #e9c46a; padding:14px 20px; border-radius:4px;">
+    <p style="margin:0; font-size:14px; color:#ffffff; line-height:1.4; font-style:italic;">«Жители с&nbsp;лёгкостью освоили новую систему. Страхи персонала не&nbsp;подтвердились».</p>
+    <p style="margin:6px 0 0 0; font-size:11px; color:#c5d0d8;">— сообщение Успенского ПНИ, 13.08.2024</p>
+  </div>
+
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:11px; color:#8a9aa6; font-style:italic;">Источник: доклад, раздел&nbsp;25; реестр SOURCE_REGISTRY.</p>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#e9c46a"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#264653" font-family="Times New Roman">9</text>
+  </svg>
+
+</div>
+</body>
+</html>

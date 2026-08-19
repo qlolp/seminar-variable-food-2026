@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Пилот 90 дней</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #264653; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#264653; font-family:'Times New Roman', serif; color:#ffffff;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#e9c46a; font-weight:600;">ПЕРВЫЙ ШАГ</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#ffffff;">Пилот 90&nbsp;дней:<br/>три месяца&nbsp;— одно отделение</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:174px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <p style="position:absolute; left:60px; top:190px; width:840px; margin:0; font-size:14px; line-height:1.5; color:#c5d0d8; font-weight:400;">Без&nbsp;новой сметы. Без&nbsp;новых ставок. Модель Новосибирской области&nbsp;— два&nbsp;варианта на&nbsp;завтрак и&nbsp;обед.</p>
+
+  <!-- 3 фазы пилота -->
+  <div style="position:absolute; left:60px; top:240px; width:840px; display:flex; gap:14px;">
+
+    <!-- Месяц 1 -->
+    <div style="flex:1; background:#3a5560; border-radius:8px; padding:18px 20px; position:relative;">
+      <div style="position:absolute; top:-12px; left:18px; background:#e76f51; color:#ffffff; padding:3px 10px; border-radius:4px; font-size:11px; letter-spacing:2px; font-weight:700;">МЕСЯЦ 1</div>
+      <p style="margin:6px 0 0 0; font-size:20px; font-weight:700; color:#ffffff; line-height:1.2;">Замеры</p>
+      <ul style="margin:12px 0 0 0; padding-left:18px; font-size:12px; color:#c5d0d8; line-height:1.55;">
+        <li>7-дневный замер отходов</li>
+        <li>опрос предпочтений</li>
+        <li>фактический ночной интервал</li>
+        <li>список группы риска</li>
+        <li>фактические трудозатраты</li>
+      </ul>
+    </div>
+
+    <!-- Месяц 2 -->
+    <div style="flex:1; background:#3a5560; border-radius:8px; padding:18px 20px; position:relative;">
+      <div style="position:absolute; top:-12px; left:18px; background:#e9c46a; color:#264653; padding:3px 10px; border-radius:4px; font-size:11px; letter-spacing:2px; font-weight:700;">МЕСЯЦ 2</div>
+      <p style="margin:6px 0 0 0; font-size:20px; font-weight:700; color:#ffffff; line-height:1.2;">Документы</p>
+      <ul style="margin:12px 0 0 0; padding-left:18px; font-size:12px; color:#c5d0d8; line-height:1.55;">
+        <li>12&nbsp;документов комплекта</li>
+        <li>обучение смены (IDDSI)</li>
+        <li>приказы с&nbsp;фамилиями</li>
+        <li>согласование с&nbsp;учредителем</li>
+        <li>закупка групп</li>
+      </ul>
+    </div>
+
+    <!-- Месяц 3 -->
+    <div style="flex:1; background:#3a5560; border-radius:8px; padding:18px 20px; position:relative;">
+      <div style="position:absolute; top:-12px; left:18px; background:#2a9d8f; color:#ffffff; padding:3px 10px; border-radius:4px; font-size:11px; letter-spacing:2px; font-weight:700;">МЕСЯЦ 3</div>
+      <p style="margin:6px 0 0 0; font-size:20px; font-weight:700; color:#ffffff; line-height:1.2;">Пилот</p>
+      <ul style="margin:12px 0 0 0; padding-left:18px; font-size:12px; color:#c5d0d8; line-height:1.55;">
+        <li>выбор из&nbsp;2&nbsp;вариантов на&nbsp;завтрак + обед</li>
+        <li>1&nbsp;типовое отделение</li>
+        <li>журнал выбора и&nbsp;замен</li>
+        <li>панель 12&nbsp;чисел</li>
+        <li>разбор с&nbsp;командой</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="position:absolute; left:60px; top:464px; width:840px; background:#e9c46a; border-radius:8px; padding:12px 22px;">
+    <p style="margin:0; font-size:13px; color:#264653; line-height:1.4;"><strong>«Без&nbsp;новой сметы» не&nbsp;значит «без&nbsp;затрат»:</strong> полный переход на&nbsp;весь дом может потребовать оборудования и&nbsp;ставок&nbsp;— это публично назвал петербургский кейс (ДСО «Серафимовский»).</p>
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#e9c46a"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#264653" font-family="Times New Roman">23</text>
+  </svg>
+
+</div>
+</body>
+</html>

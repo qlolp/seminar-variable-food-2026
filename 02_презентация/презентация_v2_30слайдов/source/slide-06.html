@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Главный вопрос к залу</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #f7f3ec; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f7f3ec; font-family:'Times New Roman', serif; color:#264653;">
+
+  <!-- лейбл -->
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#e76f51; font-weight:600;">ВОПРОС К ЗАЛУ</p>
+
+  <!-- главный вопрос -->
+  <h2 style="position:absolute; left:60px; top:78px; width:840px; margin:0; font-size:38px; line-height:1.15; font-weight:700; color:#264653;">Кто в&nbsp;вашем учреждении<br/><span style="color:#e76f51;">в&nbsp;действительности</span> выбирает,<br/>что сегодня будет есть житель?</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:266px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#264653"/>
+  </svg>
+
+  <!-- 6 вариантов ответа в сетке 3×2 -->
+  <div style="position:absolute; left:60px; top:296px; width:840px;">
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:14px;">
+
+      <div style="background:#ffffff; border:2px solid #d6cfc1; border-radius:8px; padding:14px 18px; text-align:center;">
+        <p style="margin:0; font-size:18px; font-weight:700; color:#264653;">Он&nbsp;сам</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#8a9aa6;">реже всего</p>
+      </div>
+
+      <div style="background:#ffffff; border:2px solid #d6cfc1; border-radius:8px; padding:14px 18px; text-align:center;">
+        <p style="margin:0; font-size:18px; font-weight:700; color:#264653;">Сиделка</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#8a9aa6;">по&nbsp;привычке</p>
+      </div>
+
+      <div style="background:#ffffff; border:2px solid #d6cfc1; border-radius:8px; padding:14px 18px; text-align:center;">
+        <p style="margin:0; font-size:18px; font-weight:700; color:#264653;">Врач</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#8a9aa6;">по&nbsp;показаниям</p>
+      </div>
+
+      <div style="background:#264653; border:2px solid #264653; border-radius:8px; padding:14px 18px; text-align:center;">
+        <p style="margin:0; font-size:18px; font-weight:700; color:#ffffff;">Кухня</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#e9c46a;">чаще всего</p>
+      </div>
+
+      <div style="background:#ffffff; border:2px solid #d6cfc1; border-radius:8px; padding:14px 18px; text-align:center;">
+        <p style="margin:0; font-size:18px; font-weight:700; color:#264653;">Контрактный<br/>управляющий</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#8a9aa6;">по&nbsp;спецификации</p>
+      </div>
+
+      <div style="background:#264653; border:2px solid #264653; border-radius:8px; padding:14px 18px; text-align:center;">
+        <p style="margin:0; font-size:18px; font-weight:700; color:#ffffff;">Региональная<br/>норма</p>
+        <p style="margin:4px 0 0 0; font-size:11px; color:#e9c46a;">чаще всего</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- подсказка спикеру -->
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:13px; color:#3a4a52; font-weight:500;">Поднимите руку те, кто может ответить прямо сейчас. Спор начинается&nbsp;здесь.</p>
+
+  <!-- номер страницы -->
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#e9c46a" font-family="Times New Roman">6</text>
+  </svg>
+
+</div>
+</body>
+</html>

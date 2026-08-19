@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Не просто накормить — Cover</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #264653; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')';
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#264653; font-family:'Times New Roman', serif; color:#ffffff;">
+
+  <!-- декоративный золотой акцент сверху -->
+  <svg width="220" height="6" style="position:absolute; left:60px; top:60px;" aria-hidden="true">
+    <rect width="220" height="6" fill="#e9c46a"/>
+  </svg>
+
+  <!-- лейбл секции -->
+  <p style="position:absolute; left:60px; top:80px; margin:0; font-size:14px; letter-spacing:4px; color:#e9c46a; font-weight:600;">СЕМИНАР · 25–27 АВГУСТА 2026</p>
+
+  <!-- главный заголовок -->
+  <h1 style="position:absolute; left:60px; top:120px; width:520px; margin:0; font-size:60px; line-height:1.05; font-weight:700; color:#ffffff;">Не просто<br/><span style="color:#e9c46a;">накормить</span></h1>
+
+  <!-- подзаголовок -->
+  <p style="position:absolute; left:60px; top:300px; width:520px; margin:0; font-size:20px; line-height:1.4; color:#f4f4f4; font-weight:400;">Как организовать безопасное, достойное и&nbsp;вариативное питание людей с&nbsp;психическими нарушениями в&nbsp;домах социального обслуживания</p>
+
+  <!-- разделитель -->
+  <svg width="60" height="2" style="position:absolute; left:60px; top:400px;" aria-hidden="true">
+    <rect width="60" height="2" fill="#2a9d8f"/>
+  </svg>
+
+  <!-- автор и место -->
+  <p style="position:absolute; left:60px; top:420px; margin:0; font-size:16px; color:#ffffff; font-weight:500;">Чистяков Евгений Владимирович</p>
+  <p style="position:absolute; left:60px; top:444px; margin:0; font-size:14px; color:#c5d0d8; font-weight:400;">Директор СПб ГАСУСОН «ДСО „Серафимовский"»</p>
+
+  <!-- нижняя строка -->
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:12px; color:#9aa8b3; letter-spacing:2px; font-weight:400;">САНКТ-ПЕТЕРБУРГ · МИНТРУД РОССИИ</p>
+
+  <!-- правая часть: изображение стола -->
+  <img src="imgs/cover.jpg" style="position:absolute; right:0; top:0; width:480px; height:540px; object-fit:cover;" alt=""/>
+
+  <!-- overlay на изображении для глубины -->
+  <svg width="480" height="540" style="position:absolute; right:0; top:0; pointer-events:none;" aria-hidden="true">
+    <rect width="480" height="540" fill="#264653" fill-opacity="0.10"/>
+    <rect x="0" y="0" width="6" height="540" fill="#2a9d8f"/>
+  </svg>
+
+  <!-- декоративный элемент в правом верхнем углу -->
+  <svg width="120" height="120" style="position:absolute; right:30px; top:30px; opacity:0.15;" aria-hidden="true">
+    <circle cx="60" cy="60" r="50" stroke="#e9c46a" stroke-width="2" fill="none"/>
+    <circle cx="60" cy="60" r="35" stroke="#e9c46a" stroke-width="1" fill="none"/>
+  </svg>
+
+</div>
+</body>
+</html>

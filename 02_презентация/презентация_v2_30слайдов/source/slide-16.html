@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Точка раздачи</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #f7f3ec; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f7f3ec; font-family:'Times New Roman', serif; color:#264653;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#2a9d8f; font-weight:600;">ТРИ МЕТРА РАЗДАТКИ</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#264653;">Точка раздачи:<br/>где выбор живёт или&nbsp;умирает</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:178px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <!-- 4 элемента раздачи -->
+  <div style="position:absolute; left:60px; top:208px; width:840px; display:grid; grid-template-columns:repeat(4, 1fr); gap:14px;">
+
+    <div style="background:#ffffff; border-radius:8px; padding:18px 18px; border-top:4px solid #e76f51;">
+      <p style="margin:0; font-size:32px; font-weight:700; color:#e76f51; line-height:1;">①</p>
+      <p style="margin:8px 0 0 0; font-size:15px; font-weight:700; color:#264653; line-height:1.2;">Видимость</p>
+      <p style="margin:6px 0 0 0; font-size:12px; color:#3a4a52; line-height:1.35;">Оба&nbsp;варианта видны жителю за&nbsp;3&nbsp;секунды до&nbsp;выбора</p>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:18px 18px; border-top:4px solid #e9c46a;">
+      <p style="margin:0; font-size:32px; font-weight:700; color:#e9c46a; line-height:1;">②</p>
+      <p style="margin:8px 0 0 0; font-size:15px; font-weight:700; color:#264653; line-height:1.2;">Поток</p>
+      <p style="margin:6px 0 0 0; font-size:12px; color:#3a4a52; line-height:1.35;">Очередь без&nbsp;давления. Два&nbsp;повара&nbsp;— параллельно</p>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:18px 18px; border-top:4px solid #2a9d8f;">
+      <p style="margin:0; font-size:32px; font-weight:700; color:#2a9d8f; line-height:1;">③</p>
+      <p style="margin:8px 0 0 0; font-size:15px; font-weight:700; color:#264653; line-height:1.2;">Помощь</p>
+      <p style="margin:6px 0 0 0; font-size:12px; color:#3a4a52; line-height:1.35;">Подача тем, кто не&nbsp;говорит. Два&nbsp;варианта на&nbsp;подносе</p>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:18px 18px; border-top:4px solid #264653;">
+      <p style="margin:0; font-size:32px; font-weight:700; color:#264653; line-height:1;">④</p>
+      <p style="margin:8px 0 0 0; font-size:15px; font-weight:700; color:#264653; line-height:1.2;">Атмосфера</p>
+      <p style="margin:6px 0 0 0; font-size:12px; color:#3a4a52; line-height:1.35;">Тихо. Без&nbsp;команд. Без&nbsp;«почему не&nbsp;ел?»</p>
+    </div>
+
+  </div>
+
+  <!-- центральный блок с замерами -->
+  <div style="position:absolute; left:60px; top:392px; width:840px; background:#264653; border-radius:8px; padding:18px 22px;">
+    <p style="margin:0; font-size:14px; color:#e9c46a; font-weight:600; line-height:1.3;">Два&nbsp;бесплатных замера, которые стоит сделать один&nbsp;раз и&nbsp;повторять ежеквартально:</p>
+    <div style="display:flex; gap:20px; margin-top:10px;">
+      <div style="flex:1;">
+        <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.4;">Температура блюд на&nbsp;первом и&nbsp;последнем столе</p>
+        <p style="margin:3px 0 0 0; font-size:11px; color:#c5d0d8;">падение &gt;10–15°C&nbsp;— перестроить поток</p>
+      </div>
+      <div style="flex:1;">
+        <p style="margin:0; font-size:13px; color:#ffffff; line-height:1.4;">Время на&nbsp;еду у&nbsp;самого медленного</p>
+        <p style="margin:3px 0 0 0; font-size:11px; color:#c5d0d8;">если &lt;15&nbsp;мин&nbsp;— риск аспирации</p>
+      </div>
+    </div>
+  </div>
+
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:11px; color:#8a9aa6; font-style:italic;">Доклад, раздел&nbsp;20. «Два&nbsp;замера, которые стоит сделать».</p>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#e9c46a" font-family="Times New Roman">16</text>
+  </svg>
+
+</div>
+</body>
+</html>

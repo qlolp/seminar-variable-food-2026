@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Дорожная карта 12 месяцев</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #f7f3ec; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f7f3ec; font-family:'Times New Roman', serif; color:#264653;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#2a9d8f; font-weight:600;">ГОРИЗОНТ</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#264653;">Дорожная карта на&nbsp;12&nbsp;месяцев:<br/>от&nbsp;пилота к&nbsp;системе</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:178px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <p style="position:absolute; left:60px; top:194px; width:840px; margin:0; font-size:14px; line-height:1.5; color:#3a4a52; font-weight:400;">Каждый квартал&nbsp;— самостоятельная ценность. Не&nbsp;надо ждать конца года, чтобы показать результат.</p>
+
+  <!-- 4 квартала -->
+  <div style="position:absolute; left:60px; top:242px; width:840px; display:grid; grid-template-columns:repeat(4, 1fr); gap:14px;">
+
+    <div style="background:#ffffff; border-radius:8px; padding:16px 18px; border-top:5px solid #2a9d8f;">
+      <p style="margin:0; font-size:11px; letter-spacing:2px; color:#2a9d8f; font-weight:700;">Q1 · МЕСЯЦЫ 1–3</p>
+      <p style="margin:6px 0 0 0; font-size:15px; font-weight:700; color:#264653; line-height:1.2;">Пилот</p>
+      <ul style="margin:8px 0 0 0; padding-left:16px; font-size:12px; color:#3a4a52; line-height:1.45;">
+        <li>1&nbsp;отделение</li>
+        <li>2&nbsp;варианта</li>
+        <li>12&nbsp;документов</li>
+        <li>панель 12&nbsp;чисел</li>
+      </ul>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:16px 18px; border-top:5px solid #e9c46a;">
+      <p style="margin:0; font-size:11px; letter-spacing:2px; color:#b8972e; font-weight:700;">Q2 · МЕСЯЦЫ 4–6</p>
+      <p style="margin:6px 0 0 0; font-size:15px; font-weight:700; color:#264653; line-height:1.2;">Тираж</p>
+      <ul style="margin:8px 0 0 0; padding-left:16px; font-size:12px; color:#3a4a52; line-height:1.45;">
+        <li>3&nbsp;отделения</li>
+        <li>совет жителей</li>
+        <li>согласование с&nbsp;учредителем</li>
+        <li>обучение смен</li>
+      </ul>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:16px 18px; border-top:5px solid #f4a261;">
+      <p style="margin:0; font-size:11px; letter-spacing:2px; color:#c8783d; font-weight:700;">Q3 · МЕСЯЦЫ 7–9</p>
+      <p style="margin:6px 0 0 0; font-size:15px; font-weight:700; color:#264653; line-height:1.2;">Система</p>
+      <ul style="margin:8px 0 0 0; padding-left:16px; font-size:12px; color:#3a4a52; line-height:1.45;">
+        <li>весь дом</li>
+        <li>закупка группами</li>
+        <li>ТЗ&nbsp;аутсорсера</li>
+        <li>переход на&nbsp;СанПиН&nbsp;4282-26</li>
+      </ul>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:16px 18px; border-top:5px solid #e76f51;">
+      <p style="margin:0; font-size:11px; letter-spacing:2px; color:#e76f51; font-weight:700;">Q4 · МЕСЯЦЫ 10–12</p>
+      <p style="margin:6px 0 0 0; font-size:15px; font-weight:700; color:#264653; line-height:1.2;">Следующий кейс</p>
+      <ul style="margin:8px 0 0 0; padding-left:16px; font-size:12px; color:#3a4a52; line-height:1.45;">
+        <li>публичный отчёт</li>
+        <li>вход в&nbsp;регистр</li>
+        <li>помощь коллегам</li>
+        <li>новый семинар 2027</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:11px; color:#8a9aa6; font-style:italic;">Доклад, раздел&nbsp;36. Каждый квартал заканчивается панелью 12&nbsp;чисел, не&nbsp;отчётом наверх.</p>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#e9c46a" font-family="Times New Roman">26</text>
+  </svg>
+
+</div>
+</body>
+</html>

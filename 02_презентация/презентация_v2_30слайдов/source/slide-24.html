@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Что показать проверяющему</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #000; font-family: "Times New Roman", serif; }
+.slide-content { width: 960px; height: 540px; position: relative; transform-origin: center center; background: #f7f3ec; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960, slideHeight = 540;
+  const scale = Math.min(window.innerWidth / slideWidth, window.innerHeight / slideHeight);
+  slide.style.width = slideWidth + 'px'; slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')'; slide.style.transformOrigin = 'center center'; slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f7f3ec; font-family:'Times New Roman', serif; color:#264653;">
+
+  <p style="position:absolute; left:60px; top:48px; margin:0; font-size:13px; letter-spacing:4px; color:#2a9d8f; font-weight:600;">ДИАЛОГ С ПРОВЕРЯЮЩИМ</p>
+
+  <h2 style="position:absolute; left:60px; top:74px; margin:0; font-size:36px; line-height:1.1; font-weight:700; color:#264653;">Что показать проверяющему:<br/>комплект из&nbsp;12&nbsp;документов</h2>
+
+  <svg width="50" height="3" style="position:absolute; left:60px; top:174px;" aria-hidden="true">
+    <rect width="50" height="3" fill="#e76f51"/>
+  </svg>
+
+  <p style="position:absolute; left:60px; top:190px; width:840px; margin:0; font-size:14px; line-height:1.5; color:#3a4a52; font-weight:400;">Не&nbsp;«второе меню», а&nbsp;систему. Проверяющий видит процедуру&nbsp;— и&nbsp;спор прекращается.</p>
+
+  <!-- 4 группы документов -->
+  <div style="position:absolute; left:60px; top:236px; width:840px; display:grid; grid-template-columns:repeat(4, 1fr); gap:14px;">
+
+    <div style="background:#ffffff; border-radius:8px; padding:14px 16px; border-top:4px solid #264653;">
+      <p style="margin:0; font-size:11px; letter-spacing:2px; color:#264653; font-weight:700;">ОСНОВАНИЕ</p>
+      <ul style="margin:8px 0 0 0; padding-left:16px; font-size:12px; color:#3a4a52; line-height:1.5;">
+        <li>Положение о&nbsp;питании</li>
+        <li>Меню с&nbsp;парами</li>
+        <li>Согласование с&nbsp;учредителем</li>
+      </ul>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:14px 16px; border-top:4px solid #2a9d8f;">
+      <p style="margin:0; font-size:11px; letter-spacing:2px; color:#2a9d8f; font-weight:700;">КЛИНИКА</p>
+      <ul style="margin:8px 0 0 0; padding-left:16px; font-size:12px; color:#3a4a52; line-height:1.5;">
+        <li>Лекарственно-пищевая таблица</li>
+        <li>Список риска дисфагии</li>
+        <li>Журнал отказов</li>
+      </ul>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:14px 16px; border-top:4px solid #e9c46a;">
+      <p style="margin:0; font-size:11px; letter-spacing:2px; color:#b8972e; font-weight:700;">ОПЕРАЦИОНКА</p>
+      <ul style="margin:8px 0 0 0; padding-left:16px; font-size:12px; color:#3a4a52; line-height:1.5;">
+        <li>Журнал заказа и&nbsp;замен</li>
+        <li>Пищевые карты</li>
+        <li>Приказы с&nbsp;фамилиями</li>
+      </ul>
+    </div>
+
+    <div style="background:#ffffff; border-radius:8px; padding:14px 16px; border-top:4px solid #e76f51;">
+      <p style="margin:0; font-size:11px; letter-spacing:2px; color:#e76f51; font-weight:700;">УПРАВЛЕНИЕ</p>
+      <ul style="margin:8px 0 0 0; padding-left:16px; font-size:12px; color:#3a4a52; line-height:1.5;">
+        <li>Регламент совета</li>
+        <li>Панель 12&nbsp;чисел</li>
+        <li>Письмо учредителю</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Главный вывод -->
+  <div style="position:absolute; left:60px; top:432px; width:840px; background:#264653; border-radius:8px; padding:16px 22px;">
+    <p style="margin:0; font-size:14px; color:#ffffff; line-height:1.4;"><strong style="color:#e9c46a;">Показывать папкой, не&nbsp;слайдом:</strong> «вот положение, вот приказ, вот журнал за&nbsp;30&nbsp;дней, вот согласование учредителя». Спор прекращается, когда проверяющий видит систему.</p>
+  </div>
+
+  <p style="position:absolute; left:60px; top:498px; margin:0; font-size:11px; color:#8a9aa6; font-style:italic;">Доклад, раздел&nbsp;31, 32. Карточка Q&amp;A для&nbsp;спикера: 02_презентация/дополнения_18.08.2026/.</p>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#e9c46a" font-family="Times New Roman">24</text>
+  </svg>
+
+</div>
+</body>
+</html>
