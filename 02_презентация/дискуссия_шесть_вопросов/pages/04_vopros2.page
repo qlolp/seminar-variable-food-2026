@@ -1,0 +1,163 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ВОПРОС 2 ИЗ 6 · МЕНЮ В РАМКАХ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 44]
+    content:
+      fontSize: 25
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Как формировать меню в условиях жёстких нормативно-правовых и финансовых ограничений?"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: st1
+    elementType: shape
+    bounds: [60, 130, 196, 120]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: st1n
+    elementType: text
+    bounds: [76, 142, 60, 26]
+    content:
+      fontSize: 17
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "1"
+  - elementId: st1t
+    elementType: text
+    bounds: [76, 172, 170, 68]
+    content:
+      fontSize: 11.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "<strong>Норма — основание, а не потолок:</strong> нормы 520н и таблицы замен задают сырьевую структуру; меню утверждается приказом директора"
+  - elementId: st2
+    elementType: shape
+    bounds: [268, 130, 196, 120]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: st2n
+    elementType: text
+    bounds: [284, 142, 60, 26]
+    content:
+      fontSize: 17
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "2"
+  - elementId: st2t
+    elementType: text
+    bounds: [284, 172, 170, 68]
+    content:
+      fontSize: 11.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "<strong>Пары эквивалентов:</strong> второй вариант — из той же заготовки; сырьё перераспределяется, а не добавляется"
+  - elementId: st3
+    elementType: shape
+    bounds: [476, 130, 196, 120]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: st3n
+    elementType: text
+    bounds: [492, 142, 60, 26]
+    content:
+      fontSize: 17
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "3"
+  - elementId: st3t
+    elementType: text
+    bounds: [492, 172, 170, 68]
+    content:
+      fontSize: 11.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "<strong>Объёмы по журналу заказа:</strong> заказ накануне, старт 50/50, пересчёт раз в две недели"
+  - elementId: st4
+    elementType: shape
+    bounds: [684, 130, 216, 120]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: st4n
+    elementType: text
+    bounds: [700, 142, 60, 26]
+    content:
+      fontSize: 17
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "4"
+  - elementId: st4t
+    elementType: text
+    bounds: [700, 172, 190, 68]
+    content:
+      fontSize: 11.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "<strong>Замер — арбитр:</strong> семь дней до старта и через 90 дней дают вашу цифру стоимости"
+  - elementId: fact
+    elementType: shape
+    bounds: [60, 272, 840, 84]
+    shapeName: rect
+    fill: {type: solid, color: "$mintsoft", radius: 8}
+  - elementId: factt
+    elementType: text
+    bounds: [84, 286, 800, 58]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "<strong>Факт:</strong> Болотнинский и Успенский ПНИ стартовали в действующих лимитах. Ориентиры стоимости: Алтайский край — 422 руб./чел./день (2025), тарифы на соцуслуги СПб — распоряжение 1366-р; нижняя граница — продуктовая корзина ≈270 руб./день (Росстат, 2026)."
+  - elementId: ask
+    elementType: text
+    bounds: [60, 380, 840, 100]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Зал:</strong> кто знает свою сырьевую строку — рублей на жителя в день — за пять минут деления? А кто знает норматив своего региона на 2026 год?</p>
+        <p>Если ни того ни другого — это и есть первый шаг. Разбор — разделы 17.12 (вопрос 2), 29.3 и 24 доклада.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Раздел 17.12 доклада (вопрос 2) · разделы 19, 21, 24, 29, 35"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "4"

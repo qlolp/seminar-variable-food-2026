@@ -84,7 +84,7 @@ elements:
       lineHeight: 1.6
       fontFamily: Noto Sans
       text: |
-        <p><strong style="color:$text">51 регион</strong> — участники семинара · <strong style="color:$text">41 регион</strong> переименовал ПНИ в дома социального обслуживания · <strong style="color:$text">7 000</strong> человек уже перешли в сопровождаемое проживание — и им понадобился навык, который тренируется за столом</p>
+        <p><strong style="color:#1A1915">51 регион</strong> — участники семинара · <strong style="color:#1A1915">41 регион</strong> переименовал ПНИ в дома социального обслуживания · <strong style="color:#1A1915">7 000</strong> человек уже перешли в сопровождаемое проживание — и им понадобился навык, который тренируется за столом</p>
   - elementId: takeaway
     elementType: text
     bounds: [60, 416, 840, 64]

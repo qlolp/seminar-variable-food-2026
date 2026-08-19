@@ -1,0 +1,131 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ФОРМАТ · 90 МИНУТ"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 42]
+    content:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Как устроен разговор: вопрос → позиция → доказательство"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: f1
+    elementType: shape
+    bounds: [60, 134, 266, 210]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: f1h
+    elementType: text
+    bounds: [76, 148, 234, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Два эксперта"
+  - elementId: f1t
+    elementType: text
+    bounds: [76, 184, 234, 148]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: "Чистяков Е. В. и Нурбаев Т. А. — два дома одного учредителя. По каждому вопросу — два опыта, иногда два ответа: это ценность, а не противоречие."
+  - elementId: f2
+    elementType: shape
+    bounds: [347, 134, 266, 210]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: f2h
+    elementType: text
+    bounds: [363, 148, 234, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Шесть вопросов"
+  - elementId: f2t
+    elementType: text
+    bounds: [363, 184, 234, 148]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: "От «кто выбирает форму питания» до «качество против нормирования цен». На каждый — 10–12 минут: позиция, практика, данные, ответы зала."
+  - elementId: f3
+    elementType: shape
+    bounds: [634, 134, 266, 210]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: f3h
+    elementType: text
+    bounds: [650, 148, 234, 30]
+    content:
+      fontSize: 14
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Зал — источник опыта"
+  - elementId: f3t
+    elementType: text
+    bounds: [650, 184, 234, 148]
+    content:
+      fontSize: 12.5
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: "Вопросы построены так, чтобы у зала был собственный опыт. Голосуем руками, расхождения фиксируем — разбор в конце каждого вопроса."
+  - elementId: rule
+    elementType: shape
+    bounds: [60, 368, 840, 106]
+    shapeName: rect
+    fill: {type: solid, color: "$mintsoft", radius: 8}
+  - elementId: rulet
+    elementType: text
+    bounds: [84, 382, 800, 80]
+    content:
+      fontSize: 14.5
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Правило дискуссии:</strong> каждое утверждение — «принцип + метод проверки + чужой измеренный факт». Ни одно не требует веры: всё проверяется замером, документом или первоисточником.</p>
+        <p>Где данных нет — говорим об этом прямо: честный пробел тоже позиция.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Раздел 17.12 доклада «Не просто накормить» — шесть вопросов с глубокими ответами"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "2"

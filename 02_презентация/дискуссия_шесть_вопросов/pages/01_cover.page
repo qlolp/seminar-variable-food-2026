@@ -49,106 +49,95 @@ elements:
       letterSpacing: 2
       bold: true
       fontFamily: Noto Sans
-      text: "МЕЖРЕГИОНАЛЬНЫЙ СЕМИНАР · МИНТРУД РОССИИ"
+      text: "ДИСКУССИЯ · 26 АВГУСТА · 14:00–15:30"
   - elementId: title
     elementType: text
-    bounds: [48, 158, 540, 130]
+    bounds: [48, 158, 540, 120]
     content:
-      fontSize: 52
+      fontSize: 40
       bold: true
       color: "$cream"
-      lineHeight: 1.02
+      lineHeight: 1.08
       fontFamily: PT Serif
-      text: "Не просто накормить"
+      text: "Организация питания: опыт реализации проектов"
   - elementId: subtitle
     elementType: text
-    bounds: [48, 300, 540, 88]
+    bounds: [48, 296, 540, 84]
     content:
-      fontSize: 16
+      fontSize: 15
       color: "$sand"
       lineHeight: 1.4
       fontFamily: Noto Sans
-      text: "Как организовать безопасное, достойное и вариативное питание людей с психическими нарушениями в домах социального обслуживания"
-  - elementId: meta
+      text: "Шесть вопросов — от права проживающего до нормирования цен. Два дома одного учредителя, разные маршруты к выбору."
+  - elementId: ex1
     elementType: text
-    bounds: [48, 410, 540, 72]
+    bounds: [48, 404, 540, 30]
     content:
       fontSize: 13
       color: "$cream"
-      lineHeight: 1.45
+      lineHeight: 1.4
       fontFamily: Noto Sans
-      text: |
-        <p>Санкт-Петербург, 25–27 августа 2026</p>
-        <p>Чистяков Е. В. · ДСО «Серафимовский»</p>
-        <p>51 регион · директора и специалисты</p>
+      text: "<strong>Чистяков Е. В.</strong> · ДСО «Серафимовский»"
+  - elementId: ex2
+    elementType: text
+    bounds: [48, 436, 540, 30]
+    content:
+      fontSize: 13
+      color: "$cream"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "<strong>Нурбаев Т. А.</strong> · ДСО «Тесовый берег»"
   - elementId: s1n
     elementType: text
-    bounds: [656, 70, 270, 54]
+    bounds: [656, 96, 270, 54]
     content:
       fontSize: 40
       bold: true
       color: "$accent"
       fontFamily: PT Serif
-      text: "315"
+      text: "6"
   - elementId: s1l
     elementType: text
-    bounds: [656, 122, 270, 22]
+    bounds: [656, 148, 270, 22]
     content:
       fontSize: 13
       color: "$sand"
       fontFamily: Noto Sans
-      text: "страницы доклада"
+      text: "вопросов · 90 минут"
   - elementId: s2n
     elementType: text
-    bounds: [656, 170, 270, 54]
+    bounds: [656, 196, 270, 54]
     content:
       fontSize: 40
       bold: true
       color: "$accent"
       fontFamily: PT Serif
-      text: "124"
+      text: "17.12"
   - elementId: s2l
     elementType: text
-    bounds: [656, 222, 270, 22]
+    bounds: [656, 248, 270, 22]
     content:
       fontSize: 13
       color: "$sand"
       fontFamily: Noto Sans
-      text: "источник в трёх реестрах"
+      text: "раздел доклада — ответы"
   - elementId: s3n
     elementType: text
-    bounds: [656, 270, 270, 54]
+    bounds: [656, 296, 270, 54]
     content:
       fontSize: 40
       bold: true
       color: "$accent"
       fontFamily: PT Serif
-      text: "22"
+      text: "2"
   - elementId: s3l
     elementType: text
-    bounds: [656, 322, 270, 22]
+    bounds: [656, 348, 270, 22]
     content:
       fontSize: 13
       color: "$sand"
       fontFamily: Noto Sans
-      text: "учебных кейса"
-  - elementId: s4n
-    elementType: text
-    bounds: [656, 370, 270, 54]
-    content:
-      fontSize: 40
-      bold: true
-      color: "$accent"
-      fontFamily: PT Serif
-      text: "45"
-  - elementId: s4l
-    elementType: text
-    bounds: [656, 422, 270, 22]
-    content:
-      fontSize: 13
-      color: "$sand"
-      fontFamily: Noto Sans
-      text: "приложений-шаблонов"
+      text: "дома · один учредитель"
   - elementId: foot
     elementType: text
     bounds: [48, 500, 540, 24]
@@ -156,4 +145,4 @@ elements:
       fontSize: 11
       color: "$darkmuted"
       fontFamily: Noto Sans
-      text: "Презентация — маршрут. Каждый слайд указывает на раздел доклада."
+      text: "Площадка № 2 — ДСО «Тесовый берег» · материал — раздел 17.12 доклада «Не просто накормить»"

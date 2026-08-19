@@ -1,0 +1,107 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ВОПРОС 1 ИЗ 6 · ВЫБОР"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 44]
+    content:
+      fontSize: 25
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Кто выбирает форму питания — проживающий в социальном доме или его «хозяин»?"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: pos
+    elementType: shape
+    bounds: [60, 130, 840, 110]
+    shapeName: rect
+    fill: {type: solid, color: "$mintsoft", radius: 8}
+  - elementId: posh
+    elementType: text
+    bounds: [84, 142, 200, 26]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "ПОЗИЦИЯ"
+  - elementId: post
+    elementType: text
+    bounds: [84, 172, 800, 56]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: "Хозяин еды — проживающий. Закон не знает «хозяина»: он знает получателя услуги с правом на учёт индивидуальных потребностей — ст. 9 и 16 442-ФЗ, ст. 37/43 закона № 3185-1. Выбор — реализация субъективного права, а не назначение лечения (раздел 17.12 доклада)."
+  - elementId: meth
+    elementType: text
+    bounds: [60, 262, 404, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong style="color:#1A7A70">МЕТОД ПРОВЕРКИ</strong></p>
+        <p>Три вопроса к вчерашнему дню: зафиксирован ли вчерашний выбор? Был ли второй вариант на линии? Есть ли житель, получивший не то, что выбрал бы по умолчанию?</p>
+  - elementId: fact
+    elementType: text
+    bounds: [496, 262, 404, 100]
+    content:
+      fontSize: 13
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong style="color:#E76F51">ФАКТ</strong></p>
+        <p>Российские практики ступеней 1–2 работают в обычных учреждениях без спецбюджетов. Вопрос «хозяин или проживающий» решается процедурой, а не деньгами.</p>
+  - elementId: ask
+    elementType: shape
+    bounds: [60, 386, 840, 90]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: askt
+    elementType: text
+    bounds: [84, 400, 800, 62]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.45
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Зал:</strong> поднимите руку — в чьём учреждении выбор реально фиксируется вчерашним днём, а не положением? А у кого «выбор» существует только в документе?</p>
+        <p>Разбор — разделы 8.7, 17.12 и 22 доклада.</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Раздел 17.12 доклада (вопрос 1) · разделы 7, 8, 15–17"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "3"

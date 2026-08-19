@@ -89,7 +89,7 @@ elements:
       bold: true
       color: "$accent"
       fontFamily: PT Serif
-      text: "284"
+      text: "315"
   - elementId: s1l
     elementType: text
     bounds: [656, 122, 270, 22]
@@ -106,7 +106,7 @@ elements:
       bold: true
       color: "$accent"
       fontFamily: PT Serif
-      text: "121"
+      text: "124"
   - elementId: s2l
     elementType: text
     bounds: [656, 222, 270, 22]

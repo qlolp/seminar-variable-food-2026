@@ -1,0 +1,173 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 30, 700, 16]
+    content:
+      fontSize: 11
+      color: "$primary"
+      letterSpacing: 2
+      bold: true
+      fontFamily: Noto Sans
+      text: "ВОПРОС 6 ИЗ 6 · КАЧЕСТВО И ЦЕНА"
+  - elementId: title
+    elementType: text
+    bounds: [60, 54, 840, 44]
+    content:
+      fontSize: 25
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+      text: "Как совместить качество продуктов и нормирование цен при планировании бюджета?"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 106, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: pos
+    elementType: shape
+    bounds: [60, 130, 840, 92]
+    shapeName: rect
+    fill: {type: solid, color: "$mintsoft", radius: 8}
+  - elementId: posh
+    elementType: text
+    bounds: [84, 142, 300, 26]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "ПОЗИЦИЯ"
+  - elementId: post
+    elementType: text
+    bounds: [84, 172, 800, 42]
+    content:
+      fontSize: 14
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Нормативная цена — верхняя граница расходов; качество — нижняя граница приемлемости товара. Задача решается не «выбором», а структурой закупочной процедуры: НМЦК по анализу рынка (ст. 22 44-ФЗ), качество в ТЗ (ст. 33–34), контроль заказчика (ст. 94), расторжение (ст. 95 + РНП). Автономные дома работают по 223-ФЗ."
+  - elementId: k1
+    elementType: shape
+    bounds: [60, 244, 196, 108]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: k1h
+    elementType: text
+    bounds: [76, 256, 170, 26]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Входной контроль"
+  - elementId: k1t
+    elementType: text
+    bounds: [76, 286, 170, 56]
+    content:
+      fontSize: 11.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Вес, температура, документы партии, лабораторная выборка — по письму Комитета по соцполитике СПб (ежедневный мониторинг)"
+  - elementId: k2
+    elementType: shape
+    bounds: [268, 244, 196, 108]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: k2h
+    elementType: text
+    bounds: [284, 256, 170, 26]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Качество в ТЗ"
+  - elementId: k2t
+    elementType: text
+    bounds: [284, 286, 170, 56]
+    content:
+      fontSize: 11.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "«Молоко по ГОСТ 31450-2013, срок ≥7 суток, t 2–6 °C» — планка до торгов, а не после"
+  - elementId: k3
+    elementType: shape
+    bounds: [476, 244, 196, 108]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: k3h
+    elementType: text
+    bounds: [492, 256, 170, 26]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Фиксация → претензия"
+  - elementId: k3t
+    elementType: text
+    bounds: [492, 286, 170, 56]
+    content:
+      fontSize: 11.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Акт → требование со сроком → претензия → расторжение + РНП; судебная практика требует строгой процедуры"
+  - elementId: k4
+    elementType: shape
+    bounds: [684, 244, 216, 108]
+    shapeName: rect
+    fill: {type: solid, color: "$soft", radius: 8}
+  - elementId: k4h
+    elementType: text
+    bounds: [700, 256, 190, 26]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      fontFamily: Noto Sans
+      text: "Экономика без иллюзий"
+  - elementId: k4t
+    elementType: text
+    bounds: [700, 286, 190, 56]
+    content:
+      fontSize: 11.5
+      color: "$text"
+      lineHeight: 1.4
+      fontFamily: Noto Sans
+      text: "Сырьё — меньшая часть полной стоимости; сокращение сырья — самая вредная «экономия»; сезонность и совместные закупки — −5–15 %"
+  - elementId: fact
+    elementType: text
+    bounds: [60, 374, 840, 102]
+    content:
+      fontSize: 13.5
+      color: "$text"
+      lineHeight: 1.5
+      fontFamily: Noto Sans
+      text: |
+        <p><strong>Ориентиры стоимости (раздел 17.12):</strong> Алтайский край — 422 руб./день (2025) · СПб: лечебное питание в ЛПУ — 655–683 руб./день, тарифы на соцуслуги — 1366-р · нижняя граница — продуктовая корзина ≈270 руб./день (2026).</p>
+        <p><strong>Факт (авторский опыт):</strong> Серафимовский, 2026 — системные срывы питания поставщиком, фиксация нарушений, правовое обоснование одностороннего отказа по контракту (внутренние документы; публикации нет).</p>
+        <p><strong>Зал:</strong> у кого есть опыт расторжения контракта на питание? Что показала практика?</p>
+  - elementId: src
+    elementType: text
+    bounds: [60, 508, 700, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      text: "Раздел 17.12 доклада (вопрос 6) · источник S031 · разделы 29, 30, 42"
+  - elementId: pg
+    elementType: text
+    bounds: [900, 508, 40, 20]
+    content:
+      fontSize: 10.5
+      color: "$muted"
+      align: [right, top]
+      text: "8"

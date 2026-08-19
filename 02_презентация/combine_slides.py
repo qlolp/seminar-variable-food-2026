@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Собрать все слайды _render/*.html в один combined.html (960x540 на страницу)
-и отдать путь для weasyprint. Запуск: python combine_slides.py
+"""Собрать все слайды <deck>/_render/*.html в один combined.html (960x540 на страницу)
+и отдать путь для weasyprint. Запуск: python combine_slides.py [папка_дека]
 """
 import glob, re, io, sys, os
 from pathlib import Path
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-BASE = Path(__file__).resolve().parent / 'презентация_34_слайда'
+DECK = sys.argv[1] if len(sys.argv) > 1 else 'презентация_34_слайда'
+BASE = Path(__file__).resolve().parent / DECK
 RENDER = BASE / '_render'
 FONTS = BASE.parent.parent / 'проект' / 'output' / 'fonts'
 

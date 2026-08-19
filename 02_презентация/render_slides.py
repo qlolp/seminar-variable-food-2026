@@ -1,14 +1,21 @@
 # -*- coding: utf-8 -*-
-"""Рендер слайдов презентации: pages/*.page + 03_презентация.pptd → _render/*.html (960×540).
+"""Рендер слайдов презентации: pages/*.page + <deck>/<pptd>.pptd → <deck>/_render/*.html (960×540).
+
+Запуск: python render_slides.py [папка_дека] [файл_pptd]
+По умолчанию: презентация_34_слайда 03_презентация.pptd
 
 Дополнения к базовой версии:
 - стили-референсы вида style: "$kicker" резолвятся из textStyles темы .pptd;
-- shape поддерживает скругление fill.radius (только для превью/PDF);
+- shape поддерживает скругление fill.radius / cornerRadius и opacity (только для превью/PDF);
 - @font-face для PT Serif из ../проект/output/fonts (шрифт не установлен в системе).
 """
-import yaml, glob, os, re
+import yaml, glob, os, re, sys
 
-CFG = yaml.safe_load(open('03_презентация.pptd', encoding='utf-8'))
+DECK = sys.argv[1] if len(sys.argv) > 1 else 'презентация_34_слайда'
+PPTD = sys.argv[2] if len(sys.argv) > 2 else '03_презентация.pptd'
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), DECK))
+
+CFG = yaml.safe_load(open(PPTD, encoding='utf-8'))
 theme = CFG['theme']
 COLORS = theme['colors']
 TEXT_STYLES = theme.get('textStyles', {})

@@ -1,0 +1,69 @@
+version: v2
+title: "Организация питания: опыт реализации проектов — дискуссия, 6 вопросов"
+size: [960, 540]
+theme:
+  colors:
+    primary: "#1A7A70"
+    accent: "#E9C46A"
+    text: "#1A1915"
+    muted: "#6E685C"
+    bg: "#F3EEE4"
+    soft: "#E7DFD0"
+    line: "#D4CBB8"
+    risk: "#E76F51"
+    dark: "#1C3A43"
+    darkcard: "#254850"
+    cream: "#F7F1E6"
+    sand: "#D8CFBE"
+    mint: "#2A9D8F"
+    ink: "#12262C"
+    darkmuted: "#8AA3A8"
+    mintsoft: "#D7EBE6"
+    goldsoft: "#F3E6C4"
+    risksoft: "#F3DDD6"
+    goldink: "#8A6A1F"
+  textStyles:
+    kicker:
+      fontSize: 11
+      color: "$primary"
+      fontFamily: Noto Sans
+      letterSpacing: 2
+      bold: true
+    h1:
+      fontSize: 27
+      bold: true
+      color: "$text"
+      fontFamily: PT Serif
+      lineHeight: 1.15
+    body:
+      fontSize: 14.5
+      color: "$text"
+      fontFamily: Noto Sans
+      lineHeight: 1.45
+    small:
+      fontSize: 10.5
+      color: "$muted"
+      fontFamily: Noto Sans
+      lineHeight: 1.3
+    big:
+      fontSize: 46
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+    q:
+      fontSize: 30
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      lineHeight: 1.25
+pages:
+  - pages/01_cover.page
+  - pages/02_format.page
+  - pages/03_vopros1.page
+  - pages/04_vopros2.page
+  - pages/05_vopros3.page
+  - pages/06_vopros4.page
+  - pages/07_vopros5.page
+  - pages/08_vopros6.page
+  - pages/09_obshchee.page
+  - pages/10_final.page
