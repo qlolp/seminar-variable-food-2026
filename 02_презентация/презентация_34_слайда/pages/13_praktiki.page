@@ -5,58 +5,58 @@ background:
 elements:
   - elementId: kicker
     elementType: text
-    bounds: [60, 34, 600, 16]
+    bounds: [60, 34, 700, 16]
     content:
       style: "$kicker"
-      text: "ЭТО УЖЕ РАБОТАЕТ В РОССИИ"
+      text: "РОССИЯ · ШЕСТЬ ПУБЛИЧНЫХ ПРАКТИК"
   - elementId: title
     elementType: text
     bounds: [60, 56, 840, 40]
     content:
       style: "$h1"
-      text: "Подтверждено: шесть действующих российских практик"
+      text: "Это уже работает. Трое носителей — в зале"
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 104, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
   - elementId: list
     elementType: text
-    bounds: [60, 130, 840, 280]
+    bounds: [60, 122, 840, 280]
     content:
-      fontSize: 14.5
+      fontSize: 16
       lineHeight: 1.55
       text: |
-        <p><strong>Болотнинский ПНИ</strong> (Новосибирская обл.) — выбор из двух вариантов на завтрак и обед несколько раз в неделю; перечень определяет диетсестра. <span style="color:$muted">Ступень 1.</span></p>
-        <p style="margin-top:6px"><strong>Успенский ПНИ</strong> (Новосибирская обл.) — выбор по всем основным позициям, ежедневно, все отделения. <span style="color:$muted">Ступень 2.</span></p>
-        <p style="margin-top:6px"><strong>Усть-Илимский ДСО</strong> (Иркутская обл.) — поэтапно, с опроса; участник семинара.</p>
-        <p style="margin-top:6px"><strong>Серафимовский ДСО</strong> (Санкт-Петербург) — заказ накануне для части жителей; оборудование и доп. сотрудники; полный переход затруднителен. <span style="color:$muted">Дом докладчика.</span></p>
-        <p style="margin-top:6px"><strong>Иркутская область</strong> — масштабирование на регион: два первых, два вторых, гарниры — ежедневно.</p>
-        <p style="margin-top:6px"><strong>ДДСОЛ</strong> — 14-дневное меню плюс совет по питанию из жителей.</p>
-  - elementId: rule
+        <p><strong>Болотнинский ПНИ</strong> — два варианта, несколько дней. Ступень 1.</p>
+        <p><strong>Успенский ПНИ</strong> — все основные позиции, ежедневно. Ступень 2. В зале.</p>
+        <p><strong>Усть-Илимский ДСО</strong> — поэтапно, с опроса. В зале.</p>
+        <p><strong>Серафимовский ДСО</strong> — заказ накануне для части жителей. Дом докладчика. В зале.</p>
+        <p><strong>Иркутская область</strong> — два первых, два вторых, гарниры. Решение региона.</p>
+        <p><strong>ДДСОЛ</strong> — 14-дневное меню и совет жителей.</p>
+  - elementId: note
     elementType: shape
-    bounds: [60, 424, 200, 2]
+    bounds: [60, 412, 840, 56]
     shapeName: rect
-    fill: {type: solid, color: "$accent"}
-  - elementId: bottom
+    cornerRadius: 12
+    fill: {type: solid, color: "$soft"}
+  - elementId: notet
     elementType: text
-    bounds: [60, 440, 840, 40]
+    bounds: [80, 422, 800, 36]
     content:
-      fontSize: 15
-      bold: true
+      fontSize: 14
       color: "$primary"
-      lineHeight: 1.4
-      text: "Новость — факт сообщения, не аудит. Три кейса стартовали без новых денег; Серафимовский публично назвал оборудование, ставки и пределы полного перехода."
+      bold: true
+      text: "Новость — факт сообщения, не аудит. Три кейса стартовали без новых денег."
   - elementId: src
     elementType: text
-    bounds: [60, 505, 760, 24]
+    bounds: [60, 500, 780, 28]
     content:
       style: "$small"
-      text: "Источник: официальные сайты и gov.spb.ru/news/302216, проверено 17.08.2026 (S015–S019, S030); Успенский, Усть-Илимский и Серафимовский — в этом зале"
+      text: "S015–S019, S030 (gov.spb.ru/news/302216), проверено 17.08.2026. Не S023."
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
     content:
       style: "$small"
       align: [right, top]
-      text: "15"
+      text: "16"

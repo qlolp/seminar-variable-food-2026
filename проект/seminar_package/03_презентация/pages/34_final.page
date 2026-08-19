@@ -5,7 +5,7 @@ background:
 elements:
   - elementId: kicker
     elementType: text
-    bounds: [60, 60, 600, 18]
+    bounds: [60, 40, 700, 16]
     content:
       fontSize: 11
       color: "$muted"
@@ -14,40 +14,112 @@ elements:
       text: "ВОЗВРАЩАЕМСЯ К ПЕРВОМУ ВОПРОСУ"
   - elementId: q
     elementType: text
-    bounds: [60, 120, 840, 140]
+    bounds: [60, 72, 840, 88]
     content:
-      fontSize: 34
+      fontSize: 30
       bold: true
       color: "$text"
       fontFamily: PT Serif
-      lineHeight: 1.25
+      lineHeight: 1.2
       text: "Кто будет выбирать, что есть житель вашего дома, — завтра?"
-  - elementId: body
+  - elementId: s1
+    elementType: shape
+    bounds: [60, 180, 270, 160]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: n1
+    elementType: shape
+    bounds: [80, 200, 36, 36]
+    shapeName: oval
+    fill: {type: solid, color: "$primary"}
+  - elementId: n1t
     elementType: text
-    bounds: [60, 270, 840, 150]
+    bounds: [80, 200, 36, 36]
+    content:
+      fontSize: 16
+      bold: true
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: "1"
+  - elementId: t1
+    elementType: text
+    bounds: [80, 248, 230, 76]
+    content:
+      fontSize: 16
+      lineHeight: 1.35
+      text: "<p><strong>Замер</strong></p><p>Семь дней отходов и отказов</p>"
+  - elementId: s2
+    elementType: shape
+    bounds: [345, 180, 270, 160]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: n2
+    elementType: shape
+    bounds: [365, 200, 36, 36]
+    shapeName: oval
+    fill: {type: solid, color: "$primary"}
+  - elementId: n2t
+    elementType: text
+    bounds: [365, 200, 36, 36]
+    content:
+      fontSize: 16
+      bold: true
+      color: "#FFFFFF"
+      align: [center, middle]
+      text: "2"
+  - elementId: t2
+    elementType: text
+    bounds: [365, 248, 230, 76]
+    content:
+      fontSize: 16
+      lineHeight: 1.35
+      text: "<p><strong>Пара</strong></p><p>На линии или на подносе</p>"
+  - elementId: s3
+    elementType: shape
+    bounds: [630, 180, 270, 160]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$primary"}
+  - elementId: n3
+    elementType: shape
+    bounds: [650, 200, 36, 36]
+    shapeName: oval
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: n3t
+    elementType: text
+    bounds: [650, 200, 36, 36]
+    content:
+      fontSize: 16
+      bold: true
+      color: "$primary"
+      align: [center, middle]
+      text: "3"
+  - elementId: t3
+    elementType: text
+    bounds: [650, 248, 230, 76]
+    content:
+      fontSize: 16
+      lineHeight: 1.35
+      color: "#FFFFFF"
+      text: "<p><strong>Чужая кухня</strong></p><p>Строка выбора в ТЗ</p>"
+  - elementId: note
+    elementType: text
+    bounds: [60, 360, 840, 48]
     content:
       fontSize: 16
       color: "#4A463C"
-      lineHeight: 1.45
-      text: |
-        <p>Сейчас подтверждённых публичных практик — шесть, трое носителей — в этом зале.</p>
-        <p>Через год панель должна быть не из трёх человек, а из двадцати. У каждой организации в зале есть всё, чтобы стать следующей:</p>
-        <p><strong>замер → пара на линии или на подносе → если кухня чужая, строка в ТЗ.</strong></p>
-  - elementId: rule
-    elementType: shape
-    bounds: [60, 428, 200, 2]
-    shapeName: rect
-    fill: {type: solid, color: "$accent"}
+      lineHeight: 1.4
+      text: "Шесть публичных практик. Трое носителей — в этом зале. Через год панель — из двадцати."
   - elementId: contact
     elementType: text
-    bounds: [60, 440, 840, 50]
+    bounds: [60, 430, 840, 48]
     content:
       fontSize: 13
       color: "$muted"
-      lineHeight: 1.5
-      text: |
-        <p>Доклад, семинарский пакет и все формы — в материалах семинара. Вопросы после сессии: [контакт докладчика].</p>
-        <p>Благодарю за вчерашние журналы, которые вы заведёте в понедельник.</p>
+      lineHeight: 1.45
+      text: "<p>Доклад и пакет — в материалах. Вопросы — на панели внедривших.</p><p>Благодарю за вчерашние журналы, которые вы заведёте в понедельник.</p>"
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]

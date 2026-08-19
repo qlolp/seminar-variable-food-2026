@@ -8,68 +8,76 @@ elements:
     bounds: [60, 34, 600, 16]
     content:
       style: "$kicker"
-      text: "ЧТО ВЗЯТЬ С СОБОЙ"
+      text: "ЧТО ВЗЯТЬ СО СТОЛА"
   - elementId: title
     elementType: text
     bounds: [60, 56, 840, 40]
     content:
       style: "$h1"
-      text: "Семинарский пакет: 19 инструментов к докладу"
+      text: "Пакет: четыре папки, не девятнадцать файлов"
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 104, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
-  - elementId: col1
-    elementType: text
-    bounds: [60, 130, 410, 280]
-    content:
-      fontSize: 13.5
-      lineHeight: 1.55
-      text: |
-        <p><strong>Говорить и убеждать</strong></p>
-        <p>· тексты выступлений на 45 и 20 минут</p>
-        <p>· записка руководителю (4 страницы)</p>
-        <p>· раздатка участнику (8–12 страниц)</p>
-        <p style="margin-top:10px"><strong>Проверить себя</strong></p>
-        <p>· экспресс-аудит на 10 минут</p>
-        <p>· форма самоопределения ступени</p>
-        <p>· чек-лист «что в понедельник»</p>
-        <p>· «10 ошибок вариативного питания»</p>
-  - elementId: col2
-    elementType: text
-    bounds: [490, 130, 410, 280]
-    content:
-      fontSize: 13.5
-      lineHeight: 1.55
-      text: |
-        <p><strong>Работать в зале</strong></p>
-        <p>· сценарий малых групп на 45 минут</p>
-        <p>· пять вопросов для дискуссии</p>
-        <p>· сценарий трудных вопросов</p>
-        <p>· четырнадцать возражений и ответы</p>
-        <p style="margin-top:10px"><strong>Принимать решения</strong></p>
-        <p>· «10 вопросов учредителю»</p>
-        <p>· листы решений: без средств / с финансированием / с учредителем / не без врача</p>
-        <p>· вопросы для юридического заключения</p>
-  - elementId: rule
+  - elementId: c1
     elementType: shape
-    bounds: [60, 430, 200, 2]
+    bounds: [60, 128, 410, 140]
     shapeName: rect
-    fill: {type: solid, color: "$accent"}
-  - elementId: bottom
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: t1
     elementType: text
-    bounds: [60, 446, 840, 40]
+    bounds: [84, 148, 362, 104]
     content:
-      fontSize: 14.5
+      fontSize: 16
       lineHeight: 1.4
-      text: "Доклад — полный текст с обоснованиями (объём — на обложке PDF). Пакет — то, что лежит на столе в понедельник. <strong>Каждый элемент открывается и заполняется без подготовки.</strong>"
+      text: "<p><strong>Говорить</strong></p><p>45 и 20 минут, записка руководителю, раздатка</p>"
+  - elementId: c2
+    elementType: shape
+    bounds: [490, 128, 410, 140]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: t2
+    elementType: text
+    bounds: [514, 148, 362, 104]
+    content:
+      fontSize: 16
+      lineHeight: 1.4
+      text: "<p><strong>Проверить себя</strong></p><p>Аудит, ступень, понедельник, 10 ошибок</p>"
+  - elementId: c3
+    elementType: shape
+    bounds: [60, 284, 410, 140]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: t3
+    elementType: text
+    bounds: [84, 304, 362, 104]
+    content:
+      fontSize: 16
+      lineHeight: 1.4
+      text: "<p><strong>Работать в зале</strong></p><p>Группы, вопросы, возражения</p>"
+  - elementId: c4
+    elementType: shape
+    bounds: [490, 284, 410, 140]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: t4
+    elementType: text
+    bounds: [514, 304, 362, 104]
+    content:
+      fontSize: 16
+      lineHeight: 1.4
+      text: "<p><strong>Решать</strong></p><p>Без денег / с деньгами / с учредителем / не без врача</p>"
   - elementId: src
     elementType: text
-    bounds: [60, 505, 760, 24]
+    bounds: [60, 448, 840, 48]
     content:
       style: "$small"
-      text: "Семинарский пакет прилагается к докладу; приложения к докладу — 45 проектов локальных форм с дисклеймером"
+      text: "19 инструментов в пакете. 45 приложений к докладу — проекты форм. Каждый открывается без подготовки."
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]

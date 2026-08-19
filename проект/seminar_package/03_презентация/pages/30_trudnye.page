@@ -5,58 +5,100 @@ background:
 elements:
   - elementId: kicker
     elementType: text
-    bounds: [60, 34, 600, 16]
+    bounds: [60, 34, 700, 16]
     content:
       style: "$kicker"
-      text: "ТРУДНЫЕ ВОПРОСЫ · КАРКАС ОТВЕТОВ"
+      text: "ТРИ ВОПРОСА ИЗ ЗАЛА · ЭЛЕМЕНТЫ 13–14"
   - elementId: title
     elementType: text
     bounds: [60, 56, 840, 40]
     content:
       style: "$h1"
-      text: "Три вопроса, которые вы услышите у себя в регионе"
+      text: "Короткий ответ, который можно повторить"
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 104, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
+  - elementId: c1
+    elementType: shape
+    bounds: [60, 128, 270, 280]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
   - elementId: q1
     elementType: text
-    bounds: [60, 130, 840, 110]
+    bounds: [80, 148, 230, 88]
+    content:
+      fontSize: 15
+      bold: true
+      lineHeight: 1.3
+      fontFamily: PT Serif
+      text: "«У нас 400 мест и нет поваров»"
+  - elementId: a1
+    elementType: text
+    bounds: [80, 244, 230, 140]
     content:
       fontSize: 14
-      lineHeight: 1.5
-      text: |
-        <p><strong>«У нас 400 жителей и поваров нет. Это для маленьких домов».</strong></p>
-        <p>Масштаб решается парными эквивалентами и журналом заказа — Успенский ПНИ крупный. Кадровый голод реален: ступень 1 на одном отделении требует минимального приращения работы. Если и это не по силам — делаем хорошо ступень 0.</p>
+      lineHeight: 1.4
+      color: "$primary"
+      text: "Масштаб закрывают пары и журнал. Не тянете ступень 1 — честно делайте ступень 0."
+  - elementId: c2
+    elementType: shape
+    bounds: [345, 128, 270, 280]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
   - elementId: q2
     elementType: text
-    bounds: [60, 250, 840, 110]
+    bounds: [365, 148, 230, 88]
+    content:
+      fontSize: 15
+      bold: true
+      lineHeight: 1.3
+      fontFamily: PT Serif
+      text: "«Тяжёлые расстройства — не выбирают»"
+  - elementId: a2
+    elementType: text
+    bounds: [365, 244, 230, 140]
     content:
       fontSize: 14
-      lineHeight: 1.5
-      text: |
-        <p><strong>«Жители с тяжёлыми расстройствами не могут выбирать».</strong></p>
-        <p>Выбор предлагается тем, кто может, — форматом каждому доступным: показ двух тарелок вместо слов, выбор жестом. Кому выбор противопоказан — решает врач, и это пишется в список. «Не выбирают» чаще значит «давно не спрашивали»: навык восстанавливается практикой.</p>
+      lineHeight: 1.4
+      color: "$primary"
+      text: "Формат — каждому: две тарелки, жест. Кому нельзя — решает врач, и это в списке."
+  - elementId: c3
+    elementType: shape
+    bounds: [630, 128, 270, 280]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
   - elementId: q3
     elementType: text
-    bounds: [60, 370, 840, 100]
+    bounds: [650, 148, 230, 88]
+    content:
+      fontSize: 15
+      bold: true
+      lineHeight: 1.3
+      fontFamily: PT Serif
+      text: "«Все выберут Б — кто ответит за срыв?»"
+  - elementId: a3
+    elementType: text
+    bounds: [650, 244, 230, 140]
     content:
       fontSize: 14
-      lineHeight: 1.5
-      text: |
-        <p><strong>«Если все выберут вариант Б — кто отвечает за срыв?».</strong></p>
-        <p>Выбор делается накануне через журнал заказа, а не на линии: готовится по заказу плюс резерв, статистика за две недели пересчитывает пропорции. Срывы бывают у всех внедривших — вопрос не «будут ли», а «записываются ли».</p>
+      lineHeight: 1.4
+      color: "$primary"
+      text: "Заказ накануне, не на линии. Срывы бывают. Вопрос — записываются ли."
   - elementId: src
     elementType: text
-    bounds: [60, 500, 780, 30]
+    bounds: [60, 430, 840, 64]
     content:
       style: "$small"
-      text: "Источник: семинарский пакет, элементы 13–14 (десять трудных вопросов и четырнадцать возражений с аргументированными ответами)"
+      text: "Полные ответы: 10 трудных вопросов и 14 возражений — элементы 13–14 пакета."
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
     content:
       style: "$small"
       align: [right, top]
-      text: "41"
+      text: "42"

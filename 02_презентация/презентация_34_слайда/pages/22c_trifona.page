@@ -5,111 +5,121 @@ background:
 elements:
   - elementId: kicker
     elementType: text
-    bounds: [70, 50, 820, 20]
+    bounds: [60, 34, 820, 16]
     content:
-      fontSize: 12
-      color: "$primary"
-      letterSpacing: 2
-      bold: true
-      fontFamily: Noto Sans
-      text: "ТРИ НЕЗАМЕЧЕННЫЕ ЗАЩИТЫ · КЛИНИЧЕСКИЙ БЛОК"
+      style: "$kicker"
+      text: "ТРИ НЕЗАМЕЧЕННЫЕ ЗАЩИТЫ · РАЗДЕЛЫ 10.7–10.11"
   - elementId: title
     elementType: text
-    bounds: [70, 80, 820, 60]
+    bounds: [60, 56, 840, 40]
     content:
-      fontSize: 30
-      bold: true
-      color: "$text"
-      fontFamily: PT Serif
-      text: "Полость рта · стакан воды · стул"
+      style: "$h1"
+      text: "Рот · стакан · стул"
+  - elementId: line
+    elementType: shape
+    bounds: [60, 104, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
   - elementId: card1
     elementType: shape
-    bounds: [60, 170, 270, 270]
+    bounds: [60, 128, 270, 280]
     shapeName: rect
-    fill:
-      type: solid
-      color: "$soft"
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: h1
+    elementType: text
+    bounds: [80, 148, 230, 28]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      letterSpacing: 1
+      text: "РОТ"
+  - elementId: n1
+    elementType: text
+    bounds: [80, 184, 230, 56]
+    content:
+      style: "$big"
+      text: "11% vs 19%"
   - elementId: t1
     elementType: text
-    bounds: [80, 190, 230, 230]
+    bounds: [80, 250, 230, 136]
     content:
-      fontSize: 15
-      bold: true
-      color: "$primary"
-      fontFamily: Noto Sans
-      text: "РОТ"
-  - elementId: t1b
-    elementType: text
-    bounds: [80, 220, 230, 210]
-    content:
-      fontSize: 13
+      fontSize: 14
       lineHeight: 1.4
-      color: "$text"
-      fontFamily: Noto Sans
-      text: "РКИ домов ухода, n=366: щётка после еды, часто повидон-йод, стоматолог раз в неделю → пневмонии 11 % vs 19 %. ~1 из 10 смертей — Sjögren в обзоре Müller (J Dent Res). Группа зависимости, не «две минуты на всех»."
+      text: "<p>% пневмоний в РКИ: уход за полостью рта vs без него.</p><p style=\"margin-top:8px\">Не «две минуты на всех» — группа зависимости.</p>"
   - elementId: card2
     elementType: shape
-    bounds: [345, 170, 270, 270]
+    bounds: [345, 128, 270, 280]
     shapeName: rect
-    fill:
-      type: solid
-      color: "$soft"
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: h2
+    elementType: text
+    bounds: [365, 148, 230, 28]
+    content:
+      fontSize: 13
+      bold: true
+      color: "$primary"
+      letterSpacing: 1
+      text: "СТАКАН"
+  - elementId: n2
+    elementType: text
+    bounds: [365, 184, 230, 56]
+    content:
+      fontSize: 32
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "питьё ↓"
   - elementId: t2
     elementType: text
-    bounds: [365, 190, 230, 230]
+    bounds: [365, 250, 230, 136]
     content:
-      fontSize: 15
-      bold: true
-      color: "$primary"
-      fontFamily: Noto Sans
-      text: "СТАКАН"
-  - elementId: t2b
-    elementType: text
-    bounds: [365, 220, 230, 210]
-    content:
-      fontSize: 13
+      fontSize: 14
       lineHeight: 1.4
-      color: "$text"
-      fontFamily: Noto Sans
-      text: "Загущённые напитки доказанно снижают потребление жидкости; данных о снижении осложнений — нет. Замер: «выпито за сутки» в панели чисел; чайная пауза как шестое событие; индикаторы дегидратации на посту."
+      text: "<p>Загуститель снижает потребление жидкости. Данных, что меньше осложнений, нет.</p><p style=\"margin-top:8px\">Считайте «выпито за сутки».</p>"
   - elementId: card3
     elementType: shape
-    bounds: [630, 170, 270, 270]
+    bounds: [630, 128, 270, 280]
     shapeName: rect
-    fill:
-      type: solid
-      color: "$soft"
-  - elementId: t3
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: h3
     elementType: text
-    bounds: [650, 190, 230, 230]
-    content:
-      fontSize: 15
-      bold: true
-      color: "$primary"
-      fontFamily: Noto Sans
-      text: "СТУЛ"
-  - elementId: t3b
-    elementType: text
-    bounds: [650, 220, 230, 210]
+    bounds: [650, 148, 230, 28]
     content:
       fontSize: 13
-      lineHeight: 1.4
-      color: "$text"
-      fontFamily: Noto Sans
-      text: "Запор у 30–60 % на клозапине (до 80 % по объективным тестам); тяжёлый — фатален (илеус, перфорация). Да/нет за сутки в постовом журнале (152-ФЗ); 3 суток без стула — врач сегодня."
-  - elementId: bottom
+      bold: true
+      color: "$primary"
+      letterSpacing: 1
+      text: "СТУЛ"
+  - elementId: n3
     elementType: text
-    bounds: [70, 470, 820, 40]
+    bounds: [650, 184, 230, 56]
     content:
-      fontSize: 10.5
-      color: "$muted"
-      fontFamily: Noto Sans
-      text: "Источники: Yoneyama 2002 (JAGS); Müller 2015 (J Dent Res; 1/10 — Sjögren 2008); Simon J. Steele 2021 (Breathe); Every-Palmer 2017; NHS SPS. Разделы 10.7–10.11, 13.10; прил. 37."
+      fontSize: 36
+      bold: true
+      color: "$primary"
+      fontFamily: PT Serif
+      text: "3 суток"
+  - elementId: t3
+    elementType: text
+    bounds: [650, 250, 230, 136]
+    content:
+      fontSize: 14
+      lineHeight: 1.4
+      text: "<p>На клозапине запор частый и может быть фатален.</p><p style=\"margin-top:8px\">Трое суток без стула у группы риска — врач сегодня.</p>"
+  - elementId: src
+    elementType: text
+    bounds: [60, 430, 840, 64]
+    content:
+      style: "$small"
+      text: "Yoneyama 2002; Müller 2015; Every-Palmer 2017. Приложение 37."
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
     content:
-      fontSize: 10.5
-      color: "#A8A294"
+      style: "$small"
       align: [right, top]
-      text: "31"
+      text: "32"

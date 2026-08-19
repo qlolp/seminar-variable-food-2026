@@ -45,9 +45,10 @@ elements:
       fontSize: 14.5
       lineHeight: 1.55
       text: |
-        <p><strong>Что показывают данные</strong></p>
-        <p style="margin-top:8px">Дисфагия распространена у жителей учреждений и недодиагностирована: опубликованные оценки — в широком диапазоне (реестр доклада), репрезентативных российских данных нет.</p>
-        <p style="margin-top:8px">После внедрения единой шкалы текстур IDDSI соблюдение стандартов выросло с 44% до 90%.</p>
+        <p><strong>Данные</strong></p>
+        <p style="margin-top:8px">Оценки распространённости — широкий диапазон. Российских репрезентативных цифр нет.</p>
+        <p style="margin-top:12px"><strong>44% → 90%</strong></p>
+        <p>соблюдение текстур IDDSI после обучения, не оборудования.</p>
   - elementId: bottom
     elementType: text
     bounds: [60, 396, 840, 70]
@@ -70,4 +71,4 @@ elements:
     content:
       style: "$small"
       align: [right, top]
-      text: "30"
+      text: "31"

@@ -5,131 +5,130 @@ background:
 elements:
   - elementId: kicker
     elementType: text
-    bounds: [60, 34, 600, 16]
+    bounds: [60, 34, 700, 16]
     content:
       style: "$kicker"
-      text: "ГЛАВНАЯ СХЕМА ДОКЛАДА"
+      text: "ОСЬ А · КАК УСТРОЕНА РАЗДАЧА · РАЗДЕЛ 8.2"
   - elementId: title
     elementType: text
     bounds: [60, 56, 840, 40]
     content:
       style: "$h1"
-      text: "Лестница вариативности: не пропасть, а шесть ступеней"
+      text: "Лестница моделей: не пропасть, а шесть ступеней"
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 104, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
+  - elementId: mark
+    elementType: text
+    bounds: [60, 118, 840, 36]
+    content:
+      fontSize: 15
+      color: "$primary"
+      bold: true
+      lineHeight: 1.35
+      text: "Ступени 1–2 уже работают в России. Это горизонт большинства домов на ближайший год."
   - elementId: s0
     elementType: shape
-    bounds: [60, 390, 130, 70]
+    bounds: [60, 380, 135, 78]
     shapeName: rect
+    cornerRadius: 10
     fill: {type: solid, color: "$primary"}
   - elementId: s0t
     elementType: text
-    bounds: [66, 394, 118, 62]
+    bounds: [68, 390, 119, 58]
     content:
-      fontSize: 11
+      fontSize: 12
       color: "#FFFFFF"
       lineHeight: 1.25
-      text: |
-        <p><strong>0. Мономеню</strong></p>
-        <p>с учётом отказов</p>
+      text: "<p><strong>0. Мономеню</strong></p><p>отказ → замена</p>"
   - elementId: s1
     elementType: shape
-    bounds: [200, 355, 130, 105]
+    bounds: [205, 340, 135, 118]
     shapeName: rect
+    cornerRadius: 10
     fill: {type: solid, color: "$primary"}
   - elementId: s1t
     elementType: text
-    bounds: [206, 359, 118, 97]
+    bounds: [213, 352, 119, 96]
     content:
-      fontSize: 11
+      fontSize: 12
       color: "#FFFFFF"
       lineHeight: 1.25
-      text: |
-        <p><strong>1. Два варианта</strong></p>
-        <p>одной позиции, часть дней</p>
+      text: "<p><strong>1. Два варианта</strong></p><p>одной позиции, часть дней</p>"
   - elementId: s2
     elementType: shape
-    bounds: [340, 320, 130, 140]
+    bounds: [350, 300, 135, 158]
     shapeName: rect
+    cornerRadius: 10
     fill: {type: solid, color: "$primary"}
   - elementId: s2t
     elementType: text
-    bounds: [346, 324, 118, 132]
+    bounds: [358, 312, 119, 136]
     content:
-      fontSize: 11
+      fontSize: 12
       color: "#FFFFFF"
       lineHeight: 1.25
-      text: |
-        <p><strong>2. Два варианта</strong></p>
-        <p>всех основных позиций, ежедневно</p>
+      text: "<p><strong>2. Два варианта</strong></p><p>всех основных позиций, ежедневно</p>"
   - elementId: s3
     elementType: shape
-    bounds: [480, 285, 130, 175]
+    bounds: [495, 260, 135, 198]
     shapeName: rect
+    cornerRadius: 10
     fill: {type: solid, color: "$bg"}
     border: {style: solid, width: 2, color: "$primary"}
   - elementId: s3t
     elementType: text
-    bounds: [486, 289, 118, 167]
+    bounds: [503, 272, 119, 176]
     content:
-      fontSize: 11
+      fontSize: 12
       color: "$primary"
       lineHeight: 1.25
-      text: |
-        <p><strong>3. Выбор</strong></p>
-        <p>на линии раздачи (буфетная зона)</p>
+      text: "<p><strong>3. На линии</strong></p><p>буфетная зона</p>"
   - elementId: s4
     elementType: shape
-    bounds: [620, 250, 130, 210]
+    bounds: [640, 220, 135, 238]
     shapeName: rect
+    cornerRadius: 10
     fill: {type: solid, color: "$bg"}
     border: {style: solid, width: 2, color: "$primary"}
   - elementId: s4t
     elementType: text
-    bounds: [626, 254, 118, 202]
+    bounds: [648, 232, 119, 216]
     content:
-      fontSize: 11
+      fontSize: 12
       color: "$primary"
       lineHeight: 1.25
-      text: |
-        <p><strong>4. Семейная подача</strong></p>
-        <p>за столом, точечно</p>
+      text: "<p><strong>4. Семейная подача</strong></p><p>за столом, точечно</p>"
   - elementId: s5
     elementType: shape
-    bounds: [760, 215, 130, 245]
+    bounds: [785, 180, 115, 278]
     shapeName: rect
+    cornerRadius: 10
     fill: {type: solid, color: "$bg"}
     border: {style: dash, width: 2, color: "$muted"}
   - elementId: s5t
     elementType: text
-    bounds: [766, 219, 118, 237]
+    bounds: [791, 192, 103, 256]
     content:
-      fontSize: 11
+      fontSize: 12
       color: "$muted"
       lineHeight: 1.25
-      text: |
-        <p><strong>5. «Своя кухня»</strong></p>
-        <p>жители готовят сами — горизонт</p>
-  - elementId: mark
+      text: "<p><strong>5. Своя кухня</strong></p><p>горизонт</p>"
+  - elementId: note
     elementType: text
-    bounds: [60, 148, 620, 60]
+    bounds: [60, 168, 700, 22]
     content:
-      fontSize: 13.5
-      bold: true
-      color: "$primary"
-      lineHeight: 1.4
-      text: |
-        <p>Ступени 1–2 подтверждены действующими российскими практиками —</p>
-        <p>это реалистичный горизонт большинства участников семинара на ближайший год</p>
+      fontSize: 13
+      color: "#4A463C"
+      text: "Залитые ступени — подтверждённая практика. Контур — выборочно. Пунктир — не массовая модель."
   - elementId: src
     elementType: text
-    bounds: [60, 480, 780, 44]
+    bounds: [60, 478, 780, 40]
     content:
       style: "$small"
-      text: "Источник: раздел 8.2 доклада; подтверждённые практики ступеней 1–2 — Болотнинский и Успенский ПНИ, Иркутская область (сайты учреждений, 2026); ступень 4 — Nijs et al., 2006; ступени 3 и 5 — применимы выборочно/на горизонте"
+      text: "Источник: раздел 8.2 доклада. Болотнинский и Успенский ПНИ, Иркутская область. Следующий слайд — другая ось: участие жителя (8.6)."
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]

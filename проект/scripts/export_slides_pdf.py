@@ -19,17 +19,18 @@ THEME = {
     "accent": "#D97757",
     "text": "#141413",
     "muted": "#8A8578",
-    "bg": "#F9F9F7",
-    "soft": "#F2EFE6",
-    "softgreen": "#F2EFE6",
+    "bg": "#F7F5F0",
+    "soft": "#EFEBE3",
+    "softgreen": "#EFEBE3",
     "line": "#E5E2D8",
+    "ink": "#1C1B19",
 }
 STYLES = {
     "kicker": "font-size:11px;color:#B85C3D;font-family:'Noto Sans',sans-serif;letter-spacing:2px;font-weight:700;",
-    "h1": "font-size:27px;font-weight:700;color:#141413;font-family:'PT Serif',serif;line-height:1.15;",
-    "body": "font-size:14.5px;color:#141413;font-family:'Noto Sans',sans-serif;line-height:1.45;",
-    "small": "font-size:10.5px;color:#8A8578;font-family:'Noto Sans',sans-serif;line-height:1.3;",
-    "big": "font-size:46px;font-weight:700;color:#B85C3D;font-family:'PT Serif',serif;",
+    "h1": "font-size:28px;font-weight:700;color:#141413;font-family:'PT Serif',serif;line-height:1.15;",
+    "body": "font-size:15px;color:#141413;font-family:'Noto Sans',sans-serif;line-height:1.4;",
+    "small": "font-size:11px;color:#8A8578;font-family:'Noto Sans',sans-serif;line-height:1.3;",
+    "big": "font-size:44px;font-weight:700;color:#B85C3D;font-family:'PT Serif',serif;",
     "q": "font-size:30px;font-weight:700;color:#B85C3D;font-family:'PT Serif',serif;line-height:1.25;",
 }
 
@@ -70,13 +71,24 @@ def text_css(content, theme_styles):
             parts.append(f"letter-spacing:{content['letterSpacing']}px")
         if content.get("lineHeight"):
             parts.append(f"line-height:{content['lineHeight']}")
-        if content.get("align"):
-            a = content["align"]
-            if isinstance(a, list):
-                if a[0] == "right":
-                    parts.append("text-align:right")
-                elif a[0] == "center":
+        align = content.get("align")
+        if align:
+            a = align if isinstance(align, list) else [align]
+            horiz = a[0] if a else "left"
+            vert = a[1] if len(a) > 1 else "top"
+            if vert in ("middle", "center") or horiz == "center":
+                parts.append("display:flex")
+                parts.append(
+                    "justify-content:"
+                    + ("center" if horiz == "center" else "flex-end" if horiz == "right" else "flex-start")
+                )
+                parts.append("align-items:" + ("center" if vert in ("middle", "center") else "flex-start"))
+                if horiz == "center":
                     parts.append("text-align:center")
+            elif horiz == "right":
+                parts.append("text-align:right")
+            elif horiz == "center":
+                parts.append("text-align:center")
         base = ";".join(parts) + ";"
     return base
 
@@ -98,11 +110,34 @@ def render_text(el):
 
 def render_shape(el):
     b = el["bounds"]
-    fill = ((el.get("fill") or {}).get("color")) or THEME["line"]
-    return (
-        f'<div class="el shape" style="left:{b[0]}px;top:{b[1]}px;width:{b[2]}px;height:{b[3]}px;'
-        f'background:{col(fill)};"></div>'
-    )
+    fill = (el.get("fill") or {}).get("color")
+    border = el.get("border") or {}
+    name = el.get("shapeName") or "rect"
+    radius = el.get("cornerRadius")
+    parts = [
+        f"left:{b[0]}px",
+        f"top:{b[1]}px",
+        f"width:{b[2]}px",
+        f"height:{b[3]}px",
+        "box-sizing:border-box",
+    ]
+    if fill:
+        parts.append(f"background:{col(fill)}")
+    else:
+        parts.append("background:transparent")
+    if name in ("ellipse", "oval", "circle"):
+        parts.append("border-radius:50%")
+    elif radius:
+        parts.append(f"border-radius:{radius}px")
+    if border:
+        bw = border.get("width") or 1
+        bc = col(border.get("color") or THEME["muted"])
+        style = str(border.get("style") or "solid")
+        if style in ("dash", "dashed"):
+            parts.append(f"border:{bw}px dashed {bc}")
+        else:
+            parts.append(f"border:{bw}px solid {bc}")
+    return f'<div class="el shape" style="{";".join(parts)};"></div>'
 
 
 def render_line(el):
@@ -110,8 +145,26 @@ def render_line(el):
     border = el.get("border") or {}
     c = col(border.get("color") or THEME["muted"])
     w = border.get("width") or 2
+    points = el.get("points")
+    arrows = el.get("arrow") or [None, None]
+    mid = f"m{int(b[0])}-{int(b[1])}-{int(b[2])}-{int(b[3])}"
+    if points:
+        vb = el.get("viewBox") or [b[2], b[3]]
+        marker_defs = (
+            f'<defs><marker id="{mid}" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">'
+            f'<path d="M0,0 L10,5 L0,10 z" fill="{c}"/></marker></defs>'
+        )
+        start = f' marker-start="url(#{mid})"' if arrows[0] == "arrow" else ""
+        end = f' marker-end="url(#{mid})"' if arrows[1] == "arrow" else ""
+        return (
+            f'<div class="el line" style="left:{b[0]}px;top:{b[1]}px;width:{b[2]}px;height:{b[3]}px;overflow:visible;">'
+            f'<svg width="{b[2]}" height="{b[3]}" viewBox="0 0 {vb[0]} {vb[1]}" overflow="visible">'
+            f"{marker_defs}"
+            f'<polyline points="{esc(points)}" fill="none" stroke="{c}" stroke-width="{w}" '
+            f'stroke-linecap="round"{start}{end}/></svg></div>'
+        )
     return (
-        f'<div class="el" style="left:{b[0]}px;top:{b[1]+b[3]//2}px;width:{b[2]}px;height:{w}px;'
+        f'<div class="el" style="left:{b[0]}px;top:{b[1] + b[3] // 2}px;width:{b[2]}px;height:{w}px;'
         f'background:{c};"></div>'
     )
 
@@ -127,7 +180,7 @@ def render_table(el):
         html.append("<tr>")
         for cell in row:
             tag = "th" if i == 0 else "td"
-            html.append(f"<{tag}>{esc(cell.get('text',''))}</{tag}>")
+            html.append(f"<{tag}>{esc(cell.get('text', ''))}</{tag}>")
         html.append("</tr>")
     html.append("</table></div>")
     return "".join(html)
@@ -203,17 +256,18 @@ html, body {{ margin:0; padding:0; }}
 .slide {{ width:960px; height:540px; position:relative; overflow:hidden; page-break-after:always; }}
 .slide:last-child {{ page-break-after:auto; }}
 .el {{ position:absolute; overflow:hidden; box-sizing:border-box; }}
-.el p {{ margin:0 0 0.35em; }}
+.el.line {{ overflow:visible; }}
+.el p {{ margin:0 0 0.3em; }}
 .el p:last-child {{ margin-bottom:0; }}
-.sl-t {{ width:100%; height:100%; border-collapse:collapse; font-family:'Noto Sans',sans-serif; font-size:13px; }}
-.sl-t th, .sl-t td {{ border-bottom:1px solid {THEME['line']}; padding:6px 8px; text-align:left; vertical-align:middle; }}
+.sl-t {{ width:100%; height:100%; border-collapse:collapse; font-family:'Noto Sans',sans-serif; font-size:14px; }}
+.sl-t th, .sl-t td {{ border-bottom:1px solid {THEME['line']}; padding:8px 10px; text-align:left; vertical-align:middle; }}
 .sl-t th {{ color:{THEME['primary']}; font-weight:700; }}
 .chart {{ font-family:'Noto Sans',sans-serif; }}
 .chart-title {{ font-size:12px; color:{THEME['muted']}; margin-bottom:10px; }}
 .bar-row {{ display:flex; align-items:center; margin:10px 0; }}
 .bar-lab {{ width:160px; text-align:right; padding-right:10px; font-size:13px; }}
-.bar-track {{ flex:1; height:22px; background:{THEME['soft']}; }}
-.bar {{ height:22px; }}
+.bar-track {{ flex:1; height:22px; background:{THEME['soft']}; border-radius:4px; overflow:hidden; }}
+.bar {{ height:22px; border-radius:4px; }}
 .bar-val {{ width:50px; padding-left:8px; font-weight:700; font-size:13px; }}
 """
     doc = (
@@ -226,7 +280,9 @@ html, body {{ margin:0; padding:0; }}
     )
     OUT_HTML.write_text(doc, encoding="utf-8")
     print(f"slides HTML: {len(pages)} pages → {OUT_HTML}")
-    import subprocess, os
+    import os
+    import subprocess
+
     env = dict(os.environ)
     env["LANG"] = "C.UTF-8"
     r = subprocess.run(["weasyprint", str(OUT_HTML), str(OUT_PDF)], env=env, capture_output=True, text=True)
@@ -234,6 +290,7 @@ html, body {{ margin:0; padding:0; }}
         print(r.stderr[-3000:])
         raise SystemExit(1)
     from pypdf import PdfReader
+
     print(f"PDF {OUT_PDF}  {len(PdfReader(str(OUT_PDF)).pages)} стр.")
 
 

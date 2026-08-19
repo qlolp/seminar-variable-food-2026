@@ -30,7 +30,7 @@ elements:
       lineHeight: 1.4
       color: "$text"
       fontFamily: Noto Sans
-      text: "Столовая закрыта или житель не выходит на линию — выбор меняет форму, а не исчезает. Одиннадцать процентов жителей постельные или маломобильные. Для них линия — чужой мир."
+      text: "Столовая закрыта — выбор меняет форму, не исчезает. 11% жителей не доходят до линии."
   - elementId: l1
     elementType: text
     bounds: [70, 210, 420, 200]
@@ -53,6 +53,7 @@ elements:
     elementType: shape
     bounds: [60, 420, 840, 50]
     shapeName: rect
+    cornerRadius: 12
     fill:
       type: solid
       color: "$soft"
@@ -81,4 +82,4 @@ elements:
       fontSize: 10.5
       color: "#A8A294"
       align: [right, top]
-      text: "28"
+      text: "29"

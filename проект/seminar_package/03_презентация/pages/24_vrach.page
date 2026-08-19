@@ -8,77 +8,80 @@ elements:
     bounds: [60, 34, 600, 16]
     content:
       style: "$kicker"
-      text: "ГРАНИЦА ОТВЕТСТВЕННОСТИ"
+      text: "ГРАНИЦА · РАЗДЕЛЫ 9–11"
   - elementId: title
     elementType: text
     bounds: [60, 56, 840, 40]
     content:
       style: "$h1"
-      text: "Что решает врач — и что директор"
+      text: "Врач назначает. Директор организует."
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 104, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
-  - elementId: doc
-    elementType: text
-    bounds: [60, 132, 410, 280]
-    content:
-      fontSize: 14
-      lineHeight: 1.5
-      text: |
-        <p><strong>Врач решает</strong></p>
-        <p style="margin-top:6px">· текстуры и загущённые жидкости;</p>
-        <p>· скрининг дисфагии и его пороги;</p>
-        <p>· триггеры веса и действия по ним;</p>
-        <p>· усиленное питание и смеси;</p>
-        <p>· лекарственно-пищевая таблица;</p>
-        <p>· кому выбор доступен и в каком формате;</p>
-        <p>· оценка систематического отказа от еды;</p>
-        <p>· слабительные и реакция на запор (клозапин);</p>
-        <p>· микронутриенты и сдвиг еды при инсулине;</p>
-        <p>· MUST / потеря веса — не путать с набором;</p>
-        <p>· комфортное кормление в конце жизни;</p>
-        <p>· витаминизация при ОРИ.</p>
-  - elementId: vl
+  - elementId: left
     elementType: shape
-    bounds: [490, 132, 1, 280]
+    bounds: [60, 128, 410, 260]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
-  - elementId: dir
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: lh
     elementType: text
-    bounds: [520, 132, 380, 280]
+    bounds: [84, 148, 360, 32]
     content:
-      fontSize: 14
+      fontSize: 18
+      bold: true
+      fontFamily: PT Serif
+      text: "Врач"
+  - elementId: lt
+    elementType: text
+    bounds: [84, 188, 360, 176]
+    content:
+      fontSize: 16
+      lineHeight: 1.5
+      text: "<p>· текстуры и загущённые жидкости</p><p>· три отказа → осмотр сегодня</p><p>· таблица «лекарство × еда»</p>"
+  - elementId: right
+    elementType: shape
+    bounds: [490, 128, 410, 260]
+    shapeName: rect
+    cornerRadius: 16
+    fill: {type: solid, color: "$soft"}
+  - elementId: rh
+    elementType: text
+    bounds: [514, 148, 360, 32]
+    content:
+      fontSize: 18
+      bold: true
+      fontFamily: PT Serif
+      color: "$primary"
+      text: "Директор"
+  - elementId: rt
+    elementType: text
+    bounds: [514, 188, 360, 176]
+    content:
+      fontSize: 16
       lineHeight: 1.5
       color: "$primary"
-      text: |
-        <p><strong>Директор решает</strong></p>
-        <p style="margin-top:6px">· оборудование для текстур и закупка загустителей;</p>
-        <p>· журналы, ведомости, приказ о мониторинге;</p>
-        <p>· единый список трудностей с едой в трёх службах;</p>
-        <p>· организация позднего перекуса по списку врача;</p>
-        <p>· график совета по питанию;</p>
-        <p>· обучение смен распознаванию признаков.</p>
+      text: "<p>· журналы и приказ о мониторинге</p><p>· один список «кому трудно есть»</p><p>· обучение смен признакам</p>"
   - elementId: bottom
     elementType: text
-    bounds: [60, 420, 840, 70]
+    bounds: [60, 412, 840, 52]
     content:
-      fontSize: 14.5
-      lineHeight: 1.5
-      text: |
-        <p>Всё, что затрагивает здоровье конкретного жителя, делается <strong>по назначению врача и фиксируется в документах</strong>, а не в договорённостях.</p>
-        <p>Нарушение этого правила — главный способ скомпрометировать вариативность.</p>
+      fontSize: 16
+      bold: true
+      lineHeight: 1.35
+      text: "Здоровье конкретного жителя — по назначению врача, в документе. Иначе вариативность компрометируют."
   - elementId: src
     elementType: text
-    bounds: [60, 505, 760, 24]
+    bounds: [60, 500, 780, 28]
     content:
       style: "$small"
-      text: "Источник: разделы 9–11 доклада; лист «Решения, которые нельзя принимать без врача» — семинарский пакет, элемент 18"
+      text: "Полный лист границ — семинарский пакет, элемент 18."
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
     content:
       style: "$small"
       align: [right, top]
-      text: "34"
+      text: "35"

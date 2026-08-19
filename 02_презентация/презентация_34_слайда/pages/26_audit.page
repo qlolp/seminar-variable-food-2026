@@ -8,73 +8,95 @@ elements:
     bounds: [60, 34, 600, 16]
     content:
       style: "$kicker"
-      text: "ИНТЕРАКТИВ · 10 МИНУТ"
+      text: "ИНТЕРАКТИВ · БЛАНК В ПАКЕТЕ"
   - elementId: title
     elementType: text
     bounds: [60, 56, 840, 40]
     content:
       style: "$h1"
-      text: "Экспресс-аудит: десять вопросов про ваш вчерашний день"
+      text: "Экспресс-аудит: отвечаем про вчера"
   - elementId: line
     elementType: shape
-    bounds: [60, 108, 840, 1]
+    bounds: [60, 104, 840, 1]
     shapeName: rect
     fill: {type: solid, color: "$line"}
-  - elementId: left
+  - elementId: lead
     elementType: text
-    bounds: [60, 130, 540, 280]
+    bounds: [60, 122, 840, 36]
     content:
-      fontSize: 13.5
-      lineHeight: 1.5
-      text: |
-        <p>1. Вчера житель мог выбрать между двумя вариантами хотя бы одного блюда</p>
-        <p>2. Этот выбор зафиксирован документально</p>
-        <p>3. Второй вариант дошёл до последнего отделения</p>
-        <p>4. Отказ повлёк замену, а не пустую тарелку</p>
-        <p>5. Руководство ело еду жителей за последний месяц — на столе жителей</p>
-        <p>6. Ночной интервал известен точно и не превышает 13 часов</p>
-        <p>7. Остатки на тарелках вчера кто-то посмотрел</p>
-        <p>8. Температура на последнем столе известна</p>
-        <p>9. Список «кому трудно есть» совпадает у врача, диетсестры и отделений</p>
-        <p>10. Меню за квартал менялось по итогам мнения жителей</p>
-  - elementId: vl
+      fontSize: 16
+      color: "#4A463C"
+      text: "Десять вопросов — на бланке в руках (элемент 11). На экране — только шкала."
+  - elementId: s0
     elementType: shape
-    bounds: [630, 130, 1, 280]
+    bounds: [60, 176, 200, 140]
     shapeName: rect
-    fill: {type: solid, color: "$line"}
-  - elementId: right
+    cornerRadius: 14
+    fill: {type: solid, color: "$soft"}
+  - elementId: s0t
     elementType: text
-    bounds: [660, 130, 240, 280]
-    content:
-      fontSize: 13.5
-      lineHeight: 1.5
-      text: |
-        <p><strong>Шкала</strong></p>
-        <p style="margin-top:6px">0–3 — ступень 0 или ниже</p>
-        <p>4–6 — элементы есть, системы нет</p>
-        <p>7–8 — ступень 1–2, уязвимая</p>
-        <p>9–10 — система работает</p>
-        <p style="margin-top:12px"><strong>Правило:</strong> отвечаем про вчерашний день; «не знаю» честнее «да».</p>
-        <p style="margin-top:8px">По памяти аудит завышает результат на 1–2 балла — на месте повторить с журналами.</p>
-  - elementId: bottom
-    elementType: text
-    bounds: [60, 430, 840, 44]
+    bounds: [76, 192, 168, 108]
     content:
       fontSize: 15
-      bold: true
-      color: "$primary"
+      lineHeight: 1.35
+      text: "<p><strong>0–3</strong></p><p>Ступень 0 или ниже</p>"
+  - elementId: s1
+    elementType: shape
+    bounds: [273, 176, 200, 140]
+    shapeName: rect
+    cornerRadius: 14
+    fill: {type: solid, color: "$soft"}
+  - elementId: s1t
+    elementType: text
+    bounds: [289, 192, 168, 108]
+    content:
+      fontSize: 15
+      lineHeight: 1.35
+      text: "<p><strong>4–6</strong></p><p>Элементы есть, системы нет</p>"
+  - elementId: s2
+    elementType: shape
+    bounds: [486, 176, 200, 140]
+    shapeName: rect
+    cornerRadius: 14
+    fill: {type: solid, color: "$soft"}
+  - elementId: s2t
+    elementType: text
+    bounds: [502, 192, 168, 108]
+    content:
+      fontSize: 15
+      lineHeight: 1.35
+      text: "<p><strong>7–8</strong></p><p>Ступень 1–2, уязвимая</p>"
+  - elementId: s3
+    elementType: shape
+    bounds: [700, 176, 200, 140]
+    shapeName: rect
+    cornerRadius: 14
+    fill: {type: solid, color: "$primary"}
+  - elementId: s3t
+    elementType: text
+    bounds: [716, 192, 168, 108]
+    content:
+      fontSize: 15
+      lineHeight: 1.35
+      color: "#FFFFFF"
+      text: "<p><strong>9–10</strong></p><p>Система работает</p>"
+  - elementId: rule
+    elementType: text
+    bounds: [60, 340, 840, 80]
+    content:
+      fontSize: 16
       lineHeight: 1.4
-      text: "Через 90 дней пилота аудит повторяется — разница баллов и есть главный показатель перед учредителем."
+      text: "<p><strong>«Не знаю» честнее «да».</strong> По памяти результат завышен на 1–2 балла.</p><p style=\"margin-top:8px\">Через 90 дней пилота аудит повторяется — разница баллов и есть отчёт учредителю.</p>"
   - elementId: src
     elementType: text
-    bounds: [60, 505, 760, 24]
+    bounds: [60, 500, 780, 28]
     content:
       style: "$small"
-      text: "Источник: семинарский пакет, элемент 11 (полный бланк); раздел 22 доклада"
+      text: "Семинарский пакет, элемент 11; раздел 22 доклада."
   - elementId: pg
     elementType: text
     bounds: [900, 508, 40, 20]
     content:
       style: "$small"
       align: [right, top]
-      text: "36"
+      text: "37"

@@ -7,9 +7,9 @@ theme:
     accent: "#D97757"
     text: "#141413"
     muted: "#8A8578"
-    bg: "#F9F9F7"
-    soft: "#F2EFE6"
-    softgreen: "#F2EFE6"
+    bg: "#F7F5F0"
+    soft: "#EFEBE3"
+    softgreen: "#EFEBE3"
     line: "#E5E2D8"
   textStyles:
     kicker:
@@ -56,8 +56,9 @@ pages:
   - pages/07_noch.page
   - pages/08_terminy.page
   - pages/09_lestnica.page
+  - pages/09b_uchastie.page
+  - pages/32_stupen.page
   - pages/10_stupeni01.page
-  - pages/11_stupeni25.page
   - pages/12_kriterii.page
   - pages/12b_iddsi.page
   - pages/13_praktiki.page
@@ -88,7 +89,6 @@ pages:
   - pages/29_regress.page
   - pages/30_trudnye.page
   - pages/31_ponedelnik.page
-  - pages/32_stupen.page
   - pages/33_paket.page
   - pages/33b_nauka.page
   - pages/34_final.page

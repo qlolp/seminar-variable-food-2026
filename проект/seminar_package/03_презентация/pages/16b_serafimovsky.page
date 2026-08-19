@@ -44,6 +44,7 @@ elements:
     elementType: shape
     bounds: [60, 415, 840, 45]
     shapeName: rect
+    cornerRadius: 12
     fill:
       type: solid
       color: "$soft"
@@ -72,4 +73,4 @@ elements:
       fontSize: 10.5
       color: "#A8A294"
       align: [right, top]
-      text: "20"
+      text: "21"
