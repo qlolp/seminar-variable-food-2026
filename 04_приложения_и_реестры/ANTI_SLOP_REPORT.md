@@ -44,9 +44,9 @@
 |---|---|
 | AUDIT_OLD_REPORTS.md | создан (20 проблемных зон) |
 | PARTICIPANTS_CLEAN.xlsx | создан, валидирован (170 записей, 51 регион, 4 дубля) |
-| SOURCE_REGISTRY.xlsx | 22 записи, валидирован |
-| MEDICAL_EVIDENCE.xlsx | 30 записей, валидирован |
-| INTERNATIONAL_PRACTICES.xlsx | 43 записи, валидирован |
+| SOURCE_REGISTRY.xlsx | 29 записей, валидирован |
+| MEDICAL_EVIDENCE.xlsx | 48 записей, валидирован |
+| INTERNATIONAL_PRACTICES.xlsx | 44 записи, валидирован |
 | CLAIM_SOURCE_MATRIX.xlsx | 558 строк, валидирован |
 | ANTI_SLOP_REPORT.md | настоящий файл |
 | STATUS.md | ведётся |

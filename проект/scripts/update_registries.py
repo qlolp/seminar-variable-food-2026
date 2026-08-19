@@ -71,8 +71,9 @@ for r in rows2:
 wb2.save(p2)
 print('MEDICAL_EVIDENCE: rows =', len(rows2))
 
-# ---------- копии реестров в 04_приложения_и_реестры и семинар_пакет ----------
-for dst in [os.path.join(BASE, '04_приложения_и_реестры'), os.path.join(BASE, 'семинар_пакет', '04_приложения_и_реестры')]:
+# ---------- копии реестров в 04_приложения_и_реестры ----------
+# (дублирование в семинар_пакет/ устранено 19.08.2026; ZIP собирается из корневых 04/05/06)
+for dst in [os.path.join(BASE, '04_приложения_и_реестры')]:
     shutil.copy2(p, os.path.join(dst, 'SOURCE_REGISTRY.xlsx'))
     shutil.copy2(p2, os.path.join(dst, 'MEDICAL_EVIDENCE.xlsx'))
     print('copied to', dst)
