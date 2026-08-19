@@ -1,76 +1,130 @@
 <!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
-<title>Не просто накормить</title>
+<title>Не просто накормить — журнальная версия</title>
 <style>
-@page { size: A4; margin: 20mm 15mm 20mm 30mm;
-  @bottom-center { content: counter(page); font-family:'Times New Roman'; font-size:12pt; } }
-@page :first { @bottom-center { content: none; } }
-html { font-size: 14pt; }
-body { font-family:'Times New Roman','Liberation Serif',serif; font-size:14pt; line-height:1.5; text-align:left; }
-p, li, blockquote { text-align:justify; }
-h1 { font-size:16pt; page-break-before:always; margin:0 0 12pt; text-align:left; }
-h1:first-of-type { page-break-before:avoid; }
-h2 { font-size:14pt; margin:14pt 0 6pt; text-align:left; page-break-after:avoid; break-after:avoid;}
-h3 { font-size:14pt; margin:12pt 0 4pt; font-style:italic; page-break-after:avoid; break-after:avoid;}
-p { margin:0 0 8pt; orphans:2; widows:2; }
-table { page-break-inside:auto; }
+@page { size: A4; margin: 20mm 18mm 18mm 18mm; background:#F9F9F7;
+  @bottom-right { content: counter(page); font-family:'Noto Sans',sans-serif; font-size:10pt; color:#D97757; }
+  @bottom-left { content: 'Не просто накормить · 2026'; font-family:'Noto Sans',sans-serif; font-size:8.5pt; color:#A8A294; } }
+@page cover { margin:0; background:#F9F9F7; @bottom-right{content:none} @bottom-left{content:none} }
+html { font-size: 11pt; }
+body { font-family:'Noto Sans',sans-serif; font-size:11pt; line-height:1.62; text-align:left; color:#141413; background:#F9F9F7; }
+p, li { text-align:justify; }
+p { margin:0 0 7pt; orphans:2; widows:2; }
+
+.spark { width:11pt; height:11pt; fill:#D97757; }
+.cover { page: cover; page-break-after:always; height:297mm; background:#F9F9F7; color:#141413; padding:26mm 26mm; box-sizing:border-box; }
+.cover-top { display:flex; align-items:center; gap:8pt; margin-bottom:50mm; }
+.cover-top .spark { width:22pt; height:22pt; }
+.cover-brand { font-family:'PT Serif',serif; font-size:16pt; color:#141413; }
+.cover-kick { font-size:10.5pt; letter-spacing:2.5pt; color:#B85C3D; font-weight:bold; line-height:1.7; margin-bottom:14pt; }
+.cover-title { font-family:'PT Serif',serif; font-size:42pt; font-weight:bold; line-height:1.12; color:#141413; max-width:165mm; }
+.cover-rule { width:64pt; height:3.5pt; background:#D97757; margin:24pt 0 20pt; }
+.cover-sub { font-size:14pt; line-height:1.5; color:#4A463C; max-width:150mm; }
+.cover-meta { font-size:10.5pt; line-height:1.6; color:#6E6A5E; margin-top:32pt; }
+.cover-aud { font-size:10pt; color:#8A8578; margin-top:16pt; border-top:1pt solid #E5E2D8; padding-top:10pt; }
+
+h1 { font-family:'PT Serif',serif; font-weight:bold; font-size:20pt; color:#141413; page-break-before:always; margin:0 0 4pt; text-align:left; line-height:1.25; padding-bottom:6pt; border-bottom:2.5pt solid #D97757; page-break-after:avoid; }
+h1.part { background:#F1EDE3; color:#141413; font-size:22pt; padding:24pt 20pt; border-bottom:none; border-top:4pt solid #D97757; margin-top:40pt; }
+h1.part + p, h1.part + p + p { font-size:11.5pt; }
+h2 { font-family:'PT Serif',serif; font-weight:bold; font-size:14pt; color:#141413; margin:15pt 0 5pt; text-align:left; page-break-after:avoid; break-after:avoid; padding-left:9pt; border-left:3.5pt solid #D97757;}
+h3 { font-size:11.5pt; color:#B85C3D; margin:11pt 0 4pt; font-style:normal; font-weight:bold; page-break-after:avoid; break-after:avoid;}
+
+table { border-collapse:collapse; width:100%; font-size:9.5pt; margin:9pt 0; page-break-inside:auto; background:#FFFFFF; }
 tr { page-break-inside:avoid; }
 thead { display:table-header-group; }
-table { border-collapse:collapse; width:100%; font-size:12pt; margin:8pt 0; }
-td, th { border:0.8pt solid #333; padding:4pt 6pt; vertical-align:top; text-align:left; line-height:1.3; overflow-wrap:anywhere; word-break:break-word; }
-th { background:#ececec; }
-sup { font-size:9pt; }
-a { color:#000; text-decoration:none; }
-.srclist p, .srclist li, .srclist a { font-size:11pt; line-height:1.35; overflow-wrap:anywhere; word-break:break-all; text-align:left; margin-bottom:4pt;}
-.toc { page-break-after:always; }
-.toc-title { font-size:16pt; font-weight:bold; margin-bottom:10pt; }
-.toc table { font-size:12pt; }
-.toc td { border:none; border-bottom:0.5pt dotted #888; padding:2.5pt 4pt; text-align:left !important; }
-.toc td a { display:inline; text-align:left; }
-.toc-p { width:40pt; text-align:right; }
-blockquote { margin:6pt 18pt; font-style:italic; }
-ul, ol { margin:0 0 8pt 0; padding-left:22pt; }
+td, th { border:0.7pt solid #E5E2D8; padding:4pt 6pt; vertical-align:top; text-align:left; line-height:1.3; overflow-wrap:anywhere; word-break:break-word; }
+th { background:#F2EFE6; color:#141413; font-size:9.5pt; border-bottom:1.2pt solid #D97757; }
+tr:nth-child(even) td { background:#FAF8F3; }
+
+sup { font-size:8pt; color:#B85C3D; font-weight:bold; }
+a { color:#B85C3D; text-decoration:none; }
+blockquote { margin:7pt 14pt; padding:8pt 12pt; background:#F2EFE6; border-left:3.5pt solid #D97757; font-style:italic; color:#4A463C; }
+ul, ol { margin:0 0 7pt 0; padding-left:20pt; }
 li { margin-bottom:3pt; }
+li::marker { color:#D97757; font-weight:bold; }
+hr { border:none; border-top:1pt solid #E5E2D8; margin:12pt 0; }
+
+.srclist p, .srclist li, .srclist a { font-size:9pt; line-height:1.35; overflow-wrap:anywhere; word-break:break-all; text-align:left; margin-bottom:3.5pt; }
+.srclist b { color:#B85C3D; }
+
+.toc { page-break-after:always; }
+.toc-title { font-family:'PT Serif',serif; font-size:20pt; font-weight:bold; color:#141413; margin-bottom:12pt; padding-bottom:6pt; border-bottom:2.5pt solid #D97757; }
+.toc table { font-size:10pt; }
+.toc td { border:none; border-bottom:0.5pt dotted #D8D2C4; padding:3pt 4pt; text-align:left !important; }
+.toc td a { display:inline; text-align:left; }
+.toc-p { width:40pt; text-align:right; color:#B85C3D; font-weight:bold; }
+.toc-part td { background:#F2EFE6; font-weight:bold; color:#141413; padding-top:6pt; }
+
+.page-inf h1, .page-inf h2 { page-break-before:avoid; }
 </style>
 
 <style>
 figure.fg{margin:18pt 0 14pt;page-break-inside:avoid;}
-.fg-cap{font-size:12pt;font-weight:bold;margin:0 0 6pt;}
-.fg-note{font-size:10pt;color:#444;margin-top:5pt;line-height:1.25;}
-.fg-src{font-size:9pt;color:#555;margin-top:3pt;line-height:1.2;font-style:italic;}
-.fg-box{border:1.2pt solid #333;padding:6pt 8pt;font-size:10.5pt;line-height:1.3;}
-.fg-grid{display:flex;flex-wrap:wrap;gap:6pt;}
-.fg-cell{flex:1 1 30%;border:1pt solid #444;padding:6pt;font-size:10.5pt;min-width:150pt;}
-.fg-h{font-weight:bold;font-size:11pt;margin-bottom:3pt;}
-.fg-arrow{text-align:center;font-size:14pt;line-height:1;}
-.fg-flow{display:flex;align-items:stretch;gap:3pt;flex-wrap:wrap;}
-.fg-node{flex:1 1 12%;border:1.2pt solid #333;padding:4pt;font-size:9pt;text-align:center;display:flex;align-items:center;justify-content:center;min-width:60pt;}
-.fg-arr{align-self:center;font-size:13pt;}
-.fg-bar-row{display:flex;align-items:center;margin:2.5pt 0;font-size:10pt;}
-.fg-bar-lab{width:34%;text-align:right;padding-right:6pt;line-height:1.15;}
-.fg-bar{height:12pt;background:#D97757;}
-.fg-bar2{background:#B85C3D;}
-.fg-bar3{background:#8a8a8a;}
-.fg-val{padding-left:5pt;font-size:10pt;}
-table.fg-t{border-collapse:collapse;width:100%;font-size:10pt;margin-top:4pt;}
-table.fg-t td,table.fg-t th{border:0.8pt solid #555;padding:3.5pt 5pt;vertical-align:top;text-align:left;}
-table.fg-t th{background:#e8e8e8;font-size:10pt;overflow-wrap:normal;word-break:normal;}
-.hm-a{background:#cde3c0;} .hm-b{background:#f3dd9d;} .hm-c{background:#eba6a6;} .hm-n{background:#e2e2e2;}
-.fg-step{display:flex;align-items:flex-end;gap:5pt;margin-top:6pt;}
-.fg-st{flex:1;border:1.2pt solid #333;padding:5pt;font-size:9.5pt;text-align:center;background:#f4f4f4;}
-.fg-tl{display:flex;gap:0;margin-top:6pt;}
-.fg-tl-c{flex:1;border:1pt solid #444;padding:5pt;font-size:9.5pt;}
-.fg-dash{display:flex;flex-wrap:wrap;gap:6pt;}
-.fg-dc{width:31%;border:1.2pt solid #333;padding:6pt;font-size:10pt;min-width:140pt;}
-.fg-dc b{font-size:13pt;display:block;}
-.fg-circles{display:flex;justify-content:center;gap:0;margin:8pt 0;}
-.fg-circ{width:135pt;height:135pt;border:1.6pt solid #333;border-radius:68pt;display:flex;align-items:center;justify-content:center;text-align:center;font-size:10pt;padding:12pt;margin-left:-30pt;background:rgba(244,244,244,0.85);}
-.fg-tree{border:1.2pt solid #333;padding:8pt;font-size:10.5pt;line-height:1.5;}
-.fg-tree .q{font-weight:bold;}
-.page-inf{page-break-before:always;}
+.fg-cap{font-family:'PT Serif',serif;font-weight:bold;font-size:12pt;color:#141413;margin-bottom:6pt;line-height:1.3;}
+.fg-note{font-size:9.5pt;color:#4A463C;margin-top:6pt;line-height:1.3;}
+.fg-src{font-size:9pt;color:#8A8578;margin-top:3pt;line-height:1.3;}
+.fg-h{font-weight:bold;font-size:10.5pt;color:#141413;margin:0 0 3pt;}
+
+.fg-grid{display:flex;flex-wrap:wrap;gap:8pt;margin-top:4pt;}
+.fg-cell{flex:1 1 28%;border:1pt solid #E5E2D8;border-top:3pt solid #D97757;background:#FFFFFF;padding:7pt;font-size:9.5pt;line-height:1.35;}
+
+.fg-flow{display:flex;flex-wrap:wrap;gap:6pt;align-items:center;margin-top:4pt;}
+.fg-node{flex:1 1 12%;border:1.2pt solid #D97757;background:#F7F4EC;padding:4pt;font-size:9pt;text-align:center;display:flex;align-items:center;justify-content:center;min-width:60pt;}
+.fg-arrow{text-align:center;font-size:14pt;line-height:1;color:#B85C3D;font-weight:bold;}
+
+.fg-bar-row{display:flex;align-items:center;margin:3pt 0;}
+.fg-bar-lab{width:34%;text-align:right;padding-right:6pt;line-height:1.15;font-size:9.5pt;}
+.fg-bar{height:14pt;background:#D97757;}
+.fg-bar.alt{background:#B85C3D;}
+.fg-bar-val{font-size:9.5pt;font-weight:bold;padding-left:5pt;color:#141413;}
+
+table.fg-t{border-collapse:collapse;width:100%;font-size:10pt;margin-top:4pt;background:#FFFFFF;}
+table.fg-t td,table.fg-t th{border:0.8pt solid #E5E2D8;padding:3.5pt 5pt;vertical-align:top;text-align:left;}
+table.fg-t th{background:#F2EFE6;color:#141413;font-size:10pt;overflow-wrap:normal;word-break:normal;}
+
+.hm-a{background:#DDEBD9;} .hm-b{background:#F4E3B0;} .hm-c{background:#EFB4A8;} .hm-n{background:#EDEAE2;}
+
+.fg-step{flex:1;border:1.2pt solid #D97757;padding:5pt;font-size:9.5pt;text-align:center;background:#F7F4EC;}
+.fg-step.solid{background:#D97757;color:#fff;}
+.fg-steps{display:flex;gap:6pt;align-items:flex-end;margin-top:4pt;}
+
+.fg-tl{display:flex;gap:0;margin-top:4pt;}
+.fg-tl-i{flex:1;border-top:3pt solid #D97757;padding:5pt 6pt;font-size:9.5pt;line-height:1.3;background:#FFFFFF;}
+.fg-tl-i.acc{border-top-color:#B85C3D;}
+
+.fg-dash{display:flex;flex-wrap:wrap;gap:8pt;margin-top:4pt;}
+.fg-card{flex:1 1 20%;background:#141413;color:#F9F9F7;padding:9pt;font-size:9.5pt;line-height:1.3;}
+.fg-card b{display:block;font-size:17pt;color:#D97757;margin-bottom:3pt;}
+
+.fg-circ{width:128pt;height:128pt;border:2pt solid #D97757;border-radius:65pt;display:flex;align-items:center;justify-content:center;text-align:center;font-size:8.5pt;line-height:1.2;padding:6pt;margin:0;background:#F7F4EC;box-sizing:border-box;}
+.fg-circ b{font-size:8.8pt;color:#141413;}
+.fg-circ.c1{background:#F2EFE6;} .fg-circ.c2{background:#F7E5DC;} .fg-circ.c3{background:#F7F4EC;}
+.fg-circs,.fg-circles{display:flex;align-items:center;justify-content:space-between;gap:10pt;margin-top:6pt;}
+
+.page-inf{margin:10pt 0 10pt;page-break-before:always;}
+.page-inf .fg-cap{font-size:17pt;color:#141413;border-bottom:3pt solid #D97757;padding-bottom:7pt;margin-bottom:16pt;}
+.page-inf .fg-grid{gap:12pt;}
+.page-inf .fg-cell{flex:1 1 26%;border:1pt solid #E5E2D8;border-top:4.5pt solid #D97757;background:#FFFFFF;padding:13pt;font-size:11.5pt;line-height:1.5;min-height:115pt;}
+.page-inf .fg-cell .fg-h{font-size:13pt;color:#B85C3D;letter-spacing:0.5pt;margin-bottom:5pt;}
+.page-inf .fg-note{font-size:10.5pt;margin-top:12pt;}
+.page-inf .fg-src{font-size:9.5pt;margin-top:5pt;}
+.page-inf table.fg-t{font-size:11pt;margin-top:6pt;}
+.page-inf table.fg-t th{font-size:11pt;padding:6pt 8pt;}
+.page-inf table.fg-t td{padding:6pt 8pt;}
 </style>
 </head><body>
-<div class="toc"><p class="toc-title">Содержание</p><table><tr><td class="toc-t"><a href="#НЕ_ПРОСТО_НАКОРМИТЬ">НЕ ПРОСТО НАКОРМИТЬ</a></td><td class="toc-p"></td></tr><tr><td class="toc-t"><a href="#2_Обращение_к_участникам_семинара">2. Обращение к участникам семинара</a></td><td class="toc-p">4</td></tr><tr><td class="toc-t"><a href="#3_Аннотация">3. Аннотация</a></td><td class="toc-p">7</td></tr><tr><td class="toc-t"><a href="#4_Резюме_для_руководителя">4. Резюме для руководителя</a></td><td class="toc-p">9</td></tr><tr><td class="toc-t"><a href="#5_Собирательная_ситуация_Один_обед_пять_конфликтов_">5. Собирательная ситуация: «Один обед — пять конфликтов»</a></td><td class="toc-p">14</td></tr><tr><td class="toc-t"><a href="#6_Кто_находится_за_столом">6. Кто находится за столом</a></td><td class="toc-p">19</td></tr><tr><td class="toc-t"><a href="#7_Что_значит_накормить_">7. Что значит «накормить»</a></td><td class="toc-p">24</td></tr><tr><td class="toc-t"><a href="#8_От_мономеню_к_вариативности_лестница_моделей">8. От мономеню к вариативности: лестница моделей</a></td><td class="toc-p">28</td></tr><tr><td class="toc-t"><a href="#9_Пищевое_поведение_при_психических_расстройствах">9. Пищевое поведение при психических расстройствах</a></td><td class="toc-p">33</td></tr><tr><td class="toc-t"><a href="#10_Дисфагия_и_риск_аспирации_скрытая_эпидемия_стационарного_">10. Дисфагия и риск аспирации: скрытая эпидемия стационарного стола</a></td><td class="toc-p">37</td></tr><tr><td class="toc-t"><a href="#11_Лекарства_и_еда_пять_правил_которые_обязана_знать_кухня">11. Лекарства и еда: пять правил, которые обязана знать кухня</a></td><td class="toc-p">45</td></tr><tr><td class="toc-t"><a href="#12_Отказ_от_еды_от_первого_пропуска_до_врачебного_решения">12. Отказ от еды: от первого пропуска до врачебного решения</a></td><td class="toc-p">50</td></tr><tr><td class="toc-t"><a href="#13_Переедание_гиперфагия_и_ночное_едение">13. Переедание, гиперфагия и ночное едение</a></td><td class="toc-p">56</td></tr><tr><td class="toc-t"><a href="#14_Пикацизм_заглатывание_и_другие_поведенческие_риски_за_сто">14. Пикацизм, заглатывание и другие поведенческие риски за столом</a></td><td class="toc-p">62</td></tr><tr><td class="toc-t"><a href="#15_Невербальный_выбор_как_услышать_того_кто_не_говорит">15. Невербальный выбор: как услышать того, кто не говорит</a></td><td class="toc-p">66</td></tr><tr><td class="toc-t"><a href="#16_Дееспособность_опека_и_выбор_еды_карта_решений">16. Дееспособность, опека и выбор еды: карта решений</a></td><td class="toc-p">72</td></tr><tr><td class="toc-t"><a href="#17_Право_Российской_Федерации_что_разрешено_что_требуется_чт">17. Право Российской Федерации: что разрешено, что требуется, что опасно</a></td><td class="toc-p">79</td></tr><tr><td class="toc-t"><a href="#18_Санитария_и_пищевая_безопасность_при_вариативности">18. Санитария и пищевая безопасность при вариативности</a></td><td class="toc-p">84</td></tr><tr><td class="toc-t"><a href="#19_Два_варианта_блюда_технология_без_второй_кухни">19. Два варианта блюда: технология без второй кухни</a></td><td class="toc-p">90</td></tr><tr><td class="toc-t"><a href="#20_Точка_раздачи_дизайн_линии_очередь_и_помощь">20. Точка раздачи: дизайн линии, очередь и помощь</a></td><td class="toc-p">95</td></tr><tr><td class="toc-t"><a href="#21_Когда_выбор_изменился_журнал_пересч_т_и_фиктивная_вариати">21. Когда выбор изменился: журнал, пересчёт и «фиктивная вариативность»</a></td><td class="toc-p">100</td></tr><tr><td class="toc-t"><a href="#22_Как_проверить_реальность_питания_аудит_и_замеры">22. Как проверить реальность питания: аудит и замеры</a></td><td class="toc-p">104</td></tr><tr><td class="toc-t"><a href="#23_Кто_участвует_география_семинара_и_система_ПНИ_2026">23. Кто участвует: география семинара и система ПНИ-2026</a></td><td class="toc-p">109</td></tr><tr><td class="toc-t"><a href="#24_Как_устроены_нормы_в_регионах">24. Как устроены нормы в регионах</a></td><td class="toc-p">113</td></tr><tr><td class="toc-t"><a href="#25_Российские_практики_четыре_подтвержд_нных_кейса_и_одна_ре">25. Российские практики: четыре подтверждённых кейса и одна региональная модель</a></td><td class="toc-p">117</td></tr><tr><td class="toc-t"><a href="#26_Международный_опыт_проверяемые_нормы_девяти_систем">26. Международный опыт: проверяемые нормы девяти систем</a></td><td class="toc-p">123</td></tr><tr><td class="toc-t"><a href="#27_Что_говорят_исследования_доказательные_вмешательства_и_их">27. Что говорят исследования: доказательные вмешательства и их границы</a></td><td class="toc-p">129</td></tr><tr><td class="toc-t"><a href="#28_Люди_за_линией_персонал_стола">28. Люди за линией: персонал стола</a></td><td class="toc-p">134</td></tr><tr><td class="toc-t"><a href="#29_Финансовые_модели_сколько_стоит_питание_и_сколько_стоит_в">29. Финансовые модели: сколько стоит питание и сколько стоит выбор</a></td><td class="toc-p">139</td></tr><tr><td class="toc-t"><a href="#30_Закупки_продуктов_44_ФЗ_без_кошмаров">30. Закупки продуктов: 44-ФЗ без кошмаров</a></td><td class="toc-p">145</td></tr><tr><td class="toc-t"><a href="#31_Документальный_комплект_как_практика_становится_системой">31. Документальный комплект: как практика становится системой</a></td><td class="toc-p">149</td></tr><tr><td class="toc-t"><a href="#32_Как_отвечать_проверяющему_сценарий_диалога_без_страха">32. Как отвечать проверяющему: сценарий диалога без страха</a></td><td class="toc-p">154</td></tr><tr><td class="toc-t"><a href="#33_Ответственность_директора_честная_карта_рисков_без_запуги">33. Ответственность директора: честная карта рисков без запугивания</a></td><td class="toc-p">157</td></tr><tr><td class="toc-t"><a href="#34_Права_жителей_и_совет_жителей_от_объекта_заботы_к_соавтор">34. Права жителей и совет жителей: от объекта заботы к соавтору меню</a></td><td class="toc-p">161</td></tr><tr><td class="toc-t"><a href="#35_Пилот_на_90_дней_минимальный_безопасный_старт">35. Пилот на 90 дней: минимальный безопасный старт</a></td><td class="toc-p">165</td></tr><tr><td class="toc-t"><a href="#36_Дорожная_карта_на_12_месяцев_от_пилота_к_системе">36. Дорожная карта на 12 месяцев: от пилота к системе</a></td><td class="toc-p">170</td></tr><tr><td class="toc-t"><a href="#37_Четырнадцать_возражений_и_честные_ответы_на_них">37. Четырнадцать возражений и честные ответы на них</a></td><td class="toc-p">173</td></tr><tr><td class="toc-t"><a href="#38_Десять_вопросов_учредителю_повестка_для_разговора_наверх">38. Десять вопросов учредителю: повестка для разговора наверх</a></td><td class="toc-p">177</td></tr><tr><td class="toc-t"><a href="#39_Предложения_отрасли_что_должно_измениться_выше_уровня_учр">39. Предложения отрасли: что должно измениться выше уровня учреждения</a></td><td class="toc-p">180</td></tr><tr><td class="toc-t"><a href="#40_Организационные_предложения_семинару_как_превратить_три_д">40. Организационные предложения семинару: как превратить три дня в систему</a></td><td class="toc-p">183</td></tr><tr><td class="toc-t"><a href="#41_Заявление_о_достоверности_что_в_этом_докладе_на_ч_м_стоит">41. Заявление о достоверности: что в этом докладе на чём стоит</a></td><td class="toc-p">186</td></tr><tr><td class="toc-t"><a href="#42_Аутсорсинг_питания_контракт_как_место_вариативности">42. Аутсорсинг питания: контракт как место вариативности</a></td><td class="toc-p">190</td></tr><tr><td class="toc-t"><a href="#43_Заключение_что_оста_тся_после_последней_страницы">43. Заключение: что остаётся после последней страницы</a></td><td class="toc-p">194</td></tr><tr><td class="toc-t"><a href="#44_Библиография_и_источники">44. Библиография и источники</a></td><td class="toc-p">197</td></tr><tr><td class="toc-t"><a href="#Часть_II_Учебные_кейсы_22_разбора_">Часть II. Учебные кейсы (22 разбора)</a></td><td class="toc-p">198</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_1_4">Учебные кейсы 1–4</a></td><td class="toc-p">199</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_5_8">Учебные кейсы 5–8</a></td><td class="toc-p">204</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_9_12">Учебные кейсы 9–12</a></td><td class="toc-p">209</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_13_16">Учебные кейсы 13–16</a></td><td class="toc-p">214</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_17_20">Учебные кейсы 17–20</a></td><td class="toc-p">219</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_21_22">Учебные кейсы 21–22</a></td><td class="toc-p">224</td></tr><tr><td class="toc-t"><a href="#Часть_III_Приложения_проекты_локальных_форм_45_шаблонов_">Часть III. Приложения: проекты локальных форм (45 шаблонов)</a></td><td class="toc-p">227</td></tr><tr><td class="toc-t"><a href="#Приложения_1_6">Приложения 1–6</a></td><td class="toc-p">228</td></tr><tr><td class="toc-t"><a href="#Приложения_7_12">Приложения 7–12</a></td><td class="toc-p">232</td></tr><tr><td class="toc-t"><a href="#Приложения_13_18">Приложения 13–18</a></td><td class="toc-p">236</td></tr><tr><td class="toc-t"><a href="#Приложения_19_24">Приложения 19–24</a></td><td class="toc-p">241</td></tr><tr><td class="toc-t"><a href="#Приложения_25_30">Приложения 25–30</a></td><td class="toc-p">245</td></tr><tr><td class="toc-t"><a href="#Приложения_31_36">Приложения 31–36</a></td><td class="toc-p">249</td></tr><tr><td class="toc-t"><a href="#Приложения_37_38">Приложения 37–38</a></td><td class="toc-p">254</td></tr><tr><td class="toc-t"><a href="#Приложения_39_42">Приложения 39–42</a></td><td class="toc-p">257</td></tr><tr><td class="toc-t"><a href="#Приложения_43_44">Приложения 43–44</a></td><td class="toc-p">262</td></tr><tr><td class="toc-t"><a href="#Приложение_45_План_Б_питание_при_закрытии_столовой">Приложение 45. План Б: питание при закрытии столовой</a></td><td class="toc-p">266</td></tr><tr><td class="toc-t"><a href="#Часть_IV_Одностраничные_инфографики_для_печати_и_раздатки_">Часть IV. Одностраничные инфографики (для печати и раздатки)</a></td><td class="toc-p">268</td></tr><tr><td class="toc-t"><a href="#Список_источников">Список источников</a></td><td class="toc-p">279</td></tr></table></div>
-<h1 id="НЕ_ПРОСТО_НАКОРМИТЬ">НЕ ПРОСТО НАКОРМИТЬ</h1>
+
+<div class="cover">
+  <div class="cover-top"><svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z"/></svg><span class="cover-brand">Пространство новых идей 2.0</span></div>
+  <div class="cover-kick">МЕЖРЕГИОНАЛЬНЫЙ МЕТОДИЧЕСКИЙ СЕМИНАР-СОВЕЩАНИЕ</div>
+  <div class="cover-title">Не просто накормить</div>
+  <div class="cover-rule"></div>
+  <div class="cover-sub">Как организовать безопасное, достойное и вариативное питание людей с психическими нарушениями в домах социального обслуживания</div>
+  <div class="cover-meta">Санкт-Петербург · 25–27 августа 2026 года<br>Министерство труда и социальной защиты Российской Федерации · Комитет по социальной политике Санкт-Петербурга</div>
+  <div class="cover-aud">Доклад для руководителей стационарных организаций социального обслуживания из 51 субъекта Российской Федерации</div>
+</div>
+
+<div class="toc"><p class="toc-title">Содержание</p><table><tr><td class="toc-t"><a href="#2_Обращение_к_участникам_семинара">2. Обращение к участникам семинара</a></td><td class="toc-p">5</td></tr><tr><td class="toc-t"><a href="#3_Аннотация">3. Аннотация</a></td><td class="toc-p">7</td></tr><tr><td class="toc-t"><a href="#4_Резюме_для_руководителя">4. Резюме для руководителя</a></td><td class="toc-p">8</td></tr><tr><td class="toc-t"><a href="#5_Собирательная_ситуация_Один_обед_пять_конфликтов_">5. Собирательная ситуация: «Один обед — пять конфликтов»</a></td><td class="toc-p">12</td></tr><tr><td class="toc-t"><a href="#6_Кто_находится_за_столом">6. Кто находится за столом</a></td><td class="toc-p">16</td></tr><tr><td class="toc-t"><a href="#7_Что_значит_накормить_">7. Что значит «накормить»</a></td><td class="toc-p">19</td></tr><tr><td class="toc-t"><a href="#8_От_мономеню_к_вариативности_лестница_моделей">8. От мономеню к вариативности: лестница моделей</a></td><td class="toc-p">22</td></tr><tr><td class="toc-t"><a href="#9_Пищевое_поведение_при_психических_расстройствах">9. Пищевое поведение при психических расстройствах</a></td><td class="toc-p">28</td></tr><tr><td class="toc-t"><a href="#10_Дисфагия_и_риск_аспирации_скрытая_эпидемия_стационарного_">10. Дисфагия и риск аспирации: скрытая эпидемия стационарного стола</a></td><td class="toc-p">31</td></tr><tr><td class="toc-t"><a href="#11_Лекарства_и_еда_пять_правил_которые_обязана_знать_кухня">11. Лекарства и еда: пять правил, которые обязана знать кухня</a></td><td class="toc-p">37</td></tr><tr><td class="toc-t"><a href="#12_Отказ_от_еды_от_первого_пропуска_до_врачебного_решения">12. Отказ от еды: от первого пропуска до врачебного решения</a></td><td class="toc-p">41</td></tr><tr><td class="toc-t"><a href="#13_Переедание_гиперфагия_и_ночное_едение">13. Переедание, гиперфагия и ночное едение</a></td><td class="toc-p">46</td></tr><tr><td class="toc-t"><a href="#14_Пикацизм_заглатывание_и_другие_поведенческие_риски_за_сто">14. Пикацизм, заглатывание и другие поведенческие риски за столом</a></td><td class="toc-p">51</td></tr><tr><td class="toc-t"><a href="#15_Невербальный_выбор_как_услышать_того_кто_не_говорит">15. Невербальный выбор: как услышать того, кто не говорит</a></td><td class="toc-p">55</td></tr><tr><td class="toc-t"><a href="#16_Дееспособность_опека_и_выбор_еды_карта_решений">16. Дееспособность, опека и выбор еды: карта решений</a></td><td class="toc-p">60</td></tr><tr><td class="toc-t"><a href="#17_Право_Российской_Федерации_что_разрешено_что_требуется_чт">17. Право Российской Федерации: что разрешено, что требуется, что опасно</a></td><td class="toc-p">66</td></tr><tr><td class="toc-t"><a href="#18_Санитария_и_пищевая_безопасность_при_вариативности">18. Санитария и пищевая безопасность при вариативности</a></td><td class="toc-p">70</td></tr><tr><td class="toc-t"><a href="#19_Два_варианта_блюда_технология_без_второй_кухни">19. Два варианта блюда: технология без второй кухни</a></td><td class="toc-p">75</td></tr><tr><td class="toc-t"><a href="#20_Точка_раздачи_дизайн_линии_очередь_и_помощь">20. Точка раздачи: дизайн линии, очередь и помощь</a></td><td class="toc-p">79</td></tr><tr><td class="toc-t"><a href="#21_Когда_выбор_изменился_журнал_пересч_т_и_фиктивная_вариати">21. Когда выбор изменился: журнал, пересчёт и «фиктивная вариативность»</a></td><td class="toc-p">83</td></tr><tr><td class="toc-t"><a href="#22_Как_проверить_реальность_питания_аудит_и_замеры">22. Как проверить реальность питания: аудит и замеры</a></td><td class="toc-p">87</td></tr><tr><td class="toc-t"><a href="#23_Кто_участвует_география_семинара_и_система_ПНИ_2026">23. Кто участвует: география семинара и система ПНИ-2026</a></td><td class="toc-p">91</td></tr><tr><td class="toc-t"><a href="#24_Как_устроены_нормы_в_регионах">24. Как устроены нормы в регионах</a></td><td class="toc-p">95</td></tr><tr><td class="toc-t"><a href="#25_Российские_практики_четыре_подтвержд_нных_кейса_и_одна_ре">25. Российские практики: четыре подтверждённых кейса и одна региональная модель</a></td><td class="toc-p">98</td></tr><tr><td class="toc-t"><a href="#26_Международный_опыт_проверяемые_нормы_девяти_систем">26. Международный опыт: проверяемые нормы девяти систем</a></td><td class="toc-p">103</td></tr><tr><td class="toc-t"><a href="#27_Что_говорят_исследования_доказательные_вмешательства_и_их">27. Что говорят исследования: доказательные вмешательства и их границы</a></td><td class="toc-p">108</td></tr><tr><td class="toc-t"><a href="#28_Люди_за_линией_персонал_стола">28. Люди за линией: персонал стола</a></td><td class="toc-p">112</td></tr><tr><td class="toc-t"><a href="#29_Финансовые_модели_сколько_стоит_питание_и_сколько_стоит_в">29. Финансовые модели: сколько стоит питание и сколько стоит выбор</a></td><td class="toc-p">116</td></tr><tr><td class="toc-t"><a href="#30_Закупки_продуктов_44_ФЗ_без_кошмаров">30. Закупки продуктов: 44-ФЗ без кошмаров</a></td><td class="toc-p">121</td></tr><tr><td class="toc-t"><a href="#31_Документальный_комплект_как_практика_становится_системой">31. Документальный комплект: как практика становится системой</a></td><td class="toc-p">124</td></tr><tr><td class="toc-t"><a href="#32_Как_отвечать_проверяющему_сценарий_диалога_без_страха">32. Как отвечать проверяющему: сценарий диалога без страха</a></td><td class="toc-p">128</td></tr><tr><td class="toc-t"><a href="#33_Ответственность_директора_честная_карта_рисков_без_запуги">33. Ответственность директора: честная карта рисков без запугивания</a></td><td class="toc-p">131</td></tr><tr><td class="toc-t"><a href="#34_Права_жителей_и_совет_жителей_от_объекта_заботы_к_соавтор">34. Права жителей и совет жителей: от объекта заботы к соавтору меню</a></td><td class="toc-p">134</td></tr><tr><td class="toc-t"><a href="#35_Пилот_на_90_дней_минимальный_безопасный_старт">35. Пилот на 90 дней: минимальный безопасный старт</a></td><td class="toc-p">137</td></tr><tr><td class="toc-t"><a href="#36_Дорожная_карта_на_12_месяцев_от_пилота_к_системе">36. Дорожная карта на 12 месяцев: от пилота к системе</a></td><td class="toc-p">141</td></tr><tr><td class="toc-t"><a href="#37_Четырнадцать_возражений_и_честные_ответы_на_них">37. Четырнадцать возражений и честные ответы на них</a></td><td class="toc-p">144</td></tr><tr><td class="toc-t"><a href="#38_Десять_вопросов_учредителю_повестка_для_разговора_наверх">38. Десять вопросов учредителю: повестка для разговора наверх</a></td><td class="toc-p">147</td></tr><tr><td class="toc-t"><a href="#39_Предложения_отрасли_что_должно_измениться_выше_уровня_учр">39. Предложения отрасли: что должно измениться выше уровня учреждения</a></td><td class="toc-p">150</td></tr><tr><td class="toc-t"><a href="#40_Организационные_предложения_семинару_как_превратить_три_д">40. Организационные предложения семинару: как превратить три дня в систему</a></td><td class="toc-p">153</td></tr><tr><td class="toc-t"><a href="#41_Заявление_о_достоверности_что_в_этом_докладе_на_ч_м_стоит">41. Заявление о достоверности: что в этом докладе на чём стоит</a></td><td class="toc-p">156</td></tr><tr><td class="toc-t"><a href="#42_Аутсорсинг_питания_контракт_как_место_вариативности">42. Аутсорсинг питания: контракт как место вариативности</a></td><td class="toc-p">159</td></tr><tr><td class="toc-t"><a href="#43_Заключение_что_оста_тся_после_последней_страницы">43. Заключение: что остаётся после последней страницы</a></td><td class="toc-p">162</td></tr><tr><td class="toc-t"><a href="#44_Библиография_и_источники">44. Библиография и источники</a></td><td class="toc-p">164</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_II_Учебные_кейсы_22_разбора_">Часть II. Учебные кейсы (22 разбора)</a></td><td class="toc-p">165</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_1_4">Учебные кейсы 1–4</a></td><td class="toc-p">166</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_5_8">Учебные кейсы 5–8</a></td><td class="toc-p">170</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_9_12">Учебные кейсы 9–12</a></td><td class="toc-p">174</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_13_16">Учебные кейсы 13–16</a></td><td class="toc-p">178</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_17_20">Учебные кейсы 17–20</a></td><td class="toc-p">182</td></tr><tr><td class="toc-t"><a href="#Учебные_кейсы_21_22">Учебные кейсы 21–22</a></td><td class="toc-p">186</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_III_Приложения_проекты_локальных_форм_45_шаблонов_">Часть III. Приложения: проекты локальных форм (45 шаблонов)</a></td><td class="toc-p">189</td></tr><tr><td class="toc-t"><a href="#Приложения_1_6">Приложения 1–6</a></td><td class="toc-p">190</td></tr><tr><td class="toc-t"><a href="#Приложения_7_12">Приложения 7–12</a></td><td class="toc-p">194</td></tr><tr><td class="toc-t"><a href="#Приложения_13_18">Приложения 13–18</a></td><td class="toc-p">197</td></tr><tr><td class="toc-t"><a href="#Приложения_19_24">Приложения 19–24</a></td><td class="toc-p">201</td></tr><tr><td class="toc-t"><a href="#Приложения_25_30">Приложения 25–30</a></td><td class="toc-p">204</td></tr><tr><td class="toc-t"><a href="#Приложения_31_36">Приложения 31–36</a></td><td class="toc-p">208</td></tr><tr><td class="toc-t"><a href="#Приложения_37_38">Приложения 37–38</a></td><td class="toc-p">212</td></tr><tr><td class="toc-t"><a href="#Приложения_39_42">Приложения 39–42</a></td><td class="toc-p">215</td></tr><tr><td class="toc-t"><a href="#Приложения_43_44">Приложения 43–44</a></td><td class="toc-p">219</td></tr><tr><td class="toc-t"><a href="#Приложение_45_План_Б_питание_при_закрытии_столовой">Приложение 45. План Б: питание при закрытии столовой</a></td><td class="toc-p">222</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Часть_IV_Одностраничные_инфографики_для_печати_и_раздатки_">Часть IV. Одностраничные инфографики (для печати и раздатки)</a></td><td class="toc-p">224</td></tr><tr class="toc-part"><td class="toc-t"><a href="#Список_источников">Список источников</a></td><td class="toc-p">237</td></tr></table></div>
+
 <h2 id="как-организовать-безопасное-достойное-и-вариативное-питание-людей-с-психическими-нарушениями-в-домах-социального-обслуживания">Как организовать безопасное, достойное и вариативное питание людей с психическими нарушениями в домах социального обслуживания</h2>
 <p><strong>Доклад межрегионального методического семинара-совещания «Пространство Новых Идей 2.0»</strong></p>
 <p>Тема семинара: «Права, свободы, интересы жителей и персонала социальных стационаров»</p>
@@ -2324,7 +2378,7 @@ table.fg-t th{background:#e8e8e8;font-size:10pt;overflow-wrap:normal;word-break:
 </ul>
 <p>В тексте доклада каждый источник приводится в сноске в месте первого упоминания; повторные ссылки указывают на номер сноски. Список ниже сгруппирован по реестрам и дублирует сноски для удобства печатного чтения.</p>
 <!-- SOURCES:AUTO -->
-<h1 id="Часть_II_Учебные_кейсы_22_разбора_">Часть II. Учебные кейсы (22 разбора)</h1>
+<h1 id="Часть_II_Учебные_кейсы_22_разбора_" class="part">Часть II. Учебные кейсы (22 разбора)</h1>
 <p>Двадцать два ситуационных разбора переводят материал разделов в плоскость ежедневных решений: что нельзя делать, что сделать немедленно, кто принимает решение, какие документы нужны, каково долгосрочное решение и где граница вывода. Все кейсы — учебные, составленные для анализа; они не описывают конкретные организации и людей. Формат разбора на семинаре: 15 минут на кейс по восьми пунктам структуры.</p>
 <h1 id="Учебные_кейсы_1_4">Учебные кейсы 1–4</h1>
 <p><em>Все кейсы в этом блоке — учебные ситуации, составленные для анализа. Они не описывают конкретные организации и конкретных людей. Правовые и медицинские основания приводятся как ориентиры для разбора, а не как заключение по реальному делу.</em></p>
@@ -2561,7 +2615,7 @@ table.fg-t th{background:#e8e8e8;font-size:10pt;overflow-wrap:normal;word-break:
 <hr />
 <h2 id="как-пользоваться-кейсами-на-семинаре-и-в-обучении">Как пользоваться кейсами на семинаре и в обучении</h2>
 <p>Каждый кейс разбирается за 15 минут по фиксированной схеме: ситуация зачитывается без раздела «решение»; группа формулирует ответы по восьми пунктам; сверка с текстом. Ценность разбора — в расхождениях: если группа предлагает нечто отсутствующее в кейсе, это повод для дополнения локального комплекта, а не для «исправления ошибки». Кейсы допускается адаптировать под специфику организации (детское/взрослое учреждение, размер, регион) с сохранением структуры из восьми пунктов.</p>
-<h1 id="Часть_III_Приложения_проекты_локальных_форм_45_шаблонов_">Часть III. Приложения: проекты локальных форм (45 шаблонов)</h1>
+<h1 id="Часть_III_Приложения_проекты_локальных_форм_45_шаблонов_" class="part">Часть III. Приложения: проекты локальных форм (45 шаблонов)</h1>
 <p>Сорок пять шаблонов — рабочий инструментарий доклада: чек-листы, формы, журналы, алгоритмы, проекты приказов и положений. Каждый шаблон снабжён дисклеймером: это проект локальной формы, не нормативно установленный документ; он требует адаптации под региональное законодательство, учётную политику, структуру учреждения, медицинскую лицензию и требования учредителя. Порядок внедрения комплекта — раздел 36 и конец части III.</p>
 <h1 id="Приложения_1_6">Приложения 1–6</h1>
 <p><em>Единый дисклеймер для всех приложений 1–36 (приводится на каждом шаблоне): «Проект локальной формы. Не является нормативно установленным документом. Требует адаптации под региональное законодательство, учётную политику, структуру учреждения, медицинскую лицензию и требования учредителя».</em></p>
@@ -3941,7 +3995,7 @@ table.fg-t th{background:#e8e8e8;font-size:10pt;overflow-wrap:normal;word-break:
 </table>
 <p>Витаминизация и любые ограничения рациона при ОРИ — только по назначению врача (раздел 4.3). Выбор не отменяется: меняется форма подачи.</p>
 <p>Подпись руководителя: ______________ дата: ______________ следующий пересмотр: не реже раза в год или после каждой вспышки.</p>
-<h1 id="Часть_IV_Одностраничные_инфографики_для_печати_и_раздатки_">Часть IV. Одностраничные инфографики (для печати и раздатки)</h1>
+<h1 id="Часть_IV_Одностраничные_инфографики_для_печати_и_раздатки_" class="part">Часть IV. Одностраничные инфографики (для печати и раздатки)</h1>
 <p>Десять одностраничных материалов для печати: плакаты для поста и столовой, памятки для инструктажей, раздатка для совета жителей и семинара. Каждая страница самодостаточна и может копироваться отдельно от доклада; источники данных указаны на самих страницах либо в разделах, на которые инфографика ссылается.</p>
 <figure class="fg page-inf">
 <p class="fg-cap">Инфографика 10. Десять запретов смены — коротко и навсегда</p>
@@ -4065,7 +4119,7 @@ table.fg-t th{background:#e8e8e8;font-size:10pt;overflow-wrap:normal;word-break:
 </table>
 <p class="fg-note">Зелёное — можно ссылаться смело; жёлтое — с оговоркой; красное — не утверждать. Полная матрица — CLAIM_SOURCE_MATRIX.xlsx.</p>
 </figure>
-<h1 id="Список_источников">Список источников</h1>
+<h1 id="Список_источников" class="part">Список источников</h1>
 <div class="srclist">
 <p class="srchead">
 Источники приведены в порядке первого упоминания в тексте. Полные машиночитаемые реестры — контрольные файлы SOURCE_REGISTRY.xlsx, MEDICAL_EVIDENCE.xlsx, INTERNATIONAL_PRACTICES.xlsx.

@@ -6,6 +6,11 @@ __pycache__/
 # Сборка (генерируемые артефакты — только при необходимости)
 проект/output/_report.pdf
 проект/output/_report_color.pdf
+проект/output/_report.html
+проект/output/_report_color.html
+проект/output/_report_beautiful.html
+проект/output/_report_full.md
+проект/output/_citations.jsonl
 
 # Системные
 Thumbs.db
