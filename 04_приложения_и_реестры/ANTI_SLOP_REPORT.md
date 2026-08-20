@@ -44,7 +44,7 @@
 |---|---|
 | AUDIT_OLD_REPORTS.md | создан (20 проблемных зон) |
 | PARTICIPANTS_CLEAN.xlsx | создан, валидирован (170 записей, 51 регион, 4 дубля) |
-| SOURCE_REGISTRY.xlsx | 29 записей, валидирован |
+| SOURCE_REGISTRY.xlsx | 34 записи (S001–S035 без S026); канон — `проект/`; поле «Доступность первоисточника» |
 | MEDICAL_EVIDENCE.xlsx | 48 записей, валидирован |
 | INTERNATIONAL_PRACTICES.xlsx | 44 записи, валидирован |
 | CLAIM_SOURCE_MATRIX.xlsx | 558 строк, валидирован |

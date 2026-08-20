@@ -40,7 +40,7 @@ SPARK = ('<svg class="spark" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 
 COVER = '''
 <section class="cover">
   <div class="cov-top">''' + SPARK + '''<span class="cov-brand">ПРОСТРАНСТВО НОВЫХ ИДЕЙ 2.0</span></div>
-  <div class="cov-kick">НАУЧНО-АНАЛИТИЧЕСКИЙ ДОКЛАД</div>
+  <div class="cov-kick">МЕТОДИЧЕСКОЕ РУКОВОДСТВО К СЕМИНАРУ</div>
   <h1 class="cov-title">Не просто<br>накормить</h1>
   <div class="cov-rule"></div>
   <p class="cov-sub">Как организовать безопасное, достойное и вариативное питание людей

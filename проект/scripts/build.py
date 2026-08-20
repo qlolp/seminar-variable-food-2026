@@ -31,13 +31,16 @@ REGI = load_reg(f'{BASE}/INTERNATIONAL_PRACTICES.xlsx')
 def cite_text(cid):
     if cid in REGS:
         r = REGS[cid]
-        return f"{r.get('Источник (наименование)','')}. {r.get('URL','')} (проверено: {r.get('Дата проверки','')})"
+        url = r.get('URL') or ''
+        return f"[{cid}] {r.get('Источник (наименование)','')}. {url} (проверено: {r.get('Дата проверки','')})"
     if cid in REGM:
         r = REGM[cid]
-        return f"{r.get('Источник','')} ({r.get('Орган/автор, год','')}). {r.get('URL','')}"
+        url = r.get('URL') or ''
+        return f"[{cid}] {r.get('Источник','')} ({r.get('Орган/автор, год','')}). {url}"
     if cid in REGI:
         r = REGI[cid]
-        return f"{r.get('Источник','')} — {r.get('Юрисдикция/орган','')}. {r.get('URL','')}"
+        url = r.get('URL') or ''
+        return f"[{cid}] {r.get('Источник','')} — {r.get('Юрисдикция/орган','')}. {url}"
     return None
 
 # ---------- 2. Сборка маркдауна ----------
@@ -81,8 +84,7 @@ parts.append('''\n# Часть IV. Одностраничные инфограф
 for k in sorted(INF):
     parts.append(f'\n[[INF:{k}]]\n')
 
-# список источников (заполняется после нумерации)
-parts.append('\n# Список источников\n\n[[SOURCES]]\n')
+# библиография вставлена в раздел 44 по маркеру [[SOURCES]]
 
 full_md = '\n\n'.join(parts)
 
@@ -113,7 +115,13 @@ def _esc(x):
     m2 = re.match(r'(\d+)\. (.*)', x, re.S)
     return (f'<p><b>{m2.group(1)}.</b> {m2.group(2)}</p>' if m2 else f'<p>{x}</p>')
 
-full_md = full_md.replace('[[SOURCES]]', '\n<div class="srclist"><p class="srchead">Источники приведены в порядке первого упоминания в тексте. Полные машиночитаемые реестры — контрольные файлы SOURCE_REGISTRY.xlsx, MEDICAL_EVIDENCE.xlsx, INTERNATIONAL_PRACTICES.xlsx.</p>' + ''.join(_esc(x) for x in src_items) + '</div>\n')
+src_block = ('\n<div class="srclist"><p class="srchead">Источники приведены в порядке первого упоминания в тексте. '
+             'Полные машиночитаемые реестры — контрольные файлы SOURCE_REGISTRY.xlsx, MEDICAL_EVIDENCE.xlsx, '
+             'INTERNATIONAL_PRACTICES.xlsx (канон: папка проект/).</p>'
+             + ''.join(_esc(x) for x in src_items) + '</div>\n')
+if '[[SOURCES]]' not in full_md:
+    raise SystemExit('маркер [[SOURCES]] не найден в тексте доклада')
+full_md = full_md.replace('[[SOURCES]]', src_block)
 
 # сохранить маркдаун для DOCX-конвертера и матрицу цитирований
 open(f'{OUT}/_report_full.md', 'w', encoding='utf-8').write(full_md)

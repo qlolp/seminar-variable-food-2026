@@ -15,14 +15,14 @@ elements:
       text: "ВОПРОС 5 ИЗ 6 · ВОЛЯ И МЕДИЦИНА"
   - elementId: title
     elementType: text
-    bounds: [60, 54, 840, 44]
+    bounds: [60, 48, 840, 56]
     content:
-      fontSize: 25
+      fontSize: 20
       bold: true
       color: "$text"
       fontFamily: PT Serif
       lineHeight: 1.15
-      text: "Как соблюсти баланс между правом выбора недееспособного проживающего и медицинскими показаниями?"
+      text: "Как соблюсти баланс между выбором недееспособного проживающего «что ему есть» и имеющимися у него медицинскими рекомендациями?"
   - elementId: line
     elementType: shape
     bounds: [60, 106, 840, 1]

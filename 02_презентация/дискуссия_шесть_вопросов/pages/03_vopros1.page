@@ -22,7 +22,7 @@ elements:
       color: "$text"
       fontFamily: PT Serif
       lineHeight: 1.15
-      text: "Кто выбирает форму питания — проживающий в социальном доме или его «хозяин»?"
+      text: "Кто выбирает форму питания — проживающий социального дома или его руководитель?"
   - elementId: line
     elementType: shape
     bounds: [60, 106, 840, 1]

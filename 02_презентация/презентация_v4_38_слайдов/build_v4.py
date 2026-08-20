@@ -15,12 +15,12 @@ C = dict(ivory='#FAF9F5', panel='#F0EEE6', panelwarm='#F6F1E9', ink='#141413',
          gray='#B7AFA0', dark='#141413', white='#FFFFFF')
 
 CSS = """
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-700.woff2') format('woff2'); font-weight:700; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-800.woff2') format('woff2'); font-weight:800; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-900.woff2') format('woff2'); font-weight:900; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-600i.woff2') format('woff2'); font-style:italic; font-weight:600; }
-@font-face { font-family:'PT Sans'; src:url('fonts/ptsans-400.woff2') format('woff2'); }
-@font-face { font-family:'PT Sans'; src:url('fonts/ptsans-700.woff2') format('woff2'); font-weight:bold; }
+@font-face { font-family:'Playfair Display'; src:url('../fonts/playfair-700.woff2') format('woff2'); font-weight:700; }
+@font-face { font-family:'Playfair Display'; src:url('../fonts/playfair-800.woff2') format('woff2'); font-weight:800; }
+@font-face { font-family:'Playfair Display'; src:url('../fonts/playfair-900.woff2') format('woff2'); font-weight:900; }
+@font-face { font-family:'Playfair Display'; src:url('../fonts/playfair-600i.woff2') format('woff2'); font-style:italic; font-weight:600; }
+@font-face { font-family:'PT Sans'; src:url('../fonts/ptsans-400.woff2') format('woff2'); }
+@font-face { font-family:'PT Sans'; src:url('../fonts/ptsans-700.woff2') format('woff2'); font-weight:bold; }
 @page { size:960px 540px; margin:0 }
 html,body { margin:0; padding:0 }
 .slide { position:relative; width:960px; height:540px; background:%(ivory)s; overflow:hidden;
@@ -39,11 +39,12 @@ h1 { font-family:'Playfair Display'; font-weight:800; margin:0; line-height:1.12
        padding:3px 10px 2px; border-radius:6px; }
 """ % C
 
-def slide(num, body, kicker=None, foot=None, bg=None):
+def slide(num, body, kicker=None, foot=None, bg=None, total=None):
     k = ''
     if kicker:
         k = f'<div class="kickrow"><span class="kicker">{kicker}</span><span class="rule"></span></div>'
-    foot_html = (f'<div class="foot"><span>{foot or ""}</span><span><b>{num}</b> / 38</span></div>')
+    tot = total if total is not None else 38
+    foot_html = (f'<div class="foot"><span>{foot or ""}</span><span><b>{num}</b> / {tot}</span></div>')
     style = f' style="background:{bg}"' if bg else ''
     return (f'<!DOCTYPE html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
             f'<body><div class="slide"{style}>{k}{body}{foot_html}</div></body></html>')
@@ -235,17 +236,15 @@ body += p('приёмов пищи на жителя в год — в ДСО «�
 S.append(slide(4, body, kicker='Контекст · наш дом', foot='ДСО «Серафимовский» — 6-разовое питание · www.pni9.ru · доклад, раздел 5'))
 
 # ═══ 05 74 % (donut) ═══
-body = h('Недееспособность не отменяет предпочтений', 30)
+body = h('74 % — почти три из четырёх жителей ПНИ', 28)
 body += f'<svg style="position:absolute;left:96px;top:150px" width="220" height="220" viewBox="0 0 220 220">{donut(74, 110, 110, 86, "74 %", "недееспособны")}</svg>'
-body += txt('Четыре из пяти жителей ПНИ не могут юридически заявить выбор — но выбирают взглядом, ложкой, отказом.', 380, 172, 500, size=16.5, lh=1.55, color=C['ink'])
-body += txt('Задача системы — услышать этот выбор другими каналами: наблюдение, биография, «те, кто знает».', 380, 262, 500, size=14.5, lh=1.55, color=C['soft'])
-for i in range(10):
-    body += ic('person', 382 + i * 40, 348, 32, C['accent'] if i < 7 else C['gray'], 2.0 if i < 7 else 1.6)
-body += txt('<b>7 из 10</b> — недееспособны', 382, 390, 400, size=13, color=C['muted'])
-S.append(slide(5, body, kicker='Контекст · недееспособность', foot='Доклад, раздел 16 · КПИ, Замечание № 1 к ст. 12'))
+body += txt('В типичном контингенте — порядка трёх из четырёх. В вашем доме цифра будет другой. Логика та же.', 380, 162, 500, size=16, lh=1.45, color=C['ink'])
+body += txt('Сделки совершает опекун (ст. 29 ГК). Выбор блюда — не сделка. Кто не говорит — показ, наблюдение, биография.', 380, 268, 500, size=14.5, lh=1.5, color=C['soft'])
+body += txt('Источник: проект «Если быть точным», данные за 2024 год. Не текущая статотчётность Минтруда.', 380, 390, 500, size=12.5, lh=1.4, color=C['muted'])
+S.append(slide(5, body, kicker='Контекст · недееспособность', foot='Ст. 29 ГК · 48-ФЗ · доклад, разделы 15–16 · S004'))
 
 # ═══ 06 Ночной интервал ═══
-body = h('Ночь без еды: 15 часов — это не экзотика', 30)
+body = h('Пример: ужин 17:30 → завтрак 8:30 = 15 часов', 26)
 # лента суток 0–24: приёмы пищи точками, ночное окно терракотой
 SX, SW = 52, 856
 body += f'''<div style="position:absolute;left:{SX}px;top:132px;width:{SW}px;height:34px;background:{C['panel']};border-radius:8px;overflow:hidden">
@@ -259,13 +258,13 @@ for hr, lab in ((8.5, 'завтрак'), (13, 'обед'), (17.5, 'ужин')):
     body += txt(lab, SX - 45 + hr / 24 * SW, 116, 90, size=11.5, align='center', color=C['ink'])
 body += ic('moon', SX + SW - 118, 176, 22, C['accentdeep'], 1.8)
 body += txt('<b style="color:' + C['accentdeep'] + '">15 ч без еды</b>', SX + SW - 88, 180, 100, size=12.5, color=C['ink'])
-body += hbar(['Швеция — ориентир', 'США — норма CMS', 'Типовой дом, РФ'],
+body += hbar(['Швеция — ориентир', 'США — норма CMS', 'Пример расписания'],
              [11, 14, 15], 52, 212, 696, row_h=38, gap=12, unit=' ч', maxv=24,
              colors=[C['gray'], C['soft'], C['accent']])
-body += p('Ужин в 17:30 → завтрак в 8:30. Шкала баров едина с лентой суток (24 ч): 15 часов ночи — те же ⅝ длины, что на ленте. Для жителей на антипсихотиках это вес и ночные «набеги» на кухню.', 362, size=12.5, lh=1.45, color=C['soft'])
+body += p('Арифметика возможного графика, не обследование РФ. В отдельных домах интервал может быть таким — замер в своём учреждении отвечает на вопрос лучше любого слайда.', 362, size=12.5, lh=1.45, color=C['soft'])
 body += box(52, 420, 856, 48, C['accentsoft'])
 body += txt('Вопрос залу: какая цифра в вашем доме? Замер — три дня, одна строка в журнале, ноль рублей.', 74, 433, 820, size=13, bold=True, color=C['ink'])
-S.append(slide(6, body, kicker='Проблема · ночной интервал', foot='Швеция: Livsmedelsverket · США: 42 CFR 483.60 · РФ: типовые графики'))
+S.append(slide(6, body, kicker='Проблема · ночной интервал', foot='Швеция: Livsmedelsverket · США: 42 CFR 483.60 · РФ: пример, не «типовой дом»'))
 
 # ═══ 07 Цепочка решений ═══
 body = h('Единственный, кто ест, — вне цепочки решений', 29)
@@ -284,18 +283,18 @@ body += p('Дискуссия начинается ровно здесь: воп
 S.append(slide(7, body, kicker='Проблема · кто решает', foot='Типовая цепочка решения о рационе в стационаре'))
 
 # ═══ 08 Право ═══
-body = h('Право уже разрешает выбор. Запрета нет', 30)
-cards = [('442-ФЗ', '«учёт индивидуальной потребности» — выбор блюда укладывается в неё напрямую', 'doc'),
-         ('3185-1, ст. 5, 37, 43', 'гуманное отношение без унижения достоинства — права распространены на проживающих ДСО и ПНИ', 'scales'),
-         ('СанПиН · обе редакции', 'не менее 3 приёмов, диетическое по показаниям — число вариантов не ограничено', 'shield')]
+body = h('Запрета на выбор нет. Прямой обязанности — тоже', 27)
+cards = [('442-ФЗ', 'Учёт индивидуальных потребностей позволяет включить пищевые предпочтения в ИППСУ. Это не буквальное право на ежедневный выбор из нескольких блюд.', 'doc'),
+         ('3185-1 и ГК', 'Ст. 43 — статус проживающих. Ст. 29 ГК — опекун учитывает мнение. Выбор блюда не сделка.', 'scales'),
+         ('СанПиН', 'Не менее 3 приёмов, диетическое по показаниям. Число вариантов блюд нормы не ограничивают.', 'shield')]
 for i, (t, d, ico) in enumerate(cards):
     x = 52 + i * 294
-    body += box(x, 150, 274, 212, C['panel'])
-    body += ic(ico, x + 222, 170, 30, C['accent'], 1.7)
-    body += txt(t, x + 24, 180, 190, size=17, serif=True, color=C['accentdeep'])
-    body += txt(d, x + 24, 226, 228, size=13, lh=1.55, color=C['ink'])
-body += p('С 1 сентября 2026 действует новый СанПиН 2.3/2.4.4282-26 — модель выбора не меняется ни на йоту.', 400, size=14.5, bold=True)
-S.append(slide(8, body, kicker='Право', foot='ФЗ-442 ст. 9, 16 · Закон 3185-1 ст. 5, 37, 43 · СанПиН 3590-20 → 4282-26'))
+    body += box(x, 148, 274, 216, C['panel'])
+    body += ic(ico, x + 222, 166, 30, C['accent'], 1.7)
+    body += txt(t, x + 24, 176, 190, size=16, serif=True, color=C['accentdeep'])
+    body += txt(d, x + 24, 220, 228, size=12.5, lh=1.45, color=C['ink'])
+body += p('<b>С 01.09.2026</b> — СанПиН 2.3/2.4.4282-26. На даты семинара ещё 3590-20. Ответ проверяющему — комплект документов, не формула «не запрещено».', 400, size=13.5, bold=False)
+S.append(slide(8, body, kicker='Право', foot='442-ФЗ ст. 9, 16 · 3185-1 ст. 5, 37, 43 · ГК ст. 29 · СанПиН 3590-20 до 01.09.2026'))
 
 # ═══ 09 Практики ═══
 body = h('Это уже делают. Шесть публичных историй, 2024–2026', 29)
@@ -304,7 +303,7 @@ pts = [('Болотнинский ПНИ', 'Новосибирская обл.',
        ('Усть-Илимский ДСО', 'Иркутская обл.', '2024 · опрос предпочтений → выбор'),
        ('Иркутская область', 'масштаб региона', '2025 · решение для всех учреждений'),
        ('Серафимовский ДСО', 'Санкт-Петербург', '2025–2026 · заказное питание'),
-       ('Тесовый берег ДСО', 'Санкт-Петербург', 'фарфор, линия раздачи — со-эксперт')]
+       ('Тесовый берег ДСО', 'Санкт-Петербург', 'фарфор, линия раздачи — со-модератор')]
 for i, (name, reg, what) in enumerate(pts):
     col, row = i % 2, i // 2
     x, y = 52 + col * 440, 140 + row * 90
@@ -396,7 +395,7 @@ S.append(slide(15, body, kicker='Как растёт участие', foot='До
 
 # ═══ 16 В1 суть ═══
 body = h('Вопрос 1. Три слоя ответа', 31)
-layers = [('person', 'Право', '442-ФЗ, 3185-1, ГК 29/30: выбор — реализация прав, а не милость'),
+layers = [('person', 'Право', 'Запрета на выбор нет; прямой обязанности — тоже. Опекун учитывает мнение (ст. 29 ГК). Это не милость кухни.'),
           ('gear', 'Процедура', 'кто и как фиксирует выбор: журнал, совет, опекун — роль каждого'),
           ('heart', 'Культура', '«за него решили» → «у него спросили» — самый медленный и главный слой')]
 for i, (ico, t, d) in enumerate(layers):
@@ -405,8 +404,8 @@ for i, (ico, t, d) in enumerate(layers):
     body += ic(ico, 258, y + 24, 30, C['accent'], 1.7)
     body += txt(t, 84, y + 24, 200, size=19, serif=True, color=C['accentdeep'])
     body += txt(d, 310, y + 16, 570, size=14.5, lh=1.5, color=C['ink'])
-body += p('«Хозяин» из формулировки программы читаем как «руководитель учреждения» (правка № 15).', 424, size=12.5, color=C['muted'])
-S.append(slide(16, body, kicker='Вопрос 1 · суть', foot='442-ФЗ · 3185-1 ст. 37, 43 · ГК ст. 29, 30 · доклад, разделы 15–16'))
+body += p('Обновлённая программа: «руководитель», не «хозяин». Учреждение организует выбор, а не владеет волей.', 424, size=12.5, color=C['muted'])
+S.append(slide(16, body, kicker='Вопрос 1 · суть', foot='442-ФЗ ст. 9, 16 · 3185-1 ст. 37, 43 (статус) · ГК ст. 29 · доклад, разделы 15–16'))
 
 # ═══ 17 В1 голосование ═══
 S.append(question_slide(17, 'Вопрос 1 · голосование',
@@ -505,7 +504,7 @@ body += p('Диета — ограничение множества, а не с�
 S.append(slide(24, body, kicker='Вопрос 4 · алгоритм', foot='Доклад, разделы 19, 21'))
 
 # ═══ 25 В5 каналы воли ═══
-body = h('Недееспособный выбирает. Каналы воли', 30)
+body = h('Выбор не требует дееспособности. Каналы воли', 28)
 body += box(52, 150, 856, 180, C['panel'])
 ch = [('eye', 'Показ двух порций', 'выбор глазами и рукой'), ('plate', 'Наблюдение за съеденным', 'что осталось — то и сигнал'),
       ('book', 'Пищевая биография', 'привычки всей жизни'), ('people', '«Те, кто знает»', 'персонал, родные, опекун')]
@@ -515,8 +514,8 @@ for i, (ico, t, d) in enumerate(ch):
     body += ic(ico, x + 152, 172, 26, C['accent'], 1.6, 0.9)
     body += txt(f'<b>{t}</b>', x, 212, 186, size=12.5, lh=1.4, color=C['ink'])
     body += txt(f'<span style="color:{C["soft"]}">{d}</span>', x, 254, 186, size=11.5, lh=1.4)
-body += p('Замещающее решение («мы знаем лучше») Комитет по правам инвалидов признаёт несовместимым со ст. 12 КПИ. Граница — медицина: «два безопасных» вместо «одно назначенное».', 366, size=14.5, lh=1.55, bold=False)
-S.append(slide(25, body, kicker='Вопрос 5 · суть', foot='КПИ, Замечание № 1 к ст. 12 · доклад, разделы 15–16'))
+body += p('Замещающее решение («мы знаем лучше») Комитет по правам инвалидов признаёт несовместимым со ст. 12 КПИ. Граница — медицина: «два безопасных» вместо «одно назначенное». Текстуру назначает врач; IDDSI — язык описания консистенции, не само назначение.', 366, size=13.5, lh=1.45, bold=False)
+S.append(slide(25, body, kicker='Вопрос 5 · суть', foot='КПИ, Замечание № 1 к ст. 12 · ст. 29 ГК · доклад, разделы 15–16'))
 
 # ═══ 26 В5 slope IDDSI ═══
 body = h('Обучение работает лучше оборудования', 29)
@@ -541,8 +540,8 @@ svg = f'''<svg style="position:absolute;left:120px;top:150px" width="700" height
 <text x="588" y="159" font-family="PT Sans" font-size="12.5" fill="{C['body']}">загущённые напитки</text>
 </svg>'''
 body += svg
-body += p('Пять учреждений, единая шкала текстур IDDSI. Главный барьер — не техника, а осведомлённость смены.', 400, size=14.5, bold=True)
-S.append(slide(26, body, kicker='Вопрос 5 · безопасность', foot='Исследование внедрения IDDSI (5 учреждений) · GUSS, Trapl 2007 · доклад, разделы 10.9–10.10'))
+body += p('Пять учреждений, шкала IDDSI. Главный барьер — не техника, а осведомлённость смены. Текстуру назначает врач; IDDSI описывает и проверяет консистенцию.', 400, size=13.5, bold=True)
+S.append(slide(26, body, kicker='Вопрос 5 · безопасность', foot='IDDSI Framework, уровни 0–7 · исследование внедрения (5 учреждений) · доклад, разделы 10.4, 10.9'))
 
 # ═══ 27 В5 вопрос ═══
 S.append(question_slide(27, 'Вопрос 5 · к залу',
@@ -593,7 +592,7 @@ for i, (t, d) in enumerate(errs):
 S.append(slide(31, body, kicker='Красные линии', foot='Доклад, разделы 21, 12, 17 · практика проверок 2021–2025'))
 
 # ═══ 32 Сентябрь: таймлайн ═══
-body = h('1 сентября 2026: новый СанПиН — без паники', 30)
+body = h('С 01.09.2026 — новый СанПиН. Без паники', 28)
 body += f'''<div style="position:absolute;left:52px;top:210px;width:856px;height:3px;background:{C['line']};border-radius:2px"></div>'''
 miles = [('до 31.08', 'журналы законны<br>как заполнены', C['soft']), ('01.09', 'вступает<br>СанПиН 4282-26', C['accent']), ('сентябрь', 'перепривязать<br>документы', C['ink'])]
 for i, (d, t, col) in enumerate(miles):
@@ -622,11 +621,11 @@ S.append(slide(33, body, kicker='Что сделать в понедельник
 
 # ═══ 34 Смежные площадки ═══
 body = h('Смежные площадки: наши пересечения', 30)
-cross = [('«Право на выбор – есть или нет?»', 'панель 25.08 · наши вопросы 1–2: выбор реализуется людьми, а не приказом'),
+cross = [('«Право на выбор – есть или нет?»', 'панель 25.08, 14.30 · в 16.15 — Федермессер: достоинство, «не причинять добро»'),
          ('«Право быть недееспособным»', '25.08 · наш вопрос 5: интересы выявляются, а не назначаются'),
          ('«Нужны ли врачи в доме?»', 'дебаты 26.08 · наш вопрос 3: «лечебность» без врача — не забота, а риск'),
          ('«Сонастройка с опекой – это возможно»', '26.08 · наш вопрос 1: опекун — участник выявления воли, не цензор меню'),
-         ('«Чьи голоса громче – живущих или приходящих?»', '26.08 · совет жителей обсуждает еду первой: жалобы на стол — самые частые'),
+         ('«Как наладить жизнь в доме?»', 'мозговой штурм 26.08, 16.00 · сразу после нас: ночной интервал, не новое блюдо'),
          ('«Право на достойный уход»', '26.08, параллельно нам · комфортное кормление в конце жизни — тоже право выбора')]
 for i, (t, d) in enumerate(cross):
     col, row = i % 2, i // 2
@@ -675,6 +674,28 @@ body += txt('Материалы сессии — доклад, калькуля�
 body += f'<img src="qr.png" style="position:absolute;left:782px;top:262px;width:76px;height:76px;border-radius:8px">'
 body += p('Вопросы после сессии — лично и по каналам связи в раздатке.', 400, size=13, color=C['muted'])
 S.append(slide(38, body, kicker='Контакты', foot='«Пространство новых идей 2.0» · 25–27.08.2026 · Санкт-Петербург'))
+
+# ── основной показ (20) + разделитель + резерв для ответов ──
+import re as _re
+MAIN_1BASED = [1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 16, 18, 21, 23, 25, 28, 31, 32, 33, 37]
+main = [S[i - 1] for i in MAIN_1BASED]
+used = set(MAIN_1BASED)
+reserve = [S[i] for i in range(len(S)) if (i + 1) not in used]
+div = h('Основной показ закончен', 34)
+div += p('Дальше — резерв для ответов: разогрев, лестницы, голосования, IDDSI, закупки, смежные площадки, материалы.', 168, size=17, lh=1.5)
+div += p('На 90 минут достаточно слайдов 1–20. Остальное — если зал спросит.', 300, size=16, color=C['soft'])
+divider = slide(0, div, kicker='Резерв · не показывать в основном ходе', foot='Приложение после финального слайда')
+
+def _restamp(html, label):
+    return _re.sub(r'<span><b>\d+</b> / \d+</span>', f'<span>{label}</span>', html)
+
+out = []
+for i, html in enumerate(main, 1):
+    out.append(_restamp(html, f'<b>{i}</b> / 20'))
+out.append(_restamp(divider, 'резерв'))
+for j, html in enumerate(reserve, 1):
+    out.append(_restamp(html, f'R{j} / {len(reserve)}'))
+S = out
 
 # ── запись ──
 os.makedirs(f'{HERE}/slides', exist_ok=True)
