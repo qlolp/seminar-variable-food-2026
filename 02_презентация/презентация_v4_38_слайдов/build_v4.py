@@ -26,9 +26,9 @@ html,body { margin:0; padding:0 }
 .slide { position:relative; width:960px; height:540px; background:%(ivory)s; overflow:hidden;
          font-family:'PT Sans'; color:%(body)s; }
 .foot { position:absolute; left:52px; right:52px; bottom:16px; display:flex;
-        justify-content:space-between; font-size:10.5px; color:%(muted)s; }
+        justify-content:space-between; font-size:11px; color:%(muted)s; }
 .foot b { color:%(accent)s; font-weight:bold }
-.kicker { font-weight:bold; font-size:11.5px; letter-spacing:3px; color:%(accent)s;
+.kicker { font-weight:bold; font-size:12px; letter-spacing:3px; color:%(accent)s;
           text-transform:uppercase; }
 .kickrow { position:absolute; left:52px; top:34px; right:52px; display:flex; align-items:center; gap:14px; }
 .kickrow .rule { flex:1; height:1.5px; background:%(line)s; }
@@ -83,15 +83,15 @@ def hbar(labels, values, x, y, w, row_h=42, gap=14, maxv=None, unit='', colors=N
     for i, (lab, val) in enumerate(zip(labels, values)):
         yy = y + i * (row_h + gap)
         fill = (colors[i] if colors else C['accent'])
-        bw = int((w - 300) * val / maxv)
+        bw = int((w - 320) * val / maxv)
         out.append(f'<div style="position:absolute;left:{x}px;top:{yy}px;width:230px;height:{row_h}px;'
                    f'display:flex;align-items:center;justify-content:flex-end;text-align:right;'
-                   f'font-size:12.5px;color:{C["ink"]};line-height:1.2">{lab}</div>')
-        out.append(f'<div style="position:absolute;left:{x+240}px;top:{yy}px;width:{w-240-70}px;height:{row_h}px;'
+                   f'font-size:13.5px;color:{C["ink"]};line-height:1.2">{lab}</div>')
+        out.append(f'<div style="position:absolute;left:{x+240}px;top:{yy}px;width:{w-240-80}px;height:{row_h}px;'
                    f'background:{C["panel"]};border-radius:7px">'
                    f'<div style="width:{bw}px;height:100%;background:{fill};border-radius:7px 0 0 7px"></div></div>')
-        out.append(f'<div style="position:absolute;left:{x+w-64}px;top:{yy}px;height:{row_h}px;display:flex;'
-                   f'align-items:center;font-family:\'Playfair Display\';font-weight:700;font-size:19px;color:{fill}">'
+        out.append(f'<div style="position:absolute;left:{x+w-60}px;top:{yy}px;height:{row_h}px;display:flex;'
+                   f'align-items:center;font-family:\'Playfair Display\';font-weight:700;font-size:21px;color:{fill}">'
                    f'{val}{unit}</div>')
     return ''.join(out)
 
@@ -116,9 +116,9 @@ def question_slide(num, kicker, qtext, sub=None, hint=None, foot=None):
               f'background:{C["accent"]};border-radius:2px"></div>')
     inner += txt(qtext, 322, 130, 540, size=24, lh=1.32, color=C['ink'], serif=True)
     if sub:
-        inner += txt(sub, 322, 318, 540, size=14.5, lh=1.5, color=C['soft'])
+        inner += txt(sub, 322, 318, 540, size=15, lh=1.5, color=C['soft'])
     if hint:
-        inner += txt(hint, 52, 445, 856, size=12.5, color=C['muted'])
+        inner += txt(hint, 52, 445, 856, size=13, color=C['muted'])
     return slide(num, inner, kicker=kicker, foot=foot or 'Вопрос залу')
 
 # ── библиотека линейных пиктограмм (24×24, stroke) ──
@@ -475,14 +475,14 @@ body = h('«Лечебное» × «вариативное» — не враги
 svg = f'''<svg style="position:absolute;left:150px;top:140px" width="660" height="230" viewBox="0 0 660 230">
 <circle cx="240" cy="115" r="105" fill="{C['panel']}" opacity="0.95"/>
 <circle cx="420" cy="115" r="105" fill="{C['accentsoft']}" opacity="0.95"/>
-<text x="185" y="110" font-family="PT Sans" font-size="15" font-weight="bold" fill="{C['ink']}">ЛЕЧЕБНАЯ РАМКА</text>
-<text x="160" y="135" font-family="PT Sans" font-size="12.5" fill="{C['body']}">назначил врач:</text>
-<text x="160" y="153" font-family="PT Sans" font-size="12.5" fill="{C['body']}">стол, текстура, соль</text>
-<text x="395" y="110" font-family="PT Sans" font-size="15" font-weight="bold" fill="{C['accentdeep']}">ВАРИАТИВНОСТЬ</text>
-<text x="365" y="135" font-family="PT Sans" font-size="12.5" fill="{C['body']}">выбор внутри рамки:</text>
-<text x="365" y="153" font-family="PT Sans" font-size="12.5" fill="{C['body']}">пары, вкус, привычное</text>
-<text x="268" y="105" font-family="Playfair Display" font-size="14" font-weight="700" fill="{C['ink']}">ЗОНА</text>
-<text x="245" y="127" font-family="Playfair Display" font-size="14" font-weight="700" fill="{C['ink']}">ПРАКТИКИ</text>
+<text x="150" y="102" font-family="PT Sans" font-size="16" font-weight="bold" fill="{C['ink']}">ЛЕЧЕБНАЯ РАМКА</text>
+<text x="150" y="130" font-family="PT Sans" font-size="13" fill="{C['body']}">назначил врач:</text>
+<text x="150" y="150" font-family="PT Sans" font-size="13" fill="{C['body']}">стол, текстура, соль</text>
+<text x="308" y="98" font-family="Playfair Display" font-size="15" font-weight="700" fill="{C['ink']}">ЗОНА</text>
+<text x="286" y="122" font-family="Playfair Display" font-size="15" font-weight="700" fill="{C['ink']}">ПРАКТИКИ</text>
+<text x="398" y="102" font-family="PT Sans" font-size="16" font-weight="bold" fill="{C['accentdeep']}">ВАРИАТИВНОСТЬ</text>
+<text x="368" y="130" font-family="PT Sans" font-size="13" fill="{C['body']}">выбор внутри рамки:</text>
+<text x="368" y="150" font-family="PT Sans" font-size="13" fill="{C['body']}">пары, вкус, привычное</text>
 </svg>'''
 body += svg
 body += p('Рецепт: врач задаёт стол — внутри него всегда есть пары. Так работает дом в Московской области (распоряжение 19РВ-32).', 392, size=14.5, lh=1.55)
@@ -519,25 +519,25 @@ S.append(slide(25, body, kicker='Вопрос 5 · суть', foot='КПИ, За
 
 # ═══ 26 В5 slope IDDSI ═══
 body = h('Обучение работает лучше оборудования', 29)
-svg = f'''<svg style="position:absolute;left:120px;top:140px" width="700" height="260" viewBox="0 0 700 260">
-<line x1="200" y1="30" x2="200" y2="220" stroke="{C['line']}" stroke-width="2"/>
-<line x1="520" y1="30" x2="520" y2="220" stroke="{C['line']}" stroke-width="2"/>
-<text x="200" y="248" text-anchor="middle" font-family="PT Sans" font-size="12.5" fill="{C['muted']}">ДО внедрения</text>
-<text x="520" y="248" text-anchor="middle" font-family="PT Sans" font-size="12.5" fill="{C['muted']}">ПОСЛЕ</text>
-<line x1="200" y1="{220-44*1.9:.0f}" x2="520" y2="{220-90*1.9:.0f}" stroke="{C['accent']}" stroke-width="3.5"/>
-<circle cx="200" cy="{220-44*1.9:.0f}" r="7" fill="{C['gray']}"/>
-<circle cx="520" cy="{220-90*1.9:.0f}" r="7" fill="{C['accent']}"/>
-<text x="185" y="{220-44*1.9-12:.0f}" text-anchor="end" font-family="Playfair Display" font-weight="700" font-size="17" fill="{C['soft']}">44 %</text>
-<text x="535" y="{220-90*1.9-12:.0f}" font-family="Playfair Display" font-weight="700" font-size="17" fill="{C['accentdeep']}">90 %</text>
-<text x="185" y="{220-44*1.9+16:.0f}" text-anchor="end" font-family="PT Sans" font-size="11.5" fill="{C['muted']}">соответствие</text>
-<text x="535" y="{220-90*1.9+16:.0f}" font-family="PT Sans" font-size="11.5" fill="{C['muted']}">соответствие</text>
-<line x1="200" y1="{220-31*1.9:.0f}" x2="520" y2="{220-100*1.9:.0f}" stroke="{C['soft']}" stroke-width="2.5" stroke-dasharray="1 0"/>
-<circle cx="200" cy="{220-31*1.9:.0f}" r="6" fill="{C['gray']}"/>
-<circle cx="520" cy="{220-100*1.9:.0f}" r="6" fill="{C['ink']}"/>
-<text x="185" y="{220-31*1.9-10:.0f}" text-anchor="end" font-family="Playfair Display" font-weight="700" font-size="15" fill="{C['soft']}">31 %</text>
-<text x="535" y="{220-100*1.9-10:.0f}" font-family="Playfair Display" font-weight="700" font-size="15" fill="{C['ink']}">100 %</text>
-<text x="185" y="{220-31*1.9+14:.0f}" text-anchor="end" font-family="PT Sans" font-size="11" fill="{C['muted']}">загущённые</text>
-<text x="535" y="{220-100*1.9+14:.0f}" font-family="PT Sans" font-size="11" fill="{C['muted']}">загущённые</text>
+svg = f'''<svg style="position:absolute;left:120px;top:150px" width="700" height="250" viewBox="0 0 700 250">
+<line x1="200" y1="30" x2="200" y2="210" stroke="{C['line']}" stroke-width="2"/>
+<line x1="520" y1="30" x2="520" y2="210" stroke="{C['line']}" stroke-width="2"/>
+<text x="200" y="240" text-anchor="middle" font-family="PT Sans" font-size="13.5" fill="{C['muted']}">ДО внедрения</text>
+<text x="520" y="240" text-anchor="middle" font-family="PT Sans" font-size="13.5" fill="{C['muted']}">ПОСЛЕ</text>
+<line x1="200" y1="136" x2="520" y2="49" stroke="{C['accent']}" stroke-width="3.5"/>
+<circle cx="200" cy="136" r="7" fill="{C['gray']}"/>
+<circle cx="520" cy="49" r="7" fill="{C['accent']}"/>
+<line x1="200" y1="161" x2="520" y2="30" stroke="{C['soft']}" stroke-width="2.5"/>
+<circle cx="200" cy="161" r="6" fill="{C['gray']}"/>
+<circle cx="520" cy="30" r="6" fill="{C['ink']}"/>
+<text x="182" y="126" text-anchor="end" font-family="Playfair Display" font-weight="700" font-size="18" fill="{C['soft']}">44 %</text>
+<text x="182" y="184" text-anchor="end" font-family="Playfair Display" font-weight="700" font-size="16" fill="{C['soft']}">31 %</text>
+<text x="538" y="92" font-family="Playfair Display" font-weight="700" font-size="18" fill="{C['accentdeep']}">90 %</text>
+<text x="538" y="24" font-family="Playfair Display" font-weight="700" font-size="16" fill="{C['ink']}">100 %</text>
+<line x1="556" y1="130" x2="580" y2="130" stroke="{C['accent']}" stroke-width="3.5"/>
+<text x="588" y="135" font-family="PT Sans" font-size="12.5" fill="{C['body']}">соответствие текстур</text>
+<line x1="556" y1="154" x2="580" y2="154" stroke="{C['soft']}" stroke-width="2.5"/>
+<text x="588" y="159" font-family="PT Sans" font-size="12.5" fill="{C['body']}">загущённые напитки</text>
 </svg>'''
 body += svg
 body += p('Пять учреждений, единая шкала текстур IDDSI. Главный барьер — не техника, а осведомлённость смены.', 400, size=14.5, bold=True)
