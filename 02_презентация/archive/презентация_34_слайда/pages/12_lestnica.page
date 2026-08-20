@@ -1,4 +1,4 @@
-pageType: content
+﻿pageType: content
 background:
   type: solid
   color: "$bg"
@@ -46,7 +46,7 @@ elements:
       fontSize: 13
       color: "$muted"
       fontFamily: Noto Sans
-      text: "Каждая ступень — работающая модель с известной ценой. Вопрос не «вводить ли», а «какая ступень нам по силам в этом году»."
+      text: "Каждая модель (М0–М5) — рабочая конфигурация с известной ценой. Вопрос не «вводить ли», а «какая модель нам по силам в этом году»."
   - elementId: s0
     elementType: shape
     bounds: [60, 176, 126, 190]
@@ -60,7 +60,7 @@ elements:
       bold: true
       color: "$primary"
       fontFamily: PT Serif
-      text: "0"
+      text: "М0"
   - elementId: s0t
     elementType: text
     bounds: [72, 236, 106, 118]
@@ -83,7 +83,7 @@ elements:
       bold: true
       color: "$primary"
       fontFamily: PT Serif
-      text: "1"
+      text: "М1"
   - elementId: s1t
     elementType: text
     bounds: [222, 236, 106, 118]
@@ -106,7 +106,7 @@ elements:
       bold: true
       color: "$primary"
       fontFamily: PT Serif
-      text: "2"
+      text: "М2"
   - elementId: s2t
     elementType: text
     bounds: [372, 236, 106, 118]
@@ -129,7 +129,7 @@ elements:
       bold: true
       color: "$muted"
       fontFamily: PT Serif
-      text: "3"
+      text: "М3"
   - elementId: s3t
     elementType: text
     bounds: [522, 236, 106, 118]
@@ -152,7 +152,7 @@ elements:
       bold: true
       color: "$muted"
       fontFamily: PT Serif
-      text: "4"
+      text: "М4"
   - elementId: s4t
     elementType: text
     bounds: [672, 236, 106, 118]
@@ -175,7 +175,7 @@ elements:
       bold: true
       color: "$muted"
       fontFamily: PT Serif
-      text: "5"
+      text: "М5"
   - elementId: s5t
     elementType: text
     bounds: [818, 236, 78, 118]
@@ -193,7 +193,7 @@ elements:
       bold: true
       color: "$primary"
       fontFamily: Noto Sans
-      text: "Ступени 0–2 — подтверждённая российская практика · 3–5 — горизонт, а не массовая модель"
+      text: "Модели М0–М2 — подтверждённая российская практика · М3–М5 — горизонт, а не массовая модель"
   - elementId: check
     elementType: text
     bounds: [60, 424, 840, 66]
@@ -203,7 +203,7 @@ elements:
       lineHeight: 1.5
       fontFamily: Noto Sans
       text: |
-        <p><strong>Ступень определяется вчерашним днём, а не положением:</strong> был ли второй вариант физически на линии вчера? Зафиксирован ли вчерашний выбор в журнале? Есть ли житель, получивший вчера не то, что ему принесли бы по умолчанию?</p>
+        <p><strong>Модель определяется вчерашним днём, а не положением:</strong> был ли второй вариант физически на линии вчера? Зафиксирован ли вчерашний выбор в журнале? Есть ли житель, получивший вчера не то, что ему принесли бы по умолчанию?</p>
   - elementId: src
     elementType: text
     bounds: [60, 508, 700, 20]
