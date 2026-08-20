@@ -1,4 +1,4 @@
-pageType: cover
+﻿pageType: cover
 background:
   type: solid
   color: "$dark"
@@ -89,7 +89,7 @@ elements:
       bold: true
       color: "$accent"
       fontFamily: PT Serif
-      text: "332"
+      text: "323"
   - elementId: s1l
     elementType: text
     bounds: [656, 122, 270, 22]
