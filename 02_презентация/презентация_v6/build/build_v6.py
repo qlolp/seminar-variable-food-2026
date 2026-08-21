@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-build_v5.py — сборка презентации «Не просто накормить» v5
+build_v6.py — сборка презентации «Не просто накормить» v6
 Дизайн-система: FAF9F5 / F0EEE6 / 141413 / C15F3C
 Шрифты: Playfair Display (заголовки/цифры), PT Sans (тело)
 Сетка: 16:9, 13.333" x 7.5" (стандартный widescreen PPTX)
 
-Структура (storyboard_v5.md):
+Структура (storyboard_v6.md):
 - 18 слайдов основного показа
 - 1 разделитель «Резерв»
 - 12 резервных слайдов (R1-R12)
@@ -1258,11 +1258,11 @@ def build_presentation():
 
 if __name__ == "__main__":
     HERE = os.path.dirname(os.path.abspath(__file__))
-    out_path = os.path.join(HERE, "Презентация_v5_Не_просто_накормить.pptx")
+    out_path = os.path.join(HERE, "Презентация_v6_Не_просто_накормить.pptx")
     prs = build_presentation()
 
     # Добавляем резервные слайды R1-R12
-    from reserve_v5 import add_reserve_slides
+    from reserve_v6 import add_reserve_slides
     add_reserve_slides(prs)
 
     prs.save(out_path)

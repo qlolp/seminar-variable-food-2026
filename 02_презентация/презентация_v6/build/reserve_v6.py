@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-reserve_v5.py — 12 резервных слайдов R1-R12 для v5.
-Подключается к build_v5.py через функцию add_reserve_slides(prs).
+reserve_v6.py — 12 резервных слайдов R1-R12 для v6.
+Подключается к build_v6.py через функцию add_reserve_slides(prs).
 """
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
@@ -10,7 +10,7 @@ from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 import os
 
-# ============== ПАЛИТРА (копия из build_v5.py) ==============
+# ============== ПАЛИТРА (копия из build_v6.py) ==============
 IVORY      = RGBColor(0xFA, 0xF9, 0xF5)
 PANEL      = RGBColor(0xF0, 0xEE, 0xE6)
 PANELWARM  = RGBColor(0xF6, 0xF1, 0xE9)
