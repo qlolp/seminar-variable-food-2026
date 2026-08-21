@@ -447,10 +447,14 @@ def slide_06_night(prs):
                 font=SERIF, size=20, italic=True, color=SOFT)
 
     # Лента суток
-    lane_x = Inches(0.72)
-    lane_y = Inches(3.2)
-    lane_w = Inches(11.9)
-    lane_h = Inches(0.7)
+    lane_x_in = 0.72
+    lane_y_in = 3.2
+    lane_w_in = 11.9
+    lane_h_in = 0.7
+    lane_x = Inches(lane_x_in)
+    lane_y = Inches(lane_y_in)
+    lane_w = Inches(lane_w_in)
+    lane_h = Inches(lane_h_in)
 
     # Заштрихованный "день" (6:00–22:00)
     day_start_pct = 6/24
@@ -458,46 +462,95 @@ def slide_06_night(prs):
     # Фон
     add_rect(slide, lane_x, lane_y, lane_w, lane_h, fill=PANEL, corner_radius=8)
     # Дневная часть (светлая)
-    day_w = Inches(lane_w.inches * (day_end_pct - day_start_pct))
-    day_x = Inches(lane_x.inches + lane_w.inches * day_start_pct)
+    day_w = Inches(lane_w_in * (day_end_pct - day_start_pct))
+    day_x = Inches(lane_x_in + lane_w_in * day_start_pct)
     add_rect(slide, day_x, lane_y, day_w, lane_h, fill=IVORY, line_color=LINE, line_width=0.5)
 
-    # Завтрак 8:30 — 0.354
-    # Обед 13:00 — 0.542
-    # Ужин 17:30 — 0.729
-    # Следующий завтрак 8:30 (32:30) — 1.354
-    meal_xs = [0.354, 0.542, 0.729]
-    for mx in meal_xs:
-        x = Inches(lane_x.inches + lane_w.inches * mx - 0.08)
+    # Метки времени
+    for h, lbl in [(0, "00"), (6, "06"), (12, "12"), (18, "18"), (24, "24")]:
+        x = Inches(lane_x_in + lane_w_in * h / 24 - 0.2)
+        add_textbox(slide, x, lane_y + lane_h + Inches(0.05), Inches(0.4), Inches(0.3),
+                    lbl, font=SANS, size=10, color=MUTED, align=PP_ALIGN.CENTER)
+
+    # Точки приёмов (завтрак 8:30, обед 13:00, ужин 17:30)
+    # Реальные позиции по ленте
+    meal_pcts = [0.354, 0.542, 0.729]  # 8:30, 13:00, 17:30
+    meal_xs_in = [lane_x_in + lane_w_in * p for p in meal_pcts]
+    for mx_in in meal_xs_in:
+        x = Inches(mx_in - 0.09)
         c = slide.shapes.add_shape(MSO_SHAPE.OVAL, x, lane_y + Inches(0.22), Inches(0.18), Inches(0.26))
         c.fill.solid()
         c.fill.fore_color.rgb = INK
         c.line.color.rgb = IVORY
         c.line.width = Pt(2)
 
-    # Терракотовая "ночная" полоса
-    night_x = Inches(lane_x.inches + lane_w.inches * 0.729)
-    night_w = Inches(lane_x.inches + lane_w.inches * 1.354 - (lane_x.inches + lane_w.inches * 0.729))
-    add_rect(slide, night_x, lane_y, night_w, lane_h, fill=ACCENT, line_color=None)
+    # Подписи приёмов — СТРОГО под точками
+    meal_labels = [("завтрак", 0.354), ("обед", 0.542), ("ужин", 0.729)]
+    for name, pct in meal_labels:
+        cx = lane_x_in + lane_w_in * pct
+        # Текст шириной 1.4", по центру под точкой
+        add_textbox(slide, Inches(cx - 0.7), lane_y + lane_h + Inches(0.4),
+                    Inches(1.4), Inches(0.3),
+                    name, font=SANS, size=11, color=INK, align=PP_ALIGN.CENTER)
+        # Время под подписью (мелко)
+        time_label = {"завтрак": "8:30", "обед": "13:00", "ужин": "17:30"}[name]
+        add_textbox(slide, Inches(cx - 0.7), lane_y + lane_h + Inches(0.7),
+                    Inches(1.4), Inches(0.3),
+                    time_label, font=SANS, size=9, color=MUTED, align=PP_ALIGN.CENTER)
 
-    # Метки времени
-    for h, lbl in [(0, "00"), (6, "06"), (12, "12"), (18, "18"), (24, "24")]:
-        x = Inches(lane_x.inches + lane_w.inches * h / 24 - 0.2)
-        add_textbox(slide, x, lane_y + lane_h + Inches(0.05), Inches(0.4), Inches(0.3),
-                    lbl, font=SANS, size=10, color=MUTED, align=PP_ALIGN.CENTER)
+    # Двойная дуга-стрелка «15 ч через полночь» НАД лентой
+    # От точки ужина (17:30, 0.729) к точке завтрака (8:30 следующего дня, 1.354)
+    # Визуально: арка поднимается над лентой, с тонкой линией и стрелками на концах
+    dinner_x = lane_x_in + lane_w_in * 0.729
+    breakfast_x = lane_x_in + lane_w_in * 0.354  # 8:30 следующего дня → рисуем как «возврат к началу»
+    # Рисуем арку: от (dinner_x, lane_y - 0.3) до (breakfast_x, lane_y - 0.3) с подъёмом
+    # Но breakfast_x = 0.72 + 11.9*0.354 = 4.93, а dinner_x = 0.72 + 11.9*0.729 = 9.39
+    # Значит арка идёт СПРАВА НАЛЕВО — что неестественно для стрелки
+    # Решение: нарисовать арку с разрывом — два сегмента:
+    #   1) от ужина (17:30) до 24:00 — обычный горизонтальный сегмент
+    #   2) от 00:00 до 8:30 — обычный горизонтальный сегмент
+    # С подписью "через полночь" посередине
 
-    # Подписи приёмов
-    add_textbox(slide, Inches(0.72), Inches(4.05), Inches(1.5), Inches(0.3),
-                "завтрак", font=SANS, size=11, color=INK, align=PP_ALIGN.CENTER)
-    add_textbox(slide, Inches(4.7), Inches(4.05), Inches(1.5), Inches(0.3),
-                "обед", font=SANS, size=11, color=INK, align=PP_ALIGN.CENTER)
-    add_textbox(slide, Inches(7.4), Inches(4.05), Inches(1.5), Inches(0.3),
-                "ужин", font=SANS, size=11, color=INK, align=PP_ALIGN.CENTER)
+    arc_y = lane_y - Inches(0.55)
+    arc_h = Inches(0.45)
+    # Сегмент 1: 17:30 → 24:00
+    seg1_x1 = dinner_x
+    seg1_x2 = lane_x_in + lane_w_in
+    # Сегмент 2: 00:00 → 8:30
+    seg2_x1 = lane_x_in
+    seg2_x2 = breakfast_x
 
-    # Метка 15 ч
-    add_textbox(slide, Inches(8.5), Inches(2.65), Inches(4.0), Inches(0.4),
-                "ночной интервал:  15 ч",
-                font=SERIF, size=14, bold=True, color=ACCENT, align=PP_ALIGN.LEFT)
+    # Линии-сегменты
+    line1 = slide.shapes.add_connector(1, Inches(seg1_x1), arc_y, Inches(seg1_x2), arc_y)
+    line1.line.color.rgb = ACCENT
+    line1.line.width = Pt(2.5)
+    line2 = slide.shapes.add_connector(1, Inches(seg2_x1), arc_y, Inches(seg2_x2), arc_y)
+    line2.line.color.rgb = ACCENT
+    line2.line.width = Pt(2.5)
+
+    # Стрелки на концах (в точках ужина и завтрака)
+    # Стрелка в начале (завтрак)
+    a1 = slide.shapes.add_shape(MSO_SHAPE.LEFT_ARROW, Inches(seg2_x2) - Inches(0.05),
+                                  arc_y - Inches(0.07), Inches(0.18), Inches(0.14))
+    a1.fill.solid(); a1.fill.fore_color.rgb = ACCENT
+    a1.line.fill.background()
+    # Стрелка в конце (ужин)
+    a2 = slide.shapes.add_shape(MSO_SHAPE.RIGHT_ARROW, Inches(seg1_x1) - Inches(0.13),
+                                  arc_y - Inches(0.07), Inches(0.18), Inches(0.14))
+    a2.fill.solid(); a2.fill.fore_color.rgb = ACCENT
+    a2.line.fill.background()
+
+    # Метка «15 ч» посередине (между двумя сегментами)
+    mid_x = (seg1_x2 + seg2_x1) / 2
+    add_textbox(slide, Inches(mid_x - 0.9), arc_y - Inches(0.55), Inches(1.8), Inches(0.35),
+                "через полночь  ·  15 ч",
+                font=SERIF, size=14, bold=True, color=ACCENT, align=PP_ALIGN.CENTER)
+    # Тонкая вертикаль-разделитель (полночь) — пунктирная
+    midnight_x = lane_x_in + lane_w_in
+    add_line(slide, Inches(midnight_x), arc_y, Inches(midnight_x), arc_y + Inches(0.5),
+             color=ACCENT, weight_pt=1.0)
+    add_textbox(slide, Inches(midnight_x - 0.5), arc_y - Inches(0.22), Inches(1.0), Inches(0.25),
+                "полночь", font=SANS, size=8, color=MUTED, align=PP_ALIGN.CENTER)
 
     # Сравнение
     add_rect(slide, Inches(0.72), Inches(4.8), Inches(5.8), Inches(1.8),
