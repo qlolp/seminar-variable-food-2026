@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-"""v4: колода дискуссии «Организация питания: опыт реализации проектов» (26.08.2026,
-14:00–15:30) в едином стиле с докладом «стиль claude»: тёплая слоновая кость,
-чернильный текст, терракотовый акцент, Playfair Display + PT Sans.
-Подача: одна мысль на слайд, минимум текста, крупные цифры. 20 основного показа + резерв.
+"""v4: колода дискуссии «Организация питания: опыт реализации проектов» (26.08.2026).
+Стиль «2 190»: одна мысль, крупная цифра или 3–6 слов, Playfair, без пиктограмм.
+20 слайдов основного показа + разделитель + резерв.
 Сборка: PATH=/opt/homebrew/bin:$PATH python3 build_v4.py --pdf
 (HTML всегда; PDF — WeasyPrint CLI + pdfunite. PYTHONPATH не задавать.)"""
-import os, subprocess, glob, sys
+import glob, os, re, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -31,8 +30,7 @@ CSS = """
 html,body { margin:0; padding:0 }
 .slide { position:relative; width:960px; height:540px; background:%(ivory)s; overflow:hidden;
          font-family:'PT Sans'; color:%(body)s; }
-.foot { position:absolute; left:52px; right:52px; bottom:16px; display:flex;
-        justify-content:space-between; font-size:11px; color:%(muted)s; }
+.foot { position:absolute; right:48px; bottom:18px; font-size:15px; color:%(muted)s; }
 .foot b { color:%(accent)s; font-weight:bold }
 .kicker { font-weight:bold; font-size:12px; letter-spacing:3px; color:%(accent)s;
           text-transform:uppercase; }
@@ -40,742 +38,424 @@ html,body { margin:0; padding:0 }
 .kickrow .rule { flex:1; height:1.5px; background:%(line)s; }
 h1 { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Sans', serif; font-weight:800; margin:0; line-height:1.12; color:%(ink)s; }
 .serif { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Sans', serif; }
-.card { background:%(panel)s; border-radius:14px; }
-.tag { display:inline-block; font-weight:bold; font-size:11px; letter-spacing:1.5px;
-       padding:3px 10px 2px; border-radius:6px; }
 """ % C
 
-def slide(num, body, kicker=None, foot=None, bg=None, total=None):
+
+def slide(num, body, kicker=None, bg=None):
     k = ''
     if kicker:
-        k = f'<div class="kickrow"><span class="kicker">{kicker}</span><span class="rule"></span></div>'
-    tot = total if total is not None else 38
-    foot_html = (f'<div class="foot"><span>{foot or ""}</span><span><b>{num}</b> / {tot}</span></div>')
+        k = (f'<div class="kickrow"><span class="kicker">{kicker}</span>'
+             f'<span class="rule"></span></div>')
+    foot = f'<div class="foot"><span><b>{num}</b></span></div>'
     style = f' style="background:{bg}"' if bg else ''
     return (f'<!DOCTYPE html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
-            f'<body><div class="slide"{style}>{k}{body}{foot_html}</div></body></html>')
+            f'<body><div class="slide"{style}>{k}{body}{foot}</div></body></html>')
 
-def h(text, size=31, color=None, top=66, left=52, width=856, italic=False, weight=800):
+
+def num(text, top=118, size=185, left=52, color=None):
+    col = color or C['ink']
+    return (f'<div class="serif" style="position:absolute;left:{left}px;top:{top}px;'
+            f'font-weight:900;font-size:{size}px;line-height:0.95;color:{col}">{text}</div>')
+
+
+def bar(top=348, left=52, w=60):
+    return (f'<div style="position:absolute;left:{left}px;top:{top}px;width:{w}px;'
+            f'height:5px;background:{C["accent"]}"></div>')
+
+
+def h(text, size=40, color=None, top=108, left=52, width=856, italic=False):
     col = f'color:{color};' if color else ''
     it = 'font-style:italic;font-weight:600;' if italic else ''
-    w = f'font-weight:{weight};' if weight != 800 else ''
     return (f'<h1 style="position:absolute;left:{left}px;top:{top}px;width:{width}px;'
-            f'font-size:{size}px;{col}{it}{w}line-height:1.12">{text}</h1>')
+            f'font-size:{size}px;{col}{it}line-height:1.12">{text}</h1>')
 
-def p(text, top, left=52, width=856, size=15, lh=1.5, color=None, bold=False, align='left', italic=False):
+
+def txt(text, x, y, w, size=22, lh=1.35, color=None, bold=False, align='left',
+        serif=False, italic=False):
     col = f'color:{color};' if color else ''
-    b = 'font-weight:bold;' if bold else ''
-    it = 'font-style:italic;' if italic else ''
-    return (f'<p style="position:absolute;left:{left}px;top:{top}px;width:{width}px;'
-            f'font-size:{size}px;line-height:{lh};{col}{b}{it}text-align:{align};margin:0">{text}</p>')
-
-def box(x, y, w, h, fill=None, radius=14, border=None):
-    f = f'background:{fill};' if fill else ''
-    b = f'border:1.5px solid {border};' if border else ''
-    return (f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;height:{h}px;'
-            f'{f}{b}border-radius:{radius}px"></div>')
-
-def txt(text, x, y, w, size=13.5, lh=1.45, color=None, bold=False, align='left', serif=False, ls=None, italic=False):
-    col = f'color:{color};' if color else ''
-    fam = "font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-weight:700;" if serif else ''
+    fam = ("font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-weight:700;"
+           if serif else '')
     fw = 'font-weight:bold;' if (bold and not serif) else ''
-    l = f'letter-spacing:{ls}px;' if ls else ''
     it = 'font-style:italic;' if italic else ''
     return (f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;font-size:{size}px;'
-            f'line-height:{lh};{col}{fam}{fw}{l}{it}text-align:{align}">{text}</div>')
+            f'line-height:{lh};{col}{fam}{fw}{it}text-align:{align}">{text}</div>')
 
-def hbar(labels, values, x, y, w, row_h=42, gap=14, maxv=None, unit='', colors=None):
-    maxv = maxv or max(values)
-    out = []
-    for i, (lab, val) in enumerate(zip(labels, values)):
-        yy = y + i * (row_h + gap)
-        fill = (colors[i] if colors else C['accent'])
-        bw = int((w - 320) * val / maxv)
-        out.append(f'<div style="position:absolute;left:{x}px;top:{yy}px;width:230px;height:{row_h}px;'
-                   f'display:flex;align-items:center;justify-content:flex-end;text-align:right;'
-                   f'font-size:13.5px;color:{C["ink"]};line-height:1.2">{lab}</div>')
-        out.append(f'<div style="position:absolute;left:{x+240}px;top:{yy}px;width:{w-240-80}px;height:{row_h}px;'
-                   f'background:{C["panel"]};border-radius:7px">'
-                   f'<div style="width:{bw}px;height:100%;background:{fill};border-radius:7px 0 0 7px"></div></div>')
-        out.append(f'<div style="position:absolute;left:{x+w-60}px;top:{yy}px;height:{row_h}px;display:flex;'
-                   f'align-items:center;font-family:\'Playfair Lat\',\'Playfair Cyr\',\'PT Sans\',serif;font-weight:700;font-size:21px;color:{fill}">'
-                   f'{val}{unit}</div>')
-    return ''.join(out)
 
-def donut(pct, cx, cy, r=86, label='', sub=''):
-    import math
-    circ = 2 * math.pi * r
-    dash = circ * pct / 100
-    return (f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{C["panel"]}" stroke-width="30"/>'
-            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{C["accent"]}" stroke-width="30" '
-            f'stroke-dasharray="{dash:.1f} {circ:.1f}" stroke-dashoffset="0" transform="rotate(-90 {cx} {cy})" stroke-linecap="butt"/>'
-            f'<text x="{cx}" y="{cy+6}" text-anchor="middle" font-family="Playfair Lat, Playfair Cyr, PT Sans, serif" font-weight="800" '
-            f'font-size="52" fill="{C["ink"]}">{label}</text>'
-            f'<text x="{cx}" y="{cy+38}" text-anchor="middle" font-family="PT Sans" font-size="12" fill="{C["muted"]}">{sub}</text>')
+def cap(text, top=372, size=22, color=None, width=856):
+    return txt(text, 52, top, width, size=size, lh=1.4, color=color or C['ink'])
 
-def question_slide(num, kicker, qtext, sub=None, hint=None, foot=None):
-    body = box(52, 90, 856, 330, C['panelwarm'], radius=18, border=C['line'])
-    inner = (f'<div style="position:absolute;left:84px;top:122px;width:176px;height:176px;'
-             f'border-radius:50%;background:{C["ivory"]};border:2px solid {C["line"]};'
-             f'box-shadow:0 0 0 9px {C["panel"]};display:flex;align-items:center;justify-content:center">'
-             f'<span class="serif" style="font-weight:800;font-size:98px;color:{C["accent"]};line-height:1">?</span></div>')
-    inner += (f'<div style="position:absolute;left:298px;top:134px;width:4px;height:150px;'
-              f'background:{C["accent"]};border-radius:2px"></div>')
-    inner += txt(qtext, 322, 130, 540, size=24, lh=1.32, color=C['ink'], serif=True)
-    if sub:
-        inner += txt(sub, 322, 318, 540, size=15, lh=1.5, color=C['soft'])
-    if hint:
-        inner += txt(hint, 52, 445, 856, size=13, color=C['muted'])
-    return slide(num, inner, kicker=kicker, foot=foot or 'Вопрос залу')
 
-# ── библиотека линейных пиктограмм (24×24, stroke) ──
-ICONS = {
- 'person': '<circle cx="12" cy="7" r="3.2"/><path d="M5.5 20c0-3.6 2.9-6.3 6.5-6.3s6.5 2.7 6.5 6.3"/>',
- 'people': '<circle cx="9" cy="8" r="2.8"/><path d="M3.5 19c0-3 2.5-5.4 5.5-5.4s5.5 2.4 5.5 5.4"/><circle cx="16.5" cy="9" r="2.3"/><path d="M15.8 13.9c2.4.4 4.3 2.5 4.3 5.1"/>',
- 'plate': '<circle cx="12" cy="12" r="8.6"/><circle cx="12" cy="12" r="4.6"/>',
- 'fork': '<path d="M7 3v4.5M9.5 3v4.5M12 3v4.5M9.5 7.5V21M7 7.5h5"/>',
- 'knife': '<path d="M16.5 3v18"/><path d="M16.5 3c2.5 3.5 2.5 8.5.5 11h-.5"/>',
- 'bowl': '<path d="M4 11.5h16c0 4.4-3.6 8-8 8s-8-3.6-8-8Z"/><path d="M8.5 8c0-1.5 1-2 1-3.5M12.5 8c0-1.5 1-2 1-3.5"/>',
- 'cup': '<path d="M5 9h11v4.5a5.5 5.5 0 0 1-11 0Z"/><path d="M16 10.5h1.5a2.5 2.5 0 0 1 0 5H16"/>',
- 'grain': '<ellipse cx="8" cy="14" rx="2" ry="3"/><ellipse cx="14.5" cy="12" rx="2" ry="3"/><ellipse cx="11" cy="18.5" rx="2" ry="3"/>',
- 'chicken': '<circle cx="9" cy="10" r="4.5"/><path d="M12.2 13.2 17 18M17 18l2.6.6M17 18l.6 2.6"/>',
- 'fish': '<path d="M6.5 12c2.5-3.5 6-5 8.7-5 2.1 1.5 3.3 3.2 3.3 5s-1.2 3.5-3.3 5c-2.7 0-6.2-1.5-8.7-5Z"/><path d="M6.5 12 3.5 8.8v6.4Z"/>',
- 'moon': '<path d="M19 14.5A8 8 0 0 1 9.5 5 8 8 0 1 0 19 14.5Z"/>',
- 'sun': '<circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/>',
- 'doc': '<path d="M6 3h9l4 4v14H6Z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 15.5h7M9 8.5h3"/>',
- 'scales': '<path d="M12 4v16M8 20h8M12 6 5 8.5M12 6l7 2.5"/><path d="M2.5 13.5a2.5 2.5 0 0 0 5 0M16.5 13.5a2.5 2.5 0 0 0 5 0"/>',
- 'shield': '<path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6Z"/>',
- 'medcross': '<circle cx="12" cy="12" r="8.5"/><path d="M12 8v8M8 12h8"/>',
- 'pill': '<rect x="4" y="9" width="16" height="6.5" rx="3.25" transform="rotate(-35 12 12)"/><path d="M9.6 7.9l4.8 8.2"/>',
- 'coin': '<circle cx="12" cy="12" r="8.5"/><path d="M14.5 9.3c-.6-1-1.7-1.5-3-1.5-1.8 0-3 .9-3 2.2 0 3 6 1.6 6 4.4 0 1.4-1.3 2.4-3.2 2.4-1.5 0-2.7-.6-3.3-1.7M12 6.2v1.6M12 16.2v1.6"/>',
- 'cart': '<path d="M4 5h2l2.2 10.5h9.3L20 8H7"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="16.5" cy="19" r="1.6"/>',
- 'calc': '<rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 7h6M9 11h.01M12 11h.01M15 11h.01M9 14.5h.01M12 14.5h.01M15 14.5h.01M9 18h4"/>',
- 'book': '<path d="M12 6c-2-1.6-4.5-2-8-2v14c3.5 0 6 .4 8 2 2-1.6 4.5-2 8-2V4c-3.5 0-6 .4-8 2Z"/><path d="M12 6v14"/>',
- 'checklist': '<path d="M9 4h6v3H9Z"/><path d="M15 5h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2"/><path d="M9 12l1.8 1.8L15 10M9 16.5l1.8 1.8L15 14.5"/>',
- 'db': '<ellipse cx="12" cy="6" rx="7" ry="2.8"/><path d="M5 6v12c0 1.6 3.1 2.8 7 2.8s7-1.2 7-2.8V6"/><path d="M5 12c0 1.6 3.1 2.8 7 2.8s7-1.2 7-2.8"/>',
- 'warn': '<path d="M12 4 21 19H3Z"/><path d="M12 10v4M12 16.8v.01"/>',
- 'pin': '<path d="M12 21s-7-5.7-7-11a7 7 0 0 1 14 0c0 5.3-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/>',
- 'eye': '<path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6Z"/><circle cx="12" cy="12" r="2.6"/>',
- 'house': '<path d="M4.5 11 12 4l7.5 7"/><path d="M6.5 10v10h11V10"/>',
- 'pot': '<rect x="5" y="10" width="14" height="8" rx="2"/><path d="M3.5 12v4M20.5 12v4M9 10V8M15 10V8M9 8h6"/>',
- 'tray': '<path d="M4 15h16v3H4Z"/><path d="M6 15a6 6 0 0 1 12 0"/>',
- 'arrowrl': '<path d="M7 9h9l-2.5-2.5M17 15H8l2.5 2.5"/>',
- 'refresh': '<path d="M19 12a7 7 0 1 1-2-4.9"/><path d="M17.5 3v4.5H13"/>',
- 'gear': '<circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6 7.7 7.7M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>',
- 'heart': '<path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 3c0 5.4-7.5 10-7.5 10Z"/>',
- 'stamp': '<path d="M9 10h6l1 5H8Z"/><path d="M6 19h12v2H6Z"/><path d="M10 10V7a2 2 0 0 1 4 0v3"/>',
-}
+def region_body(place, fact, year):
+    """Одна история: крупное имя + одна строка факта. Без сетки, без иконок."""
+    return (
+        num(place, top=120, size=52) +
+        bar(198, 52, 72) +
+        txt(fact, 52, 230, 856, size=40, serif=True, color=C['accentdeep']) +
+        txt(year, 52, 400, 856, size=22, color=C['soft'])
+    )
 
-def ic(name, x, y, s=28, col=None, sw=1.8, op=1.0):
-    col = col or C['accent']
-    inner = ICONS[name]
-    o = f';opacity:{op}' if op != 1.0 else ''
-    return (f'<svg style="position:absolute;left:{x}px;top:{y}px{o}" width="{s}" height="{s}" '
-            f'viewBox="0 0 24 24" fill="none" stroke="{col}" stroke-width="{sw}" '
-            f'stroke-linecap="round" stroke-linejoin="round">{inner}</svg>')
 
-S = []
+MAIN, RESERVE = [], []  # RESERVE: (html, kind|None)
 
-SPARK = ('<svg width="24" height="24" viewBox="0 0 100 100"><path d="M50 0 L60 38 L85 15 L62 40 L100 50 '
-         'L62 60 L85 85 L60 62 L50 100 L40 62 L15 85 L38 60 L0 50 L38 40 L15 15 L40 38 Z" fill="' + C['accent'] + '"/></svg>')
 
-# ═══ 01 Обложка ═══
+def add_main(html):
+    MAIN.append(html)
+
+
+def add_res(html, kind=None):
+    RESERVE.append((html, kind))
+
+
+# ═══ ОСНОВНОЙ ПОКАЗ · 20 ═══
+
+# 01 Титул
 body = f'''
-<div style="position:absolute;left:0;top:0;width:100%;height:100%;background:{C['ivory']}"></div>
 <div style="position:absolute;left:0;bottom:0;width:100%;height:14px;background:{C['panel']}"></div>
-<div style="position:absolute;left:52px;top:44px;display:flex;align-items:center;gap:12px">
-  {SPARK}
-  <span class="kicker" style="color:{C['soft']}">ПРОСТРАНСТВО НОВЫХ ИДЕЙ 2.0 · САНКТ-ПЕТЕРБУРГ · 25–27 АВГУСТА 2026</span>
-</div>
-<div style="position:absolute;left:52px;top:104px;font-size:15px;letter-spacing:2px;color:{C['accent']};font-weight:bold">ДИСКУССИЯ · 26 АВГУСТА · 14.00–15.30 · ПЛОЩАДКА № 2</div>
-<h1 style="position:absolute;left:52px;top:146px;width:820px;font-size:46px;line-height:1.08">Организация питания:<br>опыт реализации проектов</h1>
-<div style="position:absolute;left:52px;top:280px;width:70px;height:4px;background:{C['accent']}"></div>
-<div class="serif" style="position:absolute;left:52px;top:302px;width:740px;font-style:italic;font-weight:600;font-size:17px;line-height:1.5;color:{C['body']}">
-Не просто накормить — как право выбора доходит до тарелки</div>
-<div style="position:absolute;left:52px;top:402px;width:860px;height:1.5px;background:{C['line']}"></div>
-<div style="position:absolute;left:52px;top:408px;font-size:10.5px;letter-spacing:2px;font-weight:bold;color:{C['muted']}">МОДЕРАТОРЫ ДИСКУССИИ</div>
-<div style="position:absolute;left:52px;top:428px;width:430px;font-size:13px;line-height:1.5">
-<b>Чистяков Е. В.</b> · директор СПб ГАСУСОН «ДСО „Серафимовский“» · 223-ФЗ</div>
-<div style="position:absolute;left:500px;top:428px;width:412px;font-size:13px;line-height:1.5;color:{C['body']}">
-<b>Нурбаев Т. А.</b> · директор СПб ГБСУСОН «ДСО „Тесовый берег“» · 44-ФЗ</div>
+<div class="kicker" style="position:absolute;left:52px;top:48px;color:{C['soft']}">Пространство новых идей 2.0 · 26 августа 2026 · площадка № 2</div>
+<h1 style="position:absolute;left:52px;top:130px;width:860px;font-size:48px;line-height:1.08">Организация питания:<br>опыт реализации проектов</h1>
+{bar(268, 52, 72)}
+<div class="serif" style="position:absolute;left:52px;top:292px;width:820px;font-style:italic;font-weight:600;font-size:24px;line-height:1.35;color:{C['body']}">Не просто накормить</div>
+<div style="position:absolute;left:52px;top:400px;width:430px;font-size:20px;line-height:1.45">
+<b>Чистяков Е. В.</b><br>ДСО «Серафимовский» · 223-ФЗ</div>
+<div style="position:absolute;left:500px;top:400px;width:412px;font-size:20px;line-height:1.45">
+<b>Нурбаев Т. А.</b><br>ДСО «Тесовый берег» · 44-ФЗ</div>
 '''
-S.append(slide(1, body, foot='Министерство труда и социальной защиты РФ · Комитет по социальной политике Санкт-Петербурга'))
+add_main(slide(1, body))
 
-# ═══ 02 Формат: три конфликта ═══
-body = h('Разговор о трёх конфликтах', 33)
-conf = [('scales', 'Выбор или безопасность?', 'вопросы 1 и 5 программы: субъектность жителя, недееспособность, медицинские рамки'),
-        ('doc', 'Вариативность или норматив и бюджет?', 'вопросы 2, 4 и 6: меню в нормах, «лечебность», качество против цены'),
-        ('people', 'Единое меню или индивидуальная поддержка?', 'неговорящие, постельные, особые пищевые биографии')]
-for i, (ico, t, d) in enumerate(conf):
-    y = 140 + i * 96
-    body += box(52, y, 856, 84, C['panel'])
-    body += txt(str(i + 1), 84, y + 22, 40, size=34, serif=True, color=C['accent'])
-    body += txt(t, 148, y + 14, 620, size=21, serif=True, color=C['ink'])
-    body += txt(d, 148, y + 50, 660, size=13.5, color=C['soft'])
-    body += ic(ico, 852, y + 26, 30, C['accent'], 1.6, 0.9)
-body += p('Шесть вопросов программы — внутри этих трёх конфликтов. Дословные формулировки — в памятке и на резервном слайде.', 435, size=14, bold=True)
-S.append(slide(2, body, kicker='Формат · 90 минут', foot='Три конфликта = шесть вопросов программы сессии (ред. с правками № 14–16)'))
-
-# ═══ 03 Разогрев ═══
-S.append(question_slide(3, 'Разогрев · 1 минута',
-    'Вспомните вчерашний ужин. Поднимите руку, если хоть один житель вашего дома мог выбрать второе блюдо.',
-    sub='Рука, которая не поднимается, — это и есть повестка наших 90 минут.',
-    hint='Честное «никто не мог» — нормальный старт, а не провал.'))
-
-# ═══ 04 2 190 (шесть приёмов в Серафимовском) ═══
-body = f'''
-<div class="serif" style="position:absolute;left:52px;top:132px;font-weight:900;font-size:185px;line-height:1;color:{C['ink']}">2 190</div>
-<div style="position:absolute;left:52px;top:348px;width:60px;height:5px;background:{C['accent']}"></div>
-'''
-meals = [('cup', 'завтрак'), ('cup', '2-й завтрак'), ('plate', 'обед'), ('cup', 'полдник'), ('bowl', 'ужин'), ('bowl', '2-й ужин')]
-for i, (ico, lab) in enumerate(meals):
-    x = 52 + i * 143
-    body += ic(ico, x, 378, 26, C['accent'], 1.8)
-    body += txt(lab, x + 32, 381, 108, size=12.5, color=C['ink'])
-body += txt('<b>× 365</b>', 52 + 6 * 143 - 6, 379, 60, size=13, color=C['muted'])
-body += p('приёмов пищи на жителя в год — в ДСО «Серафимовский» <b>шесть приёмов в день</b>. Каждый из них — решение, принятое за человека.', 430, size=16, lh=1.5, bold=False)
-S.append(slide(4, body, kicker='Контекст · наш дом', foot='ДСО «Серафимовский» — 6-разовое питание · www.pni9.ru · доклад, раздел 5'))
-
-# ═══ 05 74 % (donut) ═══
-body = h('Около 74 % жителей российских ПНИ недееспособны', 28)
-body += f'<svg style="position:absolute;left:96px;top:150px" width="220" height="220" viewBox="0 0 220 220">{donut(74, 110, 110, 86, "74 %", "недееспособны")}</svg>'
-body += txt('Порядка трёх из четырёх. Данные за 2024 год, проект «Если быть точным» — не Минтруд, не ТАСС. В вашем доме будет сорок или девяносто. Посчитайте свой.', 380, 162, 500, size=16, lh=1.45, color=C['ink'])
-body += txt('Сделки совершает опекун (ст. 29 ГК). Повседневное предпочтение обычно не сделка — а мнение недееспособного выяснять и учитывать обязательно. Кто не говорит — показ, наблюдение, биография.', 380, 268, 500, size=14.5, lh=1.5, color=C['soft'])
-body += txt('Источник: проект «Если быть точным» (публикация 09.04.2026), данные за 2024 год — агрегированные, не статотчётность Минтруда. Ст. 29 ГК · 48-ФЗ.', 380, 390, 500, size=12.5, lh=1.4, color=C['muted'])
-S.append(slide(5, body, kicker='Контекст · недееспособность', foot='Источник на слайде: «Если быть точным», 2024 · ст. 29 ГК, 48-ФЗ · доклад, разделы 15–16'))
-
-# ═══ 06 Ночной интервал ═══
-body = h('Пример: ужин 17:30 → завтрак 8:30 = 15 часов', 26)
-# лента суток 0–24: приёмы пищи точками, ночное окно терракотой
-SX, SW = 52, 856
-body += f'''<div style="position:absolute;left:{SX}px;top:132px;width:{SW}px;height:34px;background:{C['panel']};border-radius:8px;overflow:hidden">
-<div style="position:absolute;left:0;top:0;width:{SW*8.5/24:.0f}px;height:100%;background:{C['accent']}"></div>
-<div style="position:absolute;left:{SW*17.5/24:.0f}px;top:0;right:0;height:100%;background:{C['accent']}"></div></div>'''
-for hr in (0, 6, 12, 18, 24):
-    body += txt(f'{hr:02d}', SX - 14 + hr / 24 * SW, 170, 28, size=10.5, align='center', color=C['muted'])
-INK, IVORY = C['ink'], C['ivory']
-for hr, lab in ((8.5, 'завтрак'), (13, 'обед'), (17.5, 'ужин')):
-    body += f'<div style="position:absolute;left:{SX - 5 + hr/24*SW:.0f}px;top:141px;width:10px;height:10px;border-radius:50%;background:{INK};border:2px solid {IVORY}"></div>'
-    body += txt(lab, SX - 45 + hr / 24 * SW, 116, 90, size=11.5, align='center', color=C['ink'])
-body += ic('moon', SX + SW - 118, 176, 22, C['accentdeep'], 1.8)
-body += txt('<b style="color:' + C['accentdeep'] + '">15 ч без еды</b>', SX + SW - 88, 180, 100, size=12.5, color=C['ink'])
-body += hbar(['Швеция — ориентир', 'США — норма CMS', 'Пример расписания'],
-             [11, 14, 15], 52, 212, 696, row_h=38, gap=12, unit=' ч', maxv=24,
-             colors=[C['gray'], C['soft'], C['accent']])
-body += p('Арифметика возможного графика, не обследование РФ. Швеция и США — нормы разных систем регулирования: определения приёма и перекусов различаются, прямое сравнение ограничено. Замер фактического интервала своего дома — по каждому режиму и с учётом позднего перекуса — отвечает лучше любого слайда.', 362, size=12.5, lh=1.45, color=C['soft'])
-body += box(52, 408, 856, 56, C['accentsoft'])
-body += txt('Цель нашего дома — ≤13 часов. 14 ч — верх CMS (США), не целевой показатель российского чек-листа. Какая цифра у вас? Три дня, одна строка.', 74, 422, 820, size=14, bold=True, color=C['ink'])
-S.append(slide(6, body, kicker='Проблема · ночной интервал', foot='Швеция: Livsmedelsverket · США: 42 CFR 483.60 · РФ: пример, не «типовой дом» · цель дома ≤13 ч'))
-
-# ═══ 07 Боль: один обед — пять конфликтов ═══
-body = h('Один обед — пять конфликтов', 36)
+# 02 Боль
 chips = ['очередь', 'отказ', 'кофе', 'добавка', 'журналы']
+body = h('Один обед — пять конфликтов', 40, top=100)
 for i, lab in enumerate(chips):
     x = 52 + i * 176
-    body += box(x, 148, 164, 52, C['panel'])
-    body += txt(lab, x, 162, 164, size=16, serif=True, align='center', color=C['ink'])
-body += txt('Голодный житель и оплаченное сырьё в баке — одна система.', 52, 228, 856, size=22, serif=True, color=C['accentdeep'])
-body += p('Национальной доли отходов нет. Не «40 %», не «не едят котлеты». Цифра отходов — замер в 90-дневном пилоте, не лозунг.', 278, size=16, lh=1.5)
-body += box(52, 348, 856, 88, C['accentsoft'])
-body += txt('Дисфагия в изученных клинических группах — 21,9–69,5 %. На все российские ДСО это не переносится. Даже нижняя граница: проблема не редка.', 76, 368, 808, size=15, lh=1.45, color=C['ink'])
-S.append(slide(7, body, kicker='Боль · не витрина', foot='Раздел 5 «один обед» · M-dysph_prev · раздел 41: честность дороже лозунга'))
+    body += txt(lab, x, 196, 168, size=32, serif=True, color=C['ink'])
+body += bar(268, 52, 72)
+body += cap('Голодный житель и сырьё в баке — одна система.', 300, 24)
+body += txt('Национальной цифры отходов нет. Не «40 %». Не «котлеты».', 52, 400, 856, size=22, color=C['soft'])
+add_main(slide(2, body, kicker='Боль · не витрина'))
 
-# ═══ 08 Право: каркас как броня ═══
-body = h('Ответ проверке — папка, не формула', 32)
-docs = [('положение', 'о питании'), ('журнал', 'заказа'), ('журнал', 'замен'),
-        ('пищевые', 'карты'), ('письмо', 'учредителю')]
-for i, (a, b) in enumerate(docs):
-    x = 52 + i * 176
-    body += box(x, 148, 164, 150, C['panel'])
-    body += ic('shield' if i == 0 else 'doc', x + 64, 164, 28, C['accent'], 1.7)
-    body += txt(a, x + 10, 206, 144, size=16, serif=True, align='center', color=C['ink'])
-    body += txt(b, x + 10, 234, 144, size=16, serif=True, align='center', color=C['accentdeep'])
-body += p('Закон не требует шведский стол и не запрещает замену. Проверяющему этого мало — нужна папка, которая разрешает <b>у вас</b>.', 324, size=16, lh=1.45)
-body += box(52, 392, 856, 68, C['accentsoft'])
-body += txt('Гуманное отношение — ст. 5 ч. 2 Закона № 3185-1. ИППСУ — 442-ФЗ, исходя из потребности, не вместо локального комплекта.', 74, 412, 812, size=14.5, color=C['ink'])
-S.append(slide(8, body, kicker='Право · броня', foot='3185-1 ст. 5 ч. 2, 37, 43 · 442-ФЗ · ГК ст. 29 · комплект — доклад, разделы 31–32'))
+# 03 Дисфагия
+body = num('21,9–69,5 %', top=128, size=92)
+body += bar(248, 52, 72)
+body += cap('дисфагия — в изученных клинических группах', 280, 26)
+body += txt('На все российские ДСО это не переносится.', 52, 400, 856, size=22, color=C['soft'])
+add_main(slide(3, body, kicker='Боль · клиника'))
 
-# ═══ 09 Практики ═══
-body = h('Это уже делают. Шесть публичных историй, 2024–2026', 29)
-pts = [('Болотнинский ПНИ', 'Новосибирская обл.', '2024 · два вторых блюда на старте'),
-       ('Успенский ПНИ', 'Новосибирская обл.', '2024 · М2: выбор ежедневно, не шведская линия'),
-       ('Усть-Илимский ДСО', 'Иркутская обл.', '2024 · опрос предпочтений → выбор'),
-       ('Иркутская область', 'масштаб региона', '2025 · решение для всех учреждений'),
-       ('Серафимовский ДСО', 'Санкт-Петербург', '2025–2026 · заказное питание'),
-       ('Тесовый берег ДСО', 'Санкт-Петербург', 'фарфор, линия раздачи — со-модератор')]
-for i, (name, reg, what) in enumerate(pts):
+# 04 2 190
+body = num('2 190', top=118, size=185)
+body += bar(348, 52, 60)
+body += cap('шесть приёмов × 365. Решение за человека.', 372, 24)
+body += txt('завтрак · 2-й завтрак · обед · полдник · ужин · 2-й ужин', 52, 430, 856, size=22, color=C['soft'])
+add_main(slide(4, body, kicker='Контекст · наш дом'))
+
+# 05 74 %
+body = num('74 %', top=118, size=185)
+body += bar(348, 52, 60)
+body += cap('порядка трёх из четырёх. Типичный контингент.', 372, 24)
+body += txt('Не Минтруд. Не ТАСС. 2024, «Если быть точным». Ваш дом — свой процент.', 52, 430, 856, size=22, color=C['soft'])
+add_main(slide(5, body, kicker='Контекст · недееспособность'))
+
+# 06 Ночь
+body = num('15 ч', top=100, size=140)
+body += txt('пример расписания. Не «типовой дом РФ».', 52, 268, 856, size=22, color=C['soft'])
+body += num('≤13 ч', top=330, size=72, color=C['accentdeep'])
+body += txt('цель нашего дома. Какая цифра у вас?', 52, 430, 856, size=22, color=C['ink'])
+add_main(slide(6, body, kicker='Проблема · ночной интервал'))
+
+# 07 Папка
+docs = ['положение', 'журнал заказа', 'журнал замен', 'пищевые карты', 'учредитель']
+body = h('Ответ проверке — папка', 42, top=96)
+body += bar(168, 52, 72)
+for i, lab in enumerate(docs):
+    body += txt(lab, 52, 188 + i * 42, 856, size=32, serif=True, color=C['ink'])
+body += txt('Не формула «запрета нет». Гуманное отношение — ст. 5 ч. 2 3185-1.', 52, 430, 856, size=22, color=C['soft'])
+add_main(slide(7, body, kicker='Право · броня'))
+
+# 08 Герой: Иркутск (одна из шести историй на основном пути)
+body = region_body('Иркутская область', 'масштаб региона', '2025 · два первых · два вторых · гарниры')
+add_main(slide(8, body, kicker='Опыт · одна история'))
+
+# 09 Приказ 124
+body = num('№ 124', top=110, size=140)
+body += bar(278, 52, 72)
+body += cap('заказное питание — правила дома', 310, 32, color=C['accentdeep'])
+body += txt('10 марта 2026. Включая маломобильных.', 52, 420, 856, size=22, color=C['soft'])
+add_main(slide(9, body, kicker='Наш дом · приказ'))
+
+# 10 Два закона
+body = num('223', top=110, size=120, left=52)
+body += num('44', top=110, size=120, left=520)
+body += txt('Серафимовский', 52, 268, 400, size=24, serif=True, color=C['ink'])
+body += txt('Тесовый берег', 520, 268, 400, size=24, serif=True, color=C['ink'])
+body += bar(330, 52, 72)
+body += cap('Один учредитель. Разные контуры закупок.', 360, 26)
+body += txt('Не путать кухни и законы.', 52, 430, 856, size=22, color=C['soft'])
+add_main(slide(10, body, kicker='Со-модератор · два дома'))
+
+# 11 Сначала врач
+body = h('Сначала врач', 64, top=130)
+body += bar(230, 52, 72)
+body += cap('текстура · стол · отказ · инсулин — не смена', 270, 28)
+body += txt('Три отказа подряд — врач сегодня. Поперхнулся — немедленно.', 52, 420, 856, size=22, color=C['soft'])
+add_main(slide(11, body, kicker='Граница врача'))
+
+# 12 Campforts
+body = num('76,3 %', top=110, size=140)
+body += bar(278, 52, 72)
+body += cap('клозапин. Прибавка веса. Campforts, 2023.', 310, 26)
+body += txt('Оланзапин 36,9 % · рисперидон 23 %. Не «уберите котлету».', 52, 420, 856, size=22, color=C['soft'])
+add_main(slide(12, body, kicker='Граница врача · вес'))
+
+# 13 Пары
+body = h('Гречка или рис', 56, top=120)
+body += txt('Курица или индейка', 52, 210, 856, size=40, serif=True, color=C['accentdeep'])
+body += bar(280, 52, 72)
+body += cap('Норма ограничивает набор. Не выбор.', 320, 26)
+body += txt('Два варианта на завтрак и обед. Стандарт всегда на линии.', 52, 420, 856, size=22, color=C['soft'])
+add_main(slide(13, body, kicker='Кухня · пары'))
+
+# 14 Рамка × выбор
+body = h('Врач задаёт рамку', 48, top=130)
+body += txt('внутри — пары', 52, 210, 856, size=48, serif=True, color=C['accentdeep'])
+body += bar(290, 52, 72)
+body += cap('Диета сжимает множество. Не тарелку до одного блюда.', 330, 24)
+add_main(slide(14, body, kicker='Лечебное × вариативное'))
+
+# 15 Каналы воли — четыре слова, без абзацев
+words4 = ['показ', 'наблюдение', 'биография', 'те, кто знает']
+body = h('Кто не говорит', 40, top=96)
+body += bar(164, 52, 72)
+for i, w in enumerate(words4):
     col, row = i % 2, i // 2
-    x, y = 52 + col * 440, 140 + row * 90
-    body += box(x, y, 420, 80, C['panel'])
-    body += ic('pin', x + 16, y + 16, 26, C['accent'], 1.7)
-    body += txt(f'<b>{name}</b> <span style="color:{C["muted"]};font-size:11.5px">· {reg}</span><br>{what}', x + 54, y + 15, 350, size=12.5, lh=1.4, color=C['ink'])
-body += p('Успенский = М2, не буфет. Ни один кейс не начинался с «сначала дайте деньги и разрешение».', 435, size=14, bold=True)
-S.append(slide(9, body, kicker='Опыт · 2024–2026', foot='Внедрено публично ≠ доказанный эффект: панелей «до/после» почти нет · доклад, раздел 25.10'))
+    x, y = 52 + col * 430, 200 + row * 110
+    body += txt(f'{i + 1}', x, y, 50, size=36, serif=True, color=C['accent'])
+    body += txt(w, x + 56, y + 6, 360, size=36, serif=True, color=C['ink'])
+add_main(slide(15, body, kicker='Каналы воли'))
 
-# ═══ 10 Кейс: что сделали ═══
-body = h('Наш кейс: житель заказывает ужин накануне', 30)
-body += box(52, 150, 856, 170, C['panel'])
-body += ic('checklist', 852, 170, 34, C['accent'], 1.6, 0.9)
-body += txt('ЧТО СДЕЛАЛИ', 84, 176, 300, size=13, bold=True, ls=2, color=C['accentdeep'])
-body += txt('Несколько месяцев часть жителей выбирала рацион следующего дня по меню. Заказ — накануне, к вечеру известно, что готовить.', 84, 212, 792, size=16, lh=1.6, color=C['ink'])
-body += p('Жители приняли выбор с энтузиазмом. Директор — я: рассказываю и про цену, и про пределы.', 350, size=15, italic=False, bold=False)
-S.append(slide(10, body, kicker='Кейс · ДСО «Серафимовский»', foot='Комитет по социальной политике СПб, 22.07.2025'))
-
-# ═══ 11 Кейс: цена и предел ═══
-body = h('Честно о цене и о пределе', 31)
-body += box(52, 146, 424, 220, C['panel'])
-body += ic('coin', 424, 166, 32, C['accent'], 1.6, 0.9)
-body += txt('ЧТО ЭТО СТОИЛО', 76, 170, 300, size=13, bold=True, ls=2, color=C['accentdeep'])
-body += txt('Дополнительное оборудование и ставки пищеблока.<br><br>Старт <b>не был бесплатным</b> — говорю это прямо.', 76, 206, 372, size=14, lh=1.55, color=C['ink'])
-body += box(490, 146, 424, 220, C['panelwarm'], border=C['line'])
-body += ic('warn', 862, 166, 32, C['accentdeep'], 1.6, 0.9)
-body += txt('ГДЕ СЛОМАЛОСЬ', 514, 170, 300, size=13, bold=True, ls=2, color=C['soft'])
-body += txt('Полный переход труден: нормы сбалансированности, здоровье, тяга к популярному, но неполезному.<br><br>Ответ — пары эквивалентов, а не запрет.', 514, 206, 372, size=14, lh=1.55, color=C['ink'])
-body += p('Универсального «бесплатного старта» нет — это калибрует ожидания зала.', 400, size=14, bold=True)
-S.append(slide(11, body, kicker='Кейс · цена и предел', foot='Доклад, раздел 25.5 · публикация учредителя, 22.07.2025'))
-
-# ═══ 12 Кейс: правила внутреннего распорядка ═══
-body = f'''
-<div style="position:absolute;left:52px;top:120px;width:70px;height:4px;background:{C['accent']}"></div>
-<div class="serif" style="position:absolute;left:52px;top:150px;width:860px;font-weight:800;font-size:34px;line-height:1.3;color:{C['ink']}">Выбор закреплён<br>в правилах дома</div>
-'''
-body += txt('Приказ № 124 от 10.03.2026', 52, 288, 500, size=26, serif=True, color=C['accentdeep'])
-body += ic('stamp', 470, 286, 40, C['accent'], 1.6, 0.9)
-body += txt('«Об утверждении правил внутреннего распорядка жителей»', 52, 330, 520, size=15, lh=1.5, color=C['soft'])
-body += box(600, 150, 308, 210, C['panel'])
-body += txt('ЧТО ЭТО МЕНЯЕТ', 624, 172, 260, size=12, bold=True, ls=2, color=C['accentdeep'])
-body += txt('Заказное питание (вариативное меню) — норма внутреннего распорядка, а не «эксперимент по новости». Включая маломобильных: приём пищи в жилых комнатах, помощь в кормлении.', 624, 204, 262, size=12.5, lh=1.55, color=C['ink'])
-body += p('Опора перед проверяющими: «это правила дома, утверждённые приказом» — пережили смену настроения.', 400, size=14.5, bold=True)
-S.append(slide(12, body, kicker='Кейс · развитие', foot='Источник S035: приказ № 124 от 10.03.2026 — www.pni9.ru (правила внутреннего распорядка жителей)'))
-
-# ═══ 13 Мост к коллеге ═══
-body = h('Слово со-модератору', 32)
-body += box(52, 150, 856, 200, C['panel'])
-body += txt('ТИМУР НУРБАЕВ', 84, 178, 400, size=26, serif=True, color=C['ink'])
-body += txt('директор ДСО «Тесовый берег», 44-ФЗ<br>Санкт-Петербург · площадка № 2 — его дом', 84, 222, 420, size=14.5, lh=1.5, color=C['soft'])
-body += txt('ЧТО УЖЕ ВИДНО В «ТЕСОВОМ БЕРЕГЕ»', 524, 172, 380, size=12, bold=True, ls=2, color=C['accentdeep'])
-for i, (f, ico) in enumerate([('фарфор вместо железных мисок', 'plate'), ('вилки и ножи на столе', 'fork'), ('самообслуживание: поднос и линия раздачи', 'tray'), ('тренировочная кухня — доступ круглосуточно', 'house')]):
-    body += ic(ico, 524, 200 + i * 33, 22, C['accent'], 1.7)
-    body += txt(f, 556, 203 + i * 33, 340, size=13.5, color=C['ink'])
-body += p('Два модератора — один разговор: мой блок — вариативность и право выбора; дальше — общая дискуссия по шести вопросам.', 400, size=14.5, bold=True)
-S.append(slide(13, body, kicker='Со-модератор сессии', foot='Практика ДСО «Тесовый берег» — портал ОЮП СПб (upchspb.ru), 2026 · программа семинара, ред. 21.08.2026'))
-
-# ═══ 14 Путь директора ═══
-body = h('Пять шагов. Не весь дом сразу', 32)
-path = [('1', 'Замер', 'отходы 7 дней<br>фундамент М0'),
-        ('2', 'Приказ', 'внутренний акт,<br>не новость'),
-        ('3', 'Смена', 'инструктаж кухни<br>15 минут'),
-        ('4', '90 дней', 'одно отделение<br>модель М1'),
-        ('5', 'Масштаб', 'М2, если пошло.<br>Успенский ≠ буфет')]
-for i, (n, t, d) in enumerate(path):
+# 16 Путь директора
+steps = [('1', 'Замер'), ('2', 'Приказ'), ('3', 'Смена'), ('4', '90 дней'), ('5', 'Масштаб')]
+body = h('Пять шагов. Не весь дом', 36, top=96)
+for i, (n, t) in enumerate(steps):
     x = 52 + i * 176
     fill = C['accent'] if i == 3 else C['panel']
     ncol = '#FFF9F2' if i == 3 else C['accent']
     tcol = '#FFF9F2' if i == 3 else C['ink']
-    dcol = '#F5E7DE' if i == 3 else C['soft']
-    body += box(x, 148, 164, 210, fill)
-    body += txt(n, x + 12, 164, 140, size=28, serif=True, color=ncol)
-    body += txt(t, x + 12, 210, 140, size=20, serif=True, color=tcol)
-    body += txt(d, x + 12, 250, 140, size=13.5, lh=1.4, color=dcol)
-    if i < 4:
-        body += f'<div style="position:absolute;left:{x+166}px;top:248px;width:8px;height:2px;background:{C["gray"]}"></div>'
-body += p('Если отходы и жалобы не сдвинулись — возврат к цикличке. Риск локализован. М1–М2 подтверждены; М3–М5 — горизонт.', 390, size=15, bold=True)
-S.append(slide(14, body, kicker='Путь директора · М0–М2', foot='Доклад, разделы 8.2, 35–36 · Успенский = М2, не шведская линия'))
+    body += (f'<div style="position:absolute;left:{x}px;top:180px;width:164px;height:168px;'
+             f'background:{fill};border-radius:14px"></div>')
+    body += txt(n, x, 198, 164, size=36, serif=True, align='center', color=ncol)
+    body += txt(t, x, 260, 164, size=24, serif=True, align='center', color=tcol)
+body += txt('Не сдвинулось — возврат к цикличке. Успенский = М2, не буфет.', 52, 430, 856, size=22, color=C['soft'])
+add_main(slide(16, body, kicker='Путь директора'))
 
-# ═══ 15 Лестница участия ═══
-body = h('Вторая ось: сколько контроля вернулось жителю', 29)
-rows = [('0', 'Выбора нет — еда определена чужими решениями'),
-        ('1', 'Спросили — но тарелка та же'),
-        ('2', 'Его выбор дошёл до тарелки сегодня'),
-        ('3', 'Выбрал ещё время и место еды'),
-        ('4', 'Влияет на меню через совет жителей'),
-        ('5', 'Еда снова часть жизни: кухня, гости, биография')]
-for i, (n, t) in enumerate(rows):
-    y = 138 + i * 47
-    body += box(52, y, 60, 38, C['accent'] if i >= 2 else C['panel'], radius=8)
-    body += txt(n, 52, y + 6, 60, size=20, serif=True, align='center', color='#FFF9F2' if i >= 2 else C['ink'])
-    body += txt(t, 130, y + 9, 770, size=14.5, color=C['ink'])
-body += p('Проект поднимает сразу по двум осям — ступень следует выбирать по жителю, а не по бюджету.', 432, size=13.5, bold=True)
-S.append(slide(15, body, kicker='Как растёт участие', foot='Доклад, раздел 8.4'))
+# 17 Три ошибки
+errs = ['Имитация выбора', 'Выбор без гарантии', 'Повар назначил стол']
+body = h('Три ошибки дороже бездействия', 32, top=96)
+body += bar(160, 52, 72)
+for i, t in enumerate(errs):
+    body += txt(f'{i + 1}', 52, 196 + i * 70, 50, size=36, serif=True, color=C['accent'])
+    body += txt(t, 110, 204 + i * 70, 740, size=32, serif=True, color=C['ink'])
+add_main(slide(17, body, kicker='Красные линии'))
 
-# ═══ 16 В1 суть ═══
-body = h('Вопрос 1. Три слоя ответа', 31)
-layers = [('person', 'Право', 'Запрета на выбор нет; прямой обязанности — тоже. Опекун учитывает мнение (ст. 29 ГК). Это не милость кухни.'),
-          ('gear', 'Процедура', 'кто и как фиксирует выбор: журнал, совет, опекун — роль каждого'),
-          ('heart', 'Культура', '«за него решили» → «у него спросили» — самый медленный и главный слой')]
-for i, (ico, t, d) in enumerate(layers):
-    y = 148 + i * 88
-    body += box(52, y, 856, 78, C['panel'])
-    body += ic(ico, 258, y + 24, 30, C['accent'], 1.7)
-    body += txt(t, 84, y + 24, 200, size=19, serif=True, color=C['accentdeep'])
-    body += txt(d, 310, y + 16, 570, size=14.5, lh=1.5, color=C['ink'])
-body += p('Обновлённая программа: «руководитель», не «хозяин». Учреждение организует выбор, а не владеет волей.', 424, size=12.5, color=C['muted'])
-S.append(slide(16, body, kicker='Вопрос 1 · суть', foot='442-ФЗ ст. 9, 16 · 3185-1 ст. 37, 43 (статус) · ГК ст. 29 · доклад, разделы 15–16'))
+# 18 СанПиН
+body = num('01.09', top=110, size=140)
+body += bar(278, 52, 72)
+body += cap('новый СанПиН. Журналы августа не переписывать.', 310, 24)
+body += txt('Число вариантов блюда не ограничено ни в одной редакции.', 52, 420, 856, size=22, color=C['soft'])
+add_main(slide(18, body, kicker='Переход · через шесть дней'))
 
-# ═══ 17 В1 голосование ═══
-S.append(question_slide(17, 'Вопрос 1 · голосование',
-    'Кто в вашем доме сегодня отвечает на вопрос «что сегодня на обед»?',
-    sub='Поднимите руку: кухня? диетсестра? директор? совет жителей? сам житель?',
-    hint='В большинстве домов ответ — «раскладка три года назад». Это и есть первый кандидат на изменение.'))
+# 19 Пилот
+body = num('90 дней', top=110, size=110)
+body += bar(250, 52, 72)
+body += cap('Одно отделение. Не весь дом.', 290, 32, color=C['accentdeep'])
+body += txt('Не сдвинулись отходы и жалобы — возврат к цикличке. Это управление.', 52, 400, 856, size=22, color=C['ink'])
+add_main(slide(19, body, kicker='Пилот · риск локализован'))
 
-# ═══ 18 В2 пары ═══
-body = h('Норма ограничивает набор. Не выбор', 31)
-pairs = [('grain', 'Гречка ↔ рис ↔ пшено', C['ink']), ('chicken', 'Курица ↔ индейка', C['accentdeep']), ('fish', 'Треска ↔ хек', C['ink'])]
-for i, (ico, lab, col) in enumerate(pairs):
-    body += ic(ico, 52, 162 + i * 62, 34, C['accent'], 1.8)
-    body += txt(lab, 102, 168 + i * 62, 430, size=28, serif=True, color=col)
-body += txt('Таблицы замены в раскладках — существующий законный механизм: равноценная замена внутри группы продуктов.', 52, 356, 470, size=14, lh=1.55, color=C['soft'])
-body += box(560, 150, 348, 240, C['panel'])
-body += txt('ЧТО ЭТО СТОИТ', 584, 174, 300, size=12, bold=True, ls=2, color=C['accentdeep'])
-body += txt('Сырьё пары сопоставимо — копейки на порцию.<br><br>Реальная цена — труд и порядок: журнал заказа, вторая гастроёмкость, обучение смены.', 584, 206, 302, size=13.5, lh=1.55, color=C['ink'])
-body += p('Норма — рамка содержимого тарелки, а не число тарелок.', 420, size=15, bold=True)
-S.append(slide(18, body, kicker='Вопрос 2 · суть', foot='Приказ Минтруда 520н (рекомендательные нормы) · доклад, раздел 19'))
-
-# ═══ 19 В2 стоимость ═══
-body = h('Что действительно стоит второй вариант', 30)
-body += hbar(['Сырьё: пара «гречка/рис»', 'Сырьё: пара «курица/индейка»', 'Труд смены (мин/день)', 'Отходы несъеденного (замер)'],
-             [1, 4, 3, 30], 52, 148, 696, row_h=38, gap=12, unit='', maxv=30,
-             colors=[C['gray'], C['gray'], C['soft'], C['accent']])
-body += p('Настоящая статья потерь — то, что лежит в тарелках несъеденным.', 366, size=15, lh=1.5)
-body += box(52, 408, 856, 52, C['accentsoft'])
-body += txt('Калькулятор (приложение 42) считает вашу пару за вечер: цена кг и масса порции. Никаких «общих цифр» — только ваш замер.', 74, 422, 820, size=13, bold=True, color=C['ink'])
-S.append(slide(19, body, kicker='Вопрос 2 · экономика', foot='Иллюстративные доли; методика — доклад, раздел 29 и приложение 42'))
-
-# ═══ 20 В2 вопрос ═══
-S.append(question_slide(20, 'Вопрос 2 · к залу',
-    'Что дороже: второй вариант на линии — или тарелки, которые уносят несъеденными?',
-    sub='Замер отходов за 7 дней отвечает на этот вопрос в рублях. У кого есть такой замер?',
-    hint='«Замер до и после» — единственная честная экономика вариативности.'))
-
-# ═══ 21 Врач раньше кухни ═══
-body = h('Сначала врач. Потом — список кухни', 30)
-body += box(52, 140, 856, 100, C['accentsoft'])
-body += txt('Текстуры, «диабетический стол», отказ от еды, инсулин, вес — не решение смены. Таблица на посту только с подписью врача.', 76, 168, 808, size=17, lh=1.45, color=C['ink'])
-body += box(52, 258, 424, 150, C['panel'])
-body += txt('ВЕС — КЛИНИКА', 76, 276, 360, size=12, bold=True, ls=2, color=C['accentdeep'])
-body += txt('Campforts, 2023: прибавка ≥7 % за ~38 нед. Клозапин 76,3 % · оланзапин 36,9 % · рисперидон 23,0 %. Не «уберите котлету».', 76, 308, 372, size=14, lh=1.45, color=C['ink'])
-body += box(490, 258, 418, 150, C['panel'])
-body += txt('ЧТО ГОВОРЯТ НОРМЫ', 514, 276, 360, size=12, bold=True, ls=2, color=C['accentdeep'])
-body += txt('Приказы 330н, 395н — медорганизациям. Для ДСО: обычное + диетическое поимённо. «Лечебное всем» — имитация.', 514, 308, 370, size=14, lh=1.45, color=C['ink'])
-S.append(slide(21, body, kicker='Граница врача', foot='Campforts et al., BJPsych Open, 2023, DOI bjo.2022.619 · 330н, 395н · доклад, разделы 4.0, 13.1, 17.5'))
-
-# ═══ 22 В3 голосование ═══
-body = h('Голосование: должно ли питание быть «лечебным»?', 28)
-body += box(52, 130, 424, 260, C['panel'])
-body += f'<div style="position:absolute;left:52px;top:130px;width:424px;height:5px;background:{C["soft"]};border-radius:4px 4px 0 0"></div>'
-body += txt('А', 84, 160, 60, size=46, serif=True, color=C['ink'])
-body += ic('doc', 140, 168, 30, C['soft'], 1.7)
-body += txt('Нет. Обычное питание, диетическое — поимённо по показаниям, назначает врач.', 84, 224, 360, size=15, lh=1.55, color=C['ink'])
-body += box(490, 130, 424, 260, C['accentsoft'])
-body += f'<div style="position:absolute;left:490px;top:130px;width:424px;height:5px;background:{C["accent"]};border-radius:4px 4px 0 0"></div>'
-body += txt('Б', 522, 160, 60, size=46, serif=True, color=C['accentdeep'])
-body += ic('pill', 578, 168, 30, C['accentdeep'], 1.7)
-body += txt('Да. Стол дома должен быть лечебным по умолчанию — так безопаснее.', 522, 224, 360, size=15, lh=1.55, color=C['ink'])
-body += p('Руки за А. Руки за Б. Возражения — микрофон: самое интересное начнётся здесь.', 422, size=14.5, bold=True)
-S.append(slide(22, body, kicker='Вопрос 3 · голосование', foot='Аргументы обеих позиций — доклад, раздел 17.12, вопрос 3'))
-
-# ═══ 23 В4 venn ═══
-body = h('«Лечебное» × «вариативное» — не враги', 30)
-svg = f'''<svg style="position:absolute;left:150px;top:140px" width="660" height="230" viewBox="0 0 660 230">
-<circle cx="240" cy="115" r="105" fill="{C['panel']}" opacity="0.95"/>
-<circle cx="420" cy="115" r="105" fill="{C['accentsoft']}" opacity="0.95"/>
-<text x="150" y="102" font-family="PT Sans" font-size="16" font-weight="bold" fill="{C['ink']}">ЛЕЧЕБНАЯ РАМКА</text>
-<text x="150" y="130" font-family="PT Sans" font-size="13" fill="{C['body']}">назначил врач:</text>
-<text x="150" y="150" font-family="PT Sans" font-size="13" fill="{C['body']}">стол, текстура, соль</text>
-<text x="308" y="98" font-family="Playfair Lat, Playfair Cyr" font-size="15" font-weight="700" fill="{C['ink']}">ЗОНА</text>
-<text x="286" y="122" font-family="Playfair Lat, Playfair Cyr" font-size="15" font-weight="700" fill="{C['ink']}">ПРАКТИКИ</text>
-<text x="398" y="102" font-family="PT Sans" font-size="16" font-weight="bold" fill="{C['accentdeep']}">ВАРИАТИВНОСТЬ</text>
-<text x="368" y="130" font-family="PT Sans" font-size="13" fill="{C['body']}">выбор внутри рамки:</text>
-<text x="368" y="150" font-family="PT Sans" font-size="13" fill="{C['body']}">пары, вкус, привычное</text>
-</svg>'''
-body += svg
-body += p('Рецепт: врач задаёт стол — внутри него всегда есть пары. Так работает дом в Московской области (распоряжение 19РВ-32).', 392, size=14.5, lh=1.55)
-S.append(slide(23, body, kicker='Вопрос 4 · конструкция', foot='Распоряжение Минсоцразвития МО 19РВ-32 · доклад, разделы 17.5, 19'))
-
-# ═══ 24 В4 алгоритм ═══
-body = h('Четыре шага, чтобы совместить', 31)
-steps = [('doc', '1', 'Врач назначает рамку', 'стол/текстура/ограничения — поимённо, с пересмотром'),
-         ('arrowrl', '2', 'Внутри рамки — пары', 'диетический стол тоже имеет эквиваленты'),
-         ('checklist', '3', 'Журнал замен', 'выбор фиксируется — защита жителя и врача'),
-         ('refresh', '4', 'Пересмотр', 'статистика выбора → корректировка цикла раз в квартал')]
-for i, (ico, n, t, d) in enumerate(steps):
-    x = 52 + i * 220
-    body += box(x, 150, 200, 222, C['panel'])
-    body += ic(ico, x + 156, 168, 28, C['accent'], 1.6, 0.9)
-    body += txt(n, x + 20, 172, 40, size=34, serif=True, color=C['accent'])
-    body += txt(f'<b>{t}</b><br><br>{d}', x + 20, 224, 164, size=12.5, lh=1.5, color=C['ink'])
-body += p('Диета — ограничение множества, а не сжатие до одного блюда.', 415, size=15, bold=True)
-S.append(slide(24, body, kicker='Вопрос 4 · алгоритм', foot='Доклад, разделы 19, 21'))
-
-# ═══ 25 В5 каналы воли ═══
-body = h('Выбор не требует дееспособности. Каналы воли', 28)
-body += box(52, 150, 856, 180, C['panel'])
-ch = [('eye', 'Показ двух порций', 'выбор глазами и рукой'), ('plate', 'Наблюдение за съеденным', 'что осталось — то и сигнал'),
-      ('book', 'Пищевая биография', 'привычки всей жизни'), ('people', '«Те, кто знает»', 'персонал, родные, опекун')]
-for i, (ico, t, d) in enumerate(ch):
-    x = 84 + i * 208
-    body += txt(f'<span class="serif" style="font-weight:800;font-size:24px;color:{C["accent"]}">{i+1}</span>', x, 172, 40)
-    body += ic(ico, x + 152, 172, 26, C['accent'], 1.6, 0.9)
-    body += txt(f'<b>{t}</b>', x, 212, 186, size=12.5, lh=1.4, color=C['ink'])
-    body += txt(f'<span style="color:{C["soft"]}">{d}</span>', x, 254, 186, size=11.5, lh=1.4)
-body += p('Замещающее решение («мы знаем лучше») Комитет по правам инвалидов признаёт несовместимым со ст. 12 КПИ. Граница — медицина: «два безопасных» вместо «одно назначенное». Текстуру назначает врач; IDDSI — язык описания консистенции, не само назначение.', 366, size=13.5, lh=1.45, bold=False)
-S.append(slide(25, body, kicker='Вопрос 5 · суть', foot='КПИ, Замечание № 1 к ст. 12 · ст. 29 ГК · доклад, разделы 15–16'))
-
-# ═══ 26 В5 slope IDDSI ═══
-body = h('Обучение работает лучше оборудования', 29)
-svg = f'''<svg style="position:absolute;left:120px;top:150px" width="700" height="250" viewBox="0 0 700 250">
-<line x1="200" y1="30" x2="200" y2="210" stroke="{C['line']}" stroke-width="2"/>
-<line x1="520" y1="30" x2="520" y2="210" stroke="{C['line']}" stroke-width="2"/>
-<text x="200" y="240" text-anchor="middle" font-family="PT Sans" font-size="13.5" fill="{C['muted']}">ДО внедрения</text>
-<text x="520" y="240" text-anchor="middle" font-family="PT Sans" font-size="13.5" fill="{C['muted']}">ПОСЛЕ</text>
-<line x1="200" y1="136" x2="520" y2="49" stroke="{C['accent']}" stroke-width="3.5"/>
-<circle cx="200" cy="136" r="7" fill="{C['gray']}"/>
-<circle cx="520" cy="49" r="7" fill="{C['accent']}"/>
-<line x1="200" y1="161" x2="520" y2="30" stroke="{C['soft']}" stroke-width="2.5"/>
-<circle cx="200" cy="161" r="6" fill="{C['gray']}"/>
-<circle cx="520" cy="30" r="6" fill="{C['ink']}"/>
-<text x="182" y="126" text-anchor="end" font-family="Playfair Lat, Playfair Cyr" font-weight="700" font-size="18" fill="{C['soft']}">44 %</text>
-<text x="182" y="184" text-anchor="end" font-family="Playfair Lat, Playfair Cyr" font-weight="700" font-size="16" fill="{C['soft']}">31 %</text>
-<text x="538" y="92" font-family="Playfair Lat, Playfair Cyr" font-weight="700" font-size="18" fill="{C['accentdeep']}">90 %</text>
-<text x="538" y="24" font-family="Playfair Lat, Playfair Cyr" font-weight="700" font-size="16" fill="{C['ink']}">100 %</text>
-<line x1="556" y1="130" x2="580" y2="130" stroke="{C['accent']}" stroke-width="3.5"/>
-<text x="588" y="135" font-family="PT Sans" font-size="12.5" fill="{C['body']}">соответствие текстур</text>
-<line x1="556" y1="154" x2="580" y2="154" stroke="{C['soft']}" stroke-width="2.5"/>
-<text x="588" y="159" font-family="PT Sans" font-size="12.5" fill="{C['body']}">загущённые напитки</text>
-</svg>'''
-body += svg
-body += p('Пять учреждений, шкала IDDSI. Главный барьер — не техника, а осведомлённость смены. Текстуру назначает врач; IDDSI описывает и проверяет консистенцию.', 400, size=13.5, bold=True)
-S.append(slide(26, body, kicker='Вопрос 5 · безопасность', foot='IDDSI Framework, уровни 0–7 · исследование внедрения (5 учреждений) · доклад, разделы 10.4, 10.9'))
-
-# ═══ 27 В5 вопрос ═══
-S.append(question_slide(27, 'Вопрос 5 · к залу',
-    'Вспомните жителя, который не говорит. Как он вчера дал понять, что не хочет это блюдо?',
-    sub='Отвернулся? ест только хлеб? доел компот и оставил котлету? — это и была его «заявка».',
-    hint='Кто назовёт один такой сигнал из своего дома? Микрофон.'))
-
-# ═══ 28 В6 3-6× ═══
-body = h('Нормируя цену порции, управляем меньшей частью денег', 27)
-body += hbar(['Сырьё — то, что нормируем', 'Труд кухни и раздачи', 'Энергия, логистика, оборудование'],
-             [1, 3, 5], 52, 170, 696, unit='×', maxv=5,
-             colors=[C['accent'], C['soft'], C['ink']])
-body += p('Полная стоимость обеда в 3–6 раз выше сырьевой строки (канадский аудит стационаров).', 348, size=14.5, color=C['soft'])
-body += p('Экономить надо на потерях — отходы, срывы поставок, картельные наценки, — а не на белке в тарелке.', 380, size=15.5, bold=True)
-S.append(slide(28, body, kicker='Вопрос 6 · экономика качества', foot='Аудит стоимости стационарного питания (Канада) · доклад, разделы 29, 42'))
-
-# ═══ 29 В6 закупки ═══
-body = h('Где действительно теряются деньги', 30)
-body += box(52, 146, 424, 230, C['accentsoft'])
-body += ic('cart', 424, 166, 32, C['accentdeep'], 1.6, 0.9)
-body += txt('543 ТОРГА · 4,7 МЛРД ₽', 76, 168, 380, size=22, serif=True, color=C['accentdeep'])
-body += txt('Картель на поставках социально значимых продуктов (ФАС, 2024).', 76, 214, 372, size=13.5, lh=1.5, color=C['ink'])
-body += txt('Сигналы: два-три «своих» поставщика, минус доли процента от начальной цены, «проигравший» побеждает в соседнем лоте.', 76, 288, 372, size=12.5, lh=1.5, color=C['soft'])
-body += box(490, 146, 424, 230, C['panel'])
-body += ic('doc', 862, 166, 32, C['accent'], 1.6, 0.9)
-body += txt('АУТСОРСИНГ: 8 СТРОК', 514, 168, 380, size=22, serif=True, color=C['ink'])
-body += txt('Если кормит подрядчик — вариативность живёт в контракте: группы позиций, гарантия двух вариантов, замены, текстуры, пробы, отчётность.', 514, 214, 372, size=13.5, lh=1.55, color=C['ink'])
-body += p('Пробы, бракераж и ответственность остаются у учреждения — даже когда плита у подрядчика.', 402, size=13.5, bold=True)
-S.append(slide(29, body, kicker='Вопрос 6 · закупки и подряд', foot='ФАС России, 2024 · СанПиН п. 56 (подп. 4, 12, 14) · доклад, раздел 42'))
-
-# ═══ 30 В6 вопрос ═══
-S.append(question_slide(30, 'Вопрос 6 · к залу',
-    'Сколько стоит один обед в вашем доме — в рублях? Кто знает точную цифру?',
-    sub='Не «на тысячу проживающих в год». Один обед. Один житель. Сегодня.',
-    hint='Знание цены — начало управления ею. Цифра есть у каждого на калькуляторе приложения 42.'))
-
-# ═══ 31 Три ошибки ═══
-body = h('Три ошибки дороже бездействия', 31)
-errs = [('Имитация выбора', '«Выбирайте!» — при одном блюде на линии. Хуже честного мономеню: обманывает журнал и проверяющего.'),
-        ('Выбор без гарантии', 'Житель выбрал Б — Б закончилось. Нет стандартного варианта — нет системы, есть лотерея.'),
-        ('«Лечебность» без врача', 'Кухня назначает столы сама. Диагноз от повара — риск здоровью и дело по ст. 6.6 КоАП.')]
-for i, (t, d) in enumerate(errs):
-    x = 52 + i * 294
-    body += box(x, 148, 274, 232, C['panelwarm'], border=C['line'])
-    body += ic('warn', x + 226, 166, 30, C['accentdeep'], 1.6, 0.9)
-    body += txt(str(i + 1), x + 24, 168, 40, size=30, serif=True, color=C['accentdeep'])
-    body += txt(f'<b>{t}</b><br><br>{d}', x + 24, 216, 228, size=12.5, lh=1.55, color=C['ink'])
-S.append(slide(31, body, kicker='Красные линии', foot='Доклад, разделы 21, 12, 17 · практика проверок 2021–2025'))
-
-# ═══ 32 Сентябрь: таймлайн ═══
-body = h('С 01.09.2026 — новый СанПиН. Без паники', 28)
-body += f'''<div style="position:absolute;left:52px;top:210px;width:856px;height:3px;background:{C['line']};border-radius:2px"></div>'''
-miles = [('до 31.08', 'журналы законны<br>как заполнены', C['soft']), ('01.09', 'вступает<br>СанПиН 4282-26', C['accent']), ('сентябрь', 'перепривязать<br>документы', C['ink'])]
-for i, (d, t, col) in enumerate(miles):
-    x = 132 + i * 300
-    body += f'<div style="position:absolute;left:{x-9}px;top:202px;width:18px;height:18px;border-radius:50%;background:{col}"></div>'
-    body += txt(d, x - 125, 152, 250, size=19, serif=True, align='center', color=C['ink'])
-    body += txt(t, x - 125, 246, 250, size=13.5, align='center', lh=1.5, color=C['body'])
-body += box(52, 330, 856, 64, C['panel'])
-body += txt('Перепривязать: положение о питании, формы журналов (приложения 4–5 нового СанПиН), ППК и ХАССП. Переходного периода нет.', 76, 348, 810, size=13.5, bold=True, color=C['ink'])
-body += p('Число вариантов блюда не ограничено ни в одной редакции правил.', 424, size=14, bold=True)
-S.append(slide(32, body, kicker='Переход · через шесть дней после сессии', foot='Постановление от 02.06.2026 № 18 · чек-лист перехода — приложение 39 доклада'))
-
-# ═══ 33 Пилот 90 дней ═══
-body = h('90 дней. Одно отделение. Не весь дом', 30)
-steps = [('checklist', 'Месяц 1', 'Замер: отходы, ночь, кто выбирал. Ноль рублей.'),
-         ('doc', 'Месяц 2', 'Положение, пары с врачом, журналы, письмо учредителю.'),
-         ('plate', 'Месяц 3', 'Две позиции, стандарт всегда. Выбрал — получил.')]
-for i, (ico, t, d) in enumerate(steps):
-    x = 52 + i * 294
-    body += box(x, 140, 274, 196, C['panel'])
-    body += ic(ico, x + 224, 156, 28, C['accent'], 1.6, 0.9)
-    body += txt(t, x + 24, 164, 190, size=20, serif=True, color=C['accentdeep'])
-    body += txt(d, x + 24, 214, 228, size=14.5, lh=1.5, color=C['ink'])
-body += box(52, 356, 856, 84, C['accentsoft'])
-body += txt('Не сдвинулись отходы и жалобы — возврат к цикличке. Это управление, не позор. Рост отказов / санитарный сбой / врач — стоп сразу.', 74, 378, 812, size=15.5, color=C['ink'])
-S.append(slide(33, body, kicker='Пилот · риск локализован', foot='Доклад, раздел 35 · одно отделение, модель М1 · чек-лист понедельника — в пакете'))
-
-# ═══ 34 Смежные площадки ═══
-body = h('Смежные площадки: наши пересечения', 30)
-cross = [('«Право на выбор – есть или нет?»', 'панель 25.08, 14.30 · в 16.15 — Федермессер: достоинство, «не причинять добро»'),
-         ('«Право быть недееспособным»', '25.08 · наш вопрос 5: интересы выявляются, а не назначаются'),
-         ('«Нужны ли врачи в доме?»', 'дебаты 26.08 · наш вопрос 3: «лечебность» без врача — не забота, а риск'),
-         ('«Сонастройка с опекой – это возможно»', '26.08 · наш вопрос 1: опекун — участник выявления воли, не цензор меню'),
-         ('«Как наладить жизнь в доме?»', 'мозговой штурм 26.08, 16.00 · сразу после нас: ночной интервал, не новое блюдо'),
-         ('«Право на достойный уход»', '26.08, параллельно нам · комфортное кормление в конце жизни — тоже право выбора')]
-for i, (t, d) in enumerate(cross):
-    col, row = i % 2, i // 2
-    x, y = 52 + col * 440, 145 + row * 88
-    body += box(x, y, 420, 78, C['panel'])
-    body += txt(f'<b>{t}</b><br><span style="color:{C["soft"]}">{d}</span>', x + 20, y + 13, 386, size=12, lh=1.4, color=C['ink'])
-S.append(slide(34, body, kicker='Программа 25–27.08 · связи', foot='Формулировки площадок — по программе семинара · связи — раздел 17.12 доклада'))
-
-# ═══ 35 Материалы ═══
-body = h('Что вы уносите с собой', 31)
-items = [('book', 'Доклад «Не просто накормить»', '~332 стр. официальной вёрстки: право, клиника, экономика, 45 приложений-шаблонов'),
-         ('calc', 'Калькулятор стоимости', 'Excel: ваша пара блюд и ваши отходы — за один вечер'),
-         ('checklist', 'Чек-листы и журналы', 'экспресс-аудит, журнал замен, пищевой паспорт, План Б'),
-         ('db', 'Реестр источников', '126 записей: право 34 · клиника 48 · практики 44; в тексте — 115 цитирований')]
-for i, (ico, t, d) in enumerate(items):
-    x = 52 + i * 220
-    body += box(x, 150, 200, 222, C['panel'])
-    body += ic(ico, x + 160, 168, 28, C['accent'], 1.6, 0.9)
-    body += txt(f'<b>{t}</b><br><br>{d}', x + 18, 176, 160, size=12.5, lh=1.55, color=C['ink'])
-body += txt('Всё открыто — сканируйте QR:', 52, 408, 300, size=14, bold=True, color=C['ink'])
-body += f'<img src="qr.png" style="position:absolute;left:388px;top:390px;width:92px;height:92px;border-radius:10px">'
-body += txt('github.com/qlolp/<br>seminar-variable-food-2026', 502, 412, 400, size=14.5, color=C['body'])
-S.append(slide(35, body, kicker='Материалы', foot='github.com/qlolp/seminar-variable-food-2026'))
-
-# ═══ 36 Открытый микрофон ═══
-S.append(question_slide(36, 'Открытый микрофон · 20 минут',
-    'Что в ваших домах ломается первым — когда речь заходит о выборе блюд?',
-    sub='Деньги? руки? страх проверки? «у нас особые жители»? начать не с чего?',
-    hint='Каждое «ломается» из зала — готовый пункт повестки для ваших учредителей.'))
-
-# ═══ 37 Финал ═══
+# 20 Измеряйте
 body = f'''
 <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:{C['dark']}"></div>
 <div style="position:absolute;left:52px;top:74px;width:120px;height:5px;background:{C['accent']}"></div>
-<div style="position:absolute;left:52px;top:116px;width:830px;font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-weight:800;font-size:39px;line-height:1.28;color:#FAF9F5">
-Тарелка — самое частое решение,<br>которое дом принимает за жителя.<br><span style="color:{C['accent']}">Вернуть его жителю — самое простое<br>из всех прав, что у нас есть.</span></div>
-<div style="position:absolute;left:52px;top:352px;width:820px;font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-style:italic;font-weight:600;font-size:22px;line-height:1.4;color:#FAF9F5">Последнее слово — не «внедряйте».<br><span style="color:{C['accent']}">Измеряйте.</span></div>
-<div style="position:absolute;left:52px;bottom:52px;font-size:13px;color:#87867F">Дискуссия «Организация питания: опыт реализации проектов» · 26.08.2026 · Чистяков · Нурбаев</div>
-''' + ic('fork', 828, 60, 44, '#87867F', 1.4, 0.9) + ic('plate', 778, 56, 52, '#FAF9F5', 1.4, 0.85) + ic('knife', 736, 60, 44, '#87867F', 1.4, 0.9)
-S.append(slide(37, body, foot=''))
+<div style="position:absolute;left:52px;top:130px;width:850px;font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-weight:800;font-size:42px;line-height:1.2;color:#FAF9F5">
+Тарелка — самое частое решение,<br>которое дом принимает за жителя.</div>
+<div style="position:absolute;left:52px;top:330px;width:820px;font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-style:italic;font-weight:600;font-size:36px;line-height:1.3;color:{C['accent']}">Измеряйте.</div>
+'''
+add_main(slide(20, body))
 
-# ═══ 38 Спасибо ═══
-body = h('Спасибо. Продолжаем разговор', 34)
-body += p('Чистяков Е. В. · ДСО «Серафимовский», 223-ФЗ<br>Нурбаев Т. А. · ДСО «Тесовый берег», 44-ФЗ', 150, size=15, lh=1.7)
-body += box(52, 240, 856, 120, C['panel'])
-body += txt('Материалы сессии — доклад, калькулятор, чек-листы, реестр источников:<br><b>github.com/qlolp/seminar-variable-food-2026</b>', 80, 268, 620, size=15, lh=1.7, color=C['ink'])
-body += f'<img src="qr.png" style="position:absolute;left:782px;top:262px;width:76px;height:76px;border-radius:8px">'
-body += p('Вопросы после сессии — лично и по каналам связи в раздатке.', 400, size=13, color=C['muted'])
-S.append(slide(38, body, kicker='Контакты', foot='«Пространство новых идей 2.0» · 25–27.08.2026 · Санкт-Петербург'))
 
-# ═══ 39 Формула результата (в основной показ) ═══
-body = h('Что должно измениться', 32)
-body += box(52, 150, 856, 190, C['panelwarm'], border=C['line'])
-body += txt('У каждого жителя есть безопасный способ выразить предпочтение, получить доступный вариант и быть услышанным при отказе от еды.', 84, 178, 792, size=19, lh=1.55, serif=True, color=C['ink'])
-body += txt('Учреждение может документально показать весь путь этого решения: профиль → заказ → тарелка → съедено → замена.', 84, 268, 792, size=15, lh=1.5, color=C['soft'])
-body += p('Это не лозунг, а проверяемая формула: каждая часть — число в панели пяти показателей.', 380, size=14.5, bold=True)
-S.append(slide(39, body, kicker='Формула результата', foot='Доклад, разделы 22 (панель чисел), 31 (документы)'))
+# ═══ РЕЗЕРВ ═══
+# Сначала — пять остальных публичных историй, одна на слайд (после легенды).
 
-# ═══ 40 Шесть вопросов программы (резерв-документ) ═══
-body = h('Шесть вопросов программы — дословно', 28)
-qs6 = ['1. Кто выбирает форму питания — проживающий социального дома или его руководитель?',
-       '2. Как формировать меню в условиях жестких нормативно-правовых и финансовых ограничений?',
-       '3. Должно ли быть питание в социальных домах «лечебным»?',
-       '4. Как совместить понятия «лечебное питание» и «вариативное меню», не ограничивая право проживающего на выбор?',
-       '5. Как соблюсти баланс между выбором недееспособного проживающего «что ему есть» и имеющимися у него медицинскими рекомендациями?',
-       '6. Как совместить качество продуктов питания и нормирование цен на них при планировании бюджета в условиях рыночной экономики?']
-for i, q in enumerate(qs6):
-    body += txt(q, 52, 136 + i * 56, 856, size=13, lh=1.4, color=C['ink'])
-S.append(slide(40, body, kicker='Резерв · документ', foot='Программа семинара (ред. с правками № 14–16) — дословно'))
+add_res(slide(0, region_body('Успенский ПНИ', 'М2 · не шведская линия',
+                             'Новосибирская обл. · два вторых ежедневно · буфет — ДДСОЛ')),
+        'kitchen')
+add_res(slide(0, region_body('Болотнинский ПНИ', 'несколько раз в неделю',
+                             'Новосибирская обл. · 2024 · завтрак и обед')),
+        'kitchen')
+add_res(slide(0, region_body('Усть-Илимский ДСО', 'опрос → выбор',
+                             'Иркутская обл. · 2024 · старт со столовой')),
+        'kitchen')
+add_res(slide(0, region_body('Серафимовский ДСО', 'заказ накануне',
+                             'Санкт-Петербург · часть жителей · новость Комитета')),
+        'kitchen')
+add_res(slide(0, region_body('Тесовый берег ДСО', 'фарфор · линия раздачи',
+                             'Санкт-Петербург · 44-ФЗ · дом со-модератора')),
+        'kitchen')
 
-# ═══ 41 М0–М5 (резерв: модели раздачи) ═══
-body = h('Лестница моделей М0–М5. Не путать с путём директора', 26)
-steps = [('0', 'мономеню'), ('1', 'выбор из двух'), ('2', 'выбор везде'),
-         ('3', 'шведская линия'), ('4', 'семейная подача'), ('5', 'своя кухня')]
-for i, (n, t) in enumerate(steps):
-    x = 52 + i * 144
-    hh = 74 + i * 34
-    y = 330 - hh
-    fill = C['panel'] if i < 2 else C['accent'] if i < 4 else C['ink']
-    body += box(x, y, 130, hh, fill, radius=8)
-    col = C['ink'] if i < 2 else '#FFF9F2'
-    body += txt(f'<span class="serif" style="font-weight:800;font-size:26px">{n}</span>', x + 12, y + 10, 106)
-    body += txt(t, x + 12, y + 44, 108, size=13.5, lh=1.25, color=col)
-body += p('Подтверждены М1–М2. Успенский = М2, не шведская линия. М3–М5 — горизонт, не требование сегодняшнего зала.', 360, size=15, bold=True)
-S.append(slide(41, body, kicker='Резерв · модели раздачи', foot='Доклад, раздел 8.2'))
+# Три конфликта
+conf = ['Выбор или безопасность', 'Вариативность или норматив', 'Единое меню или поддержка']
+body = h('Три конфликта зала', 40, top=100)
+body += bar(168, 52, 72)
+for i, t in enumerate(conf):
+    body += txt(f'{i + 1}', 52, 200 + i * 70, 50, size=36, serif=True, color=C['accent'])
+    body += txt(t, 110, 208 + i * 70, 740, size=28, serif=True, color=C['ink'])
+add_res(slide(0, body, kicker='Формат'), 'law')
 
-# ── основной показ (20) + разделитель + резерв для ответов ──
-import re as _re
-MAIN_1BASED = [1, 2, 7, 4, 5, 6, 8, 9, 10, 12, 13, 21, 18, 23, 25, 14, 31, 32, 33, 37]
-main = [S[i - 1] for i in MAIN_1BASED]
-used = set(MAIN_1BASED)
-reserve_idx = [i for i in range(len(S)) if (i + 1) not in used]
-reserve = [S[i] for i in reserve_idx]
+# Цена старта
+body = h('Старт не был бесплатным', 40, top=120)
+body += bar(190, 52, 72)
+body += cap('Оборудование и ставки. Говорю прямо.', 230, 28)
+body += txt('Универсального «бесплатного старта» нет.', 52, 400, 856, size=22, color=C['soft'])
+add_res(slide(0, body, kicker='Кейс · цена'), 'money')
 
-RESERVE_KIND = {
-    11: 'money', 16: 'law', 19: 'money', 20: 'money',
-    22: 'clinic', 24: 'kitchen', 26: 'clinic', 27: 'clinic',
-    28: 'money', 29: 'money', 30: 'money', 40: 'law', 41: 'kitchen',
-    15: 'kitchen',
-}
+# М0–М5
+mods = [('0', 'мономеню'), ('1', 'выбор из двух'), ('2', 'выбор везде'),
+        ('3', 'шведская линия'), ('4', 'семейная подача'), ('5', 'своя кухня')]
+body = h('М0–М5. Не путать с путём директора', 32, top=96)
+for i, (n, t) in enumerate(mods):
+    x = 52 + (i % 3) * 292
+    y = 180 + (i // 3) * 130
+    body += txt(f'M{n}', x, y, 260, size=36, serif=True, color=C['accent'] if i >= 2 else C['ink'])
+    body += txt(t, x, y + 50, 260, size=22, color=C['body'])
+body += txt('Подтверждены М1–М2. М3–М5 — горизонт.', 52, 440, 856, size=22, color=C['soft'])
+add_res(slide(0, body, kicker='Модели раздачи'), 'kitchen')
 
+# Вопрос залу
+body = h('Кто сегодня решает, что на обед?', 36, top=150)
+body += bar(260, 52, 72)
+body += cap('Кухня · диетсестра · директор · совет · житель', 300, 24)
+add_res(slide(0, body, kicker='Вопрос залу'), 'law')
+
+# Второй вариант
+body = num('не сырьё', top=120, size=72)
+body += bar(230, 52, 72)
+body += cap('Цена второго варианта — труд и порядок.', 270, 26)
+body += txt('Журнал. Вторая гастроёмкость. Обучение смены. Отходы — замер.', 52, 400, 856, size=22, color=C['soft'])
+add_res(slide(0, body, kicker='Экономика пары'), 'money')
+
+# Лечебное голосование
+body = txt('А', 52, 120, 80, size=72, serif=True, color=C['ink'])
+body += txt('Обычное. Диета — поимённо.', 160, 148, 700, size=28, serif=True, color=C['ink'])
+body += txt('Б', 52, 260, 80, size=72, serif=True, color=C['accentdeep'])
+body += txt('Лечебное всем — так безопаснее?', 160, 288, 700, size=28, serif=True, color=C['accentdeep'])
+body += txt('Руки за А. Руки за Б.', 52, 430, 856, size=22, color=C['soft'])
+add_res(slide(0, body, kicker='Вопрос 3'), 'clinic')
+
+# IDDSI
+body = num('90 %', top=110, size=160)
+body += bar(300, 52, 72)
+body += cap('соответствие текстур после обучения. Не после закупки.', 340, 24)
+body += txt('Текстуру назначает врач. IDDSI — язык описания.', 52, 430, 856, size=22, color=C['soft'])
+add_res(slide(0, body, kicker='Безопасность · IDDSI'), 'clinic')
+
+# 3–6×
+body = num('3–6×', top=118, size=160)
+body += bar(310, 52, 72)
+body += cap('полная цена обеда выше сырьевой строки.', 350, 24)
+body += txt('Экономить на потерях, не на белке.', 52, 430, 856, size=22, color=C['soft'])
+add_res(slide(0, body, kicker='Экономика качества'), 'money')
+
+# ФАС
+body = num('543', top=110, size=160)
+body += bar(300, 52, 72)
+body += cap('торга · 4,7 млрд ₽ · картель ФАС, 2024.', 340, 26)
+add_res(slide(0, body, kicker='Закупки'), 'money')
+
+# Шесть вопросов — короткие заголовки, не простыня
+qs = ['Кто выбирает — житель или руководитель?',
+      'Меню при норме и бюджете',
+      'Должно ли питание быть «лечебным»?',
+      'Лечебное × вариативное',
+      'Выбор и медицинские рамки',
+      'Качество и цена порции']
+body = h('Шесть вопросов программы', 32, top=88)
+for i, q in enumerate(qs):
+    body += txt(f'{i + 1}', 52, 150 + i * 52, 40, size=24, serif=True, color=C['accent'])
+    body += txt(q, 100, 154 + i * 52, 800, size=22, color=C['ink'])
+add_res(slide(0, body, kicker='Резерв · программа'), 'law')
+
+# Материалы
+body = h('Доклад · калькулятор · чек-листы', 36, top=120)
+body += bar(190, 52, 72)
+body += cap('github.com/qlolp/seminar-variable-food-2026', 230, 24)
+body += '<img src="qr.png" style="position:absolute;left:52px;top:320px;width:120px;height:120px;border-radius:10px">'
+body += txt('Открыто. Без выдуманной «восемнадцати».', 200, 360, 600, size=22, color=C['soft'])
+add_res(slide(0, body, kicker='Материалы'))
+
+# Спасибо
+body = h('Спасибо', 72, top=140)
+body += bar(250, 52, 72)
+body += cap('Чистяков · Серафимовский · 223-ФЗ', 290, 24)
+body += txt('Нурбаев · Тесовый берег · 44-ФЗ', 52, 400, 856, size=24, serif=True, color=C['ink'])
+add_res(slide(0, body, kicker='Контакты'))
+
+# Формула
+body = h('Способ выразить · вариант · отказ услышан', 32, top=140)
+body += bar(230, 52, 72)
+body += cap('Профиль → заказ → тарелка → съедено → замена.', 280, 26)
+body += txt('Процент выбравших — не KPI.', 52, 420, 856, size=22, color=C['soft'])
+add_res(slide(0, body, kicker='Формула результата'), 'law')
+
+# Открытый микрофон
+body = h('Что ломается первым?', 48, top=150)
+body += bar(240, 52, 72)
+body += cap('Деньги · руки · страх проверки · «особые жители»', 290, 24)
+add_res(slide(0, body, kicker='Открытый микрофон'))
+
+
+# ── сборка: 20 + легенда + резерв ──
 def apply_edge_tag(html, kind):
     color, label = TAG[kind], TAG_LABEL[kind]
-    bar = (
+    bar_html = (
         f'<div style="position:absolute;left:0;top:0;width:12px;height:540px;background:{color};z-index:6"></div>'
         f'<div style="position:absolute;right:22px;top:12px;z-index:6;font-size:12px;font-weight:bold;'
         f'letter-spacing:2.2px;color:{color};border:2px solid {color};padding:4px 11px;border-radius:4px;'
         f'background:{C["ivory"]}">{label}</div>'
     )
-    return _re.sub(r'(<div class="slide"[^>]*>)', lambda m: m.group(1) + bar, html, count=1)
+    return re.sub(r'(<div class="slide"[^>]*>)', lambda m: m.group(1) + bar_html, html, count=1)
 
-div = h('Резерв для ответов. Метка по краю', 30)
-div += p('Основной показ закончен. Дальше — прыжок по вопросу зала.', 118, size=16, lh=1.45)
-legend = [('law', 'право · документы, СанПиН, программа'),
-          ('money', 'деньги · сырьё, закупки, отходы'),
-          ('kitchen', 'кухня · модели, пары, раздача'),
-          ('clinic', 'клиника · врач, IDDSI, вес')]
-for i, (k, d) in enumerate(legend):
-    y = 178 + i * 58
-    div += f'<div style="position:absolute;left:52px;top:{y}px;width:14px;height:42px;background:{TAG[k]};border-radius:3px"></div>'
-    div += txt(TAG_LABEL[k], 82, y + 2, 140, size=16, serif=True, color=TAG[k])
-    div += txt(d, 230, y + 8, 620, size=15, color=C['ink'])
-divider = slide(0, div, kicker='Резерв · легенда', foot='Синий / оранжевый / зелёный / бирюза — читаются с последнего ряда')
+
+div = h('Резерв для ответов', 40, top=100)
+div += cap('Основной показ закончен. Дальше — прыжок по вопросу зала.', 170, 22)
+legend = ['law', 'money', 'kitchen', 'clinic']
+for i, k in enumerate(legend):
+    x = 52 + i * 220
+    div += (f'<div style="position:absolute;left:{x}px;top:300px;width:14px;height:56px;'
+            f'background:{TAG[k]};border-radius:3px"></div>')
+    div += txt(TAG_LABEL[k], x + 28, 310, 180, size=28, serif=True, color=TAG[k])
+divider = slide(0, div, kicker='Резерв · легенда')
+
 
 def _restamp(html, label):
-    return _re.sub(r'<span><b>\d+</b> / \d+</span>', f'<span>{label}</span>', html)
+    return re.sub(r'<div class="foot"><span>.*?</span></div>',
+                  f'<div class="foot"><span>{label}</span></div>', html, count=1)
+
 
 out = []
-for i, html in enumerate(main, 1):
-    out.append(_restamp(html, f'<b>{i}</b> / {len(main)}'))
-out.append(_restamp(divider, 'резерв'))
-for j, (idx, html) in enumerate(zip(reserve_idx, reserve), 1):
-    kind = RESERVE_KIND.get(idx + 1)
+for i, html in enumerate(MAIN, 1):
+    out.append(_restamp(html, f'<b>{i}</b>'))
+out.append(_restamp(divider, ''))
+for j, (html, kind) in enumerate(RESERVE, 1):
     if kind:
         html = apply_edge_tag(html, kind)
-    out.append(_restamp(html, f'R{j} / {len(reserve)}'))
-S = out
+    out.append(_restamp(html, f'<b>R{j}</b>'))
 
 # ── запись ──
 os.makedirs(f'{HERE}/slides', exist_ok=True)
-for i, html_doc in enumerate(S, 1):
+for old in glob.glob(f'{HERE}/slides/slide-*.html'):
+    os.remove(old)
+for i, html_doc in enumerate(out, 1):
     open(f'{HERE}/slides/slide-{i:02d}.html', 'w', encoding='utf-8').write(html_doc)
-print(len(S), 'slides written')
+print(len(MAIN), 'main +', 1, 'legend +', len(RESERVE), 'reserve =', len(out), 'written')
 
-# ── PDF: WeasyPrint CLI + pdfunite. Не Edge, не PYTHONPATH. ──
+# ── PDF ──
 if '--pdf' in sys.argv:
     PDF_DIR = f'{HERE}/_pdf'
     os.makedirs(PDF_DIR, exist_ok=True)
@@ -783,7 +463,7 @@ if '--pdf' in sys.argv:
         os.remove(old)
     env = os.environ.copy()
     env.pop('PYTHONPATH', None)
-    for i in range(1, len(S) + 1):
+    for i in range(1, len(out) + 1):
         html = f'{HERE}/slides/slide-{i:02d}.html'
         p_pdf = f'{PDF_DIR}/p{i:02d}.pdf'
         r = subprocess.run(['weasyprint', html, p_pdf], env=env, capture_output=True, text=True)
