@@ -11,16 +11,16 @@ LOCAL_BASE = f"BASE = {str(ROOT)!r}"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 PLAYFAIR_FACES = """
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-400-cyr.woff2') format('woff2'); font-weight:400; unicode-range:U+0400-04FF; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-400-lat.woff2') format('woff2'); font-weight:400; unicode-range:U+0000-024F; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-700-cyr.woff2') format('woff2'); font-weight:700; unicode-range:U+0400-04FF; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-700-lat.woff2') format('woff2'); font-weight:700; unicode-range:U+0000-024F; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-800-cyr.woff2') format('woff2'); font-weight:800; unicode-range:U+0400-04FF; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-800-lat.woff2') format('woff2'); font-weight:800; unicode-range:U+0000-024F; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-900-cyr.woff2') format('woff2'); font-weight:900; unicode-range:U+0400-04FF; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-900-lat.woff2') format('woff2'); font-weight:900; unicode-range:U+0000-024F; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-600i-cyr.woff2') format('woff2'); font-weight:600; font-style:italic; unicode-range:U+0400-04FF; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-600i-lat.woff2') format('woff2'); font-weight:600; font-style:italic; unicode-range:U+0000-024F; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-400-lat.woff2') format('woff2'); font-weight:400; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-400-cyr.woff2') format('woff2'); font-weight:400; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-700-lat.woff2') format('woff2'); font-weight:700; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-700-cyr.woff2') format('woff2'); font-weight:700; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-800-lat.woff2') format('woff2'); font-weight:800; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-800-cyr.woff2') format('woff2'); font-weight:800; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-900-lat.woff2') format('woff2'); font-weight:900; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-900-cyr.woff2') format('woff2'); font-weight:900; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-600i-lat.woff2') format('woff2'); font-weight:600; font-style:italic; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-600i-cyr.woff2') format('woff2'); font-weight:600; font-style:italic; }
 """
 
 COLOR_FACES = """
@@ -140,6 +140,7 @@ def main():
     run_builder("build_html.py")
     run_builder("build_color.py")
     run_builder("build_beautiful.py")
+    run_builder("build_claude.py")
     inject_css(OUT / "_report_color.html", COLOR_FACES)
     inject_css(OUT / "_report_beautiful.html", PLAYFAIR_FACES)
 
@@ -147,12 +148,13 @@ def main():
     n_off = weasy(OUT / "_report.html", OUT / "Не_просто_накормить_доклад.pdf")
     n_col = weasy(OUT / "_report_color.html", OUT / "Не_просто_накормить_доклад_журнальный.pdf")
     n_bea = weasy(OUT / "_report_beautiful.html", OUT / "Не_просто_накормить_доклад_красивая_версия.pdf")
+    n_claude = weasy(OUT / "_report_claude.html", OUT / "Не_просто_накормить_доклад_стиль_claude.pdf")
     # keep underscored aliases
     import shutil
     shutil.copy(OUT / "Не_просто_накормить_доклад.pdf", OUT / "_report.pdf")
     shutil.copy(OUT / "Не_просто_накормить_доклад_журнальный.pdf", OUT / "_report_color.pdf")
     shutil.copy(OUT / "Не_просто_накормить_доклад_красивая_версия.pdf", OUT / "_report_beautiful.pdf")
-    print(json.dumps({"official": n_off, "journal": n_col, "beautiful": n_bea}))
+    print(json.dumps({"official": n_off, "journal": n_col, "beautiful": n_bea, "claude": n_claude}))
 
 
 if __name__ == "__main__":
