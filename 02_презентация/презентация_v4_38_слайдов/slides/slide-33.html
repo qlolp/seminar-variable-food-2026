@@ -1,8 +1,12 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><style>
-@font-face { font-family:'Playfair Display'; src:url('../fonts/playfair-700.woff2') format('woff2'); font-weight:700; }
-@font-face { font-family:'Playfair Display'; src:url('../fonts/playfair-800.woff2') format('woff2'); font-weight:800; }
-@font-face { font-family:'Playfair Display'; src:url('../fonts/playfair-900.woff2') format('woff2'); font-weight:900; }
-@font-face { font-family:'Playfair Display'; src:url('../fonts/playfair-600i.woff2') format('woff2'); font-style:italic; font-weight:600; }
+@font-face { font-family:'Playfair Lat'; src:url('../fonts/playfair-700-lat.woff2') format('woff2'); font-weight:700; }
+@font-face { font-family:'Playfair Cyr'; src:url('../fonts/playfair-700-cyr.woff2') format('woff2'); font-weight:700; }
+@font-face { font-family:'Playfair Lat'; src:url('../fonts/playfair-800-lat.woff2') format('woff2'); font-weight:800; }
+@font-face { font-family:'Playfair Cyr'; src:url('../fonts/playfair-800-cyr.woff2') format('woff2'); font-weight:800; }
+@font-face { font-family:'Playfair Lat'; src:url('../fonts/playfair-900-lat.woff2') format('woff2'); font-weight:900; }
+@font-face { font-family:'Playfair Cyr'; src:url('../fonts/playfair-900-cyr.woff2') format('woff2'); font-weight:900; }
+@font-face { font-family:'Playfair Lat'; src:url('../fonts/playfair-600i-lat.woff2') format('woff2'); font-style:italic; font-weight:600; }
+@font-face { font-family:'Playfair Cyr'; src:url('../fonts/playfair-600i-cyr.woff2') format('woff2'); font-style:italic; font-weight:600; }
 @font-face { font-family:'PT Sans'; src:url('../fonts/ptsans-400.woff2') format('woff2'); }
 @font-face { font-family:'PT Sans'; src:url('../fonts/ptsans-700.woff2') format('woff2'); font-weight:bold; }
 @page { size:960px 540px; margin:0 }
@@ -16,28 +20,9 @@ html,body { margin:0; padding:0 }
           text-transform:uppercase; }
 .kickrow { position:absolute; left:52px; top:34px; right:52px; display:flex; align-items:center; gap:14px; }
 .kickrow .rule { flex:1; height:1.5px; background:#E3DCCE; }
-h1 { font-family:'Playfair Display'; font-weight:800; margin:0; line-height:1.12; color:#141413; }
-.serif { font-family:'Playfair Display'; }
+h1 { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Sans', serif; font-weight:800; margin:0; line-height:1.12; color:#141413; }
+.serif { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Sans', serif; }
 .card { background:#F0EEE6; border-radius:14px; }
 .tag { display:inline-block; font-weight:bold; font-size:11px; letter-spacing:1.5px;
        padding:3px 10px 2px; border-radius:6px; }
-</style></head><body><div class="slide"><div class="kickrow"><span class="kicker">Вопрос 5 · безопасность</span><span class="rule"></span></div><h1 style="position:absolute;left:52px;top:66px;width:856px;font-size:29px;line-height:1.12">Обучение работает лучше оборудования</h1><svg style="position:absolute;left:120px;top:150px" width="700" height="250" viewBox="0 0 700 250">
-<line x1="200" y1="30" x2="200" y2="210" stroke="#E3DCCE" stroke-width="2"/>
-<line x1="520" y1="30" x2="520" y2="210" stroke="#E3DCCE" stroke-width="2"/>
-<text x="200" y="240" text-anchor="middle" font-family="PT Sans" font-size="13.5" fill="#87867F">ДО внедрения</text>
-<text x="520" y="240" text-anchor="middle" font-family="PT Sans" font-size="13.5" fill="#87867F">ПОСЛЕ</text>
-<line x1="200" y1="136" x2="520" y2="49" stroke="#C15F3C" stroke-width="3.5"/>
-<circle cx="200" cy="136" r="7" fill="#B7AFA0"/>
-<circle cx="520" cy="49" r="7" fill="#C15F3C"/>
-<line x1="200" y1="161" x2="520" y2="30" stroke="#6E6A5E" stroke-width="2.5"/>
-<circle cx="200" cy="161" r="6" fill="#B7AFA0"/>
-<circle cx="520" cy="30" r="6" fill="#141413"/>
-<text x="182" y="126" text-anchor="end" font-family="Playfair Display" font-weight="700" font-size="18" fill="#6E6A5E">44 %</text>
-<text x="182" y="184" text-anchor="end" font-family="Playfair Display" font-weight="700" font-size="16" fill="#6E6A5E">31 %</text>
-<text x="538" y="92" font-family="Playfair Display" font-weight="700" font-size="18" fill="#B8552F">90 %</text>
-<text x="538" y="24" font-family="Playfair Display" font-weight="700" font-size="16" fill="#141413">100 %</text>
-<line x1="556" y1="130" x2="580" y2="130" stroke="#C15F3C" stroke-width="3.5"/>
-<text x="588" y="135" font-family="PT Sans" font-size="12.5" fill="#3D3929">соответствие текстур</text>
-<line x1="556" y1="154" x2="580" y2="154" stroke="#6E6A5E" stroke-width="2.5"/>
-<text x="588" y="159" font-family="PT Sans" font-size="12.5" fill="#3D3929">загущённые напитки</text>
-</svg><p style="position:absolute;left:52px;top:400px;width:856px;font-size:13.5px;line-height:1.5;font-weight:bold;text-align:left;margin:0">Пять учреждений, шкала IDDSI. Главный барьер — не техника, а осведомлённость смены. Текстуру назначает врач; IDDSI описывает и проверяет консистенцию.</p><div class="foot"><span>IDDSI Framework, уровни 0–7 · исследование внедрения (5 учреждений) · доклад, разделы 10.4, 10.9</span><span>R11 / 19</span></div></div></body></html>
+</style></head><body><div class="slide"><div style="position:absolute;left:0;top:0;width:12px;height:540px;background:#C45C26;z-index:6"></div><div style="position:absolute;right:22px;top:12px;z-index:6;font-size:12px;font-weight:bold;letter-spacing:2.2px;color:#C45C26;border:2px solid #C45C26;padding:4px 11px;border-radius:4px;background:#FAF9F5">ДЕНЬГИ</div><div class="kickrow"><span class="kicker">Вопрос 6 · экономика качества</span><span class="rule"></span></div><h1 style="position:absolute;left:52px;top:66px;width:856px;font-size:27px;line-height:1.12">Нормируя цену порции, управляем меньшей частью денег</h1><div style="position:absolute;left:52px;top:170px;width:230px;height:42px;display:flex;align-items:center;justify-content:flex-end;text-align:right;font-size:13.5px;color:#141413;line-height:1.2">Сырьё — то, что нормируем</div><div style="position:absolute;left:292px;top:170px;width:376px;height:42px;background:#F0EEE6;border-radius:7px"><div style="width:75px;height:100%;background:#C15F3C;border-radius:7px 0 0 7px"></div></div><div style="position:absolute;left:688px;top:170px;height:42px;display:flex;align-items:center;font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-weight:700;font-size:21px;color:#C15F3C">1×</div><div style="position:absolute;left:52px;top:226px;width:230px;height:42px;display:flex;align-items:center;justify-content:flex-end;text-align:right;font-size:13.5px;color:#141413;line-height:1.2">Труд кухни и раздачи</div><div style="position:absolute;left:292px;top:226px;width:376px;height:42px;background:#F0EEE6;border-radius:7px"><div style="width:225px;height:100%;background:#6E6A5E;border-radius:7px 0 0 7px"></div></div><div style="position:absolute;left:688px;top:226px;height:42px;display:flex;align-items:center;font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-weight:700;font-size:21px;color:#6E6A5E">3×</div><div style="position:absolute;left:52px;top:282px;width:230px;height:42px;display:flex;align-items:center;justify-content:flex-end;text-align:right;font-size:13.5px;color:#141413;line-height:1.2">Энергия, логистика, оборудование</div><div style="position:absolute;left:292px;top:282px;width:376px;height:42px;background:#F0EEE6;border-radius:7px"><div style="width:376px;height:100%;background:#141413;border-radius:7px 0 0 7px"></div></div><div style="position:absolute;left:688px;top:282px;height:42px;display:flex;align-items:center;font-family:'Playfair Lat','Playfair Cyr','PT Sans',serif;font-weight:700;font-size:21px;color:#141413">5×</div><p style="position:absolute;left:52px;top:348px;width:856px;font-size:14.5px;line-height:1.5;color:#6E6A5E;text-align:left;margin:0">Полная стоимость обеда в 3–6 раз выше сырьевой строки (канадский аудит стационаров).</p><p style="position:absolute;left:52px;top:380px;width:856px;font-size:15.5px;line-height:1.5;font-weight:bold;text-align:left;margin:0">Экономить надо на потерях — отходы, срывы поставок, картельные наценки, — а не на белке в тарелке.</p><div class="foot"><span>Аудит стоимости стационарного питания (Канада) · доклад, разделы 29, 42</span><span>R12 / 21</span></div></div></body></html>
