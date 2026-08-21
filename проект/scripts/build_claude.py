@@ -20,6 +20,14 @@ frag = subprocess.run(
 
 frag = re.sub(r'<p>\[\[FIG:([a-z0-9_]+)\]\]</p>', lambda m: FIG.get(m.group(1), ''), frag)
 frag = re.sub(r'<p>\[\[INF:([a-z0-9_]+)\]\]</p>', lambda m: INF.get(m.group(1), ''), frag)
+# PT Serif / Playfair have no U+2194; VS15 (U+FE0E) becomes LastResort tofu.
+# Adjacent <sup> from {{S}}{{M}} glue into "15161718" — merge into one tag.
+frag = frag.replace('\u2194\ufe0e', ' \u2013 ').replace('\u2194', ' \u2013 ')
+
+def _merge_sups(m):
+    nums = re.findall(r'<sup>(.*?)</sup>', m.group(0))
+    return '<sup>' + ', '.join(nums) + '</sup>' if len(nums) > 1 else m.group(0)
+frag = re.sub(r'(?:<sup>[^<]*</sup>)+', _merge_sups, frag)
 
 PART_RE = re.compile(r'^(Часть [IVX]+\.|Список источников)')
 ROMAN = re.compile(r'Часть ([IVX]+)\.')
@@ -72,11 +80,16 @@ TOC_HTML = ('<section class="toc"><p class="toc-title">Содержание</p><
 
 CSS = """
 <style>
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-400.woff2') format('woff2'); font-weight:400; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-700.woff2') format('woff2'); font-weight:700; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-800.woff2') format('woff2'); font-weight:800; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-900.woff2') format('woff2'); font-weight:900; }
-@font-face { font-family:'Playfair Display'; src:url('fonts/playfair-600i.woff2') format('woff2'); font-style:italic; font-weight:600; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-400-lat.woff2') format('woff2'); font-weight:400; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-400-cyr.woff2') format('woff2'); font-weight:400; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-700-lat.woff2') format('woff2'); font-weight:700; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-700-cyr.woff2') format('woff2'); font-weight:700; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-800-lat.woff2') format('woff2'); font-weight:800; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-800-cyr.woff2') format('woff2'); font-weight:800; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-900-lat.woff2') format('woff2'); font-weight:900; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-900-cyr.woff2') format('woff2'); font-weight:900; }
+@font-face { font-family:'Playfair Lat'; src:url('fonts/playfair-600i-lat.woff2') format('woff2'); font-weight:600; font-style:italic; }
+@font-face { font-family:'Playfair Cyr'; src:url('fonts/playfair-600i-cyr.woff2') format('woff2'); font-weight:600; font-style:italic; }
 @font-face { font-family:'PT Serif'; src:url('fonts/PTSerif-Regular.ttf'); }
 @font-face { font-family:'PT Serif'; src:url('fonts/PTSerif-Bold.ttf'); font-weight:bold; }
 @font-face { font-family:'PT Serif'; src:url('fonts/PTSerif-Italic.ttf'); font-style:italic; }
@@ -90,37 +103,43 @@ CSS = """
 @page part   { margin:0; background:#F5F3EC; @bottom-center{content:none} @top-center{content:none} }
 
 html { font-size: 10.5pt; }
-body { font-family:'PT Serif'; line-height:1.58; color:#3D3929; background:#FAF9F5; text-align:justify; }
-p { margin:0 0 6.5pt; orphans:2; widows:2; }
+body { font-family:'PT Serif', 'PT Sans', serif; line-height:1.58; color:#3D3929; background:#FAF9F5; text-align:left; }
+p { margin:0 0 6.5pt; orphans:2; widows:2; text-align:justify; }
 
 .spark { width:12pt; height:12pt; fill:#C15F3C; }
-.cover { page: cover; page-break-after:always; height:297mm; background:#FAF9F5; color:#141413;
+.cover { page: cover; page-break-after:always; height:297mm; max-height:297mm; overflow:hidden;
+         background:#FAF9F5; color:#141413;
          padding:22mm 22mm; box-sizing:border-box; text-align:left; position:relative; }
+.cover p { text-align:left; }
 .cover::after { content:''; position:absolute; left:0; right:0; bottom:0; height:7mm; background:#F0EEE6; }
-.cov-top { display:flex; align-items:center; gap:9pt; margin-bottom:40mm; }
+.cov-top { display:flex; align-items:center; gap:9pt; margin-bottom:32mm; }
 .cov-top .spark { width:20pt; height:20pt; }
 .cov-brand { font-family:'PT Sans'; font-size:12pt; letter-spacing:3pt; color:#87867F; }
 .cov-kick { font-family:'PT Sans'; font-size:10.5pt; letter-spacing:3.5pt; color:#C15F3C; margin-bottom:16pt; }
-.cov-title { font-family:'Playfair Display'; font-weight:800; font-size:58pt; line-height:1.04; margin:0 0 10pt; color:#141413; text-align:left; }
+.cov-title { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Serif', serif; font-weight:800; font-size:52pt; line-height:1.04;
+             margin:0 0 10pt; color:#141413; text-align:left;
+             page-break-before:auto; break-before:auto; border:none; padding:0; }
 .cov-rule { width:70pt; height:3pt; background:#C15F3C; margin:14pt 0 18pt; }
-.cov-sub { font-family:'Playfair Display'; font-style:italic; font-size:16pt; line-height:1.45; color:#3D3929; margin:0 0 10pt; }
+.cov-sub { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Serif', serif; font-style:italic; font-weight:600;
+           font-size:16pt; line-height:1.45; color:#3D3929; margin:0 0 10pt; }
 .cov-sub2 { font-family:'PT Serif'; font-size:11pt; line-height:1.5; color:#6E6A5E; margin:0 0 auto; }
 .cov-meta { font-family:'PT Sans'; font-size:10.5pt; line-height:1.7; color:#3D3929; margin-top:26pt; }
 .cov-aud { font-size:9.5pt; color:#87867F; border-top:0.7pt solid #E3DCCE; padding-top:10pt; margin-top:14pt; }
 .cov-author { font-family:'PT Serif'; font-size:11.5pt; color:#C15F3C; }
 
-h1 { font-family:'Playfair Display'; font-weight:800; font-size:21pt; color:#141413;
+h1 { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Serif', serif; font-weight:800; font-size:21pt; color:#141413;
      page-break-before:always; margin:0 0 8pt; text-align:left; line-height:1.2;
-     padding-bottom:7pt; border-bottom:2.5pt solid #C15F3C; page-break-after:avoid; }
+     padding-bottom:10pt; border-bottom:2.5pt solid #C15F3C; page-break-after:avoid; }
+.cover h1, h1.cov-title { page-break-before:auto; break-before:auto; }
 h1.part { page: part; page-break-before:always; page-break-after:always;
   background:#F5F3EC; color:#F5F3EC; font-size:0; border:none; padding:0; margin:0;
   height:297mm; box-sizing:border-box; position:relative; }
 h1.part span.pnum { position:absolute; top:100mm; left:0; right:0; text-align:center;
-  font-family:'Playfair Display'; font-weight:800; font-size:64pt; color:#C15F3C; }
+  font-family:'Playfair Lat', 'Playfair Cyr', 'PT Serif', serif; font-weight:800; font-size:64pt; color:#C15F3C; }
 h1.part span.ptit { position:absolute; top:150mm; left:30mm; right:30mm; text-align:center;
-  font-family:'Playfair Display'; font-style:italic; font-size:17pt; color:#3D3929; }
+  font-family:'Playfair Lat', 'Playfair Cyr', 'PT Serif', serif; font-style:italic; font-weight:600; font-size:17pt; color:#3D3929; }
 
-h2 { font-family:'Playfair Display'; font-weight:700; font-size:13.5pt; color:#141413;
+h2 { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Serif', serif; font-weight:700; font-size:13.5pt; color:#141413;
      margin:14pt 0 5pt; text-align:left; page-break-after:avoid; break-after:avoid; }
 h3 { font-family:'PT Sans'; font-weight:bold; font-size:10pt; letter-spacing:1pt;
      text-transform:uppercase; color:#B8552F; margin:10pt 0 4pt; page-break-after:avoid; break-after:avoid; }
@@ -128,11 +147,12 @@ h3 { font-family:'PT Sans'; font-weight:bold; font-size:10pt; letter-spacing:1pt
 table { border-collapse:collapse; width:100%; font-family:'PT Sans'; font-size:8.8pt; margin:9pt 0; background:#FFFFFF; }
 tr { page-break-inside:avoid; }
 thead { display:table-header-group; }
-td, th { border:0.5pt solid #E3DCCE; padding:4pt 6pt; vertical-align:top; text-align:left; line-height:1.35; overflow-wrap:anywhere; }
+td, th { border:0.5pt solid #E3DCCE; padding:4pt 6pt; vertical-align:top; text-align:left; line-height:1.35;
+         overflow-wrap:break-word; }
 th { font-weight:bold; color:#141413; background:#F0EEE6; border-bottom:1.2pt solid #C15F3C; }
 tr:nth-child(even) td { background:#F7F5EF; }
 
-sup { font-family:'PT Sans'; font-size:7.5pt; color:#B8552F; font-weight:bold; }
+sup { font-family:'PT Sans'; font-size:6.6pt; color:#B8552F; font-weight:bold; vertical-align:super; }
 a { color:#B8552F; text-decoration:none; }
 blockquote { margin:8pt 14pt; padding:8pt 12pt; background:#F7F1EA; border-left:3pt solid #C15F3C;
              font-style:italic; color:#4A4636; }
@@ -143,7 +163,7 @@ hr { border:none; border-top:0.6pt solid #E3DCCE; margin:12pt 0; }
 em { color:#141413; }
 
 .toc { page-break-after:always; }
-.toc-title { font-family:'Playfair Display'; font-weight:800; font-size:22pt; color:#141413; margin:0 0 14pt;
+.toc-title { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Serif', serif; font-weight:800; font-size:22pt; color:#141413; margin:0 0 14pt;
   padding-bottom:7pt; border-bottom:2.5pt solid #C15F3C; text-align:left; }
 .toc ul { list-style:none; padding:0; margin:0; }
 .toc li { margin:0; }
@@ -151,13 +171,17 @@ em { color:#141413; }
          font-family:'PT Sans'; font-size:9.5pt; color:#3D3929; padding:2.4pt 0;
          border-bottom:0.5pt dotted #CFC9B9; }
 .toc .toc-t { text-align:left; }
-.toc .toc-p { color:#B8552F; font-weight:bold; }
-.toc li.toc-part a { font-family:'Playfair Display'; font-weight:700; font-size:11pt; color:#141413;
+.toc .toc-p { color:#B8552F; font-weight:bold; font-family:'PT Sans', sans-serif;
+              font-variant-numeric: lining-nums; }
+.toc li.toc-part a { font-family:'Playfair Lat', 'Playfair Cyr', 'PT Serif', serif; font-weight:700; font-size:11pt; color:#141413;
   border-bottom:0.9pt solid #C15F3C; margin-top:7pt; }
 
 .srclist p, .srclist li, .srclist a { font-family:'PT Sans'; font-size:8.6pt; line-height:1.4;
-  overflow-wrap:anywhere; text-align:left; margin-bottom:3.2pt; }
+  overflow-wrap:break-word; text-align:left; margin-bottom:3.2pt; }
 .srclist b { color:#B8552F; }
+
+.fg-bar-row { flex-wrap:nowrap; }
+.fg-val { white-space:nowrap; }
 </style>
 """
 
