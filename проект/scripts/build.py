@@ -93,6 +93,8 @@ order, cmap = [], {}
 def repl(m):
     cid = m.group(1)
     if cid not in cmap:
+        if cid not in REGS and cid not in REGM and cid not in REGI:
+            return m.group(0)  # неизвестный маркер (пример в 04) — оставить как текст
         cmap[cid] = len(cmap) + 1
         order.append(cid)
     return f'<sup>{cmap[cid]}</sup>'
