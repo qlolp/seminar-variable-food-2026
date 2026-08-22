@@ -2,7 +2,8 @@
 """Стадия 2: _report_full.md → HTML (TNR 14pt, 1.5 интервал, статичный TOC) → готов к html_to_pdf.js."""
 import os, re, sys, json, subprocess
 
-BASE = 'C:/Users/Evgenii/AppData/Local/Temp/seminar-food/проект'
+# Корень каталога «проект» вычисляется от расположения скрипта (см. build.py).
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT  = os.path.join(BASE, 'output')
 sys.path.insert(0, os.path.join(BASE, 'scripts'))
 from figures_html import CSS as FIGCSS, FIG

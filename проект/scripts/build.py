@@ -2,7 +2,9 @@
 """Сборка доклада: MD (с {{Sxxx}}/{{M-key}}/{{I-key}} + [[FIG:key]]) → HTML (TNR 14/1.5) → PDF + DOCX."""
 import os, re, glob, json, subprocess, sys, openpyxl
 
-BASE = 'C:/Users/Evgenii/AppData/Local/Temp/seminar-food/проект'
+# Корень каталога «проект» вычисляется от расположения скрипта: путь работает
+# на любой ОС и без предварительной подмены строки в rebuild_pdfs.py.
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT  = os.path.join(BASE, 'output')
 os.makedirs(OUT, exist_ok=True)
 sys.path.insert(0, os.path.join(BASE, 'scripts'))
