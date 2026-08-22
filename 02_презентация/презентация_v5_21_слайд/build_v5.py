@@ -490,7 +490,7 @@ body = (
     f'Последнее слово руководства —<br>не «внедряйте», а «измеряйте».</div>'
     f'<div class="kicker" style="position:absolute;left:52px;top:300px;width:856px;color:{ACCENT}">'
     f'Из доклада «Не просто накормить»</div>'
-    + t('Полный текст — в памятке · pni9.ru · tesobr.ru', 52, 400, 800, size=16, color='#C4B8A8')
+    + t('Полный текст — в памятке и полном руководстве (PDF)', 52, 400, 800, size=16, color='#C4B8A8')
 )
 add(slide(21, body, bg=DARK, foot_color=MUTED))
 
