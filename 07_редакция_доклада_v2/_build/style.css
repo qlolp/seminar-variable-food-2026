@@ -1,0 +1,16 @@
+
+@page { size: A4; margin: 2cm 1.8cm; @bottom-center { content: counter(page); font-family: 'PT Sans', sans-serif; font-size: 9pt; color: #888; } }
+body { font-family: 'PT Sans', 'Helvetica', 'Arial', sans-serif; font-size: 10.5pt; line-height: 1.45; color: #222; max-width: 16cm; }
+h1 { font-family: 'Playfair Display', 'Times New Roman', serif; font-size: 22pt; font-weight: 700; color: #2a2a2a; margin-top: 0; border-bottom: 1.5pt solid #b8624d; padding-bottom: 4pt; }
+h2 { font-family: 'Playfair Display', 'Times New Roman', serif; font-size: 15pt; font-weight: 700; color: #b8624d; margin-top: 18pt; border-bottom: 0.5pt solid #ddd; padding-bottom: 2pt; }
+h3 { font-family: 'PT Sans', sans-serif; font-size: 12pt; font-weight: 700; color: #444; margin-top: 14pt; }
+h4 { font-size: 11pt; font-weight: 600; color: #555; margin-top: 10pt; }
+p { text-align: justify; }
+table { border-collapse: collapse; width: 100%; margin: 8pt 0; font-size: 9.5pt; }
+th, td { border: 0.5pt solid #bbb; padding: 4pt 6pt; text-align: left; vertical-align: top; }
+th { background: #f4ede4; font-weight: 600; }
+code { font-family: 'Consolas', monospace; font-size: 9.5pt; background: #f8f8f8; padding: 1pt 3pt; }
+pre { font-family: 'Consolas', monospace; font-size: 9pt; background: #f8f8f8; padding: 6pt; border-left: 2pt solid #b8624d; }
+blockquote { border-left: 3pt solid #b8624d; padding-left: 8pt; color: #555; font-style: italic; }
+hr { border: 0.5pt solid #b8624d; margin: 14pt 0; }
+sup { font-size: 7pt; color: #b8624d; }
