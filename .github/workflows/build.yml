@@ -1,0 +1,43 @@
+name: build
+
+# Проверка воспроизводимости: доклад и презентация должны собираться из исходников.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Системные зависимости (pandoc, WeasyPrint, poppler)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            pandoc poppler-utils \
+            libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf-2.0-0 libcairo2 \
+            libffi-dev libjpeg-dev shared-mime-info fonts-dejavu-core
+
+      - name: Python-зависимости
+        run: pip install -r requirements.txt
+
+      - name: Сборка доклада (4 PDF)
+        run: python3 проект/scripts/rebuild_pdfs.py
+
+      - name: Сборка презентации v5 (21 слайд)
+        run: python3 02_презентация/презентация_v5_21_слайд/build_v5.py --pdf
+
+      - name: Артефакты сборки
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdfs
+          path: |
+            проект/output/Не_просто_накормить_доклад*.pdf
+            02_презентация/Презентация_дискуссия_26_08_v5_стиль_claude.pdf
+          if-no-files-found: error
