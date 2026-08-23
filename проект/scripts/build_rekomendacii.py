@@ -26,8 +26,8 @@ BROCHURE = '''
 html { font-size: 11.5pt; }
 body { line-height: 1.55; }
 p { margin: 0 0 9pt; text-align: justify; }
-h2 { page-break-before: always; margin: 0 0 10pt; }
-h3 { margin: 15pt 0 6pt; }
+h2 { margin: 20pt 0 8pt; page-break-after: avoid; font-size: 17pt; }
+h3 { margin: 15pt 0 5pt; page-break-after: avoid; }
 h1 { margin: 0 0 6pt; }
 .figure { background:#FAF7F1; border:1px solid #E3DCCE; border-left:4px solid #C15F3C;
           border-radius:8px; padding:11pt 14pt; margin:13pt 0; page-break-inside:avoid; }
@@ -48,12 +48,20 @@ td { padding:5pt 8pt; border-bottom:1px solid #E3DCCE; vertical-align:top; }
 css = css.replace('</style>', BROCHURE + '</style>')
 
 COVER = '''
-<div style="page-break-after:always; padding:38mm 0 0;">
-  <div style="font-family:'PT Sans'; font-size:9pt; letter-spacing:3pt; color:#87867F; margin-bottom:26mm;">МЕТОДИЧЕСКИЕ РЕКОМЕНДАЦИИ · ОПЫТ РЕАЛИЗАЦИИ ПРОЕКТОВ</div>
-  <div style="font-family:'Playfair Display'; font-weight:800; font-size:40pt; line-height:1.06; color:#141413;">Организация<br>вариативного питания<br>в домах социального<br>обслуживания</div>
-  <div style="width:70pt; height:3pt; background:#C15F3C; margin:18pt 0 20pt;"></div>
-  <p style="font-family:'PT Serif'; font-size:12pt; line-height:1.6; color:#6E6A5E; margin:0; max-width:150mm;">Рассказ о том, как вернуть человеку право самому решить, что окажется у него на тарелке, — с сомнениями, ошибками и честностью о том, чего мы пока не знаем.</p>
-  <p style="font-family:'PT Serif'; font-size:11.5pt; color:#C15F3C; margin-top:28pt;">Чистяков Е. В., директор СПб ГАСУСОН «ДСО „Серафимовский“»</p>
+<div style="page-break-after:always; padding:26mm 0 0;">
+  <div style="font-family:'PT Sans'; font-size:9pt; letter-spacing:3pt; color:#87867F; margin-bottom:16mm;">МЕТОДИЧЕСКОЕ РУКОВОДСТВО · ОПЫТ РЕАЛИЗАЦИИ ПРОЕКТОВ</div>
+  <div style="font-family:'Playfair Display'; font-weight:800; font-size:38pt; line-height:1.06; color:#141413;">Организация<br>вариативного питания<br>в домах социального<br>обслуживания</div>
+  <div style="width:70pt; height:3pt; background:#C15F3C; margin:16pt 0 16pt;"></div>
+  <p style="font-family:'PT Serif'; font-style:italic; font-size:13pt; line-height:1.5; color:#3D3929; margin:0 0 20pt; max-width:150mm;">Как преодолеть трудности внедрения: практический опыт двух домов социального обслуживания</p>
+  <div style="font-family:'PT Sans'; font-size:11pt; line-height:1.55; color:#141413; margin-bottom:16pt;">
+    <p style="margin:0 0 4pt;"><b style="font-weight:600">Чистяков Евгений Владимирович</b> — директор ГАСУСОН «Дом социального обслуживания „Серафимовский“», Санкт-Петербург</p>
+    <p style="margin:0;"><b style="font-weight:600">Нурбаев Тимур Аликович</b> — директор ГБСУСОН «Дом социального обслуживания „Тесовый берег“», Санкт-Петербург</p>
+  </div>
+  <div style="border-top:1px solid #E3DCCE; padding-top:12pt; font-family:'PT Sans'; font-size:9.5pt; line-height:1.6; color:#6E6A5E;">
+    <p style="margin:0 0 3pt;">Межрегиональный методический семинар-совещание руководителей организаций социального обслуживания <b>«Пространство Новых Идей 2.0»</b> · 25–27 августа 2026 года, Санкт-Петербург</p>
+    <p style="margin:0 0 3pt;">Организаторы: Министерство труда и социальной защиты Российской Федерации; Комитет по социальной политике Санкт-Петербурга</p>
+    <p style="margin:0; color:#C15F3C;">Секция «Организация питания: опыт реализации проектов» · 26 августа 2026, 14:00–15:30 · площадка № 2, ДСО «Тесовый берег»</p>
+  </div>
 </div>
 '''
 
