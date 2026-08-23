@@ -76,22 +76,30 @@
 Тексты слайдов 1–18 находятся в `build/build_v6.py` (`slide_01_title` … `slide_19_separator`).
 Тексты слайдов R1–R12 — в `build/reserve_v6.py` (`slide_R1_warmup` … `slide_R12_metrics`).
 
-После правки:
+После правки (macOS / Linux; PYTHONPATH не задавать):
+
+```bash
+/usr/bin/python3 02_презентация/презентация_v6/build/build_v6.py
+```
+
+Скрипт пишет PPTX в `build/` и копирует в корень `презентация_v6/`. На Windows:
 
 ```powershell
-cd "C:\Users\Evgenii\OneDrive\Desktop\seminar\seminar-variable-food-2026\02_презентация\презентация_v6\build"
+cd "02_презентация\презентация_v6\build"
 python build_v6.py
 ```
 
-Скрипт пересоберёт `.pptx` в текущую директорию. Скопировать в корень `презентация_v6/`:
+### Перегенерировать PDF (рекомендуемый контур на macOS)
 
-```powershell
-Copy-Item .\Презентация_v6_Не_просто_накормить.pptx ..\Презентация_v6_Не_просто_накормить.pptx -Force
+LibreOffice CLI на машине автора может отсутствовать. Зальный PDF собирается WeasyPrint из тех же фактов, что и PPTX:
+
+```bash
+PATH=/opt/homebrew/bin:$PATH python3 02_презентация/презентация_v6/build/build_v6_pdf.py
 ```
 
-### Перегенерировать PDF
+Шрифты — локальные `url('fonts/...')` (копия split-woff2 из v5). `PYTHONPATH` не задавать.
 
-В каталоге `build/`:
+Если установлен LibreOffice, можно конвертировать PPTX один в один:
 
 ```powershell
 # Скопировать .pptx во временный файл с ASCII-именем (нужно для LibreOffice)

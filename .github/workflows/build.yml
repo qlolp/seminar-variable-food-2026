@@ -30,8 +30,13 @@ jobs:
       - name: Сборка доклада (4 PDF)
         run: python3 проект/scripts/rebuild_pdfs.py
 
-      - name: Сборка презентации v5 (21 слайд)
+      - name: Сборка презентации v5 (архивный WeasyPrint-дек)
         run: python3 02_презентация/презентация_v5_21_слайд/build_v5.py --pdf
+
+      - name: Сборка колоды зала v6 (PPTX + PDF)
+        run: |
+          python3 02_презентация/презентация_v6/build/build_v6.py
+          python3 02_презентация/презентация_v6/build/build_v6_pdf.py
 
       - name: Артефакты сборки
         uses: actions/upload-artifact@v4
@@ -40,4 +45,6 @@ jobs:
           path: |
             проект/output/Не_просто_накормить_доклад*.pdf
             02_презентация/Презентация_дискуссия_26_08_v5_стиль_claude.pdf
+            02_презентация/презентация_v6/Презентация_v6_Не_просто_накормить.pptx
+            02_презентация/презентация_v6/Презентация_v6_Не_просто_накормить.pdf
           if-no-files-found: error

@@ -119,15 +119,10 @@ def add_kicker(slide, label):
 
 
 def add_footer(slide, left_text, page_num, total=18, dark=False):
-    """Подвал слайда: левый текст, правый — номер/всего."""
-    color = MUTED if not dark else RGBColor(0x80, 0x7E, 0x76)
-    add_textbox(slide, Inches(0.72), Inches(7.05), Inches(8.0), Inches(0.25),
-                left_text, font=SANS, size=9, color=color)
-    add_textbox(slide, Inches(11.5), Inches(7.05), Inches(1.1), Inches(0.25),
-                f"{page_num} / {total}", font=SANS, size=9, color=color, align=PP_ALIGN.RIGHT)
-    # Акцентный номер страницы
-    add_textbox(slide, Inches(11.5), Inches(7.05), Inches(0.4), Inches(0.25),
-                str(page_num), font=SANS, size=9, bold=True, color=ACCENT, align=PP_ALIGN.RIGHT)
+    """Подвал: только номер слайда. Источники — в теле слайда, не в футере."""
+    color = ACCENT if not dark else RGBColor(0xC1, 0x5F, 0x3C)
+    add_textbox(slide, Inches(12.2), Inches(7.05), Inches(0.7), Inches(0.25),
+                str(page_num), font=SANS, size=9, bold=True, color=color, align=PP_ALIGN.RIGHT)
 
 
 def set_bg(slide, color=IVORY):
@@ -628,7 +623,7 @@ def slide_07_folder(prs):
                 font=SERIF, size=16, italic=True, color=SOFT, align=PP_ALIGN.CENTER)
 
     add_textbox(slide, Inches(0.72), Inches(6.4), Inches(12.0), Inches(0.4),
-                "Источники: 442-ФЗ ст. 9, 16, 32 ч. 4  ·  3185-1 ст. 5, 37, 43  ·  ГК ст. 29  ·  доклад, разделы 31, 32",
+                "Источники: 442-ФЗ ст. 9, 16, 32 ч. 4  ·  3185-1 ст. 5 ч. 2; ст. 37, 43  ·  ГК ст. 29  ·  доклад, разделы 31, 32",
                 font=SANS, size=10, color=MUTED)
 
     add_footer(slide, "Без комплекта та же практика выглядит как отступление от раскладки", 7)
@@ -796,7 +791,7 @@ def slide_10_order(prs):
                 font=SANS, size=11, italic=True, bold=True, color=ACCENTDEEP)
 
     add_textbox(slide, Inches(0.72), Inches(6.7), Inches(12.0), Inches(0.3),
-                "Источник S035  ·  www.pni9.ru  ·  правила внутреннего распорядка жителей",
+                "S035  ·  локальный приказ  ·  архив правил web.archive.org/web/20260415001233  ·  pni9.ru с 21.08.2026 не работает",
                 font=SANS, size=10, color=MUTED)
 
     add_footer(slide, "Доклад, раздел 8, 17.12", 10)
@@ -873,7 +868,7 @@ def slide_12_doctor_first(prs):
                 "РЕШАЕТ ВРАЧ", font=SANS, size=10, bold=True, color=ACCENTDEEP)
     add_textbox(slide, Inches(0.95), Inches(2.95), Inches(11.5), Inches(0.9),
                 ["Текстура  ·  стол  ·  противопоказания  ·  лекарственно-пищевые исключения",
-                 "Приказы 330н, 395н;  СанПиН 2.3/2.4.4282-26, п. 56(11)"],
+                 "Приказы 330н, 395н;  СанПиН 2.3/2.4.4282-26, п. 56(11) — с 01.09.2026, на 26.08 ещё не в силе"],
                 font=SERIF, size=16, color=INK, line_spacing=1.4)
 
     add_rect(slide, Inches(0.72), Inches(4.05), Inches(11.9), Inches(1.5),
@@ -1230,13 +1225,7 @@ def slide_18_pilot_final(prs):
                 "Не внедряйте вслепую.  Измеряйте.",
                 font=SERIF, size=18, italic=True, color=ACCENT, line_spacing=1.3)
 
-    # Footer
-    add_textbox(slide, Inches(0.72), Inches(7.1), Inches(10.0), Inches(0.25),
-                "Доклад, раздел 35 (пилот), 22 (панель чисел)",
-                font=SANS, size=9, color=GRAY)
-    add_textbox(slide, Inches(11.5), Inches(7.1), Inches(1.1), Inches(0.25),
-                "18 / 18", font=SANS, size=9, color=GRAY, align=PP_ALIGN.RIGHT)
-    add_textbox(slide, Inches(11.5), Inches(7.1), Inches(0.3), Inches(0.25),
+    add_textbox(slide, Inches(12.2), Inches(7.1), Inches(0.7), Inches(0.25),
                 "18", font=SANS, size=9, bold=True, color=ACCENT, align=PP_ALIGN.RIGHT)
 
 
@@ -1319,5 +1308,10 @@ if __name__ == "__main__":
     add_reserve_slides(prs)
 
     prs.save(out_path)
+    parent = os.path.dirname(HERE)
+    hall_pptx = os.path.join(parent, "Презентация_v6_Не_просто_накормить.pptx")
+    import shutil
+    shutil.copy2(out_path, hall_pptx)
     print(f"PPTX saved: {out_path}")
+    print(f"Hall copy: {hall_pptx}")
     print(f"Slides: {len(prs.slides)}")

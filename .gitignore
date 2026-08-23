@@ -14,9 +14,21 @@ __pycache__/
 
 # Презентации: промежуточные артефакты сборки WeasyPrint
 02_презентация/**/_pdf/
+02_презентация/**/_html/
 02_презентация/**/_t*.html
 
 # Системные
 Thumbs.db
 .DS_Store
 _chk_*.png
+
+# Локальный мусор — не коммитить
+.venv/
+ollama_vision.py
+md2docx_pravki.py
+проект/output/_qc/
+**/* 2.pdf
+**/* 2.md
+**/* 2.py
+**/* 2.html
+**/* 2.docx

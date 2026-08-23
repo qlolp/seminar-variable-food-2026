@@ -5,3 +5,4 @@ pydyf==0.10.0  # weasyprint 62.3 несовместим с pydyf >= 0.11 (Stream
 openpyxl==3.1.5
 pypdf==5.1.0
 PyYAML>=6.0
+python-pptx>=1.0.0  # колода зала v6 (PPTX)

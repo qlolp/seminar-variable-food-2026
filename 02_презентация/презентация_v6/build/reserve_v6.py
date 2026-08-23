@@ -92,11 +92,8 @@ def add_kicker(slide, label):
 
 
 def add_footer(slide, left_text, page_num):
-    add_textbox(slide, Inches(0.72), Inches(7.05), Inches(8.0), Inches(0.25),
-                left_text, font=SANS, size=9, color=MUTED)
-    add_textbox(slide, Inches(11.5), Inches(7.05), Inches(1.1), Inches(0.25),
-                f"{page_num}", font=SANS, size=9, color=MUTED, align=PP_ALIGN.RIGHT)
-    add_textbox(slide, Inches(11.5), Inches(7.05), Inches(0.3), Inches(0.25),
+    """Подвал резерва: только метка слайда (R1–R12)."""
+    add_textbox(slide, Inches(12.0), Inches(7.05), Inches(0.9), Inches(0.25),
                 str(page_num), font=SANS, size=9, bold=True, color=ACCENT, align=PP_ALIGN.RIGHT)
 
 
@@ -405,8 +402,8 @@ def slide_R8_legal_chain(prs):
                 font=SERIF, size=18, italic=True, color=SOFT)
 
     items = [
-        ("①", "3185-1 ст. 5, 37, 43", "Закон РФ о психиатрической помощи",
-         "Гуманное отношение, достоинство; права пациентов; статус проживающих в стационарных организациях соцобслуживания."),
+        ("①", "3185-1 ст. 5 ч. 2; ст. 37, 43", "Закон РФ о психиатрической помощи",
+         "Гуманное отношение — ст. 5 ч. 2, не ст. 37 ч. 2. Ст. 37 и 43 — права пациентов и статус проживающих."),
         ("②", "442-ФЗ ст. 9, 16, 32 ч. 4", "Основы социального обслуживания",
          "Уважительное и гуманное отношение; ИППСУ исходя из потребности; предельная величина платы 75 %."),
         ("③", "ГК РФ ст. 29, 30", "Гражданский кодекс",
