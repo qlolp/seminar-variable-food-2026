@@ -71,9 +71,18 @@ table.simple th, table.simple td { text-align: left; padding: 8px 10px; border-b
 table.simple th { color: var(--terra); font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
 .claim-src { margin-top: 20px; font-size: 15px; color: var(--muted); max-width: 50ch; }
 @media print {
+  @page { size: 13.333in 7.5in; margin: 0; }
   html, body { background: white; height: auto; }
   #deck { display: block; height: auto; }
-  .slide { display: flex; page-break-after: always; width: 1280px; height: 720px; margin: 0 auto 12px; }
+  .slide {
+    display: flex !important;
+    width: 13.333in;
+    height: 7.5in;
+    page-break-after: always;
+    break-after: page;
+    overflow: hidden;
+    margin: 0;
+  }
   .help, .note { display: none !important; }
 }
 </style>
