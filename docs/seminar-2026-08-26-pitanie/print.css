@@ -1,0 +1,11 @@
+body { font-family: "PT Serif", "Times New Roman", serif; color: #141413; background: #FAF9F5; max-width: 42rem; margin: 2rem auto; padding: 0 1.5rem 4rem; line-height: 1.5; }
+h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; line-height: 1.2; }
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.35rem; margin-top: 2.2rem; color: #9A4A2E; }
+a { color: #9A4A2E; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+th, td { border: 1px solid #D9D4C8; padding: 0.35rem 0.5rem; vertical-align: top; }
+th { background: #F0EEE6; }
+code { font-size: 0.85em; }
+hr { border: none; border-top: 2px solid #C15F3C; margin: 2rem 0; }
+@media print { body { background: white; } }
