@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Не просто накормить — Чистяков Е. В., 26.08.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory: #FAF9F5;
+  --panel: #F0EEE6;
+  --ink: #141413;
+  --terra: #C15F3C;
+  --terra-d: #9A4A2E;
+  --muted: #5C5854;
+  --line: #D9D4C8;
+  --warn: #141413;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; background: #2a2826; color: var(--ink); font-family: "PT Sans", sans-serif; }
+#deck { height: 100%; display: flex; align-items: center; justify-content: center; }
+.slide {
+  display: none;
+  width: min(96vw, 1280px);
+  height: min(54vw, 720px);
+  background: var(--ivory);
+  padding: 48px 64px 56px;
+  position: relative;
+  overflow: hidden;
+}
+.slide.active { display: flex; flex-direction: column; }
+.slide.dark { background: #1c1b19; color: var(--ivory); }
+.kicker { font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terra); font-weight: 700; margin-bottom: 12px; }
+.dark .kicker { color: #E8A48A; }
+h1 { font-family: "Playfair Display", serif; font-weight: 900; line-height: 1.12; font-size: 42px; max-width: 18ch; }
+h1.wide { max-width: 24ch; font-size: 38px; }
+.sub { margin-top: 18px; font-size: 20px; color: var(--muted); max-width: 42ch; line-height: 1.4; }
+.dark .sub { color: #C8C2B8; }
+.meta { margin-top: auto; font-size: 16px; color: var(--muted); line-height: 1.45; }
+.grid { display: grid; gap: 16px; margin-top: 28px; }
+.grid.two { grid-template-columns: 1fr 1fr; }
+.grid.three { grid-template-columns: 1fr 1fr 1fr; }
+.card { background: var(--panel); padding: 18px 20px; border-left: 4px solid var(--terra); }
+.card h2 { font-family: "Playfair Display", serif; font-size: 22px; margin-bottom: 6px; }
+.card p, .card li { font-size: 18px; line-height: 1.35; color: var(--ink); }
+.ladder { display: flex; gap: 10px; margin-top: 28px; align-items: stretch; }
+.step { flex: 1; background: var(--panel); padding: 16px 12px; text-align: center; }
+.step strong { display: block; font-family: "Playfair Display", serif; font-size: 28px; color: var(--terra); }
+.step span { display: block; margin-top: 8px; font-size: 16px; line-height: 1.3; }
+.step.on { background: #F5E7DE; outline: 2px solid var(--terra); }
+.num { font-family: "Playfair Display", serif; font-weight: 900; font-size: 88px; color: var(--terra); line-height: 0.9; }
+.num small { display: block; font-size: 18px; color: var(--muted); font-family: "PT Sans", sans-serif; font-weight: 400; margin-top: 10px; max-width: 22ch; }
+ul.clean { list-style: none; margin-top: 24px; }
+ul.clean li { font-size: 22px; line-height: 1.4; padding: 8px 0 8px 28px; position: relative; }
+ul.clean li::before { content: ""; position: absolute; left: 0; top: 18px; width: 12px; height: 12px; background: var(--terra); }
+.foot { position: absolute; left: 64px; right: 64px; bottom: 18px; display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); }
+.dark .foot { color: #8A847A; }
+.note {
+  display: none; position: fixed; left: 0; right: 0; bottom: 0;
+  background: #1c1b19; color: #FAF9F5; padding: 16px 24px 20px;
+  font-size: 15px; line-height: 1.45; max-height: 28vh; overflow: auto;
+  border-top: 3px solid var(--terra); z-index: 5;
+}
+.note.visible { display: block; }
+.note b { color: #E8A48A; }
+.help { position: fixed; top: 12px; right: 16px; color: #8A847A; font-size: 12px; z-index: 4; }
+table.simple { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 18px; }
+table.simple th, table.simple td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.simple th { color: var(--terra); font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
+.claim-src { margin-top: 20px; font-size: 15px; color: var(--muted); max-width: 50ch; }
+@media print {
+  html, body { background: white; height: auto; }
+  #deck { display: block; height: auto; }
+  .slide { display: flex; page-break-after: always; width: 1280px; height: 720px; margin: 0 auto 12px; }
+  .help, .note { display: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="help">← → · N заметки · P печать</div>
+<div id="deck">
+
+<section class="slide dark" data-notes="0:30. Я — Чистяков. Рядом Тимур Нурбаев. Мы в его доме. Один учредитель, разные законы закупки. Не путать кухни.">
+  <div class="kicker">Дискуссия 26.08.2026 · 14:00–15:30 · площадка № 2</div>
+  <h1>Не просто накормить</h1>
+  <p class="sub">Вариативное питание в домах социального обслуживания. Не ресторан. Архитектура замены.</p>
+  <p class="meta">Чистяков Евгений Владимирович · директор СПб ГАСУСОН «ДСО „Серафимовский“» (223-ФЗ)<br>
+  Со-модератор: Нурбаев Тимур Аликович · директор СПб ГБСУСОН «ДСО „Тесовый берег“» (44-ФЗ)<br>
+  Семинар «Пространство Новых Идей 2.0» · Минтруд России</p>
+  <div class="foot"><span>Основной показ 1 / 18</span><span>Тесовый берег</span></div>
+</section>
+
+<section class="slide" data-notes="Сцена, не витрина. Пять конфликтов — одна система. Национальной доли отходов нет.">
+  <div class="kicker">Сцена</div>
+  <h1 class="wide">За одним столом сходятся пять конфликтов</h1>
+  <div class="grid" style="grid-template-columns: 1fr 1fr; margin-top: 28px;">
+    <div class="card"><h2>Очередь / помощь</h2><p>Самостоятельным — первым. Кормимым — остывшее.</p></div>
+    <div class="card"><h2>Отказ без журнала</h2><p>Врач узнаёт в четверг. Каприз, дисфагия и протест выглядят одинаково.</p></div>
+    <div class="card"><h2>Кофе на клозапине</h2><p>Семья принесла. На посту нет таблицы. Кухня кофе не отменяет.</p></div>
+    <div class="card"><h2>Добавка без врача</h2><p>«Вам нельзя» — самодеятельность смены, не назначение.</p></div>
+  </div>
+  <p class="claim-src">Пятый конфликт — журналы «к комиссии». Имитация контроля. Несъеденное уже куплено. Цифры отходов по РФ нет.</p>
+  <div class="foot"><span>2 / 18</span><span>Собирательная сцена, не протокол одного обеда</span></div>
+</section>
+
+<section class="slide" data-notes="Центральный вопрос. Не обещать больше, чем пакет несёт.">
+  <div class="kicker">Вопрос сессии</div>
+  <h1 class="wide">Как дать жителю реальный выбор еды, не ломая три контура?</h1>
+  <div class="ladder">
+    <div class="step"><strong>1</strong><span>Санитарная безопасность</span></div>
+    <div class="step"><strong>2</strong><span>Клинические ограничения</span></div>
+    <div class="step"><strong>3</strong><span>Контур закупки<br>44-ФЗ или 223-ФЗ</span></div>
+  </div>
+  <p class="sub" style="margin-top:28px">Не «как сделать ресторан». Не «как обойти проверяющего».</p>
+  <div class="foot"><span>3 / 18</span><span>Вопрос введения = вопрос заключения</span></div>
+</section>
+
+<section class="slide" data-notes="Одно предложение. Практика Серафимовского — локальный акт, не федеральная норма.">
+  <div class="kicker">Тезис</div>
+  <h1 class="wide">Не ресторан и не новая смета. Архитектура эквивалентной замены.</h1>
+  <ul class="clean">
+    <li>Клиника задаёт красные линии</li>
+    <li>Кухня держит пару в одной сырьевой группе</li>
+    <li>Право фиксирует выбор — в том числе жест — как факт ухода</li>
+    <li>Закупка описывает пары, не одно блюдо</li>
+  </ul>
+  <div class="foot"><span>4 / 18</span><span>В Серафимовском это уже правила дома · приказ № 124 — локальный</span></div>
+</section>
+
+<section class="slide" data-notes="Определения. Не путать цикл, таблицу замен и выбор сегодня.">
+  <div class="kicker">Граница термина</div>
+  <h1 class="wide">Цикл меню и таблица замен — ещё не выбор</h1>
+  <div class="grid two">
+    <div class="card"><h2>Не вариативность</h2><p>14 дней без повторов. Гречка «по остаткам». «Спросите за неделю». Вчерашнее холодное. Спросили — приготовили одно.</p></div>
+    <div class="card"><h2>Вариативность здесь</h2><p>Сегодня можно получить А или Б. Б физически есть. Варианты равноценны. Выбор записан и исполнен.</p></div>
+  </div>
+  <div class="foot"><span>5 / 18</span><span>Заказное питание Серафимовского = конфигурация М1, не ГОСТ</span></div>
+</section>
+
+<section class="slide" data-notes="Самоопределение: вчерашний журнал, Б на линии, имя не-стандарта.">
+  <div class="kicker">Лестница · старт здесь</div>
+  <h1>Начните с М1. Не со шведского стола.</h1>
+  <div class="ladder">
+    <div class="step"><strong>М0</strong><span>Отказ → замена</span></div>
+    <div class="step on"><strong>М1</strong><span>Два варианта позиции</span></div>
+    <div class="step on"><strong>М2</strong><span>Ежедневно по основным</span></div>
+    <div class="step"><strong>М3–5</strong><span>Линия · семья · своя кухня</span></div>
+  </div>
+  <p class="claim-src">М1 — Болотнинский ПНИ; наш заказ накануне. М2 — Успенский ПНИ (публичные сообщения, не аудит эффекта). М3–5 — горизонт, не понедельник.</p>
+  <div class="foot"><span>6 / 18</span><span>Три вопроса к вчерашнему дню, не к положению</span></div>
+</section>
+
+<section class="slide" data-notes="Оговорка: диапазон не = российские ДСО. IDDSI не пункт СанПиН.">
+  <div class="kicker">Клиника · безопасность</div>
+  <h1>Текстуру назначает врач, не повар</h1>
+  <div style="display:flex; gap:40px; margin-top:24px; align-items:flex-start;">
+    <div>
+      <div class="num">21,9–69,5%<small>дисфагия в клинических работах у лиц на антипсихотиках</small></div>
+    </div>
+    <ul class="clean" style="margin-top:8px;">
+      <li>Источник: Miarons, 2017. Не аудит ДСО РФ.</li>
+      <li>IDDSI — язык 0–7, не пункт нашего СанПиН.</li>
+      <li>Wu 2022: 44%→90% в 5 aged-care, не психиатрия.</li>
+      <li>Попёрхивание — врач немедленно.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>7 / 18</span><span>Перенос процентов на ваш дом запрещён</span></div>
+</section>
+
+<section class="slide" data-notes="Hägg n=12 здоровые, однократная доза. Lane: грейпфрут не меняет клозапин. Garg: CBZ +41%, n=10.">
+  <div class="kicker">Клиника · лекарства</div>
+  <h1 class="wide">Кухня не отменяет кофе. Грейпфрут — не клозапин.</h1>
+  <table class="simple">
+    <thead><tr><th>Связка</th><th>Что показал источник</th><th>Что делает дом</th></tr></thead>
+    <tbody>
+      <tr><td>Клозапин × кофеин</td><td>Hägg 2000: +19% AUC, n=12 здоровых, 12,5 мг однократно</td><td>Резкий скачок — врачу. Не запрет кухни.</td></tr>
+      <tr><td>Клозапин × грейпфрут</td><td>Lane 2001: 14 дней сока, steady-state без эффекта</td><td>Не вешать на клозапин.</td></tr>
+      <tr><td>Карбамазепин × грейпфрут</td><td>Garg 1998: AUC ~+41%, n=10</td><td>Не закупать грейпфрут в стационар.</td></tr>
+      <tr><td>Литий × соль/вода</td><td>Стабильность баланса, не запрет огурцов</td><td>Без «малосольного стола» от кухни.</td></tr>
+    </tbody>
+  </table>
+  <div class="foot"><span>8 / 18</span><span>Таблица на посту — только с подписью врача</span></div>
+</section>
+
+<section class="slide" data-notes="74% — Если быть точным, 2024, не Минтруд. Ст. 30 не про недееспособных. Ст. 9 без слова достоинство.">
+  <div class="kicker">Право</div>
+  <h1 class="wide">Недееспособность не отменяет мнение</h1>
+  <div style="display:flex; gap:48px; margin-top:12px;">
+    <div>
+      <div class="num">74%<small>агрегат ПНИ 2024, «Если быть точным». В вашем доме — своя доля.</small></div>
+    </div>
+    <ul class="clean">
+      <li>ГК ст. 29: опекун учитывает мнение</li>
+      <li>ГК ст. 30: мелкие сделки — у ограниченно дееспособных</li>
+      <li>Выбор каши обычно не сделка [толкование]</li>
+      <li>442-ФЗ ст. 9 — гуманное отношение; «достоинства» в статье нет</li>
+      <li>Кто не говорит — две порции, пауза, запись</li>
+    </ul>
+  </div>
+  <div class="foot"><span>9 / 18</span><span>99% недееспособных под опекой интерната (2022, тот же проект) — конфликт интересов</span></div>
+</section>
+
+<section class="slide" data-notes="Критический слайд. 4282-26 существует, 01.09.2026. Сегодня ещё 3590-20. Не говорить «уже действует».">
+  <div class="kicker">Санитария на дату сессии</div>
+  <h1 class="wide">26 августа 4282-26 ещё не закон</h1>
+  <div class="grid two">
+    <div class="card"><h2>До 31.08.2026</h2><p>СанПиН 2.3/2.4.3590-20, пост. № 32. П. 7.1.11: ≥3 приёма, диетическое по показаниям.</p></div>
+    <div class="card"><h2>С 01.09.2026</h2><p>СанПиН 2.3/2.4.4282-26, пост. № 18 от 02.06.2026. pravo.gov.ru 0001202606020084. П. 56 подп. 11 — та же формула.</p></div>
+  </div>
+  <p class="claim-src">Документ реальный. На сегодня не в силе. Запрета на два блюда нет. Обязанности выбора нет. П. 60 — не про взрослых СОСО. 520н — рекомендуемые нормы.</p>
+  <div class="foot"><span>10 / 18</span><span>Сентябрь: журналы августа не переписывать</span></div>
+</section>
+
+<section class="slide" data-notes="Второй вариант удваивает контур, не отменяет. Проверяющему — папка.">
+  <div class="kicker">Санитария · практика</div>
+  <h1 class="wide">Второй вариант идёт тем же контуром</h1>
+  <div class="grid three">
+    <div class="card"><h2>Проба</h2><p>С каждого блюда. Не «средняя по обеду».</p></div>
+    <div class="card"><h2>Температура</h2><p>На обеих ёмкостях. Меньший объём остывает быстрее.</p></div>
+    <div class="card"><h2>Маркировка</h2><p>А/Б. Протёртое ≠ обычное: это клиника, не удобство.</p></div>
+  </div>
+  <p class="sub">Ст. 6.6 КоАП — качество и безопасность организации питания. Не состав «два вторых».</p>
+  <div class="foot"><span>11 / 18</span><span>Фиктивный контур + два блюда = двойная фикция</span></div>
+</section>
+
+<section class="slide" data-notes="Не обещать бесплатный полный переход. Серафимовский назвал оборудование и ставки.">
+  <div class="kicker">Кухня</div>
+  <h1>Два котла. Одна сырьевая группа.</h1>
+  <ul class="clean">
+    <li>Гречка / рис / пшено — взаимозамена раскладки, не «недо-вариант»</li>
+    <li>Журнал заказа накануне: Б не кончается к третьему отделению</li>
+    <li>Сырьевая строка = месяц продуктов ÷ жители ÷ дни. Средней по РФ нет</li>
+    <li>Пилот М1 часто в текущей строке. Полный переход тысячника может требовать ставок — мы это сказали вслух</li>
+  </ul>
+  <div class="foot"><span>12 / 18</span><span>Гипотеза «меньше отходов» — замер, не лозунг</span></div>
+</section>
+
+<section class="slide" data-notes="Не учить Тимура 223-ФЗ. Не учить зал 44-ФЗ как универсалию.">
+  <div class="kicker">Закупка</div>
+  <h1 class="wide">Один учредитель — два закона закупки</h1>
+  <div class="grid two">
+    <div class="card"><h2>Серафимовский · 223-ФЗ</h2><p>Автономное учреждение. Положение о закупке. Пары — в документации заказчика.</p></div>
+    <div class="card"><h2>Тесовый берег · 44-ФЗ</h2><p>Бюджетное учреждение. Контрактная система. Пары — в извещении и спецификации до торгов.</p></div>
+  </div>
+  <p class="claim-src">Чего нет в ТЗ аутсорсера, того на линии не будет. Не смешивать кухни и законы.</p>
+  <div class="foot"><span>13 / 18</span><span>Комитет по социальной политике СПб — общий учредитель</span></div>
+</section>
+
+<section class="slide" data-notes="Campforts не про меню. Публичная практика ≠ эффект.">
+  <div class="kicker">Доказательства</div>
+  <h1 class="wide">Публично внедрили — ещё не доказали эффект</h1>
+  <table class="simple">
+    <thead><tr><th>Источник</th><th>Что измерял</th><th>Чего не измерял</th></tr></thead>
+    <tbody>
+      <tr><td>Болотнино, Успенский, Усть-Илимск, Иркутск, мы</td><td>Факт сообщения о выборе</td><td>Отходы, устойчивость, неговорящих</td></tr>
+      <tr><td>Campforts 2023</td><td>CRWG ≥7% массы на антипсихотиках; клозапин >38 нед. — 76,3%</td><td>Меню, ПНИ, отходы</td></tr>
+      <tr><td>Pillinger 2020</td><td>+3,01 кг клозапин vs placebo, 6 нед., 100 РКИ</td><td>Долю пациентов 76,3%</td></tr>
+      <tr><td>Wu 2022</td><td>IDDSI-соответствие в aged care</td><td>Психиатрический стационар РФ</td></tr>
+    </tbody>
+  </table>
+  <div class="foot"><span>14 / 18</span><span>Западные модели ломаются о «учреждение = опекун» и о тысячник</span></div>
+</section>
+
+<section class="slide" data-notes="Стоп-критерии вслух. Пилот не RCT.">
+  <div class="kicker">Запуск</div>
+  <h1 class="wide">Пилот отвечает «можем ли», не «работает ли»</h1>
+  <div class="grid three">
+    <div class="card"><h2>90 дней</h2><p>Одно отделение 20–35 человек. Один обед. Модель М1. Одна смена.</p></div>
+    <div class="card"><h2>Стоп</h2><p>Рост отказов. Санитарный срыв новой линии. Слово врача.</p></div>
+    <div class="card"><h2>Не доказывает</h2><p>Что выбор улучшил здоровье. Такого исследования нет.</p></div>
+  </div>
+  <p class="claim-src">Первые две недели — новизна. Выводы — по дням 30–90. Свёрнутый пилот с причинами — управление, не позор.</p>
+  <div class="foot"><span>15 / 18</span><span>Не меняйте всё меню с понедельника</span></div>
+</section>
+
+<section class="slide" data-notes="Папка, не формула запрета нет.">
+  <div class="kicker">Проверяющий</div>
+  <h1>Проверяющему нужна папка, не лозунг</h1>
+  <ul class="clean">
+    <li>Положение о питании · меню с вариантами</li>
+    <li>Журнал заказа · журнал замен · пищевые карты</li>
+    <li>Пробы каждого варианта · уведомление учредителя</li>
+    <li>Шаблоны в репозитории — проекты форм, не бланк Роспотребнадзора</li>
+  </ul>
+  <div class="foot"><span>16 / 18</span><span>Федеральное право не запрещает и не обязывает — закрепляйте локально</span></div>
+</section>
+
+<section class="slide" data-notes="Не просить новый закон. 520н vs СанПиН.">
+  <div class="kicker">Отрасль</div>
+  <h1 class="wide">Минтруду: не новый закон. Ясность статусов.</h1>
+  <ul class="clean">
+    <li>Два блюда внутри раскладки при закрытом контуре — не нарушение</li>
+    <li>520н — рекомендация. СанПиН — обязанность. Не путать.</li>
+    <li>Обязательная вариативность без перехода даст фиктивные журналы</li>
+  </ul>
+  <div class="foot"><span>17 / 18</span><span>Считать: доступность выбора и отходы дома. Не «счастье»</span></div>
+</section>
+
+<section class="slide dark" data-notes="Ответ на слайд 3. Понедельник. Тимур — ваш дом, ваш закон.">
+  <div class="kicker">Заключение</div>
+  <h1 class="wide">Выбор реален, когда его можно проследить до тарелки</h1>
+  <p class="sub">Красные линии врача. Пара на кухне. Запись жеста. Локальный акт. Пары в закупке. С 1 сентября сменится нумерация СанПиН — не эта логика.</p>
+  <p class="meta" style="margin-top:28px">Понедельник: сырьевая строка · семь дней замера · одно отделение.<br>Без замера — мнение о столе. С замером — знание.<br><br>Тимур — ваш дом, ваш 44-ФЗ. Я закончил вход.</p>
+  <div class="foot"><span>18 / 18</span><span>Пакет: docs/seminar-2026-08-26-pitanie/</span></div>
+</section>
+
+<!-- RESERVE -->
+<section class="slide" data-notes="Разделитель. Не листать без вопроса.">
+  <div class="kicker">Резерв</div>
+  <h1>Резерв — не листать без вопроса зала</h1>
+  <p class="sub">R1 возражения · R2 учредитель · R3 Campforts · R4 жест · R5 красные линии · R6 числа · R7 комплект · R8 источники</p>
+  <div class="foot"><span>R0</span><span>Основной показ закончен</span></div>
+</section>
+
+<section class="slide" data-notes="Коротко, по 15 секунд.">
+  <div class="kicker">R1</div>
+  <h1>Четырнадцать страхов — процедурный ответ</h1>
+  <p class="claim-src" style="max-width:60ch; font-size:18px; line-height:1.5">Запретят → папка и СанПиН. Нет денег → замер и пары, не обещать тысячник бесплатно. Недееспособные → ст. 29 ГК. Не говорят → две порции. Очереди → заказ накануне. Аутсорсер → ТЗ. «У нас 14 дней» → это цикл. «Нормально» → семь дней замера. «Вы это едите?» → сначала тарелка директора.</p>
+  <div class="foot"><span>R1</span><span>Полный список — доклад, раздел 37</span></div>
+</section>
+
+<section class="slide" data-notes="Десять вопросов, не речь.">
+  <div class="kicker">R2</div>
+  <h1>Десять вопросов учредителю</h1>
+  <p class="sub">Пилот М1 на 90 дней без смены сметы? Какой канал закрывает «самоуправство»? 520н у нас — рекомендация или свой акт? Учреждение-опекун: какие правила прозрачности? Сырьевая строка видна? Выбор в следующем ТЗ? Стоп-критерии заранее? Показатель — доступность, не % довольных? Кто подписывает ППК к 01.09? Свёрнутый пилот примете как результат?</p>
+  <div class="foot"><span>R2</span><span>Доклад, раздел 38</span></div>
+</section>
+
+<section class="slide" data-notes="Если зал спутает 76,3% с меню.">
+  <div class="kicker">R3</div>
+  <h1 class="wide">Campforts 2023 измерял вес на антипсихотиках</h1>
+  <ul class="clean">
+    <li>BJPsych Open 9:e18. DOI 10.1192/bjo.2022.619</li>
+    <li>CRWG = набор ≥7% массы. Клозапин >38 нед.: 76,3%</li>
+    <li>201 исследование. Не меню. Не ПНИ. Не отходы.</li>
+    <li>Pillinger 2020 — килограммы за 6 недель, другая метрика</li>
+  </ul>
+  <div class="foot"><span>R3</span><span>Не аргумент вариативности</span></div>
+</section>
+
+<section class="slide" data-notes="Юридический факт = запись.">
+  <div class="kicker">R4</div>
+  <h1>Невербальный выбор — юридический факт, если записан</h1>
+  <p class="sub">Показ двух порций или карточек. Пауза. Что последовало. Кто видел. Журнал заказа / пищевая карта — проекты форм, не бланк государства. Без записи опекун-учреждение всегда «учёл мнение».</p>
+  <div class="foot"><span>R4</span><span>Доклад, разделы 13 и 18</span></div>
+</section>
+
+<section class="slide" data-notes="Граница 4.0.">
+  <div class="kicker">R5</div>
+  <h1>Красные линии</h1>
+  <div class="grid two">
+    <div class="card"><h2>Без врача</h2><p>Текстура, лечебный стол, кофеин на клозапине, соль на литии, длительный отказ, зонд, конец жизни.</p></div>
+    <div class="card"><h2>Без учредителя</h2><p>Смета, штат, статус пилота, аутсорсинг.</p></div>
+  </div>
+  <div class="foot"><span>R5</span><span>Кухня исполняет таблицу, не ставит диагноз</span></div>
+</section>
+
+<section class="slide" data-notes="Все числа с оговоркой.">
+  <div class="kicker">R6</div>
+  <h1>Панель чисел — только с источником</h1>
+  <table class="simple">
+    <thead><tr><th>Число</th><th>Источник</th><th>Не есть</th></tr></thead>
+    <tbody>
+      <tr><td>74%</td><td>tochno.st, 2024</td><td>Статформа Минтруда</td></tr>
+      <tr><td>21,9–69,5%</td><td>Miarons 2017</td><td>Все ДСО РФ</td></tr>
+      <tr><td>+3,01 кг</td><td>Pillinger 2020</td><td>76,3%</td></tr>
+      <tr><td>76,3%</td><td>Campforts 2023</td><td>Эффект меню</td></tr>
+      <tr><td>01.09.2026</td><td>пост. № 18</td><td>Дата сессии</td></tr>
+      <tr><td>отходы РФ</td><td>—</td><td>Не публиковались</td></tr>
+    </tbody>
+  </table>
+  <div class="foot"><span>R6</span><span>FACTCHECK.md</span></div>
+</section>
+
+<section class="slide" data-notes="Комплект запуска.">
+  <div class="kicker">R7</div>
+  <h1>Комплект локального запуска</h1>
+  <p class="sub">Приказ о пилоте. Положение. Меню с парами. Журналы заказа, замен, отказов, проб. Таблица «лекарство × еда». Письмо учредителю. Паспорт второй ёмкости. Регламент передач. С 01.09 — ППК к 4282-26. Шаблоны: проект/appendices/ — проекты.</p>
+  <div class="foot"><span>R7</span><span>Доклад, раздел 31</span></div>
+</section>
+
+<section class="slide" data-notes="Не 115/126.">
+  <div class="kicker">R8</div>
+  <h1>Источники этого пакета проверены 24.08.2026</h1>
+  <p class="sub">Официальный портал · КонсультантПлюс · PubMed/PMC · BJPsych Open · Lancet Psychiatry · IDDSI · Минтруд · «Если быть точным». Список — BIBLIOGRAPHY.md, ГОСТ Р 7.0.5-2008. Счётчики «115 цитирований» другой сборки сюда не переносятся.</p>
+  <div class="foot"><span>R8</span><span>Чистяков Е. В. · CC BY 4.0</span></div>
+</section>
+
+</div>
+<div class="note" id="notes"></div>
+<script>
+const slides = [...document.querySelectorAll('.slide')];
+const notes = document.getElementById('notes');
+let i = 0;
+function show(n) {
+  i = (n + slides.length) % slides.length;
+  slides.forEach((s, k) => s.classList.toggle('active', k === i));
+  notes.innerHTML = '<b>Заметка.</b> ' + (slides[i].dataset.notes || '');
+}
+show(0);
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); show(i + 1); }
+  if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); show(i - 1); }
+  if (e.key === 'Home') show(0);
+  if (e.key === 'End') show(slides.length - 1);
+  if (e.key === 'n' || e.key === 'N') notes.classList.toggle('visible');
+});
+</script>
+</body>
+</html>
