@@ -21,7 +21,7 @@
   --terra-d:#8C351C;
   --muted:#5A544C;
   --line:#D6CCBA;
-  --panel:#E8DFD0;
+  --panel:#E3D8C4;
   --dark:#161310;
   --cream:#F3EEE4;
   --cream-dim:#C8C0B4;
@@ -48,12 +48,12 @@ html,body{height:100%;background:#0c0b0a;color:var(--ink);font-family:Inter,syst
   background:var(--terra);pointer-events:none;z-index:0;
 }
 .blob.tr{right:-200px;top:-160px}
-.blob.bl{left:-220px;bottom:-240px;width:560px;height:560px}
+.blob.bl{left:-280px;bottom:-300px;width:520px;height:520px}
 .kicker{
-  font-size:20px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--terra);margin-bottom:18px;position:relative;z-index:1;
+  font-size:22px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--terra-d);margin-bottom:18px;position:relative;z-index:1;
 }
-.dark .kicker{color:#E89274}
+.dark .kicker{color:#E89274;letter-spacing:.14em}
 h1{
   font-family:"Noto Serif Display",Georgia,serif;font-weight:700;
   font-size:58px;line-height:1.12;letter-spacing:-.02em;
@@ -63,17 +63,17 @@ h1.wide{max-width:26ch;font-size:52px}
 h1.hero{font-size:68px;max-width:18ch;line-height:1.08}
 h1.question{font-size:64px;max-width:22ch;line-height:1.1}
 h1.mid{font-size:48px;max-width:24ch}
-.lede{margin-top:22px;font-size:28px;line-height:1.35;color:var(--muted);max-width:36ch;position:relative;z-index:1}
+.lede{margin-top:22px;font-size:30px;line-height:1.35;color:var(--muted);max-width:36ch;position:relative;z-index:1}
 .dark .lede{color:var(--cream-dim)}
 .body{flex:1;min-height:0;display:flex;flex-direction:column;position:relative;z-index:1;margin-top:28px}
 .foot{
-  position:relative;z-index:1;flex-shrink:0;margin-top:auto;padding-top:18px;
+  position:relative;z-index:2;flex-shrink:0;margin-top:auto;padding-top:18px;
   display:flex;justify-content:space-between;align-items:baseline;gap:24px;
-  font-size:18px;font-weight:500;color:var(--muted);letter-spacing:.01em;
+  font-size:20px;font-weight:500;color:var(--muted);letter-spacing:.01em;
   border-top:1px solid var(--line);
 }
-.dark .foot{border-top-color:#2e2a26;color:#8A847A}
-.meta{margin-top:auto;padding-top:28px;font-size:24px;line-height:1.45;color:var(--cream-dim);position:relative;z-index:1;max-width:42ch}
+.dark .foot{border-top-color:#3a342e;color:#C8C0B4}
+.meta{margin-top:auto;padding-top:28px;font-size:26px;line-height:1.45;color:var(--cream-dim);position:relative;z-index:1;max-width:42ch}
 .meta b{color:var(--cream);font-weight:600}
 
 /* layouts */
@@ -83,15 +83,18 @@ h1.mid{font-size:48px;max-width:24ch}
 .cols.c4{grid-template-columns:1fr 1fr 1fr 1fr}
 .cols.c5{grid-template-columns:repeat(5,1fr);gap:16px}
 .strip{
-  background:var(--panel);padding:28px 26px;display:flex;flex-direction:column;
-  min-height:0;
+  background:var(--panel);padding:32px 28px;display:flex;flex-direction:column;
+  min-height:0;justify-content:center;
 }
+.cols.c5 .strip{justify-content:flex-start;padding-top:28px}
 .strip .n{
-  font-family:"Noto Serif Display",Georgia,serif;font-size:36px;font-weight:700;
-  color:var(--terra);line-height:1;margin-bottom:14px;
+  font-family:"Noto Serif Display",Georgia,serif;font-size:34px;font-weight:700;
+  color:var(--terra-d);line-height:1.15;margin-bottom:14px;
 }
 .strip h2{font-family:"Noto Serif Display",Georgia,serif;font-size:28px;line-height:1.2;margin-bottom:10px;font-weight:700}
-.strip p{font-size:22px;line-height:1.35;color:var(--ink)}
+.strip p{font-size:24px;line-height:1.35;color:var(--ink)}
+.cols.c5 .strip p{font-size:22px}
+.cols.c5 .strip h2{font-size:26px}
 .dark .strip{background:#221e1a;color:var(--cream)}
 .dark .strip p{color:var(--cream-dim)}
 
@@ -102,19 +105,19 @@ h1.mid{font-size:48px;max-width:24ch}
   white-space:nowrap;
 }
 .stat .num small{
-  display:block;font-family:Inter,sans-serif;font-size:22px;font-weight:500;
+  display:block;font-family:Inter,sans-serif;font-size:24px;font-weight:500;
   color:var(--muted);letter-spacing:0;margin-top:18px;white-space:normal;
   max-width:18ch;line-height:1.35;
 }
 .claims{list-style:none;display:flex;flex-direction:column;gap:22px;justify-content:center}
-.claims li{font-size:28px;line-height:1.3;padding-left:28px;position:relative;max-width:28ch}
+.claims li{font-size:30px;line-height:1.3;padding-left:28px;position:relative;max-width:28ch}
 .claims li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;background:var(--terra)}
 
 .process{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr;gap:0;align-items:stretch;flex:1}
-.pstep{background:var(--panel);padding:32px 28px}
-.pstep strong{display:block;font-family:"Noto Serif Display",Georgia,serif;font-size:32px;margin-bottom:12px}
-.pstep p{font-size:24px;line-height:1.35}
-.parrow{display:flex;align-items:center;justify-content:center;color:var(--terra);font-size:32px;font-weight:700}
+.pstep{background:var(--panel);padding:36px 28px;display:flex;flex-direction:column;justify-content:center}
+.pstep strong{display:block;font-family:"Noto Serif Display",Georgia,serif;font-size:34px;margin-bottom:12px}
+.pstep p{font-size:26px;line-height:1.35}
+.parrow{display:flex;align-items:center;justify-content:center;color:var(--terra);font-size:40px;font-weight:700}
 
 .ladder{display:grid;grid-template-columns:1fr 1.15fr 1fr 1fr;gap:16px;flex:1;align-items:stretch}
 .step{background:var(--panel);padding:32px 24px;display:flex;flex-direction:column}
@@ -135,17 +138,20 @@ h1.mid{font-size:48px;max-width:24ch}
 
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;flex:1}
 .cell{background:var(--panel);padding:28px 30px;display:flex;flex-direction:column;justify-content:center}
-.cell h2{font-family:"Noto Serif Display",Georgia,serif;font-size:28px;margin-bottom:8px}
-.cell p{font-size:24px;line-height:1.35}
+.cell h2{font-family:"Noto Serif Display",Georgia,serif;font-size:30px;margin-bottom:8px}
+.cell p{font-size:26px;line-height:1.35}
 .cell .src{margin-top:10px;font-size:20px;color:var(--muted);font-weight:500}
 
 .timeline{flex:1;display:flex;flex-direction:column;justify-content:center;gap:36px}
-.tl-bar{position:relative;height:8px;background:var(--line);margin:48px 40px 24px}
+.tl-bar{position:relative;height:8px;background:var(--line);margin:64px 40px 36px}
 .tl-bar::after{content:"";position:absolute;left:42%;top:-10px;width:8px;height:28px;background:var(--terra)}
 .tl-now{
-  position:absolute;left:32%;top:-56px;transform:translateX(-50%);
-  font-size:22px;font-weight:600;color:var(--terra);white-space:nowrap;
+  position:absolute;left:28%;top:-52px;transform:translateX(-50%);
+  font-size:22px;font-weight:700;color:var(--terra-d);white-space:nowrap;
 }
+.tl-tick{position:absolute;top:18px;font-size:20px;font-weight:600;color:var(--muted);transform:translateX(-50%)}
+.tl-tick.a{left:42%}
+.tl-tick.b{left:100%}
 .tl-dates{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .tl-dates h2{font-family:"Noto Serif Display",Georgia,serif;font-size:36px;margin-bottom:10px}
 .tl-dates p{font-size:24px;line-height:1.35}
@@ -153,14 +159,14 @@ h1.mid{font-size:48px;max-width:24ch}
 .pots{flex:1;display:flex;flex-direction:column;justify-content:center}
 .pots svg{width:100%;height:280px}
 .pots-caption{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:8px}
-.pots-caption div{font-size:24px;line-height:1.35}
-.pots-caption b{display:block;font-family:"Noto Serif Display",Georgia,serif;font-size:26px;margin-bottom:6px}
+.pots-caption div{font-size:26px;line-height:1.35}
+.pots-caption b{display:block;font-family:"Noto Serif Display",Georgia,serif;font-size:28px;margin-bottom:6px}
 
 .houses{display:grid;grid-template-columns:1fr 1fr;gap:28px;flex:1}
 .house{padding:40px 40px;display:flex;flex-direction:column}
 .house.a{background:#221e1a;color:var(--cream)}
 .house.b{background:var(--panel)}
-.house .law{font-family:"Noto Serif Display",Georgia,serif;font-size:56px;line-height:1;margin:12px 0 18px;color:var(--terra)}
+.house .law{font-family:"Noto Serif Display",Georgia,serif;font-size:56px;line-height:1;margin:12px 0 18px;color:#E89274}
 .house.b .law{color:var(--terra-d)}
 .house h2{font-size:28px;font-weight:600}
 .house p{font-size:26px;line-height:1.35;margin-top:auto}
@@ -178,7 +184,7 @@ h1.mid{font-size:48px;max-width:24ch}
   font-family:"Noto Serif Display",Georgia,serif;font-size:160px;line-height:.85;
   color:var(--terra);padding-right:12px;display:flex;align-items:center;
 }
-.phase{background:var(--panel);padding:28px 26px}
+.phase{background:var(--panel);padding:32px 28px;display:flex;flex-direction:column;justify-content:center}
 .phase b{display:block;font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);margin-bottom:12px}
 .phase p{font-size:26px;line-height:1.3}
 
@@ -191,7 +197,10 @@ h1.mid{font-size:48px;max-width:24ch}
 .tab{background:var(--panel);padding:28px 26px;font-size:26px;line-height:1.3}
 .tab b{display:block;font-family:"Noto Serif Display",Georgia,serif;font-size:28px;margin-bottom:8px}
 
-.src{font-size:20px;color:var(--muted);margin-top:18px;font-weight:500;max-width:52ch;line-height:1.4}
+.qlist{list-style:none;display:flex;flex-direction:column;gap:16px}
+.qlist li{font-size:26px;line-height:1.3;padding-left:44px;position:relative}
+.qlist li::before{content:attr(data-n);position:absolute;left:0;top:0;color:var(--terra-d);font-weight:700;font-family:"Noto Serif Display",Georgia,serif;font-size:26px}
+.src{font-size:22px;color:var(--muted);margin-top:18px;font-weight:500;max-width:56ch;line-height:1.4}
 
 .slide::before{content:"";position:absolute;top:0;left:12px;right:0;height:4px;background:var(--terra);opacity:.35;pointer-events:none}
 
@@ -212,15 +221,16 @@ h1.mid{font-size:48px;max-width:24ch}
 
 @media print{
   @page{size:1920px 1080px;margin:0}
-  html,body{background:#fff;height:auto;overflow:visible}
-  #stage{position:static}
+  html,body{background:#fff;height:auto !important;overflow:visible !important}
+  #stage{position:static !important;inset:auto}
   .slide{
-    display:flex !important;position:relative;transform:none !important;
+    display:flex !important;position:relative !important;
+    transform:none !important;left:0 !important;top:0 !important;
     width:1920px;height:1080px;page-break-after:always;break-after:page;
-    overflow:hidden;
+    overflow:hidden;margin:0;
   }
-  .slide:last-child{page-break-after:auto}
-  #help,#notes,.progress{display:none !important}
+  .slide:last-of-type{page-break-after:auto;break-after:auto}
+  #help,#notes,.slide::before{display:none !important}
 }
 </style>
 </head>
@@ -415,7 +425,7 @@ h1.mid{font-size:48px;max-width:24ch}
   <h1 class="wide">26 августа 4282-26 ещё не закон</h1>
   <div class="body">
     <div class="timeline">
-      <div class="tl-bar"><span class="tl-now">сессия 26.08 — здесь</span></div>
+      <div class="tl-bar"><span class="tl-now">сессия 26.08 — здесь</span><span class="tl-tick a">01.09</span></div>
       <div class="tl-dates">
         <div>
           <h2>До 31.08.2026</h2>
@@ -624,8 +634,24 @@ h1.mid{font-size:48px;max-width:24ch}
   <h1 class="mid">Десять вопросов учредителю — не презентация, а разговор</h1>
   <div class="body">
     <div class="cols c2">
-      <div class="strip"><p>Пилот М1 на 90 дней без смены сметы? Какой канал закрывает «самоуправство»? 520н у нас — рекомендация или свой акт? Учреждение-опекун: какие правила прозрачности? Сырьевая строка видна ежеквартально?</p></div>
-      <div class="strip"><p>Выбор в следующем ТЗ аутсорсера? Стоп-критерии заранее? Показатель — доступность, не % довольных? Кто подписывает ППК к 01.09? Свёрнутый пилот примете как результат?</p></div>
+      <div class="strip" style="justify-content:flex-start">
+        <ul class="qlist">
+          <li data-n="1">Пилот М1 на 90 дней без смены сметы?</li>
+          <li data-n="2">Какой канал закрывает «самоуправство»?</li>
+          <li data-n="3">520н у нас — рекомендация или свой акт?</li>
+          <li data-n="4">Учреждение-опекун: какие правила прозрачности?</li>
+          <li data-n="5">Сырьевая строка видна ежеквартально?</li>
+        </ul>
+      </div>
+      <div class="strip" style="justify-content:flex-start">
+        <ul class="qlist">
+          <li data-n="6">Выбор в следующем ТЗ аутсорсера?</li>
+          <li data-n="7">Стоп-критерии заранее?</li>
+          <li data-n="8">Показатель — доступность, не % довольных?</li>
+          <li data-n="9">Кто подписывает ППК к 01.09?</li>
+          <li data-n="10">Свёрнутый пилот примете как результат?</li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="foot"><span>R2</span><span>Доклад, раздел 38</span></div>
