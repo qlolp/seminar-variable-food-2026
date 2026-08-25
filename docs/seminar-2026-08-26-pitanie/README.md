@@ -23,8 +23,9 @@
 | [`01_doklad.html`](01_doklad.html) | Печатная HTML-версия доклада |
 | [`01_doklad.pdf`](01_doklad.pdf) | PDF доклада (чтение / печать; текст не менялся) |
 | [`02_ustnaya_versiya.md`](02_ustnaya_versiya.md) | Устный сценарий на слот: что говорится / что остаётся в пакете |
-| [`03_prezentaciya.html`](03_prezentaciya.html) | Презентация (визуальный аргумент, 18 слайдов + резерв; стрелки, N — заметки) |
-| [`03_prezentaciya.pdf`](03_prezentaciya.pdf) | PDF колоды 16:9 (печать) |
+| [`03_prezentaciya.html`](03_prezentaciya.html) | Колода 16:9 (1920×1080): 19 слайдов + резерв; офлайн-шрифты; ← →, F, N/S заметки, P печать |
+| [`03_prezentaciya.pdf`](03_prezentaciya.pdf) | PDF колоды 16:9 (печать с HTML, без обрезки) |
+| [`fonts/`](fonts/) | Noto Serif Display + Inter (кириллица, woff2, SIL OFL) |
 | [`FACTCHECK.md`](FACTCHECK.md) | Таблица утверждений, первоисточники, исправления |
 | [`BIBLIOGRAPHY.md`](BIBLIOGRAPHY.md) | ГОСТ Р 7.0.5-2008, только проверенные позиции |
 | [`SLIDE_AUDIT.md`](SLIDE_AUDIT.md) | Послайдовый разбор |
