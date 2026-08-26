@@ -1,0 +1,206 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 29 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Пилот за 90 дней: одно отделение, без новой сметы'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Сначала замер и документы — потом выбор на линии; решение по числам до/после'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 35 — пилот 90 дней; чек-листы — приложения'}
+  - elementId: ph0
+    elementType: shape
+    bounds: [60, 108, 287, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: pht0
+    elementType: text
+    bounds: [70, 108, 270, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">ДНИ 1–14 · ПОДГОТОВКА</span></strong></p>
+  - elementId: pb0
+    elementType: shape
+    bounds: [60, 134, 287, 240]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: pbt0
+    elementType: text
+    bounds: [72, 142, 263, 224]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p>Семидневный замер отходов и отказов · пять чисел о контингенте · пары эквивалентов · положение и журналы · инструктаж смены. На линии — ничего не меняется.</p>
+  - elementId: arr0
+    elementType: text
+    bounds: [346, 210, 14, 30]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p><strong><span style="font-size:16px; color:$orange">→</span></strong></p>
+  - elementId: ph1
+    elementType: shape
+    bounds: [357, 108, 287, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: pht1
+    elementType: text
+    bounds: [367, 108, 270, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">ДНИ 15–75 · ПИЛОТ НА ЛИНИИ</span></strong></p>
+  - elementId: pb1
+    elementType: shape
+    bounds: [357, 134, 287, 240]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: pbt1
+    elementType: text
+    bounds: [369, 142, 263, 224]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p>Одно типовое отделение. Выбор из двух на завтраке и обеде — старт 50/50 с резервом. Журнал заказа каждый день; срыв «вариант Б закончился» записывается, а не прячется. Роли: диетсестра — пары, повар — поток, старшая смена — контроль «вариант Б существует».</p>
+  - elementId: arr1
+    elementType: text
+    bounds: [643, 210, 14, 30]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p><strong><span style="font-size:16px; color:$orange">→</span></strong></p>
+  - elementId: ph2
+    elementType: shape
+    bounds: [654, 108, 287, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: pht2
+    elementType: text
+    bounds: [664, 108, 270, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">ДНИ 76–90 · ОЦЕНКА</span></strong></p>
+  - elementId: pb2
+    elementType: shape
+    bounds: [654, 134, 287, 240]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: pbt2
+    elementType: text
+    bounds: [666, 142, 263, 224]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p>Повторный семидневный замер. Сравнение до/после: отходы, отказы, время раздачи, доля «выбрал — получил». Решение: расширять, корректировать или останавливать — по числам.</p>
+  - elementId: ban
+    elementType: shape
+    bounds: [60, 392, 880, 52]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: banb
+    elementType: shape
+    bounds: [60, 392, 6, 52]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: bant
+    elementType: text
+    bounds: [78, 398, 850, 40]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.35
+      text: |
+        <p><span style="font-size:10.5px"><strong>«Без новой сметы» не значит «без затрат»:</strong> сначала замер, документы и обучение — потом выбор на линии. Пилот дешевле одного ремонтного дня.</span></p>

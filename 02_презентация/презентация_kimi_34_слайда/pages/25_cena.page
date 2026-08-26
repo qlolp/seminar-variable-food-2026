@@ -1,0 +1,160 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 25 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Честная цена вариативности определяется замером, а не обещанием'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Пять моделей затрат — от М0 к М2; ключевой механизм — перераспределение, а не добавка'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 29 — финансовые модели; форма замера — приложение 25'}
+  - elementId: tbl
+    elementType: table
+    bounds: [60, 106, 560, 268]
+    columnWidths: [0.26, 0.42, 0.32]
+    rowHeights: [0.14, 0.215, 0.215, 0.215, 0.215]
+    style: "$default"
+    rows:
+      - - text: "СТАТЬЯ"
+        - text: "МЕХАНИЗМ М1–М2"
+        - text: "БАЗИС"
+      - - text: "<p><strong>Сырьё</strong></p>"
+        - text: "Не добавляется — перераспределяется внутри той же продуктовой строки через пары эквивалентов"
+        - text: "+0 ₽ к суммарному расходу (модельная оценка)"
+      - - text: "<p><strong>Труд</strong></p>"
+        - text: "+5–10 минут на раздаче; журнал заказа — 10 минут вечером"
+        - text: "Внутри существующих ставок"
+      - - text: "<p><strong>Оборудование</strong></p>"
+        - text: "Вторая гастроёмкость, маркировка цветом, весы для замера"
+        - text: "Разово; у большинства — уже есть"
+      - - text: "<p><strong>Документы</strong></p>"
+        - text: "Положение, журналы, пищевые карты — по шаблонам приложений"
+        - text: "0 ₽; время диетсестры"
+  - elementId: rb
+    elementType: shape
+    bounds: [640, 106, 300, 140]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: rbt
+    elementType: text
+    bounds: [654, 114, 274, 124]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p><strong><span style="font-size:10px; color:$orange">ЧЕСТНО</span></strong></p>
+        <p style="margin-top:8px">Мы не утверждаем, что вариативность «почти бесплатна».</p>
+        <p style="margin-top:8px">Мы утверждаем: цена определяется замером — до старта и через 90 дней.</p>
+  - elementId: rb2
+    elementType: shape
+    bounds: [640, 262, 300, 112]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: rb2t
+    elementType: text
+    bounds: [654, 270, 274, 96]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      lineHeight: 1.4
+      text: |
+        <p><span style="font-size:10px">Цифры слева — модельные оценки, не замеры. Ваша цифра — после семи дней замера по форме приложения 25.</span></p>
+  - elementId: ban
+    elementType: shape
+    bounds: [60, 392, 880, 52]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: banb
+    elementType: shape
+    bounds: [60, 392, 6, 52]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: bant
+    elementType: text
+    bounds: [78, 398, 850, 40]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.35
+      text: |
+        <p><span style="font-size:10.5px"><strong>Кейс «Серафимовского» — честный прецедент:</strong> старт не был «без новых денег»; оборудование и ставки названы прямо. Именно поэтому модели верят.</span></p>

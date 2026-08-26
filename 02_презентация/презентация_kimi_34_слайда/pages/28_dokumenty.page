@@ -1,0 +1,273 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 28 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Вариативность — это документы, а не только блюда'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Без комплекта практика выглядит отступлением от раскладки; с комплектом — системой'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, разделы 31–32 — документы и типовые вопросы проверяющего'}
+  - elementId: h1b
+    elementType: shape
+    bounds: [60, 106, 430, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: h1t
+    elementType: text
+    bounds: [72, 106, 410, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">КОМПЛЕКТ · ШЕСТЬ ДОКУМЕНТОВ</span></strong></p>
+  - elementId: d0
+    elementType: text
+    bounds: [60, 140, 430, 46]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      align: [left, middle]
+      text: |
+        <p>· Положение о вариативном питании — локальный акт: что, для кого, кто отвечает</p>
+  - elementId: dsep0
+    elementType: line
+    bounds: [60, 187, 430, 1]
+    viewBox: [430, 1]
+    points: "0,0 430,0"
+    curve: sharp
+    border: {style: solid, width: 0.5, color: "$line"}
+  - elementId: d1
+    elementType: text
+    bounds: [60, 190, 430, 46]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      align: [left, middle]
+      text: |
+        <p>· Меню с вариантами — пары эквивалентов внутри норм и раскладок</p>
+  - elementId: dsep1
+    elementType: line
+    bounds: [60, 237, 430, 1]
+    viewBox: [430, 1]
+    points: "0,0 430,0"
+    curve: sharp
+    border: {style: solid, width: 0.5, color: "$line"}
+  - elementId: d2
+    elementType: text
+    bounds: [60, 240, 430, 46]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      align: [left, middle]
+      text: |
+        <p>· Журнал заказа — выбор накануне и пересчёт объёмов</p>
+  - elementId: dsep2
+    elementType: line
+    bounds: [60, 287, 430, 1]
+    viewBox: [430, 1]
+    points: "0,0 430,0"
+    curve: sharp
+    border: {style: solid, width: 0.5, color: "$line"}
+  - elementId: d3
+    elementType: text
+    bounds: [60, 290, 430, 46]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      align: [left, middle]
+      text: |
+        <p>· Журнал замен — отказ обернулся альтернативой, а не голодом</p>
+  - elementId: dsep3
+    elementType: line
+    bounds: [60, 337, 430, 1]
+    viewBox: [430, 1]
+    points: "0,0 430,0"
+    curve: sharp
+    border: {style: solid, width: 0.5, color: "$line"}
+  - elementId: d4
+    elementType: text
+    bounds: [60, 340, 430, 46]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      align: [left, middle]
+      text: |
+        <p>· Пищевые карты жителей — ограничения, текстуры, кофеиновая строка</p>
+  - elementId: dsep4
+    elementType: line
+    bounds: [60, 387, 430, 1]
+    viewBox: [430, 1]
+    points: "0,0 430,0"
+    curve: sharp
+    border: {style: solid, width: 0.5, color: "$line"}
+  - elementId: d5
+    elementType: text
+    bounds: [60, 390, 430, 46]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      align: [left, middle]
+      text: |
+        <p>· Согласование с учредителем — письменный разговор наверх</p>
+  - elementId: h2b
+    elementType: shape
+    bounds: [510, 106, 430, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: h2t
+    elementType: text
+    bounds: [522, 106, 410, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">ПРОВЕРЯЮЩИЙ СПРОСИТ — ОТВЕЧАЙТЕ ДОКУМЕНТОМ</span></strong></p>
+  - elementId: q0
+    elementType: shape
+    bounds: [510, 140, 430, 92]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: qt0
+    elementType: text
+    bounds: [522, 146, 406, 80]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.3
+      text: |
+        <p><strong><span style="font-size:10px; color:$navy">«Почему два варианта?»</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:9.5px">Положение о вариативном питании + таблицы замен продуктов. Варианты — эквиваленты внутри нормы, а не «что попало».</span></p>
+  - elementId: q1
+    elementType: shape
+    bounds: [510, 240, 430, 92]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: qt1
+    elementType: text
+    bounds: [522, 246, 406, 80]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.3
+      text: |
+        <p><strong><span style="font-size:10px; color:$navy">«Где пробы второго блюда?»</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:9.5px">Суточные пробы с каждого блюда — обе гастроёмкости, обе строки журнала. Температура — на обеих ёмкостях.</span></p>
+  - elementId: q2
+    elementType: shape
+    bounds: [510, 340, 430, 92]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: qt2
+    elementType: text
+    bounds: [522, 346, 406, 80]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.3
+      text: |
+        <p><strong><span style="font-size:10px; color:$navy">«Кто назначил диету?»</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:9.5px">Врач, поимённо, со сроком пересмотра — список в пищевых картах. Ограничений «по представлению сиделки» нет.</span></p>
+  - elementId: ban
+    elementType: shape
+    bounds: [510, 440, 430, 52]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: bant
+    elementType: text
+    bounds: [524, 446, 404, 40]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p><strong>Страх проверки лечится комплектом, а не отказом от практики.</strong> Не говорить проверяющему того, чего нет в документах.</p>
+  - elementId: n1
+    elementType: text
+    bounds: [60, 452, 430, 40]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      color: $muted
+      text: |
+        <p>Журналы ведутся в день события, а не «по памяти вечером». Главный риск — не выбор, а его бездокументальность.</p>
