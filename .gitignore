@@ -1,34 +1,6 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Сборка (генерируемые артефакты — только при необходимости)
-проект/output/_report.pdf
-проект/output/_report_color.pdf
-проект/output/_report.html
-проект/output/_report_color.html
-проект/output/_report_beautiful.html
-проект/output/_report_full.md
-проект/output/_citations.jsonl
-
-# Презентации: промежуточные артефакты сборки WeasyPrint
-02_презентация/**/_pdf/
-02_презентация/**/_html/
-02_презентация/**/_t*.html
-
 # Системные
 Thumbs.db
 .DS_Store
-_chk_*.png
-
-# Локальный мусор — не коммитить
 .venv/
-ollama_vision.py
-md2docx_pravki.py
-проект/output/_qc/
-**/* 2.pdf
-**/* 2.md
-**/* 2.py
-**/* 2.html
-**/* 2.docx
+__pycache__/
+*.py[cod]
