@@ -1,0 +1,176 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 21 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Вес — две строки, а не одна: набор и потеря'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Мониторинг веса: триггеры эскалации к врачу в обе стороны'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 13 — вес и мониторинг; MUST (BAPEN), пороги Онтарио'}
+  - elementId: b1
+    elementType: shape
+    bounds: [60, 106, 430, 180]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: b1h
+    elementType: shape
+    bounds: [60, 106, 430, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: b1ht
+    elementType: text
+    bounds: [72, 106, 410, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">НАБОР · МЕТАБОЛИЧЕСКИЙ РИСК</span></strong></p>
+  - elementId: b1t
+    elementType: text
+    bounds: [74, 140, 404, 138]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>Антипсихотики дают прибавку в разы: ≥7 % массы — у <strong>76 % на клозапине</strong>, 37 % на оланзапине.</p>
+        <p style="margin-top:8px">Триггер: <strong><span style="color:$orange">+5 % за 3 месяца → врач сегодня</span></strong>.</p>
+        <p style="margin-top:8px">Кофеиновая и сахарная строки пищевой карты — часть контроля.</p>
+  - elementId: b2
+    elementType: shape
+    bounds: [510, 106, 430, 180]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: b2h
+    elementType: shape
+    bounds: [510, 106, 430, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$cyan"}
+  - elementId: b2ht
+    elementType: text
+    bounds: [522, 106, 410, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">ПОТЕРЯ · НЕДОСТАТОЧНОСТЬ ПИТАНИЯ</span></strong></p>
+  - elementId: b2t
+    elementType: text
+    bounds: [524, 140, 404, 138]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>Скрининг MUST (BAPEN): ИМТ + непреднамеренная потеря >5 % за 3–6 месяцев.</p>
+        <p style="margin-top:8px">Пороги Онтарио: <strong>≥5 % за 30 дней / ≥7,5 % за 90 / ≥10 % за 180</strong> → сигнал врачу.</p>
+        <p style="margin-top:8px">Кто заполняет MUST в ПНИ: медсестра или врач, ежемесячно.</p>
+  - elementId: b3
+    elementType: shape
+    bounds: [60, 304, 880, 76]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: b3t
+    elementType: text
+    bounds: [74, 310, 852, 64]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p><strong>Механика мониторинга — нулевой стоимости:</strong> взвешивание раз в месяц, одни и те же весы, одно и то же время, запись в карту. Категорию риска ставит врач — кухня даёт вес и факт поедания.</p>
+        <p style="margin-top:6px">Для лежачих без кресла-весов строка «вес» в карте — фикция: это отдельная строка закупки, а не «наблюдаем до обхода».</p>
+  - elementId: b4
+    elementType: shape
+    bounds: [60, 398, 880, 46]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: b4t
+    elementType: text
+    bounds: [74, 404, 852, 34]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.3
+      text: |
+        <p><span style="font-size:10.5px">Вес — две строки, а не одна. Иначе кухня «скринит истощение», глядя на прибавку, — и пропускает оба риска.</span></p>

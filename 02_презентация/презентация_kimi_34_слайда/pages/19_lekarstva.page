@@ -1,0 +1,134 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 19 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Пять лекарственно-пищевых правил, которые обязана знать кухня'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Лекарства и еда: конфликты предсказуемы — значит, управляемы'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 11 — пять лекарственно-пищевых правил'}
+  - elementId: tbl
+    elementType: table
+    bounds: [60, 106, 880, 268]
+    columnWidths: [0.24, 0.38, 0.38]
+    rowHeights: [0.13, 0.174, 0.174, 0.174, 0.174, 0.174]
+    style: "$default"
+    rows:
+      - - text: "ПАРА"
+        - text: "РИСК"
+        - text: "ПРАВИЛО КУХНИ"
+      - - text: "<p><strong>Клозапин ↔ кофеин</strong></p>"
+        - text: "Резкий рост кофеина поднимает концентрацию препарата"
+        - text: "Считать чашки — включая какао и кофейные напитки"
+      - - text: "<p><strong>Литий ↔ соль и вода</strong></p>"
+        - text: "Резкие изменения соли и питьевого режима — риск интоксикации"
+        - text: "Стабильность, а не запрет"
+      - - text: "<p><strong>ИМАО ↔ тирамин</strong></p>"
+        - text: "Выдержанные сыры, копчёности — риск гипертонического криза"
+        - text: "Тираминовая разметка меню"
+      - - text: "<p><strong>Грейпфрут ↔ карбамазепин</strong></p>"
+        - text: "Рост AUC порядка 40 %"
+        - text: "Исключить грейпфрут из меню и передач"
+      - - text: "<p><strong>Алкоголь, энергетики</strong></p>"
+        - text: "Передачи от родственников — неконтролируемый ввод"
+        - text: "Нулевая терпимость; передачи считаются"
+  - elementId: ban
+    elementType: shape
+    bounds: [60, 392, 880, 48]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: banb
+    elementType: shape
+    bounds: [60, 392, 6, 48]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: bant
+    elementType: text
+    bounds: [78, 398, 850, 36]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.35
+      text: |
+        <p><span style="font-size:10.5px"><strong>Одна таблица на посту — бесплатная мера безопасности.</strong> Кухня не лечит: она исполняет таблицу врача и отмечает конфликты в пищевой карте.</span></p>

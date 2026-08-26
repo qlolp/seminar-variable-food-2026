@@ -1,0 +1,166 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 20 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Дисфагия — скрытая эпидемия стационарного стола'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Расстройство глотания — у каждого пятого; видимыми его делают признаки, а не приборы'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 10 — дисфагия и риск аспирации; источники M-dysph_prev, M-iddsi_wu'}
+  - elementId: big
+    elementType: text
+    bounds: [60, 112, 300, 44]
+    content:
+      fontFamily: "Arial"
+      wrap: false
+      text: |
+        <p><strong><span style="font-size:30px; color:$orange">каждый пятый</span></strong></p>
+  - elementId: bigd
+    elementType: text
+    bounds: [60, 158, 300, 110]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>Минимум — по исследованиям распространённости расстройства глотания. В типовом ПНИ нет ни логопеда, ни скрининга: дисфагия невидима до первой тяжёлой пневмонии.</p>
+  - elementId: b1
+    elementType: shape
+    bounds: [60, 282, 300, 160]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: b1t
+    elementType: text
+    bounds: [74, 290, 274, 146]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p><strong><span style="font-size:10px; color:$navy">ШЕСТЬ ПРИЗНАКОВ БЕЗ ИНСТРУМЕНТОВ</span></strong></p>
+        <p style="margin-top:6px">· кашель при еде · «мокрый» голос после глотка</p>
+        <p style="margin-top:4px">· долгое пережёвывание без глотания</p>
+        <p style="margin-top:4px">· скопление пищи за щекой · подтекание изо рта</p>
+        <p style="margin-top:4px">· повторные пневмонии в анамнезе</p>
+        <p style="margin-top:8px"><strong>Любой признак → запись → врач.</strong> Выучивается сменой за один инструктаж.</p>
+  - elementId: rb
+    elementType: shape
+    bounds: [400, 112, 540, 140]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: rbt
+    elementType: text
+    bounds: [416, 120, 508, 124]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:11px">IDDSI — международная шкала текстур</span></strong></p>
+        <p style="margin-top:6px"><span style="font-size:10px">8 уровней с тестами вилкой и наклоном. Внедрение в пяти учреждениях:</span></p>
+        <p style="margin-top:8px"><span style="font-size:10px">соответствие текстур назначенным: <strong><span style="color:#FF6600">с 44 % до 90 %</span></strong> · жидкостей: <strong><span style="color:#FF6600">с 31 % до 100 %</span></strong></span></p>
+  - elementId: rb2
+    elementType: shape
+    bounds: [400, 268, 540, 84]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: rb2t
+    elementType: text
+    bounds: [416, 276, 508, 68]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p><strong>Программа начинается не с блендера, а с обучения смены.</strong></p>
+        <p style="margin-top:6px">Назначение текстуры — решение врача, поимённое, со сроком пересмотра. Сиделка текстуру не назначает и не отменяет.</p>
+  - elementId: rb3
+    elementType: shape
+    bounds: [400, 368, 540, 74]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: rb3t
+    elementType: text
+    bounds: [416, 376, 508, 58]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>Ночной интервал и дисфагия связаны: «он опять не ест кашу» третий день подряд — это не каприз, а возможный симптом. Правило трёх отказов — эскалация к врачу, а не смена каши.</p>
