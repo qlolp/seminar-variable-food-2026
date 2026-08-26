@@ -1,0 +1,91 @@
+pageType: cover
+background:
+  type: solid
+  color: "#172856"
+elements:
+  - elementId: photo
+    elementType: image
+    bounds: [0, 0, 960, 540]
+    src: media/6_Exploring_the_Convenience_of_All.png
+    fit: {mode: cover}
+  - elementId: overlay
+    elementType: shape
+    bounds: [0, 0, 960, 540]
+    shapeName: rect
+    fill: {type: solid, color: "#172856E0"}
+  - elementId: railtop
+    elementType: shape
+    bounds: [0, 0, 960, 8]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 58, 840, 18]
+    content:
+      fontSize: 10
+      bold: true
+      letterSpacing: 3
+      color: "#FFD9C2"
+      fontFamily: Arial
+      text: ПРОСТРАНСТВО НОВЫХ ИДЕЙ 2.0 · МЕЖРЕГИОНАЛЬНЫЙ СЕМИНАР · МИНТРУД РОССИИ
+  - elementId: title
+    elementType: text
+    bounds: [60, 120, 840, 110]
+    content:
+      fontSize: 44
+      bold: true
+      color: "#FFFFFF"
+      fontFamily: Arial
+      lineHeight: 1.1
+      text: Не просто накормить
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 200, 760, 70]
+    content:
+      fontSize: 14
+      color: "#FFE0CC"
+      fontFamily: Arial
+      lineHeight: 1.4
+      text: |
+        <p>Как организовать безопасное, достойное и вариативное питание</p>
+        <p>людей с психическими нарушениями в домах социального обслуживания</p>
+  - elementId: dateblock
+    elementType: shape
+    bounds: [60, 300, 330, 64]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: datetext
+    elementType: text
+    bounds: [76, 308, 300, 50]
+    content:
+      fontFamily: Arial
+      color: "#FFFFFF"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:15px">26.08.2026 · 14:00–15:30</span></strong></p>
+        <p><span style="font-size:10px">«Организация питания: опыт реализации проектов»</span></p>
+  - elementId: author
+    elementType: text
+    bounds: [60, 404, 640, 82]
+    content:
+      fontFamily: Arial
+      color: "#FFFFFF"
+      fontSize: 11
+      lineHeight: 1.45
+      text: |
+        <p><span style="font-size:9px; color:#FF6600"><strong>МОДЕРАТОРЫ ДИСКУССИИ</strong></span></p>
+        <p>Чистяков Е. В. · директор СПб ГАСУСОН «ДСО „Серафимовский“»</p>
+        <p>Нурбаев Т. А. · директор СПб ГБСУСОН «ДСО „Тесовый берег“»</p>
+        <p><span style="font-size:9px; color:#B9C2D6">Санкт-Петербург, 25–27 августа 2026</span></p>
+  - elementId: stats
+    elementType: text
+    bounds: [620, 300, 280, 100]
+    content:
+      fontFamily: Arial
+      align: [right, top]
+      lineHeight: 1.6
+      text: |
+        <p><strong><span style="font-size:16px; color:#FF6600">332</span></strong> <span style="font-size:9px; color:#B9C2D6">страницы доклада</span></p>
+        <p><strong><span style="font-size:16px; color:#FF6600">126</span></strong> <span style="font-size:9px; color:#B9C2D6">источников в трёх реестрах</span></p>
+        <p><strong><span style="font-size:16px; color:#FF6600">22</span></strong> <span style="font-size:9px; color:#B9C2D6">учебных кейса</span></p>
+        <p><strong><span style="font-size:16px; color:#FF6600">45</span></strong> <span style="font-size:9px; color:#B9C2D6">приложений-шаблонов</span></p>
