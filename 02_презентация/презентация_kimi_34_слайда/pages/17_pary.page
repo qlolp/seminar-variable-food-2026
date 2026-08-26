@@ -1,0 +1,153 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 17 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Два варианта — вторая гастроёмкость и тетрадь, а не вторая кухня'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Вариант Б — из той же заготовки, в том же потоке; сырьё перераспределяется, а не добавляется'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 19 — два варианта; таблицы замен продуктов'}
+  - elementId: tbl
+    elementType: table
+    bounds: [60, 106, 560, 268]
+    columnWidths: [0.22, 0.78]
+    rowHeights: [0.13, 0.174, 0.174, 0.174, 0.174, 0.174]
+    style: "$default"
+    rows:
+      - - text: "ПОЗИЦИЯ"
+        - text: "ПАРЫ ЭКВИВАЛЕНТОВ"
+      - - text: "<p><strong>Крупы</strong></p>"
+        - text: "Гречка / рис / пшено / овсянка — полностью взаимозаменяемы по таблицам"
+      - - text: "<p><strong>Вторые</strong></p>"
+        - text: "Котлета / тефтели · тушёное / печёночный соус · рыба / биточки — одна заготовка, две формы"
+      - - text: "<p><strong>Салаты</strong></p>"
+        - text: "Свекольный / морковный · капустный / винегрет"
+      - - text: "<p><strong>Напитки</strong></p>"
+        - text: "Чай / какао / кофейный напиток — с учётом клозапинового правила (кофеиновая строка карты)"
+      - - text: "<p><strong>Первые</strong></p>"
+        - text: "Борщ / щи · суп крупяной / суп овощной — при готовности к двум котлам"
+  - elementId: f1
+    elementType: shape
+    bounds: [640, 106, 300, 126]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: f1t
+    elementType: text
+    bounds: [654, 112, 274, 114]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p><strong><span style="font-size:10px; color:$navy">ТРИ ФИЛЬТРА ПАРЫ</span></strong></p>
+        <p style="margin-top:6px">· эквивалентность по таблицам замен</p>
+        <p style="margin-top:4px">· совместимость с потоком кухни</p>
+        <p style="margin-top:4px">· предсказуемость спроса</p>
+  - elementId: f2
+    elementType: shape
+    bounds: [640, 248, 300, 126]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: f2t
+    elementType: text
+    bounds: [654, 254, 274, 114]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p><strong><span style="font-size:10px; color:$orange">ЦЕНА МОДЕЛИ М1</span></strong></p>
+        <p style="margin-top:6px">Сырьё не растёт — перераспределение внутри той же строки. На 30 человек второй вариант каши — <strong>+3–4 кг крупы в сутки</strong> при том же суммарном расходе.</p>
+  - elementId: ban
+    elementType: shape
+    bounds: [60, 392, 880, 44]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: bant
+    elementType: text
+    bounds: [74, 398, 852, 32]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.35
+      text: |
+        <p><span style="font-size:10.5px">Чего в парах быть не должно: «гречка или что осталось» — это не выбор, а недо-вариант. Труд: +5–10 минут на раздаче.</span></p>

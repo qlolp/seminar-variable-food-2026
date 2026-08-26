@@ -1,0 +1,231 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 18 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Самый частый сбой вариативности — «вариант Б закончился»; лечится тетрадью'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Журнал заказа: выбор накануне вместо лотереи на линии'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, разделы 19.4 и 21 — журнал заказа и три регистра данных'}
+  - elementId: c0
+    elementType: shape
+    bounds: [60, 108, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$orange"}
+  - elementId: cn0
+    elementType: text
+    bounds: [60, 108, 30, 30]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:13px; color:#FFFFFF">1</span></strong></p>
+  - elementId: ct0
+    elementType: text
+    bounds: [106, 106, 560, 80]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Заказ накануне</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10px">Вчерашний выбор определяет сегодняшние объёмы варки. Выбор уходит из очереди — в тетрадь.</span></p>
+  - elementId: sep0
+    elementType: line
+    bounds: [106, 180, 560, 1]
+    viewBox: [560, 1]
+    points: "0,0 560,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: c1
+    elementType: shape
+    bounds: [60, 194, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$orange"}
+  - elementId: cn1
+    elementType: text
+    bounds: [60, 194, 30, 30]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:13px; color:#FFFFFF">2</span></strong></p>
+  - elementId: ct1
+    elementType: text
+    bounds: [106, 192, 560, 80]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Старт 50/50 с резервом</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10px">Через 2–3 месяца статистика стабилизируется: пропорции перестают быть гаданием.</span></p>
+  - elementId: sep1
+    elementType: line
+    bounds: [106, 266, 560, 1]
+    viewBox: [560, 1]
+    points: "0,0 560,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: c2
+    elementType: shape
+    bounds: [60, 280, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$orange"}
+  - elementId: cn2
+    elementType: text
+    bounds: [60, 280, 30, 30]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:13px; color:#FFFFFF">3</span></strong></p>
+  - elementId: ct2
+    elementType: text
+    bounds: [106, 278, 560, 80]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Пересчёт раз в две недели</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10px">Доля выбравших вариант Б корректирует закупку и объёмы.</span></p>
+  - elementId: sep2
+    elementType: line
+    bounds: [106, 352, 560, 1]
+    viewBox: [560, 1]
+    points: "0,0 560,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: c3
+    elementType: shape
+    bounds: [60, 366, 30, 30]
+    shapeName: ellipse
+    fill: {type: solid, color: "$orange"}
+  - elementId: cn3
+    elementType: text
+    bounds: [60, 366, 30, 30]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:13px; color:#FFFFFF">4</span></strong></p>
+  - elementId: ct3
+    elementType: text
+    bounds: [106, 364, 560, 80]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Индикатор сбоя</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10px">«Выбрал Б — не получил Б» стремится к нулю. Если растёт — проблема в объёмах, а не в жителях.</span></p>
+  - elementId: rb
+    elementType: shape
+    bounds: [690, 108, 250, 250]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: rbt
+    elementType: text
+    bounds: [704, 116, 224, 236]
+    content:
+      style: "$small"
+      fontSize: 9.5
+      text: |
+        <p><strong><span style="font-size:10px; color:$orange">НЕВЕРБАЛЬНЫЕ ЖИТЕЛИ</span></strong></p>
+        <p style="margin-top:8px">Их заказ формируется из пищевых карт и вчерашнего показа — та же тетрадь, другой источник.</p>
+        <p style="margin-top:10px">Три регистра данных: журнал заказа, пищевые карты, замеры отходов.</p>
+  - elementId: ban
+    elementType: shape
+    bounds: [690, 374, 250, 86]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: bant
+    elementType: text
+    bounds: [704, 382, 224, 70]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><span style="font-size:10px">Индикатор сбоя виден в журнале за неделю — раньше, чем его увидит проверяющий.</span></p>

@@ -1,0 +1,143 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 16 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'В девяти системах выбор в питании — нормативный мейнстрим'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Международный опыт как библиотека механизмов, а не как упрёк'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 26 — международные практики; реестр INTERNATIONAL_PRACTICES'}
+  - elementId: tbl
+    elementType: table
+    bounds: [60, 106, 600, 330]
+    columnWidths: [0.30, 0.70]
+    rowHeights: [0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10]
+    style: "$default"
+    rows:
+      - - text: "СИСТЕМА"
+        - text: "ПРОВЕРЯЕМАЯ НОРМА"
+      - - text: "<p><strong>Великобритания</strong></p>"
+        - text: "Предпочтения по времени, месту и количеству еды (CQC Reg 14)"
+      - - text: "<p><strong>Австралия</strong></p>"
+        - text: "«Что, когда, где и как я ем» — самостоятельный стандарт"
+      - - text: "<p><strong>Онтарио</strong></p>"
+        - text: "Решётка измеримых норм: помощь 1:2, триггеры веса"
+      - - text: "<p><strong>США</strong></p>"
+        - text: "Альтернатива при отказе; ночной интервал 14 ч; F-теги"
+      - - text: "<p><strong>Скандинавия</strong></p>"
+        - text: "Ночной интервал 11 ч; совместный стол персонала"
+      - - text: "<p><strong>Германия / Австрия</strong></p>"
+        - text: "Биография питания; конец «диабетического стола»"
+      - - text: "<p><strong>Япония</strong></p>"
+        - text: "Надбавка за специалиста → обязательная норма"
+      - - text: "<p><strong>Финляндия / Нидерланды</strong></p>"
+        - text: "Совместные трапезы; семейная подача как элемент качества"
+  - elementId: rb
+    elementType: shape
+    bounds: [684, 106, 256, 200]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: rbt
+    elementType: text
+    bounds: [698, 114, 230, 186]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p><strong><span style="font-size:11px; color:$orange">УРОК ЯПОНИИ</span></strong></p>
+        <p style="margin-top:8px">Сначала деньги за специалиста (2005), через 16 лет — обязательная норма (2021).</p>
+        <p style="margin-top:8px">Госпитализации: <strong>20,3 % против 30,6 %</strong>.</p>
+        <p style="margin-top:8px">Изменение нормы — дело десятилетия, начатого с замера.</p>
+  - elementId: rb2
+    elementType: shape
+    bounds: [684, 322, 256, 114]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: rb2t
+    elementType: text
+    bounds: [698, 330, 230, 98]
+    content:
+      style: "$small"
+      color: "#FFFFFF"
+      text: |
+        <p><span style="font-size:10px">Заимствуем только проверяемые нормы — числа и процедуры. Без «лучших систем»: сравниваем механизмы, а не страны.</span></p>
