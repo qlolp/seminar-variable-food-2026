@@ -1,0 +1,197 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 11 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'СанПиН — про безопасность, а не про однообразие: что меняется 1 сентября'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Обе редакции требуют одного и того же — и обе допускают выбор'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 18 — санитария при вариативности; пост. № 18 от 02.06.2026'}
+  - elementId: b1
+    elementType: shape
+    bounds: [60, 108, 420, 150]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: b1h
+    elementType: shape
+    bounds: [60, 108, 420, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: b1ht
+    elementType: text
+    bounds: [72, 108, 400, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">СанПиН 2.3/2.4.3590-20 · до 01.09.2026</span></strong></p>
+  - elementId: b1t
+    elementType: text
+    bounds: [74, 142, 392, 108]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>Питание не менее 3 раз в день, диетическое по показаниям, контроль на всех этапах — пробы, бракераж, температура, питьевой режим.</p>
+  - elementId: arr
+    elementType: text
+    bounds: [484, 168, 70, 40]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:26px; color:$orange">→</span></strong></p>
+  - elementId: b2
+    elementType: shape
+    bounds: [560, 108, 380, 150]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: b2h
+    elementType: shape
+    bounds: [560, 108, 380, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: b2ht
+    elementType: text
+    bounds: [572, 108, 360, 26]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      text: |
+        <p><strong><span style="font-size:10px">СанПиН 2.3/2.4.4282-26 · с 01.09.2026</span></strong></p>
+  - elementId: b2t
+    elementType: text
+    bounds: [574, 142, 352, 108]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>Постановление № 18 от 02.06.2026. Тот же каркас: питание ≥3 раз в день, диетическое по показаниям, суточные пробы от каждой партии блюда — п. 56 подп. 11–14.</p>
+  - elementId: main
+    elementType: shape
+    bounds: [60, 276, 880, 60]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: maint
+    elementType: text
+    bounds: [78, 282, 844, 48]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:11px">Главное: ни одна из редакций не ограничивает число вариантов блюда.</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10px">Вариативность входит в санитарный контур целиком — каждый вариант защищён теми же процедурами, что и мономеню.</span></p>
+  - elementId: b3
+    elementType: shape
+    bounds: [60, 354, 430, 120]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: b3t
+    elementType: text
+    bounds: [74, 362, 404, 104]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p><strong>Два технических следствия для двух вариантов:</strong></p>
+        <p style="margin-top:6px">· суточная проба — с каждого блюда (обеих гастроёмкостей)</p>
+        <p style="margin-top:4px">· маркировка вариантов — цветом, чтобы раздающий не перепутал</p>
+  - elementId: b4
+    elementType: shape
+    bounds: [510, 354, 430, 120]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: b4t
+    elementType: text
+    bounds: [524, 362, 404, 104]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p><strong>Переход 1 сентября:</strong></p>
+        <p style="margin-top:6px">· локальные акты и чек-листы перепривязываются к пунктам 4282-26</p>
+        <p style="margin-top:4px">· модель выбора не меняется — обе редакции её допускают</p>
+        <p style="margin-top:4px">· температура — на обеих ёмкостях, на линии и на последнем столе</p>

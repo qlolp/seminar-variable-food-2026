@@ -1,0 +1,217 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 08 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Четыре числа, которые делают тему стола клинической'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Почему организация питания — не бытовой вопрос, а зона клинического риска'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, разделы 9–14 · источники: реестры MEDICAL_EVIDENCE и INTERNATIONAL_PRACTICES'}
+  - elementId: nb0
+    elementType: shape
+    bounds: [60, 108, 4, 68]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: n0
+    elementType: text
+    bounds: [76, 108, 190, 68]
+    content:
+      fontFamily: "Arial"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong><span style="font-size:26px; color:$orange">21,9–69,5 %</span></strong></p>
+  - elementId: nd0
+    elementType: text
+    bounds: [280, 108, 660, 68]
+    content:
+      style: "$small"
+      fontSize: 10.5
+      align: [left, middle]
+      text: |
+        <p>жителей с расстройством глотания — по разным исследованиям. Нижняя граница: каждый пятый. Логопеда в типовом ПНИ нет.</p>
+  - elementId: sep0
+    elementType: line
+    bounds: [76, 182, 864, 1]
+    viewBox: [864, 1]
+    points: "0,0 864,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: nb1
+    elementType: shape
+    bounds: [60, 190, 4, 68]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: n1
+    elementType: text
+    bounds: [76, 190, 190, 68]
+    content:
+      fontFamily: "Arial"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong><span style="font-size:26px; color:$orange">+3,01 кг</span></strong></p>
+  - elementId: nd1
+    elementType: text
+    bounds: [280, 190, 660, 68]
+    content:
+      style: "$small"
+      fontSize: 10.5
+      align: [left, middle]
+      text: |
+        <p>максимальная прибавка веса за шесть недель терапии антипсихотиками (мета-анализ 100 РКИ). Прибавка ≥7 % — у 76 % на клозапине.</p>
+  - elementId: sep1
+    elementType: line
+    bounds: [76, 264, 864, 1]
+    viewBox: [864, 1]
+    points: "0,0 864,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: nb2
+    elementType: shape
+    bounds: [60, 272, 4, 68]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: n2
+    elementType: text
+    bounds: [76, 272, 190, 68]
+    content:
+      fontFamily: "Arial"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong><span style="font-size:26px; color:$orange">×7</span></strong></p>
+  - elementId: nd2
+    elementType: text
+    bounds: [280, 272, 660, 68]
+    content:
+      style: "$small"
+      fontSize: 10.5
+      align: [left, middle]
+      text: |
+        <p>смертность от пневмонии при тяжёлых психических расстройствах против популяционной. Аспирация — главный смертельный риск стола.</p>
+  - elementId: sep2
+    elementType: line
+    bounds: [76, 346, 864, 1]
+    viewBox: [864, 1]
+    points: "0,0 864,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: nb3
+    elementType: shape
+    bounds: [60, 354, 4, 68]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: n3
+    elementType: text
+    bounds: [76, 354, 190, 68]
+    content:
+      fontFamily: "Arial"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong><span style="font-size:26px; color:$orange">4–30 %</span></strong></p>
+  - elementId: nd3
+    elementType: text
+    bounds: [280, 354, 660, 68]
+    content:
+      style: "$small"
+      fontSize: 10.5
+      align: [left, middle]
+      text: |
+        <p>жителей с ночным едением. На отделении в 30 человек — от одного до девяти человек каждую ночь.</p>
+  - elementId: concl
+    elementType: shape
+    bounds: [60, 444, 880, 46]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: conclt
+    elementType: text
+    bounds: [78, 450, 844, 34]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      align: [left, middle]
+      text: |
+        <p><span style="font-size:10.5px">Всё это — измеримо и управляемо организацией стола: текстуры, мониторинг веса, журналы, ночная конструкция. Организация питания — часть профилактики преждевременной смертности.</span></p>
