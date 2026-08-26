@@ -1,0 +1,198 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 04 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Более 174 000 человек едят трижды в день по чужому решению'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Ориентиры масштаба по вторичной аналитике — не официальная отчётность Минтруда'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 23 — ориентиры по вторичной аналитике, не официальная отчётность Минтруда'}
+  - elementId: nb0
+    elementType: shape
+    bounds: [60, 112, 4, 100]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: num0
+    elementType: text
+    bounds: [78, 112, 200, 40]
+    content:
+      fontSize: 30
+      bold: true
+      color: $navy
+      wrap: false
+      text: '174 000+'
+  - elementId: numd0
+    elementType: text
+    bounds: [78, 156, 420, 56]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>человек живут в стационарных организациях социального обслуживания — каждый из них ест по решению системы</p>
+  - elementId: nb1
+    elementType: shape
+    bounds: [60, 232, 4, 100]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: num1
+    elementType: text
+    bounds: [78, 232, 200, 40]
+    content:
+      fontSize: 30
+      bold: true
+      color: $navy
+      wrap: false
+      text: '139 500'
+  - elementId: numd1
+    elementType: text
+    bounds: [78, 276, 420, 56]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>из них — жители психоневрологических интернатов: контингент, для которого стол — часть терапии</p>
+  - elementId: nb2
+    elementType: shape
+    bounds: [60, 352, 4, 100]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: num2
+    elementType: text
+    bounds: [78, 352, 200, 40]
+    content:
+      fontSize: 30
+      bold: true
+      color: $navy
+      wrap: false
+      text: '7 000'
+  - elementId: numd2
+    elementType: text
+    bounds: [78, 396, 420, 56]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>человек уже перешли в сопровождаемое проживание — им понадобился навык выбора, который тренируется за столом</p>
+  - elementId: rb1
+    elementType: shape
+    bounds: [540, 112, 400, 100]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: rb1t
+    elementType: text
+    bounds: [556, 120, 368, 84]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:11px">51 регион</span></strong> <span style="font-size:10px">— участники семинара: вопрос общероссийский</span></p>
+        <p style="margin-top:8px"><strong><span style="font-size:11px">41 регион</span></strong> <span style="font-size:10px">уже переименовал ПНИ в дома социального обслуживания</span></p>
+  - elementId: rb2
+    elementType: shape
+    bounds: [540, 232, 400, 100]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: rb2t
+    elementType: text
+    bounds: [556, 240, 368, 84]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.4
+      text: |
+        <p><span style="font-size:10.5px">Еда — <strong>единственная услуга</strong>, которую система оказывает каждому жителю три-четыре раза в день, каждый день.</span></p>
+  - elementId: rb3
+    elementType: shape
+    bounds: [540, 352, 400, 100]
+    shapeName: rect
+    fill: {type: solid, color: "#FFFFFF"}
+  - elementId: rb3t
+    elementType: text
+    bounds: [556, 360, 368, 84]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.4
+      text: |
+        <p><span style="font-size:10.5px">Ни одна другая зона не даёт столько ежедневных контактов с человеком — и столько возможностей для ошибки. <strong>Ошибка за столом повторяется ежедневно, пока её не заметят.</strong></span></p>

@@ -1,0 +1,235 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 06 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Среднего жителя не существует — за столом пять осей неоднородности'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Каждая ось меняет то, как человек ест и как его надо спрашивать'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 6 — кто за столом; раздел 22 — пять чисел директора'}
+  - elementId: lb0
+    elementType: shape
+    bounds: [60, 108, 180, 58]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: lbt0
+    elementType: text
+    bounds: [70, 108, 164, 58]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.3
+      text: |
+        <p><strong><span style="font-size:9.5px">ПСИХИЧЕСКОЕ СОСТОЯНИЕ</span></strong></p>
+  - elementId: ld0
+    elementType: text
+    bounds: [256, 108, 404, 58]
+    content:
+      style: "$small"
+      fontSize: 10
+      align: [left, middle]
+      text: |
+        <p>Депрессия — «безразличие к еде», тревога — избегание столовой, психоз — подозрительность к пище. Волнообразно.</p>
+  - elementId: lb1
+    elementType: shape
+    bounds: [60, 178, 180, 58]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: lbt1
+    elementType: text
+    bounds: [70, 178, 164, 58]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.3
+      text: |
+        <p><strong><span style="font-size:9.5px">КОГНИТИВНЫЕ ФУНКЦИИ</span></strong></p>
+  - elementId: ld1
+    elementType: text
+    bounds: [256, 178, 404, 58]
+    content:
+      style: "$small"
+      fontSize: 10
+      align: [left, middle]
+      text: |
+        <p>От сохранного интеллекта до глубокой деменции. Статус определяет инструмент выбора — а не его наличие.</p>
+  - elementId: lb2
+    elementType: shape
+    bounds: [60, 248, 180, 58]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: lbt2
+    elementType: text
+    bounds: [70, 248, 164, 58]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.3
+      text: |
+        <p><strong><span style="font-size:9.5px">КОММУНИКАЦИЯ</span></strong></p>
+  - elementId: ld2
+    elementType: text
+    bounds: [256, 248, 404, 58]
+    content:
+      style: "$small"
+      fontSize: 10
+      align: [left, middle]
+      text: |
+        <p>Неговорящие — значимая доля контингента. Вопрос «что будете?» для них — худший из инструментов.</p>
+  - elementId: lb3
+    elementType: shape
+    bounds: [60, 318, 180, 58]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: lbt3
+    elementType: text
+    bounds: [70, 318, 164, 58]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.3
+      text: |
+        <p><strong><span style="font-size:9.5px">СОМАТИКА</span></strong></p>
+  - elementId: ld3
+    elementType: text
+    bounds: [256, 318, 404, 58]
+    content:
+      style: "$small"
+      fontSize: 10
+      align: [left, middle]
+      text: |
+        <p>Дисфагия, диабет, клозапиновые запоры, эпилепсия. Ограничения, внутри которых должен жить выбор.</p>
+  - elementId: lb4
+    elementType: shape
+    bounds: [60, 388, 180, 58]
+    shapeName: rect
+    fill: {type: solid, color: "$navy"}
+  - elementId: lbt4
+    elementType: text
+    bounds: [70, 388, 164, 58]
+    content:
+      color: "#FFFFFF"
+      fontFamily: "Arial"
+      align: [left, middle]
+      lineHeight: 1.3
+      text: |
+        <p><strong><span style="font-size:9.5px">ОПЫТ И КУЛЬТУРА</span></strong></p>
+  - elementId: ld4
+    elementType: text
+    bounds: [256, 388, 404, 58]
+    content:
+      style: "$small"
+      fontSize: 10
+      align: [left, middle]
+      text: |
+        <p>«Всю жизнь ужинал в девять», религиозные правила, праздничные блюда как якоря идентичности.</p>
+  - elementId: rb
+    elementType: shape
+    bounds: [684, 108, 256, 338]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: rbt
+    elementType: text
+    bounds: [698, 116, 230, 60]
+    content:
+      color: $orange
+      fontFamily: "Arial"
+      text: |
+        <p><strong><span style="font-size:11px">ПЯТЬ ЧИСЕЛ ДИРЕКТОРА</span></strong></p>
+  - elementId: rbl
+    elementType: text
+    bounds: [698, 146, 230, 290]
+    content:
+      style: "$small"
+      fontSize: 10
+      text: |
+        <p>· сколько жителей едят сами</p>
+        <p style="margin-top:6px">· сколько — с помощью</p>
+        <p style="margin-top:6px">· сколько неговорящих</p>
+        <p style="margin-top:6px">· сколько в группе дисфагического риска</p>
+        <p style="margin-top:6px">· сколько на весогенных препаратах</p>
+        <p style="margin-top:12px"><strong>Кто не знает этих пяти чисел — управляет столовой вслепую.</strong></p>

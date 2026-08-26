@@ -1,0 +1,247 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: rail
+    elementType: shape
+    bounds: [0, 0, 10, 540]
+    shapeName: rect
+    fill: {type: solid, color: "$rail"}
+  - elementId: nav1
+    elementType: shape
+    bounds: [30, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navy"}
+  - elementId: nav1t
+    elementType: text
+    bounds: [30, 14, 172, 20]
+    content: {style: "$navtext", color: "#FFFFFF", align: [center, middle], text: СИТУАЦИЯ}
+  - elementId: nav2
+    elementType: shape
+    bounds: [214, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav2t
+    elementType: text
+    bounds: [214, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПРАВО}
+  - elementId: nav3
+    elementType: shape
+    bounds: [398, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav3t
+    elementType: text
+    bounds: [398, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ТЕХНОЛОГИЯ}
+  - elementId: nav4
+    elementType: shape
+    bounds: [582, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav4t
+    elementType: text
+    bounds: [582, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ДЕНЬГИ}
+  - elementId: nav5
+    elementType: shape
+    bounds: [766, 14, 180, 20]
+    shapeName: homePlate
+    adjustments: [25000]
+    fill: {type: solid, color: "$navoff"}
+  - elementId: nav5t
+    elementType: text
+    bounds: [766, 14, 172, 20]
+    content: {style: "$navtext", color: "$navofftext", align: [center, middle], text: ПУТЬ}
+  - elementId: footline
+    elementType: line
+    bounds: [60, 506, 880, 1]
+    viewBox: [880, 1]
+    points: "0,0 880,0"
+    curve: sharp
+    border: {style: solid, width: 0.75, color: "$line"}
+  - elementId: pagenum
+    elementType: text
+    bounds: [780, 512, 160, 14]
+    content: {style: "$foot", align: [right, top], text: "Не просто накормить · 07 / 34"}
+  - elementId: title
+    elementType: text
+    bounds: [60, 42, 880, 30]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 'Одна тарелка — шесть измерений; провал любого — недоедание или конфликт'
+  - elementId: subtitle
+    elementType: text
+    bounds: [60, 76, 880, 18]
+    content:
+      style: "$sub"
+      wrap: false
+      text: 'Что значит «накормить»: от порции до права выбора'
+  - elementId: source
+    elementType: text
+    bounds: [60, 512, 700, 14]
+    content: {style: "$foot", text: 'Доклад, раздел 7 — шесть измерений одной тарелки'}
+  - elementId: c0
+    elementType: shape
+    bounds: [60, 108, 28, 28]
+    shapeName: ellipse
+    fill: {type: solid, color: "$navy"}
+  - elementId: cn0
+    elementType: text
+    bounds: [60, 108, 28, 28]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:12px; color:#FFFFFF">1</span></strong></p>
+  - elementId: ct0
+    elementType: text
+    bounds: [100, 106, 398, 96]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Достаточность</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10.5px">Порция, выданная и не съеденная, достаточностью не является</span></p>
+  - elementId: c1
+    elementType: shape
+    bounds: [510, 108, 28, 28]
+    shapeName: ellipse
+    fill: {type: solid, color: "$navy"}
+  - elementId: cn1
+    elementType: text
+    bounds: [510, 108, 28, 28]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:12px; color:#FFFFFF">2</span></strong></p>
+  - elementId: ct1
+    elementType: text
+    bounds: [550, 106, 398, 96]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Безопасность</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10.5px">Санитарная, клиническая (текстуры), поведенческая (пика)</span></p>
+  - elementId: c2
+    elementType: shape
+    bounds: [60, 212, 28, 28]
+    shapeName: ellipse
+    fill: {type: solid, color: "$navy"}
+  - elementId: cn2
+    elementType: text
+    bounds: [60, 212, 28, 28]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:12px; color:#FFFFFF">3</span></strong></p>
+  - elementId: ct2
+    elementType: text
+    bounds: [100, 210, 398, 96]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Удовольствие</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10.5px">Невкусная еда съедается хуже: вкус — фактор потребления</span></p>
+  - elementId: c3
+    elementType: shape
+    bounds: [510, 212, 28, 28]
+    shapeName: ellipse
+    fill: {type: solid, color: "$navy"}
+  - elementId: cn3
+    elementType: text
+    bounds: [510, 212, 28, 28]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:12px; color:#FFFFFF">4</span></strong></p>
+  - elementId: ct3
+    elementType: text
+    bounds: [550, 210, 398, 96]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Социальность</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10.5px">Общий стол персонала и жителей — бесплатный мониторинг «он сегодня не жуёт»</span></p>
+  - elementId: c4
+    elementType: shape
+    bounds: [60, 316, 28, 28]
+    shapeName: ellipse
+    fill: {type: solid, color: "$navy"}
+  - elementId: cn4
+    elementType: text
+    bounds: [60, 316, 28, 28]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:12px; color:#FFFFFF">5</span></strong></p>
+  - elementId: ct4
+    elementType: text
+    bounds: [100, 314, 398, 96]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Самостоятельность</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10.5px">Навык, который потом нужен в сопровождаемом проживании</span></p>
+  - elementId: c5
+    elementType: shape
+    bounds: [510, 316, 28, 28]
+    shapeName: ellipse
+    fill: {type: solid, color: "$navy"}
+  - elementId: cn5
+    elementType: text
+    bounds: [510, 316, 28, 28]
+    content:
+      fontFamily: "Arial"
+      align: [center, middle]
+      text: |
+        <p style="text-align:center"><strong><span style="font-size:12px; color:#FFFFFF">6</span></strong></p>
+  - elementId: ct5
+    elementType: text
+    bounds: [550, 314, 398, 96]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><strong><span style="font-size:12px; color:$navy">Выбор</span></strong></p>
+        <p style="margin-top:4px"><span style="font-size:10.5px">Единственное измерение, которое нельзя делегировать системе</span></p>
+  - elementId: concl
+    elementType: shape
+    bounds: [60, 430, 880, 58]
+    shapeName: rect
+    fill: {type: solid, color: "$peach"}
+  - elementId: conclb
+    elementType: shape
+    bounds: [60, 430, 6, 58]
+    shapeName: rect
+    fill: {type: solid, color: "$orange"}
+  - elementId: conclt
+    elementType: text
+    bounds: [78, 436, 850, 46]
+    content:
+      color: $ink
+      fontFamily: "Arial"
+      lineHeight: 1.35
+      text: |
+        <p><span style="font-size:10.5px"><strong>Деньги закрывают в основном первые три измерения. Последние три — организация и документы.</strong></span></p>
+        <p style="margin-top:4px"><span style="font-size:10px">Выбор не заменяет остальные пять: он работает, только когда они не провалены. Директор, которому говорят «питание в порядке», спрашивает: по которому из шести?</span></p>
