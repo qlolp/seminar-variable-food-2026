@@ -1,0 +1,17 @@
+name: check
+
+# Репозиторий — раздатка участникам. Проверяем, что канонические файлы на месте
+# и русские имена не сломались. Сборки из исходников больше нет.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Проверить файлы для участников
+        run: python3 .github/check_handout.py
