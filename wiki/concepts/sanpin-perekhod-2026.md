@@ -5,6 +5,8 @@ tags: [санпин, 4282-26, сентябрь]
 sources:
   - raw/sources/ne-prosto-nakormit/doklad/главы/18_sanitariya.md
   - raw/sources/ne-prosto-nakormit/doklad/главы/17_pravo.md
+  - raw/sources/related/variabelnoe-menu-pni/chapters/06_federal_law.md
+  - raw/sources/related/academic-redesign-report/FACT_CHECK_LOG.md
 updated: 2026-09-02
 confidence: high
 ---
@@ -20,3 +22,5 @@ confidence: high
 Модель выбора 1 сентября не меняется. Что не перепривязано к пунктам 4282-26 — уязвимость с 2 сентября.
 
 Страница акта: [СанПиН 4282-26](../entities/sanpin-4282-26.md).
+
+Ранние слои называют другие номера и не затирают этот: предшественник — СП 2.4.3648-20 (реквизиты «нуждаются в проверке»); академический fact-check — СанПиН 2.1.3684-21. Для операционной работы дома после 01.09.2026 канон wiki — 4282-26. Сводка номеров: [gaps](../gaps.md) п. 7.

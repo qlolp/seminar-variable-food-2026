@@ -63,4 +63,6 @@ confidence: high
 ## Источники
 
 - [[wiki/sources/ne-prosto-nakormit]] — [Не просто накормить](sources/ne-prosto-nakormit.md) — канон первого ingest
-- [[wiki/sources/variabelnoe-menu-pni]] — [Доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) — лёгкий снимок предшественника
+- [[wiki/sources/variabelnoe-menu-pni]] — [Доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) — полный корпус предшественника (22 главы, CSV)
+- [[wiki/sources/academic-redesign-report]] — [Академическая переработка](sources/academic-redesign-report.md) — аудиты 24.07, не канон
+- [[wiki/sources/social-nutrition-reports]] — [Зонтик докладов](sources/social-nutrition-reports.md) — карта семейства; после 1+2 в основном избыточен

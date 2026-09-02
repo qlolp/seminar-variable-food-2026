@@ -26,3 +26,19 @@ Append-only. Формат заголовка не менять: `## [YYYY-MM-DD]
 ## [2026-09-02] lint | Wiki-first: убрана печатная раздатка
 
 Семинар прошёл. Из `raw/` удалены викторина, листовки Canva, академический PDF 69 стр., краткая версия 19 стр., колода PDF/PPTX, xlsx-калькулятор и дублирующие PDF пакета. Канон сырья — литературный markdown + один PDF редакции + markdown-бланки. CI: `.github/check_wiki.py` (каркас wiki, не список печати). Как класть новое — `HOW_TO_ADD.md`.
+
+## [2026-09-02] ingest | -variabelnoe-menu-pni (полный корпус)
+
+Заменён лёгкий снимок. Скопированы `output/report.md`, все `output/*.md`, `chapters/*.md`, `appendices/*.md`, семь CSV-реестров, README/STATUS upstream, `PRINT_INSTRUCTIONS.md` (ссылка из `output/README.md`). Скрипты, HTML-печать, SVG не брали. Страница: `wiki/sources/variabelnoe-menu-pni.md`. Сверка 22 глав с 44 главами канона и противоречия — в `wiki/gaps.md`. GitHub-репо не удаляли.
+
+## [2026-09-02] ingest | academic-redesign-report (аудиты)
+
+Скопированы CONTENT_GAP_AUDIT, FACT_CHECK_LOG, SOURCE_FILE_AUDIT, LINK_VALIDATION, STATUS, README.upstream. Без DOCX/PDF/`full_text.txt`. Страница: `wiki/sources/academic-redesign-report.md`. 8 экспертных остатков аудита не закрывали.
+
+## [2026-09-02] ingest | social-nutrition-reports (карта + уникальное)
+
+Скопированы корневой README.upstream, AUDIT_OLD_REPORTS, каркас `report_international_nutrition/` без скриптов. Дубли ПНИ и академического слоя не копировали: после ingest 1+2 репо в основном избыточен. Страница: `wiki/sources/social-nutrition-reports.md`. GitHub-репо не удаляли.
+
+## [2026-09-02] lint | После ingest трёх соседних репо
+
+`python3 .github/check_wiki.py`: каркас, frontmatter, wikilinks, пути `raw/`. Три новые/обновлённые страницы источников в index. Печатную HTML/скрипты не клали.
