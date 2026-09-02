@@ -42,13 +42,13 @@ confidence: medium
 
 | Приоритет | Репозиторий | Зачем wiki |
 | --- | --- | --- |
-| 1 | [qlolp/-variabelnoe-menu-pni](https://github.com/qlolp/-variabelnoe-menu-pni) полный `output/report.md` + главы + реестры CSV | Закрыть лёгкий ingest; сверить 22 главы с 44 главами семинара |
+| 1 | [qlolp/-variabelnoe-menu-pni](https://github.com/qlolp/-variabelnoe-menu-pni) полный `output/report.md` + главы + реестры CSV | Закрыть лёгкий ingest; сверить 22 главы с 44 главами «Не просто накормить» |
 | 2 | [qlolp/social-nutrition-reports](https://github.com/qlolp/social-nutrition-reports) | Карта семейства докладов; не плодить дубли |
 | 3 | [qlolp/academic-redesign-report](https://github.com/qlolp/academic-redesign-report) `CONTENT_GAP_AUDIT.md`, `FACT_CHECK_LOG.md` | Реестр пропусков, которые литературная редакция могла уже закрыть |
 | 4 | [qlolp/seminar-mental-health-cost-2026](https://github.com/qlolp/seminar-mental-health-cost-2026) | Экономика места vs сопровождаемое проживание; связь с гл. 8.8 |
 | 5 | [qlolp/seminar-ai-social-care-2026](https://github.com/qlolp/seminar-ai-social-care-2026) | Та же логика «ступень → замер → закрепление» на другой теме |
-| 6 | [qlolp/seminar-materials-2026](https://github.com/qlolp/seminar-materials-2026) | Общая витрина семинара; сверка дублей раздатки |
-| 7 | [qlolp/glm-quiz](https://github.com/qlolp/glm-quiz) банк вопросов (без ключей в wiki) | Не путать с печатной викториной сессии питания |
+| 6 | [qlolp/seminar-materials-2026](https://github.com/qlolp/seminar-materials-2026) | Историческая витрина семинара; сверка дублей, не вторая печать |
+| 7 | [qlolp/glm-quiz](https://github.com/qlolp/glm-quiz) банк вопросов (без ключей в wiki) | Отдельный репо; печатной викторины зала в этом корпусе нет |
 
 Дополнительно, не из GitHub: локальные акты Серафимовского сверх приказа № 124 (меню-пары, журналы — только если можно без персональных данных); повторные публикации Болотнинского и Успенского после августа 2024; первоисточник минсоцразвития Иркутской области по региональной модели; региональное постановление СПб о нормах (1284 / 1366-р) текстом.
 

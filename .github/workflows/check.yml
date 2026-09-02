@@ -1,6 +1,6 @@
 name: check
 
-# LLM-wiki: каркас, сырьё в raw/, живые ссылки. Кухня сборки не должна вернуться.
+# LLM-wiki: каркас, frontmatter, wikilinks. Печатная раздатка не проверяется.
 on:
   push:
     branches: [main]
@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Проверить wiki и раздатку в raw/
-        run: python3 .github/check_handout.py
+      - name: Проверить структуру wiki
+        run: python3 .github/check_wiki.py
