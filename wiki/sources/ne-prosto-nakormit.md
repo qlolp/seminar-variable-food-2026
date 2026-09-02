@@ -29,6 +29,6 @@ confidence: high
 
 Из этого источника собраны почти все текущие `concepts/` и `entities/`. Учебные кейсы 1–22 — механизмы, не хроника домов. Шаблоны приложений — проекты локальных форм, не норматив.
 
-Предшественник 22.07: [[wiki/sources/variabelnoe-menu-pni]] — [доклад ПНИ](variabelnoe-menu-pni.md). Редакционный слой 24.07: [[wiki/sources/academic-redesign-report]] — [аудиты](academic-redesign-report.md). Зонтик семейства: [[wiki/sources/social-nutrition-reports]] — [social-nutrition-reports](social-nutrition-reports.md). Расхождения слоёв не затираются каноном.
+Предшественник 22.07: [[wiki/sources/variabelnoe-menu-pni]] — [доклад ПНИ](variabelnoe-menu-pni.md). Редакционный слой 24.07: [[wiki/sources/academic-redesign-report]] — [аудиты](academic-redesign-report.md). Зонтик семейства: [[wiki/sources/social-nutrition-reports]] — [social-nutrition-reports](social-nutrition-reports.md). Правовой обзор НПА и 8 субъектов: [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](variativnoe-menu-npa-2026.md). Расхождения слоёв не затираются каноном.
 
 Синтез: [overview](../overview.md). Пробелы: [gaps](../gaps.md).
