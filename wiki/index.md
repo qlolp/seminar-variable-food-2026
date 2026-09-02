@@ -9,7 +9,7 @@ confidence: high
 
 # index
 
-Агент читает этот файл **первым**. Затем 3–8 страниц. Сырьё — только если в wiki дыра. Правила: [`AGENTS.md`](../AGENTS.md). Синтез: [overview](overview.md). Пробелы: [gaps](gaps.md). Журнал: [log](log.md).
+Агент читает этот файл **первым**. Затем 3–8 страниц. Сырьё — только если в wiki дыра. Правила: [`AGENTS.md`](../AGENTS.md). Новый источник: [`HOW_TO_ADD.md`](../HOW_TO_ADD.md). Синтез: [overview](overview.md). Пробелы: [gaps](gaps.md). Журнал: [log](log.md).
 
 Одна строка = одна страница. Wikilink канонический; рядом — github-ссылка.
 
@@ -49,7 +49,7 @@ confidence: high
 - [[wiki/entities/ddsol]] — [ДДСОЛ](entities/ddsol.md) — персонализация и «мостик» к лечебному питанию
 - [[wiki/entities/chistyakov-evgeny]] — [Чистяков Е. В.](entities/chistyakov-evgeny.md) — автор доклада, директор Серафимовского
 - [[wiki/entities/nurbaev-timur]] — [Нурбаев Т. А.](entities/nurbaev-timur.md) — со-модератор, директор Тесового берега
-- [[wiki/entities/seminar-2026]] — [Семинар 25–27.08.2026](entities/seminar-2026.md) — «Пространство Новых Идей 2.0», уже прошёл
+- [[wiki/entities/seminar-2026]] — [Семинар 25–27.08.2026](entities/seminar-2026.md) — исторический повод канона, не продукт wiki
 - [[wiki/entities/pni-vs-dso]] — [ПНИ и ДСО](entities/pni-vs-dso.md) — разный правовой акцент стола
 
 ## Законы и акты

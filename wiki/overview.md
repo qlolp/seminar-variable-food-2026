@@ -48,6 +48,8 @@ confidence: high
 
 ## Честная рамка этого wiki
 
-Синтез стоит на одном ingest: [[wiki/sources/ne-prosto-nakormit]] — [«Не просто накормить»](sources/ne-prosto-nakormit.md). Лёгкий снимок предшественника — [[wiki/sources/variabelnoe-menu-pni]] — [доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md). Региональные нормы 51 субъекта, панели исходов, соседние доклады семинара — в [[wiki/gaps]] — [пробелах](gaps.md).
+Это wiki о вариативном меню, не раздатка семинара. Сессия 26.08.2026 — исторический повод канона; страница [[wiki/entities/seminar-2026]] — [семинар](entities/seminar-2026.md) держит дату и площадку, не «продукт репозитория».
+
+Синтез стоит на одном ingest: [[wiki/sources/ne-prosto-nakormit]] — [«Не просто накормить»](sources/ne-prosto-nakormit.md). Лёгкий снимок предшественника — [[wiki/sources/variabelnoe-menu-pni]] — [доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md). Региональные нормы 51 субъекта, панели исходов, соседние доклады того же семинара — в [[wiki/gaps]] — [пробелах](gaps.md).
 
 Последнее слово не «внедряйте». **Измеряйте.**
