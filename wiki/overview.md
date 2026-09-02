@@ -6,6 +6,9 @@ sources:
   - raw/sources/ne-prosto-nakormit/doklad/главы/04_rezume.md
   - raw/sources/ne-prosto-nakormit/doklad/главы/08_lestnica.md
   - raw/sources/ne-prosto-nakormit/doklad/главы/41_dostovernost.md
+  - raw/sources/related/variabelnoe-menu-pni/output/key_findings.md
+  - raw/sources/related/academic-redesign-report/CONTENT_GAP_AUDIT.md
+  - raw/sources/related/social-nutrition-reports/README.md
 updated: 2026-09-02
 confidence: high
 ---
@@ -50,6 +53,6 @@ confidence: high
 
 Это wiki о вариативном меню, не раздатка семинара. Сессия 26.08.2026 — исторический повод канона; страница [[wiki/entities/seminar-2026]] — [семинар](entities/seminar-2026.md) держит дату и площадку, не «продукт репозитория».
 
-Синтез стоит на одном ingest: [[wiki/sources/ne-prosto-nakormit]] — [«Не просто накормить»](sources/ne-prosto-nakormit.md). Лёгкий снимок предшественника — [[wiki/sources/variabelnoe-menu-pni]] — [доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md). Региональные нормы 51 субъекта, панели исходов, соседние доклады того же семинара — в [[wiki/gaps]] — [пробелах](gaps.md).
+Синтез стоит на каноне [[wiki/sources/ne-prosto-nakormit]] — [«Не просто накормить»](sources/ne-prosto-nakormit.md). Рядом — полный корпус предшественника [[wiki/sources/variabelnoe-menu-pni]] — [доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) (не безусловно положительная практика; регионы на ту дату не подтверждены), аудиты [[wiki/sources/academic-redesign-report]] — [академической переработки](sources/academic-redesign-report.md) и карта зонтика [[wiki/sources/social-nutrition-reports]] — [social-nutrition-reports](sources/social-nutrition-reports.md). Поздний слой не затирает ранний. Региональные нормы 51 субъекта, панели исходов, соседние доклады того же семинара — в [[wiki/gaps]] — [пробелах](gaps.md).
 
 Последнее слово не «внедряйте». **Измеряйте.**
