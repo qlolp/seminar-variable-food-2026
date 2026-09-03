@@ -9,6 +9,7 @@ sources:
   - raw/sources/related/variabelnoe-menu-pni/output/key_findings.md
   - raw/sources/related/academic-redesign-report/CONTENT_GAP_AUDIT.md
   - raw/sources/related/social-nutrition-reports/README.md
+  - raw/sources/variativnoe-menu-npa-2026/Вариативное_меню_НПА_и_регионы_доклад.pdf
 updated: 2026-09-02
 confidence: high
 ---
@@ -33,6 +34,8 @@ confidence: high
 
 Федеральное право **не запрещает** выбор блюда и **не обязывает** два вторых каждый день. СанПиН требует не меньше трёх приёмов и диету по показаниям; число вариантов не ограничивает ни 3590-20, ни 4282-26. Таблицы замен в раскладках — законный механизм эквивалента.
 
+Правовой обзор НПА (16.07 / 29.08) говорит то же ядро другими словами: федерального определения «вариативного меню» нет; выбор живёт в региональных стандартах и локальных актах. Восемь субъектов он сверяет по нормам, не по панели домов. Это не замена канона и не «доказательство, что так везде».
+
 Ответ проверяющему — [[wiki/concepts/komplekt-proveryayushchemu]] — [комплект](concepts/komplekt-proveryayushchemu.md), не формула «запрета нет». Без бумаги, которая разрешает *у вас*, та же практика выглядит как отступление от раскладки.
 
 С 01.09.2026 действует [[wiki/entities/sanpin-4282-26]] — [СанПиН 4282-26](entities/sanpin-4282-26.md). Журналы августа не переписывать.
@@ -53,6 +56,6 @@ confidence: high
 
 Это wiki о вариативном меню, не раздатка семинара. Сессия 26.08.2026 — исторический повод канона; страница [[wiki/entities/seminar-2026]] — [семинар](entities/seminar-2026.md) держит дату и площадку, не «продукт репозитория».
 
-Синтез стоит на каноне [[wiki/sources/ne-prosto-nakormit]] — [«Не просто накормить»](sources/ne-prosto-nakormit.md). Рядом — полный корпус предшественника [[wiki/sources/variabelnoe-menu-pni]] — [доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) (не безусловно положительная практика; регионы на ту дату не подтверждены), аудиты [[wiki/sources/academic-redesign-report]] — [академической переработки](sources/academic-redesign-report.md) и карта зонтика [[wiki/sources/social-nutrition-reports]] — [social-nutrition-reports](sources/social-nutrition-reports.md). Поздний слой не затирает ранний. Региональные нормы 51 субъекта, панели исходов, соседние доклады того же семинара — в [[wiki/gaps]] — [пробелах](gaps.md).
+Синтез стоит на каноне [[wiki/sources/ne-prosto-nakormit]] — [«Не просто накормить»](sources/ne-prosto-nakormit.md). Рядом — полный корпус предшественника [[wiki/sources/variabelnoe-menu-pni]] — [доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) (не безусловно положительная практика; регионы на ту дату не подтверждены), правовой обзор [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и 8 субъектов](sources/variativnoe-menu-npa-2026.md) (федерального определения нет; СанПиН слоя — 3590-20), аудиты [[wiki/sources/academic-redesign-report]] — [академической переработки](sources/academic-redesign-report.md) и карта зонтика [[wiki/sources/social-nutrition-reports]] — [social-nutrition-reports](sources/social-nutrition-reports.md). Поздний слой не затирает ранний. Региональные нормы остальных субъектов, панели исходов, соседние доклады того же семинара — в [[wiki/gaps]] — [пробелах](gaps.md).
 
 Последнее слово не «внедряйте». **Измеряйте.**

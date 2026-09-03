@@ -42,3 +42,11 @@ Append-only. Формат заголовка не менять: `## [YYYY-MM-DD]
 ## [2026-09-02] lint | После ingest трёх соседних репо
 
 `python3 .github/check_wiki.py`: каркас, frontmatter, wikilinks, пути `raw/`. Три новые/обновлённые страницы источников в index. Печатную HTML/скрипты не клали.
+
+## [2026-09-02] ingest | Вариативное меню, НПА и регионы
+
+Иммутабельный PDF 82 стр. + PPTX 28 слайдов уже на `main` (`1bab521`, PR #20). Ingest только wiki: `wiki/sources/variativnoe-menu-npa-2026.md`, сущность СПб № 1284, правки понятий и домов. Канон «Не просто накормить» не затирался. Автор на титуле не назван. Противоречия (дефиниция, СанПиН 3590-20 vs 4282-26, пять моделей vs М0–М5, Болотнинский) — в `wiki/gaps.md`.
+
+## [2026-09-02] lint | После ingest НПА и регионов
+
+`python3 .github/check_wiki.py`: OK, 43 wiki md, frontmatter и wikilinks живые. `raw/` не тронут. PPTX/PDF остаются только в `raw/sources/variativnoe-menu-npa-2026/`.

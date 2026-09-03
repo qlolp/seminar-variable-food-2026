@@ -51,6 +51,7 @@ confidence: high
 - [[wiki/entities/nurbaev-timur]] — [Нурбаев Т. А.](entities/nurbaev-timur.md) — со-модератор, директор Тесового берега
 - [[wiki/entities/seminar-2026]] — [Семинар 25–27.08.2026](entities/seminar-2026.md) — исторический повод канона, не продукт wiki
 - [[wiki/entities/pni-vs-dso]] — [ПНИ и ДСО](entities/pni-vs-dso.md) — разный правовой акцент стола
+- [[wiki/entities/spb-postanovlenie-1284]] — [Постановление СПб № 1284](entities/spb-postanovlenie-1284.md) — нормы питания Петербурга; не императив выбора
 
 ## Законы и акты
 
@@ -63,6 +64,7 @@ confidence: high
 ## Источники
 
 - [[wiki/sources/ne-prosto-nakormit]] — [Не просто накормить](sources/ne-prosto-nakormit.md) — канон первого ingest
+- [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](sources/variativnoe-menu-npa-2026.md) — правовой обзор 16.07/29.08; 8 субъектов; автор на титуле не назван
 - [[wiki/sources/variabelnoe-menu-pni]] — [Доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) — полный корпус предшественника (22 главы, CSV)
 - [[wiki/sources/academic-redesign-report]] — [Академическая переработка](sources/academic-redesign-report.md) — аудиты 24.07, не канон
 - [[wiki/sources/social-nutrition-reports]] — [Зонтик докладов](sources/social-nutrition-reports.md) — карта семейства; после 1+2 в основном избыточен
