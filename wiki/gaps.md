@@ -15,7 +15,7 @@ sources:
   - raw/sources/related/social-nutrition-reports/report_international_nutrition/logs/limitations.md
   - raw/sources/variativnoe-menu-npa-2026/Вариативное_меню_НПА_и_регионы_доклад.pdf
   - raw/sources/variativnoe-menu-npa-2026/README.md
-updated: 2026-09-02
+updated: 2026-09-13
 confidence: medium
 ---
 
@@ -93,19 +93,29 @@ confidence: medium
 
 ## Что положить в `raw/` следующим (Евгению)
 
-Порядок — по близости к теме стола, не по объёму репо.
+Порядок — по близости к теме стола, не по объёму репо. Удалённые соседние GitHub **не** предлагать как следующий ingest: снимок уже в `raw/sources/related/` или ушёл в другой wiki.
+
+### Уже в этом wiki (репо на GitHub удалены после ingest)
+
+| Статус | Где лежит содержание | Бывший remote |
+| --- | --- | --- |
+| закрыт | [`raw/sources/related/variabelnoe-menu-pni/`](../raw/sources/related/variabelnoe-menu-pni/README.md) | `qlolp/-variabelnoe-menu-pni` — удалён |
+| закрыт (тонко) | [`raw/sources/related/academic-redesign-report/`](../raw/sources/related/academic-redesign-report/README.md) | `qlolp/academic-redesign-report` — удалён; аудиты в raw, DOCX не клали |
+| закрыт (тонко) | [`raw/sources/related/social-nutrition-reports/`](../raw/sources/related/social-nutrition-reports/README.md) | `qlolp/social-nutrition-reports` — удалён; тонкая карта, дубли 1+2 не копировали |
+| не предлагать | stub [`seminar-materials-2026/`](../raw/sources/related/seminar-materials-2026/README.md), снимка файлов нет | `qlolp/seminar-materials-2026` — удалён; не следующий ingest и не печать |
+| не этот wiki | нет | `qlolp/vault` — удалён; уникальное ушло в частную ksp-wiki, не в пищевой корпус |
+
+### Опционально позже (репо ещё живы; тонкая ссылка / ingest по нужде)
 
 | Приоритет | Репозиторий | Зачем wiki |
 | --- | --- | --- |
-| закрыт | [qlolp/-variabelnoe-menu-pni](https://github.com/qlolp/-variabelnoe-menu-pni) | Полный ingest 2026-09-02 |
-| закрыт (тонко) | [qlolp/academic-redesign-report](https://github.com/qlolp/academic-redesign-report) | Аудиты в raw; DOCX не клали |
-| закрыт (тонко) | [qlolp/social-nutrition-reports](https://github.com/qlolp/social-nutrition-reports) | Карта семейства; дубли 1+2 не копировали. Репо на GitHub не удалять |
-| 4 | [qlolp/seminar-mental-health-cost-2026](https://github.com/qlolp/seminar-mental-health-cost-2026) | Экономика места vs сопровождаемое проживание; связь с гл. 8.8 |
-| 5 | [qlolp/seminar-ai-social-care-2026](https://github.com/qlolp/seminar-ai-social-care-2026) | Та же логика «ступень → замер → закрепление» на другой теме |
-| 6 | [qlolp/seminar-materials-2026](https://github.com/qlolp/seminar-materials-2026) | Историческая витрина семинара; сверка дублей, не вторая печать |
-| 7 | [qlolp/glm-quiz](https://github.com/qlolp/glm-quiz) банк вопросов (без ключей в wiki) | Отдельный репо; печатной викторины зала в этом корпусе нет |
+| позже | [qlolp/seminar-mental-health-cost-2026](https://github.com/qlolp/seminar-mental-health-cost-2026) | Экономика места vs сопровождаемое проживание; связь с гл. 8.8 |
+| позже | [qlolp/seminar-ai-social-care-2026](https://github.com/qlolp/seminar-ai-social-care-2026) | Та же логика «ступень → замер → закрепление» на другой теме |
+| позже | [qlolp/glm-quiz](https://github.com/qlolp/glm-quiz) | Банк вопросов; ключей в wiki нет; печатной викторины зала в этом корпусе нет |
 
-Дополнительно, не из GitHub: локальные акты Серафимовского сверх приказа № 124 (меню-пары, журналы — только если можно без персональных данных); повторные публикации Болотнинского и Успенского после августа 2024; первоисточник минсоцразвития Иркутской области по региональной модели; полный текст постановления СПб № 1284 и акт 1366-р (извлечение 1284 уже в приложении 3 обзора НПА).
+### Не из GitHub
+
+Локальные акты Серафимовского сверх приказа № 124 (меню-пары, журналы — только если можно без персональных данных); повторные публикации Болотнинского и Успенского после августа 2024; первоисточник минсоцразвития Иркутской области по региональной модели; полный текст постановления СПб № 1284 и акт 1366-р (извлечение 1284 уже в приложении 3 обзора НПА).
 
 ## Чего не ждать от этого wiki
 

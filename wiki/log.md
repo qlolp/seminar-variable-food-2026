@@ -3,7 +3,7 @@ title: Журнал wiki
 type: log
 tags: [log]
 sources: []
-updated: 2026-09-02
+updated: 2026-09-13
 confidence: high
 ---
 
@@ -50,3 +50,11 @@ Append-only. Формат заголовка не менять: `## [YYYY-MM-DD]
 ## [2026-09-02] lint | После ingest НПА и регионов
 
 `python3 .github/check_wiki.py`: OK, 43 wiki md, frontmatter и wikilinks живые. `raw/` не тронут. PPTX/PDF остаются только в `raw/sources/variativnoe-menu-npa-2026/`.
+
+## [2026-09-13] query | Пачка типовых ответов для РГ
+
+Семь страниц в `wiki/queries/`: СанПиН с 1 сентября; две лестницы; комплект проверяющему; что не норма; слои кейса Болотнинского; 223 vs 44; определение вариативности. Каталог — `wiki/queries/README.md` и секция Queries в `wiki/index.md`. Сырьё `raw/` не трогали.
+
+## [2026-09-13] lint | gaps: убрать удалённые соседние репо
+
+В `wiki/gaps.md` таблица «что положить следующим» больше не предлагает удалённые remote (`-variabelnoe-menu-pni`, `academic-redesign-report`, `social-nutrition-reports`, `seminar-materials-2026`, `vault`) как живые GitHub. Содержание первых трёх — в `raw/sources/related/`. Опционально позже: `seminar-mental-health-cost-2026`, `seminar-ai-social-care-2026`, `glm-quiz`. Фраза «репо на GitHub не удалять» снята.

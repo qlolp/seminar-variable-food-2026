@@ -3,7 +3,7 @@ title: Каталог wiki
 type: index
 tags: [index]
 sources: []
-updated: 2026-09-02
+updated: 2026-09-13
 confidence: high
 ---
 
@@ -68,3 +68,13 @@ confidence: high
 - [[wiki/sources/variabelnoe-menu-pni]] — [Доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) — полный корпус предшественника (22 главы, CSV)
 - [[wiki/sources/academic-redesign-report]] — [Академическая переработка](sources/academic-redesign-report.md) — аудиты 24.07, не канон
 - [[wiki/sources/social-nutrition-reports]] — [Зонтик докладов](sources/social-nutrition-reports.md) — карта семейства; после 1+2 в основном избыточен
+
+## Queries
+
+- [[wiki/queries/sanpin-s-1-sentyabrya]] — [С 1 сентября — какой СанПиН](queries/sanpin-s-1-sentyabrya.md) — 4282-26 с 01.09; журналы августа не переписывать
+- [[wiki/queries/dve-lestnicy]] — [Две лестницы 0–5](queries/dve-lestnicy.md) — М0–М5 ≠ участие; форма меряет модели
+- [[wiki/queries/komplekt-proveryayushchemu]] — [Комплект проверяющему](queries/komplekt-proveryayushchemu.md) — папка дома, не формула «запрета нет»
+- [[wiki/queries/chto-ne-norma]] — [Что не норма](queries/chto-ne-norma.md) — приказ № 124, шаблоны и de lege ferenda не федеральная норма
+- [[wiki/queries/sloi-kejsov-bolotninskiy]] — [Слои кейса Болотнинского](queries/sloi-kejsov-bolotninskiy.md) — июль / август / НПА не схлопывать
+- [[wiki/queries/223-i-44]] — [223-ФЗ и 44-ФЗ](queries/223-i-44.md) — Серафимовский и Тесовый берег, разные контуры
+- [[wiki/queries/variativnost-opredelenie]] — [Определение вариативности](queries/variativnost-opredelenie.md) — канон «в момент еды»; соседние дефиниции шире
