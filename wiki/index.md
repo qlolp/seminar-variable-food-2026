@@ -3,7 +3,7 @@ title: Каталог wiki
 type: index
 tags: [index]
 sources: []
-updated: 2026-09-13
+updated: 2026-10-06
 confidence: high
 ---
 
@@ -15,8 +15,8 @@ confidence: high
 
 ## Синтез и служебное
 
-- [[wiki/overview]] — [Обзор вариативного меню](overview.md) — живой синтез темы после первого ingest
-- [[wiki/gaps]] — [Пробелы](gaps.md) — противоречия, дыры данных, что класть в raw дальше
+- [[wiki/overview]] — [Обзор вариативного меню](overview.md) — живой синтез темы; обновлён после доклада v2
+- [[wiki/gaps]] — [Пробелы](gaps.md) — противоречия (закрытые в v2 — со следом), открытое после v2, что класть в raw дальше
 - [[wiki/log]] — [Журнал](log.md) — ingest / query / lint
 
 ## Понятия
@@ -36,35 +36,38 @@ confidence: high
 - [[wiki/concepts/noch-interval]] — [Ночной интервал](concepts/noch-interval.md) — цель ≤13 ч, не норма СанПиН
 - [[wiki/concepts/sanpin-perekhod-2026]] — [Переход СанПиН](concepts/sanpin-perekhod-2026.md) — 4282-26 с 01.09.2026; журналы августа не переписывать
 - [[wiki/concepts/223-fz-i-44-fz]] — [223-ФЗ и 44-ФЗ](concepts/223-fz-i-44-fz.md) — Серафимовский vs Тесовый берег
-- [[wiki/concepts/autsorsing]] — [Аутсорсинг](concepts/autsorsing.md) — восемь строк ТЗ; публичных кейсов нет
+- [[wiki/concepts/autsorsing]] — [Аутсорсинг](concepts/autsorsing.md) — восемь строк ТЗ; публичный кейс один (Серафимовский), условия договора не проверены
 
 ## Дома, люди, практики
 
-- [[wiki/entities/serafimovskiy]] — [Серафимовский](entities/serafimovskiy.md) — мой дом; М1, заказ накануне, приказ № 124
+- [[wiki/entities/serafimovskiy]] — [Серафимовский](entities/serafimovskiy.md) — мой дом; М1, заказ накануне; питание на аутсорсинге
 - [[wiki/entities/tesovyy-bereg]] — [Тесовый берег](entities/tesovyy-bereg.md) — площадка сессии; 44-ФЗ
-- [[wiki/entities/uspenskiy-pni]] — [Успенский ПНИ](entities/uspenskiy-pni.md) — М2, все отделения, 2024
-- [[wiki/entities/bolotninskiy-pni]] — [Болотнинский ПНИ](entities/bolotninskiy-pni.md) — М1, несколько раз в неделю, диетсестра
-- [[wiki/entities/ust-ilimskaya]] — [Усть-Илимск](entities/ust-ilimskaya.md) — поэтапный старт с опроса
-- [[wiki/entities/irkutskaya-oblast]] — [Иркутская область](entities/irkutskaya-oblast.md) — заявка на региональный М2, вторичка
-- [[wiki/entities/ddsol]] — [ДДСОЛ](entities/ddsol.md) — персонализация и «мостик» к лечебному питанию
+- [[wiki/entities/uspenskiy-pni]] — [Успенский ПНИ](entities/uspenskiy-pni.md) — М2 в 2024; «шведский стол» 2025–2026 (М3); первый по дате
+- [[wiki/entities/bolotninskiy-pni]] — [Болотнинский ПНИ](entities/bolotninskiy-pni.md) — М1, несколько раз в неделю, диетсестра; не первый в России
+- [[wiki/entities/ust-ilimskaya]] — [Усть-Илимск](entities/ust-ilimskaya.md) — поэтапный старт с опроса; бывший дом-интернат, не ПНИ
+- [[wiki/entities/irkutskaya-oblast]] — [Иркутская область](entities/irkutskaya-oblast.md) — запуск 2025 подтверждён министром; формат — вторичка; не «вся область»
+- [[wiki/entities/ddsol]] — [ДДСОЛ](entities/ddsol.md) — персонализация; 19РВ-32 — нормы ПНИ МО, не «мостик»
 - [[wiki/entities/chistyakov-evgeny]] — [Чистяков Е. В.](entities/chistyakov-evgeny.md) — автор доклада, директор Серафимовского
 - [[wiki/entities/nurbaev-timur]] — [Нурбаев Т. А.](entities/nurbaev-timur.md) — со-модератор, директор Тесового берега
 - [[wiki/entities/seminar-2026]] — [Семинар 25–27.08.2026](entities/seminar-2026.md) — исторический повод канона, не продукт wiki
 - [[wiki/entities/pni-vs-dso]] — [ПНИ и ДСО](entities/pni-vs-dso.md) — разный правовой акцент стола
-- [[wiki/entities/spb-postanovlenie-1284]] — [Постановление СПб № 1284](entities/spb-postanovlenie-1284.md) — нормы питания Петербурга; не императив выбора
+- [[wiki/entities/spb-postanovlenie-1284]] — [Постановление СПб № 1284](entities/spb-postanovlenie-1284.md) — нормы Петербурга; с 01.01.2026 в ред. ПП № 507; тарифы 1366-р / 1155-р
 
 ## Законы и акты
 
 - [[wiki/entities/zakon-3185-1]] — [Закон № 3185-1](entities/zakon-3185-1.md) — ст. 5, 37, 43; статус проживающих
 - [[wiki/entities/fz-442]] — [442-ФЗ](entities/fz-442.md) — права получателя, ИППСУ
 - [[wiki/entities/sanpin-4282-26]] — [СанПиН 4282-26](entities/sanpin-4282-26.md) — с 01.09.2026; число вариантов не ограничивает
-- [[wiki/entities/prikaz-520n]] — [Приказ Минтруда 520н](entities/prikaz-520n.md) — рекомендуемые нормы
-- [[wiki/entities/prikaz-124]] — [Приказ № 124](entities/prikaz-124.md) — локальный акт Серафимовского, не федеральная норма
+- [[wiki/entities/prikaz-520n]] — [Приказ Минтруда 520н](entities/prikaz-520n.md) — рекомендуемые нормы; 774н — не о питании
+- [[wiki/entities/prikaz-305n]] — [Приказ Минтруда 305н](entities/prikaz-305n.md) — Правила организации деятельности с 01.09.2025; нормы — субъекту; посты
+- [[wiki/entities/rostrud-kontrol]] — [Роструд и проверочный лист № 18](entities/rostrud-kontrol.md) — проверяет государственные дома субъекта с 2021; о выборе лист молчит
+- [[wiki/entities/prikaz-124]] — [Приказ № 124](entities/prikaz-124.md) — правила внутреннего распорядка Серафимовского; одна фраза о «зале заказного питания»
 
 ## Источники
 
 - [[wiki/sources/ne-prosto-nakormit]] — [Не просто накормить](sources/ne-prosto-nakormit.md) — канон первого ingest
-- [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](sources/variativnoe-menu-npa-2026.md) — правовой обзор 16.07/29.08; 8 субъектов; автор на титуле не назван
+- [[wiki/sources/variativnoe-menu-doklad-2026-v2]] — [Доклад v2](sources/variativnoe-menu-doklad-2026-v2.md) — вторая редакция обзора 05.10.2026 (черновик); 47 противоречий; прил. 47–48а
+- [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](sources/variativnoe-menu-npa-2026.md) — правовой обзор 16.07/29.08 (первая редакция); 8 субъектов; автор на титуле не назван
 - [[wiki/sources/variabelnoe-menu-pni]] — [Доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) — полный корпус предшественника (22 главы, CSV)
 - [[wiki/sources/academic-redesign-report]] — [Академическая переработка](sources/academic-redesign-report.md) — аудиты 24.07, не канон
 - [[wiki/sources/social-nutrition-reports]] — [Зонтик докладов](sources/social-nutrition-reports.md) — карта семейства; после 1+2 в основном избыточен
