@@ -3,7 +3,7 @@ title: Каталог wiki
 type: index
 tags: [index]
 sources: []
-updated: 2026-10-06
+updated: 2026-10-07
 confidence: high
 ---
 
@@ -66,7 +66,8 @@ confidence: high
 ## Источники
 
 - [[wiki/sources/ne-prosto-nakormit]] — [Не просто накормить](sources/ne-prosto-nakormit.md) — канон первого ingest
-- [[wiki/sources/variativnoe-menu-doklad-2026-v2]] — [Доклад v2](sources/variativnoe-menu-doklad-2026-v2.md) — вторая редакция обзора 05.10.2026 (черновик); 47 противоречий; прил. 47–48а
+- [[wiki/sources/variativnoe-menu-doklad-2026-v2]] — [Доклад v2](sources/variativnoe-menu-doklad-2026-v2.md) — вторая редакция обзора 05.10.2026 (черновик; дополнение 07.10.2026); 47 противоречий; прил. 47–48а
+- [[wiki/sources/vs-303-es25-15393]] — [Определения ВС 303-ЭС25-15393](sources/vs-303-es25-15393.md) — отказ 28.01.2026 без мотивировки; «окончательной точки» и «источника денег» в тексте нет
 - [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](sources/variativnoe-menu-npa-2026.md) — правовой обзор 16.07/29.08 (первая редакция); 8 субъектов; автор на титуле не назван
 - [[wiki/sources/variabelnoe-menu-pni]] — [Доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) — полный корпус предшественника (22 главы, CSV)
 - [[wiki/sources/academic-redesign-report]] — [Академическая переработка](sources/academic-redesign-report.md) — аудиты 24.07, не канон
