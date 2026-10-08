@@ -3,7 +3,7 @@ title: Каталог wiki
 type: index
 tags: [index]
 sources: []
-updated: 2026-10-07
+updated: 2026-10-08
 confidence: high
 ---
 
@@ -36,7 +36,7 @@ confidence: high
 - [[wiki/concepts/noch-interval]] — [Ночной интервал](concepts/noch-interval.md) — цель ≤13 ч, не норма СанПиН
 - [[wiki/concepts/sanpin-perekhod-2026]] — [Переход СанПиН](concepts/sanpin-perekhod-2026.md) — 4282-26 с 01.09.2026; журналы августа не переписывать
 - [[wiki/concepts/223-fz-i-44-fz]] — [223-ФЗ и 44-ФЗ](concepts/223-fz-i-44-fz.md) — Серафимовский vs Тесовый берег
-- [[wiki/concepts/autsorsing]] — [Аутсорсинг](concepts/autsorsing.md) — восемь строк ТЗ; публичный кейс один (Серафимовский), условия договора не проверены
+- [[wiki/concepts/autsorsing]] — [Аутсорсинг](concepts/autsorsing.md) — восемь строк ТЗ; два вида кейсов: Серафимовский (практика, договор не проверен) и закупки Самарской обл. «по вариативному меню» (44-ФЗ, ТЗ не прочитаны)
 
 ## Дома, люди, практики
 
@@ -67,6 +67,7 @@ confidence: high
 
 - [[wiki/sources/ne-prosto-nakormit]] — [Не просто накормить](sources/ne-prosto-nakormit.md) — канон первого ingest
 - [[wiki/sources/variativnoe-menu-doklad-2026-v2]] — [Доклад v2](sources/variativnoe-menu-doklad-2026-v2.md) — вторая редакция обзора 05.10.2026 (черновик; дополнение 07.10.2026); 47 противоречий; прил. 47–48а
+- [[wiki/sources/samara-variativnoe-menu-zakupki]] — [Закупки Самарской обл.](sources/samara-variativnoe-menu-zakupki.md) — 8 извещений 6 домов по 44-ФЗ «приготовление питания по вариативному меню» (2025–2027); ТЗ не прочитаны
 - [[wiki/sources/vs-303-es25-15393]] — [Определения ВС 303-ЭС25-15393](sources/vs-303-es25-15393.md) — отказ 28.01.2026 без мотивировки; «окончательной точки» и «источника денег» в тексте нет
 - [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](sources/variativnoe-menu-npa-2026.md) — правовой обзор 16.07/29.08 (первая редакция); 8 субъектов; автор на титуле не назван
 - [[wiki/sources/variabelnoe-menu-pni]] — [Доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) — полный корпус предшественника (22 главы, CSV)
