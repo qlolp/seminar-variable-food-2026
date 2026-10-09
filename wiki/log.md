@@ -62,3 +62,7 @@ Append-only. Формат заголовка не менять: `## [YYYY-MM-DD]
 ## [2026-10-09] ingest | Поиск 2026-10: дисфагия
 
 По просьбе автора начата вторая редакция доклада в `doklad-v2/` (канон в `raw/` не тронут). Новый каталог `raw/sources/poisk-2026-10-disfagiya/` — реестр 14 источников с переводами (распространённость, удушье, гигиена рта, свободная вода, IDDSI по-русски). Wiki: `wiki/sources/poisk-2026-10-disfagiya.md`, дополнение в `concepts/disfagiya.md`, `gaps.md` (п. 21, частичное закрытие «30–50 %»), index. Пилотная глава — `doklad-v2/10_disfagiya.md`.
+
+## [2026-10-09] ingest | Поиск 2026-10: вторая редакция доклада
+
+Вторая редакция всех 44 глав в `doklad-v2/` (около 98 тыс. слов против 40 тыс.), сборка `ne-prosto-nakormit-v2.md` и PDF. Девять реестров `raw/sources/poisk-2026-10-blok-a…i/` (канон в `raw/` не тронут). Wiki: `sources/poisk-2026-10-vtoraya-redakciya.md`; исправлены `entities/irkutskaya-oblast.md` (четыре учреждения), `concepts/lestnica-modelej.md` (Nijs без деменции), `concepts/pravo-na-vybor.md` (п. 3 ст. 36 ГК); `gaps.md` п. 22–25; index.
