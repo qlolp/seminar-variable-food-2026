@@ -312,3 +312,40 @@
 | `I-onaudit2019` | Office of the Auditor General of Ontario. Annual Report 2019. Vol. 1, Chapter 3.05: Food and Nutrition in Long-Term-Care Homes (Value-for-Money Audit). Toronto, 2019. | https://www.auditor.on.ca/en/content/news/19_summaries/2019AR_summary_v1_3.05.pdf | `poisk-2026-10-blok-e`, `poisk-2026-10-blok-g` |
 | `I-uk_scot_hscs` | Scottish Government. Health and Social Care Standards: my support, my life. Опубл. 09.06.2017. | https://www.gov.scot/publications/health-social-care-standards-support-life/pages/4/ | `poisk-2026-10-blok-f` |
 | `I-us_cfr_483_10` | 42 CFR § 483.10 Resident rights, (f)(5)–(7) — Resident and family groups (Centers for Medicare & Medicaid Services, США). | https://www.law.cornell.edu/cfr/text/42/483.10 | `poisk-2026-10-blok-h` |
+
+## 44.5. Источники, добавленные при переработке кейсов и приложений — 18
+
+Эти записи появились, когда учебные кейсы и приложения-шаблоны переписывались во второй редакции. Полные выписки с переводом ключевых фрагментов — в указанных реестрах `raw/sources/`.
+
+### 44.5.1. Российские правовые источники (S) — 9
+
+| ID | Что | Где / URL | Реестр |
+|---|---|---|---|
+| `S135` | Федеральный закон от 02.05.2006 № 59-ФЗ «О порядке рассмотрения обращений граждан Российской Федерации», ст. 1 (ч. 1, 4), ст. 10 (ч. 1), ст. 12 (ч. 1). | https://pravo.ppt.ru/fz/59-fz-64365 | `poisk-2026-10-kejsy-b` |
+| `S136` | Федеральный закон от 17.01.1992 № 2202-1 «О прокуратуре Российской Федерации», ст. 6 «Обязательность исполнения требований прокурора». | https://www.consultant.ru/document/cons_doc_LAW_262/a7897e6471f1f713c1af63e5476c9ec0c9d46650/ | `poisk-2026-10-kejsy-b` |
+| `S137` | Федеральный закон от 06.12.2011 № 402-ФЗ «О бухгалтерском учете», ст. 9 «Первичные учетные документы». | https://rulaws.ru/laws/Federalnyy-zakon-ot-06.12.2011-N-402-FZ/Statya-9/ | `poisk-2026-10-kejsy-b` |
+| `S138` | Федеральный закон от 05.04.2013 № 44-ФЗ, ст. 34 «Контракт», ч. 4, 6–8. | https://www.consultant.ru/document/cons_doc_LAW_144624/c5cbc4acc59ffed792a3921dbc18900d2d0f7eb1/ | `poisk-2026-10-kejsy-b` |
+| `S140` | Приказ Минздрава России от 03.05.2024 № 220н «Об утверждении Порядка оказания первой помощи». Зарегистрирован в Минюсте России 31.05.2024 № 78363. Вступил в силу 01.09.2024. Признал утратившими силу приказ Минздравсоцразвития России от 04.05.2012 № 477н и изменяющий его приказ Минздрава России от 07.11.2012 № 586н. | https://nstu.ru/static_files/63200/03.05.2024_220.pdf | `poisk-2026-10-pril-a` |
+| `S141` | Федеральный закон от 21.11.2011 № 323-ФЗ «Об основах охраны здоровья граждан в Российской Федерации», ст. 31 «Первая помощь». | https://mchs.gov.ru/deyatelnost/bezopasnost-grazhdan/organizacionno-pravovye-aspekty-okazaniya-pervoy-pomoshchi_7 | `poisk-2026-10-pril-a` |
+| `S142` | Приказ Минздрава России от 20.08.2026 № 740н «Об утверждении учётной формы № 058/у „Экстренное извещение о случае инфекционной болезни“». Зарегистрирован в Минюсте России 16.09.2026 № 88291. Вступает в силу 01.03.2027, действует до 01.03.2033 (по обзору ppt.ru). | https://ppt.ru/obzory/vstupaet-v-silu/prikaz-minzdrava-rossii-20-08-2026-740n | `poisk-2026-10-pril-a` |
+| `S145` | Трудовой кодекс Российской Федерации от 30.12.2001 № 197-ФЗ, ст. 91 «Понятие рабочего времени. Нормальная продолжительность рабочего времени». | https://www.consultant.ru/document/cons_doc_LAW_34683/bd14cccf0a1f074ef104e82522f7e2dea04d651f/ | `poisk-2026-10-pril-b` |
+| `S150` | Семейный кодекс Российской Федерации от 29.12.1995 № 223-ФЗ, ст. 57 «Право ребенка выражать свое мнение» (ред. от 23.03.2026, с изм. от 15.05.2026 — по карточке КонсультантПлюс). | https://www.consultant.ru/document/cons_doc_LAW_8982/00731b26adc7c351894969e6f7d05a903cfd6551/ | `poisk-2026-10-pril-c` |
+
+### 44.5.2. Клинические и научные источники (M) — 2
+
+| ID | Что | Где / URL | Реестр |
+|---|---|---|---|
+| `M-and_dorner` | Dorner B., Friedrich E.K. Position of the Academy of Nutrition and Dietetics: Individualized Nutrition Approaches for Older Adults: Long-Term Care, Post-Acute Care, and Other Settings // Journal of the Academy of Nutrition and Dietetics. 2018. Vol. 118, № 4. P. 724–735. DOI: 10.1016/j.jand.2018.01.022. | https://www.cdrnet.org/vault/2459/web//Individualized%20Nutrition%20Approaches%20for%20Older%20Adults%202018-2025.pdf | `poisk-2026-10-kejsy-a` |
+| `M-rrem_lachs` | Lachs M.S., Teresi J.A., Ramirez M., Van Haitsma K., Silver S., Eimicke J.P., Boratgis G., Sukha G., Kong J., Besas A.M., Luna M.R., Pillemer K.A. The Prevalence of Resident-to-Resident Elder Mistreatment in Nursing Homes // Annals of Internal Medicine. 2016. Vol. 165, № 4. P. 229–236. DOI: 10.7326/M15-1209. PMID 27295575. | https://pure.psu.edu/en/publications/the-prevalence-of-resident-to-resident-elder-mistreatment-in-nurs/ | `poisk-2026-10-kejsy-a` |
+
+### 44.5.3. Международные нормы и практики (I) — 7
+
+| ID | Что | Где / URL | Реестр |
+|---|---|---|---|
+| `I-cms_dining2013` | Centers for Medicare & Medicaid Services (США), Center for Clinical Standards and Quality / Survey & Certification Group. Memorandum S&C: 13-13-NH «Information Only: New Dining Standards of Practice Resources are Available Now». 01.03.2013. Подписал директор Survey and Certification Group Thomas E. Hamilton; адресат — директора агентств штатов по освидетельствованию. | https://www.cms.gov/medicare/provider-enrollment-and-certification/surveycertificationgeninfo/downloads/survey-and-cert-letter-13-13.pdf | `poisk-2026-10-kejsy-a` |
+| `I-easyread_ie` | Inclusion Europe. Information for all: European standards for making information easy to read and understand. Брюссель: Inclusion Europe, при поддержке Европейской комиссии (проект Pathways to adult education for people with intellectual disabilities; год по странице проекта — 2010, на титуле не указан). ISBN 2-87460-110-1. | https://www.inclusion-europe.eu/wp-content/uploads/2017/06/EN_Information_for_all.pdf | `poisk-2026-10-pril-c` |
+| `I-flw_standard` | Food Loss and Waste Accounting and Reporting Standard (FLW Standard). Version 1.0. Food Loss + Waste Protocol (многосторонняя инициатива; секретариат — World Resources Institute). Январь 2016. | https://flwprotocol.org/wp-content/uploads/2017/05/FLW_Standard_final_2016.pdf | `poisk-2026-10-pril-b` |
+| `I-noro_hicpac` | MacCannell T., Umscheid C.A., Agarwal R.K., Lee I., Kuntz G., Stevenson K.B.; Healthcare Infection Control Practices Advisory Committee (HICPAC). Guideline for the Prevention and Control of Norovirus Gastroenteritis Outbreaks in Healthcare Settings. CDC, 2011. Раздел II «Summary of Recommendations». | https://www.cdc.gov/infection-control/hcp/norovirus-guidelines/summary-recommendations.html | `poisk-2026-10-pril-c` |
+| `I-psirf_nhs` | NHS England. Patient Safety Incident Response Framework (PSIRF). Версия 1 — август 2022 (дата по анонсам отраслевых конференций; на странице NHS дата публикации не указана); переход организаций завершён к осени 2023. | https://www.england.nhs.uk/patient-safety/patient-safety-insight/incident-response-framework/ | `poisk-2026-10-pril-c` |
+| `I-rcuk_choking` | Resuscitation Council UK. Adult choking algorithm. 2025. (Совет по реанимации Великобритании. Алгоритм помощи взрослому при удушье инородным телом.) | https://www.resus.org.uk/sites/default/files/2025-10/Adult%20choking%20algorithm%202025%20.pdf | `poisk-2026-10-pril-a` |
+| `I-us_cfr_483_5` | 42 CFR § 483.5 «Definitions» (Requirements for States and Long Term Care Facilities, США), определения abuse и neglect. | https://www.law.cornell.edu/cfr/text/42/483.5 | `poisk-2026-10-kejsy-b` |
