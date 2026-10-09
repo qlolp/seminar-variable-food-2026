@@ -58,3 +58,7 @@ Append-only. Формат заголовка не менять: `## [YYYY-MM-DD]
 ## [2026-09-13] lint | gaps: убрать удалённые соседние репо
 
 В `wiki/gaps.md` таблица «что положить следующим» больше не предлагает удалённые remote (`-variabelnoe-menu-pni`, `academic-redesign-report`, `social-nutrition-reports`, `seminar-materials-2026`, `vault`) как живые GitHub. Содержание первых трёх — в `raw/sources/related/`. Опционально позже: `seminar-mental-health-cost-2026`, `seminar-ai-social-care-2026`, `glm-quiz`. Фраза «репо на GitHub не удалять» снята.
+
+## [2026-10-09] ingest | Поиск 2026-10: дисфагия
+
+По просьбе автора начата вторая редакция доклада в `doklad-v2/` (канон в `raw/` не тронут). Новый каталог `raw/sources/poisk-2026-10-disfagiya/` — реестр 14 источников с переводами (распространённость, удушье, гигиена рта, свободная вода, IDDSI по-русски). Wiki: `wiki/sources/poisk-2026-10-disfagiya.md`, дополнение в `concepts/disfagiya.md`, `gaps.md` (п. 21, частичное закрытие «30–50 %»), index. Пилотная глава — `doklad-v2/10_disfagiya.md`.
