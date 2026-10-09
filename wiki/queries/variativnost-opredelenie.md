@@ -6,7 +6,8 @@ sources:
   - raw/sources/ne-prosto-nakormit/doklad/главы/08_lestnica.md
   - raw/sources/related/variabelnoe-menu-pni/chapters/04_concepts.md
   - raw/sources/variativnoe-menu-npa-2026/Вариативное_меню_НПА_и_регионы_доклад.pdf
-updated: 2026-09-13
+  - raw/sources/variativnoe-menu-doklad-2026-v2/doklad.md
+updated: 2026-10-06
 confidence: high
 ---
 
@@ -20,8 +21,10 @@ confidence: high
 
 Правовой обзор НПА § 1.2 / глоссарий снова шире: на каждый приём (или основные) **либо** заказ заранее из ассортимента. Синонимы слоя включают «шведский стол». Федерального термина слой сам не находит.
 
-Заказ накануне у нас в Серафимовском — способ доставить два варианта **к точке приёма**, не другое определение. Недельный заказ как таковой канон вариативностью не считает.
+Заказ накануне у нас в Серафимовском — способ доставить два варианта **к точке приёма**, не другое определение. По шкале раздачи это М1: выбор есть, но не в момент еды. Недельный заказ как таковой канон вариативностью не считает.
+
+Доклад v2 (п. 1.3) берёт «в момент еды» **рабочим** определением, а остальные описывает как определения своих слоёв. Расхождение не сводится (гл. 9 п. 20) — это не «закрыто», а «держать с подписью слоя». Антипримеры v2: цикличное меню ТЗ по вариантам **диеты** (ОВД, ИП, ОВД2) — не выбор, даже если вариантов пять; замена через совет по питанию с согласия врача — персонализация ([ДДСОЛ](../entities/ddsol.md)); линия самообслуживания с одним блюдом — не выбор.
 
 Критерии реального выбора (гл. 8.3) общие для любой модели: Б до последнего отделения; равноценность по таблице замен; информированность доступным способом; уважение выбранного; учёт, который двигает завтрашние объёмы. Положение без вчерашнего выбора — [[wiki/concepts/fiktivnaya-variativnost]] — [фиктивная вариативность](../concepts/fiktivnaya-variativnost.md).
 
-Страницы: [[wiki/concepts/variativnost]] — [вариативность](../concepts/variativnost.md); [[wiki/sources/variabelnoe-menu-pni]] — [предшественник](../sources/variabelnoe-menu-pni.md); [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА](../sources/variativnoe-menu-npa-2026.md); [[wiki/gaps]] — [gaps](../gaps.md) п. 6. Сырьё канона: [`08_lestnica.md`](../../raw/sources/ne-prosto-nakormit/doklad/главы/08_lestnica.md).
+Страницы: [[wiki/concepts/variativnost]] — [вариативность](../concepts/variativnost.md); [[wiki/sources/variabelnoe-menu-pni]] — [предшественник](../sources/variabelnoe-menu-pni.md); [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА](../sources/variativnoe-menu-npa-2026.md); [[wiki/gaps]] — [gaps](../gaps.md) п. 6. Сырьё канона: [`08_lestnica.md`](../../raw/sources/ne-prosto-nakormit/doklad/главы/08_lestnica.md); v2 — [`doklad.md`](../../raw/sources/variativnoe-menu-doklad-2026-v2/doklad.md), п. 1.2–1.3.
