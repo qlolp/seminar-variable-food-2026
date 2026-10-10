@@ -12,7 +12,8 @@ sources:
   - raw/sources/poisk-2026-10-blok-g/istochniki.md
   - raw/sources/poisk-2026-10-blok-h/istochniki.md
   - raw/sources/poisk-2026-10-blok-i/istochniki.md
-updated: 2026-10-09
+  - raw/sources/poisk-2026-10-dozakrytie/istochniki.md
+updated: 2026-10-10
 confidence: medium
 ---
 
@@ -50,5 +51,7 @@ confidence: medium
 ## Что не удалось проверить
 
 Онтарио O. Reg. 246/22 (e-Laws требует JavaScript); реквизиты приказа № 520н; официальный текст 4282-26 и регистрационный номер; Москва № 1068-ПП против приказа ДТСЗН № 228; полный текст Müller 2015; PubMed/PMC закрыты капчей — часть клинических работ прочитана только в реферате.
+
+Дозакрытие 10.10.2026 — реестр [`poisk-2026-10-dozakrytie`](../../raw/sources/poisk-2026-10-dozakrytie/README.md): Онтарио прочитан по PDF-копии (выбор блюд — на обед и ужин; пороги отказа — не регламент, а `I-dcbp`); 520н — реквизиты; Москва «1068-ПП» — приказ ДСЗН № 1068 (2014), позднейший — ДТСЗН № 228 (2021); Müller 2015 — комментарий, формула «1 из 10» — Sjögren 2008. Не закрыто: Ленобласть № 458, аутсорсинг, сводная статистика вспышек. Итог — [пробелы](../gaps.md), п. 25.
 
 Связи: [пробелы](../gaps.md), [дисфагия](../concepts/disfagiya.md).
