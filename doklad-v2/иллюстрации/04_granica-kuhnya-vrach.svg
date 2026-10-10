@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 613" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Граница ответственности: житель, кухня, врач</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="613" fill="#ffffff"/>
+<rect x="0" y="0" width="212" height="357" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="12" y="26" font-size="14" font-weight="600" fill="#a63d32">Врач</text>
+<text x="12" y="43.5" font-size="11.5" fill="#5b6b73">решает клинику</text>
+<text x="12" y="65" font-size="12">• ограничения рациона, в</text>
+<text x="12" y="81" font-size="12">том числе «диабетический</text>
+<text x="12" y="97" font-size="12">стол»</text>
+<text x="12" y="119" font-size="12">• текстуры, правила при</text>
+<text x="12" y="135" font-size="12">дисфагии, протокол</text>
+<text x="12" y="151" font-size="12">свободной воды</text>
+<text x="12" y="173" font-size="12">• действия при длительном</text>
+<text x="12" y="189" font-size="12">отказе от еды</text>
+<text x="12" y="211" font-size="12">• питание при седации;</text>
+<text x="12" y="227" font-size="12">время еды на инсулине</text>
+<text x="12" y="249" font-size="12">• зонд и комфортное</text>
+<text x="12" y="265" font-size="12">кормление в конце жизни</text>
+<text x="12" y="287" font-size="12">• анализы, добавки,</text>
+<text x="12" y="303" font-size="12">скрининг MUST</text>
+<text x="12" y="325" font-size="12">• подписывает таблицу</text>
+<text x="12" y="341" font-size="12">«лекарство × еда»</text>
+<rect x="234" y="0" width="212" height="357" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="246" y="26" font-size="14" font-weight="600" fill="#c08a2d">Кухня и администрация</text>
+<text x="246" y="43.5" font-size="11.5" fill="#5b6b73">исполняют и организуют</text>
+<text x="246" y="65" font-size="12">• исполняют назначение и</text>
+<text x="246" y="81" font-size="12">таблицу врача, не ставят</text>
+<text x="246" y="97" font-size="12">диагноз</text>
+<text x="246" y="119" font-size="12">• два варианта блюда</text>
+<text x="246" y="135" font-size="12">внутри допустимого</text>
+<text x="246" y="157" font-size="12">• журналы проб, бракеража,</text>
+<text x="246" y="173" font-size="12">отказов, заказа — в ритме</text>
+<text x="246" y="189" font-size="12">смены</text>
+<text x="246" y="211" font-size="12">• замер отходов и ночного</text>
+<text x="246" y="227" font-size="12">интервала</text>
+<text x="246" y="249" font-size="12">• еда не подаётся, пока</text>
+<text x="246" y="265" font-size="12">помощь не готова</text>
+<rect x="468" y="0" width="212" height="357" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="480" y="26" font-size="14" font-weight="600" fill="#1f6f6a">Житель</text>
+<text x="480" y="43.5" font-size="11.5" fill="#5b6b73">выбирает</text>
+<text x="480" y="65" font-size="12">• блюдо из того, что</text>
+<text x="480" y="81" font-size="12">допустимо по назначению</text>
+<text x="480" y="97" font-size="12">врача</text>
+<text x="480" y="119" font-size="12">• повседневное пищевое</text>
+<text x="480" y="135" font-size="12">предпочтение, как правило,</text>
+<text x="480" y="151" font-size="12">не сделка:</text>
+<text x="480" y="167" font-size="12">недееспособность не</text>
+<text x="480" y="183" font-size="12">отменяет выбора</text>
+<text x="480" y="205" font-size="12">• говорит словом, жестом,</text>
+<text x="480" y="221" font-size="12">отказом, остатками на</text>
+<text x="480" y="237" font-size="12">тарелке</text>
+<rect x="51" y="407" width="110" height="34" rx="17" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="106" y="429" font-size="13" font-weight="600" fill="#a63d32" text-anchor="middle">Врач</text>
+<rect x="285" y="407" width="110" height="34" rx="17" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="340" y="429" font-size="13" font-weight="600" fill="#c08a2d" text-anchor="middle">Кухня</text>
+<rect x="519" y="407" width="110" height="34" rx="17" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="574" y="429" font-size="13" font-weight="600" fill="#1f6f6a" text-anchor="middle">Житель</text>
+<line x1="165" y1="417" x2="281" y2="417" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="281" y1="433" x2="165" y2="433" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="399" y1="417" x2="515" y2="417" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="515" y1="433" x2="399" y2="433" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="223" y="399" font-size="11" fill="#5b6b73" text-anchor="middle">сроком пересмотра</text>
+<text x="223" y="385" font-size="11" fill="#5b6b73" text-anchor="middle">назначение поимённо, с целью и</text>
+<text x="223" y="457" font-size="11" fill="#5b6b73" text-anchor="middle">три отказа подряд — звонок</text>
+<text x="223" y="471" font-size="11" fill="#5b6b73" text-anchor="middle">врачу в тот же день</text>
+<text x="457" y="399" font-size="11" fill="#5b6b73" text-anchor="middle">допустимого</text>
+<text x="457" y="385" font-size="11" fill="#5b6b73" text-anchor="middle">два варианта внутри</text>
+<text x="457" y="457" font-size="11" fill="#5b6b73" text-anchor="middle">выбор, отказ, остатки, пожелания</text>
+<rect x="0" y="491" width="680" height="52" rx="6" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<text x="12" y="511" font-size="12" font-weight="600">Только с учредителем:</text>
+<text x="12" y="511" font-size="13"></text>
+<text x="154.598" y="511" font-size="12">финансирование продуктовой строки, штаты и норма помощи за столом,</text>
+<text x="12" y="527" font-size="12">аутсорсинг питания, статус пилота</text>
+<rect x="0" y="551" width="680" height="52" rx="6" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<text x="12" y="571" font-size="12" font-weight="600">Только после правовой проверки:</text>
+<text x="12" y="571" font-size="13"></text>
+<text x="221.133" y="571" font-size="12">«согласие недееспособного» в локальных актах, пищевые карты как</text>
+<text x="12" y="587" font-size="12">персональные данные, ответы прокуратуре</text>
+</svg>

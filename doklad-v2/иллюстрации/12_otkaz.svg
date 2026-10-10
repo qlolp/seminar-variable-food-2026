@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 715" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Маршрут при отказе от блюда и от еды</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="715" fill="#ffffff"/>
+<rect x="0" y="0" width="130" height="87" rx="6" fill="#f4f6f7" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="10" y="23" font-size="13" font-weight="600">Житель</text>
+<text x="10" y="40" font-size="13" font-weight="600">отказался</text>
+<text x="10" y="59" font-size="12" fill="#5b6b73">«не буду»</text>
+<rect x="148" y="0" width="270" height="87" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="158" y="22.5" font-size="12.5" font-weight="600">1. Каждый отказ — в журнал</text>
+<text x="158" y="41" font-size="12">Смена: кто, на каком приёме, что</text>
+<text x="158" y="57" font-size="12">отверг, сколько съел, как себя вёл</text>
+<text x="158" y="73" font-size="12">(приложение 9)</text>
+<rect x="436" y="0" width="244" height="87" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="446" y="22.5" font-size="12.5" font-weight="600">2. Альтернатива сразу</text>
+<text x="446" y="41" font-size="12">В тот же приём, по таблице замен:</text>
+<text x="446" y="57" font-size="12">житель не остаётся голодным</text>
+<line x1="130" y1="43.5" x2="146" y2="43.5" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="418" y1="43.5" x2="434" y2="43.5" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M340,87 L340,101" fill="none" stroke="#5b6b73" stroke-width="1.5"/>
+<line x1="96" y1="101" x2="582" y2="101" stroke="#5b6b73" stroke-width="1.5"/>
+<line x1="96" y1="101" x2="96" y2="117" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="338" y1="101" x2="338" y2="117" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="582" y1="101" x2="582" y2="117" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="96" y="133" font-size="13.5" font-weight="700" fill="#1f6f6a" text-anchor="middle">Отказ от блюда</text>
+<text x="96" y="149" font-size="11" fill="#5b6b73" text-anchor="middle">выбор, а не нарушение</text>
+<text x="338" y="133" font-size="13.5" font-weight="700" fill="#c08a2d" text-anchor="middle">Отказ от еды</text>
+<text x="338" y="149" font-size="11" fill="#5b6b73" text-anchor="middle">счёт приёмов подряд</text>
+<text x="582" y="133" font-size="13.5" font-weight="700" fill="#a63d32" text-anchor="middle">Немедленно — врачу</text>
+<text x="582" y="149" font-size="11" fill="#5b6b73" text-anchor="middle">без ожидания счёта</text>
+<rect x="0" y="161" width="192" height="68" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="183" font-size="12">Избирательно, на</text>
+<text x="10" y="199" font-size="12">конкретные блюда;</text>
+<text x="10" y="215" font-size="12">остальное ест</text>
+<rect x="0" y="237" width="192" height="84" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="259" font-size="12" font-weight="600" fill="#1f6f6a">Смена говорит:</text>
+<text x="10" y="277.5" font-size="11.5">«Хорошо, это уберу. Есть</text>
+<text x="10" y="292.5" font-size="11.5">ещё ___, принести?» — без</text>
+<text x="10" y="307.5" font-size="11.5">«почему» и без оценки</text>
+<rect x="0" y="329" width="192" height="84" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="351" font-size="12" font-weight="600" fill="#1f6f6a">Кухня и администрация</text>
+<text x="10" y="369.5" font-size="11.5">разбирают остатки:</text>
+<text x="10" y="384.5" font-size="11.5">«невкусно», «холодное»,</text>
+<text x="10" y="399.5" font-size="11.5">«не то»</text>
+<rect x="0" y="421" width="192" height="65" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="0" y="421" width="192" height="65" rx="6" fill="none"/>
+<text x="10" y="442.5" font-size="11.5">«Болит жевать?» —</text>
+<text x="10" y="457.5" font-size="11.5">стоматологический</text>
+<text x="10" y="472.5" font-size="11.5">маршрут, не кухня</text>
+<rect x="204" y="161" width="268" height="72" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="214" y="183.5" font-size="12.5" font-weight="600" fill="#c08a2d">8:30 завтрак — отказ</text>
+<text x="214" y="201.5" font-size="11.5">к 9:00 запись, замена предложена</text>
+<text x="214" y="219.5" font-size="10.5" font-weight="600" fill="#5b6b73">смена</text>
+<line x1="338" y1="233" x2="338" y2="247" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="204" y="249" width="268" height="102" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="214" y="271.5" font-size="12.5" font-weight="600" fill="#c08a2d">13:00 обед — второй отказ</text>
+<text x="214" y="289.5" font-size="11.5">до 14:00 старшая смены выясняет</text>
+<text x="214" y="304.5" font-size="11.5">контекст: не заболел ли, нет ли</text>
+<text x="214" y="319.5" font-size="11.5">конфликта, не звучит ли «отравлено»</text>
+<text x="214" y="337.5" font-size="10.5" font-weight="600" fill="#5b6b73">старшая смены</text>
+<line x1="338" y1="351" x2="338" y2="365" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="204" y="367" width="268" height="102" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="214" y="389.5" font-size="12.5" font-weight="600" fill="#a63d32">17:30 ужин — третий отказ подряд</text>
+<text x="214" y="407.5" font-size="11.5">в 18:00 сообщение дежурному врачу,</text>
+<text x="214" y="422.5" font-size="11.5">при его отсутствии — по телефону;</text>
+<text x="214" y="437.5" font-size="11.5">решение записывается тем же вечером</text>
+<text x="214" y="455.5" font-size="10.5" font-weight="600" fill="#5b6b73">врач — в тот же день</text>
+<rect x="204" y="479" width="268" height="103" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="214" y="501.5" font-size="12.5" font-weight="600" fill="#a63d32">Оставляет 25 % порции и больше —</text>
+<text x="214" y="517.5" font-size="12.5" font-weight="600" fill="#a63d32">системно, в течение недели</text>
+<text x="214" y="535.5" font-size="11.5">врач и пересмотр индивидуальной</text>
+<text x="214" y="550.5" font-size="11.5">карты в течение двух дней</text>
+<text x="214" y="568.5" font-size="10.5" font-weight="600" fill="#5b6b73">врач</text>
+<rect x="484" y="161" width="196" height="69" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="494" y="183.5" font-size="12.5" font-weight="600" fill="#a63d32">Отказ от воды</text>
+<text x="494" y="201.5" font-size="11.5">или одновременно от еды и</text>
+<text x="494" y="216.5" font-size="11.5">воды</text>
+<rect x="484" y="238" width="196" height="54" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="494" y="260.5" font-size="12.5" font-weight="600" fill="#a63d32">Мотив «отравлено»</text>
+<text x="494" y="278.5" font-size="11.5">уже при первом эпизоде</text>
+<rect x="484" y="300" width="196" height="84" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="494" y="322.5" font-size="12.5" font-weight="600" fill="#a63d32">Житель на литии</text>
+<text x="494" y="340.5" font-size="11.5">отказ от еды и питья —</text>
+<text x="494" y="355.5" font-size="11.5">звонок врачу сразу (раздел</text>
+<text x="494" y="370.5" font-size="11.5">11.3)</text>
+<rect x="484" y="392" width="196" height="65" rx="6" fill="#ffffff" stroke="#a63d32" stroke-width="1.5"/>
+<text x="494" y="413.5" font-size="11.5" fill="#a63d32">Медицинское</text>
+<text x="494" y="428.5" font-size="11.5" fill="#a63d32">искусственное питание —</text>
+<text x="494" y="443.5" font-size="11.5" fill="#a63d32">только решение врача</text>
+<rect x="0" y="598" width="680" height="69" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="620.5" font-size="12.5" font-weight="600">Эпизод закрывается записью: что установлено, что назначено, когда пересмотр</text>
+<text x="10" y="638.5" font-size="11.5" fill="#5b6b73">Слова жителя в журнале («отказался от ужина, поел в 21:00 по своей просьбе») — данные, а не</text>
+<text x="10" y="653.5" font-size="11.5" fill="#5b6b73">нарушение режима.</text>
+<rect x="0" y="675" width="680" height="40" rx="6" fill="#a63d32"/>
+<text x="340" y="700" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Предлагают, заменяют, адаптируют, фиксируют, эскалируют — силой не вводят</text>
+</svg>

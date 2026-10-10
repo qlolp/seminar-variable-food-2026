@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 516" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Лестница моделей М0–М5 и ступени участия 0–5</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="516" fill="#ffffff"/>
+<text x="20" y="20" font-size="14" font-weight="600">Модели раздачи М0–М5</text>
+<text x="20" y="38" font-size="11.5" fill="#5b6b73">технология: сколько вариантов и как их получают</text>
+<rect x="20" y="318" width="262" height="46" rx="6" fill="#eef1f2" stroke="#5b6b73" stroke-width="1.5"/>
+<text x="32" y="346" font-size="15" font-weight="700" fill="#5b6b73">М0</text>
+<text x="66" y="338" font-size="12">Мономеню; при отказе —</text>
+<text x="66" y="353" font-size="12">замена по таблице</text>
+<rect x="30" y="266" width="262" height="46" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="42" y="294" font-size="15" font-weight="700" fill="#1f6f6a">М1</text>
+<text x="76" y="286" font-size="12">Два варианта в одной позиции,</text>
+<text x="76" y="301" font-size="12">не каждый день</text>
+<rect x="40" y="214" width="262" height="46" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="52" y="242" font-size="15" font-weight="700" fill="#1f6f6a">М2</text>
+<text x="86" y="234" font-size="12">Два варианта по всем</text>
+<text x="86" y="249" font-size="12">позициям ежедневно</text>
+<rect x="50" y="162" width="262" height="46" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="62" y="190" font-size="15" font-weight="700" fill="#1f6f6a">М3</text>
+<text x="96" y="182" font-size="12">Выбор на линии раздачи</text>
+<text x="96" y="197" font-size="12">(«шведский стол»)</text>
+<rect x="60" y="110" width="262" height="46" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="72" y="138" font-size="15" font-weight="700" fill="#1f6f6a">М4</text>
+<text x="106" y="130" font-size="12">Семейная подача: общая</text>
+<text x="106" y="145" font-size="12">посуда на столе</text>
+<rect x="70" y="58" width="262" height="46" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="82" y="86" font-size="15" font-weight="700" fill="#5b6b73">М5</text>
+<text x="116" y="78" font-size="12">«Своя кухня»: жители готовят</text>
+<text x="116" y="93" font-size="12">сами</text>
+<text x="348" y="20" font-size="14" font-weight="600">Ступени участия 0–5</text>
+<text x="348" y="38" font-size="11.5" fill="#5b6b73">мера контроля над едой, возвращённого жителю</text>
+<rect x="348" y="318" width="262" height="46" rx="6" fill="#eef1f2" stroke="#5b6b73" stroke-width="1.5"/>
+<text x="360" y="346" font-size="15" font-weight="700" fill="#5b6b73">0</text>
+<text x="394" y="338" font-size="12">Еду определили регион, кухня</text>
+<text x="394" y="353" font-size="12">и смена</text>
+<rect x="358" y="266" width="262" height="46" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="370" y="294" font-size="15" font-weight="700" fill="#c08a2d">1</text>
+<text x="404" y="286" font-size="12">Спросили, но тарелка осталась</text>
+<text x="404" y="301" font-size="12">той же</text>
+<rect x="368" y="214" width="262" height="46" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="380" y="242" font-size="15" font-weight="700" fill="#1f6f6a">2</text>
+<text x="414" y="234" font-size="12">Выбор дошёл до тарелки</text>
+<text x="414" y="249" font-size="12">сегодня</text>
+<rect x="378" y="162" width="262" height="46" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="390" y="190" font-size="15" font-weight="700" fill="#1f6f6a">3</text>
+<text x="424" y="189.5" font-size="12">Выбор времени и места еды</text>
+<rect x="388" y="110" width="262" height="46" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="400" y="138" font-size="15" font-weight="700" fill="#1f6f6a">4</text>
+<text x="434" y="130" font-size="12">Влияние на меню через совет</text>
+<text x="434" y="145" font-size="12">жителей</text>
+<rect x="398" y="58" width="262" height="46" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="410" y="86" font-size="15" font-weight="700" fill="#5b6b73">5</text>
+<text x="444" y="78" font-size="12">Еда снова часть жизни, а не</text>
+<text x="444" y="93" font-size="12">процедура</text>
+<path d="M20,218 L14,218 L14,308 L20,308" fill="none" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="6" y="263.0" font-size="11" fill="#1f6f6a" text-anchor="middle" transform="rotate(-90 6 263.0)">есть в России</text>
+<path d="M632,218 L638,218 L638,308 L632,308" fill="none" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="652" y="263.0" font-size="11" fill="#1f6f6a" text-anchor="middle" transform="rotate(-90 652 263.0)">ближайший год</text>
+<text x="340" y="212" font-size="26" fill="#c08a2d" text-anchor="middle">≠</text>
+<rect x="0" y="378" width="680" height="48" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="340" y="398" font-size="12" text-anchor="middle">Нумерация совпадает случайно: дом на модели М2 может держать жителя на ступени 0,</text>
+<text x="340" y="415" font-size="12" text-anchor="middle">если выбор за него делает смена. Ступень проверяют вопросом: что изменилось в его тарелке сегодня?</text>
+<rect x="0" y="437" width="14" height="14" rx="3" fill="#eef1f2" stroke="#5b6b73" stroke-width="1.5"/>
+<text x="20" y="448" font-size="11" fill="#5b6b73">фундамент / неучастие</text>
+<rect x="163.672" y="437" width="14" height="14" rx="3" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="183.672" y="448" font-size="11" fill="#5b6b73">символическое участие</text>
+<rect x="332.609" y="437" width="14" height="14" rx="3" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="352.609" y="448" font-size="11" fill="#5b6b73">выбор доходит до тарелки</text>
+<rect x="514.949" y="437" width="14" height="14" rx="3" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="534.949" y="448" font-size="11" fill="#5b6b73">применимо выборочно</text>
+<rect x="0" y="457" width="14" height="14" rx="3" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="20" y="468" font-size="11" fill="#5b6b73">горизонт тренировочных квартир</text>
+<text x="0" y="492" font-size="11" fill="#5b6b73">↓ Лестница работает в обе стороны: без приказа, ротации ответственных и квартальной панели выбор тихо</text>
+<text x="0" y="506" font-size="11" fill="#5b6b73">откатывается вниз (раздел 8.5).</text>
+</svg>

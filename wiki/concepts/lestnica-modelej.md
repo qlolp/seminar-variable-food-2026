@@ -3,12 +3,13 @@ title: Лестница моделей М0–М5
 type: concept
 tags: [модели, лестница, раздача]
 sources:
+  - raw/sources/poisk-2026-10-blok-a/istochniki.md
   - raw/sources/ne-prosto-nakormit/doklad/главы/08_lestnica.md
   - raw/sources/ne-prosto-nakormit/seminar-paket/12_форма_ступени.md
   - raw/sources/related/variabelnoe-menu-pni/chapters/04_concepts.md
   - raw/sources/related/academic-redesign-report/CONTENT_GAP_AUDIT.md
   - raw/sources/variativnoe-menu-npa-2026/Вариативное_меню_НПА_и_регионы_доклад.pdf
-updated: 2026-09-02
+updated: 2026-10-09
 confidence: high
 ---
 
@@ -22,7 +23,7 @@ confidence: high
 | **М1** | Второй вариант одной ключевой позиции, не каждый день | [Болотнинский](../entities/bolotninskiy-pni.md); [Серафимовский](../entities/serafimovskiy.md) (заказ накануне) |
 | **М2** | Два варианта основных позиций ежедневно | [Успенский](../entities/uspenskiy-pni.md); заявка [Иркутска](../entities/irkutskaya-oblast.md) |
 | **М3** | Житель комплектует тарелку на линии | Публично — линия [ДДСОЛ](../entities/ddsol.md); не «типовой ПНИ» |
-| **М4** | Семейная подача, сами накладывают | Международный эффект у пожилых с деменцией; точечно |
+| **М4** | Семейная подача, сами накладывают | Международный эффект у жителей соматических отделений **без** деменции (Nijs 2006: деменция — критерий исключения); точечно |
 | **М5** | Жители готовят (квартира тренинга) | Горизонт сопровождаемого проживания, не массовая модель |
 
 М1–М2 подтверждены российской практикой. Российский старт — не прыжок на М3.

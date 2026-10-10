@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 886" font-family="Inter, 'DejaVu Sans', sans-serif" role="img" aria-label="Макет квартальной панели директора без значений: двенадцать плиток показателей раздела 22.4 с пустыми полями «квартал», «предыдущий» и «тренд», клинические строки 6–8 выделены, внизу — три вывода квартала">
+<title>Макет квартальной панели директора без значений: двенадцать плиток показателей раздела 22.4 с пустыми полями «квартал», «предыдущий» и «тренд», клинические строки 6–8 выделены, внизу — три вывода квартала</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2a2e"/></marker></defs>
+<rect x="0" y="0" width="680" height="886" fill="#ffffff"/>
+<rect x="12.0" y="10.0" width="656.0" height="34.0" rx="6" fill="#1d2a2e"/>
+<text x="24.0" y="32.0" font-size="14" font-weight="600" fill="#ffffff">Квартальная панель директора</text>
+<text x="656.0" y="32.0" font-size="12" text-anchor="end" fill="#e3e8ea">Квартал ____   Отделение / весь дом ____</text>
+<text x="12.0" y="64.0" font-size="11" font-style="italic" fill="#5b6b73">Макет без значений: числа вписывает дом по своим замерам; в плитке — место для графика хода по месяцам</text>
+<rect x="12.0" y="74.0" width="212.0" height="159.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<circle cx="32.0" cy="95.0" r="12" fill="#1f6f6a"/>
+<text x="32.0" y="99.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">1</text>
+<text x="52.0" y="99.0" font-size="13" font-weight="600" fill="#1d2a2e">Ночной интервал</text>
+<text x="52.0" y="116.0" font-size="11" fill="#5b6b73">ужин — завтрак, часы</text>
+<line x1="52.0" y1="187.0" x2="212.0" y2="187.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="52.0" y1="167.0" x2="52.0" y2="187.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="52.0" y1="177.0" x2="212.0" y2="177.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="22.0" y1="195.0" x2="214.0" y2="195.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="22.0" y="213.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="70.0" y1="215.0" x2="108.0" y2="215.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="114.0" y="213.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="146.0" y1="215.0" x2="180.0" y2="215.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="214.0" y="213.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="234.0" y="74.0" width="212.0" height="159.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<circle cx="254.0" cy="95.0" r="12" fill="#1f6f6a"/>
+<text x="254.0" y="99.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">2</text>
+<text x="274.0" y="99.0" font-size="13" font-weight="600" fill="#1d2a2e">Доля несъеденных</text><text x="274.0" y="116.0" font-size="13" font-weight="600" fill="#1d2a2e">порций</text>
+<text x="274.0" y="133.0" font-size="11" fill="#5b6b73">%, замер —</text><text x="274.0" y="147.0" font-size="11" fill="#5b6b73">приложение 25</text>
+<line x1="274.0" y1="187.0" x2="434.0" y2="187.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="274.0" y1="167.0" x2="274.0" y2="187.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="274.0" y1="177.0" x2="434.0" y2="177.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="244.0" y1="195.0" x2="436.0" y2="195.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="244.0" y="213.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="292.0" y1="215.0" x2="330.0" y2="215.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="336.0" y="213.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="368.0" y1="215.0" x2="402.0" y2="215.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="436.0" y="213.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="456.0" y="74.0" width="212.0" height="159.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<circle cx="476.0" cy="95.0" r="12" fill="#1f6f6a"/>
+<text x="476.0" y="99.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">3</text>
+<text x="496.0" y="99.0" font-size="13" font-weight="600" fill="#1d2a2e">Блюда-аутсайдеры</text>
+<text x="496.0" y="116.0" font-size="11" fill="#5b6b73">три первых по остаткам</text>
+<line x1="496.0" y1="187.0" x2="656.0" y2="187.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="496.0" y1="167.0" x2="496.0" y2="187.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="496.0" y1="177.0" x2="656.0" y2="177.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="466.0" y1="195.0" x2="658.0" y2="195.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="466.0" y="213.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="514.0" y1="215.0" x2="552.0" y2="215.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="558.0" y="213.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="590.0" y1="215.0" x2="624.0" y2="215.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="658.0" y="213.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="12.0" y="243.0" width="212.0" height="159.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<circle cx="32.0" cy="264.0" r="12" fill="#1f6f6a"/>
+<text x="32.0" y="268.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">4</text>
+<text x="52.0" y="268.0" font-size="13" font-weight="600" fill="#1d2a2e">Кормимых на одного</text><text x="52.0" y="285.0" font-size="13" font-weight="600" fill="#1d2a2e">работника</text>
+<text x="52.0" y="302.0" font-size="11" fill="#5b6b73">фактическое число</text>
+<line x1="52.0" y1="356.0" x2="212.0" y2="356.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="52.0" y1="336.0" x2="52.0" y2="356.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="52.0" y1="346.0" x2="212.0" y2="346.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="22.0" y1="364.0" x2="214.0" y2="364.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="22.0" y="382.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="70.0" y1="384.0" x2="108.0" y2="384.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="114.0" y="382.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="146.0" y1="384.0" x2="180.0" y2="384.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="214.0" y="382.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="234.0" y="243.0" width="212.0" height="159.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<circle cx="254.0" cy="264.0" r="12" fill="#1f6f6a"/>
+<text x="254.0" y="268.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">5</text>
+<text x="274.0" y="268.0" font-size="13" font-weight="600" fill="#1d2a2e">Температурная</text><text x="274.0" y="285.0" font-size="13" font-weight="600" fill="#1d2a2e">дельта</text>
+<text x="274.0" y="302.0" font-size="11" fill="#5b6b73">°C, линия — последний</text><text x="274.0" y="316.0" font-size="11" fill="#5b6b73">стол</text>
+<line x1="274.0" y1="356.0" x2="434.0" y2="356.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="274.0" y1="336.0" x2="274.0" y2="356.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="274.0" y1="346.0" x2="434.0" y2="346.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="244.0" y1="364.0" x2="436.0" y2="364.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="244.0" y="382.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="292.0" y1="384.0" x2="330.0" y2="384.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="336.0" y="382.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="368.0" y1="384.0" x2="402.0" y2="384.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="436.0" y="382.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="456.0" y="243.0" width="212.0" height="159.0" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<circle cx="476.0" cy="264.0" r="12" fill="#a63d32"/>
+<text x="476.0" y="268.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">6</text>
+<text x="496.0" y="268.0" font-size="13" font-weight="600" fill="#1d2a2e">Соответствие</text><text x="496.0" y="285.0" font-size="13" font-weight="600" fill="#1d2a2e">текстур</text><text x="496.0" y="302.0" font-size="13" font-weight="600" fill="#1d2a2e">назначенным</text>
+<text x="496.0" y="319.0" font-size="11" fill="#5b6b73">%, по выборке</text>
+<line x1="496.0" y1="356.0" x2="656.0" y2="356.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="496.0" y1="336.0" x2="496.0" y2="356.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="496.0" y1="346.0" x2="656.0" y2="346.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="466.0" y1="364.0" x2="658.0" y2="364.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="466.0" y="382.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="514.0" y1="384.0" x2="552.0" y2="384.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="558.0" y="382.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="590.0" y1="384.0" x2="624.0" y2="384.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="658.0" y="382.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="12.0" y="412.0" width="212.0" height="159.0" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<circle cx="32.0" cy="433.0" r="12" fill="#a63d32"/>
+<text x="32.0" y="437.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">7</text>
+<text x="52.0" y="437.0" font-size="13" font-weight="600" fill="#1d2a2e">Отказы от еды</text>
+<text x="52.0" y="454.0" font-size="11" fill="#5b6b73">а — эпизодов; б — %</text><text x="52.0" y="468.0" font-size="11" fill="#5b6b73">эскалаций к врачу в срок</text>
+<line x1="52.0" y1="525.0" x2="212.0" y2="525.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="52.0" y1="505.0" x2="52.0" y2="525.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="52.0" y1="515.0" x2="212.0" y2="515.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="22.0" y1="533.0" x2="214.0" y2="533.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="22.0" y="551.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="70.0" y1="553.0" x2="108.0" y2="553.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="114.0" y="551.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="146.0" y1="553.0" x2="180.0" y2="553.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="214.0" y="551.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="234.0" y="412.0" width="212.0" height="159.0" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<circle cx="254.0" cy="433.0" r="12" fill="#a63d32"/>
+<text x="254.0" y="437.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">8</text>
+<text x="274.0" y="437.0" font-size="13" font-weight="600" fill="#1d2a2e">Весовые триггеры</text>
+<text x="274.0" y="454.0" font-size="11" fill="#5b6b73">а — прибавка ≥ 5 % за</text><text x="274.0" y="468.0" font-size="11" fill="#5b6b73">квартал; б — потеря по</text><text x="274.0" y="482.0" font-size="11" fill="#5b6b73">MUST / Онтарио</text>
+<line x1="274.0" y1="525.0" x2="434.0" y2="525.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="274.0" y1="505.0" x2="274.0" y2="525.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="274.0" y1="515.0" x2="434.0" y2="515.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="244.0" y1="533.0" x2="436.0" y2="533.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="244.0" y="551.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="292.0" y1="553.0" x2="330.0" y2="553.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="336.0" y="551.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="368.0" y1="553.0" x2="402.0" y2="553.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="436.0" y="551.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="456.0" y="412.0" width="212.0" height="159.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<circle cx="476.0" cy="433.0" r="12" fill="#1f6f6a"/>
+<text x="476.0" y="437.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">9</text>
+<text x="496.0" y="437.0" font-size="13" font-weight="600" fill="#1d2a2e">Актуальная пищевая</text><text x="496.0" y="454.0" font-size="13" font-weight="600" fill="#1d2a2e">карта</text>
+<text x="496.0" y="471.0" font-size="11" fill="#5b6b73">% жителей</text>
+<line x1="496.0" y1="525.0" x2="656.0" y2="525.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="496.0" y1="505.0" x2="496.0" y2="525.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="496.0" y1="515.0" x2="656.0" y2="515.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="466.0" y1="533.0" x2="658.0" y2="533.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="466.0" y="551.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="514.0" y1="553.0" x2="552.0" y2="553.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="558.0" y="551.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="590.0" y1="553.0" x2="624.0" y2="553.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="658.0" y="551.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="12.0" y="581.0" width="212.0" height="159.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<circle cx="32.0" cy="602.0" r="12" fill="#c08a2d"/>
+<text x="32.0" y="606.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">10</text>
+<text x="52.0" y="606.0" font-size="13" font-weight="600" fill="#1d2a2e">Выбрал Б — не</text><text x="52.0" y="623.0" font-size="13" font-weight="600" fill="#1d2a2e">получил Б</text>
+<text x="52.0" y="640.0" font-size="11" fill="#5b6b73">% при вариативном меню</text>
+<line x1="52.0" y1="694.0" x2="212.0" y2="694.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="52.0" y1="674.0" x2="52.0" y2="694.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="52.0" y1="684.0" x2="212.0" y2="684.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="22.0" y1="702.0" x2="214.0" y2="702.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="22.0" y="720.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="70.0" y1="722.0" x2="108.0" y2="722.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="114.0" y="720.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="146.0" y1="722.0" x2="180.0" y2="722.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="214.0" y="720.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="234.0" y="581.0" width="212.0" height="159.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<circle cx="254.0" cy="602.0" r="12" fill="#1f6f6a"/>
+<text x="254.0" y="606.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">11</text>
+<text x="274.0" y="606.0" font-size="13" font-weight="600" fill="#1d2a2e">Сырьевая строка</text>
+<text x="274.0" y="623.0" font-size="11" fill="#5b6b73">руб. на жителя в день</text>
+<line x1="274.0" y1="694.0" x2="434.0" y2="694.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="274.0" y1="674.0" x2="274.0" y2="694.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="274.0" y1="684.0" x2="434.0" y2="684.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="244.0" y1="702.0" x2="436.0" y2="702.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="244.0" y="720.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="292.0" y1="722.0" x2="330.0" y2="722.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="336.0" y="720.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="368.0" y1="722.0" x2="402.0" y2="722.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="436.0" y="720.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="456.0" y="581.0" width="212.0" height="159.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<circle cx="476.0" cy="602.0" r="12" fill="#1f6f6a"/>
+<text x="476.0" y="606.5" font-size="12" font-weight="600" text-anchor="middle" fill="#ffffff">12</text>
+<text x="496.0" y="606.0" font-size="13" font-weight="600" fill="#1d2a2e">Жалобы на питание</text>
+<text x="496.0" y="623.0" font-size="11" fill="#5b6b73">а — число; б — % с</text><text x="496.0" y="637.0" font-size="11" fill="#5b6b73">ответом в срок</text>
+<line x1="496.0" y1="694.0" x2="656.0" y2="694.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="496.0" y1="674.0" x2="496.0" y2="694.0" stroke="#5b6b73" stroke-width="1"/>
+<line x1="496.0" y1="684.0" x2="656.0" y2="684.0" stroke="#c9d1d4" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="466.0" y1="702.0" x2="658.0" y2="702.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="466.0" y="720.0" font-size="11" fill="#5b6b73">квартал</text>
+<line x1="514.0" y1="722.0" x2="552.0" y2="722.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="558.0" y="720.0" font-size="11" fill="#5b6b73">пред.</text>
+<line x1="590.0" y1="722.0" x2="624.0" y2="722.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="658.0" y="720.0" font-size="11" text-anchor="end" fill="#5b6b73">↑ ↓ =</text>
+<rect x="12.0" y="752.0" width="14.0" height="14.0" rx="3" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="32.0" y="763.5" font-size="11" fill="#1d2a2e">строки дома</text>
+<rect x="122.8" y="752.0" width="14.0" height="14.0" rx="3" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="142.8" y="763.5" font-size="11" fill="#1d2a2e">строки 6–8 клинические: оценку даёт врач</text>
+<rect x="412.1" y="752.0" width="14.0" height="14.0" rx="3" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="432.1" y="763.5" font-size="11" fill="#1d2a2e">индикатор срыва выбора</text>
+<rect x="12.0" y="778.0" width="656.0" height="96.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="24.0" y="800.0" font-size="13" font-weight="600" fill="#1d2a2e">Три вывода квартала и что меняем</text>
+<text x="656.0" y="800.0" font-size="11" text-anchor="end" fill="#5b6b73">без этого плана панель — отчёт, а не инструмент</text>
+<text x="24.0" y="824.0" font-size="12" font-weight="600" fill="#1d2a2e">1.</text>
+<line x1="42.0" y1="826.0" x2="656.0" y2="826.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="24.0" y="844.0" font-size="12" font-weight="600" fill="#1d2a2e">2.</text>
+<line x1="42.0" y1="846.0" x2="656.0" y2="846.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="24.0" y="864.0" font-size="12" font-weight="600" fill="#1d2a2e">3.</text>
+<line x1="42.0" y1="866.0" x2="656.0" y2="866.0" stroke="#5b6b73" stroke-width="1" stroke-dasharray="2 2"/>
+</svg>

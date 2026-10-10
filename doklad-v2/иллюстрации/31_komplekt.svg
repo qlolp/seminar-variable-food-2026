@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 800" font-family="Inter, 'DejaVu Sans', sans-serif" role="img" aria-label="Документальный комплект: двенадцать документов в трёх группах (шесть базовых, три клинических с подписью врача, три управленческих), сборка за пять рабочих дней и три вопроса проверяющего, на которые отвечает папка">
+<title>Документальный комплект: двенадцать документов в трёх группах (шесть базовых, три клинических с подписью врача, три управленческих), сборка за пять рабочих дней и три вопроса проверяющего, на которые отвечает папка</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2a2e"/></marker></defs>
+<rect x="0" y="0" width="680" height="800" fill="#ffffff"/>
+<text x="12.0" y="22.0" font-size="12" font-weight="600" fill="#5b6b73">Двенадцать документов — один пакет, а не библиотека (разделы 31.2–31.4)</text>
+<rect x="12.0" y="34.0" width="656.0" height="166.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="22.0" y="54.0" font-size="13" font-weight="600" fill="#1f6f6a">Шесть базовых</text>
+<rect x="20.0" y="64.0" width="316.0" height="40.0" rx="4" fill="#ffffff" stroke="#1f6f6a" stroke-width="1"/>
+<circle cx="36.0" cy="84.0" r="10" fill="#1f6f6a"/>
+<text x="36.0" y="88.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">1</text>
+<text x="52.0" y="81.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Положение об организации питания</text>
+<text x="52.0" y="96.0" font-size="10.5" fill="#5b6b73">приложение 29</text>
+<rect x="20.0" y="108.0" width="316.0" height="40.0" rx="4" fill="#ffffff" stroke="#1f6f6a" stroke-width="1"/>
+<circle cx="36.0" cy="128.0" r="10" fill="#1f6f6a"/>
+<text x="36.0" y="132.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">2</text>
+<text x="52.0" y="125.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Раздел о вариативности или порядок</text>
+<text x="52.0" y="140.0" font-size="10.5" fill="#5b6b73">гарантия стандартного варианта</text>
+<rect x="20.0" y="152.0" width="316.0" height="40.0" rx="4" fill="#ffffff" stroke="#1f6f6a" stroke-width="1"/>
+<circle cx="36.0" cy="172.0" r="10" fill="#1f6f6a"/>
+<text x="36.0" y="176.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">3</text>
+<text x="52.0" y="169.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Меню с вариантами</text>
+<text x="52.0" y="184.0" font-size="10.5" fill="#5b6b73">каждая позиция — пара эквивалентов</text>
+<rect x="344.0" y="64.0" width="316.0" height="40.0" rx="4" fill="#ffffff" stroke="#1f6f6a" stroke-width="1"/>
+<circle cx="360.0" cy="84.0" r="10" fill="#1f6f6a"/>
+<text x="360.0" y="88.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">4</text>
+<text x="376.0" y="81.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Журналы заказа и замен</text>
+<text x="376.0" y="96.0" font-size="10.5" fill="#5b6b73">приложение 7</text>
+<rect x="344.0" y="108.0" width="316.0" height="40.0" rx="4" fill="#ffffff" stroke="#1f6f6a" stroke-width="1"/>
+<circle cx="360.0" cy="128.0" r="10" fill="#1f6f6a"/>
+<text x="360.0" y="132.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">5</text>
+<text x="376.0" y="125.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Пищевые карты жителей</text>
+<text x="376.0" y="140.0" font-size="10.5" fill="#5b6b73">приложение 2</text>
+<rect x="344.0" y="152.0" width="316.0" height="40.0" rx="4" fill="#ffffff" stroke="#1f6f6a" stroke-width="1"/>
+<circle cx="360.0" cy="172.0" r="10" fill="#1f6f6a"/>
+<text x="360.0" y="176.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">6</text>
+<text x="376.0" y="169.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Согласование с учредителем</text>
+<text x="376.0" y="184.0" font-size="10.5" fill="#5b6b73">отчёт с панелью до и после</text>
+<rect x="12.0" y="210.0" width="323.0" height="214.0" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="22.0" y="230.0" font-size="13" font-weight="600" fill="#a63d32">Три клинических</text>
+<text x="325.0" y="230.0" font-size="11.5" font-weight="600" text-anchor="end" fill="#a63d32">подписывает врач</text>
+<rect x="20.0" y="240.0" width="307.0" height="40.0" rx="4" fill="#ffffff" stroke="#a63d32" stroke-width="1"/>
+<circle cx="36.0" cy="260.0" r="10" fill="#a63d32"/>
+<text x="36.0" y="264.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">7</text>
+<text x="52.0" y="257.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Лекарственно-пищевая таблица</text>
+<text x="52.0" y="272.0" font-size="10.5" fill="#5b6b73">приложение 21</text>
+<rect x="20.0" y="284.0" width="307.0" height="40.0" rx="4" fill="#ffffff" stroke="#a63d32" stroke-width="1"/>
+<circle cx="36.0" cy="304.0" r="10" fill="#a63d32"/>
+<text x="36.0" y="308.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">8</text>
+<text x="52.0" y="301.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Список дисфагического риска</text>
+<text x="52.0" y="316.0" font-size="10.5" fill="#5b6b73">назначения делает врач</text>
+<rect x="20.0" y="328.0" width="307.0" height="40.0" rx="4" fill="#ffffff" stroke="#a63d32" stroke-width="1"/>
+<circle cx="36.0" cy="348.0" r="10" fill="#a63d32"/>
+<text x="36.0" y="352.0" font-size="11" font-weight="600" text-anchor="middle" fill="#ffffff">9</text>
+<text x="52.0" y="345.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Журнал отказов</text>
+<text x="52.0" y="360.0" font-size="10.5" fill="#5b6b73">приложение 9</text>
+<text x="22.0" y="384.0" font-size="11" fill="#a63d32">Ведение можно делегировать старшей сиделке, но</text><text x="22.0" y="398.0" font-size="11" fill="#a63d32">назначения делает только врач. Клинику кухня не</text><text x="22.0" y="412.0" font-size="11" fill="#a63d32">назначает.</text>
+<rect x="345.0" y="210.0" width="323.0" height="214.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="355.0" y="230.0" font-size="13" font-weight="600" fill="#c08a2d">Три управленческих</text>
+<rect x="353.0" y="240.0" width="307.0" height="40.0" rx="4" fill="#ffffff" stroke="#c08a2d" stroke-width="1"/>
+<circle cx="369.0" cy="260.0" r="10" fill="#c08a2d"/>
+<text x="369.0" y="264.0" font-size="10.5" font-weight="600" text-anchor="middle" fill="#ffffff">10</text>
+<text x="385.0" y="257.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Приказ об ответственных</text>
+<text x="385.0" y="272.0" font-size="10.5" fill="#5b6b73">приложение 17</text>
+<rect x="353.0" y="284.0" width="307.0" height="40.0" rx="4" fill="#ffffff" stroke="#c08a2d" stroke-width="1"/>
+<circle cx="369.0" cy="304.0" r="10" fill="#c08a2d"/>
+<text x="369.0" y="308.0" font-size="10.5" font-weight="600" text-anchor="middle" fill="#ffffff">11</text>
+<text x="385.0" y="301.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Регламент совета жителей</text>
+<text x="385.0" y="316.0" font-size="10.5" fill="#5b6b73">приложение 30</text>
+<rect x="353.0" y="328.0" width="307.0" height="40.0" rx="4" fill="#ffffff" stroke="#c08a2d" stroke-width="1"/>
+<circle cx="369.0" cy="348.0" r="10" fill="#c08a2d"/>
+<text x="369.0" y="352.0" font-size="10.5" font-weight="600" text-anchor="middle" fill="#ffffff">12</text>
+<text x="385.0" y="345.0" font-size="11.5" font-weight="600" fill="#1d2a2e">Квартальная панель</text>
+<text x="385.0" y="360.0" font-size="10.5" fill="#5b6b73">приложение 35</text>
+<text x="355.0" y="384.0" font-size="11" fill="#1d2a2e">Без фамилий ответственных комплект не</text><text x="355.0" y="398.0" font-size="11" fill="#1d2a2e">работает: у каждого документа — ответственный</text><text x="355.0" y="412.0" font-size="11" fill="#1d2a2e">и дата пересмотра.</text>
+<text x="12.0" y="462.0" font-size="12" font-weight="600" fill="#5b6b73">Сборка за пять рабочих дней, если заготовки приложений готовы (раздел 31.6)</text>
+<rect x="12.0" y="472.0" width="123.2" height="121.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/><text x="22.0" y="492.0" font-size="12.5" font-weight="600" fill="#1f6f6a">День 1</text><text x="22.0" y="510.8" font-size="11" fill="#1d2a2e">Приказ об</text><text x="22.0" y="524.8" font-size="11" fill="#1d2a2e">ответственных и</text><text x="22.0" y="538.8" font-size="11" fill="#1d2a2e">приказ о пилоте</text><text x="22.0" y="552.8" font-size="11" fill="#1d2a2e">(приложения 17,</text><text x="22.0" y="566.8" font-size="11" fill="#1d2a2e">28)</text>
+<line x1="137.2" y1="532.5" x2="143.2" y2="532.5" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="145.2" y="472.0" width="123.2" height="121.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/><text x="155.2" y="492.0" font-size="12.5" font-weight="600" fill="#1f6f6a">День 2</text><text x="155.2" y="510.8" font-size="11" fill="#1d2a2e">Положение о</text><text x="155.2" y="524.8" font-size="11" fill="#1d2a2e">питании с</text><text x="155.2" y="538.8" font-size="11" fill="#1d2a2e">разделом о</text><text x="155.2" y="552.8" font-size="11" fill="#1d2a2e">вариативности</text><text x="155.2" y="566.8" font-size="11" fill="#1d2a2e">(приложение 29)</text>
+<line x1="270.4" y1="532.5" x2="276.4" y2="532.5" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="278.4" y="472.0" width="123.2" height="121.0" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/><text x="288.4" y="492.0" font-size="12.5" font-weight="600" fill="#a63d32">День 3</text><text x="288.4" y="510.8" font-size="11" fill="#1d2a2e">Клинический</text><text x="288.4" y="524.8" font-size="11" fill="#1d2a2e">блок с врачом;</text><text x="288.4" y="538.8" font-size="11" fill="#1d2a2e">день не</text><text x="288.4" y="552.8" font-size="11" fill="#1d2a2e">заканчивается</text><text x="288.4" y="566.8" font-size="11" fill="#1d2a2e">без подписи</text><text x="288.4" y="580.8" font-size="11" fill="#1d2a2e">врача</text>
+<line x1="403.6" y1="532.5" x2="409.6" y2="532.5" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="411.6" y="472.0" width="123.2" height="121.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/><text x="421.6" y="492.0" font-size="12.5" font-weight="600" fill="#1f6f6a">День 4</text><text x="421.6" y="510.8" font-size="11" fill="#1d2a2e">Журналы, меню с</text><text x="421.6" y="524.8" font-size="11" fill="#1d2a2e">парами,</text><text x="421.6" y="538.8" font-size="11" fill="#1d2a2e">пищевые карты:</text><text x="421.6" y="552.8" font-size="11" fill="#1d2a2e">первыми —</text><text x="421.6" y="566.8" font-size="11" fill="#1d2a2e">группа риска и</text><text x="421.6" y="580.8" font-size="11" fill="#1d2a2e">неговорящие</text>
+<line x1="536.8" y1="532.5" x2="542.8" y2="532.5" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="544.8" y="472.0" width="123.2" height="121.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/><text x="554.8" y="492.0" font-size="12.5" font-weight="600" fill="#c08a2d">День 5</text><text x="554.8" y="510.8" font-size="11" fill="#1d2a2e">Совет жителей</text><text x="554.8" y="524.8" font-size="11" fill="#1d2a2e">(приложение 30),</text><text x="554.8" y="538.8" font-size="11" fill="#1d2a2e">панель</text><text x="554.8" y="552.8" font-size="11" fill="#1d2a2e">(приложение 35),</text><text x="554.8" y="566.8" font-size="11" fill="#1d2a2e">письмо</text><text x="554.8" y="580.8" font-size="11" fill="#1d2a2e">учредителю</text>
+<text x="12.0" y="631.0" font-size="12" font-weight="600" fill="#5b6b73">Папка отвечает проверяющему бумагой на устный вопрос (раздел 32.3)</text>
+<rect x="12.0" y="641.0" width="212.0" height="109.0" rx="6" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/><text x="22.0" y="660.6" font-size="12" font-weight="600" fill="#1d2a2e">«Почему не по</text><text x="22.0" y="676.6" font-size="12" font-weight="600" fill="#1d2a2e">утверждённому меню?»</text><text x="22.0" y="695.8" font-size="11" fill="#1d2a2e">Варианты — часть</text><text x="22.0" y="709.8" font-size="11" fill="#1d2a2e">утверждённого меню: пары</text><text x="22.0" y="723.8" font-size="11" fill="#1d2a2e">эквивалентов, документы 2 и 3</text>
+<rect x="234.0" y="641.0" width="212.0" height="109.0" rx="6" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/><text x="244.0" y="660.6" font-size="12" font-weight="600" fill="#1d2a2e">«Где гарантия, что житель</text><text x="244.0" y="676.6" font-size="12" font-weight="600" fill="#1d2a2e">получил норму?»</text><text x="244.0" y="695.8" font-size="11" fill="#1d2a2e">Журналы заказа и замен,</text><text x="244.0" y="709.8" font-size="11" fill="#1d2a2e">документ 4: выбранный,</text><text x="244.0" y="723.8" font-size="11" fill="#1d2a2e">стандартный или записанная</text><text x="244.0" y="737.8" font-size="11" fill="#1d2a2e">замена</text>
+<rect x="456.0" y="641.0" width="212.0" height="109.0" rx="6" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/><text x="466.0" y="660.6" font-size="12" font-weight="600" fill="#1d2a2e">«Кто разрешил?»</text><text x="466.0" y="679.8" font-size="11" fill="#1d2a2e">Приказ директора и отчёт</text><text x="466.0" y="693.8" font-size="11" fill="#1d2a2e">учредителю, документы 10 и 6</text>
+<text x="12.0" y="772.0" font-size="11.5" font-weight="600" fill="#1f6f6a">Проверка готовности: понимает ли новый сотрудник за час, что ему делать, и отвечает ли папка</text><text x="12.0" y="787.0" font-size="11.5" font-weight="600" fill="#1f6f6a">на три вопроса проверяющего? Если оба ответа «да», комплект работает.</text>
+</svg>

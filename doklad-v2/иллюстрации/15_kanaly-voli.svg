@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 582" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Четыре канала воли и иерархия источников</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="582" fill="#ffffff"/>
+<rect x="0" y="0" width="161" height="118" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="21" font-size="11" font-weight="600" fill="#5b6b73">Канал 1</text>
+<text x="10" y="39.5" font-size="12.5" font-weight="600" fill="#1f6f6a">Показ вместо</text>
+<text x="10" y="55.5" font-size="12.5" font-weight="600" fill="#1f6f6a">вопроса</text>
+<text x="10" y="74.5" font-size="11.5">две реальные порции:</text>
+<text x="10" y="89.5" font-size="11.5">указал, потянулся,</text>
+<text x="10" y="104.5" font-size="11.5">отвернулся</text>
+<rect x="173" y="0" width="161" height="118" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="183" y="21" font-size="11" font-weight="600" fill="#5b6b73">Канал 2</text>
+<text x="183" y="39.5" font-size="12.5" font-weight="600" fill="#1f6f6a">Наблюдение за</text>
+<text x="183" y="55.5" font-size="12.5" font-weight="600" fill="#1f6f6a">потреблением</text>
+<text x="183" y="74.5" font-size="11.5">тарелка — голос;</text>
+<text x="183" y="89.5" font-size="11.5">предпочтение —</text>
+<text x="183" y="104.5" font-size="11.5">серия наблюдений</text>
+<rect x="346" y="0" width="161" height="118" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="356" y="21" font-size="11" font-weight="600" fill="#5b6b73">Канал 3</text>
+<text x="356" y="39.5" font-size="12.5" font-weight="600" fill="#1f6f6a">Пищевая биография</text>
+<text x="356" y="58.5" font-size="11.5">записана в «хороший</text>
+<text x="356" y="73.5" font-size="11.5">день» вместе с</text>
+<text x="356" y="88.5" font-size="11.5">жителем</text>
+<rect x="519" y="0" width="161" height="118" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="529" y="21" font-size="11" font-weight="600" fill="#5b6b73">Канал 4</text>
+<text x="529" y="39.5" font-size="12.5" font-weight="600" fill="#1f6f6a">Те, кто знает</text>
+<text x="529" y="55.5" font-size="12.5" font-weight="600" fill="#1f6f6a">человека</text>
+<text x="529" y="74.5" font-size="11.5">семья, опекун, давние</text>
+<text x="529" y="89.5" font-size="11.5">работники — толкуют,</text>
+<text x="529" y="104.5" font-size="11.5">а не решают</text>
+<path d="M80.5,118 L80.5,132 L280.0,142 L280.0,156" fill="none" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M253.5,118 L253.5,132 L320.0,142 L320.0,156" fill="none" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M426.5,118 L426.5,132 L360.0,142 L360.0,156" fill="none" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M599.5,118 L599.5,132 L400.0,142 L400.0,156" fill="none" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="110" y="158" width="460" height="46" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="340" y="177" font-size="13" font-weight="600" fill="#1f6f6a" text-anchor="middle">Пищевая карта жителя</text>
+<text x="340" y="194" font-size="11.5" fill="#5b6b73" text-anchor="middle">каждое сведение — с указанием источника</text>
+<text x="340" y="234" font-size="13" font-weight="600" text-anchor="middle">Если каналы расходятся: два порядка в корпусе</text>
+<text x="0" y="262" font-size="12.5" font-weight="600" fill="#5b6b73">Раздел 15.4</text>
+<rect x="0" y="272" width="318" height="44" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="14" y="299" font-size="13" font-weight="700" fill="#1f6f6a">1</text>
+<text x="34" y="291" font-size="12">зафиксированная воля жителя</text>
+<text x="34" y="306" font-size="12">(биография, устойчивые предпочтения)</text>
+<rect x="0" y="321" width="318" height="44" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="14" y="348" font-size="13" font-weight="700" fill="#1f6f6a">2</text>
+<text x="34" y="340" font-size="12">текущая демонстрируемая воля (показ,</text>
+<text x="34" y="355" font-size="12">жест)</text>
+<rect x="0" y="370" width="318" height="30" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="14" y="390" font-size="13" font-weight="700" fill="#c08a2d">3</text>
+<text x="34" y="389.5" font-size="12">сведения близких</text>
+<rect x="0" y="405" width="318" height="59" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="14" y="439.5" font-size="13" font-weight="700" fill="#a63d32">4</text>
+<text x="34" y="424" font-size="12">медицинские ограничения врача —</text>
+<text x="34" y="439" font-size="12">сужают 1–3 только при клинической</text>
+<text x="34" y="454" font-size="12">необходимости</text>
+<rect x="0" y="469" width="318" height="30" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="14" y="489" font-size="13" font-weight="700" fill="#5b6b73">5</text>
+<text x="34" y="488.5" font-size="12">удобство кухни в иерархию не входит</text>
+<text x="362" y="262" font-size="12.5" font-weight="600" fill="#5b6b73">Раздел 15.9</text>
+<rect x="362" y="272" width="318" height="44" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="376" y="299" font-size="13" font-weight="700" fill="#1f6f6a">1</text>
+<text x="396" y="291" font-size="12">текущее выраженное предпочтение: жест,</text>
+<text x="396" y="306" font-size="12">показ, отказ, съеденное</text>
+<rect x="362" y="321" width="318" height="30" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="376" y="341" font-size="13" font-weight="700" fill="#1f6f6a">2</text>
+<text x="396" y="340.5" font-size="12">зафиксированная биография</text>
+<rect x="362" y="356" width="318" height="44" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="376" y="383" font-size="13" font-weight="700" fill="#1f6f6a">3</text>
+<text x="396" y="375" font-size="12">систематическое наблюдение (серия</text>
+<text x="396" y="390" font-size="12">записей)</text>
+<rect x="362" y="405" width="318" height="30" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="376" y="425" font-size="13" font-weight="700" fill="#c08a2d">4</text>
+<text x="396" y="424.5" font-size="12">сведения близких</text>
+<rect x="362" y="440" width="318" height="44" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="376" y="467" font-size="13" font-weight="700" fill="#5b6b73">5</text>
+<text x="396" y="459" font-size="12">«усреднённое благо» — только когда</text>
+<text x="396" y="474" font-size="12">первые четыре пусты</text>
+<rect x="0" y="512" width="680" height="68" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="12" y="532" font-size="12">Общее у обоих порядков: удобство кухни и «усреднённое благо» — последними; сведения близких</text>
+<text x="12" y="548" font-size="12">не перевешивают данных о самом человеке; медицинское ограничение сужает выбор, но не</text>
+<text x="12" y="564" font-size="12">отменяет его. Какой порядок закрепить — решение локального акта.</text>
+</svg>

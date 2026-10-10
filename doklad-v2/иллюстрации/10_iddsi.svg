@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 452" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Шкала IDDSI: уровни 0–7 для напитков и пищи</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="452" fill="#ffffff"/>
+<text x="306" y="20" font-size="13" font-weight="600" fill="#1f6f6a" text-anchor="end">Напитки · уровни 0–4</text>
+<text x="374" y="20" font-size="13" font-weight="600" fill="#c08a2d">Пища · уровни 3–7</text>
+<circle cx="340" cy="54.0" r="15" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="59" font-size="14" font-weight="700" text-anchor="middle">0</text>
+<rect x="24" y="34" width="292" height="40" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="304" y="58.5" font-size="12.5" text-anchor="end">обычная жидкость</text>
+<line x1="316" y1="54" x2="325" y2="54" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="340" cy="100.0" r="15" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="105" font-size="14" font-weight="700" text-anchor="middle">1</text>
+<rect x="24" y="80" width="292" height="40" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="304" y="104.5" font-size="12.5" text-anchor="end">незначительно загущенная жидкость</text>
+<line x1="316" y1="100" x2="325" y2="100" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="340" cy="146.0" r="15" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="151" font-size="14" font-weight="700" text-anchor="middle">2</text>
+<rect x="24" y="126" width="292" height="40" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="304" y="150.5" font-size="12.5" text-anchor="end">слабозагущенная жидкость</text>
+<line x1="316" y1="146" x2="325" y2="146" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="340" cy="192.0" r="15" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="197" font-size="14" font-weight="700" text-anchor="middle">3</text>
+<rect x="24" y="172" width="292" height="40" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="304" y="196.5" font-size="12.5" text-anchor="end">умеренно загущенная жидкость</text>
+<line x1="316" y1="192" x2="325" y2="192" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="364" y="172" width="292" height="40" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="376" y="196.5" font-size="12.5">жидкая пюреризированная пища</text>
+<line x1="355" y1="192" x2="364" y2="192" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="340" cy="238.0" r="15" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="243" font-size="14" font-weight="700" text-anchor="middle">4</text>
+<rect x="24" y="218" width="292" height="40" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="304" y="242.5" font-size="12.5" text-anchor="end">сильно загущенная жидкость</text>
+<line x1="316" y1="238" x2="325" y2="238" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="364" y="218" width="292" height="40" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="376" y="242.5" font-size="12.5">пюреризированная пища</text>
+<line x1="355" y1="238" x2="364" y2="238" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="340" cy="284.0" r="15" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="289" font-size="14" font-weight="700" text-anchor="middle">5</text>
+<rect x="364" y="264" width="292" height="40" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="376" y="288.5" font-size="12.5">молотая увлажнённая пища</text>
+<line x1="355" y1="284" x2="364" y2="284" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="340" cy="330.0" r="15" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="335" font-size="14" font-weight="700" text-anchor="middle">6</text>
+<rect x="364" y="310" width="292" height="40" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="376" y="334.5" font-size="12.5">пища мягкая кусочками</text>
+<line x1="355" y1="330" x2="364" y2="330" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="340" cy="376.0" r="15" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="381" font-size="14" font-weight="700" text-anchor="middle">7</text>
+<rect x="364" y="356" width="292" height="40" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="376" y="380.5" font-size="12.5">обычная мягкая пища, обычная пища</text>
+<line x1="355" y1="376" x2="364" y2="376" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="320" y="169" width="40" height="92" rx="20" fill="none" stroke="#5b6b73" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="364" y="34" width="292" height="132" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<text x="376" y="54" font-size="12" font-weight="600" fill="#c08a2d">Как проверяют пищу</text>
+<text x="376" y="72" font-size="12">Тест с надавливанием вилкой и тест с</text>
+<text x="376" y="88" font-size="12">наклоном ложки — перед выдачей,</text>
+<text x="376" y="104" font-size="12">подручными средствами.</text>
+<text x="376" y="126" font-size="11.5" fill="#5b6b73">«Протёртое» перестаёт быть делом вкуса</text>
+<text x="376" y="141" font-size="11.5" fill="#5b6b73">повара и становится измеряемым</text>
+<text x="376" y="156" font-size="11.5" fill="#5b6b73">свойством блюда.</text>
+<rect x="24" y="264" width="292" height="132" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<text x="36" y="284" font-size="12" font-weight="600" fill="#1f6f6a">Как проверяют напитки</text>
+<text x="36" y="302" font-size="12">Тест на текучесть: жидкость стекает из</text>
+<text x="36" y="318" font-size="12">шприца за десять секунд, перед</text>
+<text x="36" y="334" font-size="12">выдачей.</text>
+<text x="36" y="356" font-size="11.5" fill="#5b6b73">Загущение — не безобидная мера: у</text>
+<text x="36" y="371" font-size="11.5" fill="#5b6b73">жителей на загущённых напитках считают</text>
+<text x="36" y="386" font-size="11.5" fill="#5b6b73">выпитое за сутки (раздел 10.6).</text>
+<rect x="0" y="406" width="680" height="44" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="340" y="424" font-size="12" text-anchor="middle">Уровень назначает врач поимённо, с датой пересмотра. Кухня маркирует порцию и проверяет</text>
+<text x="340" y="441" font-size="12" text-anchor="middle">консистенцию. IDDSI — язык и метод проверки, а не диагностика и не лечение.</text>
+</svg>

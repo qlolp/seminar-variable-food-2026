@@ -3,7 +3,7 @@ title: Каталог wiki
 type: index
 tags: [index]
 sources: []
-updated: 2026-09-13
+updated: 2026-10-09
 confidence: high
 ---
 
@@ -67,6 +67,8 @@ confidence: high
 - [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](sources/variativnoe-menu-npa-2026.md) — правовой обзор 16.07/29.08; 8 субъектов; автор на титуле не назван
 - [[wiki/sources/variabelnoe-menu-pni]] — [Доклад ПНИ 22.07](sources/variabelnoe-menu-pni.md) — полный корпус предшественника (22 главы, CSV)
 - [[wiki/sources/academic-redesign-report]] — [Академическая переработка](sources/academic-redesign-report.md) — аудиты 24.07, не канон
+- [[wiki/sources/poisk-2026-10-disfagiya]] — [Поиск 2026-10: дисфагия](sources/poisk-2026-10-disfagiya.md) — 14 зарубежных и российских источников с переводом; опора гл. 10 новой редакции
+- [[wiki/sources/poisk-2026-10-vtoraya-redakciya]] — [Поиск 2026-10: вторая редакция](sources/poisk-2026-10-vtoraya-redakciya.md) — 9 реестров, 134 новые позиции с переводом; исправления канона
 - [[wiki/sources/social-nutrition-reports]] — [Зонтик докладов](sources/social-nutrition-reports.md) — карта семейства; после 1+2 в основном избыточен
 
 ## Queries

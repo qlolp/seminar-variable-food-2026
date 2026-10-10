@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 835" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Паттерны поведения за столом и реакции персонала</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="835" fill="#ffffff"/>
+<text x="10" y="16" font-size="12" font-weight="600" fill="#5b6b73">Что видит пост</text>
+<text x="200" y="16" font-size="12" font-weight="600" fill="#1f6f6a">Что делать</text>
+<text x="510" y="16" font-size="12" font-weight="600" fill="#a63d32">Чего не делать</text>
+<rect x="0" y="28" width="184" height="86" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="28" width="304" height="86" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="28" width="180" height="86" rx="4" fill="#fbf3f1"/>
+<text x="10" y="49" font-size="12.5" font-weight="600">Тарелка уходит молча</text>
+<text x="10" y="65" font-size="11" fill="#5b6b73">снижение интереса к еде</text>
+<text x="10" y="79" font-size="11" fill="#5b6b73">(депрессия)</text>
+<rect x="10" y="87" width="92" height="17" rx="8" fill="#f4dcd8" stroke="#a63d32" stroke-width="1"/>
+<text x="56" y="99" font-size="10" font-weight="600" fill="#a63d32" text-anchor="middle">сообщить врачу</text>
+<text x="200" y="49" font-size="12">Журнал потребления и пороги для</text>
+<text x="200" y="64.5" font-size="12">сообщения врачу (раздел 12); еда по</text>
+<text x="200" y="80" font-size="12">желанию</text>
+<text x="510" y="49" font-size="12" fill="#a63d32">Ждать, пока покажут</text>
+<text x="510" y="64.5" font-size="12" fill="#a63d32">весы</text>
+<rect x="0" y="119" width="184" height="88" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="119" width="304" height="88" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="119" width="180" height="88" rx="4" fill="#fbf3f1"/>
+<text x="10" y="140" font-size="12.5" font-weight="600">«Еда отравлена», «не</text>
+<text x="10" y="156" font-size="12.5" font-weight="600">та»</text>
+<text x="10" y="172" font-size="11" fill="#5b6b73">подозрительность (психоз)</text>
+<rect x="10" y="180" width="92" height="17" rx="8" fill="#f4dcd8" stroke="#a63d32" stroke-width="1"/>
+<text x="56" y="192" font-size="10" font-weight="600" fill="#a63d32" text-anchor="middle">сообщить врачу</text>
+<text x="200" y="140" font-size="12">Запечатанная упаковка, порция из общего</text>
+<text x="200" y="155.5" font-size="12">котла на глазах, выбор из двух порций,</text>
+<text x="200" y="171" font-size="12">доверенный сотрудник; каждый эпизод —</text>
+<text x="200" y="186.5" font-size="12">врачу</text>
+<text x="510" y="140" font-size="12" fill="#a63d32">Убеждать</text>
+<rect x="0" y="212" width="184" height="54" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="212" width="304" height="54" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="212" width="180" height="54" rx="4" fill="#fbf3f1"/>
+<text x="10" y="233" font-size="12.5" font-weight="600">Два укуса — и ушёл</text>
+<text x="10" y="249" font-size="11" fill="#5b6b73">возбуждение, мания</text>
+<text x="200" y="233" font-size="12">Мало и часто, еда руками, отдельная</text>
+<text x="200" y="248.5" font-size="12">комната, отложенная порция</text>
+<text x="510" y="233" font-size="12" fill="#a63d32">Окно «обед с 13:00 до</text>
+<text x="510" y="248.5" font-size="12" fill="#a63d32">13:30»</text>
+<rect x="0" y="271" width="184" height="72" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="271" width="304" height="72" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="271" width="180" height="72" rx="4" fill="#fbf3f1"/>
+<text x="10" y="292" font-size="12.5" font-weight="600">Спит в часы завтрака</text>
+<text x="10" y="308" font-size="11" fill="#5b6b73">седация</text>
+<rect x="10" y="316" width="92" height="17" rx="8" fill="#f4dcd8" stroke="#a63d32" stroke-width="1"/>
+<text x="56" y="328" font-size="10" font-weight="600" fill="#a63d32" text-anchor="middle">решает врач</text>
+<text x="200" y="292" font-size="12">Отложенная порция; кормить, когда</text>
+<text x="200" y="307.5" font-size="12">бодрствует и сидит вертикально; дозы —</text>
+<text x="200" y="323" font-size="12">только врач</text>
+<text x="510" y="292" font-size="12" fill="#a63d32">«Опоздал — остался</text>
+<text x="510" y="307.5" font-size="12" fill="#a63d32">голодным»</text>
+<rect x="0" y="348" width="184" height="102" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="348" width="304" height="102" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="348" width="180" height="102" rx="4" fill="#fbf3f1"/>
+<text x="10" y="369" font-size="12.5" font-weight="600">Съедает порцию за</text>
+<text x="10" y="385" font-size="12.5" font-weight="600">минуты</text>
+<text x="10" y="401" font-size="11" fill="#5b6b73">быстрое заглатывание</text>
+<text x="10" y="415" font-size="11" fill="#5b6b73">(тахифагия)</text>
+<rect x="10" y="423" width="92" height="17" rx="8" fill="#f4dcd8" stroke="#a63d32" stroke-width="1"/>
+<text x="56" y="435" font-size="10" font-weight="600" fill="#a63d32" text-anchor="middle">решает врач</text>
+<text x="200" y="369" font-size="12">Малая порция с добавкой, питьё между</text>
+<text x="200" y="384.5" font-size="12">глотками, место рядом с работником, без</text>
+<text x="200" y="400" font-size="12">сухих крупных кусков; наблюдение по</text>
+<text x="200" y="415.5" font-size="12">разделу 10</text>
+<text x="510" y="369" font-size="12" fill="#a63d32">Подавать всю порцию</text>
+<text x="510" y="384.5" font-size="12" fill="#a63d32">сразу</text>
+<rect x="0" y="455" width="184" height="86" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="455" width="304" height="86" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="455" width="180" height="86" rx="4" fill="#fbf3f1"/>
+<text x="10" y="476" font-size="12.5" font-weight="600">Съел всё и просит ещё</text>
+<text x="10" y="492" font-size="11" fill="#5b6b73">возможная гиперфагия на</text>
+<text x="10" y="506" font-size="11" fill="#5b6b73">фоне терапии</text>
+<rect x="10" y="514" width="92" height="17" rx="8" fill="#f4dcd8" stroke="#a63d32" stroke-width="1"/>
+<text x="56" y="526" font-size="10" font-weight="600" fill="#a63d32" text-anchor="middle">сообщить врачу</text>
+<text x="200" y="476" font-size="12">Сообщить врачу; структурированная</text>
+<text x="200" y="491.5" font-size="12">доступность еды (раздел 13)</text>
+<text x="510" y="476" font-size="12" fill="#a63d32">Отказывать «вам</text>
+<text x="510" y="491.5" font-size="12" fill="#a63d32">нельзя» без назначения</text>
+<rect x="0" y="546" width="184" height="84" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="546" width="304" height="84" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="546" width="180" height="84" rx="4" fill="#fbf3f1"/>
+<text x="10" y="567" font-size="12.5" font-weight="600">Ест только белое или</text>
+<text x="10" y="583" font-size="12.5" font-weight="600">мягкое</text>
+<text x="10" y="599" font-size="11" fill="#5b6b73">сенсорная</text>
+<text x="10" y="613" font-size="11" fill="#5b6b73">избирательность</text>
+<text x="200" y="567" font-size="12">«Безопасный» вариант в каждом приёме;</text>
+<text x="200" y="582.5" font-size="12">пары внутри привычного ряда;</text>
+<text x="200" y="598" font-size="12">особенности — в пищевую карту</text>
+<text x="510" y="567" font-size="12" fill="#a63d32">Два незнакомых блюда</text>
+<text x="510" y="582.5" font-size="12" fill="#a63d32">«в лоб»</text>
+<rect x="0" y="635" width="184" height="68" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="635" width="304" height="68" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="635" width="180" height="68" rx="4" fill="#fbf3f1"/>
+<text x="10" y="656" font-size="12.5" font-weight="600">Прячет еду в тумбочку</text>
+<text x="10" y="672" font-size="11" fill="#5b6b73">пережитый дефицит,</text>
+<text x="10" y="686" font-size="11" fill="#5b6b73">тревога</text>
+<text x="200" y="656" font-size="12">Легальный запас допустимых продуктов,</text>
+<text x="200" y="671.5" font-size="12">перекус на посту; санитарию соблюдать</text>
+<text x="200" y="687" font-size="12">заменой запасов</text>
+<text x="510" y="656" font-size="12" fill="#a63d32">Конфисковать</text>
+<rect x="0" y="708" width="184" height="70" rx="4" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="190" y="708" width="304" height="70" rx="4" fill="#d6ebe8"/>
+<rect x="500" y="708" width="180" height="70" rx="4" fill="#fbf3f1"/>
+<text x="10" y="729" font-size="12.5" font-weight="600">Ест только в своей</text>
+<text x="10" y="745" font-size="12.5" font-weight="600">комнате</text>
+<text x="10" y="761" font-size="11" fill="#5b6b73">перегрузка общего зала</text>
+<text x="200" y="729" font-size="12">Признать право на место; приём пищи в</text>
+<text x="200" y="744.5" font-size="12">жилой зоне прописать в положении</text>
+<text x="510" y="729" font-size="12" fill="#a63d32">Принуждать к залу</text>
+<rect x="0" y="789" width="680" height="44" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="340" y="807" font-size="11.5" text-anchor="middle">Паттерн — не диагноз. В журнал пишут наблюдаемое: «съедает порцию за 3–4 минуты, не прожёвывает».</text>
+<text x="340" y="823" font-size="11.5" text-anchor="middle">Вопрос «почему» — к врачу и психологу; кухня видит, фиксирует и передаёт.</text>
+</svg>

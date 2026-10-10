@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 546" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Один обед — пять конфликтов</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="546" fill="#ffffff"/>
+<rect x="0" y="10" width="208" height="203" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="10" y="33" font-size="13" font-weight="600">1. Очередь против</text>
+<text x="10" y="50" font-size="13" font-weight="600">помощи</text>
+<text x="10" y="69.5" font-size="11.5" fill="#5b6b73">Самостоятельных обслужили</text>
+<text x="10" y="84.5" font-size="11.5" fill="#5b6b73">первыми; двенадцать</text>
+<text x="10" y="99.5" font-size="11.5" fill="#5b6b73">кормимых ждут трёх</text>
+<text x="10" y="114.5" font-size="11.5" fill="#5b6b73">свободных сиделок,</text>
+<text x="10" y="129.5" font-size="11.5" fill="#5b6b73">последних кормят холодным.</text>
+<text x="10" y="150.5" font-size="11.5" font-weight="600" fill="#c08a2d">Отказ системы: Нет нормы</text>
+<text x="10" y="165.5" font-size="11.5" font-weight="600" fill="#c08a2d">помощи за столом и порядка</text>
+<text x="10" y="180.5" font-size="11.5" font-weight="600" fill="#c08a2d">подачи</text>
+<text x="10" y="199.5" font-size="11.5" fill="#1f6f6a">→ Разделы 20, 28</text>
+<rect x="236" y="10" width="208" height="203" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="246" y="33" font-size="13" font-weight="600">2. «Он опять не ест кашу»</text>
+<text x="246" y="52.5" font-size="11.5" fill="#5b6b73">Третий день отодвигает</text>
+<text x="246" y="67.5" font-size="11.5" fill="#5b6b73">тарелку; журнала отказов нет,</text>
+<text x="246" y="82.5" font-size="11.5" fill="#5b6b73">кашель за столом ни с чем не</text>
+<text x="246" y="97.5" font-size="11.5" fill="#5b6b73">связывают.</text>
+<text x="246" y="118.5" font-size="11.5" font-weight="600" fill="#a63d32">Отказ системы: Нет журнала</text>
+<text x="246" y="133.5" font-size="11.5" font-weight="600" fill="#a63d32">отказов, триггеров и</text>
+<text x="246" y="148.5" font-size="11.5" font-weight="600" fill="#a63d32">маршрута дисфагии</text>
+<text x="246" y="167.5" font-size="11.5" fill="#1f6f6a">→ Разделы 10, 12</text>
+<rect x="472" y="10" width="208" height="203" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="482" y="33" font-size="13" font-weight="600">3. Кофе и клозапин</text>
+<text x="482" y="52.5" font-size="11.5" fill="#5b6b73">Две кружки крепкого кофе от</text>
+<text x="482" y="67.5" font-size="11.5" fill="#5b6b73">родственников; вечерняя</text>
+<text x="482" y="82.5" font-size="11.5" fill="#5b6b73">седация — «плохой день».</text>
+<text x="482" y="103.5" font-size="11.5" font-weight="600" fill="#a63d32">Отказ системы: Нет таблицы</text>
+<text x="482" y="118.5" font-size="11.5" font-weight="600" fill="#a63d32">«лекарство × еда» и</text>
+<text x="482" y="133.5" font-size="11.5" font-weight="600" fill="#a63d32">информирования семьи</text>
+<text x="482" y="152.5" font-size="11.5" fill="#1f6f6a">→ Раздел 11, прил. 32</text>
+<line x1="104" y1="213" x2="104" y2="247" stroke="#5b6b73" stroke-width="1.5"/>
+<line x1="340" y1="213" x2="340" y2="247" stroke="#5b6b73" stroke-width="1.5"/>
+<line x1="576" y1="213" x2="576" y2="247" stroke="#5b6b73" stroke-width="1.5"/>
+<rect x="0" y="247" width="680" height="58" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="340" y="271" font-size="14" font-weight="600" fill="#1f6f6a" text-anchor="middle">Один обед, один час: пять точек отказа одной системы</text>
+<text x="340" y="291" font-size="12" text-anchor="middle">зал на 120 мест · поточная раздача в три захода · по одному варианту каждого блюда</text>
+<line x1="104" y1="305" x2="104" y2="339" stroke="#5b6b73" stroke-width="1.5"/>
+<line x1="340" y1="305" x2="340" y2="339" stroke="#5b6b73" stroke-width="1.5"/>
+<line x1="576" y1="305" x2="576" y2="339" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="0" y="339" width="208" height="173" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="10" y="362" font-size="13" font-weight="600">4. «Добавка» против</text>
+<text x="10" y="379" font-size="13" font-weight="600">назначения</text>
+<text x="10" y="398.5" font-size="11.5" fill="#5b6b73">«Вам нельзя, вы полнеете» —</text>
+<text x="10" y="413.5" font-size="11.5" fill="#5b6b73">решение сиделки, а не врача;</text>
+<text x="10" y="428.5" font-size="11.5" fill="#5b6b73">вечером хлеб у соседа.</text>
+<text x="10" y="449.5" font-size="11.5" font-weight="600" fill="#a63d32">Отказ системы: Ограничение</text>
+<text x="10" y="464.5" font-size="11.5" font-weight="600" fill="#a63d32">рациона принято не врачом и</text>
+<text x="10" y="479.5" font-size="11.5" font-weight="600" fill="#a63d32">не записано</text>
+<text x="10" y="498.5" font-size="11.5" fill="#1f6f6a">→ Разделы 13, 17, 19</text>
+<rect x="236" y="339" width="208" height="173" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="246" y="362" font-size="13" font-weight="600">5. Журналы «к комиссии»</text>
+<text x="246" y="381.5" font-size="11.5" fill="#5b6b73">Суточные пробы за</text>
+<text x="246" y="396.5" font-size="11.5" fill="#5b6b73">прошедшие дни подписывают</text>
+<text x="246" y="411.5" font-size="11.5" fill="#5b6b73">задним числом.</text>
+<text x="246" y="432.5" font-size="11.5" font-weight="600" fill="#c08a2d">Отказ системы: Контроль</text>
+<text x="246" y="447.5" font-size="11.5" font-weight="600" fill="#c08a2d">подменён его имитацией</text>
+<text x="246" y="466.5" font-size="11.5" fill="#1f6f6a">→ Разделы 31, 33</text>
+<rect x="472" y="339" width="208" height="173" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="482" y="361" font-size="13" font-weight="600" fill="#5b6b73">6. «Кто выбирает блюдо»</text>
+<text x="482" y="382" font-size="11.5" fill="#5b6b73">Вариативное меню добавит</text>
+<text x="482" y="397" font-size="11.5" fill="#5b6b73">шестой конфликт. Поверх пяти</text>
+<text x="482" y="412" font-size="11.5" fill="#5b6b73">незакрытых он не наведёт</text>
+<text x="482" y="427" font-size="11.5" fill="#5b6b73">порядок, а умножит хаос.</text>
+<text x="482" y="448" font-size="11.5" fill="#1f6f6a">→ сначала измерение и</text>
+<text x="482" y="463" font-size="11.5" fill="#1f6f6a">фундамент (разделы 35–36)</text>
+<rect x="0" y="525" width="14" height="14" rx="3" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="22" y="536" font-size="12" fill="#5b6b73">клиническое: решает врач, кухня не назначает</text>
+<rect x="350" y="525" width="14" height="14" rx="3" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="372" y="536" font-size="12" fill="#5b6b73">организация и контроль: решение директора</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 571" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Карта норм: зелёная, жёлтая и красная зоны</title>
+<rect width="680" height="571" fill="#ffffff"/>
+<rect x="0" y="0" width="220" height="50" rx="6" fill="#1f6f6a"/>
+<text x="12" y="22" font-size="14" font-weight="700" fill="#ffffff">Зелёная зона</text>
+<text x="12" y="40" font-size="11" fill="#ffffff">разрешено или прямо требуется</text>
+<rect x="0" y="60" width="220" height="90" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="79" font-size="12.5" font-weight="600" fill="#1f6f6a">СанПиН 2.3/2.4.4282-26</text>
+<text x="10" y="97" font-size="11.5">п. 56 подп. 11: питание не реже</text>
+<text x="10" y="112" font-size="11.5">трёх раз в день, диетическое —</text>
+<text x="10" y="127" font-size="11.5">по показаниям. Число блюд</text>
+<text x="10" y="142" font-size="11.5">не ограничено</text>
+<rect x="0" y="158" width="220" height="60" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="177" font-size="12.5" font-weight="600" fill="#1f6f6a">442-ФЗ, ст. 9 и 16</text>
+<text x="10" y="195" font-size="11.5">Права получателя услуг; ИППСУ</text>
+<text x="10" y="210" font-size="11.5">для поставщика обязательна</text>
+<rect x="0" y="226" width="220" height="75" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="245" font-size="12.5" font-weight="600" fill="#1f6f6a">3185-1, ч. 2 ст. 5 и ст. 43</text>
+<text x="10" y="263" font-size="11.5">Гуманное отношение без унижения</text>
+<text x="10" y="278" font-size="11.5">достоинства; в ПНИ — право</text>
+<text x="10" y="293" font-size="11.5">соблюдать пост</text>
+<rect x="0" y="309" width="220" height="60" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="328" font-size="12.5" font-weight="600" fill="#1f6f6a">ГК, п. 3 ст. 36</text>
+<text x="10" y="346" font-size="11.5">Опекун учитывает мнение</text>
+<text x="10" y="361" font-size="11.5">подопечного (раздел 16)</text>
+<rect x="0" y="377" width="220" height="60" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="10" y="396" font-size="12.5" font-weight="600" fill="#1f6f6a">Приказ № 520н, таблицы замен</text>
+<text x="10" y="414" font-size="11.5">Рамка рациона и эквивалентная</text>
+<text x="10" y="429" font-size="11.5">замена — основа пар блюд</text>
+<rect x="230" y="0" width="220" height="50" rx="6" fill="#c08a2d"/>
+<text x="242" y="22" font-size="14" font-weight="700" fill="#ffffff">Жёлтая зона</text>
+<text x="242" y="40" font-size="11" fill="#ffffff">можно — через документ</text>
+<rect x="230" y="60" width="220" height="75" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="240" y="79" font-size="12.5" font-weight="600" fill="#a63d32">Назначение врача</text>
+<text x="240" y="97" font-size="11.5">Ограничение рациона, текстура:</text>
+<text x="240" y="112" font-size="11.5">поимённо, с целью и сроком</text>
+<text x="240" y="127" font-size="11.5">пересмотра. Решает врач</text>
+<rect x="230" y="143" width="220" height="75" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="240" y="162" font-size="12.5" font-weight="600" fill="#c08a2d">Локальный акт</text>
+<text x="240" y="180" font-size="11.5">Положение о питании, совет</text>
+<text x="240" y="195" font-size="11.5">жителей, вариативное меню,</text>
+<text x="240" y="210" font-size="11.5">уведомление учредителя</text>
+<rect x="230" y="226" width="220" height="75" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="240" y="245" font-size="12.5" font-weight="600" fill="#c08a2d">152-ФЗ, ст. 10</text>
+<text x="240" y="263" font-size="11.5">Пищевые карты: основание</text>
+<text x="240" y="278" font-size="11.5">обработки сведений о здоровье,</text>
+<text x="240" y="293" font-size="11.5">ограниченный доступ</text>
+<rect x="230" y="309" width="220" height="90" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="240" y="328" font-size="12.5" font-weight="600" fill="#c08a2d">44-ФЗ</text>
+<text x="240" y="346" font-size="11.5">Изменение контракта на</text>
+<text x="240" y="361" font-size="11.5">продукты — только в пределах</text>
+<text x="240" y="376" font-size="11.5">закона и с оформлением</text>
+<text x="240" y="391" font-size="11.5">(раздел 30)</text>
+<rect x="460" y="0" width="220" height="50" rx="6" fill="#a63d32"/>
+<text x="472" y="22" font-size="14" font-weight="700" fill="#ffffff">Красная зона</text>
+<text x="472" y="40" font-size="11" fill="#ffffff">нарушение при любом намерении</text>
+<rect x="460" y="60" width="220" height="60" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="470" y="79" font-size="12.5" font-weight="600" fill="#a63d32">3185-1, ч. 2 ст. 5; КПИ ст. 25 «f»</text>
+<text x="470" y="97" font-size="11.5">Лишение еды или питья</text>
+<text x="470" y="112" font-size="11.5">как мера воздействия</text>
+<rect x="460" y="128" width="220" height="75" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="470" y="147" font-size="12.5" font-weight="600" fill="#a63d32">Насилие при кормлении</text>
+<text x="470" y="165" font-size="11.5">Кормить силой нельзя; питание</text>
+<text x="470" y="180" font-size="11.5">против воли — только медицинское</text>
+<text x="470" y="195" font-size="11.5">вмешательство по решению врача</text>
+<rect x="460" y="211" width="220" height="75" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="470" y="230" font-size="12.5" font-weight="600" fill="#a63d32">КоАП, ст. 6.6</text>
+<text x="470" y="248" font-size="11.5">Пробы задним числом, журналы</text>
+<text x="470" y="263" font-size="11.5">по памяти, недоброкачественные</text>
+<text x="470" y="278" font-size="11.5">продукты</text>
+<rect x="460" y="294" width="220" height="60" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="470" y="313" font-size="12.5" font-weight="600" fill="#a63d32">УК, ст. 178</text>
+<text x="470" y="331" font-size="11.5">Картельные и согласованные</text>
+<text x="470" y="346" font-size="11.5">закупки (раздел 30)</text>
+<rect x="460" y="362" width="220" height="75" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="470" y="381" font-size="12.5" font-weight="600" fill="#a63d32">Отказ «за опоздание»</text>
+<text x="470" y="399" font-size="11.5">Как система нарушает питание</text>
+<text x="470" y="414" font-size="11.5">не реже трёх раз в день</text>
+<text x="470" y="429" font-size="11.5">(толкование)</text>
+<rect x="0" y="449" width="680" height="46" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="12" y="468" font-size="12" font-weight="600" fill="#5b6b73">Серая зона: приказы Минздрава о лечебном питании</text>
+<text x="12" y="485" font-size="11.5" fill="#5b6b73">адресованы медицинским организациям; на дом — только через региональный «мост» (разделы 17.5, 17.10)</text>
+<rect x="0" y="505" width="680" height="64" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="340" y="527" font-size="13" font-weight="600" text-anchor="middle">Число блюд в красную зону не входит</text>
+<text x="340" y="547" font-size="12" text-anchor="middle">Три вопроса к любому акту: кому он адресован? каков статус требования?</text>
+<text x="340" y="562" font-size="12" text-anchor="middle">что доказывает бумага? (раздел 17.11)</text>
+</svg>
