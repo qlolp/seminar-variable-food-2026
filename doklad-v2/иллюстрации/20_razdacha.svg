@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 762" font-family="Inter, 'DejaVu Sans', sans-serif" role="img" aria-label="Схема раздачи: поток от заказа накануне до линии, три потока жителей, устройство стола группы помощи с помогающим между двумя едоками и два замера — температурная дельта и время еды">
+<title>Схема раздачи: поток от заказа накануне до линии, три потока жителей, устройство стола группы помощи с помогающим между двумя едоками и два замера — температурная дельта и время еды</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2a2e"/></marker></defs>
+<rect x="0" y="0" width="680" height="762" fill="#ffffff"/>
+<text x="12.0" y="22.0" font-size="12" font-weight="600" fill="#5b6b73">Поток: от заказа до тарелки (разделы 20.2, 20.10)</text>
+<rect x="12.0" y="30.0" width="144.5" height="86.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/><text x="22.0" y="50.4" font-size="13" font-weight="600" fill="#1d2a2e">Накануне</text><text x="22.0" y="70.6" font-size="12" fill="#1d2a2e">Показ меню, заказ</text><text x="22.0" y="86.6" font-size="12" fill="#1d2a2e">в журнал</text><text x="22.0" y="102.6" font-size="12" fill="#1d2a2e">(приложение 7)</text>
+<line x1="159.5" y1="73.0" x2="179.5" y2="73.0" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="182.5" y="30.0" width="144.5" height="86.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/><text x="192.5" y="50.4" font-size="13" font-weight="600" fill="#1d2a2e">Кухня</text><text x="192.5" y="70.6" font-size="12" fill="#1d2a2e">Варка по заказу и</text><text x="192.5" y="86.6" font-size="12" fill="#1d2a2e">резерв в каждом</text><text x="192.5" y="102.6" font-size="12" fill="#1d2a2e">варианте</text>
+<line x1="330.0" y1="73.0" x2="350.0" y2="73.0" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="353.0" y="30.0" width="144.5" height="86.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/><text x="363.0" y="50.4" font-size="13" font-weight="600" fill="#1d2a2e">Перед линией</text><text x="363.0" y="70.6" font-size="12" fill="#1d2a2e">Визуальное меню:</text><text x="363.0" y="86.6" font-size="12" fill="#1d2a2e">фото или образцы</text><text x="363.0" y="102.6" font-size="12" fill="#1d2a2e">обоих вариантов</text>
+<line x1="500.5" y1="73.0" x2="520.5" y2="73.0" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="523.5" y="30.0" width="144.5" height="86.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/><text x="533.5" y="50.4" font-size="13" font-weight="600" fill="#1d2a2e">Линия</text><text x="533.5" y="70.6" font-size="12" fill="#1d2a2e">Вариант А или Б; у</text><text x="533.5" y="86.6" font-size="12" fill="#1d2a2e">линии можно</text><text x="533.5" y="102.6" font-size="12" fill="#1d2a2e">передумать</text>
+<text x="12.0" y="146.0" font-size="12" font-weight="600" fill="#5b6b73">Три потока — не в одной очереди</text>
+<rect x="12.0" y="154.0" width="170.0" height="48.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="22.0" y="181.5" font-size="13" font-weight="600" fill="#1d2a2e">Самостоятельные</text>
+<line x1="185.0" y1="178.0" x2="203.0" y2="178.0" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="206.0" y="154.0" width="462.0" height="48.0" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<text x="216.0" y="174.0" font-size="12" fill="#1d2a2e">Идут на линию. Хлеб и общее для всех первое — на отдельной</text><text x="216.0" y="190.0" font-size="12" fill="#1d2a2e">точке, салаты и напитки — на отдельном столике.</text>
+<rect x="12.0" y="210.0" width="170.0" height="48.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="22.0" y="229.0" font-size="13" font-weight="600" fill="#1d2a2e">Маломобильные и</text><text x="22.0" y="246.0" font-size="13" font-weight="600" fill="#1d2a2e">постельные</text>
+<line x1="185.0" y1="234.0" x2="203.0" y2="234.0" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="206.0" y="210.0" width="462.0" height="48.0" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<text x="216.0" y="230.0" font-size="12" fill="#1d2a2e">Два варианта на подносе или карточки с изображениями; журнал</text><text x="216.0" y="246.0" font-size="12" fill="#1d2a2e">выбора на посту; температуру меряют на последней выдаче.</text>
+<rect x="12.0" y="266.0" width="170.0" height="48.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="22.0" y="293.5" font-size="13" font-weight="600" fill="#1d2a2e">Группа помощи</text>
+<line x1="185.0" y1="290.0" x2="203.0" y2="290.0" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<rect x="206.0" y="266.0" width="462.0" height="48.0" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<text x="216.0" y="286.0" font-size="12" fill="#1d2a2e">Обслуживается первой по распорядку. Сидят за столами; тарелку</text><text x="216.0" y="302.0" font-size="12" fill="#1d2a2e">ставят, только когда рядом руки помощника.</text>
+<text x="12.0" y="344.0" font-size="12" font-weight="600" fill="#5b6b73">Стол группы помощи (раздел 20.8)</text>
+<circle cx="162.0" cy="366.0" r="11" fill="none" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="180.0" y="370.0" font-size="11" fill="#5b6b73">не напротив</text>
+<rect x="32.0" y="384.0" width="260.0" height="56.0" rx="6" fill="#eef1f2" stroke="#5b6b73" stroke-width="1.5"/>
+<circle cx="87.0" cy="414.0" r="14" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5"/>
+<circle cx="87.0" cy="414.0" r="8" fill="none" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="237.0" cy="414.0" r="14" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5"/>
+<circle cx="237.0" cy="414.0" r="8" fill="none" stroke="#c9d1d4" stroke-width="1.5"/>
+<circle cx="87.0" cy="462.0" r="16" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="87.0" y="496.0" font-size="12" text-anchor="middle" fill="#1d2a2e">житель</text>
+<circle cx="162.0" cy="462.0" r="16" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="162.0" y="496.0" font-size="12" text-anchor="middle" fill="#1d2a2e">помогающий</text>
+<circle cx="237.0" cy="462.0" r="16" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="237.0" y="496.0" font-size="12" text-anchor="middle" fill="#1d2a2e">житель</text>
+<text x="162.0" y="514.0" font-size="11" text-anchor="middle" fill="#5b6b73">между двумя едоками, на уровне глаз, не стоя</text>
+<rect x="322.0" y="354.0" width="346.0" height="95.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/><text x="332.0" y="373.6" font-size="12" font-weight="600" fill="#1d2a2e">Не более двух полностью кормимых на</text><text x="332.0" y="389.6" font-size="12" font-weight="600" fill="#1d2a2e">одного помогающего</text><text x="332.0" y="408.8" font-size="11" fill="#1d2a2e">Ориентир Онтарио, не российская норма; при</text><text x="332.0" y="422.8" font-size="11" fill="#1d2a2e">недостижимости — фактическое число письменно</text><text x="332.0" y="436.8" font-size="11" fill="#1d2a2e">учредителю</text>
+<rect x="322.0" y="457.0" width="346.0" height="81.0" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/><text x="332.0" y="476.6" font-size="12" font-weight="600" fill="#1d2a2e">Два жителя с дисфагическим риском — не к</text><text x="332.0" y="492.6" font-size="12" font-weight="600" fill="#1d2a2e">одному помогающему</text><text x="332.0" y="511.8" font-size="11" fill="#1d2a2e">Каждый требует полного внимания в момент глотка;</text><text x="332.0" y="525.8" font-size="11" fill="#1d2a2e">текстуры и уровень риска назначает врач</text>
+<rect x="322.0" y="546.0" width="346.0" height="79.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/><text x="332.0" y="565.6" font-size="12" font-weight="600" fill="#1d2a2e">Посуда, порция, разговор</text><text x="332.0" y="584.8" font-size="11" fill="#1d2a2e">Глубокие тарелки с бортиком, нескользящие</text><text x="332.0" y="598.8" font-size="11" fill="#1d2a2e">подставки, удобные ложки; средняя порция с</text><text x="332.0" y="612.8" font-size="11" fill="#1d2a2e">добавкой; с едоком говорят с едоком</text>
+<text x="12.0" y="657.0" font-size="12" font-weight="600" fill="#5b6b73">Два бесплатных замера — при запуске и затем ежеквартально (раздел 20.6)</text>
+<rect x="12.0" y="665.0" width="322.0" height="85.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/><text x="22.0" y="684.6" font-size="12" font-weight="600" fill="#1d2a2e">Температурная дельта</text><text x="22.0" y="704.6" font-size="12" fill="#1d2a2e">Одно блюдо: первый и последний</text><text x="22.0" y="720.6" font-size="12" fill="#1d2a2e">обслуживаемый стол. Падение больше</text><text x="22.0" y="736.6" font-size="12" fill="#1d2a2e">10–15 °C — перестроить поток.</text>
+<rect x="346.0" y="665.0" width="322.0" height="85.0" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/><text x="356.0" y="684.6" font-size="12" font-weight="600" fill="#1d2a2e">Время еды самого медленного</text><text x="356.0" y="704.6" font-size="12" fill="#1d2a2e">Меньше 15 минут — человека, скорее всего,</text><text x="356.0" y="720.6" font-size="12" fill="#1d2a2e">торопят: это прямой риск аспирации</text><text x="356.0" y="736.6" font-size="12" fill="#1d2a2e">(раздел 10).</text>
+</svg>

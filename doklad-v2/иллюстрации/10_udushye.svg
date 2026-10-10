@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 679" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Первая помощь при удушье: алгоритм для поста</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="679" fill="#ffffff"/>
+<rect x="220" y="0" width="240" height="37" rx="6" fill="#f4f6f7" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="230" y="23" font-size="13">Житель поперхнулся за едой</text>
+<line x1="340" y1="37" x2="340" y2="53" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M340,53.0 L490.0,91 L340,129.0 L190.0,91 Z" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="340" y="87.5" font-size="12.5" font-weight="600" text-anchor="middle">Может кашлять, говорить,</text>
+<text x="340" y="103.5" font-size="12.5" font-weight="600" text-anchor="middle">дышать?</text>
+<path d="M190,91 L125.0,91 L125.0,143" fill="none" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="178" y="83" font-size="12" font-weight="600" fill="#c08a2d" text-anchor="end">да</text>
+<path d="M490,91 L560,91 L560,143" fill="none" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="502" y="83" font-size="12" font-weight="600" fill="#a63d32">нет</text>
+<rect x="0" y="145" width="250" height="120" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="10" y="168" font-size="13" font-weight="600" fill="#c08a2d">Лёгкая обструкция</text>
+<text x="10" y="187" font-size="12">Остановить еду. Поощрять кашель:</text>
+<text x="10" y="203" font-size="12">эффективный кашель — лучший</text>
+<text x="10" y="219" font-size="12">способ освободить дыхательные</text>
+<text x="10" y="235" font-size="12">пути. Пока кашель эффективен, по</text>
+<text x="10" y="251" font-size="12">спине не бить.</text>
+<rect x="296" y="145" width="362" height="89" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="306" y="168" font-size="13" font-weight="600" fill="#a63d32">Тяжёлый эпизод: не может кашлять, говорить,</text>
+<text x="306" y="185" font-size="13" font-weight="600" fill="#a63d32">дышать; синеет</text>
+<text x="306" y="204" font-size="12">Позвать на помощь: медперсонал и врач — сразу;</text>
+<text x="306" y="220" font-size="12">скорая — 103 или 112.</text>
+<line x1="125" y1="265" x2="125" y2="281" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="0" y="281" width="250" height="84" rx="6" fill="#ffffff" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="10" y="303" font-size="12">Записать эпизод, сообщить</text>
+<text x="10" y="319" font-size="12">старшей смены. Повтор за неделю</text>
+<text x="10" y="335" font-size="12">— врач вне очереди: пересмотр</text>
+<text x="10" y="351" font-size="12">текстуры.</text>
+<path d="M250,205.0 L290,205.0" fill="none" stroke="#a63d32" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="273" y="197" font-size="11" fill="#a63d32" text-anchor="middle">кашель</text>
+<text x="273" y="221" font-size="11" fill="#a63d32" text-anchor="middle">слабеет</text>
+<line x1="477" y1="234" x2="477" y2="252" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M477.0,252.0 L577.0,282 L477.0,312.0 L377.0,282 Z" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
+<text x="477" y="286.5" font-size="12.5" font-weight="600" text-anchor="middle">В сознании?</text>
+<line x1="477" y1="312" x2="477" y2="328" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="485" y="326" font-size="12" font-weight="600" fill="#a63d32">да</text>
+<rect x="296" y="328" width="362" height="68" rx="6" fill="#ffffff" stroke="#a63d32" stroke-width="1.5"/>
+<text x="306" y="350" font-size="12">Обученный сотрудник: до пяти ударов между</text>
+<text x="306" y="366" font-size="12">лопатками, затем до пяти толчков в верхнюю часть</text>
+<text x="306" y="382" font-size="12">живота; повторять до восстановления дыхания.</text>
+<text x="591" y="274" font-size="12" font-weight="600" fill="#a63d32">нет</text>
+<path d="M654,282 L654,282" fill="none" stroke="#5b6b73" stroke-width="1.5"/>
+<path d="M577.0,282 L670,282 L670,444 L660,444" fill="none" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="477" y1="396" x2="477" y2="422" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="485" y="413" font-size="11" fill="#a63d32">потерял сознание</text>
+<rect x="296" y="424" width="362" height="68" rx="6" fill="#ffffff" stroke="#a63d32" stroke-width="1.5"/>
+<text x="306" y="446" font-size="12">Потерял сознание: уложить, вызвать скорую, если</text>
+<text x="306" y="462" font-size="12">ещё не вызвана, начать сердечно-лёгочную</text>
+<text x="306" y="478" font-size="12">реанимацию.</text>
+<line x1="477" y1="492" x2="477" y2="510" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="296" y="512" width="362" height="88" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="306" y="535" font-size="13" font-weight="600" fill="#a63d32">После тяжёлого эпизода — решает врач</text>
+<text x="306" y="554" font-size="12">Врачебный осмотр в тот же день: возможна</text>
+<text x="306" y="570" font-size="12">отсроченная аспирационная пневмония. Протокол</text>
+<text x="306" y="586" font-size="12">разбора инцидента (приложение 34) — за три дня.</text>
+<rect x="0" y="612" width="680" height="65" rx="6" fill="#f4f6f7" stroke="#c9d1d4" stroke-width="1.5"/>
+<text x="10" y="633.5" font-size="11.5">Удаление инородного тела — мероприятие первой помощи (приказ Минздрава России № 220н), его</text>
+<text x="10" y="648.5" font-size="11.5">вправе оказывать работник с подготовкой. В часы еды на посту двое обученных сотрудников; навык</text>
+<text x="10" y="663.5" font-size="11.5">отрабатывают на занятии, а не только читают.</text>
+</svg>

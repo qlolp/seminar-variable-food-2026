@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 595" font-family="Inter, 'DejaVu Sans', sans-serif" role="img" aria-label="Диаграммы по разделу 27: соответствие текстур после обучения IDDSI выросло с 44 до 90 % для пищи и с 31 до 100 % для жидкостей; в больнице с заказом по меню тарелочные отходы снизились с 30 до 17 %, доля довольных выросла с 75 до 98 %; семейная подача — масса тела +0,5 кг против −1,1 кг в контроле, качество жизни +0,4 против −5,0; три опоры: измеримый эффект, слабо доказанное, пробелы">
+<title>Диаграммы по разделу 27: соответствие текстур после обучения IDDSI выросло с 44 до 90 % для пищи и с 31 до 100 % для жидкостей; в больнице с заказом по меню тарелочные отходы снизились с 30 до 17 %, доля довольных выросла с 75 до 98 %; семейная подача — масса тела +0,5 кг против −1,1 кг в контроле, качество жизни +0,4 против −5,0; три опоры: измеримый эффект, слабо доказанное, пробелы</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2a2e"/></marker></defs>
+<rect x="0" y="0" width="680" height="595" fill="#ffffff"/>
+<text x="12.0" y="23.0" font-size="13" font-weight="600" fill="#1d2a2e">До и после: измеренные сдвиги, %</text>
+<circle cx="518.0" cy="19.0" r="5" fill="#ffffff" stroke="#5b6b73" stroke-width="2"/>
+<text x="528.0" y="23.0" font-size="11" fill="#5b6b73">до</text>
+<circle cx="568.0" cy="19.0" r="5" fill="#1f6f6a"/>
+<text x="578.0" y="23.0" font-size="11" fill="#5b6b73">после</text>
+<line x1="272.0" y1="32.0" x2="272.0" y2="196.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="272.0" y="210.0" font-size="11" text-anchor="middle" fill="#5b6b73">0</text>
+<line x1="362.5" y1="32.0" x2="362.5" y2="196.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="362.5" y="210.0" font-size="11" text-anchor="middle" fill="#5b6b73">25</text>
+<line x1="453.0" y1="32.0" x2="453.0" y2="196.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="453.0" y="210.0" font-size="11" text-anchor="middle" fill="#5b6b73">50</text>
+<line x1="543.5" y1="32.0" x2="543.5" y2="196.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="543.5" y="210.0" font-size="11" text-anchor="middle" fill="#5b6b73">75</text>
+<line x1="634.0" y1="32.0" x2="634.0" y2="196.0" stroke="#c9d1d4" stroke-width="1"/>
+<text x="634.0" y="210.0" font-size="11" text-anchor="middle" fill="#5b6b73">100</text>
+<text x="12.0" y="51.0" font-size="12" font-weight="600" fill="#1d2a2e">Пища: текстура как назначено</text>
+<text x="12.0" y="66.0" font-size="11" fill="#5b6b73">IDDSI, обучение в пяти учреждениях</text>
+<line x1="431.3" y1="54.0" x2="597.8" y2="54.0" stroke="#1f6f6a" stroke-width="2.5"/>
+<circle cx="431.3" cy="54.0" r="6" fill="#ffffff" stroke="#5b6b73" stroke-width="2"/>
+<circle cx="597.8" cy="54.0" r="6" fill="#1f6f6a" stroke="#ffffff" stroke-width="2"/>
+<text x="421.3" y="58.0" font-size="11" font-weight="600" text-anchor="end" fill="#1d2a2e">44</text>
+<text x="607.8" y="58.0" font-size="11" font-weight="600" fill="#1d2a2e">90</text>
+<text x="12.0" y="91.0" font-size="12" font-weight="600" fill="#1d2a2e">Жидкости: текстура как назначено</text>
+<text x="12.0" y="106.0" font-size="11" fill="#5b6b73">IDDSI, те же учреждения</text>
+<line x1="384.2" y1="94.0" x2="634.0" y2="94.0" stroke="#1f6f6a" stroke-width="2.5"/>
+<circle cx="384.2" cy="94.0" r="6" fill="#ffffff" stroke="#5b6b73" stroke-width="2"/>
+<circle cx="634.0" cy="94.0" r="6" fill="#1f6f6a" stroke="#ffffff" stroke-width="2"/>
+<text x="374.2" y="98.0" font-size="11" font-weight="600" text-anchor="end" fill="#1d2a2e">31</text>
+<text x="644.0" y="98.0" font-size="11" font-weight="600" fill="#1d2a2e">100</text>
+<text x="12.0" y="131.0" font-size="12" font-weight="600" fill="#1d2a2e">Тарелочные отходы</text>
+<text x="12.0" y="146.0" font-size="11" fill="#5b6b73">больница, заказ по меню (room service)</text>
+<line x1="380.6" y1="134.0" x2="333.5" y2="134.0" stroke="#1f6f6a" stroke-width="2.5"/>
+<circle cx="380.6" cy="134.0" r="6" fill="#ffffff" stroke="#5b6b73" stroke-width="2"/>
+<circle cx="333.5" cy="134.0" r="6" fill="#1f6f6a" stroke="#ffffff" stroke-width="2"/>
+<text x="323.5" y="138.0" font-size="11" font-weight="600" text-anchor="end" fill="#1d2a2e">17</text>
+<text x="390.6" y="138.0" font-size="11" font-weight="600" fill="#1d2a2e">30</text>
+<text x="12.0" y="171.0" font-size="12" font-weight="600" fill="#1d2a2e">Оценили питание как хорошее</text>
+<text x="12.0" y="186.0" font-size="11" fill="#5b6b73">та же больница</text>
+<line x1="543.5" y1="174.0" x2="626.8" y2="174.0" stroke="#1f6f6a" stroke-width="2.5"/>
+<circle cx="543.5" cy="174.0" r="6" fill="#ffffff" stroke="#5b6b73" stroke-width="2"/>
+<circle cx="626.8" cy="174.0" r="6" fill="#1f6f6a" stroke="#ffffff" stroke-width="2"/>
+<text x="533.5" y="178.0" font-size="11" font-weight="600" text-anchor="end" fill="#1d2a2e">75</text>
+<text x="636.8" y="178.0" font-size="11" font-weight="600" fill="#1d2a2e">98</text>
+<text x="12.0" y="226.0" font-size="11" font-style="italic" fill="#5b6b73">Больница — исследование «до — после» в одном учреждении; на дом социального обслуживания не</text><text x="12.0" y="240.0" font-size="11" font-style="italic" fill="#5b6b73">переносится.</text>
+<text x="12.0" y="273.0" font-size="13" font-weight="600" fill="#1d2a2e">Семейная подача: изменение за шесть месяцев (кластерное РКИ, жители без деменции)</text>
+<text x="12.0" y="296.0" font-size="12" font-weight="600" fill="#1d2a2e">Масса тела</text><text x="12.0" y="311.0" font-size="11" fill="#5b6b73">кг</text><line x1="236.0" y1="318.0" x2="236.0" y2="372.0" stroke="#5b6b73" stroke-width="1"/><rect x="236.0" y="322.0" width="26.0" height="18.0" rx="3" fill="#1f6f6a"/><text x="12.0" y="335.0" font-size="12" fill="#1d2a2e">семейная подача</text><text x="268.0" y="335.0" font-size="11" font-weight="600" fill="#1d2a2e">+0,5</text><rect x="178.8" y="350.0" width="57.2" height="18.0" rx="3" fill="#5b6b73"/><text x="12.0" y="363.0" font-size="12" fill="#1d2a2e">контроль</text><text x="172.8" y="363.0" font-size="11" font-weight="600" text-anchor="end" fill="#1d2a2e">−1,1</text>
+<text x="352.0" y="296.0" font-size="12" font-weight="600" fill="#1d2a2e">Качество жизни</text><text x="352.0" y="311.0" font-size="11" fill="#5b6b73">баллы шкалы</text><line x1="605.7" y1="318.0" x2="605.7" y2="372.0" stroke="#5b6b73" stroke-width="1"/><rect x="605.7" y="322.0" width="8.9" height="18.0" rx="3" fill="#1f6f6a"/><text x="352.0" y="335.0" font-size="12" fill="#1d2a2e">семейная подача</text><text x="620.6" y="335.0" font-size="11" font-weight="600" fill="#1d2a2e">+0,4</text><rect x="494.3" y="350.0" width="111.4" height="18.0" rx="3" fill="#5b6b73"/><text x="352.0" y="363.0" font-size="12" fill="#1d2a2e">контроль</text><text x="488.3" y="363.0" font-size="11" font-weight="600" text-anchor="end" fill="#1d2a2e">−5,0</text>
+<text x="12.0" y="390.0" font-size="11" font-style="italic" fill="#5b6b73">Эффект — сохранение уровня на фоне ухудшения в контроле; на ДСО, деменцию и психиатрию не</text><text x="12.0" y="404.0" font-size="11" font-style="italic" fill="#5b6b73">переносится.</text>
+<text x="12.0" y="437.0" font-size="13" font-weight="600" fill="#1d2a2e">Три опоры раздела 27.5</text>
+<rect x="12.0" y="446.0" width="212.0" height="137.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/><text x="22.0" y="465.6" font-size="12" font-weight="600" fill="#1d2a2e">Измеримый эффект — по</text><text x="22.0" y="481.6" font-size="12" font-weight="600" fill="#1d2a2e">показаниям</text><text x="22.0" y="500.8" font-size="11" fill="#1d2a2e">Семейная подача (без</text><text x="22.0" y="514.8" font-size="11" fill="#1d2a2e">деменции); обучение IDDSI;</text><text x="22.0" y="528.8" font-size="11" fill="#1d2a2e">Монтессори при деменции;</text><text x="22.0" y="542.8" font-size="11" fill="#1d2a2e">поддержка при кормлении —</text><text x="22.0" y="556.8" font-size="11" fill="#1d2a2e">около 200 ккал и 15 г белка за</text><text x="22.0" y="570.8" font-size="11" fill="#1d2a2e">приём, достоверность низкая</text>
+<rect x="234.0" y="446.0" width="212.0" height="137.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/><text x="244.0" y="465.6" font-size="12" font-weight="600" fill="#1d2a2e">Слабо доказано — как</text><text x="244.0" y="481.6" font-size="12" font-weight="600" fill="#1d2a2e">гигиена</text><text x="244.0" y="500.8" font-size="11" fill="#1d2a2e">Защищённые приёмы пищи;</text><text x="244.0" y="514.8" font-size="11" fill="#1d2a2e">средовые изменения при</text><text x="244.0" y="528.8" font-size="11" fill="#1d2a2e">деменции; программы образа</text><text x="244.0" y="542.8" font-size="11" fill="#1d2a2e">жизни при тяжёлых</text><text x="244.0" y="556.8" font-size="11" fill="#1d2a2e">психических расстройствах —</text><text x="244.0" y="570.8" font-size="11" fill="#1d2a2e">около −1,4 кг</text>
+<rect x="456.0" y="446.0" width="212.0" height="137.0" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="4 3"/><text x="466.0" y="465.6" font-size="12" font-weight="600" fill="#1d2a2e">Пробел — собственный</text><text x="466.0" y="481.6" font-size="12" font-weight="600" fill="#1d2a2e">замер</text><text x="466.0" y="500.8" font-size="11" fill="#1d2a2e">Нет РКИ вариативного меню в</text><text x="466.0" y="514.8" font-size="11" fill="#1d2a2e">психиатрии; нет данных об</text><text x="466.0" y="528.8" font-size="11" fill="#1d2a2e">отходах в домах ухода</text><text x="466.0" y="542.8" font-size="11" fill="#1d2a2e">(вмешательство проверяли 3</text><text x="466.0" y="556.8" font-size="11" fill="#1d2a2e">работы из 33); нет данных по</text><text x="466.0" y="570.8" font-size="11" fill="#1d2a2e">российским ПНИ</text>
+</svg>

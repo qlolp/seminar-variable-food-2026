@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 653" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Пять правил «лекарство × еда»</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="653" fill="#ffffff"/>
+<rect x="0" y="0" width="680" height="48" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="340" y="20" font-size="12.5" font-weight="600" fill="#a63d32" text-anchor="middle">Таблицу «лекарство × еда» заполняет и подписывает врач по фактическим назначениям.</text>
+<text x="340" y="38" font-size="11.5" text-anchor="middle">На кухню и в комнату передач идёт результат («без грейпфрута»), а не диагноз и не название препарата.</text>
+<text x="4" y="74" font-size="11.5" font-weight="600" fill="#5b6b73">Правило и класс уверенности</text>
+<text x="246" y="74" font-size="11.5" font-weight="600" fill="#1f6f6a">Кухня</text>
+<text x="468" y="74" font-size="11.5" font-weight="600" fill="#c08a2d">Пост и передачи</text>
+<rect x="0" y="84" width="230" height="108" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="0" y="84" width="5" height="108" rx="2" fill="#a63d32"/>
+<text x="14" y="104" font-size="13" font-weight="600">1. Клозапин × кофеин</text>
+<rect x="14" y="115" width="85.3438" height="18" rx="9" fill="#f4dcd8" stroke="#a63d32" stroke-width="1"/>
+<text x="56.6719" y="128" font-size="10.5" font-weight="600" fill="#a63d32" text-anchor="middle">установлено</text>
+<text x="14" y="150" font-size="11" fill="#5b6b73">кофеин: AUC клозапина +19 %;</text>
+<text x="14" y="164" font-size="11" fill="#5b6b73">резкая отмена: −37–47 %; курение</text>
+<text x="14" y="178" font-size="11" fill="#5b6b73">тоже меняет уровень</text>
+<rect x="236" y="84" width="216" height="108" rx="6" fill="#d6ebe8"/>
+<text x="246" y="106" font-size="12">Кофе не награда и не</text>
+<text x="246" y="121.5" font-size="12">наказание; привычное</text>
+<text x="246" y="137" font-size="12">потребление — в карту</text>
+<rect x="458" y="84" width="222" height="108" rx="6" fill="#f5e9d2"/>
+<text x="468" y="106" font-size="12">Изменение привычки (больше</text>
+<text x="468" y="121.5" font-size="12">кофе, отказ от курения) —</text>
+<text x="468" y="137" font-size="12">врачу; семью предупредить</text>
+<text x="468" y="152.5" font-size="12">письменно</text>
+<rect x="0" y="198" width="230" height="94" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="0" y="198" width="5" height="94" rx="2" fill="#c08a2d"/>
+<text x="14" y="218" font-size="13" font-weight="600">2. Литий × соль и вода</text>
+<rect x="14" y="229" width="81.1016" height="18" rx="9" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1"/>
+<text x="54.5508" y="242" font-size="10.5" font-weight="600" fill="#c08a2d" text-anchor="middle">мониторинг</text>
+<text x="14" y="264" font-size="11" fill="#5b6b73">опасна потеря жидкости: жара без</text>
+<text x="14" y="278" font-size="11" fill="#5b6b73">воды, рвота, понос, лихорадка</text>
+<rect x="236" y="198" width="216" height="94" rx="6" fill="#d6ebe8"/>
+<text x="246" y="220" font-size="12">Солевой режим без врача не</text>
+<text x="246" y="235.5" font-size="12">менять; «малосольный стол»</text>
+<text x="246" y="251" font-size="12">самовольно не вводить</text>
+<rect x="458" y="198" width="222" height="94" rx="6" fill="#f5e9d2"/>
+<text x="468" y="220" font-size="12">Вода на виду; рвота, диарея,</text>
+<text x="468" y="235.5" font-size="12">лихорадка — врачу в тот же</text>
+<text x="468" y="251" font-size="12">день</text>
+<rect x="0" y="298" width="230" height="94" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="0" y="298" width="5" height="94" rx="2" fill="#a63d32"/>
+<text x="14" y="318" font-size="13" font-weight="600">3. ИМАО × тирамин</text>
+<rect x="14" y="329" width="85.3438" height="18" rx="9" fill="#f4dcd8" stroke="#a63d32" stroke-width="1"/>
+<text x="56.6719" y="342" font-size="10.5" font-weight="600" fill="#a63d32" text-anchor="middle">установлено</text>
+<text x="14" y="364" font-size="11" fill="#5b6b73">выдержанные сыры, копчёности,</text>
+<text x="14" y="378" font-size="11" fill="#5b6b73">соления, пиво, квас, соевый соус</text>
+<rect x="236" y="298" width="216" height="94" rx="6" fill="#d6ebe8"/>
+<text x="246" y="320" font-size="12">Тираминовая разметка от</text>
+<text x="246" y="335.5" font-size="12">врача; выбор из всех</text>
+<text x="246" y="351" font-size="12">неразмеченных блюд</text>
+<rect x="458" y="298" width="222" height="94" rx="6" fill="#f5e9d2"/>
+<text x="468" y="320" font-size="12">Жёсткость разметки для</text>
+<text x="468" y="335.5" font-size="12">препарата определяет врач</text>
+<rect x="0" y="398" width="230" height="97" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="0" y="398" width="5" height="97" rx="2" fill="#a63d32"/>
+<text x="14" y="418" font-size="13" font-weight="600">4. Грейпфрут × ряд</text>
+<text x="14" y="435" font-size="13" font-weight="600">препаратов</text>
+<rect x="14" y="446" width="85.3438" height="18" rx="9" fill="#f4dcd8" stroke="#a63d32" stroke-width="1"/>
+<text x="56.6719" y="459" font-size="10.5" font-weight="600" fill="#a63d32" text-anchor="middle">установлено</text>
+<text x="14" y="481" font-size="11" fill="#5b6b73">карбамазепин: AUC ≈ +40 %</text>
+<rect x="236" y="398" width="216" height="97" rx="6" fill="#d6ebe8"/>
+<text x="246" y="420" font-size="12">Грейпфрут и его сок — ни в</text>
+<text x="246" y="435.5" font-size="12">закупке, ни в меню</text>
+<rect x="458" y="398" width="222" height="97" rx="6" fill="#f5e9d2"/>
+<text x="468" y="420" font-size="12">Дежурный проверяет</text>
+<text x="468" y="435.5" font-size="12">«подарочные» фрукты и соки в</text>
+<text x="468" y="451" font-size="12">передачах</text>
+<rect x="0" y="501" width="230" height="108" rx="6" fill="#ffffff" stroke="#c9d1d4" stroke-width="1.5"/>
+<rect x="0" y="501" width="5" height="108" rx="2" fill="#5b6b73"/>
+<text x="14" y="521" font-size="13" font-weight="600">5. Алкоголь и энергетики</text>
+<rect x="14" y="532" width="95.9102" height="18" rx="9" fill="#ffffff" stroke="#5b6b73" stroke-width="1"/>
+<text x="61.9551" y="545" font-size="10.5" font-weight="600" fill="#5b6b73" text-anchor="middle">рекомендация</text>
+<text x="14" y="567" font-size="11" fill="#5b6b73">алкоголь усиливает седацию;</text>
+<text x="14" y="581" font-size="11" fill="#5b6b73">энергетики при клозапине —</text>
+<text x="14" y="595" font-size="11" fill="#5b6b73">правило 1</text>
+<rect x="236" y="501" width="216" height="108" rx="6" fill="#d6ebe8"/>
+<text x="246" y="523" font-size="12">Ассортимент буфета</text>
+<text x="246" y="538.5" font-size="12">утверждается вместе с</text>
+<text x="246" y="554" font-size="12">врачом</text>
+<rect x="458" y="501" width="222" height="108" rx="6" fill="#f5e9d2"/>
+<text x="468" y="523" font-size="12">Алкоголь исключён правилами</text>
+<text x="468" y="538.5" font-size="12">передач</text>
+<text x="0" y="631" font-size="11" fill="#5b6b73">Классы уверенности говорят о силе фармакологических данных; для российского дома каждое правило — рекомендация</text>
+<text x="0" y="646" font-size="11" fill="#5b6b73">организационного уровня, а не норма. Перечень не исчерпывающий: полный список взаимодействий ведёт врач.</text>
+</svg>
