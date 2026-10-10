@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 640" font-family="Inter, 'DejaVu Sans', sans-serif" fill="#1d2a2e" role="img">
+<title>Дееспособность, опека и мнение подопечного о еде</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/></marker></defs>
+<rect width="680" height="640" fill="#ffffff"/>
+
+<!-- Ряд 1: два режима -->
+<rect x="0" y="0" width="280" height="112" rx="6" fill="#f4f6f7" stroke="#5b6b73" stroke-width="1.5"/>
+<text x="12" y="22" font-size="13" font-weight="600">Недееспособность</text>
+<text x="12" y="38" font-size="11.5" fill="#5b6b73">ст. 29 ГК, решение суда</text>
+<text x="12" y="59" font-size="12">Не может понимать значение</text>
+<text x="12" y="74" font-size="12">своих действий или руководить ими.</text>
+<text x="12" y="95" font-size="12" font-weight="600">Опека: сделки совершает опекун</text>
+
+<rect x="400" y="0" width="280" height="112" rx="6" fill="#f4f6f7" stroke="#5b6b73" stroke-width="1.5"/>
+<text x="412" y="22" font-size="13" font-weight="600">Ограниченная дееспособность</text>
+<text x="412" y="38" font-size="11.5" fill="#5b6b73">п. 2 ст. 30 ГК, решение суда</text>
+<text x="412" y="59" font-size="12">Понимает лишь при помощи других.</text>
+<text x="412" y="74" font-size="12">Мелкие бытовые сделки — сам,</text>
+<text x="412" y="89" font-size="12">остальные — с согласия попечителя.</text>
+<text x="412" y="104" font-size="12" font-weight="600">Попечительство</text>
+
+<line x1="284" y1="30" x2="394" y2="30" stroke="#1f6f6a" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="340" y="50" font-size="11" fill="#1f6f6a" text-anchor="middle">способность</text>
+<text x="340" y="64" font-size="11" fill="#1f6f6a" text-anchor="middle">развилась —</text>
+<text x="340" y="78" font-size="11" fill="#1f6f6a" text-anchor="middle">суд переводит</text>
+<text x="340" y="92" font-size="11" fill="#1f6f6a" text-anchor="middle">(п. 3 ст. 29 ГК)</text>
+
+<!-- Ряд 2: кто исполняет обязанности -->
+<line x1="140" y1="112" x2="140" y2="134" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="540" y1="112" x2="540" y2="134" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="0" y="136" width="314" height="96" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5"/>
+<text x="12" y="157" font-size="13" font-weight="600">Кто опекун или попечитель</text>
+<text x="12" y="177" font-size="12">Назначенное лицо. Если человек под</text>
+<text x="12" y="192" font-size="12">надзором в организации социального</text>
+<text x="12" y="207" font-size="12">обслуживания, обязанности исполняет</text>
+<text x="12" y="222" font-size="12">она сама (п. 4 ст. 35 ГК; ч. 5 ст. 11 48-ФЗ)</text>
+
+<line x1="316" y1="184" x2="347" y2="184" stroke="#c08a2d" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="350" y="136" width="330" height="96" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="362" y="157" font-size="13" font-weight="600" fill="#c08a2d">Учреждение = опекун</text>
+<text x="362" y="177" font-size="12">Конфликт интересов: решает о линии</text>
+<text x="362" y="192" font-size="12">и требует выбора одно лицо. Делают</text>
+<text x="362" y="207" font-size="12">его проверяемым: правила вместо</text>
+<text x="362" y="222" font-size="12">усмотрения, протокол разногласий, совет.</text>
+
+<!-- Ряд 3: ядро — п. 3 ст. 36 ГК -->
+<line x1="165" y1="232" x2="165" y2="254" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="0" y="256" width="680" height="168" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="340" y="279" font-size="13.5" font-weight="600" fill="#1f6f6a" text-anchor="middle">П. 3 ст. 36 ГК: обязанности исполняются с учётом мнения подопечного</text>
+<text x="340" y="297" font-size="11.5" fill="#5b6b73" text-anchor="middle">для сделок то же правило — п. 2 ст. 29 ГК; норма из ГК, а не из 48-ФЗ</text>
+
+<rect x="14" y="310" width="290" height="100" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="26" y="332" font-size="15" font-weight="700" fill="#1f6f6a">1</text>
+<text x="44" y="332" font-size="13" font-weight="600">Мнение самого подопечного</text>
+<text x="26" y="352" font-size="12">Выявляется доступным способом:</text>
+<text x="26" y="367" font-size="12">словом, показом, наблюдением</text>
+<text x="26" y="382" font-size="12">за потреблением, пищевой</text>
+<text x="26" y="397" font-size="12">биографией (раздел 15)</text>
+
+<line x1="308" y1="350" x2="370" y2="350" stroke="#1f6f6a" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="339" y="370" font-size="11" fill="#1f6f6a" text-anchor="middle">если</text>
+<text x="339" y="384" font-size="11" fill="#1f6f6a" text-anchor="middle">установить</text>
+<text x="339" y="398" font-size="11" fill="#1f6f6a" text-anchor="middle">нельзя</text>
+
+<rect x="376" y="310" width="290" height="100" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="388" y="332" font-size="15" font-weight="700" fill="#1f6f6a">2</text>
+<text x="406" y="332" font-size="13" font-weight="600">Сведения о предпочтениях</text>
+<text x="388" y="352" font-size="12">От родителей, прежних опекунов,</text>
+<text x="388" y="367" font-size="12">иных лиц, добросовестно</text>
+<text x="388" y="382" font-size="12">оказывавших услуги. Они говорят</text>
+<text x="388" y="397" font-size="12">о воле, но не заменяют её.</text>
+
+<!-- Ряд 4: следствия для стола -->
+<rect x="0" y="440" width="330" height="96" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="12" y="461" font-size="13" font-weight="600" fill="#1f6f6a">Выбор блюда — не сделка</text>
+<text x="12" y="481" font-size="12">Это бытовой акт и элемент ухода.</text>
+<text x="12" y="496" font-size="12">Недееспособность не снимает</text>
+<text x="12" y="511" font-size="12">обязанности спросить; согласия</text>
+<text x="12" y="526" font-size="12">на вариативное меню не требуется.</text>
+
+<rect x="350" y="440" width="330" height="96" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
+<text x="362" y="461" font-size="13" font-weight="600" fill="#a63d32">Ограничения рациона — решает врач</text>
+<text x="362" y="481" font-size="12">Соль, сахар, порция, текстура —</text>
+<text x="362" y="496" font-size="12">поимённо, с целью и сроком пересмотра.</text>
+<text x="362" y="511" font-size="12">Опекун вкусы не запрещает; выбор</text>
+<text x="362" y="526" font-size="12">внутри назначения — право жителя.</text>
+
+<!-- Ряд 5: пересмотр -->
+<rect x="0" y="552" width="680" height="84" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="12" y="573" font-size="13" font-weight="600" fill="#5b6b73">Статус пересматривается</text>
+<text x="12" y="593" font-size="12">Ежегодное освидетельствование врачебной комиссией (ч. 3 ст. 43 Закона № 3185-1)</text>
+<text x="12" y="608" font-size="12">включает вопрос о пересмотре недееспособности. Опекун обязан ходатайствовать</text>
+<text x="12" y="623" font-size="12">о признании дееспособным, если основания отпали (п. 5 ст. 36 ГК). Решает суд.</text>
+</svg>

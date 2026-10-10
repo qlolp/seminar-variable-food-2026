@@ -31,8 +31,8 @@
 <text x="10" y="335" font-size="12">— врач вне очереди: пересмотр</text>
 <text x="10" y="351" font-size="12">текстуры.</text>
 <path d="M250,205.0 L290,205.0" fill="none" stroke="#a63d32" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a)"/>
-<text x="273" y="197" font-size="11" fill="#a63d32" text-anchor="middle">кашель</text>
-<text x="273" y="221" font-size="11" fill="#a63d32" text-anchor="middle">слабеет</text>
+<text x="272.5" y="198" font-size="10" fill="#a63d32" text-anchor="middle">кашель</text>
+<text x="272.5" y="218" font-size="10" fill="#a63d32" text-anchor="middle">слабеет</text>
 <line x1="477" y1="234" x2="477" y2="252" stroke="#5b6b73" stroke-width="1.5" marker-end="url(#a)"/>
 <path d="M477.0,252.0 L577.0,282 L477.0,312.0 L377.0,282 Z" fill="#ffffff" stroke="#1d2a2e" stroke-width="1.5"/>
 <text x="477" y="286.5" font-size="12.5" font-weight="600" text-anchor="middle">В сознании?</text>

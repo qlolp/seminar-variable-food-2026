@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 807" font-family="Inter, 'DejaVu Sans', sans-serif" role="img" aria-label="Дорожная карта на двенадцать месяцев: четыре квартала — безопасный фундамент, расширение по горизонтали, структурные элементы, масштабирование и закрепление — с действиями, результатом и исходом внедрения; ниже три типовых сбоя с профилактикой и три ветки обеднённого сценария">
+<title>Дорожная карта на двенадцать месяцев: четыре квартала — безопасный фундамент, расширение по горизонтали, структурные элементы, масштабирование и закрепление — с действиями, результатом и исходом внедрения; ниже три типовых сбоя с профилактикой и три ветки обеднённого сценария</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2a2e"/></marker></defs>
+<rect x="0" y="0" width="680" height="807" fill="#ffffff"/>
+<polygon points="12.0,10.0 170.0,10.0 182.0,32.0 170.0,54.0 12.0,54.0 12.0,32.0" fill="#1f6f6a"/>
+<text x="95.0" y="29.0" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff">Квартал 1</text>
+<text x="95.0" y="45.0" font-size="11" text-anchor="middle" fill="#ffffff">месяцы 1–3</text>
+<polygon points="178.0,10.0 336.0,10.0 348.0,32.0 336.0,54.0 178.0,54.0 190.0,32.0" fill="#1f6f6a"/>
+<text x="261.0" y="29.0" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff">Квартал 2</text>
+<text x="261.0" y="45.0" font-size="11" text-anchor="middle" fill="#ffffff">месяцы 4–6</text>
+<polygon points="344.0,10.0 502.0,10.0 514.0,32.0 502.0,54.0 344.0,54.0 356.0,32.0" fill="#1f6f6a"/>
+<text x="427.0" y="29.0" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff">Квартал 3</text>
+<text x="427.0" y="45.0" font-size="11" text-anchor="middle" fill="#ffffff">месяцы 7–9</text>
+<polygon points="510.0,10.0 668.0,10.0 668.0,54.0 510.0,54.0 522.0,32.0" fill="#1f6f6a"/>
+<text x="593.0" y="29.0" font-size="13" font-weight="700" text-anchor="middle" fill="#ffffff">Квартал 4</text>
+<text x="593.0" y="45.0" font-size="11" text-anchor="middle" fill="#ffffff">месяцы 10–12</text>
+<rect x="12.0" y="64.0" width="158.0" height="391.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="20.0" y="84.0" font-size="12.5" font-weight="600" fill="#1f6f6a">Безопасный</text><text x="20.0" y="100.0" font-size="12.5" font-weight="600" fill="#1f6f6a">фундамент</text>
+<circle cx="23.0" cy="118.0" r="2.5" fill="#1f6f6a"/>
+<text x="30.0" y="121.0" font-size="11" fill="#1d2a2e">Пилот на 90 дней в</text><text x="30.0" y="135.0" font-size="11" fill="#1d2a2e">одном отделении</text><text x="30.0" y="149.0" font-size="11" fill="#1d2a2e">(раздел 35)</text>
+<circle cx="23.0" cy="164.0" r="2.5" fill="#1f6f6a"/>
+<text x="30.0" y="167.0" font-size="11" fill="#1d2a2e">Аудит по 24 точкам</text>
+<circle cx="23.0" cy="182.0" r="2.5" fill="#1f6f6a"/>
+<text x="30.0" y="185.0" font-size="11" fill="#1d2a2e">Документальный</text><text x="30.0" y="199.0" font-size="11" fill="#1d2a2e">комплект</text>
+<circle cx="23.0" cy="214.0" r="2.5" fill="#1f6f6a"/>
+<text x="30.0" y="217.0" font-size="11" fill="#1d2a2e">Инструктажи трёх</text><text x="30.0" y="231.0" font-size="11" fill="#1d2a2e">уровней</text>
+<circle cx="23.0" cy="246.0" r="2.5" fill="#1f6f6a"/>
+<text x="30.0" y="249.0" font-size="11" fill="#1d2a2e">Врач подписывает</text><text x="30.0" y="263.0" font-size="11" fill="#1d2a2e">таблицу «лекарство ×</text><text x="30.0" y="277.0" font-size="11" fill="#1d2a2e">еда» и список</text><text x="30.0" y="291.0" font-size="11" fill="#1d2a2e">дисфагического</text><text x="30.0" y="305.0" font-size="11" fill="#1d2a2e">риска</text>
+<rect x="18.0" y="320.0" width="146.0" height="84.0" rx="4" fill="#d6ebe8"/>
+<text x="24.0" y="339.0" font-size="11" font-weight="600" fill="#1d2a2e">Пилот работает,</text><text x="24.0" y="353.0" font-size="11" font-weight="600" fill="#1d2a2e">замеры есть,</text><text x="24.0" y="367.0" font-size="11" font-weight="600" fill="#1d2a2e">клинические риски</text><text x="24.0" y="381.0" font-size="11" font-weight="600" fill="#1d2a2e">закрыты</text><text x="24.0" y="395.0" font-size="11" font-weight="600" fill="#1d2a2e">документами</text>
+<text x="20.0" y="421.0" font-size="10.5" font-style="italic" fill="#5b6b73">исход внедрения:</text><text x="20.0" y="434.0" font-size="10.5" font-style="italic" fill="#5b6b73">осуществимость и</text><text x="20.0" y="447.0" font-size="10.5" font-style="italic" fill="#5b6b73">безопасность</text>
+<rect x="178.0" y="64.0" width="158.0" height="391.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="186.0" y="84.0" font-size="12.5" font-weight="600" fill="#1f6f6a">Расширение по</text><text x="186.0" y="100.0" font-size="12.5" font-weight="600" fill="#1f6f6a">горизонтали</text>
+<circle cx="189.0" cy="118.0" r="2.5" fill="#1f6f6a"/>
+<text x="196.0" y="121.0" font-size="11" fill="#1d2a2e">Все приёмы в точке</text><text x="196.0" y="135.0" font-size="11" fill="#1d2a2e">или соседнее</text><text x="196.0" y="149.0" font-size="11" fill="#1d2a2e">отделение — по</text><text x="196.0" y="163.0" font-size="11" fill="#1d2a2e">готовности смен</text>
+<circle cx="189.0" cy="178.0" r="2.5" fill="#1f6f6a"/>
+<text x="196.0" y="181.0" font-size="11" fill="#1d2a2e">Пересчёт меню по</text><text x="196.0" y="195.0" font-size="11" fill="#1d2a2e">статистике выбора</text>
+<circle cx="189.0" cy="210.0" r="2.5" fill="#1f6f6a"/>
+<text x="196.0" y="213.0" font-size="11" fill="#1d2a2e">Запуск совета</text><text x="196.0" y="227.0" font-size="11" fill="#1d2a2e">жителей</text>
+<rect x="184.0" y="320.0" width="146.0" height="84.0" rx="4" fill="#d6ebe8"/>
+<text x="190.0" y="339.0" font-size="11" font-weight="600" fill="#1d2a2e">Ежедневная</text><text x="190.0" y="353.0" font-size="11" font-weight="600" fill="#1d2a2e">практика в</text><text x="190.0" y="367.0" font-size="11" font-weight="600" fill="#1d2a2e">одном-двух</text><text x="190.0" y="381.0" font-size="11" font-weight="600" fill="#1d2a2e">отделениях, совет</text><text x="190.0" y="395.0" font-size="11" font-weight="600" fill="#1d2a2e">ведёт протоколы</text>
+<text x="186.0" y="421.0" font-size="10.5" font-style="italic" fill="#5b6b73">исход внедрения: охват</text><text x="186.0" y="434.0" font-size="10.5" font-style="italic" fill="#5b6b73">и приемлемость</text>
+<rect x="344.0" y="64.0" width="158.0" height="391.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="352.0" y="84.0" font-size="12.5" font-weight="600" fill="#1f6f6a">Структурные</text><text x="352.0" y="100.0" font-size="12.5" font-weight="600" fill="#1f6f6a">элементы</text>
+<circle cx="355.0" cy="118.0" r="2.5" fill="#1f6f6a"/>
+<text x="362.0" y="121.0" font-size="11" fill="#1d2a2e">Буфетная зона (М3),</text><text x="362.0" y="135.0" font-size="11" fill="#1d2a2e">где позволяют</text><text x="362.0" y="149.0" font-size="11" fill="#1d2a2e">контингент и</text><text x="362.0" y="163.0" font-size="11" fill="#1d2a2e">санитария</text>
+<circle cx="355.0" cy="178.0" r="2.5" fill="#1f6f6a"/>
+<text x="362.0" y="181.0" font-size="11" fill="#1d2a2e">Семейная подача (М4)</text><text x="362.0" y="195.0" font-size="11" fill="#1d2a2e">точечно</text>
+<circle cx="355.0" cy="210.0" r="2.5" fill="#1f6f6a"/>
+<text x="362.0" y="213.0" font-size="11" fill="#1d2a2e">Закупки по</text><text x="362.0" y="227.0" font-size="11" fill="#1d2a2e">спецификациям под</text><text x="362.0" y="241.0" font-size="11" fill="#1d2a2e">пары</text>
+<circle cx="355.0" cy="256.0" r="2.5" fill="#1f6f6a"/>
+<text x="362.0" y="259.0" font-size="11" fill="#1d2a2e">Первый квартальный</text><text x="362.0" y="273.0" font-size="11" fill="#1d2a2e">отчёт учредителю</text>
+<rect x="350.0" y="320.0" width="146.0" height="84.0" rx="4" fill="#d6ebe8"/>
+<text x="356.0" y="339.0" font-size="11" font-weight="600" fill="#1d2a2e">Практика в</text><text x="356.0" y="353.0" font-size="11" font-weight="600" fill="#1d2a2e">спецификациях,</text><text x="356.0" y="367.0" font-size="11" font-weight="600" fill="#1d2a2e">положениях и</text><text x="356.0" y="381.0" font-size="11" font-weight="600" fill="#1d2a2e">отчётности: точка</text><text x="356.0" y="395.0" font-size="11" font-weight="600" fill="#1d2a2e">невозврата</text>
+<text x="352.0" y="421.0" font-size="10.5" font-style="italic" fill="#5b6b73">исход внедрения:</text><text x="352.0" y="434.0" font-size="10.5" font-style="italic" fill="#5b6b73">институционализация</text>
+<rect x="510.0" y="64.0" width="158.0" height="391.0" rx="6" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
+<text x="518.0" y="84.0" font-size="12.5" font-weight="600" fill="#1f6f6a">Масштабирование</text><text x="518.0" y="100.0" font-size="12.5" font-weight="600" fill="#1f6f6a">и закрепление</text>
+<circle cx="521.0" cy="118.0" r="2.5" fill="#1f6f6a"/>
+<text x="528.0" y="121.0" font-size="11" fill="#1d2a2e">Решение о всей</text><text x="528.0" y="135.0" font-size="11" fill="#1d2a2e">организации — по</text><text x="528.0" y="149.0" font-size="11" fill="#1d2a2e">данным трёх</text><text x="528.0" y="163.0" font-size="11" fill="#1d2a2e">кварталов</text>
+<circle cx="521.0" cy="178.0" r="2.5" fill="#1f6f6a"/>
+<text x="528.0" y="181.0" font-size="11" fill="#1d2a2e">Положение о питании</text><text x="528.0" y="195.0" font-size="11" fill="#1d2a2e">обновлено целиком</text>
+<circle cx="521.0" cy="210.0" r="2.5" fill="#1f6f6a"/>
+<text x="528.0" y="213.0" font-size="11" fill="#1d2a2e">Годовой отчёт</text><text x="528.0" y="227.0" font-size="11" fill="#1d2a2e">учредителю</text>
+<circle cx="521.0" cy="242.0" r="2.5" fill="#1f6f6a"/>
+<text x="528.0" y="245.0" font-size="11" fill="#1d2a2e">Обмен опытом:</text><text x="528.0" y="259.0" font-size="11" fill="#1d2a2e">площадка, семинар,</text><text x="528.0" y="273.0" font-size="11" fill="#1d2a2e">публикация</text>
+<rect x="516.0" y="320.0" width="146.0" height="84.0" rx="4" fill="#d6ebe8"/>
+<text x="522.0" y="339.0" font-size="11" font-weight="600" fill="#1d2a2e">Вариативность —</text><text x="522.0" y="353.0" font-size="11" font-weight="600" fill="#1d2a2e">норма дома:</text><text x="522.0" y="367.0" font-size="11" font-weight="600" fill="#1d2a2e">документированная,</text><text x="522.0" y="381.0" font-size="11" font-weight="600" fill="#1d2a2e">измеренная,</text><text x="522.0" y="395.0" font-size="11" font-weight="600" fill="#1d2a2e">защищённая</text>
+<text x="518.0" y="421.0" font-size="10.5" font-style="italic" fill="#5b6b73">исход внедрения:</text><text x="518.0" y="434.0" font-size="10.5" font-style="italic" fill="#5b6b73">устойчивость</text>
+<text x="12.0" y="477.0" font-size="11.5" font-weight="600" fill="#1f6f6a">Каждый квартал ценен сам по себе: если дом остановится после любого из них, у него</text><text x="12.0" y="492.0" font-size="11.5" font-weight="600" fill="#1f6f6a">останется работающий результат — документ и число.</text>
+<text x="12.0" y="525.0" font-size="12" font-weight="600" fill="#5b6b73">Три типовых сбоя и их профилактика (раздел 36.6)</text>
+<rect x="12.0" y="535.0" width="212.0" height="93.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/><text x="22.0" y="554.6" font-size="12" font-weight="600" fill="#1d2a2e">«Пилот застрял»</text><text x="22.0" y="573.8" font-size="11" fill="#1d2a2e">Дата решения записывается в</text><text x="22.0" y="587.8" font-size="11" fill="#1d2a2e">приказ о пилоте в день его</text><text x="22.0" y="601.8" font-size="11" fill="#1d2a2e">подписания</text>
+<rect x="234.0" y="535.0" width="212.0" height="93.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/><text x="244.0" y="554.6" font-size="12" font-weight="600" fill="#1d2a2e">«Ключевой человек ушёл»</text><text x="244.0" y="573.8" font-size="11" fill="#1d2a2e">Комплект документов и</text><text x="244.0" y="587.8" font-size="11" fill="#1d2a2e">ротация участников: практика</text><text x="244.0" y="601.8" font-size="11" fill="#1d2a2e">переживает людей</text>
+<rect x="456.0" y="535.0" width="212.0" height="93.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/><text x="466.0" y="554.6" font-size="12" font-weight="600" fill="#1d2a2e">«Учредитель молчит»</text><text x="466.0" y="573.8" font-size="11" fill="#1d2a2e">Просить конкретику —</text><text x="466.0" y="587.8" font-size="11" fill="#1d2a2e">документы, форму отчёта, дату</text><text x="466.0" y="601.8" font-size="11" fill="#1d2a2e">заслушивания — до</text><text x="466.0" y="615.8" font-size="11" fill="#1d2a2e">масштабирования</text>
+<text x="12.0" y="658.0" font-size="12" font-weight="600" fill="#5b6b73">При нехватке ресурсов — другой маршрут к той же цели: отличается темп, а не направление (раздел 36.7)</text>
+<rect x="12.0" y="668.0" width="212.0" height="109.0" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="4 3"/><text x="22.0" y="687.6" font-size="12" font-weight="600" fill="#1d2a2e">Нет второй гастроёмкости</text><text x="22.0" y="706.8" font-size="11" fill="#1d2a2e">Год на предзаказе и буфете;</text><text x="22.0" y="720.8" font-size="11" fill="#1d2a2e">реконструкция — отдельной</text><text x="22.0" y="734.8" font-size="11" fill="#1d2a2e">повесткой</text>
+<rect x="234.0" y="668.0" width="212.0" height="109.0" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="4 3"/><text x="244.0" y="687.6" font-size="12" font-weight="600" fill="#1d2a2e">Нет ставок на помощь при</text><text x="244.0" y="703.6" font-size="12" font-weight="600" fill="#1d2a2e">еде</text><text x="244.0" y="722.8" font-size="11" fill="#1d2a2e">Самостоятельность жителей,</text><text x="244.0" y="736.8" font-size="11" fill="#1d2a2e">приоритет группы риска,</text><text x="244.0" y="750.8" font-size="11" fill="#1d2a2e">трудозатраты — в запросы</text><text x="244.0" y="764.8" font-size="11" fill="#1d2a2e">учредителю</text>
+<rect x="456.0" y="668.0" width="212.0" height="109.0" rx="6" fill="#ffffff" stroke="#5b6b73" stroke-width="1.5" stroke-dasharray="4 3"/><text x="466.0" y="687.6" font-size="12" font-weight="600" fill="#1d2a2e">Учредитель против</text><text x="466.0" y="706.8" font-size="11" fill="#1d2a2e">Замеры и документы без</text><text x="466.0" y="720.8" font-size="11" fill="#1d2a2e">изменений на линии — база для</text><text x="466.0" y="734.8" font-size="11" fill="#1d2a2e">следующих переговоров</text>
+<text x="12.0" y="796.0" font-size="11" font-style="italic" fill="#5b6b73">Сроки — ориентир для дома среднего размера; карта — рекомендация, а не норматив (раздел 41).</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 583" font-family="Inter, 'DejaVu Sans', sans-serif" role="img" aria-label="Четыре класса утверждений доклада: норма, толкование, рекомендация, проект локальной формы — с определением и примером; правило: класс при пересказе не повышается; четыре категории доступности источников">
+<title>Четыре класса утверждений доклада: норма, толкование, рекомендация, проект локальной формы — с определением и примером; правило: класс при пересказе не повышается; четыре категории доступности источников</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2a2e"/></marker></defs>
+<rect x="0" y="0" width="680" height="583" fill="#ffffff"/>
+<text x="62.0" y="22.0" font-size="11" font-weight="600" fill="#5b6b73">Класс</text>
+<text x="220.0" y="22.0" font-size="11" font-weight="600" fill="#5b6b73">Что это</text>
+<text x="442.0" y="22.0" font-size="11" font-weight="600" fill="#5b6b73">Пример из доклада</text>
+<rect x="52.0" y="30.0" width="616.0" height="62.0" rx="6" fill="#e6eaec" stroke="#1d2a2e" stroke-width="1.5"/>
+<rect x="52.0" y="30.0" width="150.0" height="62.0" rx="6" fill="#1d2a2e"/>
+<text x="62.0" y="65.5" font-size="13" font-weight="700" fill="#ffffff">Норма</text>
+<text x="220.0" y="57.0" font-size="11.5" fill="#1d2a2e">Прямое требование</text><text x="220.0" y="72.0" font-size="11.5" fill="#1d2a2e">действующего акта</text>
+<text x="442.0" y="50.0" font-size="11" fill="#1d2a2e">СанПиН 2.3/2.4.4282-26, п. 56: питание</text><text x="442.0" y="64.0" font-size="11" fill="#1d2a2e">не менее трёх раз в день, суточные</text><text x="442.0" y="78.0" font-size="11" fill="#1d2a2e">пробы (раздел 32.2)</text>
+<rect x="52.0" y="98.0" width="616.0" height="76.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
+<rect x="52.0" y="98.0" width="150.0" height="76.0" rx="6" fill="#1f6f6a"/>
+<text x="62.0" y="140.5" font-size="13" font-weight="700" fill="#ffffff">Толкование</text>
+<text x="220.0" y="132.0" font-size="11.5" fill="#1d2a2e">Вывод из нормы или из сочетания</text><text x="220.0" y="147.0" font-size="11.5" fill="#1d2a2e">норм</text>
+<text x="442.0" y="118.0" font-size="11" fill="#1d2a2e">Обязанность предложить</text><text x="442.0" y="132.0" font-size="11" fill="#1d2a2e">альтернативу при отказе выводится из</text><text x="442.0" y="146.0" font-size="11" fill="#1d2a2e">ст. 5, 37 и 43 закона № 3185-1</text><text x="442.0" y="160.0" font-size="11" fill="#1d2a2e">(разделы 17, 32.3)</text>
+<rect x="52.0" y="180.0" width="616.0" height="76.0" rx="6" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<rect x="52.0" y="180.0" width="150.0" height="76.0" rx="6" fill="#c08a2d"/>
+<text x="62.0" y="222.5" font-size="13" font-weight="700" fill="#ffffff">Рекомендация</text>
+<text x="220.0" y="206.5" font-size="11.5" fill="#1d2a2e">Предложение автора, основанное</text><text x="220.0" y="221.5" font-size="11.5" fill="#1d2a2e">на данных или опыте;</text><text x="220.0" y="236.5" font-size="11.5" fill="#1d2a2e">зарубежный перенос — ориентир</text>
+<text x="442.0" y="200.0" font-size="11" fill="#1d2a2e">Пилот на 90 дней; ориентир Онтарио</text><text x="442.0" y="214.0" font-size="11" fill="#1d2a2e">«не более двух полностью кормимых</text><text x="442.0" y="228.0" font-size="11" fill="#1d2a2e">на одного помогающего»</text><text x="442.0" y="242.0" font-size="11" fill="#1d2a2e">(разделы 20.3, 35)</text>
+<rect x="52.0" y="262.0" width="616.0" height="71.0" rx="6" fill="#f3f5f6" stroke="#5b6b73" stroke-width="1.5"/>
+<rect x="52.0" y="262.0" width="150.0" height="71.0" rx="6" fill="#5b6b73"/>
+<text x="62.0" y="285.0" font-size="13" font-weight="700" fill="#ffffff">Проект</text><text x="62.0" y="302.0" font-size="13" font-weight="700" fill="#ffffff">локальной</text><text x="62.0" y="319.0" font-size="13" font-weight="700" fill="#ffffff">формы</text>
+<text x="220.0" y="286.0" font-size="11.5" fill="#1d2a2e">Образец документа: дом может</text><text x="220.0" y="301.0" font-size="11.5" fill="#1d2a2e">принять, но не обязан;</text><text x="220.0" y="316.0" font-size="11.5" fill="#1d2a2e">адаптирует и утверждает сам</text>
+<text x="442.0" y="293.5" font-size="11" fill="#1d2a2e">Приложения 1–45, например матрица</text><text x="442.0" y="307.5" font-size="11" fill="#1d2a2e">ролей (приложение 17)</text>
+<line x1="26.0" y1="34.0" x2="26.0" y2="329.0" stroke="#1d2a2e" stroke-width="1.5" marker-end="url(#ar)"/>
+<text transform="translate(42.0,181.5) rotate(-90)" font-size="11" fill="#5b6b73" text-anchor="middle">от требования акта к образцу документа</text>
+<rect x="12.0" y="347.0" width="656.0" height="68.0" rx="6" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/><text x="22.0" y="367.4" font-size="13" font-weight="600" fill="#a63d32">Класс не повышается при пересказе</text><text x="22.0" y="387.2" font-size="11.5" fill="#1d2a2e">Толкование не становится нормой оттого, что повторено несколько раз, а зарубежное число не</text><text x="22.0" y="402.2" font-size="11.5" fill="#1d2a2e">становится российским фактом без оговорки о переносимости.</text>
+<text x="12.0" y="443.0" font-size="12" font-weight="600" fill="#5b6b73">Четыре категории доступности источника — не смешивать под словом «верифицировано» (раздел 41.2)</text>
+<rect x="12.0" y="453.0" width="324.0" height="30.0" rx="15" fill="#ffffff" stroke="#5b6b73" stroke-width="1"/>
+<text x="174.0" y="472.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#1d2a2e">публичный первоисточник</text>
+<rect x="344.0" y="453.0" width="324.0" height="30.0" rx="15" fill="#ffffff" stroke="#5b6b73" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="506.0" y="472.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#1d2a2e">внутренний документ</text>
+<rect x="12.0" y="491.0" width="324.0" height="30.0" rx="15" fill="#ffffff" stroke="#5b6b73" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="174.0" y="510.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#1d2a2e">вторичная публикация</text>
+<rect x="344.0" y="491.0" width="324.0" height="30.0" rx="15" fill="#ffffff" stroke="#5b6b73" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="506.0" y="510.0" font-size="11.5" font-weight="600" text-anchor="middle" fill="#1d2a2e">требует перепроверки</text>
+<text x="12.0" y="544.0" font-size="11" font-style="italic" fill="#5b6b73">Для сравнения: по шкале приказа Минздрава № 103н основания вариативного меню в лучшем случае</text><text x="12.0" y="558.0" font-size="11" font-style="italic" fill="#5b6b73">соответствуют уровням достоверности 3–5 — это оценка автора, а не формальная процедура: доклад — не</text><text x="12.0" y="572.0" font-size="11" font-style="italic" fill="#5b6b73">клиническая рекомендация.</text>
+</svg>

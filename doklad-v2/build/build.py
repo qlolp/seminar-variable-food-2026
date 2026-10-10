@@ -181,6 +181,7 @@ def main():
         render(md, os.path.join(DOC, 'Не_просто_накормить_v2.pdf'), 'full', 'Не просто накормить. Вторая редакция')
     else:
         md = read(os.path.join(DOC, 'kratkaya-versiya.md'))
+        md = re.sub(r'\A\s*# [^\n]*Краткая версия[^\n]*\n', '', md)
         md = number_refs(md, order)
         md += '\n' + bibliography(order, bib, 'Источники',
                                   'Нумерация — по первому упоминанию в этой версии. Полный список литературы — раздел 44 полного тома.', False)

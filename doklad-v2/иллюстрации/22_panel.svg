@@ -177,9 +177,9 @@
 <rect x="12.0" y="752.0" width="14.0" height="14.0" rx="3" fill="#ffffff" stroke="#1f6f6a" stroke-width="1.5"/>
 <text x="32.0" y="763.5" font-size="11" fill="#1d2a2e">строки дома</text>
 <rect x="122.8" y="752.0" width="14.0" height="14.0" rx="3" fill="#f4dcd8" stroke="#a63d32" stroke-width="1.5"/>
-<text x="142.8" y="763.5" font-size="11" fill="#1d2a2e">строки 6–8 клинические: подписывает врач</text>
-<rect x="416.8" y="752.0" width="14.0" height="14.0" rx="3" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
-<text x="436.8" y="763.5" font-size="11" fill="#1d2a2e">индикатор срыва выбора</text>
+<text x="142.8" y="763.5" font-size="11" fill="#1d2a2e">строки 6–8 клинические: оценку даёт врач</text>
+<rect x="412.1" y="752.0" width="14.0" height="14.0" rx="3" fill="#f5e9d2" stroke="#c08a2d" stroke-width="1.5"/>
+<text x="432.1" y="763.5" font-size="11" fill="#1d2a2e">индикатор срыва выбора</text>
 <rect x="12.0" y="778.0" width="656.0" height="96.0" rx="6" fill="#d6ebe8" stroke="#1f6f6a" stroke-width="1.5"/>
 <text x="24.0" y="800.0" font-size="13" font-weight="600" fill="#1d2a2e">Три вывода квартала и что меняем</text>
 <text x="656.0" y="800.0" font-size="11" text-anchor="end" fill="#5b6b73">без этого плана панель — отчёт, а не инструмент</text>
