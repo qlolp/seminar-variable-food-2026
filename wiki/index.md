@@ -67,7 +67,7 @@ confidence: high
 
 - [[wiki/sources/ne-prosto-nakormit]] — [Не просто накормить](sources/ne-prosto-nakormit.md) — канон первого ingest
 - [[wiki/sources/variativnoe-menu-doklad-2026-v2]] — [Доклад v2](sources/variativnoe-menu-doklad-2026-v2.md) — вторая редакция обзора 05.10.2026 (черновик; дополнение 07.10.2026); 47 противоречий; прил. 47–48а
-- [[wiki/sources/samara-variativnoe-menu-zakupki]] — [Закупки Самарской обл.](sources/samara-variativnoe-menu-zakupki.md) — 8 извещений 6 домов по 44-ФЗ «приготовление питания по вариативному меню» (2025–2027); ТЗ не прочитаны
+- [[wiki/sources/samara-variativnoe-menu-zakupki]] — [Закупки Самарской обл.](sources/samara-variativnoe-menu-zakupki.md) — 7 учреждений с «по вариативному меню» в предмете (+ Сызрань — в имени файла меню) по 44-ФЗ (2025–2027); ТЗ не прочитаны; дополнено 13.10.2026
 - [[wiki/sources/gossektor-obzor-2026-09-28-10-09]] — [Обзор госсектора 28.09–09.10](sources/gossektor-obzor-2026-09-28-10-09.md) — период тихий; НСО (СМИ: «вариативное меню», «шведский стол»); Волгоград — офсетный контракт региона на соцпитание, выбор только намерение оператора
 - [[wiki/sources/vs-303-es25-15393]] — [Определения ВС 303-ЭС25-15393](sources/vs-303-es25-15393.md) — отказ 28.01.2026 без мотивировки; «окончательной точки» и «источника денег» в тексте нет
 - [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](sources/variativnoe-menu-npa-2026.md) — правовой обзор 16.07/29.08 (первая редакция); 8 субъектов; автор на титуле не назван
