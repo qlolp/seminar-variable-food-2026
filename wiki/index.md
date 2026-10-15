@@ -3,7 +3,7 @@ title: Каталог wiki
 type: index
 tags: [index]
 sources: []
-updated: 2026-10-14
+updated: 2026-10-15
 confidence: high
 ---
 
@@ -45,6 +45,7 @@ confidence: high
 - [[wiki/entities/uspenskiy-pni]] — [Успенский ПНИ](entities/uspenskiy-pni.md) — М2 в 2024; «шведский стол» 2025–2026 (М3); первый по дате
 - [[wiki/entities/bolotninskiy-pni]] — [Болотнинский ПНИ](entities/bolotninskiy-pni.md) — М1, несколько раз в неделю, диетсестра; не первый в России
 - [[wiki/entities/ust-ilimskaya]] — [Усть-Илимск](entities/ust-ilimskaya.md) — поэтапный старт с опроса; бывший дом-интернат, не ПНИ
+- [[wiki/entities/pansionat-veteran]] — [Пансионат «Ветеран»](entities/pansionat-veteran.md) — Красноярский край; с сентября 2026 каша, сок, суп из двух для жителей без диеты; М1; самоотчёт; своя кухня (толкование)
 - [[wiki/entities/irkutskaya-oblast]] — [Иркутская область](entities/irkutskaya-oblast.md) — запуск 2025 подтверждён министром; формат — вторичка; не «вся область»
 - [[wiki/entities/ddsol]] — [ДДСОЛ](entities/ddsol.md) — персонализация; 19РВ-32 — нормы ПНИ МО, не «мостик»
 - [[wiki/entities/chistyakov-evgeny]] — [Чистяков Е. В.](entities/chistyakov-evgeny.md) — автор доклада, директор Серафимовского
@@ -70,6 +71,7 @@ confidence: high
 - [[wiki/sources/samara-variativnoe-menu-zakupki]] — [Закупки Самарской обл.](sources/samara-variativnoe-menu-zakupki.md) — 8 учреждений (14.10.2026; контракт № 101-26) с «по вариативному меню» в предмете (+ Сызрань — в имени файла меню) по 44-ФЗ (2025–2027); ТЗ не прочитаны; дополнено 13.10.2026
 - [[wiki/sources/gossektor-obzor-2026-09-28-10-09]] — [Обзор госсектора 28.09–09.10](sources/gossektor-obzor-2026-09-28-10-09.md) — период тихий; НСО (СМИ: «вариативное меню», «шведский стол»); Волгоград — офсетный контракт региона на соцпитание, выбор только намерение оператора
 - [[wiki/sources/gossektor-obzor-2026-10-14]] — [Проверка 14.10.2026](sources/gossektor-obzor-2026-10-14.md) — Нижегородская обл. (семинар «Вариативное питание»), Кузбасс («вариативное» в отчёте при проверке, по СМИ), ЕАО (ст. 6.3 за несоответствие меню перспективному)
+- [[wiki/sources/gossektor-obzor-2026-10-15]] — [Проверка 15.10.2026](sources/gossektor-obzor-2026-10-15.md) — пансионат «Ветеран» (Красноярский край, выбор с сентября 2026); ЛО приказ № 04-87 (взрослые нормы не тронуты)
 - [[wiki/sources/spb-normativy-socpitanie-2025-43-r]] — [Нормативы соцпитания СПб 2025 (43-р)](sources/spb-normativy-socpitanie-2025-43-r.md) — бюджетный норматив ниже тарифа на 48–55 руб.; 2026–2027 не найдены
 - [[wiki/sources/vs-303-es25-15393]] — [Определения ВС 303-ЭС25-15393](sources/vs-303-es25-15393.md) — отказ 28.01.2026 без мотивировки; «окончательной точки» и «источника денег» в тексте нет
 - [[wiki/sources/variativnoe-menu-npa-2026]] — [НПА и регионы](sources/variativnoe-menu-npa-2026.md) — правовой обзор 16.07/29.08 (первая редакция); 8 субъектов; автор на титуле не назван
