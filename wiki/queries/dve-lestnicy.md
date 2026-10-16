@@ -7,7 +7,8 @@ sources:
   - raw/sources/ne-prosto-nakormit/seminar-paket/12_форма_ступени.md
   - raw/sources/ne-prosto-nakormit/seminar-paket/08_раздатка.md
   - raw/sources/variativnoe-menu-npa-2026/Вариативное_меню_НПА_и_регионы_доклад.pdf
-updated: 2026-09-13
+  - raw/sources/variativnoe-menu-doklad-2026-v2/doklad.md
+updated: 2026-10-06
 confidence: high
 ---
 
@@ -23,6 +24,8 @@ confidence: high
 
 [Раздатка 08](../../raw/sources/ne-prosto-nakormit/seminar-paket/08_раздатка.md) формулирует **участие** другими словами. Путаница пакета известна; не чинить её склеиванием нумерации.
 
-Третья шкала — не наша: правовой обзор НПА § 4.2 даёт пять моделей (двухвариантное / заказ / шведский стол / смешанная / событийная). Академический слой чинил «11 ступеней». Ни одна не подменяет М0–М5.
+**Закрыто в v2, п. 1.4 (гл. 9 п. 41).** М1 описывает кухню, ступень 1 — жителя; одно не выводится из другого. Примеры: два вторых, житель получил названное — М1 / ступень 2; вариант Б кончился к концу раздачи — М1 / ступень 1 для стоявших в конце; милосердию везут только А «потому что проще» — М1 / ступень 0; анкета раз в год при одном меню — М0 / ступень 1. Правило отчёта (рекомендация): по каждому отделению обе цифры через косую черту; одна цифра без названия лестницы не пишется. Противоречие в пакете остаётся историей, а не открытым вопросом.
 
-Страницы: [[wiki/concepts/lestnica-modelej]] — [модели](../concepts/lestnica-modelej.md); [[wiki/concepts/lestnica-uchastiya]] — [участие](../concepts/lestnica-uchastiya.md); [[wiki/gaps]] — [gaps](../gaps.md) п. 1 и 8. Сырьё: [`08_lestnica.md`](../../raw/sources/ne-prosto-nakormit/doklad/главы/08_lestnica.md).
+Третья шкала — не наша: правовой обзор НПА § 4.2 даёт пять моделей (двухвариантное / заказ / шведский стол / смешанная / событийная). Академический слой чинил «11 ступеней». Ни одна не подменяет М0–М5. v2 держит три шкалы раздельно и ставит каждый дом в одну клетку: Болотнинский — М1 / «смешанная».
+
+Страницы: [[wiki/concepts/lestnica-modelej]] — [модели](../concepts/lestnica-modelej.md); [[wiki/concepts/lestnica-uchastiya]] — [участие](../concepts/lestnica-uchastiya.md); [[wiki/gaps]] — [gaps](../gaps.md) п. 1 и 8. Сырьё: [`08_lestnica.md`](../../raw/sources/ne-prosto-nakormit/doklad/главы/08_lestnica.md); v2 — [`doklad.md`](../../raw/sources/variativnoe-menu-doklad-2026-v2/doklad.md), п. 1.4.
