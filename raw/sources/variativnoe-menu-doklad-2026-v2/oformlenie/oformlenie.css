@@ -1,0 +1,81 @@
+/* Оформление доклада v2: только вёрстка, текст не изменяется */
+:root { --acc:#0e5a6b; --acc2:#c7682b; --ink:#1b1f24; --mute:#5b6570; --soft:#eef5f6; }
+@page { size: A4; margin: 24mm 20mm 22mm 24mm;
+  @top-left { width: 30%; white-space: nowrap; content: "Вариативное меню · доклад"; font: 7.5pt "Golos Text"; color: var(--mute); vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #c9d3d6; }
+  @top-right { width: 70%; text-align: right; content: string(chap); font: 600 7.5pt "Golos Text"; color: var(--acc); vertical-align: bottom; padding-bottom: 3mm; border-bottom: .4pt solid #c9d3d6; }
+  @bottom-right { content: counter(page); font: 600 8.5pt "Golos Text"; color: var(--acc); }
+  @bottom-left { content: "Аналитический доклад · вторая редакция · 2026"; font: 7pt "Golos Text"; color: var(--mute); }
+}
+@page :first { margin: 0; @top-left{content:none} @top-right{content:none} @bottom-right{content:none} @bottom-left{content:none} }
+@page toc { @top-right { content: "Содержание"; } }
+html { font-family: "Literata", "Noto Serif", serif; font-size: 10pt; line-height: 1.5; color: var(--ink); hyphens: auto; }
+body { text-align: justify; margin: 0; }
+p { margin: 0 0 2.4mm; orphans: 3; widows: 3; text-indent: 0; }
+a { color: var(--acc); text-decoration: none; word-break: break-word; }
+
+/* Титульный лист */
+header#title-block-header { page: first; height: 297mm; box-sizing: border-box; margin: 0; padding: 0 22mm 0 24mm; position: relative; text-align: left; page-break-after: always;
+  background: linear-gradient(to bottom, var(--acc) 0, var(--acc) 118mm, #fff 118mm); color: #fff; hyphens: manual; }
+header#title-block-header::before { content: "АНАЛИТИЧЕСКИЙ ДОКЛАД · 2026"; display: block; padding-top: 30mm; font: 600 9pt "Golos Text"; letter-spacing: .18em; color: #bfe3e8; }
+header h1.title { font: 700 25pt/1.18 "Golos Text"; color: #fff; margin: 8mm 0 6mm; text-align: left; border: 0; padding: 0; page-break-before: avoid; string-set: none; }
+header p.subtitle { font: 400 12pt/1.4 "Golos Text"; color: #e3f1f3; margin: 0; text-align: left; max-width: 150mm; }
+header p.author { position: absolute; top: 140mm; left: 24mm; right: 22mm; font: 500 12pt "Golos Text"; color: var(--ink); text-align: left; border-left: 3pt solid var(--acc2); padding-left: 4mm; margin: 0; }
+header p.date { position: absolute; bottom: 24mm; left: 24mm; font: 10pt "Golos Text"; color: var(--mute); margin: 0; text-align: left; }
+
+/* Содержание */
+nav#TOC { page: toc; page-break-after: always; }
+nav#TOC::before { content: "Содержание"; display: block; font: 700 20pt "Golos Text"; color: var(--acc); margin-bottom: 6mm; padding-bottom: 2mm; border-bottom: 1.5pt solid var(--acc); }
+nav#TOC ul { list-style: none; padding-left: 6mm; margin: 0; }
+nav#TOC > ul { padding-left: 0; }
+nav#TOC > ul > li { margin-top: 2.2mm; font: 600 9.5pt "Golos Text"; }
+nav#TOC > ul > li > ul > li { font: 400 9pt "Literata"; margin: .6mm 0; }
+nav#TOC a { color: var(--ink); }
+nav#TOC a::after { content: leader(dotted) target-counter(attr(href), page); color: var(--acc); }
+nav#TOC ul ul ul { display: none; }
+nav#TOC .toc-section-number { color: var(--acc); margin-right: 2mm; }
+
+/* Заголовки */
+h1, h2, h3, h4 { font-family: "Golos Text", sans-serif; text-align: left; hyphens: manual; page-break-after: avoid; }
+h1 { font-size: 19pt; font-weight: 700; color: var(--acc); page-break-before: always; margin: 0 0 7mm; padding-bottom: 3mm; border-bottom: 1.5pt solid var(--acc); }
+h1:not(.title) { string-set: chap content(text); }
+h1 .header-section-number { display: inline-block; color: #fff; background: var(--acc); border-radius: 2mm; padding: 0 2.5mm; margin-right: 3mm; }
+h2 { font-size: 13pt; font-weight: 600; color: var(--ink); margin: 8mm 0 3mm; }
+h2 .header-section-number, h3 .header-section-number { color: var(--acc); margin-right: 2mm; }
+h3 { font-size: 11pt; font-weight: 600; color: #2f3a44; margin: 6mm 0 2mm; }
+h4 { font-size: 10pt; font-weight: 600; margin: 4mm 0 1.5mm; }
+
+/* Таблицы */
+table { border-collapse: collapse; width: 100%; font: 8.4pt/1.35 "IBM Plex Sans", "Golos Text", sans-serif; margin: 3mm 0 5mm; text-align: left; page-break-inside: auto; hyphens: auto; }
+thead { display: table-header-group; }
+th { background: var(--acc); color: #fff; font-weight: 600; padding: 1.8mm 2mm; border: 0; vertical-align: bottom; }
+td { padding: 1.5mm 2mm; border: 0; border-bottom: .4pt solid #d5dde0; vertical-align: top; }
+tbody tr:nth-child(even) td { background: #f2f7f8; }
+tr { page-break-inside: avoid; }
+td p, th p, li p { text-indent: 0; }
+table.classes-table td:first-child { width: 26mm; }
+.badge { display: inline-block; border-radius: 1.5mm; padding: .3mm 2mm; color: #fff; font-family: "Golos Text"; }
+.b-norma { background: #0e5a6b; } .b-tolk { background: #6b4fa0; } .b-rek { background: #c7682b; } .b-lok { background: #5a7d2a; }
+
+/* Блоки */
+.callout { margin: 4mm 0 5mm; padding: 3.5mm 4.5mm 1.5mm; border-radius: 1.5mm; page-break-inside: auto; }
+.callout p { text-indent: 0; }
+.box-label p { font: 700 8pt "Golos Text"; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1.5mm; }
+.conclusions { background: var(--soft); border-left: 3pt solid var(--acc); }
+.conclusions::before { content: "Ключевые выводы"; display: block; font: 700 8pt "Golos Text"; letter-spacing: .12em; text-transform: uppercase; color: var(--acc); margin-bottom: 1.5mm; }
+.open-question { background: #fdf3ea; border-left: 3pt solid var(--acc2); }
+.open-question .box-label p { color: var(--acc2); }
+.claim-classes { background: #f4f1fa; border-left: 3pt solid #6b4fa0; font-size: 9.3pt; }
+.caveat { background: #f5f6f7; border-left: 3pt solid #8a949c; font-size: 9.5pt; }
+.exec-summary { page-break-after: auto; background: #fff; border: 1.2pt solid var(--acc); border-top: 5pt solid var(--acc); padding: 5mm 6mm 2mm; margin-top: 0; }
+.exec-summary .box-label p { color: var(--acc); font-size: 11pt; letter-spacing: .06em; }
+.exec-summary ol { padding-left: 6mm; margin: 0 0 3mm; }
+.exec-summary li { font: 500 9.6pt/1.45 "Golos Text"; margin-bottom: 2mm; }
+.exec-summary li::marker { color: var(--acc); font-weight: 700; }
+.exec-summary em { font-size: 8.5pt; color: var(--mute); }
+
+ol, ul { margin: 0 0 2.5mm; padding-left: 6mm; }
+li { margin-bottom: 1mm; text-align: left; }
+li::marker { color: var(--acc); }
+strong { font-weight: 600; }
+blockquote { margin: 3mm 0; padding: 1mm 4mm; border-left: 2pt solid #c9d3d6; color: #333; }
+code { font: 8.5pt "IBM Plex Mono"; }
