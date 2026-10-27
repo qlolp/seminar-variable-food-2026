@@ -1,0 +1,70 @@
+Источник: HSC Public Health Agency (PHA), Northern Ireland. Nutrition guidelines and menu checklist for care homes. 94 p. (PDF создан 03.04.2026; файл размещён в каталоге сайта 2026-05; о выпуске PHA сообщило 26.06.2026: https://www.publichealth.hscni.net/news/new-nutrition-guidelines-care-homes).
+URL PDF: https://www.publichealth.hscni.net/sites/default/files/2026-05/Nutrition%20guidelines%20and%20menu%20checklist%20for%20care%20homes.pdf
+Страница публикации: https://www.publichealth.hscni.net/publications/nutrition-guidelines-and-menu-checklist-care-homes
+Дата обращения: 20.10.2026. Оригинал — ni-pha-nutrition-guidelines-care-homes-2026.pdf (SHA-256 в README).
+Предисловие подписали: руководители PHA и RQIA (регулятор и инспекция учреждений Северной Ирландии), главный сестринский специалист и главный специалист по смежным медицинским профессиям Северной Ирландии (имена опущены).
+Класс: рекомендация (руководство агентства общественного здравоохранения; не регламент).
+Выдержки (pdftotext -layout; без правки текста):
+
+--- Menu structure (печатная с. 61; с. 62 PDF) ---
+Engagement with residents, families and loved ones
+•   Residents, families and loved ones should be involved in menu planning, including available
+    choices for foods, drinks and snacks.
+•   Residents, families and loved ones should have an opportunity to provide feedback on issues
+    such as choice, quality and quantity of foods, drinks and snacks.
+
+Menu structure
+•   Menus should be rotated over a three-week cycle and revised at least six-monthly, taking
+    into account feedback, as well as seasonal availability and sustainability to promote cost
+    effectiveness.
+•   Display the daily menu in a suitable format (including pictorial where necessary) and in an
+    appropriate location.
+•   Alternative options should be available on request.
+•   Communicate and record any variations to the menu.
+•   Keep records of menus and any variations for inspection purposes.
+•   Three regular meals and some snacks should be served every day at regular intervals; no more
+    than five hours between each meal.
+•   Portion sizes should be adjusted in line with individual circumstances and extra servings should
+    be available.
+•   The interval between the evening snack and breakfast being available should not be more than
+    12 hours.
+•   Food and drinks should be available 24 hours per day to allow for flexibility and individual
+    circumstances.
+•   If appropriate, and following risk assessment, food and drink should be visible and accessible to
+
+--- Menu choice (печатная с. 62; с. 63 PDF) ---
+Menu choice
+•   Menus should offer a minimum of two choices at each meal including a hot meal choice.
+•   The two main meals of the day should have a minimum of two courses; ideally, this should
+    include a main course and dessert. If offering two desserts, one should be a fruit-based option.
+•   Provide menus for special occasions such as celebrations or birthdays.
+•   Make residents aware of the next mealtime choices in sufficient time to allow for an alternative to
+    be prepared if necessary.
+•   Structure snack times so that they are coordinated with the drink service and with activities.
+•   Offer snacks a minimum of twice per day with varied and rotated options.
+•   A range of hot and cold drink options should be available including bedtime drinks made with
+    whole milk (full fat) or non-dairy alternatives.
+
+
+
+--- Appendix 1: Menu checklist, начало (печатная с. 67; с. 68 PDF) ---
+Appendix 1: Menu checklist
+Menu choices – daily targets                Yes    No     Comments and recommendations*
+
+
+Menu planning and design
+3 regular meals daily
+
+
+
+
+The 2 main meals of the day should
+include a main course and dessert. If
+offering 2 desserts, one should be a
+fruit-based option
+
+A minimum of one main course cooked
+choice is offered at lunch or evening
+meal
+
+
