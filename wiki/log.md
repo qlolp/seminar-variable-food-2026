@@ -287,3 +287,21 @@ Append-only. Формат заголовка не менять: `## [YYYY-MM-DD]
 ## [2026-10-29] lint | check_wiki.py после ingest 29.10
 
 `python3 .github/check_wiki.py` — OK: каркас, frontmatter, wikilinks. Новая страница `sources/gossektor-obzor-2026-10-29.md` в каталоге. `raw/` чужих пакетов не менялся.
+
+## [2026-11-02] ingest | Башкортостан № 61-о и № 400-о; Алтайский край
+
+Ежедневная рутина по постоянному разрешению (07.10.2026). Окно — после проверки 29.10.
+
+Положено: `raw/sources/bashkortostan-normy-pitaniya-61-o-400-o-2026/` — README, `text.md`, отметка о неудачном повторном открытии cntd. В выписку вошли только названные 02.11.2026 позиции. Официальная публикация по cntd — npa.bashkortostan.ru; федеральный портал не сверен.
+
+Положено: `raw/sources/gossektor-obzor-2026-11-02/` — README, `text.md`, два PDF Пещерского дома, выдержки новостей aksp.ru и двух абзацев amic.ru. Именной очерк проживающего не копировался.
+
+Создано: `sources/bashkortostan-normy-pitaniya-61-o-400-o-2026.md`, `sources/gossektor-obzor-2026-11-02.md`, `entities/bashkortostan.md`. Обновлено: `overview.md`, `index.md`, `gaps.md` (п. 41 сужен, не закрыт; п. 44 не сужен; п. 64 и 65), `sources/variativnoe-menu-doklad-2026-v2.md`.
+
+Доклад v2: п. 3.14 (Башкортостан), прежние 3.14–3.18 стали 3.15–3.19; хроника 4.12 и сводная 4.13 (Алтай); прил. А поз. 32в; прил. В «02.11.2026»; источники [191]–[199]. 199 источников; `doklad.md` — 83,6 тыс. слов; PDF 244 с. Ключи ниже 191 не сдвигались.
+
+Не внесено: самарское извещение 0142200001326016688 (ЕИС не открылась, ТЗ не читалось). Не восстановлены неназванные строки ОВД Башкортостана. Раздел «Вариативное питание» Пещерского дома не открыт.
+
+## [2026-11-02] lint | check_wiki.py после ingest 02.11
+
+`python3 .github/check_wiki.py` — OK: каркас, frontmatter, wikilinks. Новые страницы `sources/bashkortostan-normy-pitaniya-61-o-400-o-2026.md`, `sources/gossektor-obzor-2026-11-02.md`, `entities/bashkortostan.md` в каталоге. `raw/` чужих пакетов не менялся.
