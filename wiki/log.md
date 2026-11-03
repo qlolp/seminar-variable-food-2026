@@ -302,6 +302,24 @@ Append-only. Формат заголовка не менять: `## [YYYY-MM-DD]
 
 Не внесено: самарское извещение 0142200001326016688 (ЕИС не открылась, ТЗ не читалось). Не восстановлены неназванные строки ОВД Башкортостана. Раздел «Вариативное питание» Пещерского дома не открыт.
 
+## [2026-11-03] ingest | Климковский план НОК; полный текст приказа Москвы № 228; реквизиты СПб № 57-р и № 42-р
+
+Ежедневная рутина по постоянному разрешению (07.10.2026). Окно — после проверки 02.11. Один черновик доклада, не второй.
+
+Положено: `raw/sources/gossektor-obzor-2026-11-03/` — план НОК КОГБУСО «Климковский дом-интернат» (PDF, README, text.md). Утверждён министром О. Ю. Шулятьевой, дата на бланке от руки 09.02.2026. Мероприятие — предложение вариативного меню, срок 31.10.2026, ответственный — директор, графы исполнения пусты. Не акт на 01.01.2027 и не Кировский дом. ФИО сотрудников учреждения не копировались.
+
+Положено: `raw/sources/moskva-prikaz-dtszn-228-2021-otmena-1068/` — полный текст приказа ДТСЗН от 22.03.2021 № 228 (13 с.). П. 4 признаёт утратившим силу приказ ДСЗН от 24.12.2014 № 1068. Класс — норма. О выборе молчит. Приложенный к проверке файл без xref не использовался; в пакет лёг полный файл по URL ВНМГЦ.
+
+Положено: `raw/sources/spb-normativy-socpitanie-2027-57-r/` и `raw/sources/spb-normativy-socpitanie-2026-42-r/` — только реквизиты. Тексты не прочитаны, суммы не установлены. Издатель в реквизитах — Комитет по госзаказу, не КЭПиСП.
+
+Создано: `sources/gossektor-obzor-2026-11-03.md`, `entities/klimkovskiy-dom-internat.md`, `sources/moskva-prikaz-dtszn-228-2021-otmena-1068.md`, `entities/moskva-dtszn-228.md`, `sources/spb-normativy-socpitanie-2027-57-r.md`, `sources/spb-normativy-socpitanie-2026-42-r.md`. Обновлено: `overview.md`, `index.md`, `gaps.md` (п. 57 сужен, не закрыт; п. 42 — формальная отмена № 1068 прочитана, листы № 115 остаются; п. 40 сдвинут реквизитами без цифр; п. 46 — путь к ТЗ найден, текст не прочитан; п. 44 не сужен), `concepts/lestnica-modelej.md`, поздний слой на страницах 22.10 и 23.10.
+
+Доклад v2: ключи [200]–[203]. Ключи ниже 200 не сдвигались. Самарские ТЗ в текст доклада не вносились. `doklad.md` — 85,2 тыс. слов; PDF 244 с.
+
 ## [2026-11-02] lint | check_wiki.py после ingest 02.11
 
 `python3 .github/check_wiki.py` — OK: каркас, frontmatter, wikilinks. Новые страницы `sources/bashkortostan-normy-pitaniya-61-o-400-o-2026.md`, `sources/gossektor-obzor-2026-11-02.md`, `entities/bashkortostan.md` в каталоге. `raw/` чужих пакетов не менялся.
+
+## [2026-11-03] lint | check_wiki.py после ingest 03.11
+
+`python3 .github/check_wiki.py` — OK: каркас, frontmatter, wikilinks. Новые страницы `sources/gossektor-obzor-2026-11-03.md`, `sources/moskva-prikaz-dtszn-228-2021-otmena-1068.md`, `sources/spb-normativy-socpitanie-2027-57-r.md`, `sources/spb-normativy-socpitanie-2026-42-r.md`, `entities/klimkovskiy-dom-internat.md`, `entities/moskva-dtszn-228.md` в каталоге. `raw/` чужих пакетов не менялся.
