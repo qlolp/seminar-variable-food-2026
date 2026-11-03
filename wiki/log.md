@@ -323,3 +323,7 @@ Append-only. Формат заголовка не менять: `## [YYYY-MM-DD]
 ## [2026-11-03] lint | check_wiki.py после ingest 03.11
 
 `python3 .github/check_wiki.py` — OK: каркас, frontmatter, wikilinks. Новые страницы `sources/gossektor-obzor-2026-11-03.md`, `sources/moskva-prikaz-dtszn-228-2021-otmena-1068.md`, `sources/spb-normativy-socpitanie-2027-57-r.md`, `sources/spb-normativy-socpitanie-2026-42-r.md`, `entities/klimkovskiy-dom-internat.md`, `entities/moskva-dtszn-228.md` в каталоге. `raw/` чужих пакетов не менялся.
+
+## [2026-11-03] ingest | Сверка исправленного PDF приказа № 228
+
+Исправленный файл (13 с., 134 140 байт) совпал с уже лежащим `prikaz-dtszn-228-2021.pdf`: SHA-256 `8b0f3f924e771934f21e9be1e49730e6f214becd5049172fefdb665f8d90911f`. Замена байтов не потребовалась, URL повторно не скачивался. П. 4 перечитан по этому файлу и совпал с выпиской: признать утратившим силу приказ ДСЗН Москвы от 24 декабря 2014 г. N 1068. Климковский план и реквизиты СПб № 57-р / № 42-р остаются в том же черновике.
