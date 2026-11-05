@@ -13,7 +13,7 @@ sources:
   - raw/sources/gossektor-obzor-2026-10-20/snapshots/samara-koshki-otradnyj-dopolnenie-2026-10-20.txt
   - raw/sources/gossektor-obzor-2026-10-20/snapshots/ni-pha-nutrition-guidelines-care-homes-2026.pdf
   - raw/sources/gossektor-obzor-2026-10-20/snapshots/ni-pha-nutrition-guidelines-care-homes-2026-vypiska.txt
-updated: 2026-10-20
+updated: 2026-11-05
 confidence: medium
 ---
 
@@ -44,6 +44,8 @@ confidence: medium
 ## Найдено, не внесено
 
 Письмо ООГ-450 (текста нет); нормы питания Сахалинской обл. (№ 1-3.11-57/26) и Кузбасса (№ 198) — тексты не прочитаны, вне окна; тарифы Ставропольского края; Мокшан (2025); школьное питание (Сургут); Госдума (июнь); Белорецк. Подробно — в `text.md`.
+
+**05.11.2026.** Приказ Кузбасса № 198 прочитан по графическому образу с сайта министерства: резолютивная часть, строки 38–40 и примечания. Запись этого дня о непрочитанном тексте остаётся как слой 20.10. Сахалин по-прежнему не прочитан. Источник: [№ 198](kuzbass-normy-pitaniya-198-2025.md).
 
 ## Недоступно (не обходили)
 

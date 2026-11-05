@@ -3,7 +3,7 @@ title: Каталог wiki
 type: index
 tags: [index]
 sources: []
-updated: 2026-11-03
+updated: 2026-11-05
 confidence: high
 ---
 
@@ -48,6 +48,7 @@ confidence: high
 - [[wiki/entities/pansionat-veteran]] — [Пансионат «Ветеран»](entities/pansionat-veteran.md) — Красноярский край; с сентября 2026 каша, сок, суп из двух для жителей без диеты; М1; самоотчёт; своя кухня (толкование)
 - [[wiki/entities/irkutskaya-oblast]] — [Иркутская область](entities/irkutskaya-oblast.md) — карта домов на 29.10.2026; «два и два» — обед одного отделения Марковского центра; не «вся область»
 - [[wiki/entities/bashkortostan]] — [Башкортостан](entities/bashkortostan.md) — нормы № 634-о в ред. № 61-о и № 400-о; СБКС по мед. показаниям; о выборе молчит; полный набор строк не перенесён
+- [[wiki/entities/kuzbass]] — [Кузбасс](entities/kuzbass.md) — приказ № 198 от 28.07.2025: СБКС 27 г по мед. показаниям (звёздочка ещё у ВМК и минеральной воды); о выборе молчит; отчёт 27.01 не найден
 - [[wiki/entities/klimkovskiy-dom-internat]] — [Климковский дом-интернат](entities/klimkovskiy-dom-internat.md) — Кировская обл.; план НОК на 2026 г., срок 31.10.2026, графы исполнения пусты; не акт на 01.01.2027 и не Кировский дом
 - [[wiki/entities/moskva-dtszn-228]] — [Москва, приказ № 228](entities/moskva-dtszn-228.md) — полный текст 03.11.2026; п. 4 отменяет № 1068; о выборе молчит
 - [[wiki/entities/ddsol]] — [ДДСОЛ](entities/ddsol.md) — персонализация; 19РВ-32 — нормы ПНИ МО, не «мостик»
@@ -88,6 +89,8 @@ confidence: high
 - [[wiki/sources/moskva-prikaz-dtszn-228-2021-otmena-1068]] — [Приказ ДТСЗН Москвы № 228](sources/moskva-prikaz-dtszn-228-2021-otmena-1068.md) — полный текст; п. 4 признаёт утратившим силу № 1068; шесть приложений; о выборе молчит
 - [[wiki/sources/saratov-normy-pitaniya-850-2026]] — [Саратовская обл. № 850](sources/saratov-normy-pitaniya-850-2026.md) — нормы питания организаций соцобслуживания от 13.10.2026 (брутто/нетто, контроль по нетто; СБКС по назначению врача; ±5 % без периода; замены по СанПиН 4282-26 и № 330); отдельной нормы для ПНИ нет; о выборе молчит
 - [[wiki/sources/bashkortostan-normy-pitaniya-61-o-400-o-2026]] — [Башкортостан № 61-о и № 400-о](sources/bashkortostan-normy-pitaniya-61-o-400-o-2026.md) — изменения № 634-о; СБКС по мед. показаниям; сдвиг 61-о → 400-о не сглажен; cntd повторно не открыт
+- [[wiki/sources/kuzbass-normy-pitaniya-198-2025]] — [Кузбасс № 198](sources/kuzbass-normy-pitaniya-198-2025.md) — нормы стационара от 28.07.2025; строки 38–40 по мед. показаниям, СБКС 27/27 г; о выборе молчит; pravo.gov — HTTP 500
+- [[wiki/sources/kuzbass-normy-pitaniya-310-2025]] — [Кузбасс № 310](sources/kuzbass-normy-pitaniya-310-2025.md) — нормы полустационара от 28.11.2025, с 01.01.2026; о выборе молчит; строка СБКС при просмотре не найдена
 - [[wiki/sources/mosobl-20rv-108-2026]] — [МО № 20РВ-108](sources/mosobl-20rv-108-2026.md) — нормы питания государственных организаций соцобслуживания Московской обл. с 01.01.2027 (в т. ч. для страдающих психическими заболеваниями); о выборе молчит
 - [[wiki/sources/spb-normativy-socpitanie-2025-43-r]] — [Нормативы соцпитания СПб 2025 (43-р)](sources/spb-normativy-socpitanie-2025-43-r.md) — бюджетный норматив ниже тарифа на 48–55 руб.; разница ПНИ по СБКС 86,45
 - [[wiki/sources/spb-normativy-socpitanie-2027-57-r]] — [Нормативы соцпитания СПб 2027 (57-р)](sources/spb-normativy-socpitanie-2027-57-r.md) — КЭПиСП, 29.05.2026; ПНИ и ДСО одной строкой, разница с/без СБКС 38,00 руб.
