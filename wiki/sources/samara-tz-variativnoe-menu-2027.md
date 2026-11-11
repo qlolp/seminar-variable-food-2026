@@ -1,5 +1,5 @@
 ---
-title: Источник — ТЗ Самары, три дома (2027)
+title: Источник — ТЗ Самары, пять домов (2027)
 type: source
 tags: [источник, аутсорсинг, закупки, 44, самарская-область, вариативность]
 sources:
@@ -12,7 +12,11 @@ sources:
   - raw/sources/samara-tz-variativnoe-menu-2027/otradnensky-tz.txt
   - raw/sources/samara-tz-variativnoe-menu-2027/otradnensky-menu.txt
   - raw/sources/samara-tz-variativnoe-menu-2027/otradnensky-grafik.txt
-updated: 2026-11-10
+  - raw/sources/samara-tz-variativnoe-menu-2027/syzranskiy/syzran-6099-tz.txt
+  - raw/sources/samara-tz-variativnoe-menu-2027/syzranskiy/syzran-6099-menu-var.txt
+  - raw/sources/samara-tz-variativnoe-menu-2027/syzranskiy/syzran-6099-pril1.txt
+  - raw/sources/samara-tz-variativnoe-menu-2027/samarskiy-tz-2pol.txt
+updated: 2026-11-11
 confidence: high
 ---
 
@@ -60,4 +64,16 @@ confidence: high
 
 Доклад v2: п. 4.11, [214]–[216], прил. В от 10.11.2026.
 
-Связи: [[wiki/concepts/autsorsing]] — [аутсорсинг](../concepts/autsorsing.md); [[wiki/entities/potapovskiy-dso]] — [Потаповский](../entities/potapovskiy-dso.md); [[wiki/entities/tolyattinskiy-di]] — [Тольятти](../entities/tolyattinskiy-di.md); [[wiki/entities/otradnenskiy-di]] — [Отрадненский](../entities/otradnenskiy-di.md).
+## 11.11.2026: Сызрань и ДСО «Самарский»
+
+Файлы трёх первых извещений не переписывались. Класс тот же.
+
+[ДСО «Сызранский»](../entities/syzranskiy-dso.md), извещение № 0142200001326016099. В карточке извещения слов «по вариативному меню» нет. В п. 1.1 они есть. Строка таблицы № 1 их снова не содержит. Срок в таблице — 01.03.2027–31.03.2027; в конце задания — 01.01.2027–31.01.2027. Объём — 18 981 койко-день. Формула выбора есть; до 12:00 — порции по диетам. Диеты текста включают «ШД (Д)»; буква «Ш» не исправляется. Перечень верно называет постановление Минтруда № 12; примечание к нормам называет тот же акт приказом Министерства здравоохранения и социального развития. СанПиН 3590-20 и СП 2.1.4284-26; 4282-26 нет. Меню: шапка без слова «вариативное», метки диет, не поблюдный выбор. «ВСЕГО ЗА ДЕНЬ» дня 1 — 3522,5 ккал как сумма столбца. Модель М0–М5 не ставится.
+
+[ДСО «Самарский»](../entities/samarskiy-dso.md), извещение № 0142200001326016190. В карточке слова «по вариативному меню» есть — иначе, чем у Сызрани. 18 443 койко-дня, 01.07.2027–31.12.2027 или до полного исполнения. Адрес: ул. Дальневосточная, д. 99. Та же формула и порции по диетам до 12:00. СанПиН 3590-20 и СП 2.1.3678-20, не 4284-26 и не 4282-26. Файлы меню зимы и лета не читались. Парное извещение № 0142200001326016191 не читалось. Модель М0–М5 не ставится.
+
+Суточные пробы обоих заданий — условие контракта ([gaps п. 35](../gaps.md)). Неговорящие не описаны ([gaps п. 44](../gaps.md)). Остаются шесть домов с формулировкой в предмете и контракт № 101-26 ([gaps п. 46](../gaps.md)). На 10.11.2026 непрочитанными были семь домов и Сызрань; эта цифра не стирается.
+
+Доклад v2: п. 4.11, [220]–[223], прил. В от 11.11.2026.
+
+Связи: [[wiki/concepts/autsorsing]] — [аутсорсинг](../concepts/autsorsing.md); [[wiki/entities/potapovskiy-dso]] — [Потаповский](../entities/potapovskiy-dso.md); [[wiki/entities/tolyattinskiy-di]] — [Тольятти](../entities/tolyattinskiy-di.md); [[wiki/entities/otradnenskiy-di]] — [Отрадненский](../entities/otradnenskiy-di.md); [[wiki/entities/syzranskiy-dso]] — [Сызрань](../entities/syzranskiy-dso.md); [[wiki/entities/samarskiy-dso]] — [ДСО «Самарский»](../entities/samarskiy-dso.md).

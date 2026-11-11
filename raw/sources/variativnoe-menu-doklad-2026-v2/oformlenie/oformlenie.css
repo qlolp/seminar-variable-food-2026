@@ -45,7 +45,8 @@ h3 { font-size: 11pt; font-weight: 600; color: #2f3a44; margin: 6mm 0 2mm; }
 h4 { font-size: 10pt; font-weight: 600; margin: 4mm 0 1.5mm; }
 
 /* Таблицы */
-table { border-collapse: collapse; width: 100%; font: 8.4pt/1.35 "IBM Plex Sans", "Golos Text", sans-serif; margin: 3mm 0 5mm; text-align: left; page-break-inside: auto; hyphens: auto; }
+table { border-collapse: collapse; width: 100%; table-layout: fixed; font: 8.4pt/1.35 "IBM Plex Sans", "Golos Text", sans-serif; margin: 3mm 0 5mm; text-align: left; page-break-inside: auto; hyphens: auto; }
+th, td { overflow-wrap: break-word; }
 thead { display: table-header-group; }
 th { background: var(--acc); color: #fff; font-weight: 600; padding: 1.8mm 2mm; border: 0; vertical-align: bottom; }
 td { padding: 1.5mm 2mm; border: 0; border-bottom: .4pt solid #d5dde0; vertical-align: top; }
