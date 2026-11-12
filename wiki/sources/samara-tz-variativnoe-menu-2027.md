@@ -1,5 +1,5 @@
 ---
-title: Источник — ТЗ Самары, пять домов (2027)
+title: Источник — ТЗ Самары (2027)
 type: source
 tags: [источник, аутсорсинг, закупки, 44, самарская-область, вариативность]
 sources:
@@ -16,7 +16,13 @@ sources:
   - raw/sources/samara-tz-variativnoe-menu-2027/syzranskiy/syzran-6099-menu-var.txt
   - raw/sources/samara-tz-variativnoe-menu-2027/syzranskiy/syzran-6099-pril1.txt
   - raw/sources/samara-tz-variativnoe-menu-2027/samarskiy-tz-2pol.txt
-updated: 2026-11-11
+  - raw/sources/samara-tz-variativnoe-menu-2027/koshki-6564-tz.txt
+  - raw/sources/samara-tz-variativnoe-menu-2027/koshki-6564-menyu-leto.txt
+  - raw/sources/samara-tz-variativnoe-menu-2027/chapaevsk-6110-tz.txt
+  - raw/sources/samara-tz-variativnoe-menu-2027/samarsky-6191-tz.txt
+  - raw/sources/samara-tz-variativnoe-menu-2027/potapovsky-6330-tz.txt
+  - raw/sources/samara-tz-variativnoe-menu-2027/geront-6552-tz.txt
+updated: 2026-11-12
 confidence: high
 ---
 
@@ -76,4 +82,22 @@ confidence: high
 
 Доклад v2: п. 4.11, [220]–[223], прил. В от 11.11.2026.
 
-Связи: [[wiki/concepts/autsorsing]] — [аутсорсинг](../concepts/autsorsing.md); [[wiki/entities/potapovskiy-dso]] — [Потаповский](../entities/potapovskiy-dso.md); [[wiki/entities/tolyattinskiy-di]] — [Тольятти](../entities/tolyattinskiy-di.md); [[wiki/entities/otradnenskiy-di]] — [Отрадненский](../entities/otradnenskiy-di.md); [[wiki/entities/syzranskiy-dso]] — [Сызрань](../entities/syzranskiy-dso.md); [[wiki/entities/samarskiy-dso]] — [ДСО «Самарский»](../entities/samarskiy-dso.md).
+## 12.11.2026: пять заданий, и у Кошек формулы выбора нет
+
+Файлы прежних извещений не переписывались. Класс тот же. Во всех пяти текстах есть СанПиН 3590-20 и нет 4282-26. До 12:00 — порции по диетам. Журнала индивидуального заказа нет. Неговорящие не описаны ([gaps п. 44](../gaps.md)). Цены койко-дня в текстах нет; цифры карточек агрегатора фактом задания не становятся. Модель М0–М5 не ставится.
+
+[Кошкинский дом-интернат](../entities/koshkinskiy-di.md), извещение № 0142200001326016564. Предмет — «по вариативному меню». Обязанность — «Сводного четырнадцатидневного меню» без формулы выбора. Шапка летнего меню — «Примерное 14-дневное вариативное меню летне-осенний период». Три слоя не сглаживаются. 20 118 койко-дней, 01.01.2027–30.06.2027. В перечне помещений — СП 2.1.2.3678-20 и СанПиН 2.3.6.1079-01. Дератизация — СанПиН 3.3686-21. Зимний xlsx не скачивался.
+
+[Чапаевский дом-интернат](../entities/chapaevskiy-di.md), извещение № 0142200001326016110. Формула выбора есть — иначе, чем у Кошек. В файле 15385 койко-дней, 01.01.2027–30.06.2027. Строка таблицы № 1 слов «по вариативному меню» не содержит. Меню не читались.
+
+[ДСО «Самарский»](../entities/samarskiy-dso.md), парное извещение № 0142200001326016191. Формула выбора есть. 18 444 койко-дня против 18 443 у уже прочитанного № 0142200001326016190. Разница не сглаживается. Адрес в задании: ул. Дальневосточная, д. 99. На карточке агрегатора заказчик может быть назван домом-интернатом для граждан с психическими расстройствами; обязательства — из задания. Скачан экземпляр 26 430 байт. Второй uid не сверен.
+
+[Потаповский](../entities/potapovskiy-dso.md), извещение № 0142200001326016330, I квартал. В файле 29853 койко-дня, 01.01.2027–31.03.2027. Уже прочитанное № 0142200001326016566 — III квартал, 30 509 койко-дней. Формула выбора есть, в том числе «14-ти дневное». Редакция от 21.08 не читалась.
+
+[Самарский областной геронтологический центр](../entities/samarskiy-gerontologicheskiy-centr.md), лот 1, извещение № 0142200001326016552. В файле 28073 койко-дня, 01.01.2027–30.04.2027. Формула выбора есть. Для дератизации — СанПиН 3.5.2.3472-17; у четырёх остальных заданий этого дня в этом месте — 3.3686-21. С 4282-26 номер не смешивается. Контракт 100-27 и лот 2 не читались.
+
+Суточные пробы — условие контракта ([gaps п. 35](../gaps.md)). На 11.11.2026 без текста были шесть домов с формулировкой в предмете; эта цифра не стирается. Остаток — [gaps п. 46](../gaps.md).
+
+Доклад v2: п. 4.11, [226]–[231], прил. В от 12.11.2026.
+
+Связи: [[wiki/concepts/autsorsing]] — [аутсорсинг](../concepts/autsorsing.md); [[wiki/entities/potapovskiy-dso]] — [Потаповский](../entities/potapovskiy-dso.md); [[wiki/entities/tolyattinskiy-di]] — [Тольятти](../entities/tolyattinskiy-di.md); [[wiki/entities/otradnenskiy-di]] — [Отрадненский](../entities/otradnenskiy-di.md); [[wiki/entities/syzranskiy-dso]] — [Сызрань](../entities/syzranskiy-dso.md); [[wiki/entities/samarskiy-dso]] — [ДСО «Самарский»](../entities/samarskiy-dso.md); [[wiki/entities/koshkinskiy-di]] — [Кошки](../entities/koshkinskiy-di.md); [[wiki/entities/chapaevskiy-di]] — [Чапаевск](../entities/chapaevskiy-di.md); [[wiki/entities/samarskiy-gerontologicheskiy-centr]] — [геронтоцентр](../entities/samarskiy-gerontologicheskiy-centr.md).
