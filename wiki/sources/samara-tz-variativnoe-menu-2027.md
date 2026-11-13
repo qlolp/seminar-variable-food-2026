@@ -22,7 +22,8 @@ sources:
   - raw/sources/samara-tz-variativnoe-menu-2027/samarsky-6191-tz.txt
   - raw/sources/samara-tz-variativnoe-menu-2027/potapovsky-6330-tz.txt
   - raw/sources/samara-tz-variativnoe-menu-2027/geront-6552-tz.txt
-updated: 2026-11-12
+  - raw/sources/gossektor-obzor-2026-11-13/text.md
+updated: 2026-11-13
 confidence: high
 ---
 
@@ -99,5 +100,15 @@ confidence: high
 Суточные пробы — условие контракта ([gaps п. 35](../gaps.md)). На 11.11.2026 без текста были шесть домов с формулировкой в предмете; эта цифра не стирается. Остаток — [gaps п. 46](../gaps.md).
 
 Доклад v2: п. 4.11, [226]–[231], прил. В от 12.11.2026.
+
+## 13.11.2026: карточки, не задания
+
+Файлы прочитанных заданий не переписывались. Нового текста задания нет. Класс дня — карточка агрегатора, не локальная форма прочитанного файла.
+
+[Владимировский](../entities/vladimirovskiy-di.md): извещения № 0142200001326016177, № 0142200001326016285 и № 0142200001326016286. В шапках корня «вариатив» нет. Юридическое имя — дом-интернат для граждан с психическими расстройствами, ИНН 6362005716; заголовок — Дом социального обслуживания «Владимировский». Имена меню — «МЕНЮ Владимировка с вар.дииетой лето/зима 2027.xlsx»; опечатка не правится. Графа количества — 0. Частные 25 162 и 25 163 — арифметика карточки, не койко-дни. Извещение № 0142200001325018769: «по вариативному меню» есть в заголовке и нет в строке объекта. Файл о переименовании не читался.
+
+Карточка № 0142200001325018629 не читалась как задание. Она называет того же заказчика, ИНН 6312026076, среди чьих торгов уже стоят прочитанные извещения [ДСО «Самарский»](../entities/samarskiy-dso.md). Частное 18 444 с койко-днями извещения № 0142200001326016191 не склеивается.
+
+Очередь uid — [gaps п. 46](../gaps.md). Доклад v2: п. 4.11, [232]–[236], прил. В от 13.11.2026.
 
 Связи: [[wiki/concepts/autsorsing]] — [аутсорсинг](../concepts/autsorsing.md); [[wiki/entities/potapovskiy-dso]] — [Потаповский](../entities/potapovskiy-dso.md); [[wiki/entities/tolyattinskiy-di]] — [Тольятти](../entities/tolyattinskiy-di.md); [[wiki/entities/otradnenskiy-di]] — [Отрадненский](../entities/otradnenskiy-di.md); [[wiki/entities/syzranskiy-dso]] — [Сызрань](../entities/syzranskiy-dso.md); [[wiki/entities/samarskiy-dso]] — [ДСО «Самарский»](../entities/samarskiy-dso.md); [[wiki/entities/koshkinskiy-di]] — [Кошки](../entities/koshkinskiy-di.md); [[wiki/entities/chapaevskiy-di]] — [Чапаевск](../entities/chapaevskiy-di.md); [[wiki/entities/samarskiy-gerontologicheskiy-centr]] — [геронтоцентр](../entities/samarskiy-gerontologicheskiy-centr.md).
